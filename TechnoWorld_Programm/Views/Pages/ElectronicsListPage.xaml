@@ -1,0 +1,151 @@
+﻿<Page x:Name="_this" 
+      x:Class="TechnoWorld_Programm.Views.Pages.ElectronicsListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TechnoWorld_Programm.Views.Pages"
+      xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
+      mc:Ignorable="d" 
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="680" d:DesignWidth="1250"
+      Title="ElectronicsListWindow"  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="#FFF3F3F3"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Page.Resources>
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ListView.xaml" />
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="50"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="290*"/>
+            <ColumnDefinition Width="275"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid HorizontalAlignment="Stretch" Grid.Column="1" VerticalAlignment="Stretch"  Margin="0,5,10,5">
+            <materialDesign:Card BorderBrush="DarkOrange" BorderThickness="4" Background="#FFA14B">
+                <ScrollViewer HorizontalAlignment="Stretch" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Grid.Row="1">
+                    <StackPanel x:Name="Menu" Margin="10">
+                        <!--Century Gothic   Chiller     Comic Sans MS-->
+                        <TextBlock Text="Поиск" FontSize="18"/>
+                        <TextBox Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" FontSize="16" 
+                                 materialDesign:TextFieldAssist.UnderlineBrush="OrangeRed"
+                                 materialDesign:HintAssist.Hint="Искать..."
+                                 materialDesign:HintAssist.HintOpacity="0.7"
+                                 />
+
+                        <Border BorderThickness="1" CornerRadius="5" Background="#FFB559" Margin="0,10,0,0">
+                            <Expander Header="Типы" Margin="0,0,0,0" Background="Transparent">
+                                <Border BorderThickness="1" CornerRadius="5">
+                                    <ListBox HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  ItemsSource="{Binding Types}" BorderThickness="0" Margin="5">
+
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate DataType="{x:Type ListBoxItem}">
+                                                <CheckBox x:Name="TypeSelect" Checked="TypeSelect_Changed" Unchecked="TypeSelect_Changed" Content="{Binding Name}" IsChecked="{Binding IsSelected}" Height="20"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </Border>
+                            </Expander>
+                        </Border>
+                        <Border BorderThickness="1" CornerRadius="5" Background="#FFB559" Margin="0,10,0,0">
+                            <Expander Header="Производители" Margin="0,0,0,0" Background="Transparent" >
+                                <Grid>
+                                    <ListBox HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  ItemsSource="{Binding Manufacturers}" BorderThickness="0" Margin="5">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate DataType="{x:Type ListBoxItem}">
+                                                <CheckBox x:Name="ManufacturerSelect" Checked="ManufacturerSelect_Changed" Unchecked="ManufacturerSelect_Changed" Content="{Binding Name}" IsChecked="{Binding IsSelected}" Height="20"/>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </Grid>
+
+                            </Expander>
+                        </Border>
+                        <Border BorderThickness="1" CornerRadius="5" Background="#FFB559" Margin="0,10,0,0">
+                            <Expander Header="Цена" Margin="0,0,0,0" Background="Transparent">
+                                <Border BorderThickness="1" CornerRadius="5">
+                                    <StackPanel Orientation="Vertical" Margin="5">
+                                        <TextBlock Text="От" Margin="5,5,5,0"/>
+                                        <Slider Minimum="0" Margin="5,0,5,0" Maximum="400000" Value="{Binding MinPrice}">
+
+                                        </Slider>
+                                        <TextBox Text="{Binding MinPrice, UpdateSourceTrigger=PropertyChanged}" Margin="5,0,5,0"/>
+                                        <TextBlock Text="До" Margin="5,0,5,0"/>
+                                        <Slider Minimum="0" Maximum="1000000" Value="{Binding MaxPrice}" Margin="5,0,5,0"/>
+                                        <TextBox Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}" Margin="5,0,5,5"/>
+                                        <Button Content="Применить" Background="Orange" BorderBrush="Orange" Margin="5" Click="Button_Click"/>
+                                    </StackPanel>
+                                </Border>
+                            </Expander>
+                        </Border>
+                        <Border BorderThickness="1" CornerRadius="5" Background="#FFB559" Margin="0,10,0,0">
+                            <Expander Header="Сортировка" Margin="0,0,0,0" Background="Transparent">
+                                <Border BorderThickness="1" CornerRadius="5">
+                                    <StackPanel Orientation="Vertical" Margin="5">
+                                        
+                                        <ComboBox ItemsSource="{Binding SortParameters}" Margin="5" SelectedItem="{Binding SelectedSort}" DisplayMemberPath="Title"/>
+                                        <Grid>
+                                            <materialDesign:PackIcon VerticalAlignment="Center" Kind="OrderAlphabeticalAscending"/>
+                                            <CheckBox Margin="20,0,5,0" VerticalAlignment="Center" x:Name="isDesceningCheck" Content="По убыванию" Checked="isDesceningCheck_Changed" Unchecked="isDesceningCheck_Changed" IsChecked="{Binding SelectedSort.IsDescening}"/>
+                                        </Grid>
+                                    </StackPanel>
+                                </Border>
+                            </Expander>
+                        </Border>
+                    </StackPanel>
+                </ScrollViewer>
+            </materialDesign:Card>
+        </Grid>
+        <materialDesign:Card Margin="5">
+            <Grid>
+                <ListView x:Name="electronicsList" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                            <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                </ListView>
+                <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Margin="10">
+                    <Image Source="/TechnoWorld_Programm;component/Resources/empty.png" Width="280" Height="190"/>
+                    <TextBlock  Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock  Text="Выберите другие критерии или вроверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+        <StackPanel Orientation="Horizontal" Name="Paginator" HorizontalAlignment="Center"  Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" >
+            <Button x:Name="ToFirst" Background="Orange" BorderBrush="Orange" Click="ToFirst_Click" Content="«" Margin="0,7.5,0,7.5" Height="Auto" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}"/>
+            <ListView Margin="0,7,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectionChanged="PagesList_SelectionChanged" SelectedItem="{Binding SelectedPageNumber}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="45" ItemsSource="{Binding DisplayedPagesNumbers}">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="VerticalAlignment" Value="Stretch"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" Height="20" Width="45" FontSize="18" TextAlignment="Center"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Click="ToLast_Click" Content="»" Margin="0" Height="35" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}"/>
+        </StackPanel>
+
+    </Grid>
+
+</Page>

@@ -1,0 +1,79 @@
+﻿<Page x:Class="TechnoWorld_Programm.Views.Pages.CartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
+      xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
+      xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+      xmlns:local="clr-namespace:TechnoWorld_Programm.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="760" d:DesignWidth="1250"
+      Title="Корзина" Background="White">
+
+    <Grid Background="#FFF3F3F3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="250"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="0,10,0,0" Visibility="{Binding PaymentVisibility}">
+
+            <TextBlock Grid.Column="0" Text="Товар" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Left" Margin="200,5,0,5"/>
+            <TextBlock Grid.Column="1" Text="Количество" VerticalAlignment="Center"  FontSize="20" HorizontalAlignment="Right" Margin="5,5,145,5"/>
+            <TextBlock Grid.Column="2" Text="Сумма" FontSize="20" VerticalAlignment="Center"  HorizontalAlignment="Right"  Margin="5,5,45,5"/>
+        </Grid>
+        <materialDesign:Card Margin="5,5,5,5" Grid.Row="1">
+            <Grid>
+                
+                <ListView Grid.Row="1" HorizontalContentAlignment="Stretch" Margin="5" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding CartItems}" ItemTemplate="{StaticResource cartListView}"/>
+                <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Margin="10">
+                    <Image Source="/TechnoWorld_Programm;component/Resources/empty.png" Width="280" Height="190"/>
+                    <TextBlock  Text="Ваша корзина пуста" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock  Text="Выберите нужные Вам товары из каталога магазина и добавьте их в вашу корзину" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Button Content="В каталог" Background="Orange" HorizontalAlignment="Center" Width="300" BorderBrush="Orange" Margin="5" Click="Button_Click"/>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="693*"/>
+                <ColumnDefinition Width="557*"/>
+            </Grid.ColumnDefinitions>
+            <materialDesign:Card Margin="5" Visibility="{Binding PaymentVisibility}">
+                <StackPanel Margin="10,5">
+                    <TextBlock Text="Выберите способ доставки" FontSize="22"/>
+                    <StackPanel Margin="0,20,0,0" x:Name="Salfe">
+                        <RadioButton x:Name="Pickup" GroupName="DeliveryType" FontSize="20" Content="Самовывоз" Checked="Pickup_Checked"/>
+
+                    </StackPanel>
+                    <StackPanel x:Name="To" Margin="0,20,0,0">
+                        <RadioButton x:Name="Delivery" FontSize="20" GroupName="DeliveryType" Checked="Delivery_Checked" Content="Доставка по Челябинску и Челябинской области до 100 км"/>
+                        <TextBox Visibility="{Binding DeliveryAddressVisibility}" Text="{Binding Address}" Margin="20,0,0,0"
+                                 materialDesign:HintAssist.Hint="Адрес: населённый пункт, улица, дом" FontSize="16"/>
+                    </StackPanel>
+                </StackPanel>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="5" Grid.Column="1" Visibility="{Binding PaymentVisibility}">
+                <StackPanel Margin="5">
+                    <TextBlock Text="Итого" FontSize="22"/>
+                    <Separator Margin="0,15,0,0"/>
+                    <Grid Margin="0,5,0,0">
+                        <TextBlock Text="Товаров на" FontSize="20" />
+                        <TextBlock Text="{Binding ElectronicTotalPrice, StringFormat={}{0:F0} ₽}" FontSize="20" HorizontalAlignment="Right"/>
+                    </Grid>
+                    <Grid  Margin="0,20,0,0">
+                        <TextBlock Text="Доставка за" FontSize="20"/>
+                        <TextBlock Text="{Binding DeliveryPrice, StringFormat={}{0:F0} ₽}" FontSize="20" HorizontalAlignment="Right"/>
+                    </Grid>
+                    <Grid  Margin="0,20,0,0">
+                        <TextBlock Text="Всего к оплате" FontSize="20"/>
+                        <TextBlock Text="{Binding TotalOrderPrice, StringFormat={}{0:F0} ₽}" FontSize="20" HorizontalAlignment="Right"/>
+                    </Grid>
+                    <Button Margin="0,20,0,0" Background="Orange" Content="Продолжить" BorderBrush="Orange"/>
+                </StackPanel>
+            </materialDesign:Card>
+        </Grid>
+    </Grid>
+</Page>
+

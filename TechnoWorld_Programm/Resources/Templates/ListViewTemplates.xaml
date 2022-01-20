@@ -1,0 +1,68 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                    xmlns:mde="https://spiegelp.github.io/MaterialDesignExtensions/winfx/xaml">
+
+    <DataTemplate x:Key="electronicsHorizontalListView" DataType="{x:Type ListViewItem}">
+        <Border BorderBrush="Orange" BorderThickness="1" CornerRadius="5" Margin="0,5,10,5">
+            <Grid Height="95">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width="30*"/>
+
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Margin="5" Source="{Binding DisplayImage}" HorizontalAlignment="Left"/>
+                <StackPanel Grid.Column="1" Orientation="Vertical">
+                    <TextBlock Text="{Binding Model}" FontSize="20" FontWeight="Bold"  Margin="10" TextWrapping="Wrap"/>
+                    <TextBlock Text="{Binding Manufacturer.Name}" Margin="10,0,0,0" FontSize="14" VerticalAlignment="Bottom"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Orientation="Vertical">
+                    <TextBlock Text="{Binding Price, StringFormat={}{0:F0} ₽}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
+                    <TextBlock Text="{Binding AmountInStorage, StringFormat={}{0} на складе}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <DataTemplate x:Key="buttonTemplate" DataType="{x:Type Button}">
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding }"/>
+    </DataTemplate>
+
+    <DataTemplate x:Key="electronicsVerticalListView" DataType="{x:Type ListViewItem}">
+        <Grid Width="300">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="50*"/>
+
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="{Binding DisplayImage}"/>
+            <TextBlock Grid.Column="1" Text="{Binding Model}" TextWrapping="Wrap"/>
+        </Grid>
+    </DataTemplate>
+
+
+    <DataTemplate x:Key="cartListView" DataType="{x:Type ListViewItem}">
+        <materialDesign:Card>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="120"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding ElectronicImage}" Grid.Column="0" MaxHeight="120" MaxWidth="120" Margin="5"/>
+                <StackPanel VerticalAlignment="Center" Grid.Column="1" >
+                    <TextBlock  Text="{Binding ElectronicType}" FontSize="20" Margin="5" TextWrapping="Wrap"/>
+                    <TextBlock  Text="{Binding ElectronicModel}" FontSize="20" Margin="5" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                    <mde:OversizedNumberSpinner Max="10" Min="0" HorizontalAlignment="Center" Grid.Column="3" Background="Orange"    Value="{Binding Amount, Mode=TwoWay}" Margin="5,5,5,5"/>
+                    <TextBlock Text="{Binding Price, StringFormat={}{0:F0} ₽ /шт.}" Grid.Column="2" HorizontalAlignment="Center" FontSize="12"/>
+                </StackPanel>
+                <TextBlock Grid.Column="4" Text="{Binding TotalPrice, StringFormat={}{0:F0} ₽}" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="22" Margin="5,5,5,5"/>
+            </Grid>
+        </materialDesign:Card>
+    </DataTemplate>
+</ResourceDictionary>

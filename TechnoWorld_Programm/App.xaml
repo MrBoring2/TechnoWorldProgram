@@ -1,0 +1,30 @@
+﻿<Application x:Class="TechnoWorld_Programm.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TechnoWorld_Programm"
+             xmlns:converter="clr-namespace:TechnoWorld_Programm.Resources.Converters"
+             ShutdownMode="OnLastWindowClose"
+             xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Templates/ListViewTemplates.xaml"/>
+                <ResourceDictionary Source="Resources/Themes/SubStyles.xaml"/>
+                
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepOrange.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.DeepOrange.xaml" />
+  
+                <!-- Theme setting -->
+                <!--<ResourceDictionary>
+                    <converter:ImageConverter x:Key="imgConv"/>
+                </ResourceDictionary>
+                <ResourceDictionary>
+                    <converter:CartElectronicNameConverter x:Key="cartNameConv"/>
+                </ResourceDictionary>-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
