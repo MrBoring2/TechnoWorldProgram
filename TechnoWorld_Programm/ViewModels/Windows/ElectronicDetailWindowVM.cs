@@ -1,4 +1,4 @@
-﻿using TechnoWorld_Programm.ViewModels.Windows;
+﻿using TechnoWorld_Terminal.ViewModels.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TechnoWorld_Programm.POCO_Models;
 
-namespace TechnoWorld_Programm.ViewModels.Windows
+namespace TechnoWorld_Terminal.ViewModels.Windows
 {
     public class ElectronicDetailWindowVM : ModalWindowVMBase
     {

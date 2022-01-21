@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TechnoWorld_Programm.Views.Windows
+namespace TechnoWorld_Terminal.Views.Windows
 {
     public class BaseWindow : MaterialWindow, INotifyPropertyChanged
     {

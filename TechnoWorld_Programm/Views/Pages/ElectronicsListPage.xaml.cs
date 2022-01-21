@@ -1,6 +1,6 @@
 ﻿
 
-using BNS_Programm.ViewModels;
+using TechnoWorld_Terminal.ViewModels;
 
 using Notification.Wpf;
 using Notification.Wpf.Classes;
@@ -24,7 +24,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TechnoWorld_Programm.Views.Pages
+namespace TechnoWorld_Terminal.Views.Pages
 {
     /// <summary>
     /// Логика взаимодействия для ElectronicsListWindow.xaml

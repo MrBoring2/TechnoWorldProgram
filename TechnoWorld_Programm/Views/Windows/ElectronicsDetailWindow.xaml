@@ -6,9 +6,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TechnoWorld_Programm.Views.Windows"
+        xmlns:local="clr-namespace:TechnoWorld_Terminal.Views.Windows"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
-        x:Class="TechnoWorld_Programm.Views.Windows.ElectronicsDetailWindow"
+        x:Class="TechnoWorld_Terminal.Views.Windows.ElectronicsDetailWindow"
         mc:Ignorable="d"
         Title="Дополнительаня информация" Height="700" MinHeight="700" Width="1300" MinWidth="1300"
         TextElement.FontWeight="Regular"
@@ -32,6 +32,7 @@
         <materialDesign:ColorZone Mode="PrimaryMid" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Height="30" Grid.Row="0">
             <Grid Height="30" Background="DarkOrange">
                 <toolkit:WatermarkPasswordBox Margin="5"/>
+
             </Grid>
         </materialDesign:ColorZone>
 

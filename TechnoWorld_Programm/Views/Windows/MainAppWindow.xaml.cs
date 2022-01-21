@@ -1,5 +1,5 @@
 ﻿
-using BNS_Programm.ViewModels;
+using TechnoWorld_Terminal.ViewModels;
 using MaterialDesignColors;
 using MaterialDesignExtensions.Controls;
 using RestSharp;
@@ -16,9 +16,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using TechnoWorld_Programm.Services;
+using TechnoWorld_Terminal.Services;
 
-namespace TechnoWorld_Programm.Views.Windows
+namespace TechnoWorld_Terminal.Views.Windows
 {
     /// <summary>
     /// Логика взаимодействия для MainAppWindow.xaml

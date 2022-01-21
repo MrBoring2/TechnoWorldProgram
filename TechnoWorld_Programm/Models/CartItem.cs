@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_Programm.POCO_Models;
-using TechnoWorld_Programm.Services;
+using TechnoWorld_Terminal.Services;
 
-namespace TechnoWorld_Programm.Models
+namespace TechnoWorld_Terminal.Models
 {
     public class CartItem : NotifyPropertyChangedModel
     {

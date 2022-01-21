@@ -3,14 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TechnoWorld_Programm.Views.Windows"
+        xmlns:local="clr-namespace:TechnoWorld_Terminal.Views.Windows"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
         xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        x:Class="TechnoWorld_Programm.Views.Windows.MainAppWindow"
+        x:Class="TechnoWorld_Terminal.Views.Windows.MainAppWindow"
         mc:Ignorable="d"
-        Title="ТЕХНО МИР" Icon="/TechnoWorld_Programm;component/Resources/logo.png" MinWidth="1250" Height="26" MinHeight="760" Width="214">
+        Title="ТЕХНО МИР" Icon="/TechnoWorld_Terminal;component/Resources/logo.png" MinWidth="1250" Height="26" MinHeight="760" Width="214">
     <mde:MaterialWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -23,7 +23,7 @@
                 </Grid>
             </DataTemplate>
         </ResourceDictionary>
-        
+
     </mde:MaterialWindow.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -31,10 +31,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="287"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1242"/>
         </Grid.ColumnDefinitions>
-        <materialDesign:ColorZone Mode="PrimaryMid" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
+        <materialDesign:ColorZone Mode="PrimaryMid" HorizontalAlignment="Stretch">
             <Grid>
                 <Grid Height="30" Background="DarkOrange">
 
@@ -42,23 +41,10 @@
                 <!--<materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Left"/>-->
             </Grid>
         </materialDesign:ColorZone>
-        <Grid HorizontalAlignment="Stretch" Grid.Row="1" Background="DarkOrange">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="70"/>
-                <RowDefinition Height="326*"/>
-            </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Background="GhostWhite">
-                <Image Margin="5" Source="/BNS_Programm;component/Resources/logo.png"/>
-            </Grid>
-            <ScrollViewer HorizontalAlignment="Stretch" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Grid.Row="1">
-                <Grid>
-                    <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource menuItem}"  ItemsSource="{Binding MenuItems}" SelectedItem="{Binding SelectedMenuItem}" VerticalAlignment="Top"/>
-                    <ListView ItemTemplate="{StaticResource menuItem}" ItemsSource="{Binding OptionalMenuItems}"   SelectedItem="{Binding SelectedMenuItem}" VerticalAlignment="Bottom"/>
-                </Grid>
-            </ScrollViewer>
-        </Grid>
-        <Frame BorderThickness="0" NavigationUIVisibility="Hidden" x:Name="PageContainer" Grid.Row="1" Content="{Binding CurrentPageVM, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" HorizontalAlignment="Stretch"/>
-        <notifications:NotificationArea Grid.Row="1" Grid.Column="1" x:Name="MainNotificationArea" Position="BottomRight" MaxItems="3"/>
-        <notifications:NotificationArea Grid.Row="1" Grid.Column="1" x:Name="ResultNotiifcationArea" Position="Center"  MaxItems="1"/>
+
+        <Frame BorderThickness="0" NavigationUIVisibility="Hidden" x:Name="PageContainer" Grid.Row="1" Content="{Binding CurrentPageVM, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" Margin="0,0,0,0"/>
+        <notifications:NotificationArea Grid.Row="1" x:Name="MainNotificationArea" Position="BottomRight" MaxItems="3" Margin="287,0,8,8"/>
+        <notifications:NotificationArea Grid.Row="1" x:Name="ResultNotiifcationArea" Position="Center"  MaxItems="1" Margin="287,0,8,8"/>
+
     </Grid>
 </mde:MaterialWindow>

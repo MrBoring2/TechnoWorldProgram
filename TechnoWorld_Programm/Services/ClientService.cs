@@ -7,9 +7,9 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using TechnoWorld_Programm.Models;
+using TechnoWorld_Terminal.Models;
 
-namespace TechnoWorld_Programm.Services
+namespace TechnoWorld_Terminal.Services
 {
     public class ClientService : INotifyPropertyChanged
     {

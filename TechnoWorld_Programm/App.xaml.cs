@@ -6,11 +6,11 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using TechnoWorld_Programm.Services;
-using TechnoWorld_Programm.ViewModels.Windows;
-using TechnoWorld_Programm.Views.Windows;
+using TechnoWorld_Terminal.Services;
+using TechnoWorld_Terminal.ViewModels.Windows;
+using TechnoWorld_Terminal.Views.Windows;
 
-namespace TechnoWorld_Programm
+namespace TechnoWorld_Terminal
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

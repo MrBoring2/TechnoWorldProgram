@@ -18,7 +18,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TechnoWorld_Programm.POCO_Models;
 
-namespace TechnoWorld_Programm.Views.Windows
+namespace TechnoWorld_Terminal.Views.Windows
 {
     /// <summary>
     /// Логика взаимодействия для ElectronicsDetailWindow.xaml

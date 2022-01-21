@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
-using TechnoWorld_Programm.ViewModels.Pages;
+using TechnoWorld_Terminal.ViewModels.Pages;
 
-namespace BNS_Programm.ViewModels
+namespace TechnoWorld_Terminal.ViewModels
 {
     public class ItemMenu
     {

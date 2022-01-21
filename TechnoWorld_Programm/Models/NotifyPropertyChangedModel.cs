@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TechnoWorld_Programm.Models
+namespace TechnoWorld_Terminal.Models
 {
     public class NotifyPropertyChangedModel : INotifyPropertyChanged
     {

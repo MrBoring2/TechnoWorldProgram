@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TechnoWorld_Programm.ViewModels.Windows
+namespace TechnoWorld_Terminal.ViewModels.Windows
 {
     public class WindowVMBase : NotifyPropertyChangedBase
     {

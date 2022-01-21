@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace BNS_Programm.ViewModels
+namespace TechnoWorld_Terminal.ViewModels
 {
     public class SubItem
     {

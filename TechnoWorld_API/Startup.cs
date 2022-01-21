@@ -29,7 +29,7 @@ namespace BNS_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<BNSContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Home")));
+            services.AddDbContext<BNSContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Chenk")));
             services.AddControllers().AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
             services.AddSwaggerGen(c =>
             {

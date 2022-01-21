@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TechnoWorld_Programm.Models
+namespace TechnoWorld_Terminal.Models
 {
     public class SortParameter
     {

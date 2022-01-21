@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace BNS_Programm.Common
+namespace TechnoWorld_Terminal.Common
 {
     public class RelayCommand : ICommand
     {

@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using TechnoWorld_Programm.ViewModels.Windows;
+using TechnoWorld_Terminal.ViewModels.Windows;
 
-namespace TechnoWorld_Programm.Services
+namespace TechnoWorld_Terminal.Services
 {
     internal class WindowNavigation
     {
         private static WindowNavigation insance;
-        private WindowRegistrationService displayRootRegistry = new WindowRegistrationService();
+        private WindowController displayRootRegistry = new WindowController();
         private static object syncRoot = new Object();
 
         public static WindowNavigation Instance

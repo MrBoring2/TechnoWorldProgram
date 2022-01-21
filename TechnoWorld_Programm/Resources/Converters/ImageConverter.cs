@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace TechnoWorld_Programm.Resources.Converters
+namespace TechnoWorld_Terminal.Resources.Converters
 {
     public class ImageConverter : IValueConverter
     {

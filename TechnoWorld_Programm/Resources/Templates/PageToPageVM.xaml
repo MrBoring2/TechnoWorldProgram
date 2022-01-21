@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:pagesvm="clr-namespace:TechnoWorld_Programm.ViewModels.Pages"
-                    xmlns:pages="clr-namespace:TechnoWorld_Programm.Views.Pages">
+                    xmlns:pagesvm="clr-namespace:TechnoWorld_Terminal.ViewModels.Pages"
+                    xmlns:pages="clr-namespace:TechnoWorld_Terminal.Views.Pages">
     <DataTemplate DataType="{x:Type pagesvm:CartPageVM}">
         <pages:CartPage />
     </DataTemplate>

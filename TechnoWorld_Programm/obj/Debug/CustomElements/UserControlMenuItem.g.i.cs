@@ -80,7 +80,7 @@ namespace BNS_Programm.CustomElements {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TechnoWorld_Programm;component/customelements/usercontrolmenuitem.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TechnoWorld_Terminal;component/customelements/usercontrolmenuitem.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CustomElements\UserControlMenuItem.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

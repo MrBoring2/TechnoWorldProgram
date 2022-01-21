@@ -7,11 +7,11 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
-using TechnoWorld_Programm.Models;
+using TechnoWorld_Terminal.Models;
 using TechnoWorld_Programm.POCO_Models;
-using TechnoWorld_Programm.Services;
+using TechnoWorld_Terminal.Services;
 
-namespace TechnoWorld_Programm.ViewModels.Pages
+namespace TechnoWorld_Terminal.ViewModels.Pages
 {
     public class ElectronicsListPageVM : PageVMBase
     {

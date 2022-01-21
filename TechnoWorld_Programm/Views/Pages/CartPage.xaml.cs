@@ -16,7 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TechnoWorld_Programm.Views.Pages
+namespace TechnoWorld_Terminal.Views.Pages
 {
     /// <summary>
     /// Логика взаимодействия для CartPage.xaml
