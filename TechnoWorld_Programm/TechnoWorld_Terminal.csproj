@@ -64,6 +64,9 @@
     <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Xaml.Behaviors.Wpf.1.1.37\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Notification.Wpf, Version=6.1.0.0, Culture=neutral, PublicKeyToken=1acac493089262b5, processorArchitecture=MSIL">
       <HintPath>packages\Notification.Wpf.6.1.0\lib\net47\Notification.Wpf.dll</HintPath>
     </Reference>
@@ -146,6 +149,7 @@
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\NotifyPropertyChangedModel.cs" />
     <Compile Include="Models\SortParameter.cs" />
+    <Compile Include="POCO_Models\Category.cs" />
     <Compile Include="Services\WindowNavigation.cs" />
     <Compile Include="ViewModels\NotifyPropertyChangedBase.cs" />
     <Compile Include="ViewModels\Pages\CartPageVM.cs" />

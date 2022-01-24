@@ -28,7 +28,7 @@ namespace TechnoWorld_Terminal.Views.Windows
         public MainAppWindow()
         {
             InitializeComponent();
-
+           
         }
 
     }

@@ -30,9 +30,6 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1242"/>
-        </Grid.ColumnDefinitions>
         <materialDesign:ColorZone Mode="PrimaryMid" HorizontalAlignment="Stretch">
             <Grid>
                 <Grid Height="30" Background="DarkOrange">
@@ -42,9 +39,9 @@
             </Grid>
         </materialDesign:ColorZone>
 
-        <Frame BorderThickness="0" NavigationUIVisibility="Hidden" x:Name="PageContainer" Grid.Row="1" Content="{Binding CurrentPageVM, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" Margin="0,0,0,0"/>
-        <notifications:NotificationArea Grid.Row="1" x:Name="MainNotificationArea" Position="BottomRight" MaxItems="3" Margin="287,0,8,8"/>
-        <notifications:NotificationArea Grid.Row="1" x:Name="ResultNotiifcationArea" Position="Center"  MaxItems="1" Margin="287,0,8,8"/>
+        <Frame BorderThickness="0" NavigationUIVisibility="Hidden" x:Name="PageContainer" Grid.Row="1" Content="{Binding CurrentPage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch"/>
+        <notifications:NotificationArea Grid.Row="1" x:Name="MainNotificationArea" Position="BottomRight" MaxItems="3" Margin="0,0,8,8"/>
+        <notifications:NotificationArea Grid.Row="1" x:Name="ResultNotiifcationArea" Position="Center"  MaxItems="1" Margin="0,0,8,8"/>
 
     </Grid>
 </mde:MaterialWindow>

@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using TechnoWorld_API.Data;
 
 #nullable disable
 
@@ -20,6 +21,7 @@ namespace BNS_API.Data
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Delivery> Deliveries { get; set; }
         public virtual DbSet<ElectrnicsType> ElectrnicsTypes { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Electronic> Electronics { get; set; }
         public virtual DbSet<ElectronicsToDelivery> ElectronicsToDeliveries { get; set; }
         public virtual DbSet<ElectronicsToStorage> ElectronicsToStorages { get; set; }
@@ -108,6 +110,11 @@ namespace BNS_API.Data
                     .IsRequired()
                     .HasMaxLength(30)
                     .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<Category>(entity =>
+            {
+                entity.ToTable("Category");
             });
 
             modelBuilder.Entity<Electronic>(entity =>

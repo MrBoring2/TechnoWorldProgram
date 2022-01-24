@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using TechnoWorld_API.Data;
 
 #nullable disable
 
@@ -29,6 +30,7 @@ namespace BNS_API.Data
         public double Weight { get; set; }
         public virtual Manufacturer Manufactrurer { get; set; }
         public virtual ElectrnicsType Type { get; set; }
+        public virtual Category Category { get; set; }
         public virtual ICollection<ElectronicsToDelivery> ElectronicsToDeliveries { get; set; }
         public virtual ICollection<ElectronicsToStorage> ElectronicsToStorages { get; set; }
         public virtual ICollection<OrderElectronic> OrderElectronics { get; set; }

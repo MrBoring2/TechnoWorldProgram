@@ -14,6 +14,7 @@ using TechnoWorld_Terminal.ViewModels.Pages;
 using TechnoWorld_Terminal.Services;
 using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Views.Pages;
+using System.Windows;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
@@ -26,6 +27,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
             RegisterPages();
             InitializeMenu();
+
         }
 
         public List<PageVMBase> PageVMs
@@ -46,12 +48,11 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             set
             {
                 selectedMenuItem = value;
-
                 if (SelectedMenuItem.Title.Equals(OptionalMenuItems.FirstOrDefault().Title))
                 {
                     Exit();
                 }
-                SwitchPage(CurrentPage);
+                SwitchPage(SelectedMenuItem.TargetPageVM);
                 OnPropertyChanged();
             }
         }
@@ -63,13 +64,14 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         {
             RegisterPageWithVM<ElectronicsListPageVM, ElectronicsListPage>();
             RegisterPageWithVM<CartPageVM, CartPage>();
+            RegisterPageWithVM<CategoriesPageVM, CategoriesPage>();
         }
         private void InitializeMenu()
         {
             MenuItems = new ObservableCollection<ItemMenu>
             {
-                new ItemMenu("Список товаров", PackIconKind.Shop, null), //GetPageInstance(typeof(ElectronicDetailWindowVM)),
-                new ItemMenu("Корзина", PackIconKind.Cart, new CartPageVM()),
+                new ItemMenu("Список товаров", PackIconKind.Shop, GetPageInstance(typeof(CategoriesPageVM))), //),
+                new ItemMenu("Корзина", PackIconKind.Cart, GetPageInstance(typeof(CartPageVM))),
                 new ItemMenu("Ваши заказы", PackIconKind.FileDocument, null),
                 new ItemMenu("Гарантийное обслуживание", PackIconKind.AccountService, null)
             };
@@ -82,9 +84,11 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
                 }
             };
             SelectedMenuItem = MenuItems.FirstOrDefault();
+
+           // MessageBox.Show(CurrentPage.GetType().ToString());
         }
 
-        
+
         private void Exit()
         {
             WindowNavigation.Instance.CloseWindow(this);
