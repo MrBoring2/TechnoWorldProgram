@@ -24,13 +24,11 @@ namespace BNS_API.Data
         public int ManufactrurerId { get; set; }
         public int TypeId { get; set; }
         public byte[] Image { get; set; }
-        public int HarantyMonth { get; set; }
         public string ManufacturerСountry { get; set; }
         public string Color { get; set; }
         public double Weight { get; set; }
         public virtual Manufacturer Manufactrurer { get; set; }
         public virtual ElectrnicsType Type { get; set; }
-        public virtual Category Category { get; set; }
         public virtual ICollection<ElectronicsToDelivery> ElectronicsToDeliveries { get; set; }
         public virtual ICollection<ElectronicsToStorage> ElectronicsToStorages { get; set; }
         public virtual ICollection<OrderElectronic> OrderElectronics { get; set; }

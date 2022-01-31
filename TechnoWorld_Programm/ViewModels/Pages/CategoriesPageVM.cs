@@ -14,12 +14,17 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 {
     public class CategoriesPageVM : PageVMBase
     {
+        public delegate void OpenCategory(Category category);
+        public event OpenCategory onOpenCategory;
         private ObservableCollection<Category> categories;
+        private Category selectedCategory;
         public CategoriesPageVM()
         {
             LoadCategories();
         }
         public ObservableCollection<Category> Categories { get => categories; set { categories = value; OnPropertyChanged(); } }
+        public Category SelectedCategory { get => selectedCategory; set { selectedCategory = value; OnPropertyChanged(); onOpenCategory?.Invoke(SelectedCategory); } }
+
         private async void LoadCategories()
         {
             var response = (RestResponse)await ApiService.GetRequest("api/Categories");

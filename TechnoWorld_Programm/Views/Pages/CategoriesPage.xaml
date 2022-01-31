@@ -9,7 +9,7 @@
       Title="CategoriesPage" Background="White">
 
     <Grid>
-        <ListView ItemsSource="{Binding Categories}" HorizontalAlignment="Center" VerticalAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListView ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemTemplate>
                 <DataTemplate DataType="{x:Type ListViewItem}">
                     <Grid Height="454" Width="454" Margin="5">

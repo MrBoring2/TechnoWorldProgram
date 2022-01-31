@@ -147,12 +147,6 @@ namespace BNS_API.Data
                     .HasForeignKey(d => d.ManufactrurerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Electronics_Manufacturer");
-
-                entity.HasOne(d => d.Type)
-                    .WithMany(p => p.Electronics)
-                    .HasForeignKey(d => d.TypeId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Electronics_Type");
             });
 
             modelBuilder.Entity<ElectronicsToDelivery>(entity =>

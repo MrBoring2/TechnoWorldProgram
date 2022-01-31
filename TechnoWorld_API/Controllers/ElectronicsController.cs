@@ -22,9 +22,9 @@ namespace BNS_API.Controllers
 
         // GET: api/Electronics
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Electronic>>> GetElectronics()
+        public async Task<ActionResult<IEnumerable<Electronic>>> GetElectronics(int categoryId)
         {
-            return await _context.Electronics.Include(p => p.Manufactrurer).Include(p => p.Type).Include(p => p.ElectronicsToStorages).ToListAsync();
+            return await _context.Electronics.Include(p => p.Manufactrurer).Include(p => p.Type).Include(p => p.ElectronicsToStorages).Where(p => p.Type.CategoryId == categoryId).ToListAsync();
         }
 
         // GET: api/Electronics/5

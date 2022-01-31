@@ -67,7 +67,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
 
         protected void SwitchPage(object vm)
         {
-                CurrentPage = pageController.GetPage(vm as PageVMBase);
+            CurrentPage = pageController.GetPage(vm as PageVMBase);
         }
 
         private void ClosePage(object param)

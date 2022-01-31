@@ -26,8 +26,18 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         {
             ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
             RegisterPages();
-            InitializeMenu();
+            RegisterEvents();
+            SwitchPage(GetPageInstance(typeof(CategoriesPageVM)));
+        }
+        private void RegisterEvents()
+        {
+            (GetPageInstance(typeof(CategoriesPageVM)) as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;
+        }
 
+        private void MainAppWindowVM_onOpenCategory(POCO_Models.Category category)
+        {
+            (GetPageInstance(typeof(ElectronicsListPageVM)) as ElectronicsListPageVM).CurrentCategory = category;
+            SwitchPage(GetPageInstance(typeof(ElectronicsListPageVM)));
         }
 
         public List<PageVMBase> PageVMs
@@ -56,8 +66,6 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
                 OnPropertyChanged();
             }
         }
-
-
         public ObservableCollection<ItemMenu> MenuItems { get; set; }
         public ObservableCollection<ItemMenu> OptionalMenuItems { get; set; }
         private void RegisterPages()
@@ -66,33 +74,10 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             RegisterPageWithVM<CartPageVM, CartPage>();
             RegisterPageWithVM<CategoriesPageVM, CategoriesPage>();
         }
-        private void InitializeMenu()
-        {
-            MenuItems = new ObservableCollection<ItemMenu>
-            {
-                new ItemMenu("Список товаров", PackIconKind.Shop, GetPageInstance(typeof(CategoriesPageVM))), //),
-                new ItemMenu("Корзина", PackIconKind.Cart, GetPageInstance(typeof(CartPageVM))),
-                new ItemMenu("Ваши заказы", PackIconKind.FileDocument, null),
-                new ItemMenu("Гарантийное обслуживание", PackIconKind.AccountService, null)
-            };
-            OptionalMenuItems = new ObservableCollection<ItemMenu>
-            {
-                new ItemMenu("Выход", PackIconKind.ExitRun, null)
-                {
-                    Icon = PackIconKind.ExitToApp,
-                    Title = "Выход"
-                }
-            };
-            SelectedMenuItem = MenuItems.FirstOrDefault();
-
-           // MessageBox.Show(CurrentPage.GetType().ToString());
-        }
-
-
         private void Exit()
         {
             WindowNavigation.Instance.CloseWindow(this);
         }
-
+        
     }
 }

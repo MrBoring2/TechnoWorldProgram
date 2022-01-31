@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BNS_API.Data;
+using TechnoWorld_API.Data;
 
 namespace BNS_API.Controllers
 {
@@ -22,9 +23,9 @@ namespace BNS_API.Controllers
 
         // GET: api/ElectrnicsTypes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ElectrnicsType>>> GetElectrnicsTypes()
+        public async Task<ActionResult<IEnumerable<ElectrnicsType>>> GetElectrnicsTypes(int categoryId)
         {
-            return await _context.ElectrnicsTypes.ToListAsync();
+            return await _context.ElectrnicsTypes.Where(p => p.Category.Id == categoryId).ToListAsync();
         }
 
         // GET: api/ElectrnicsTypes/5

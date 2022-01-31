@@ -10,6 +10,7 @@ using System.Windows;
 using TechnoWorld_Terminal.Models;
 using TechnoWorld_Programm.POCO_Models;
 using TechnoWorld_Terminal.Services;
+using TechnoWorld_Terminal.POCO_Models;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {
@@ -25,6 +26,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         private ObservableCollection<Manufacturer> manufacturers;
         private SortParameter selectedSort;
         private Electronic selectedElectronic;
+        private Category category;
         private Visibility emptyVisibility;
         private string search;
         private int currentPage;
@@ -65,6 +67,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 OnPropertyChanged();
             }
         }
+        public Category CurrentCategory { get => category; set { category = value; OnPropertyChanged(); LoadData(); } }
         public List<SortParameter> SortParameters { get; set; }
         public SortParameter SelectedSort { get => selectedSort; set { selectedSort = value; OnPropertyChanged(); RefreshElectronics(); } }
 
@@ -121,7 +124,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public bool OrderByDescening { get => orderByDescening; set { orderByDescening = value; OnPropertyChanged(); } }
         #endregion
 
-        private async void InitializeFields()
+        private void InitializeFields()
         {
             currentPage = 0;
             itemsPerPage = 1;
@@ -129,16 +132,22 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             selectedPageNumber = 1;
             search = string.Empty;
             EmptyVisibility = Visibility.Hidden;
-
-            await Task.Run(() =>
-            {
-                LoadElectronics();
-                LoadTypes();
-                LoadManufacturers();
-                LoadSortParams();
-            });
-
         }
+
+        private async void LoadData()
+        {
+            await Task.Run(LoadManufacturers);
+            await Task.Run(LoadTypes);
+            await Task.Run(LoadSortParams);
+            await Task.Run(LoadElectronics);
+            OnPropertyChanged(nameof(Manufacturers));
+        }
+        private async void RealoadElectronics()
+        {
+            await Task.Run(LoadElectronics);
+        }
+
+
         private void LoadSortParams()
         {
             SortParameters = new List<SortParameter>
@@ -174,8 +183,10 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             {
                 Electronics = JsonSerializer.Deserialize<ObservableCollection<Electronic>>(response.Content);
                 DisplayedElectronics = Electronics;
+
                 LoadPages();
                 DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers.Take(maxDisplayedPages));
+
             }
         }
         private void LoadPages()
@@ -283,7 +294,10 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                     else continue;
                 }
             }
-            var selectedManufacturers = Manufacturers.Where(p => p.IsSelected);
+            var selectedManufacturers = new List<Manufacturer>();
+
+            selectedManufacturers = Manufacturers.Where(p => p.IsSelected).ToList();
+
 
             if (selectedManufacturers.Count() > 0)
             {
