@@ -7,6 +7,7 @@
       xmlns:local="clr-namespace:TechnoWorld_Terminal.Views.Pages"
       xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
       mc:Ignorable="d" 
+      xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       d:DesignHeight="680" d:DesignWidth="1250"
       Title="ElectronicsListWindow"  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -91,7 +92,7 @@
                             <Expander Header="Сортировка" Margin="0,0,0,0" Background="Transparent">
                                 <Border BorderThickness="1" CornerRadius="5">
                                     <StackPanel Orientation="Vertical" Margin="5">
-                                        
+
                                         <ComboBox ItemsSource="{Binding SortParameters}" Margin="5" SelectedItem="{Binding SelectedSort}" DisplayMemberPath="Title"/>
                                         <Grid>
                                             <materialDesign:PackIcon VerticalAlignment="Center" Kind="OrderAlphabeticalAscending"/>
@@ -108,6 +109,7 @@
         <materialDesign:Card Margin="5">
             <Grid>
                 <ListView x:Name="electronicsList" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
+                    
                     <ListView.ItemContainerStyle>
                         <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
                             <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick"/>
@@ -115,6 +117,7 @@
                             <Setter Property="VerticalContentAlignment" Value="Stretch"/>
                         </Style>
                     </ListView.ItemContainerStyle>
+                    
                 </ListView>
                 <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Margin="10">
                     <Image Source="/TechnoWorld_Terminal;component/Resources/empty.png" Width="280" Height="190"/>
@@ -125,7 +128,12 @@
         </materialDesign:Card>
         <StackPanel Orientation="Horizontal" Name="Paginator" HorizontalAlignment="Center"  Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" >
             <Button x:Name="ToFirst" Background="Orange" BorderBrush="Orange" Click="ToFirst_Click" Content="«" Margin="0,7.5,0,7.5" Height="Auto" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}"/>
-            <ListView Margin="0,7,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectionChanged="PagesList_SelectionChanged" SelectedItem="{Binding SelectedPageNumber}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="45" ItemsSource="{Binding DisplayedPagesNumbers}">
+            <ListView Margin="0,7,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectedItem="{Binding SelectedPageNumber}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="45" ItemsSource="{Binding DisplayedPagesNumbers}">
+                <interactions:Interaction.Triggers>
+                    <interactions:EventTrigger EventName="SelectionChanged">
+                        <interactions:InvokeCommandAction Command="{Binding ChangePageCommand}"/>
+                    </interactions:EventTrigger>
+                </interactions:Interaction.Triggers>
                 <ListView.ItemContainerStyle>
                     <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>

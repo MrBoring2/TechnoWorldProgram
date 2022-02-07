@@ -2375,7 +2375,6 @@
             Gets the value of the VisualStateManager.VisualStateGroups attached property.
             </summary>
             <param name="targetObject">The element from which to get the VisualStateManager.VisualStateGroups.</param>
-            <returns></returns>
         </member>
         <member name="M:Microsoft.Xaml.Behaviors.VisualStateUtilities.TryFindNearestStatefulControl(System.Windows.FrameworkElement,System.Windows.FrameworkElement@)">
             <summary>

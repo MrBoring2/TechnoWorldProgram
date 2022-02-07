@@ -8,6 +8,7 @@ using System.Text;
 
 using System.Threading.Tasks;
 using System.Windows;
+using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Models;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels;
@@ -49,6 +50,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         }
 
         #region Properties
+        public RelayCommand ChangePageCommand { get; set; }
         public ObservableCollection<int> DisplayedPagesNumbers { get => displayedPagesNumbers; set { displayedPagesNumbers = value; OnPropertyChanged(); } }
         public ObservableCollection<int> PagesNumbers { get => pagesNumbers; set { pagesNumbers = value; OnPropertyChanged(); } }
         public ObservableCollection<Electronic> Electronics { get => electronics; set { electronics = value; OnPropertyChanged(); } }
@@ -71,16 +73,16 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 OnPropertyChanged();
             }
         }
-       
-        public Category CurrentCategory 
-        { 
+
+        public Category CurrentCategory
+        {
             get => category;
-            set 
-            { 
-                category = value; 
-                OnPropertyChanged(); 
-                LoadData(); 
-            } 
+            set
+            {
+                category = value;
+                OnPropertyChanged();
+                LoadData();
+            }
         }
         public List<SortParameter> SortParameters { get; set; }
         public SortParameter SelectedSort { get => selectedSort; set { selectedSort = value; OnPropertyChanged(); RefreshElectronics(); } }
@@ -123,7 +125,13 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public int SelectedPageNumber
         {
             get { return selectedPageNumber; }
-            set { selectedPageNumber = value; OnPropertyChanged(); }
+            set 
+            { 
+                selectedPageNumber = value;  
+
+                OnPropertyChanged();
+                //OnPropertyChanged(nameof(DisplayedPagesNumbers);
+            }
         }
         public int MinPrice
         {
@@ -141,20 +149,28 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         private void InitializeFields()
         {
             currentPage = 0;
-            itemsPerPage = 1;
+            itemsPerPage = 5;
             maxDisplayedPages = 5;
             selectedPageNumber = 1;
             search = string.Empty;
+            ChangePageCommand = new RelayCommand(ChangePage);
             EmptyVisibility = Visibility.Hidden;
+        }
+
+        private async void ChangePage(object obj)
+        {
+            await Task.Run(RefrashPaginator);
+            await Task.Run(RefreshElectronics);
         }
 
         private async void LoadData()
         {
-            await Task.Run(()=>LoadManufacturers());
-            await Task.Run(()=>LoadTypes());
-            await Task.Run(()=>LoadSortParams());
-            await Task.Run(()=>LoadElectronics());
-            
+            await Task.Run(() => LoadManufacturers());
+            await Task.Run(() => LoadTypes());
+            await Task.Run(() => LoadSortParams());
+            await Task.Run(() => LoadElectronics());
+            OnPropertyChanged(nameof(SortParameters));
+            OnPropertyChanged(nameof(SelectedSort));
         }
         private async void RealoadElectronics()
         {
@@ -174,7 +190,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         }
         private async void LoadTypes()
         {
-            var response = (RestResponse)await ApiService.GetRequest("api/ElectrnicsTypes");
+            var response = (RestResponse)await ApiService.GetRequestWithParameter("api/ElectrnicsTypes", "categoryId", CurrentCategory.Id);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Types = JsonConvert.DeserializeObject<ObservableCollection<ElectrnicsType>>(response.Content);
@@ -183,7 +199,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
         private async void LoadManufacturers()
         {
-            var response = (RestResponse)await ApiService.GetRequest("api/Manufacturers");
+            var response = (RestResponse)await ApiService.GetRequestWithParameter("api/Manufacturers", "categoryId", CurrentCategory.Id);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Manufacturers = JsonConvert.DeserializeObject<ObservableCollection<Manufacturer>>(response.Content);
@@ -200,7 +216,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
                 LoadPages();
                 DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers.Take(maxDisplayedPages));
-
+                RefreshElectronics();
             }
         }
         private void LoadPages()

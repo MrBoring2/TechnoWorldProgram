@@ -16,6 +16,7 @@ namespace BNS_API.Data
         public BNSContext(DbContextOptions<BNSContext> options)
             : base(options)
         {
+          
         }
 
         public virtual DbSet<Client> Clients { get; set; }
@@ -40,7 +41,9 @@ namespace BNS_API.Data
             if (!optionsBuilder.IsConfigured)
             {
 
+            
             }
+            //optionsBuilder.UseLazyLoadingProxies();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
