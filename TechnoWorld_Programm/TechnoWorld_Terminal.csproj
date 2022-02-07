@@ -118,6 +118,9 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="TechoWorld_DataModels">
+      <HintPath>..\TechoWorld_DataModels\bin\Debug\TechoWorld_DataModels.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -149,7 +152,6 @@
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\NotifyPropertyChangedModel.cs" />
     <Compile Include="Models\SortParameter.cs" />
-    <Compile Include="POCO_Models\Category.cs" />
     <Compile Include="Services\WindowNavigation.cs" />
     <Compile Include="ViewModels\NotifyPropertyChangedBase.cs" />
     <Compile Include="ViewModels\Pages\CartPageVM.cs" />
@@ -165,14 +167,6 @@
     <Compile Include="Views\Pages\ElectronicsListPage.xaml.cs">
       <DependentUpon>ElectronicsListPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="POCO_Models\Delivery.cs" />
-    <Compile Include="POCO_Models\Electronic.cs" />
-    <Compile Include="POCO_Models\ElectrnicsType.cs" />
-    <Compile Include="POCO_Models\ElectronicsToDelivery.cs" />
-    <Compile Include="POCO_Models\ElectronicsToStorage.cs" />
-    <Compile Include="POCO_Models\Manufacturer.cs" />
-    <Compile Include="POCO_Models\Storage.cs" />
-    <Compile Include="POCO_Models\Supplier.cs" />
     <Compile Include="Resources\Converters\CartElectronicNameConverter.cs" />
     <Compile Include="Resources\Converters\ImageConverter.cs" />
     <Compile Include="Services\ApiService.cs" />

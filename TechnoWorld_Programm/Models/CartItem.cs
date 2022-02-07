@@ -6,8 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using TechnoWorld_Programm.POCO_Models;
 using TechnoWorld_Terminal.Services;
+using TechoWorld_DataModels;
 
 namespace TechnoWorld_Terminal.Models
 {
@@ -24,7 +24,7 @@ namespace TechnoWorld_Terminal.Models
         public Electronic Electronic { get; private set; }
         public string ElectronicType => Electronic.Type.Name;
         public string ElectronicModel => Electronic.Model;
-        public byte[] ElectronicImage => Electronic.DisplayImage;
+        public byte[] ElectronicImage => Electronic.Image;
         public int Amount
         {
             get => amount;

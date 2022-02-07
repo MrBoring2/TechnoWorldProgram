@@ -6,9 +6,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TechnoWorld_Programm.POCO_Models;
-using TechnoWorld_Terminal.POCO_Models;
 using TechnoWorld_Terminal.Services;
+using TechoWorld_DataModels;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {

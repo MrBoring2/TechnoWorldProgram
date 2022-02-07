@@ -15,6 +15,7 @@ using TechnoWorld_Terminal.Services;
 using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Views.Pages;
 using System.Windows;
+using TechoWorld_DataModels;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
@@ -34,7 +35,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             (GetPageInstance(typeof(CategoriesPageVM)) as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;
         }
 
-        private void MainAppWindowVM_onOpenCategory(POCO_Models.Category category)
+        private void MainAppWindowVM_onOpenCategory(Category category)
         {
             (GetPageInstance(typeof(ElectronicsListPageVM)) as ElectronicsListPageVM).CurrentCategory = category;
             SwitchPage(GetPageInstance(typeof(ElectronicsListPageVM)));

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BNS_API.Data;
+using TechoWorld_DataModels;
 
 namespace BNS_API.Controllers
 {

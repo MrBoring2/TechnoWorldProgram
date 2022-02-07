@@ -16,7 +16,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using TechnoWorld_Programm.POCO_Models;
 
 namespace TechnoWorld_Terminal.Views.Windows
 {
@@ -25,15 +24,10 @@ namespace TechnoWorld_Terminal.Views.Windows
     /// </summary>
     public partial class ElectronicsDetailWindow : MaterialWindow
     {
-     
-
-        public ElectronicsDetailWindow(Electronic electronic)
+        public ElectronicsDetailWindow()
         {
             InitializeComponent();
-        }
-
-
-        
+        }    
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {

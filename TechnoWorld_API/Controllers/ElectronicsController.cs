@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BNS_API.Data;
+using TechoWorld_DataModels;
 
 namespace BNS_API.Controllers
 {
@@ -24,7 +25,7 @@ namespace BNS_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Electronic>>> GetElectronics(int categoryId)
         {
-            return await _context.Electronics.Include(p => p.Manufactrurer).Include(p => p.Type).Include(p => p.ElectronicsToStorages).Where(p => p.Type.CategoryId == categoryId).ToListAsync();
+            return await _context.Electronics.Include(p => p.Manufacturer).Include(p => p.Type).Include(p => p.ElectronicsToStorages).Where(p => p.Type.CategoryId == categoryId).ToListAsync();
         }
 
         // GET: api/Electronics/5

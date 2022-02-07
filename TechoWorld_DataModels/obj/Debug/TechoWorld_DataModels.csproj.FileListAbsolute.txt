@@ -1,0 +1,8 @@
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\bin\Debug\TechoWorld_DataModels.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\bin\Debug\TechoWorld_DataModels.pdb
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\bin\Debug\Newtonsoft.Json.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\bin\Debug\Newtonsoft.Json.xml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.csproj.CoreCompileInputs.cache
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.csproj.CopyComplete
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.pdb

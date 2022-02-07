@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using TechnoWorld_API.Data;
+using TechoWorld_DataModels;
 
 #nullable disable
 
@@ -114,6 +114,7 @@ namespace BNS_API.Data
 
             modelBuilder.Entity<Category>(entity =>
             {
+                entity.HasKey(p => p.Id);
                 entity.ToTable("Category");
             });
 
@@ -142,7 +143,7 @@ namespace BNS_API.Data
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
-                entity.HasOne(d => d.Manufactrurer)
+                entity.HasOne(d => d.Manufacturer)
                     .WithMany(p => p.Electronics)
                     .HasForeignKey(d => d.ManufactrurerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)

@@ -1,16 +1,16 @@
-﻿using RestSharp;
+﻿using Newtonsoft.Json;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
-using System.Text.Json;
+
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_Terminal.Models;
-using TechnoWorld_Programm.POCO_Models;
 using TechnoWorld_Terminal.Services;
-using TechnoWorld_Terminal.POCO_Models;
+using TechoWorld_DataModels;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {
@@ -42,6 +42,10 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public ElectronicsListPageVM()
         {
             InitializeFields();
+            // OnPropertyChanged(nameof(Manufacturers));
+            // OnPropertyChanged(nameof(DisplayedElectronics));
+            // OnPropertyChanged(nameof(DisplayedPagesNumbers));
+            //OnPropertyChanged(nameof(SortParameters));
         }
 
         #region Properties
@@ -67,7 +71,17 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 OnPropertyChanged();
             }
         }
-        public Category CurrentCategory { get => category; set { category = value; OnPropertyChanged(); LoadData(); } }
+       
+        public Category CurrentCategory 
+        { 
+            get => category;
+            set 
+            { 
+                category = value; 
+                OnPropertyChanged(); 
+                LoadData(); 
+            } 
+        }
         public List<SortParameter> SortParameters { get; set; }
         public SortParameter SelectedSort { get => selectedSort; set { selectedSort = value; OnPropertyChanged(); RefreshElectronics(); } }
 
@@ -136,11 +150,11 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
         private async void LoadData()
         {
-            await Task.Run(LoadManufacturers);
-            await Task.Run(LoadTypes);
-            await Task.Run(LoadSortParams);
-            await Task.Run(LoadElectronics);
-            OnPropertyChanged(nameof(Manufacturers));
+            await Task.Run(()=>LoadManufacturers());
+            await Task.Run(()=>LoadTypes());
+            await Task.Run(()=>LoadSortParams());
+            await Task.Run(()=>LoadElectronics());
+            
         }
         private async void RealoadElectronics()
         {
@@ -163,7 +177,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             var response = (RestResponse)await ApiService.GetRequest("api/ElectrnicsTypes");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Types = JsonSerializer.Deserialize<ObservableCollection<ElectrnicsType>>(response.Content);
+                Types = JsonConvert.DeserializeObject<ObservableCollection<ElectrnicsType>>(response.Content);
             }
         }
 
@@ -172,16 +186,16 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             var response = (RestResponse)await ApiService.GetRequest("api/Manufacturers");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Manufacturers = JsonSerializer.Deserialize<ObservableCollection<Manufacturer>>(response.Content);
+                Manufacturers = JsonConvert.DeserializeObject<ObservableCollection<Manufacturer>>(response.Content);
             }
         }
 
         private async void LoadElectronics()
         {
-            var response = (RestResponse)await ApiService.GetRequest("api/Electronics");
+            var response = (RestResponse)await ApiService.GetRequestWithParameter($"api/Electronics", "categoryId", CurrentCategory.Id);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Electronics = JsonSerializer.Deserialize<ObservableCollection<Electronic>>(response.Content);
+                Electronics = JsonConvert.DeserializeObject<ObservableCollection<Electronic>>(response.Content);
                 DisplayedElectronics = Electronics;
 
                 LoadPages();

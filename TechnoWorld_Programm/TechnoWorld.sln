@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnoWorld_Terminal", "TechnoWorld_Terminal.csproj", "{61E24EE4-D51E-47AB-88A5-A507174D814E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnoWorld_API", "..\TechnoWorld_API\TechnoWorld_API.csproj", "{3F42B0A6-C30A-4AE8-AD71-A3819E5A0107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechoWorld_DataModels", "..\TechoWorld_DataModels\TechoWorld_DataModels.csproj", "{C2776FB3-3909-4A6B-9B8B-565264B08E10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3F42B0A6-C30A-4AE8-AD71-A3819E5A0107}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F42B0A6-C30A-4AE8-AD71-A3819E5A0107}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F42B0A6-C30A-4AE8-AD71-A3819E5A0107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2776FB3-3909-4A6B-9B8B-565264B08E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2776FB3-3909-4A6B-9B8B-565264B08E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2776FB3-3909-4A6B-9B8B-565264B08E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2776FB3-3909-4A6B-9B8B-565264B08E10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

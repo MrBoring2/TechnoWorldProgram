@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TechnoWorld_Programm.POCO_Models;
+using TechoWorld_DataModels;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
@@ -114,11 +114,9 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             Price = CurrentElectronic.Price;
             AmountInStorage = CurrentElectronic.AmountInStorage;
             Description = CurrentElectronic.Description;
-            Image = CurrentElectronic.DisplayImage;
+            Image = CurrentElectronic.Image;
             Color = CurrentElectronic.Color;
             Weight = CurrentElectronic.Weight;
-            ManufacturerCountry = CurrentElectronic.ManufacturerCountry;
-            HarantyMonth = CurrentElectronic.HarantyMonth;
         }
     }
 }
