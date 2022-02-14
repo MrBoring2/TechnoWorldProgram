@@ -286,6 +286,6 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net6.0\Techno
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net6.0\TechnoWorld_API.genruntimeconfig.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net6.0\TechoWorld_DataModels.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net6.0\TechoWorld_DataModels.pdb
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net6.0\TechnoWorld_API.csproj.AssemblyReference.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net6.0\Castle.Core.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net6.0\TechnoWorld_API.csproj.AssemblyReference.cache

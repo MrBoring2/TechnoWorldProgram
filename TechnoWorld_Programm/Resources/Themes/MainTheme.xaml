@@ -9,11 +9,6 @@
     <SolidColorBrush x:Key="MousePressed" Color="{DynamicResource PresseColor}"/>
 
 
-    <Style TargetType="{x:Type TextBlock}">
-    
-        <Setter Property="FontSize" Value="14"/>
-    </Style>
-
 
     <Style TargetType="{x:Type ListBoxItem}">
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>

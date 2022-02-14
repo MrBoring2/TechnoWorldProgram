@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.IO;
 using System.Linq;
+using System.Windows.Media.Imaging;
 
 namespace TechoWorld_DataModels
 {
@@ -32,10 +34,12 @@ namespace TechoWorld_DataModels
         public virtual ICollection<ElectronicsToStorage> ElectronicsToStorages { get; set; }
         public virtual ICollection<OrderElectronic> OrderElectronics { get; set; }
         public virtual ICollection<WarantyServiceHistory> WarantyServiceHistories { get; set; }
+        [NotMapped]
         public string ManufacturerName
         {
             get => Manufacturer.Name;
         }
+        [NotMapped]
         public int AmountInStorage
         {
             get

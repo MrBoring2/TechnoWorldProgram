@@ -35,7 +35,7 @@ namespace BNS_API.Controllers
             var electronic = await _context.Electronics.FindAsync(id);
 
             if (electronic == null)
-            {
+            { 
                 return NotFound();
             }
 

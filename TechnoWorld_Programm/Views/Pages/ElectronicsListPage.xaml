@@ -6,7 +6,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TechnoWorld_Terminal.Views.Pages"
       xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
+      xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
       mc:Ignorable="d" 
+      xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
       xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       d:DesignHeight="680" d:DesignWidth="1250"
@@ -17,9 +19,6 @@
         TextOptions.TextRenderingMode="Auto"        
         Background="#FFF3F3F3"
         FontFamily="{DynamicResource MaterialDesignFont}">
-    <Page.Resources>
-        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ListView.xaml" />
-    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="83*"/>
@@ -36,18 +35,16 @@
                 <ScrollViewer HorizontalAlignment="Stretch" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Grid.Row="1">
                     <StackPanel x:Name="Menu" Margin="10">
                         <!--Century Gothic   Chiller     Comic Sans MS-->
-                        <TextBlock Text="Поиск" FontSize="18"/>
-                        <TextBox Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" FontSize="16" 
+                        <TextBlock Text="Поиск" FontSize="18"  Foreground="White"/>
+                        <TextBox Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" FontSize="16"
                                  materialDesign:TextFieldAssist.UnderlineBrush="OrangeRed"
                                  materialDesign:HintAssist.Hint="Искать..."
-                                 materialDesign:HintAssist.HintOpacity="0.7"
-                                 />
-
+                                 materialDesign:HintAssist.HintOpacity="0.7" Cursor="IBeam"/>
+                       
                         <Border BorderThickness="1" CornerRadius="5" Background="White" Margin="0,10,0,0">
-                            <Expander Header="Типы" Margin="0,0,0,0" Background="Transparent">
+                            <Expander Style="{StaticResource MaterialDesignExpander}" Header="Типы" Margin="0,0,0,0" Background="Transparent">
                                 <Border BorderThickness="1" CornerRadius="5">
                                     <ListBox HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  ItemsSource="{Binding Types}" BorderThickness="0" Margin="5">
-
                                         <ListBox.ItemTemplate>
                                             <DataTemplate DataType="{x:Type ListBoxItem}">
                                                 <CheckBox x:Name="TypeSelect" Checked="TypeSelect_Changed" Unchecked="TypeSelect_Changed" Content="{Binding Name}" IsChecked="{Binding IsSelected}" Height="20"/>
@@ -58,38 +55,51 @@
                             </Expander>
                         </Border>
                         <Border BorderThickness="1" CornerRadius="5" Background="White" Margin="0,10,0,0">
-                            <Expander Header="Производители" Margin="0,0,0,0" Background="Transparent" >
+                            <Expander Style="{StaticResource MaterialDesignExpander}" Header="Производители" Margin="0,0,0,0" Background="Transparent" >
                                 <Grid>
-                                    <ListBox HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  ItemsSource="{Binding Manufacturers}" BorderThickness="0" Margin="5">
-                                        <ListBox.ItemTemplate>
+                                    <ListView HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  ItemsSource="{Binding Manufacturers}" BorderThickness="0" Margin="5">
+                                        <ListView.ItemTemplate>
                                             <DataTemplate DataType="{x:Type ListBoxItem}">
-                                                <CheckBox x:Name="ManufacturerSelect" Checked="ManufacturerSelect_Changed" Unchecked="ManufacturerSelect_Changed" Content="{Binding Name}" IsChecked="{Binding IsSelected}" Height="20"/>
+                                                <CheckBox x:Name="ManufacturerSelect" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{Binding Name}" IsChecked="{Binding IsSelected}"/>
                                             </DataTemplate>
-                                        </ListBox.ItemTemplate>
-                                    </ListBox>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
                                 </Grid>
 
                             </Expander>
                         </Border>
                         <Border BorderThickness="1" CornerRadius="5" Background="White" Margin="0,10,0,0">
-                            <Expander Header="Цена" Margin="0,0,0,0" Background="Transparent">
+                            <Expander Style="{StaticResource MaterialDesignExpander}" Header="Цена" Margin="0,0,0,0" Background="Transparent">
                                 <Border BorderThickness="1" CornerRadius="5">
                                     <StackPanel Orientation="Vertical" Margin="5">
                                         <TextBlock Text="От" Margin="5,5,5,0"/>
-                                        <Slider Minimum="0" Margin="5,0,5,0" Maximum="400000" Value="{Binding MinPrice}">
+                                        
+                                        <mah:RangeSlider Height="20" LargeChange="100" LowerValue="40" Minimum="1" Maximum="400000" AutoToolTipPlacement="TopLeft"  Orientation="Horizontal" SmallChange="1" UpperValue="60">
+                                            <mah:RangeSlider.AutoToolTipRangeValuesTemplate>
+                                                <DataTemplate DataType="mah:RangeSliderAutoTooltipValues">
+                                                    <UniformGrid Columns="2" Rows="2">
+                                                        <TextBlock HorizontalAlignment="Right" Text="От:" />
+                                                        <TextBlock HorizontalAlignment="Right" Text="{Binding LowerValue, StringFormat='{}{0:N2}'}" />
+                                                        <TextBlock HorizontalAlignment="Right" Text="Дo:" />
+                                                        <TextBlock HorizontalAlignment="Right" Text="{Binding UpperValue, StringFormat='{}{0:N2}'}" />
+                                                    </UniformGrid>
+                                                </DataTemplate>
+                                            </mah:RangeSlider.AutoToolTipRangeValuesTemplate>
+                                        </mah:RangeSlider>
+                                        <!--<Slider Minimum="0" Margin="5,0,5,0" Maximum="400000" Value="{Binding MinPrice}">
 
                                         </Slider>
                                         <TextBox Text="{Binding MinPrice, UpdateSourceTrigger=PropertyChanged}" Margin="5,0,5,0"/>
                                         <TextBlock Text="До" Margin="5,0,5,0"/>
                                         <Slider Minimum="0" Maximum="1000000" Value="{Binding MaxPrice}" Margin="5,0,5,0"/>
-                                        <TextBox Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}" Margin="5,0,5,5"/>
+                                        <TextBox Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}" Margin="5,0,5,5"/>-->
                                         <Button Content="Применить" Background="Orange" BorderBrush="Orange" Margin="5" Click="Button_Click"/>
                                     </StackPanel>
                                 </Border>
                             </Expander>
                         </Border>
                         <Border BorderThickness="1" CornerRadius="5" Background="White" Margin="0,10,0,0">
-                            <Expander Header="Сортировка" Margin="0,0,0,0" Background="Transparent">
+                            <Expander Style="{StaticResource MaterialDesignExpander}" Header="Сортировка" Margin="0,0,0,0" Background="Transparent">
                                 <Border BorderThickness="1" CornerRadius="5">
                                     <StackPanel Orientation="Vertical" Margin="5">
 
@@ -108,11 +118,9 @@
         </Grid>
         <materialDesign:Card Margin="5">
             <Grid>
-                <ListView x:Name="electronicsList" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
-                    
+                <ListView HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
-                            <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick"/>
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                             <Setter Property="VerticalContentAlignment" Value="Stretch"/>
                         </Style>
@@ -127,8 +135,8 @@
             </Grid>
         </materialDesign:Card>
         <StackPanel Orientation="Horizontal" Name="Paginator" HorizontalAlignment="Center"  Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" >
-            <Button x:Name="ToFirst" Background="Orange" BorderBrush="Orange" Click="ToFirst_Click" Content="«" Margin="0,7.5,0,7.5" Height="Auto" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}"/>
-            <ListView Margin="0,7,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectedItem="{Binding SelectedPageNumber}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="45" ItemsSource="{Binding DisplayedPagesNumbers}">
+            <Button x:Name="ToFirst" Background="Orange" BorderBrush="Orange" Command="{Binding ToFirstPageCommand}" CommandParameter="0" Content="«" Margin="0,7.5,0,7.5" Height="Auto" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}" Cursor="Hand"/>
+            <ListView Margin="0,7,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectedItem="{Binding SelectedPageNumber, Mode=TwoWay}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="45" ItemsSource="{Binding DisplayedPagesNumbers}">
                 <interactions:Interaction.Triggers>
                     <interactions:EventTrigger EventName="SelectionChanged">
                         <interactions:InvokeCommandAction Command="{Binding ChangePageCommand}"/>
@@ -151,7 +159,7 @@
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
             </ListView>
-            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Click="ToLast_Click" Content="»" Margin="0" Height="35" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}"/>
+            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding ToLastPageCommand}" CommandParameter="1"  Content="»" Margin="0" Height="35" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}"/>
         </StackPanel>
 
     </Grid>

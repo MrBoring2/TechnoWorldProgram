@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
-
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_Terminal.Common;
@@ -18,13 +17,13 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
     public class ElectronicsListPageVM : PageVMBase
     {
         #region Fields
-        private ObservableCollection<int> pagesNumbers;
+        private List<int> pagesNumbers;
         private ObservableCollection<int> displayedPagesNumbers;
-        private ObservableCollection<Electronic> electronics;
+        private List<Electronic> electronics;
         private ObservableCollection<Electronic> displayedElectronics;
 
-        private ObservableCollection<ElectrnicsType> types;
-        private ObservableCollection<Manufacturer> manufacturers;
+        private List<ElectrnicsType> types;
+        private List<Manufacturer> manufacturers;
         private SortParameter selectedSort;
         private Electronic selectedElectronic;
         private Category category;
@@ -51,11 +50,13 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
         #region Properties
         public RelayCommand ChangePageCommand { get; set; }
+        public RelayCommand ToFirstPageCommand { get; set; }
+        public RelayCommand ToLastPageCommand { get; set; }
         public ObservableCollection<int> DisplayedPagesNumbers { get => displayedPagesNumbers; set { displayedPagesNumbers = value; OnPropertyChanged(); } }
-        public ObservableCollection<int> PagesNumbers { get => pagesNumbers; set { pagesNumbers = value; OnPropertyChanged(); } }
-        public ObservableCollection<Electronic> Electronics { get => electronics; set { electronics = value; OnPropertyChanged(); } }
+        public List<int> PagesNumbers { get => pagesNumbers; set { pagesNumbers = value; OnPropertyChanged(); } }
+        public List<Electronic> Electronics { get => electronics; set { electronics = value; OnPropertyChanged(); } }
         public ObservableCollection<Electronic> DisplayedElectronics { get => displayedElectronics; set { displayedElectronics = value; OnPropertyChanged(); } }
-        public ObservableCollection<ElectrnicsType> Types
+        public List<ElectrnicsType> Types
         {
             get => types;
             set
@@ -64,7 +65,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 OnPropertyChanged();
             }
         }
-        public ObservableCollection<Manufacturer> Manufacturers
+        public List<Manufacturer> Manufacturers
         {
             get => manufacturers;
             set
@@ -125,11 +126,12 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public int SelectedPageNumber
         {
             get { return selectedPageNumber; }
-            set 
-            { 
-                selectedPageNumber = value;  
+            set
+            {
+                selectedPageNumber = value;
 
                 OnPropertyChanged();
+
                 //OnPropertyChanged(nameof(DisplayedPagesNumbers);
             }
         }
@@ -154,11 +156,40 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             selectedPageNumber = 1;
             search = string.Empty;
             ChangePageCommand = new RelayCommand(ChangePage);
+            ToFirstPageCommand = new RelayCommand(ToFirstPage);
+            ToLastPageCommand = new RelayCommand(ToLastPage);
             EmptyVisibility = Visibility.Hidden;
+        }
+
+        private async void ToLastPage(object obj)
+        {
+            SelectedPageNumber = PagesNumbers.LastOrDefault();
+
+            await Task.Run(RefrashPaginator);
+            OnPropertyChanged(nameof(SelectedPageNumber));
+        }
+
+        private async void ToFirstPage(object obj)
+        {
+            SelectedPageNumber = PagesNumbers.FirstOrDefault();
+
+            await Task.Run(RefrashPaginator);
+            OnPropertyChanged(nameof(SelectedPageNumber));
         }
 
         private async void ChangePage(object obj)
         {
+            if(obj != null)
+            {
+                if(Convert.ToInt32(obj) == 0)
+                {
+                    SelectedPageNumber = 1;
+                }
+                else if(Convert.ToInt32(obj) == 1)
+                {
+                    SelectedPageNumber = MaxPage();
+                }
+            }
             await Task.Run(RefrashPaginator);
             await Task.Run(RefreshElectronics);
         }
@@ -193,17 +224,36 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             var response = (RestResponse)await ApiService.GetRequestWithParameter("api/ElectrnicsTypes", "categoryId", CurrentCategory.Id);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Types = JsonConvert.DeserializeObject<ObservableCollection<ElectrnicsType>>(response.Content);
+                Types = JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content);
+                foreach (var item in Types)
+                {
+                    item.OnSelectionChanged += Type_OnSelectionChanged1;
+                }
             }
+
         }
+
 
         private async void LoadManufacturers()
         {
             var response = (RestResponse)await ApiService.GetRequestWithParameter("api/Manufacturers", "categoryId", CurrentCategory.Id);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Manufacturers = JsonConvert.DeserializeObject<ObservableCollection<Manufacturer>>(response.Content);
+                Manufacturers = JsonConvert.DeserializeObject<List<Manufacturer>>(response.Content);
+                foreach (var item in Manufacturers)
+                {
+                    item.OnSelectionChanged += Manufacturer_OnSelectionChanged;
+                }
             }
+        }
+
+        private async void Manufacturer_OnSelectionChanged(object sender, EventArgs e)
+        {
+            await Task.Run(RefreshElectronics);
+        }
+        private async void Type_OnSelectionChanged1(object sender, EventArgs e)
+        {
+            await Task.Run(RefreshElectronics);
         }
 
         private async void LoadElectronics()
@@ -211,17 +261,16 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             var response = (RestResponse)await ApiService.GetRequestWithParameter($"api/Electronics", "categoryId", CurrentCategory.Id);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Electronics = JsonConvert.DeserializeObject<ObservableCollection<Electronic>>(response.Content);
-                DisplayedElectronics = Electronics;
+                Electronics = JsonConvert.DeserializeObject<List<Electronic>>(response.Content);
+
 
                 LoadPages();
                 DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers.Take(maxDisplayedPages));
-                RefreshElectronics();
             }
         }
         private void LoadPages()
         {
-            PagesNumbers = new ObservableCollection<int>();
+            PagesNumbers = new List<int>();
             var max = MaxPage();
             for (int i = 0; i < max; i++)
             {
@@ -245,40 +294,32 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         /// </summary>
         private void RefreshElectronics()
         {
-            var list = SortElectronics(Electronics).ToList();
-            list = list.Where(p => p.Model.Contains(Search)).ToList();
+            var list = SortElectronics(Electronics);
+            list = list.Where(p => p.Model.Contains(Search));
 
             var selectedTypes = Types.Where(p => p.IsSelected);
 
             if (selectedTypes.Count() > 0)
             {
-                foreach (var item in list.ToArray())
-                {
-                    if (selectedTypes.FirstOrDefault(p => p.Name.Equals(item.Type.Name)) == null)
-                        list.Remove(item);
-                    else continue;
-                }
+                list = list.Where(p => selectedTypes.Contains(selectedTypes.FirstOrDefault(g => g.TypeId == p.TypeId)));
             }
 
             var selectedManufacturers = Manufacturers.Where(p => p.IsSelected);
 
             if (selectedManufacturers.Count() > 0)
             {
-                foreach (var item in list.ToArray())
-                {
-                    if (selectedManufacturers.FirstOrDefault(p => p.Name.Equals(item.Manufacturer.Name)) == null)
-                        list.Remove(item);
-                    else continue;
-                }
+                list = list.Where(p => selectedManufacturers.Contains(selectedManufacturers.FirstOrDefault(g => g.ManufacturerId == p.ManufactrurerId))).ToList();
             }
 
             if (MaxPrice > 0)
-                list = list.Where(p => p.Price >= MinPrice && p.Price <= MaxPrice).ToList();
+                list = list.Where(p => p.Price >= MinPrice && p.Price <= MaxPrice);
 
             list = list.Skip((SelectedPageNumber - 1) * itemsPerPage)
-                .Take(itemsPerPage).ToList();
-
+                .Take(itemsPerPage);
+           
             DisplayedElectronics = new ObservableCollection<Electronic>(list);
+       
+            //list.Clear();
             RefreshPages();
 
             if (DisplayedElectronics.Count <= 0)
@@ -317,12 +358,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
             if (selectedTypes.Count() > 0)
             {
-                foreach (var item in list.ToArray())
-                {
-                    if (selectedTypes.FirstOrDefault(p => p.Name.Equals(item.Type.Name)) == null)
-                        list.Remove(item);
-                    else continue;
-                }
+                list = list.Where(p => selectedTypes.Contains(selectedTypes.FirstOrDefault(g => g.TypeId == p.TypeId))).ToList();
             }
             var selectedManufacturers = new List<Manufacturer>();
 
@@ -331,17 +367,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
             if (selectedManufacturers.Count() > 0)
             {
-                foreach (var item in list.ToArray())
-                {
-                    if (selectedManufacturers.FirstOrDefault(p => p.Name.Equals(item.Manufacturer.Name)) == null)
-                    {
-                        list.Remove(item);
-                    }
-                    else
-                    {
-                        continue;
-                    }
-                }
+                list = list.Where(p => selectedManufacturers.Contains(selectedManufacturers.FirstOrDefault(g => g.ManufacturerId == p.ManufactrurerId))).ToList();
             }
 
             if (MaxPrice > 0)

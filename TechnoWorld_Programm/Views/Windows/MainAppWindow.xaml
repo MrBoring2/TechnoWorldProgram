@@ -32,9 +32,7 @@
         </Grid.RowDefinitions>
         <materialDesign:ColorZone Mode="PrimaryMid" HorizontalAlignment="Stretch">
             <Grid>
-                <Grid Height="30" Background="DarkOrange">
-
-                </Grid>
+                <Grid Height="30" Background="DarkOrange"/>
                 <!--<materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Left"/>-->
             </Grid>
         </materialDesign:ColorZone>

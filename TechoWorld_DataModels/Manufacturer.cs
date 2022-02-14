@@ -5,8 +5,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TechoWorld_DataModels
 {
-    public partial class Manufacturer
+    public partial class Manufacturer : ISelectionEntity
     {
+        private bool isSelected;
         public Manufacturer()
         {
             Electronics = new HashSet<Electronic>();
@@ -17,6 +18,8 @@ namespace TechoWorld_DataModels
         [JsonIgnore]
         public virtual ICollection<Electronic> Electronics { get; set; }
         [NotMapped]
-        public bool IsSelected { get; set; }
+        public bool IsSelected { get => isSelected; set { isSelected = value; OnSelectionChanged?.Invoke(this, new EventArgs()); } }
+
+        public event EventHandler OnSelectionChanged;
     }
 }

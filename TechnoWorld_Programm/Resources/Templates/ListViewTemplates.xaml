@@ -12,7 +12,9 @@
                     <ColumnDefinition Width="30*"/>
 
                 </Grid.ColumnDefinitions>
-                <Image Grid.Column="0" Margin="5" Source="{Binding Image}" RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left"/>
+                <Image Grid.Column="0" Margin="5" Source="{Binding Image, IsAsync=True, Converter={StaticResource image}}" RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left">
+                    
+                </Image>
                 <StackPanel Grid.Column="1" Orientation="Vertical">
                     <TextBlock Text="{Binding Model}" FontSize="20" FontWeight="Bold"  Margin="10" TextWrapping="Wrap"/>
                     <TextBlock Text="{Binding Manufacturer.Name}" Margin="10,0,0,0" FontSize="14" VerticalAlignment="Bottom"/>

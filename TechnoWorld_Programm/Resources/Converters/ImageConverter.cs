@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
+using System.Windows.Media.Imaging;
 
 namespace TechnoWorld_Terminal.Resources.Converters
 {
@@ -13,16 +14,23 @@ namespace TechnoWorld_Terminal.Resources.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value as byte[] == null)
+            var image = new BitmapImage();
+            using (var ms = new MemoryStream(value as byte[]))
             {
-                return File.ReadAllBytes("/TechnoWorld_Programm;component/Resources/logo.jpg");
+                image.BeginInit();
+                image.CacheOption = BitmapCacheOption.OnLoad;
+                image.DecodePixelHeight = 80;
+                image.StreamSource = ms;
+                image.EndInit();
             }
-            else return value;
-        }
 
+            image.Freeze();
+            return image;
+        }
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             throw new NotImplementedException();
         }
     }
 }
+

@@ -30,6 +30,5 @@ namespace TechnoWorld_Terminal.Views.Windows
             InitializeComponent();
            
         }
-
     }
 }
