@@ -25,13 +25,17 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         public MainAppWindowVM()
         {
             ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
-    
+
             WindowLoadedCommand = new RelayCommand(WindowLoaded);
         }
-        //private void RegisterEvents()
-        //{
-        //    (GetPageInstance(typeof(CategoriesPageVM)) as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;
-        //}
+        private void RegisterEvents()
+        {
+            (PageNavigation.GetPage(typeof(CategoriesPageVM)).DataContext as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;        }
+
+        private void MainAppWindowVM_onOpenCategory(Category category)
+        {
+            (PageNavigation.GetPage(typeof(ElectronicsListPageVM)).DataContext as ElectronicsListPageVM).CurrentCategory = category;
+        }
 
         //private void MainAppWindowVM_onOpenCategory(Category category)
         //{
@@ -55,7 +59,8 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         }
         private void WindowLoaded(object obj)
         {
-            PageNavigation.Navigate(new CategoriesPageVM());
+            PageNavigation.Navigate(typeof(CategoriesPageVM));
+            RegisterEvents();
         }
     }
 }

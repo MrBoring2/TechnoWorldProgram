@@ -22,7 +22,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             LoadCategories();
         }
         public ObservableCollection<Category> Categories { get => categories; set { categories = value; OnPropertyChanged(); } }
-        public Category SelectedCategory { get => selectedCategory; set { selectedCategory = value; OnPropertyChanged(); onOpenCategory?.Invoke(SelectedCategory); } }
+        public Category SelectedCategory { get => selectedCategory; set { selectedCategory = value; OnPropertyChanged(); onOpenCategory?.Invoke(SelectedCategory); PageNavigation.Navigate(typeof(ElectronicsListPageVM)); } }
 
         private async void LoadCategories()
         {

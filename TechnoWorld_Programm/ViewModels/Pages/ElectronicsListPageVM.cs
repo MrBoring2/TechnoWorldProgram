@@ -43,10 +43,6 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public ElectronicsListPageVM()
         {
             InitializeFields();
-            // OnPropertyChanged(nameof(Manufacturers));
-            // OnPropertyChanged(nameof(DisplayedElectronics));
-            // OnPropertyChanged(nameof(DisplayedPagesNumbers));
-            //OnPropertyChanged(nameof(SortParameters));
         }
 
         #region Properties
@@ -54,6 +50,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public RelayCommand ToFirstPageCommand { get; set; }
         public RelayCommand ToLastPageCommand { get; set; }
         public RelayCommand ConfirmSortCommand { get; set; }
+        public RelayCommand BackToCategoriesCommand { get; set; }
         public RelayCommand SelectElectrinicsCommand { get; set; }
         public ObservableCollection<int> DisplayedPagesNumbers { get => displayedPagesNumbers; set { displayedPagesNumbers = value; OnPropertyChanged(); } }
         public List<int> PagesNumbers { get => pagesNumbers; set { pagesNumbers = value; OnPropertyChanged(); } }
@@ -83,13 +80,23 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             get => category;
             set
             {
-                category = value;
+                if (value != category)
+                {
+                    category = value;
+                }
                 OnPropertyChanged();
                 LoadData();
             }
         }
         public ObservableCollection<SortParameter> SortParameters { get; set; }
-        public SortParameter SelectedSort { get => selectedSort; set { selectedSort = value; OnPropertyChanged(); RefreshElectronics(); } }
+        public SortParameter SelectedSort
+        {
+            get => selectedSort;
+            set
+            {
+                selectedSort = value ?? SortParameters.FirstOrDefault(); RefreshElectronics(); OnPropertyChanged();
+            }
+        }
 
         public Electronic SelectedElectronic { get => selectedElectronic; set { selectedElectronic = value; OnPropertyChanged(); } }
 
@@ -154,16 +161,20 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             currentPage = 0;
             itemsPerPage = 5;
             maxDisplayedPages = 5;
-            selectedPageNumber = 1;
             search = string.Empty;
             ChangePageCommand = new RelayCommand(ChangePage);
             ToFirstPageCommand = new RelayCommand(ToFirstPage);
             ToLastPageCommand = new RelayCommand(ToLastPage);
             ConfirmSortCommand = new RelayCommand(ConfirmSort);
             SelectElectrinicsCommand = new RelayCommand(SelectElectronics);
+            BackToCategoriesCommand = new RelayCommand(BackToCategories);
             EmptyVisibility = Visibility.Hidden;
         }
 
+        private void BackToCategories(object obj)
+        {
+            PageNavigation.Navigate(typeof(CategoriesPageVM));
+        }
 
         private async void ToLastPage(object obj)
         {
@@ -201,7 +212,8 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             if (DisplayedPagesNumbers.Count > 0)
             {
                 RefrashPaginator();
-                RefreshElectronics();
+                DisplayedElectronics = new ObservableCollection<Electronic>(Electronics.Skip((SelectedPageNumber - 1) * itemsPerPage)
+                .Take(itemsPerPage).ToList());
             }
         }
 
@@ -209,7 +221,10 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         {
             await Task.Run(() => LoadManufacturers());
             await Task.Run(() => LoadTypes());
-            await Task.Run(() => LoadSortParams());
+            if (SortParameters == null)
+            {
+                await Task.Run(() => LoadSortParams());
+            }
             await Task.Run(() => LoadElectronics());
             OnPropertyChanged(nameof(SortParameters));
             OnPropertyChanged(nameof(SelectedSort));
@@ -235,6 +250,8 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             }
 
             selectedSort = SortParameters.FirstOrDefault();
+            OnPropertyChanged(nameof(SortParameters));
+            OnPropertyChanged(nameof(SelectedSort));
         }
 
         private void Sort_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -294,8 +311,14 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 Electronics = JsonConvert.DeserializeObject<List<Electronic>>(response.Content);
 
 
+                RefreshElectronics();
+
                 LoadPages();
+
                 DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers.Take(maxDisplayedPages));
+
+                selectedPageNumber = DisplayedPagesNumbers.FirstOrDefault();
+                OnPropertyChanged(nameof(SelectedPageNumber));
             }
         }
         private void LoadPages()
@@ -324,6 +347,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         /// </summary>
         private void RefreshElectronics()
         {
+
             var list = SortElectronics(Electronics);
             list = list.Where(p => p.Model.Contains(Search));
 
@@ -345,18 +369,22 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 list = list.Where(p => p.Price >= MinPrice && p.Price <= MaxPrice);
 
             list = list.Skip((SelectedPageNumber - 1) * itemsPerPage)
-                .Take(itemsPerPage);
+                .Take(itemsPerPage).ToList();
 
             if (DisplayedElectronics != null)
             {
-                DisplayedElectronics.Clear();
+                Application.Current.Dispatcher.Invoke(() => DisplayedElectronics.Clear());
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
             }
 
             DisplayedElectronics = new ObservableCollection<Electronic>(list);
 
-            RefreshPages();
+            if (PagesNumbers != null)
+            {
+
+                RefreshPages();
+            }
 
             if (DisplayedElectronics.Count <= 0)
             {

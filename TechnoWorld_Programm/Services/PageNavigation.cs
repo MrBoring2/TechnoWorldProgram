@@ -83,18 +83,18 @@ namespace TechnoWorld_Terminal.Services
 
             //page.DataContext = e.ExtraData;
         }
-        public static Page GetPage(PageVMBase pageVM)
+        public static Page GetPage(Type pageVMType)
         {
-            return pageController.GetPage(pageVM);
+            return pageController.GetPage(pageVMType);
         }
 
-        public static void Navigate(PageVMBase pageVM)
+        public static void Navigate(Type pageVMtype)
         {
-            if (Instance._navService != null && pageVM != null)
+            if (Instance._navService != null && pageVMtype != null)
             {
-                Page page = pageController.GetPage(pageVM);
+                Page page = pageController.GetPage(pageVMtype);
 
-                Instance._navService.Navigate(page, pageVM);
+                Instance._navService.Navigate(page);
             }
         }
         private void RegisterPages()
