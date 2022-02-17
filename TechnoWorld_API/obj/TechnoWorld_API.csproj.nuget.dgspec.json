@@ -1,32 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_API\\TechnoWorld_API.csproj": {}
+    "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_API\\TechnoWorld_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_API\\TechnoWorld_API.csproj": {
+    "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_API\\TechnoWorld_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_API\\TechnoWorld_API.csproj",
+        "projectUniqueName": "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_API\\TechnoWorld_API.csproj",
         "projectName": "TechnoWorld_API",
-        "projectPath": "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_API\\TechnoWorld_API.csproj",
-        "packagesPath": "C:\\Users\\MrBoring\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_API\\obj\\",
+        "projectPath": "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_API\\TechnoWorld_API.csproj",
+        "packagesPath": "C:\\Users\\user452.CHENK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MrBoring\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\user452.CHENK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +43,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
@@ -97,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -72,9 +72,18 @@
                             <Expander Style="{StaticResource MaterialDesignExpander}" Header="Цена" Margin="0,0,0,0" Background="Transparent">
                                 <Border BorderThickness="1" CornerRadius="5">
                                     <StackPanel Orientation="Vertical" Margin="5">
-                                        <TextBlock Text="От" Margin="5,5,5,0"/>
+                                        <Grid>
+                                            <StackPanel HorizontalAlignment="Left" Orientation="Vertical">
+                                                <TextBlock Text="От" Margin="0,0"/>
+                                                <TextBox Text="{Binding MinPrice, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource MaterialDesignTextBoxBase}" VerticalAlignment="Top" Margin="0,5" Width="90"/>
+                                            </StackPanel>
+                                            <StackPanel HorizontalAlignment="Right">
+                                                <TextBlock Text="До" Margin="0,0"/>
+                                                <TextBox VerticalAlignment="Top" Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" Width="90"/>
+                                            </StackPanel>
+                                        </Grid>
                                         
-                                        <mah:RangeSlider Height="20" LargeChange="100" LowerValue="40" Minimum="1" Maximum="400000" AutoToolTipPlacement="TopLeft"  Orientation="Horizontal" SmallChange="1" UpperValue="60">
+                                        <mah:RangeSlider Height="20" LargeChange="100" LowerValue="{Binding MinPrice}" ExtendedMode="True" UpperValue="{Binding MaxPrice}" Minimum="1" Maximum="400000" AutoToolTipPlacement="TopLeft" IsMoveToPointEnabled="True"  Orientation="Horizontal" SmallChange="1">
                                             <mah:RangeSlider.AutoToolTipRangeValuesTemplate>
                                                 <DataTemplate DataType="mah:RangeSliderAutoTooltipValues">
                                                     <UniformGrid Columns="2" Rows="2">
@@ -93,7 +102,7 @@
                                         <TextBlock Text="До" Margin="5,0,5,0"/>
                                         <Slider Minimum="0" Maximum="1000000" Value="{Binding MaxPrice}" Margin="5,0,5,0"/>
                                         <TextBox Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}" Margin="5,0,5,5"/>-->
-                                        <Button Content="Применить" Background="Orange" BorderBrush="Orange" Margin="5" Click="Button_Click"/>
+                                        <Button Content="Применить" Background="Orange" Command="{Binding ConfirmSortCommand}" BorderBrush="Orange" Margin="5" />
                                     </StackPanel>
                                 </Border>
                             </Expander>
@@ -106,7 +115,7 @@
                                         <ComboBox ItemsSource="{Binding SortParameters}" Margin="5" SelectedItem="{Binding SelectedSort}" DisplayMemberPath="Title"/>
                                         <Grid>
                                             <materialDesign:PackIcon VerticalAlignment="Center" Kind="OrderAlphabeticalAscending"/>
-                                            <CheckBox Margin="20,0,5,0" VerticalAlignment="Center" x:Name="isDesceningCheck" Content="По убыванию" Checked="isDesceningCheck_Changed" Unchecked="isDesceningCheck_Changed" IsChecked="{Binding SelectedSort.IsDescening}"/>
+                                            <CheckBox Margin="20,0,5,0" VerticalAlignment="Center" x:Name="isDesceningCheck" Content="По убыванию" IsChecked="{Binding SelectedSort.IsDescening}"/>
                                         </Grid>
                                     </StackPanel>
                                 </Border>
@@ -118,19 +127,20 @@
         </Grid>
         <materialDesign:Card Margin="5">
             <Grid>
-                <ListView HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
+                <ListView HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic, Mode=TwoWay}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics, Mode=TwoWay}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                             <Setter Property="VerticalContentAlignment" Value="Stretch"/>
                         </Style>
+                        
                     </ListView.ItemContainerStyle>
                     
                 </ListView>
                 <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Margin="10">
                     <Image Source="/TechnoWorld_Terminal;component/Resources/empty.png" Width="280" Height="190"/>
                     <TextBlock  Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <TextBlock  Text="Выберите другие критерии или вроверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock  Text="Выберите другие критерии или проверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </StackPanel>
             </Grid>
         </materialDesign:Card>
