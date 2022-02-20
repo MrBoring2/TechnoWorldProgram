@@ -22,10 +22,9 @@ using TechnoWorld_Terminal.Models;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
-    public class MainAppWindowVM : WindowWithPagesVMBase
+    public class MainAppWindowVM : WindowVMBase
     {
         protected List<PageVMBase> _pageVMs;
-        private ItemMenu selectedMenuItem;
         public MainAppWindowVM()
         {
             try
@@ -54,6 +53,11 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
                 .Build();
 
             ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
+<<<<<<< HEAD
+=======
+
+            WindowLoadedCommand = new RelayCommand(WindowLoaded);
+>>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
         }
 
         private async void Authorize()
@@ -76,53 +80,41 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
 
         private void RegisterEvents()
         {
-            (GetPageInstance(typeof(CategoriesPageVM)) as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;
-        }
+            (PageNavigation.GetPage(typeof(CategoriesPageVM)).DataContext as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;        }
 
         private void MainAppWindowVM_onOpenCategory(Category category)
         {
-            (GetPageInstance(typeof(ElectronicsListPageVM)) as ElectronicsListPageVM).CurrentCategory = category;
-            SwitchPage(GetPageInstance(typeof(ElectronicsListPageVM)));
+            (PageNavigation.GetPage(typeof(ElectronicsListPageVM)).DataContext as ElectronicsListPageVM).CurrentCategory = category;
         }
 
-        public List<PageVMBase> PageVMs
-        {
-            get
-            {
-                if (_pageVMs == null)
-                    _pageVMs = new List<PageVMBase>();
-                return _pageVMs;
-            }
-        }
-        public ItemMenu SelectedMenuItem
-        {
-            get
-            {
-                return selectedMenuItem;
-            }
-            set
-            {
-                selectedMenuItem = value;
-                if (SelectedMenuItem.Title.Equals(OptionalMenuItems.FirstOrDefault().Title))
-                {
-                    Exit();
-                }
-                SwitchPage(SelectedMenuItem.TargetPageVM);
-                OnPropertyChanged();
-            }
-        }
-        public ObservableCollection<ItemMenu> MenuItems { get; set; }
-        public ObservableCollection<ItemMenu> OptionalMenuItems { get; set; }
-        private void RegisterPages()
-        {
-            RegisterPageWithVM<ElectronicsListPageVM, ElectronicsListPage>();
-            RegisterPageWithVM<CartPageVM, CartPage>();
-            RegisterPageWithVM<CategoriesPageVM, CategoriesPage>();
-        }
+        //private void MainAppWindowVM_onOpenCategory(Category category)
+        //{
+        //    (GetPageInstance(typeof(ElectronicsListPageVM)) as ElectronicsListPageVM).CurrentCategory = category;
+        //    //SwitchPage(GetPageInstance(typeof(ElectronicsListPageVM)));
+        //}
+        public RelayCommand WindowLoadedCommand { get; set; }
+        //public List<PageVMBase> PageVMs
+        //{
+        //    get
+        //    {
+        //        if (_pageVMs == null)
+        //            _pageVMs = new List<PageVMBase>();
+        //        return _pageVMs;
+        //    }
+        //}
+     
         private void Exit()
         {
             WindowNavigation.Instance.CloseWindow(this);
         }
+<<<<<<< HEAD
 
+=======
+        private void WindowLoaded(object obj)
+        {
+            PageNavigation.Navigate(typeof(CategoriesPageVM));
+            RegisterEvents();
+        }
+>>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
     }
 }
