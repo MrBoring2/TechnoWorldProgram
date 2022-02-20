@@ -49,27 +49,27 @@ namespace TechnoWorld_Terminal.Services
         private static IRestRequest CreateRequest(string url, Method httpMethod)
         {
             var restReqeust = new RestRequest(url, httpMethod);
-            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Token);
+            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Instance.Token);
             return restReqeust;
         }
 
         private static IRestRequest CreateRequest(string url, Method httpMethod, int id)
         {
             var restReqeust = new RestRequest($"{url}/{id}", httpMethod);
-            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Token);
+            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Instance.Token);
             return restReqeust;
         }
         private static IRestRequest CreateRequestWithParameter(string url, Method httpMethod, string parameterName, object parameter)
         {
             var restReqeust = new RestRequest(url, httpMethod);
-            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Token);
+            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Instance.Token);
             restReqeust.AddParameter(parameterName, parameter);
             return restReqeust;
         }
         private static IRestRequest CreateRequest(string url, Method httpMethod, object data)
         {
             var restReqeust = new RestRequest(url, httpMethod);
-            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Token);
+            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Instance.Token);
             restReqeust.AddJsonBody(data);
             return restReqeust;
         }

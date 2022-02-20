@@ -28,5 +28,6 @@
                 </ItemsPanelTemplate>
             </ListView.ItemsPanel>
         </ListView>
+        <Button Content="Тест группы" HorizontalAlignment="Left" Margin="10,638,0,0" VerticalAlignment="Top" Cursor="Hand" Command="{Binding TestCommand}"/>
     </Grid>
 </Page>

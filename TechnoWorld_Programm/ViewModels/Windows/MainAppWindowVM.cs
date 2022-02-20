@@ -27,15 +27,10 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         protected List<PageVMBase> _pageVMs;
         public MainAppWindowVM()
         {
-            try
-            {
-                Initialize();
-                Authorize();
-            }
-            catch (Exception ex)
-            {
 
-            }
+            Initialize();
+            Authorize();
+
 
         }
 
@@ -45,7 +40,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
                 .WithUrl("http://localhost:29320/technoWorldHub",
                 options =>
                 {
-                    options.AccessTokenProvider = () => Task.FromResult(ClientService.Token);
+                    options.AccessTokenProvider = () => Task.FromResult(ClientService.Instance.Token);
                 })
                 .Build();
 
@@ -56,7 +51,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
 
         }
 
-        private async void Authorize()
+        private void Authorize()
         {
             try
             {
@@ -64,8 +59,8 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
                 if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     var data = JsonConvert.DeserializeObject<TokenModel>(response.Result.Content);
-                    ClientService.Token = data.access_token;
-                    //ClientService.Instance.HubConnection.StartAsync();
+                    ClientService.Instance.SetClient(data.user_name, data.access_token);
+                    ClientService.Instance.HubConnection.StartAsync();
                 }
             }
             catch (Exception ex)

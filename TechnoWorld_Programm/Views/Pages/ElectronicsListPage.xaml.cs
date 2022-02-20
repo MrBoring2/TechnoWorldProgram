@@ -24,6 +24,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TechnoWorld_Terminal.Views.Windows;
+using TechnoWorld_Terminal.Services;
 
 namespace TechnoWorld_Terminal.Views.Pages
 {
@@ -120,5 +121,6 @@ namespace TechnoWorld_Terminal.Views.Pages
             //RefreshPages();
         }
 
+        
     }
 }

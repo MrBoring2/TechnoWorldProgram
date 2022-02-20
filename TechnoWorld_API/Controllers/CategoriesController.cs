@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using BNS_API.Data;
 using TechoWorld_DataModels;
 using Microsoft.AspNetCore.Authorization;
+using TechnoWorld_API.Services;
+using Microsoft.AspNetCore.SignalR;
+using TechnoWorld_API.Helpers;
 
 namespace TechnoWorld_API.Controllers
 {
@@ -16,17 +19,21 @@ namespace TechnoWorld_API.Controllers
     [Authorize]
     public class CategoriesController : ControllerBase
     {
+        private readonly IHubContext<TechnoWorldHub> _hubContext;
         private readonly BNSContext _context;
 
-        public CategoriesController(BNSContext context)
+        public CategoriesController(BNSContext context, IHubContext<TechnoWorldHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
+            
         }
 
         // GET: api/Categories
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
+            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("SendHello", "Привет");
             return await _context.Categories.ToListAsync();
         }
 

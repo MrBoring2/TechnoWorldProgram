@@ -16,7 +16,7 @@ namespace TechnoWorld_Terminal.Services
     {
         
         private static ClientService instance;
-        public static string Token { get; set; }
+        public string Token { get; set; }
         private ObservableCollection<CartItem> cart;
 
         private ClientService() { Cart = new ObservableCollection<CartItem>(); }
