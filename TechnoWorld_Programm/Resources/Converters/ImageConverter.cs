@@ -24,6 +24,7 @@ namespace TechnoWorld_Terminal.Resources.Converters
                 image.EndInit();
             }
 
+            image.Freeze();
             return image;
         }
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
