@@ -1,4 +1,5 @@
-﻿using RestSharp;
+﻿using Microsoft.AspNetCore.SignalR.Client;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,12 +14,14 @@ namespace TechnoWorld_Terminal.Services
 {
     public class ClientService : INotifyPropertyChanged
     {
+        
         private static ClientService instance;
-
+        public static string Token { get; set; }
         private ObservableCollection<CartItem> cart;
 
         private ClientService() { Cart = new ObservableCollection<CartItem>(); }
         public RestClient RestClient { get; set; }
+        public HubConnection HubConnection { get; set; }
         public static ClientService Instance 
         { 
             get
@@ -36,6 +39,10 @@ namespace TechnoWorld_Terminal.Services
         public void OnPropertChanged([CallerMemberName] string prop = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+        }
+        public void SetClient(string user_name, string token)
+        {
+            Token = token;
         }
     }
 }

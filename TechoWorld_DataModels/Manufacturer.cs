@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TechoWorld_DataModels
 {
-    public partial class Manufacturer : ISelectionEntity
+    public partial class Manufacturer : BaseEntity, ISelectionEntity
     {
         private bool isSelected;
         public Manufacturer()

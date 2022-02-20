@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace TechoWorld_DataModels
 {
-    public partial class ElectronicsToDelivery
+    public partial class ElectronicsToDelivery : BaseEntity
     {
         public int ElectronicsId { get; set; }
         public int DeliveryId { get; set; }

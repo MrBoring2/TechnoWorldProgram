@@ -16,6 +16,9 @@ using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Views.Pages;
 using System.Windows;
 using TechoWorld_DataModels;
+using Microsoft.AspNetCore.SignalR.Client;
+using Newtonsoft.Json;
+using TechnoWorld_Terminal.Models;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
@@ -25,11 +28,52 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         private ItemMenu selectedMenuItem;
         public MainAppWindowVM()
         {
-            ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
-            RegisterPages();
-            RegisterEvents();
-            SwitchPage(GetPageInstance(typeof(CategoriesPageVM)));
+            try
+            {
+                Initialize();
+                Authorize();
+                RegisterPages();
+                RegisterEvents();
+                SwitchPage(GetPageInstance(typeof(CategoriesPageVM)));
+            }
+            catch (Exception ex)
+            {
+
+            }
+
         }
+
+        private void Initialize()
+        {
+            ClientService.Instance.HubConnection = new HubConnectionBuilder()
+                .WithUrl("http://localhost:29320/technoWorldHub",
+                options =>
+                {
+                    options.AccessTokenProvider = () => Task.FromResult(ClientService.Token);
+                })
+                .Build();
+
+            ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
+        }
+
+        private async void Authorize()
+        {
+            try
+            {
+                var response = ApiService.Authorize();
+                if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var data = JsonConvert.DeserializeObject<TokenModel>(response.Result.Content);
+                    ClientService.Token = data.access_token;
+                    //ClientService.Instance.HubConnection.StartAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
         private void RegisterEvents()
         {
             (GetPageInstance(typeof(CategoriesPageVM)) as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;
@@ -79,6 +123,6 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         {
             WindowNavigation.Instance.CloseWindow(this);
         }
-        
+
     }
 }

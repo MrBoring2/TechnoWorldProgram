@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace TechoWorld_DataModels
 {
-    public partial class Post
+    public partial class Post : BaseEntity
     {
         public Post()
         {

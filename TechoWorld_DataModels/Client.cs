@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace TechoWorld_DataModels
 {
-    public partial class Client
+    public partial class Client : BaseEntity
     {
         public Client()
         {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace TechoWorld_DataModels
 {
-    public partial class Role
+    public partial class Role : BaseEntity
     {
         public Role()
         {

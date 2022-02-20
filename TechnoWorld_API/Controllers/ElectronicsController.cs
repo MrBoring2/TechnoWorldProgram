@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BNS_API.Data;
 using TechoWorld_DataModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BNS_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ElectronicsController : ControllerBase
     {
         private readonly BNSContext _context;

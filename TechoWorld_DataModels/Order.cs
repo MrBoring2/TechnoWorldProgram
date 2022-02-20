@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace TechoWorld_DataModels
 {
-    public partial class Order
+    public partial class Order : BaseEntity
     {
         public Order()
         {

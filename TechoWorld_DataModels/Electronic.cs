@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.IO;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Windows.Media.Imaging;
 
 namespace TechoWorld_DataModels
 {
-    public partial class Electronic
+    public partial class Electronic : BaseEntity
     {
         public Electronic()
         {
@@ -47,7 +48,7 @@ namespace TechoWorld_DataModels
                 return ElectronicsToStorages.FirstOrDefault().Quantity;
             }
         }
-     
+
         public object GetProperty(string property)
         {
             return GetType().GetProperty(property).GetValue(this);

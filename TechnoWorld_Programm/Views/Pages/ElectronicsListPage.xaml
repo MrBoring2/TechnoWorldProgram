@@ -5,7 +5,6 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TechnoWorld_Terminal.Views.Pages"
-      xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
       xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
       mc:Ignorable="d" 
       xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
@@ -47,7 +46,7 @@
                                     <ListBox HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  ItemsSource="{Binding Types}" BorderThickness="0" Margin="5">
                                         <ListBox.ItemTemplate>
                                             <DataTemplate DataType="{x:Type ListBoxItem}">
-                                                <CheckBox x:Name="TypeSelect" Checked="TypeSelect_Changed" Unchecked="TypeSelect_Changed" Content="{Binding Name}" IsChecked="{Binding IsSelected}" Height="20"/>
+                                                <CheckBox x:Name="TypeSelect" Content="{Binding Name}" IsChecked="{Binding IsSelected}" Height="20"/>
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
@@ -118,7 +117,7 @@
         </Grid>
         <materialDesign:Card Margin="5">
             <Grid>
-                <ListView HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
+                <ListView x:Name="dd" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -128,9 +127,9 @@
                     
                 </ListView>
                 <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Margin="10">
-                    <Image Source="/TechnoWorld_Terminal;component/Resources/empty.png" Width="280" Height="190"/>
-                    <TextBlock  Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <TextBlock  Text="Выберите другие критерии или вроверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="/Resources/empty.png" Width="280" Height="190"/>
+                    <TextBlock Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="Выберите другие критерии или вроверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </StackPanel>
             </Grid>
         </materialDesign:Card>

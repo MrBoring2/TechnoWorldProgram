@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TechoWorld_DataModels
 {
-    public partial class ElectrnicsType : ISelectionEntity
+    public partial class ElectrnicsType : BaseEntity, ISelectionEntity
     {
         private bool isSelected;
         public ElectrnicsType()

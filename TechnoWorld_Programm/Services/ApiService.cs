@@ -10,6 +10,20 @@ namespace TechnoWorld_Terminal.Services
     public class ApiService
     {
         public const string apiUrl = "http://localhost:29320/";
+        public static Task<IRestResponse> Authorize()
+        {
+            try
+            {
+                RestRequest request = new RestRequest($"{apiUrl}terminalToken", Method.POST);
+                request.AddJsonBody(new { roleName = "terminalUser", terminalName = $"terminal_{Guid.NewGuid()}" });
+                var response = ClientService.Instance.RestClient.ExecuteAsync(request);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
         public async static Task<IRestResponse> GetRequest(string url)
         {
             var response = await ClientService.Instance.RestClient.ExecuteAsync(CreateRequest(url, Method.GET));
@@ -34,20 +48,30 @@ namespace TechnoWorld_Terminal.Services
 
         private static IRestRequest CreateRequest(string url, Method httpMethod)
         {
-            return new RestRequest(url, httpMethod);
+            var restReqeust = new RestRequest(url, httpMethod);
+            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Token);
+            return restReqeust;
         }
 
         private static IRestRequest CreateRequest(string url, Method httpMethod, int id)
         {
-            return new RestRequest($"{url}/{id}", httpMethod);
+            var restReqeust = new RestRequest($"{url}/{id}", httpMethod);
+            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Token);
+            return restReqeust;
         }
         private static IRestRequest CreateRequestWithParameter(string url, Method httpMethod, string parameterName, object parameter)
         {
-            return new RestRequest(url, httpMethod).AddParameter(parameterName, parameter);
+            var restReqeust = new RestRequest(url, httpMethod);
+            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Token);
+            restReqeust.AddParameter(parameterName, parameter);
+            return restReqeust;
         }
         private static IRestRequest CreateRequest(string url, Method httpMethod, object data)
         {
-            return new RestRequest(url, httpMethod).AddJsonBody(data);
+            var restReqeust = new RestRequest(url, httpMethod);
+            restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Token);
+            restReqeust.AddJsonBody(data);
+            return restReqeust;
         }
     }
 }

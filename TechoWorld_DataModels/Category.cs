@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace TechoWorld_DataModels
 {
-    public class Category
+    public class Category : BaseEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }

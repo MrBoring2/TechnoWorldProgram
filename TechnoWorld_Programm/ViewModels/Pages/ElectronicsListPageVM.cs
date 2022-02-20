@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Threading;
 using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Models;
 using TechnoWorld_Terminal.Services;
@@ -20,7 +21,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         private List<int> pagesNumbers;
         private ObservableCollection<int> displayedPagesNumbers;
         private List<Electronic> electronics;
-        private ObservableCollection<Electronic> displayedElectronics;
+        private IEnumerable<Electronic> displayedElectronics;
 
         private List<ElectrnicsType> types;
         private List<Manufacturer> manufacturers;
@@ -55,7 +56,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public ObservableCollection<int> DisplayedPagesNumbers { get => displayedPagesNumbers; set { displayedPagesNumbers = value; OnPropertyChanged(); } }
         public List<int> PagesNumbers { get => pagesNumbers; set { pagesNumbers = value; OnPropertyChanged(); } }
         public List<Electronic> Electronics { get => electronics; set { electronics = value; OnPropertyChanged(); } }
-        public ObservableCollection<Electronic> DisplayedElectronics { get => displayedElectronics; set { displayedElectronics = value; OnPropertyChanged(); } }
+        public IEnumerable<Electronic> DisplayedElectronics { get => displayedElectronics; set { displayedElectronics = value; OnPropertyChanged(); } }
         public List<ElectrnicsType> Types
         {
             get => types;
@@ -179,13 +180,13 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
         private async void ChangePage(object obj)
         {
-            if(obj != null)
+            if (obj != null)
             {
-                if(Convert.ToInt32(obj) == 0)
+                if (Convert.ToInt32(obj) == 0)
                 {
                     SelectedPageNumber = 1;
                 }
-                else if(Convert.ToInt32(obj) == 1)
+                else if (Convert.ToInt32(obj) == 1)
                 {
                     SelectedPageNumber = MaxPage();
                 }
@@ -286,13 +287,14 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             RefrashPaginator();
             if (SelectedPageNumber > PagesNumbers.Count)
             {
+               
                 SelectedPageNumber = DisplayedPagesNumbers.LastOrDefault();
             }
         }
         /// <summary>
         /// Обновить список электроники согласно с фильтром
         /// </summary>
-        private void RefreshElectronics()
+        private async void RefreshElectronics()
         {
             var list = SortElectronics(Electronics);
             list = list.Where(p => p.Model.Contains(Search));
@@ -308,21 +310,24 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
             if (selectedManufacturers.Count() > 0)
             {
-                list = list.Where(p => selectedManufacturers.Contains(selectedManufacturers.FirstOrDefault(g => g.ManufacturerId == p.ManufactrurerId))).ToList();
+                list = list.Where(p => selectedManufacturers.Contains(selectedManufacturers.FirstOrDefault(g => g.ManufacturerId == p.ManufactrurerId)));
             }
 
             if (MaxPrice > 0)
                 list = list.Where(p => p.Price >= MinPrice && p.Price <= MaxPrice);
 
-            list = list.Skip((SelectedPageNumber - 1) * itemsPerPage)
-                .Take(itemsPerPage);
-           
-            DisplayedElectronics = new ObservableCollection<Electronic>(list);
-       
+
+            //if (DisplayedElectronics != null)
+            //{
+            //    App.Current.Dispatcher.Invoke(() => DisplayedElectronics.Clear());
+            //}
+            DisplayedElectronics = list.Skip((SelectedPageNumber - 1) * itemsPerPage)
+               .Take(itemsPerPage);
+
             //list.Clear();
             RefreshPages();
 
-            if (DisplayedElectronics.Count <= 0)
+            if (DisplayedElectronics.Count() <= 0)
             {
                 EmptyVisibility = Visibility.Visible;
             }
@@ -381,6 +386,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         /// </summary>
         public void RefrashPaginator()
         {
+            
             if (SelectedPageNumber <= PageListAvg(DisplayedPagesNumbers))
             {
                 DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers

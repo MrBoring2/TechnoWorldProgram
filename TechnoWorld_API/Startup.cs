@@ -14,6 +14,11 @@ using System.Linq;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using TechnoWorld_API.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using TechnoWorld_API.Helpers;
+using Microsoft.AspNetCore.Http;
 
 namespace BNS_API
 {
@@ -33,9 +38,49 @@ namespace BNS_API
             services.AddControllers().AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-                options.SerializerSettings.TypeNameHandling = Newtonsoft.Json.TypeNameHandling.Objects;
-                options.SerializerSettings.TypeNameAssemblyFormatHandling = Newtonsoft.Json.TypeNameAssemblyFormatHandling.Simple;
+                //options.SerializerSettings.TypeNameHandling = Newtonsoft.Json.TypeNameHandling.Objects;
+                //options.SerializerSettings.TypeNameAssemblyFormatHandling = Newtonsoft.Json.TypeNameAssemblyFormatHandling.Simple;
             });
+            //services.AddDistributedMemoryCache();
+            //services.AddSession(options =>
+            //{
+            //    options.IdleTimeout = TimeSpan.FromMinutes(1);
+            //});
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.RequireHttpsMetadata = false;
+                    options.SaveToken = false;
+                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidIssuer = AuthOptions.ISSUER,
+                        ValidateAudience = true,
+                        ValidAudience = AuthOptions.AUDIENCE,
+                        ValidateLifetime = true,
+                        IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
+                        ValidateIssuerSigningKey = true,
+                        ClockSkew = TimeSpan.Zero
+                    };
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnMessageReceived = context =>
+                        {
+                            var accesstoken = context.Request.Query["access_token"];
+
+                            var path = context.HttpContext.Request.Path;
+                            if (!string.IsNullOrEmpty(accesstoken) &&
+                                path.StartsWithSegments("/technoWorldHub"))
+                            {
+                                context.Token = accesstoken;
+                            }
+                            return Task.CompletedTask;
+                        }
+                    };
+                });
+
+            services.AddSignalR();
+            services.AddControllersWithViews();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BNS_API", Version = "v1" });
@@ -53,12 +98,24 @@ namespace BNS_API
             }
 
             app.UseRouting();
+            //app.UseSession();
+            //app.Use(async (context, next) =>
+            //{
+            //    var JWToken = context.Session.GetString("JWToken");
+            //    if (!string.IsNullOrEmpty(JWToken))
+            //    {
+            //        context.Request.Headers.Add("Authorization", "Bearer " + JWToken);
+            //    }
+            //    await next();
+            //});
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<TechnoWorldHub>("/technoWorldHub");
             });
         }
     }

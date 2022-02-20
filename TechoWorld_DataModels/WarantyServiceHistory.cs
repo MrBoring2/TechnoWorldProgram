@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace TechoWorld_DataModels
 {
-    public partial class WarantyServiceHistory
+    public partial class WarantyServiceHistory: BaseEntity
     {
         public int WarantyServiceId { get; set; }
         public int EmployeeId { get; set; }

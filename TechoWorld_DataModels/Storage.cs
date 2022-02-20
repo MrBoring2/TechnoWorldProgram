@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace TechoWorld_DataModels
 {
-    public partial class Storage
+    public partial class Storage : BaseEntity
     {
         public Storage()
         {

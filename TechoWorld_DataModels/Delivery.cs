@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace TechoWorld_DataModels
 {
-    public partial class Delivery
+    public partial class Delivery : BaseEntity
     {
         public Delivery()
         {

@@ -73,6 +73,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseEntity.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Delivery.cs" />
