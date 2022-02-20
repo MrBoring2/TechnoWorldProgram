@@ -57,17 +57,25 @@ namespace TechnoWorld_Terminal.Services
             page.DataContext = vm;
             return page;
         }
-        public Page GetPage(PageVMBase vm)
+        public Page GetPage(Type vmType)
         {
-            if (vm is null)
-                throw new ArgumentNullException(nameof(vm));
+            //if (vm is null)
+            //    throw new ArgumentNullException(nameof(vm));
 
-            if (createdPages.TryGetValue(vm, out var page))
+            //if (createdPages.TryGetValue(vm, out var page))
+            //    return page;
+            Page page;
+            if (createdPages.Keys.FirstOrDefault(p => p.GetType() == vmType) != null)
+            {
+                createdPages.TryGetValue(createdPages.Keys.FirstOrDefault(p => p.GetType() == vmType), out page);
                 return page;
-
-            page = CreatePageInstanceWithVM(vm);
-            createdPages[vm] = page;
-            return page;
+            }
+            else
+            {
+                page = CreatePageInstanceWithVM((PageVMBase)Activator.CreateInstance(vmType));
+                createdPages[(PageVMBase)Activator.CreateInstance(vmType)] = page;
+                return page;
+            }
         }
 
         public void HidePage(PageVMBase vm)
@@ -81,7 +89,7 @@ namespace TechnoWorld_Terminal.Services
         public Page GetFirstPage()
         {
             if (createdPages.Count == 0)
-                GetPage((PageVMBase)Activator.CreateInstance(viewModelsToPagesMapping.FirstOrDefault().Key));
+                GetPage(viewModelsToPagesMapping.FirstOrDefault().Key.GetType());
 
             return createdPages.FirstOrDefault().Value;
         }
@@ -89,7 +97,7 @@ namespace TechnoWorld_Terminal.Services
         public Page GetLastPage()
         {
             if (createdPages.Count == 0)
-                GetPage((PageVMBase)Activator.CreateInstance(viewModelsToPagesMapping.LastOrDefault().Key));
+                GetPage(viewModelsToPagesMapping.LastOrDefault().Key.GetType());
 
             return createdPages.LastOrDefault().Value;
         }

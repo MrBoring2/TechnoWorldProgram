@@ -19,9 +19,11 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         {
             pageController = new PageController();
 
-            ChangePageCommand = new RelayCommand(SwitchPage);
+            //ChangePageCommand = new RelayCommand(SwitchPage);
             ClosePageCommand = new RelayCommand(ClosePage);
+           
         }
+
 
         public IEnumerable<PageVMBase> Pages => pageController.Pages;
 
@@ -40,6 +42,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
 
         public RelayCommand ChangePageCommand { get; }
         public RelayCommand ClosePageCommand { get; }
+      
 
         protected void RegisterPageWithVM<VM, Pag>()
             where VM : PageVMBase
@@ -49,7 +52,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
 
             if(CurrentPage is null)
             {
-                SwitchPage((PageVMBase)pageController.GetFirstPage().DataContext);
+                //SwitchPage((PageVMBase)pageController.GetFirstPage().DataContext);
             }
         }
 
@@ -65,16 +68,13 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             }
         }
 
-        protected void SwitchPage(object vm)
-        {
-            CurrentPage = pageController.GetPage(vm as PageVMBase);
-        }
-
         private void ClosePage(object param)
         {
             PageVMBase vmForClose = (PageVMBase)CurrentPage.DataContext;
             CurrentPage = pageController.GetLastPage();
             pageController.HidePage(vmForClose);
         }
+    
+
     }
 }

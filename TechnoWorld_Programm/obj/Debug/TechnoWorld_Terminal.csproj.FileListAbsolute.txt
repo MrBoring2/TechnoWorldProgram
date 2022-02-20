@@ -17,7 +17,6 @@ C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Co
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MahApps.Metro.dll
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MaterialDesignColors.dll
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MaterialDesignExtensions.dll
-C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MaterialDesignThemes.MahApps.dll
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsoft.Xaml.Behaviors.dll
@@ -43,7 +42,6 @@ C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Ma
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MahApps.Metro.xml
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MaterialDesignColors.pdb
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MaterialDesignExtensions.xml
-C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MaterialDesignThemes.MahApps.pdb
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
@@ -99,7 +97,6 @@ C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Te
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.csproj.CopyComplete
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.exe
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.pdb
-C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.csproj.AssemblyReference.cache
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\CategoriesPage.g.cs
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\CategoriesPage.baml
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Newtonsoft.Json.dll
@@ -211,6 +208,7 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWo
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.exe
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.pdb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.csproj.AssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.dll
@@ -245,3 +243,8 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsof
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\System.IO.Pipelines.xml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\System.Threading.Channels.xml
+=======
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\TechoWorld_DataModels.dll
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\TechoWorld_DataModels.pdb
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.csproj.AssemblyReference.cache
+>>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
