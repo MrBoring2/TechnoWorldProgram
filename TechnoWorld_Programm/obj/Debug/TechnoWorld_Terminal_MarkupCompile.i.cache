@@ -4,22 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\
 TechnoWorld_Terminal
 none
 false
 DEBUG;TRACE
-C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_Programm\App.xaml
-10951547431
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\App.xaml
+10-148804820
 
-<<<<<<< HEAD
-361965195129
+37298017662
 1661968397880
-=======
-36-1111282186
-4582325450
->>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
 CustomElements\UserControlMenuItem.xaml;Resources\Templates\PageToPageVM.xaml;Views\Pages\CartPage.xaml;Views\Pages\CategoriesPage.xaml;Views\Pages\ElectronicsListPage.xaml;Resources\Templates\ListViewTemplates.xaml;Resources\Themes\MainTheme.xaml;Resources\Themes\SubStyles.xaml;Views\Windows\ElectronicsDetailWindow.xaml;Views\Windows\MainAppWindow.xaml;
 resources\splash_screen.png
-False
+True
 

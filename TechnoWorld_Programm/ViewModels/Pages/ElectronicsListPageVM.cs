@@ -22,7 +22,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         private List<int> pagesNumbers;
         private ObservableCollection<int> displayedPagesNumbers;
         private List<Electronic> electronics;
-        private IEnumerable<Electronic> displayedElectronics;
+        private ObservableCollection<Electronic> displayedElectronics;
 
         private List<ElectrnicsType> types;
         private List<Manufacturer> manufacturers;
@@ -56,7 +56,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public ObservableCollection<int> DisplayedPagesNumbers { get => displayedPagesNumbers; set { displayedPagesNumbers = value; OnPropertyChanged(); } }
         public List<int> PagesNumbers { get => pagesNumbers; set { pagesNumbers = value; OnPropertyChanged(); } }
         public List<Electronic> Electronics { get => electronics; set { electronics = value; OnPropertyChanged(); } }
-        public IEnumerable<Electronic> DisplayedElectronics { get => displayedElectronics; set { displayedElectronics = value; OnPropertyChanged(); } }
+        public ObservableCollection<Electronic> DisplayedElectronics { get => displayedElectronics; set { displayedElectronics = value; OnPropertyChanged(); } }
         public List<ElectrnicsType> Types
         {
             get => types;
@@ -340,7 +340,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             RefrashPaginator();
             if (SelectedPageNumber > PagesNumbers.Count)
             {
-               
+
                 SelectedPageNumber = DisplayedPagesNumbers.LastOrDefault();
             }
         }
@@ -370,20 +370,8 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             if (MaxPrice > 0)
                 list = list.Where(p => p.Price >= MinPrice && p.Price <= MaxPrice);
 
-<<<<<<< HEAD
-
-            //if (DisplayedElectronics != null)
-            //{
-            //    App.Current.Dispatcher.Invoke(() => DisplayedElectronics.Clear());
-            //}
-            DisplayedElectronics = list.Skip((SelectedPageNumber - 1) * itemsPerPage)
-               .Take(itemsPerPage);
-
-            //list.Clear();
-            RefreshPages();
-=======
             list = list.Skip((SelectedPageNumber - 1) * itemsPerPage)
-                .Take(itemsPerPage).ToList();
+                            .Take(itemsPerPage).ToList();
 
             if (DisplayedElectronics != null)
             {
@@ -393,14 +381,6 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             }
 
             DisplayedElectronics = new ObservableCollection<Electronic>(list);
-
-            if (PagesNumbers != null)
-            {
-
-                RefreshPages();
-            }
->>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
-
             if (DisplayedElectronics.Count() <= 0)
             {
                 EmptyVisibility = Visibility.Visible;
@@ -460,11 +440,6 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         /// </summary>
         public void RefrashPaginator()
         {
-<<<<<<< HEAD
-            
-=======
-
->>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
             if (SelectedPageNumber <= PageListAvg(DisplayedPagesNumbers))
             {
                 DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers

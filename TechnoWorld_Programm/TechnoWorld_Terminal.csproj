@@ -245,11 +245,8 @@
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\NotifyPropertyChangedModel.cs" />
     <Compile Include="Models\SortParameter.cs" />
-<<<<<<< HEAD
     <Compile Include="Models\TokenModel.cs" />
-=======
     <Compile Include="Services\PageNavigation.cs" />
->>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
     <Compile Include="Services\WindowNavigation.cs" />
     <Compile Include="ViewModels\NotifyPropertyChangedBase.cs" />
     <Compile Include="ViewModels\Pages\CartPageVM.cs" />
@@ -307,6 +304,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

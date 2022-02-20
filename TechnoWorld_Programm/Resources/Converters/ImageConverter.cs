@@ -18,9 +18,7 @@ namespace TechnoWorld_Terminal.Resources.Converters
             using (var ms = new MemoryStream(value as byte[]))
             {
                 image.BeginInit();
-
                 image.CacheOption = BitmapCacheOption.OnLoad;
-                image.CacheOption = BitmapCacheOption.None;
                 image.DecodePixelHeight = 80;
                 image.StreamSource = ms;
                 image.EndInit();

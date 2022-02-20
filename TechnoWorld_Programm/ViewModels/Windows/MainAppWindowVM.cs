@@ -31,9 +31,6 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             {
                 Initialize();
                 Authorize();
-                RegisterPages();
-                RegisterEvents();
-                SwitchPage(GetPageInstance(typeof(CategoriesPageVM)));
             }
             catch (Exception ex)
             {
@@ -53,11 +50,10 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
                 .Build();
 
             ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
-<<<<<<< HEAD
-=======
+
 
             WindowLoadedCommand = new RelayCommand(WindowLoaded);
->>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
+
         }
 
         private async void Authorize()
@@ -80,41 +76,27 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
 
         private void RegisterEvents()
         {
-            (PageNavigation.GetPage(typeof(CategoriesPageVM)).DataContext as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;        }
+            (PageNavigation.GetPage(typeof(CategoriesPageVM)).DataContext as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;
+        }
 
         private void MainAppWindowVM_onOpenCategory(Category category)
         {
             (PageNavigation.GetPage(typeof(ElectronicsListPageVM)).DataContext as ElectronicsListPageVM).CurrentCategory = category;
         }
 
-        //private void MainAppWindowVM_onOpenCategory(Category category)
-        //{
-        //    (GetPageInstance(typeof(ElectronicsListPageVM)) as ElectronicsListPageVM).CurrentCategory = category;
-        //    //SwitchPage(GetPageInstance(typeof(ElectronicsListPageVM)));
-        //}
+
         public RelayCommand WindowLoadedCommand { get; set; }
-        //public List<PageVMBase> PageVMs
-        //{
-        //    get
-        //    {
-        //        if (_pageVMs == null)
-        //            _pageVMs = new List<PageVMBase>();
-        //        return _pageVMs;
-        //    }
-        //}
-     
+
+
         private void Exit()
         {
             WindowNavigation.Instance.CloseWindow(this);
         }
-<<<<<<< HEAD
 
-=======
         private void WindowLoaded(object obj)
         {
             PageNavigation.Navigate(typeof(CategoriesPageVM));
             RegisterEvents();
         }
->>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
     }
 }

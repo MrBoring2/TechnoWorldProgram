@@ -5,6 +5,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TechnoWorld_Terminal.Views.Pages"
+      xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
       xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
       mc:Ignorable="d" 
       xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
@@ -39,14 +40,14 @@
                                  materialDesign:TextFieldAssist.UnderlineBrush="OrangeRed"
                                  materialDesign:HintAssist.Hint="Искать..."
                                  materialDesign:HintAssist.HintOpacity="0.7" Cursor="IBeam"/>
-                       
+
                         <Border BorderThickness="1" CornerRadius="5" Background="White" Margin="0,10,0,0">
                             <Expander Style="{StaticResource MaterialDesignExpander}" Header="Типы" Margin="0,0,0,0" Background="Transparent">
                                 <Border BorderThickness="1" CornerRadius="5">
                                     <ListBox HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"  ItemsSource="{Binding Types}" BorderThickness="0" Margin="5">
                                         <ListBox.ItemTemplate>
                                             <DataTemplate DataType="{x:Type ListBoxItem}">
-                                                <CheckBox x:Name="TypeSelect" Content="{Binding Name}" IsChecked="{Binding IsSelected}" Height="20"/>
+                                                <CheckBox x:Name="TypeSelect" Checked="TypeSelect_Changed" Unchecked="TypeSelect_Changed" Content="{Binding Name}" IsChecked="{Binding IsSelected}" Height="20"/>
                                             </DataTemplate>
                                         </ListBox.ItemTemplate>
                                     </ListBox>
@@ -81,7 +82,7 @@
                                                 <TextBox VerticalAlignment="Top" Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" Width="90"/>
                                             </StackPanel>
                                         </Grid>
-                                        
+
                                         <mah:RangeSlider Height="20" LargeChange="100" LowerValue="{Binding MinPrice}" ExtendedMode="True" UpperValue="{Binding MaxPrice}" Minimum="1" Maximum="400000" AutoToolTipPlacement="TopLeft" IsMoveToPointEnabled="True"  Orientation="Horizontal" SmallChange="1">
                                             <mah:RangeSlider.AutoToolTipRangeValuesTemplate>
                                                 <DataTemplate DataType="mah:RangeSliderAutoTooltipValues">
@@ -126,30 +127,20 @@
         </Grid>
         <materialDesign:Card Margin="5">
             <Grid>
-<<<<<<< HEAD
-                <ListView x:Name="dd" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
-=======
                 <ListView HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic, Mode=TwoWay}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics, Mode=TwoWay}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
->>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
                     <ListView.ItemContainerStyle>
                         <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                             <Setter Property="VerticalContentAlignment" Value="Stretch"/>
                         </Style>
-                        
+
                     </ListView.ItemContainerStyle>
-                    
+
                 </ListView>
                 <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Margin="10">
-<<<<<<< HEAD
-                    <Image Source="/Resources/empty.png" Width="280" Height="190"/>
-                    <TextBlock Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <TextBlock Text="Выберите другие критерии или вроверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-=======
                     <Image Source="/TechnoWorld_Terminal;component/Resources/empty.png" Width="280" Height="190"/>
                     <TextBlock  Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <TextBlock  Text="Выберите другие критерии или проверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
->>>>>>> 8b41cfe17bc9ed46db224f2fdcfc9c7fe2ebed86
                 </StackPanel>
             </Grid>
         </materialDesign:Card>
