@@ -114,7 +114,6 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\CustomEl
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\CartPage.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\CategoriesPage.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\ElectronicsListPage.g.cs
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Windows\ElectronicsDetailWindow.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Windows\MainAppWindow.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\App.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\GeneratedInternalTypeHelper.g.cs
@@ -126,7 +125,6 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Resource
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\CartPage.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\CategoriesPage.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\ElectronicsListPage.baml
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Windows\ElectronicsDetailWindow.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Windows\MainAppWindow.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.g.resources
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.Properties.Resources.resources
@@ -141,3 +139,5 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWo
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.csproj.AssemblyReference.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\ElectronicsDetailPage.g.cs
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\ElectronicsDetailPage.baml

@@ -10,7 +10,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         x:Class="TechnoWorld_Terminal.Views.Windows.MainAppWindow"
         mc:Ignorable="d"   xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
-        Title="ТЕХНО МИР" Icon="/TechnoWorld_Terminal;component/Resources/logo.png" MinWidth="1250" Height="26" MinHeight="760" Width="214">
+        Title="ТЕХНО МИР" Icon="/TechnoWorld_Terminal;component/Resources/logo.png" MinWidth="1350" Height="26" MinHeight="760" Width="214">
     <mde:MaterialWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

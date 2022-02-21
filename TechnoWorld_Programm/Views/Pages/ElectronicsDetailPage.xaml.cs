@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace TechnoWorld_Terminal.Views.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для CategoriesPage.xaml
+    /// Логика взаимодействия для EctronicsDetailPage.xaml
     /// </summary>
-    public partial class CategoriesPage : Page
+    public partial class ElectronicsDetailPage : Page
     {
-        public CategoriesPage()
+        public ElectronicsDetailPage()
         {
             InitializeComponent();
-        }
-
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            categoriesList.SelectedItem = null;
         }
     }
 }

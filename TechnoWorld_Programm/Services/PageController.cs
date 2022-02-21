@@ -23,8 +23,11 @@ namespace TechnoWorld_Terminal.Services
             where VM : PageVMBase
         {
             var vmType = typeof(VM);
-            viewModelsToPagesMapping[vmType] = typeof(P);
+            viewModelsToPagesMapping[vmType] = typeof(P);           
+        }
 
+        public void CreatePage(Type vmType)
+        {
             var vm = (PageVMBase)Activator.CreateInstance(vmType);
             var page = CreatePageInstanceWithVM(vm);
             createdPages[vm] = page;
@@ -57,23 +60,32 @@ namespace TechnoWorld_Terminal.Services
             page.DataContext = vm;
             return page;
         }
-        public Page GetPage(Type vmType)
+        public Page GetNewPage(PageVMBase vmPage)
         {
             //if (vm is null)
             //    throw new ArgumentNullException(nameof(vm));
 
-            //if (createdPages.TryGetValue(vm, out var page))
-            //    return page;
             Page page;
-            if (createdPages.Keys.FirstOrDefault(p => p.GetType() == vmType) != null)
+
+            page = CreatePageInstanceWithVM(vmPage);
+            return page;
+
+        }
+        public Page GetPage(Type vmPageType)
+        {
+            //if (vm is null)
+            //    throw new ArgumentNullException(nameof(vm));
+
+            Page page;
+            if (createdPages.Keys.FirstOrDefault(p => p.GetType() == vmPageType) != null)
             {
-                createdPages.TryGetValue(createdPages.Keys.FirstOrDefault(p => p.GetType() == vmType), out page);
+                createdPages.TryGetValue(createdPages.Keys.FirstOrDefault(p => p.GetType() == vmPageType), out page);
                 return page;
             }
             else
             {
-                page = CreatePageInstanceWithVM((PageVMBase)Activator.CreateInstance(vmType));
-                createdPages[(PageVMBase)Activator.CreateInstance(vmType)] = page;
+                page = CreatePageInstanceWithVM((PageVMBase)Activator.CreateInstance(vmPageType));
+                createdPages[(PageVMBase)Activator.CreateInstance(vmPageType)] = page;
                 return page;
             }
         }
@@ -88,18 +100,19 @@ namespace TechnoWorld_Terminal.Services
 
         public Page GetFirstPage()
         {
-            if (createdPages.Count == 0)
-                GetPage(viewModelsToPagesMapping.FirstOrDefault().Key.GetType());
-
-            return createdPages.FirstOrDefault().Value;
+            //if (createdPages.Count == 0)
+            //    GetPage(viewModelsToPagesMapping.FirstOrDefault().Key.GetType());
+            throw new NotImplementedException();
+            //return createdPages.FirstOrDefault().Value;
         }
 
         public Page GetLastPage()
         {
-            if (createdPages.Count == 0)
-                GetPage(viewModelsToPagesMapping.LastOrDefault().Key.GetType());
+            throw new NotImplementedException();
+            //if (createdPages.Count == 0)
+            //    GetPage(viewModelsToPagesMapping.LastOrDefault().Key.GetType());
 
-            return createdPages.LastOrDefault().Value;
+            //return createdPages.LastOrDefault().Value;
         }
     }
 }

@@ -16,8 +16,8 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 {
     public class CategoriesPageVM : PageVMBase
     {
-        public delegate void OpenCategory(Category category);
-        public event OpenCategory onOpenCategory;
+        public delegate void OpenCategoryDelegate(Category category);
+        public event OpenCategoryDelegate onOpenCategory;
         private ObservableCollection<Category> categories;
         private Category selectedCategory;
         public CategoriesPageVM()
@@ -28,20 +28,32 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 MessageBox.Show(message);
             });
             TestCommand = new RelayCommand(Test);
+            OpenCategoryCommand = new RelayCommand(OpenCategory);
         }
 
+        private void OpenCategory(object obj)
+        {
+            if (obj != null)
+            {
+                var category = obj as Category;
+                onOpenCategory?.Invoke(category);
+                PageNavigation.Navigate(typeof(ElectronicsListPageVM));
+            }
+        }
+
+        public RelayCommand OpenCategoryCommand { get; set; }
         private async void Test(object obj)
         {
             var response = (RestResponse)await ApiService.GetRequest("api/Categories");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                
+
 
             }
         }
 
         public ObservableCollection<Category> Categories { get => categories; set { categories = value; OnPropertyChanged(); } }
-        public Category SelectedCategory { get => selectedCategory; set { selectedCategory = value; OnPropertyChanged(); onOpenCategory?.Invoke(SelectedCategory); PageNavigation.Navigate(typeof(ElectronicsListPageVM)); } }
+        public Category SelectedCategory { get => selectedCategory; set { selectedCategory = value; OnPropertyChanged(); } }
         public RelayCommand TestCommand { get; set; }
         private async void LoadCategories()
         {

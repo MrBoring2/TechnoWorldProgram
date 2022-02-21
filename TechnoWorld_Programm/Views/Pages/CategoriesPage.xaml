@@ -5,11 +5,12 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TechnoWorld_Terminal.Views.Pages"
       mc:Ignorable="d" 
+            xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
       d:DesignHeight="680" d:DesignWidth="1250"
       Title="CategoriesPage" Background="White">
 
     <Grid>
-        <ListView ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListView ItemsSource="{Binding Categories}" x:Name="categoriesList" SelectionChanged="ListView_SelectionChanged" SelectedItem="{Binding SelectedCategory}" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemTemplate>
                 <DataTemplate DataType="{x:Type ListViewItem}">
                     <Grid Height="454" Width="454" Margin="5">
@@ -27,6 +28,11 @@
                     <WrapPanel/>
                 </ItemsPanelTemplate>
             </ListView.ItemsPanel>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding OpenCategoryCommand}" CommandParameter="{Binding ElementName=categoriesList, Path=SelectedItem}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
         </ListView>
         <Button Content="Тест группы" HorizontalAlignment="Left" Margin="10,638,0,0" VerticalAlignment="Top" Cursor="Hand" Command="{Binding TestCommand}"/>
     </Grid>

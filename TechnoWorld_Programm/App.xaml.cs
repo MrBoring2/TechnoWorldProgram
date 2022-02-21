@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_Terminal.Services;
+using TechnoWorld_Terminal.ViewModels.Pages;
 using TechnoWorld_Terminal.ViewModels.Windows;
 using TechnoWorld_Terminal.Views.Windows;
 
@@ -32,7 +33,6 @@ namespace TechnoWorld_Terminal
         private void RegisterWindows()
         {
             WindowNavigation.Instance.RegisterWindow<MainAppWindowVM, MainAppWindow>();
-            WindowNavigation.Instance.RegisterWindow<ElectronicDetailWindowVM, ElectronicsDetailWindow>();
         }
     }
 }

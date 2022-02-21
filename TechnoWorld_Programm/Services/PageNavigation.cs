@@ -60,7 +60,10 @@ namespace TechnoWorld_Terminal.Services
             //    //SwitchPage((PageVMBase)pageController.GetFirstPage().DataContext);
             //}
         }
-
+        protected void CreatePage(Type vmType)
+        {
+            pageController.CreatePage(vmType);
+        }
         protected PageVMBase GetPageInstance(Type vmType)
         {
             if (vmType != null)
@@ -87,7 +90,10 @@ namespace TechnoWorld_Terminal.Services
         {
             return pageController.GetPage(pageVMType);
         }
-
+        public static Page GetNewPage(PageVMBase pageVM)
+        {
+            return pageController.GetNewPage(pageVM);
+        }
         public static void Navigate(Type pageVMtype)
         {
             if (Instance._navService != null && pageVMtype != null)
@@ -97,11 +103,25 @@ namespace TechnoWorld_Terminal.Services
                 Instance._navService.Navigate(page);
             }
         }
+        public static void Navigate(PageVMBase pageVM)
+        {
+            if (Instance._navService != null && pageVM != null)
+            {
+                Page page = pageController.GetNewPage(pageVM);
+
+                Instance._navService.Navigate(page);
+            }
+        }
         private void RegisterPages()
         {
             RegisterPageWithVM<ElectronicsListPageVM, ElectronicsListPage>();
             RegisterPageWithVM<CartPageVM, CartPage>();
             RegisterPageWithVM<CategoriesPageVM, CategoriesPage>();
+            RegisterPageWithVM<ElectronicsDetailPageVM, ElectronicsDetailPage>();
+            CreatePage(typeof(ElectronicsListPageVM));
+            CreatePage(typeof(CartPageVM));
+            CreatePage(typeof(CategoriesPageVM));
+            
         }
     }
 }

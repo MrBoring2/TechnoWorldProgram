@@ -262,6 +262,9 @@
     <Compile Include="Views\Pages\CategoriesPage.xaml.cs">
       <DependentUpon>CategoriesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\ElectronicsDetailPage.xaml.cs">
+      <DependentUpon>ElectronicsDetailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\ElectronicsListPage.xaml.cs">
       <DependentUpon>ElectronicsListPage.xaml</DependentUpon>
     </Compile>
@@ -278,14 +281,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ViewModels\Windows\ElectronicDetailWindowVM.cs" />
+    <Compile Include="ViewModels\Pages\ElectronicsDetailPageVM.cs" />
     <Compile Include="ViewModels\Windows\MainAppWindowVM.cs" />
     <Compile Include="ViewModels\Windows\ModalWindowVMBase.cs" />
     <Compile Include="ViewModels\Windows\WindowVMBase.cs" />
     <Compile Include="Views\Windows\BaseWindow.cs" />
-    <Compile Include="Views\Windows\ElectronicsDetailWindow.xaml.cs">
-      <DependentUpon>ElectronicsDetailWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Windows\MainAppWindow.xaml.cs">
       <DependentUpon>MainAppWindow.xaml</DependentUpon>
     </Compile>
@@ -335,6 +335,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Pages\ElectronicsDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\ElectronicsListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -348,10 +352,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resources\Themes\SubStyles.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Windows\ElectronicsDetailWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

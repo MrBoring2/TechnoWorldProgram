@@ -5,10 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechoWorld_DataModels;
+using TechnoWorld_Terminal.Common;
+using TechnoWorld_Terminal.Services;
 
-namespace TechnoWorld_Terminal.ViewModels.Windows
+namespace TechnoWorld_Terminal.ViewModels.Pages
 {
-    public class ElectronicDetailWindowVM : ModalWindowVMBase
+    public class ElectronicsDetailPageVM : PageVMBase
     {
         private string model;
         private Manufacturer manfacturer;
@@ -21,10 +23,18 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         private string manufacturerCountry;
         private int harantyMonth;
         private double weight;
-        public ElectronicDetailWindowVM(Electronic electronic)
+        public ElectronicsDetailPageVM()
+        {
+        }
+        public ElectronicsDetailPageVM(Electronic electronic)
         {
             CurrentElectronic = electronic;
+            InitializeFields();
+            BackToElectronicsCommand = new RelayCommand(BackToElectronics);
         }
+
+
+        public RelayCommand BackToElectronicsCommand { get; set; }
         private Electronic CurrentElectronic { get; set; }
         public string Model
         {
@@ -117,6 +127,11 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             Image = CurrentElectronic.Image;
             Color = CurrentElectronic.Color;
             Weight = CurrentElectronic.Weight;
+        }
+
+        private void BackToElectronics(object obj)
+        {
+            PageNavigation.Navigate(typeof(ElectronicsListPageVM));
         }
     }
 }

@@ -2,7 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
                     xmlns:mde="https://spiegelp.github.io/MaterialDesignExtensions/winfx/xaml"
-                          xmlns:i="http://schemas.microsoft.com/xaml/behaviors">
+                          xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+                     xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors">
 
     <DataTemplate x:Key="electronicsHorizontalListView" DataType="{x:Type ListViewItem}">
         <Border BorderBrush="Orange" BorderThickness="1" CornerRadius="5" Margin="0,5,10,5">
@@ -13,8 +14,11 @@
                     <ColumnDefinition Width="30*"/>
 
                 </Grid.ColumnDefinitions>
+                <!--<Grid.InputBindings>
+                    <MouseBinding Gesture="MouseDoubleClick" Command="{Binding OpenDetailInfoCommand}"/>
+                </Grid.InputBindings>-->
                 <Image Grid.Column="0" Margin="5" Source="{Binding Image, IsAsync=True, Converter={StaticResource image}}" RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left">
-                    
+
                 </Image>
                 <StackPanel Grid.Column="1" Orientation="Vertical">
                     <TextBlock Text="{Binding Model}" FontSize="20" FontWeight="Bold"  Margin="10" TextWrapping="Wrap"/>
@@ -24,11 +28,6 @@
                     <TextBlock Text="{Binding Price, StringFormat={}{0:F0} ₽}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
                     <TextBlock Text="{Binding AmountInStorage, StringFormat={}{0} на складе}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
                 </StackPanel>
-                <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="MouseDoubleClick">
-                        <i:InvokeCommandAction Command="{Binding SelectElectrinicsCommand}"/>
-                    </i:EventTrigger>
-                </i:Interaction.Triggers>
             </Grid>
         </Border>
     </DataTemplate>
