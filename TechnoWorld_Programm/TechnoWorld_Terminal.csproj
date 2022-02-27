@@ -249,6 +249,7 @@
     <Compile Include="Models\NotifyPropertyChangedModel.cs" />
     <Compile Include="Models\SortParameter.cs" />
     <Compile Include="Models\TokenModel.cs" />
+    <Compile Include="Services\CustomNotificationManager.cs" />
     <Compile Include="Services\PageNavigation.cs" />
     <Compile Include="Services\WindowNavigation.cs" />
     <Compile Include="ViewModels\NotifyPropertyChangedBase.cs" />

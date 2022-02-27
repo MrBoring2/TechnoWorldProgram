@@ -7,9 +7,10 @@
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
         xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         x:Class="TechnoWorld_Terminal.Views.Windows.MainAppWindow"
-        mc:Ignorable="d"   xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        mc:Ignorable="d" 
         Title="ТЕХНО МИР" Icon="/TechnoWorld_Terminal;component/Resources/logo.png" MinWidth="1350" Height="26" MinHeight="760" Width="214">
     <mde:MaterialWindow.Resources>
         <ResourceDictionary>
@@ -32,17 +33,27 @@
     </i:Interaction.Triggers>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <materialDesign:ColorZone Mode="PrimaryMid" HorizontalAlignment="Stretch">
-            <Grid>
-                <Grid Height="30" Background="DarkOrange"/>
-                <!--<materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Left"/>-->
-            </Grid>
-        </materialDesign:ColorZone>
 
-        <Frame x:Name="MainFraim" BorderThickness="0"  NavigationUIVisibility="Hidden" Grid.Row="1"  HorizontalAlignment="Stretch"/>
+        <Grid Background="DarkOrange" VerticalAlignment="Stretch">
+            <Grid Background="Transparent" HorizontalAlignment="Right"  Margin="5">
+                <TextBlock Text="Корзина" Foreground="White" FontSize="16" HorizontalAlignment="Right" Margin="0,0,50,0" VerticalAlignment="Center"/>
+                <materialDesign:PackIcon Margin="0,0,10,0" Foreground="White" VerticalAlignment="Center" Kind="Cart" HorizontalAlignment="Right"  Width="40" Height="40"/>
+                <Border CornerRadius="10" HorizontalAlignment="Right" Width="20" Height="20" Background="#E65100" Margin="0,0,0,30">
+                    <TextBlock Text="{Binding ItemsInCart}" Foreground="White" Margin="0,3,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseDown">
+                        <i:InvokeCommandAction Command="{Binding OpenCartCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Grid>
+        </Grid>
+
+
+        <Frame x:Name="MainFraim" BorderThickness="0"  NavigationUIVisibility="Hidden" Grid.Row="1"/>
         <notifications:NotificationArea Grid.Row="1" x:Name="MainNotificationArea" Position="BottomRight" MaxItems="3" Margin="0,0,8,8"/>
         <notifications:NotificationArea Grid.Row="1" x:Name="ResultNotiifcationArea" Position="Center"  MaxItems="1" Margin="0,0,8,8"/>
 

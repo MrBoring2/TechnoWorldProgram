@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using TechoWorld_DataModels;
 using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Services;
+using Notification.Wpf;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {
@@ -31,10 +32,12 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             CurrentElectronic = electronic;
             InitializeFields();
             BackToElectronicsCommand = new RelayCommand(BackToElectronics);
+            AddToCardCommand = new RelayCommand(AddToCard);
         }
 
 
         public RelayCommand BackToElectronicsCommand { get; set; }
+        public RelayCommand AddToCardCommand { get; set; }
         private Electronic CurrentElectronic { get; set; }
         public string Model
         {
@@ -132,6 +135,20 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         private void BackToElectronics(object obj)
         {
             PageNavigation.Navigate(typeof(ElectronicsListPageVM));
+        }
+
+        private void AddToCard(object obj)
+        {
+
+            if (ClientService.Instance.Cart.FirstOrDefault(p => p.Electronic.ElectronicsId == CurrentElectronic.ElectronicsId) == null)
+            {
+                ClientService.Instance.Cart.Add(new Models.CartItem(CurrentElectronic));
+                CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Оповещение", Message = "Товар добавлен в корзину", Type = NotificationType.Information }, "ElectronicNotificationArea");
+            }
+            else
+            {
+                CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Внимание", Message = "Товар уже находится в корзине", Type = NotificationType.Warning }, "ElectronicNotificationArea");
+            }
         }
     }
 }

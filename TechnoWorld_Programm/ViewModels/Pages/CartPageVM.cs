@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Models;
 using TechnoWorld_Terminal.Services;
 
@@ -17,14 +18,16 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         private Visibility paymentVisibility;
         private Visibility deliveryAddressVisibility;
         // private MainAppWindow _context;
-        private decimal deliveryPrice;
+        //private decimal deliveryPrice;
 
         public CartPageVM()
         {
-
             CheckCartEmpty();
+            BackToElectronicsCommand = new RelayCommand(BackToElectronics);
             ClientService.Instance.Cart.CollectionChanged += Cart_CollectionChanged;
         }
+
+        public RelayCommand BackToElectronicsCommand { get; set; }
         private void UpdatePayment()
         {
             OnPropertyChanged(nameof(ElectronicTotalPrice));
@@ -60,17 +63,17 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         }
 
 
-        public decimal DeliveryPrice
-        {
-            get => deliveryPrice;
-            set
-            {
-                deliveryPrice = value;
-                OnPropertyChanged();
-            }
-        }
+        //public decimal DeliveryPrice
+        //{
+        //    get => deliveryPrice;
+        //    set
+        //    {
+        //        deliveryPrice = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
         public decimal ElectronicTotalPrice => ClientService.Instance.Cart.Sum(p => p.TotalPrice);
-        public decimal TotalOrderPrice => ElectronicTotalPrice + DeliveryPrice;
+        public decimal TotalOrderPrice => ElectronicTotalPrice;// + DeliveryPrice;
         public ObservableCollection<CartItem> CartItems => ClientService.Instance.Cart;
 
         private void CheckCartEmpty()
@@ -86,10 +89,18 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 PaymentVisibility = Visibility.Visible;
             }
         }
+        private void BackToElectronics(object obj)
+        {
+            PageNavigation.Navigate(typeof(ElectronicsListPageVM));
+        }
 
 
         private void Cart_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
         {
+            foreach (var item in CartItems)
+            {
+                item.PropertyChanged -= Item_PropertyChanged;
+            }
             foreach (var item in CartItems)
             {
                 item.PropertyChanged += Item_PropertyChanged;

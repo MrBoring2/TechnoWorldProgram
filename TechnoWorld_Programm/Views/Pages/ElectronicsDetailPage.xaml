@@ -109,13 +109,13 @@
             <Grid>
                 <StackPanel Margin="5">
                     <TextBlock Text="{Binding Price, StringFormat={}{0:F0} ₽}" Foreground="#FFFC8507" FontWeight="Medium" FontSize="30" Margin="5"/>
-                    <Button x:Name="AddToCart" Content="Добавить в корзину" Background="Orange" FontWeight="Medium" BorderBrush="Orange" HorizontalAlignment="Stretch" Margin="5" Grid.Row="3" VerticalAlignment="Stretch" Cursor="Hand" />
-                    <Button x:Name="Cancel" Content="Отмена" BorderBrush="Orange" FontWeight="Medium" Background="Orange" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Margin="5" Command="{Binding BackToElectronicsCommand}" Cursor="Hand"/>
+                    <Button x:Name="AddToCart" Content="Добавить в корзину" Background="Orange" FontWeight="Medium" BorderBrush="Orange" HorizontalAlignment="Stretch" Margin="5" Grid.Row="3" Command="{Binding AddToCardCommand}" VerticalAlignment="Stretch" Cursor="Hand" />
+                    <Button x:Name="Back" Content="Назад" BorderBrush="Orange" FontWeight="Medium" Background="Orange" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Margin="5" Command="{Binding BackToElectronicsCommand}" Cursor="Hand"/>
 
                 </StackPanel>
                 <!--<TextBlock Text="{Binding HarantyMonth, StringFormat={}Гарантия: {0} мес.}" FontSize="16" HorizontalAlignment="Left" Foreground="Black" Margin="10,0,5,30" VerticalAlignment="Bottom"/>-->
 
-                <TextBlock Text="{Binding AmountInStorage, StringFormat={}Осталось на складе: {0}}" FontSize="16" Margin="10,0,5,10" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBlock Text="{Binding AmountInStorage, StringFormat={}В наличии: {0}}" FontSize="16" Margin="10,0,5,10" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             </Grid>
         </materialDesign:Card>
 

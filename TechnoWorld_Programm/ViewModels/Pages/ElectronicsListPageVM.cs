@@ -44,6 +44,10 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public ElectronicsListPageVM()
         {
             InitializeFields();
+            CurrentCategory = new Category()
+            {
+                Id = 1
+            };
         }
 
         #region Properties

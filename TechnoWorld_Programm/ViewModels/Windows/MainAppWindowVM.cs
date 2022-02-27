@@ -27,13 +27,21 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         protected List<PageVMBase> _pageVMs;
         public MainAppWindowVM()
         {
-
+            OpenCartCommand = new RelayCommand(OpenCart);
+            ClientService.Instance.Cart.CollectionChanged += Cart_CollectionChanged;
             Initialize();
             Authorize();
-
+            OnPropertyChanged(nameof(ItemsInCart));
 
         }
 
+        private void Cart_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            OnPropertyChanged(nameof(ItemsInCart));
+        }
+
+        public RelayCommand OpenCartCommand { get; set; }
+        public int ItemsInCart => ClientService.Instance.Cart.Count;
         private void Initialize()
         {
             ClientService.Instance.HubConnection = new HubConnectionBuilder()
@@ -83,6 +91,10 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         public RelayCommand WindowLoadedCommand { get; set; }
 
 
+        private void OpenCart(object obj)
+        {
+            PageNavigation.Navigate(typeof(CartPageVM));
+        }
         private void Exit()
         {
             WindowNavigation.Instance.CloseWindow(this);

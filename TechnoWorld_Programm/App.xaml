@@ -4,11 +4,20 @@
              xmlns:local="clr-namespace:TechnoWorld_Terminal"
              xmlns:converter="clr-namespace:TechnoWorld_Terminal.Resources.Converters"
              ShutdownMode="OnLastWindowClose"
-             xmlns:notifications="clr-namespace:Notification.Wpf.Controls;assembly=Notification.Wpf"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <!--<Style TargetType="controls:Notification">
+                        <Style.Resources>
+                            <DataTemplate DataType="{x:Type micro:PropertyChangedBase}">
+                                <ContentControl cal:View.Model="{Binding}"/>
+                            </DataTemplate>
+                        </Style.Resources>
+                    </Style>-->
+                </ResourceDictionary>
+              
                 <ResourceDictionary>
                     <converter:ImageConverter x:Key="image"/>
                 </ResourceDictionary>
