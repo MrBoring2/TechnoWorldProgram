@@ -23,8 +23,8 @@ namespace TechnoWorld_API.Controllers
     public class AuthenticateController : ControllerBase
     {
         private readonly IHubContext<TechnoWorldHub> _hubContext;
-        private readonly BNSContext _context;
-        public AuthenticateController(BNSContext context, IHubContext<TechnoWorldHub> hubContext)
+        private readonly TechnoWorldContext _context;
+        public AuthenticateController(TechnoWorldContext context, IHubContext<TechnoWorldHub> hubContext)
         {
             _context = context;
             _hubContext = hubContext;

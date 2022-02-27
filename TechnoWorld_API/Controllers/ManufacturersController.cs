@@ -16,9 +16,9 @@ namespace BNS_API.Controllers
     [Authorize]
     public class ManufacturersController : ControllerBase
     {
-        private readonly BNSContext _context;
+        private readonly TechnoWorldContext _context;
 
-        public ManufacturersController(BNSContext context)
+        public ManufacturersController(TechnoWorldContext context)
         {
             _context = context;
         }

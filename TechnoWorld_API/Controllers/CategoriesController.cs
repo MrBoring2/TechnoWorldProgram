@@ -20,9 +20,9 @@ namespace TechnoWorld_API.Controllers
     public class CategoriesController : ControllerBase
     {
         private readonly IHubContext<TechnoWorldHub> _hubContext;
-        private readonly BNSContext _context;
+        private readonly TechnoWorldContext _context;
 
-        public CategoriesController(BNSContext context, IHubContext<TechnoWorldHub> hubContext)
+        public CategoriesController(TechnoWorldContext context, IHubContext<TechnoWorldHub> hubContext)
         {
             _context = context;
             _hubContext = hubContext;

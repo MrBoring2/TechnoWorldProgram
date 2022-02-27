@@ -9,7 +9,6 @@ namespace TechoWorld_DataModels
     {
         public Employee()
         {
-            WarantyServiceHistories = new HashSet<WarantyServiceHistory>();
         }
 
         public int EmployeeId { get; set; }
@@ -21,6 +20,5 @@ namespace TechoWorld_DataModels
 
         public virtual Post Post { get; set; }
         public virtual Role Role { get; set; }
-        public virtual ICollection<WarantyServiceHistory> WarantyServiceHistories { get; set; }
     }
 }

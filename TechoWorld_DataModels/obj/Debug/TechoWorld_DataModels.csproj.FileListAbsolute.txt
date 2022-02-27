@@ -47,4 +47,3 @@ C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\T
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.dll
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.pdb
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.csproj.AssemblyReference.cache
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.csproj.AssemblyReference.cache

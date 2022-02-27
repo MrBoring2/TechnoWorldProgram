@@ -32,8 +32,7 @@ namespace TechnoWorld_Terminal.Models
             {
                 if (value <= 0)
                 {
-                    var notificationManager = new NotificationManager();
-                    notificationManager.Show(new NotificationContent
+                    var content = new NotificationContent
                     {
                         Message = $"Вы точно хотите удалить товар {ElectronicModel} из корзины?",
                         Title = "Подтверждение",
@@ -46,7 +45,8 @@ namespace TechnoWorld_Terminal.Models
                             amount = value;
                             ClientService.Instance.Cart.Remove(ClientService.Instance.Cart.FirstOrDefault(p => p.Electronic.ElectronicsId == this.Electronic.ElectronicsId));
                         }
-                    }, areaName: "ResultNotiifcationArea");
+                    };
+                    CustomNotificationManager.ShowNotification(content, "ResultNotiifcationArea");
                 }
                 else
                 {

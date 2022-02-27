@@ -16,9 +16,9 @@ namespace BNS_API.Controllers
     [Authorize]
     public class ElectronicsController : ControllerBase
     {
-        private readonly BNSContext _context;
+        private readonly TechnoWorldContext _context;
 
-        public ElectronicsController(BNSContext context)
+        public ElectronicsController(TechnoWorldContext context)
         {
             _context = context;
         }

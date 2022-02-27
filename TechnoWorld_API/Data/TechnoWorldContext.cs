@@ -7,19 +7,17 @@ using TechoWorld_DataModels;
 
 namespace BNS_API.Data
 {
-    public partial class BNSContext : DbContext
+    public partial class TechnoWorldContext : DbContext
     {
-        public BNSContext()
+        public TechnoWorldContext()
         {
         }
 
-        public BNSContext(DbContextOptions<BNSContext> options)
+        public TechnoWorldContext(DbContextOptions<TechnoWorldContext> options)
             : base(options)
         {
           
         }
-
-        public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Delivery> Deliveries { get; set; }
         public virtual DbSet<ElectrnicsType> ElectrnicsTypes { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
@@ -34,7 +32,6 @@ namespace BNS_API.Data
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Storage> Storages { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }
-        public virtual DbSet<WarantyServiceHistory> WarantyServiceHistories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -50,36 +47,7 @@ namespace BNS_API.Data
         {
             modelBuilder.HasAnnotation("Relational:Collation", "Cyrillic_General_CI_AS");
 
-            modelBuilder.Entity<Client>(entity =>
-            {
-                entity.ToTable("Client");
-
-                entity.Property(e => e.DateOfBirth).HasColumnType("date");
-
-                entity.Property(e => e.Email)
-                    .HasMaxLength(40)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.FullName)
-                    .IsRequired()
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Login)
-                    .IsRequired()
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Password)
-                    .IsRequired()
-                    .HasMaxLength(18)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.PhoneNumber)
-                    .IsRequired()
-                    .HasMaxLength(11)
-                    .IsUnicode(false);
-            });
+            
 
             modelBuilder.Entity<Delivery>(entity =>
             {
@@ -236,21 +204,11 @@ namespace BNS_API.Data
 
                 entity.Property(e => e.DateOfRegistration).HasColumnType("datetime");
 
-                entity.Property(e => e.DeliveryAddress)
-                    .IsRequired()
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-
                 entity.Property(e => e.Status)
                     .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
-                entity.HasOne(d => d.Client)
-                    .WithMany(p => p.Orders)
-                    .HasForeignKey(d => d.ClientId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Order_Client");
             });
 
             modelBuilder.Entity<OrderElectronic>(entity =>
@@ -315,45 +273,7 @@ namespace BNS_API.Data
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<WarantyServiceHistory>(entity =>
-            {
-                entity.HasKey(e => e.WarantyServiceId)
-                    .HasName("PK_WarantyServiceHistory_1");
-
-                entity.ToTable("WarantyServiceHistory");
-
-                entity.Property(e => e.WarantyServiceId).ValueGeneratedNever();
-
-                entity.Property(e => e.Date).HasColumnType("datetime");
-
-                entity.Property(e => e.Problem)
-                    .IsRequired()
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Status)
-                    .IsRequired()
-                    .HasMaxLength(40)
-                    .IsUnicode(false);
-
-                entity.HasOne(d => d.Electronics)
-                    .WithMany(p => p.WarantyServiceHistories)
-                    .HasForeignKey(d => d.ElectronicsId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_WarantyServiceHistory_Electronics");
-
-                entity.HasOne(d => d.Employee)
-                    .WithMany(p => p.WarantyServiceHistories)
-                    .HasForeignKey(d => d.EmployeeId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_WarantyServiceHistory_Employee");
-
-                entity.HasOne(d => d.Order)
-                    .WithMany(p => p.WarantyServiceHistories)
-                    .HasForeignKey(d => d.OrderId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_WarantyServiceHistory_Order");
-            });
+           
 
             OnModelCreatingPartial(modelBuilder);
         }

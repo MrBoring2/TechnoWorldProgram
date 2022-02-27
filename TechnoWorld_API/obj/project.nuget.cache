@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rKJVtxA3xwdnSHtv95pGkqQbM+EXqlYXuEf1tS0SAtgn6bcWUSjy9PSNi8LQsk+3EyQRC2gJbHepecZheZPITQ==",
+  "dgSpecHash": "Hmo2zghU4N6yJdC0i3QdFRVB/sF/Z/07H/A2x6IWUTym0JPvtFrdByVD5bRUyh9AsF0gJKBLa8/zflEuUOM12Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_API\\TechnoWorld_API.csproj",
   "expectedPackageFiles": [
@@ -175,7 +175,11 @@
     "C:\\Users\\MrBoring\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\MrBoring\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\MrBoring\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\MrBoring\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\MrBoring\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\MrBoring\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512",
+    "C:\\Users\\MrBoring\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\MrBoring\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\MrBoring\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

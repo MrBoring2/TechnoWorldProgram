@@ -9,6 +9,7 @@ using System.Windows;
 using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Models;
 using TechnoWorld_Terminal.Services;
+using TechoWorld_DataModels;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {
@@ -24,9 +25,12 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         {
             CheckCartEmpty();
             BackToElectronicsCommand = new RelayCommand(BackToElectronics);
+            CreateOrderCommand = new RelayCommand(CreateOrder);
             ClientService.Instance.Cart.CollectionChanged += Cart_CollectionChanged;
         }
 
+
+        public RelayCommand CreateOrderCommand { get; set; }
         public RelayCommand BackToElectronicsCommand { get; set; }
         private void UpdatePayment()
         {
@@ -89,6 +93,28 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 PaymentVisibility = Visibility.Visible;
             }
         }
+        private async void CreateOrder(object obj)
+        {
+            var electronicsInOrder = new List<OrderElectronic>();
+
+            var order = new Order
+            {
+                DateOfRegistration = DateTime.Now,
+                Status = "Ожидается подтверждения",
+                OrderElectronics = new List<OrderElectronic>()
+            };
+            foreach (var item in ClientService.Instance.Cart)
+            {
+                order.OrderElectronics.Add(new OrderElectronic { ElectronicsId = item.Electronic.ElectronicsId, Count = item.Amount });
+            }
+
+            var response = await ApiService.PostReqeust("api/Orders", order);
+            if (response.StatusCode == System.Net.HttpStatusCode.Created)
+            {
+
+            }
+        }
+
         private void BackToElectronics(object obj)
         {
             PageNavigation.Navigate(typeof(ElectronicsListPageVM));

@@ -15,7 +15,6 @@ namespace TechoWorld_DataModels
             ElectronicsToDeliveries = new HashSet<ElectronicsToDelivery>();
             ElectronicsToStorages = new HashSet<ElectronicsToStorage>();
             OrderElectronics = new HashSet<OrderElectronic>();
-            WarantyServiceHistories = new HashSet<WarantyServiceHistory>();
         }
 
         public int ElectronicsId { get; set; }
@@ -34,7 +33,6 @@ namespace TechoWorld_DataModels
         public virtual ICollection<ElectronicsToDelivery> ElectronicsToDeliveries { get; set; }
         public virtual ICollection<ElectronicsToStorage> ElectronicsToStorages { get; set; }
         public virtual ICollection<OrderElectronic> OrderElectronics { get; set; }
-        public virtual ICollection<WarantyServiceHistory> WarantyServiceHistories { get; set; }
         [NotMapped]
         public string ManufacturerName
         {
