@@ -177,7 +177,6 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\pt-BR\Materi
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\Ru\MaterialDesignExtensions.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\ru-ru\MaterialDesignExtensions.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\uz-Latn-UZ\MaterialDesignExtensions.resources.dll
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.AssemblyReference.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.SuggestedBindingRedirects.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\Views\Windows\CashWindow.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\Views\Windows\LoginWindow.g.cs
@@ -195,3 +194,18 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.CopyComplete
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.exe
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.pdb
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\Resources\Styles\MainTheme.baml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.xml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.xml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\Microsoft.AspNetCore.SignalR.Client.xml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\Views\Windows\CustomMessageBox.g.cs
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\Views\Windows\CustomMessageBox.baml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\TechoWorld_DataModels.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\TechoWorld_DataModels.pdb
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\Views\Windows\PaymentWindow.g.cs
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\Views\Windows\PaymentWindow.baml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.AssemblyReference.cache
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.ResolveComReference.cache

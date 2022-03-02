@@ -172,7 +172,7 @@
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
             </ListView>
-            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding ToLastPageCommand}" CommandParameter="1"  Content="»" Margin="0" Height="35" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}"/>
+            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding ToLastPageCommand}" CommandParameter="1"  Content="»" Margin="0" Height="35" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}" Cursor="Hand"/>
         </StackPanel>
         <Button Content="Назад к категориям" Command="{Binding BackToCategoriesCommand}"  Background="Orange" BorderBrush="Orange" Grid.Column="1" HorizontalAlignment="Left" Margin="8,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="253"/>
 

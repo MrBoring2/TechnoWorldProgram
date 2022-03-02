@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ using System.Threading.Tasks;
 using TechnoWorld_API.Helpers;
 using TechnoWorld_API.Models;
 using TechnoWorld_API.Services;
+using TechoWorld_DataModels;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -42,14 +44,16 @@ namespace TechnoWorld_API.Controllers
         {
             if (ModelState.IsValid)
             {
-                var identity = await GetIdentity(model);
+
+
+                var identity = GetIdentity(model);
 
                 if (identity == null)
                 {
                     return BadRequest("Неверное имя пользователя или пароль");
                 }
 
-                var token = CreateToken(identity);
+                var token = CreateToken(identity.Result);
 
                 return Ok(token);
             }
@@ -59,17 +63,40 @@ namespace TechnoWorld_API.Controllers
         [HttpPost("/userToken")]
         public async Task<IActionResult> Token(UserLoginModel model)
         {
-            //var identity = await GetIdentity(login, password);
+            if (ModelState.IsValid)
+            {
+                if (string.IsNullOrEmpty(model.UserName) || string.IsNullOrEmpty(model.Password))
+                {
+                    return BadRequest("Поля не должны быть пустыми!");
+                }
 
-            //if (identity == null)
-            //{
-            //    return BadRequest("Неверное имя пользователя или пароль");
-            //}
+                if (TechnoWorldHub.ConnectedUsers.TryGetValue(model.UserName, out string connectionId))
+                {
+                    if (connectionId != null)
+                    {
+                        return BadRequest("Пользователь уже авторизирован!");
+                    }
+                }
+                var identity = GetIdentity(model);
 
-            //var token = CreateToken(identity);
+                if (identity.Result == null)
+                {
+                    return BadRequest("Неверное имя пользователя или пароль");
+                }
+                var a = identity.Result.FindFirst("role_id").Value;
+                if (model.Programm == "cash")
+                {
+                    if (identity.Result.FindFirst("role_id").Value != "1")
+                    {
+                        return BadRequest("Данный пользователь не может здесь авторизироваться");
+                    }
+                }
 
-            //return Ok(response);
-            return BadRequest();
+
+                var token = CreateToken(identity.Result);
+                return Ok(token);
+            }
+            else return BadRequest();
         }
         private dynamic CreateToken(ClaimsIdentity identity)
         {
@@ -90,25 +117,25 @@ namespace TechnoWorld_API.Controllers
             {
                 access_token = encodedJwt,
                 user_name = identity.FindFirst(ClaimsIdentity.DefaultNameClaimType).Value.ToString(),
-                role_name = identity.FindFirst(ClaimsIdentity.DefaultRoleClaimType).Value.ToString()
+                full_name = identity.FindFirst("full_name")?.Value.ToString(),
+                role_name = identity.FindFirst(ClaimsIdentity.DefaultRoleClaimType).Value.ToString(),
+                user_id = identity.FindFirst("user_id")?.Value.ToString(),
+                role_id = identity.FindFirst("role_id")?.Value.ToString()
             };
 
             return response;
         }
         private async Task<ClaimsIdentity> GetIdentity(TerminalLoginModel model)
         {
-
-
             if (model != null)
             {
 
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimsIdentity.DefaultNameClaimType, model.TerminalName),
-                    new Claim(ClaimsIdentity.DefaultRoleClaimType, model.RoleName.ToString())
+                    new Claim(ClaimsIdentity.DefaultRoleClaimType, "terminalUser")
                 };
                 ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
-                //await AddUserToGroup((Roles)Convert.ToInt32(claimsIdentity.FindFirst("role_id").Value), claimsIdentity);
 
                 return claimsIdentity;
             }
@@ -117,36 +144,23 @@ namespace TechnoWorld_API.Controllers
         }
         private async Task<ClaimsIdentity> GetIdentity(UserLoginModel model)
         {
-            //User user = await _context.Users.Include(r => r.Role)
-            //    .FirstOrDefaultAsync(x => x.Login == login && x.Password == password);
+            Employee user = await _context.Employees.Include(r => r.Role)
+                .FirstOrDefaultAsync(x => x.Login == model.UserName && x.Password == model.Password);
 
-            //bool atempt;
-            //if (user is null)
-            //    atempt = false;
-            //else atempt = true;
+            if (user != null)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim("user_id", user.EmployeeId.ToString()),
+                    new Claim("full_name", user.FullName.ToString()),
+                    new Claim(ClaimsIdentity.DefaultNameClaimType, user.Login),
+                    new Claim("role_id", user.Role.RoleId.ToString()),
+                    new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role.Name.ToString())
+                };
+                ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
 
-            //LogUser(login, atempt);
-
-
-            //if (user != null)
-            //{
-            //    user.LastEnterDate = DateTime.Now;
-            //    _context.Entry(user).State = EntityState.Modified;
-            //    _context.SaveChanges();
-
-            //    var claims = new List<Claim>
-            //    {
-            //        new Claim("user_login", user.Login),
-            //        new Claim("user_id", user.Id.ToString()),
-            //        new Claim("user_name_surname", user.FullName),
-            //        new Claim("role_id", user.Role.Id.ToString()),
-            //        new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role.RoleName.ToString())
-            //    };
-            //    ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
-            //    //await AddUserToGroup((Roles)Convert.ToInt32(claimsIdentity.FindFirst("role_id").Value), claimsIdentity);
-
-            //    return claimsIdentity;
-            //}
+                return claimsIdentity;
+            }
 
             return null;
         }

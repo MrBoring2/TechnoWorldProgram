@@ -36,14 +36,14 @@ namespace TechoWorld_DataModels
         [NotMapped]
         public string ManufacturerName
         {
-            get => Manufacturer.Name;
+            get => Manufacturer?.Name;
         }
         [NotMapped]
         public int AmountInStorage
         {
             get
             {
-                return ElectronicsToStorages.FirstOrDefault().Quantity;
+                return ElectronicsToStorages.Count() > 0 && ElectronicsToStorages != null ? ElectronicsToStorages.FirstOrDefault().Quantity : 0;
             }
         }
 

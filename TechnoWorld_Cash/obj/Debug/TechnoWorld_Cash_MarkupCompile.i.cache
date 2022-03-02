@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\App.xaml
-2679085228
+5900636358
 
-18-709385455
-501462030932
-Views\Windows\CashWindow.xaml;Views\Windows\LoginWindow.xaml;
+261707268785
+160837015575
+Resources\Styles\MainTheme.xaml;Views\Windows\CashWindow.xaml;Views\Windows\CustomMessageBox.xaml;Views\Windows\LoginWindow.xaml;Views\Windows\PaymentWindow.xaml;
 resources\images\splash_screen.png
 True
 

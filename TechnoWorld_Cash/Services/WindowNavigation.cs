@@ -67,7 +67,9 @@ namespace TechnoWorld_Cash.Services
         {
             if (windowVM != null)
             {
+
                 displayRootRegistry.ShowModalPresentation(windowVM);
+
             }
         }
     }

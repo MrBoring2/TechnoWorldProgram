@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BNS_API.Data;
 using TechoWorld_DataModels;
+using TechnoWorld_API.Services;
+using Microsoft.AspNetCore.SignalR;
+using TechnoWorld_API.Helpers;
+using Newtonsoft.Json;
 
 namespace TechnoWorld_API.Controllers
 {
@@ -14,18 +18,20 @@ namespace TechnoWorld_API.Controllers
     [ApiController]
     public class OrdersController : ControllerBase
     {
+        private readonly IHubContext<TechnoWorldHub> _hubContext;
         private readonly TechnoWorldContext _context;
 
-        public OrdersController(TechnoWorldContext context)
+        public OrdersController(TechnoWorldContext context, IHubContext<TechnoWorldHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
 
         // GET: api/Orders
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
         {
-            return await _context.Orders.ToListAsync();
+            return await _context.Orders.Include(p => p.Status).ToListAsync();
         }
 
         // GET: api/Orders/5
@@ -38,8 +44,13 @@ namespace TechnoWorld_API.Controllers
             {
                 return NotFound();
             }
-
-            return order;
+            await _context.Entry(order).Collection(p => p.OrderElectronics).LoadAsync();
+            foreach (var item in order.OrderElectronics)
+            {
+                await _context.Entry(item).Reference(p => p.Electronics).LoadAsync();
+                // _context.Entry(item.Electronics).Reference(p => p.Manufacturer).Load();
+            }
+            return Ok(order);
         }
 
         // PUT: api/Orders/5
@@ -52,7 +63,9 @@ namespace TechnoWorld_API.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(order).State = EntityState.Modified;
+            var orderInDb = _context.Orders.Find(id);
+            orderInDb.StatusId = order.StatusId;
+            orderInDb.EmployeeId = order.EmployeeId;
 
             try
             {
@@ -69,6 +82,16 @@ namespace TechnoWorld_API.Controllers
                     throw;
                 }
             }
+            try
+            {
+                var list = await _context.Orders.Include(p => p.Status).ToListAsync();
+                await _hubContext.Clients.Group(SignalRGroups.cash_group).SendAsync("UpdateOrders", JsonConvert.SerializeObject(list, Formatting.None,
+                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            }
+            catch (Exception ex)
+            {
+
+            }
 
             return NoContent();
         }
@@ -81,6 +104,17 @@ namespace TechnoWorld_API.Controllers
             order.DateOfRegistration = order.DateOfRegistration.ToLocalTime();
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
+
+            try
+            {
+                var list = await _context.Orders.Include(p => p.Status).ToListAsync();
+                await _hubContext.Clients.Group(SignalRGroups.cash_group).SendAsync("UpdateOrders", JsonConvert.SerializeObject(list, Formatting.None,
+                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            }
+            catch (Exception ex)
+            {
+
+            }
 
             return CreatedAtAction("GetOrder", new { id = order.OrderId }, order);
         }

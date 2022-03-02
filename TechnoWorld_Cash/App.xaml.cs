@@ -18,12 +18,12 @@ namespace TechnoWorld_Cash
     {
         public App()
         {
-            RegisterWindows();
         }
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
 
+            RegisterWindows();
             var loginWindowVM = new LoginWindowViewModel();
             WindowNavigation.Instance.OpenWindow(loginWindowVM);
         }
@@ -32,6 +32,7 @@ namespace TechnoWorld_Cash
         {
             WindowNavigation.Instance.RegisterWindow<LoginWindowViewModel, LoginWindow>();
             WindowNavigation.Instance.RegisterWindow<CashWindowViewModel, CashWindow>();
+            WindowNavigation.Instance.RegisterWindow<PaymentWindowViewModel, PaymentWindow>();
         }
     }
 }

@@ -10,12 +10,12 @@ namespace TechnoWorld_Terminal.Services
     public class ApiService
     {
         public const string apiUrl = "http://localhost:29320/";
-        public static Task<IRestResponse> Authorize()
+        public static Task<IRestResponse> Authorize(string login, string password)
         {
             try
             {
-                RestRequest request = new RestRequest($"{apiUrl}terminalToken", Method.POST);
-                request.AddJsonBody(new { roleName = "terminalUser", terminalName = $"terminal_{Guid.NewGuid()}" });
+                RestRequest request = new RestRequest($"{apiUrl}userToken", Method.POST);
+                request.AddJsonBody(new { userName = login, password = password, programm = "cash" });
                 var response = ClientService.Instance.RestClient.ExecuteAsync(request);
                 return response;
             }
@@ -34,15 +34,20 @@ namespace TechnoWorld_Terminal.Services
             var response = await ClientService.Instance.RestClient.ExecuteAsync(CreateRequestWithParameter(url, Method.GET, parameterName, parameter));
             return response;
         }
-        public async static Task<IRestResponse> GetRequest(string url, int id)
+        public static Task<IRestResponse> GetRequest(string url, int id)
         {
-            var response = await ClientService.Instance.RestClient.ExecuteAsync(CreateRequest(url, Method.GET, id));
+            var response = ClientService.Instance.RestClient.ExecuteAsync(CreateRequest(url, Method.GET, id));
             return response;
         }
 
-        public async static Task<IRestResponse> PostReqeust(string url, object data)
+        public async static Task<IRestResponse> PostRequest(string url, object data)
         {
             var response = await ClientService.Instance.RestClient.ExecuteAsync(CreateRequest(url, Method.POST, data));
+            return response;
+        }
+        public async static Task<IRestResponse> PutRequest(string url, int id, object data)
+        {
+            var response = await ClientService.Instance.RestClient.ExecuteAsync(CreateRequest($"{url}/{id}" , Method.PUT, data));
             return response;
         }
 

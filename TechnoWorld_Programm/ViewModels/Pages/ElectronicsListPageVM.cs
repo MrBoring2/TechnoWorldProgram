@@ -86,12 +86,12 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             get => category;
             set
             {
-                if (value != category)
+                if (value.Id != category?.Id)
                 {
                     category = value;
+                    LoadData();
                 }
                 OnPropertyChanged();
-                LoadData();
             }
         }
         public ObservableCollection<SortParameter> SortParameters { get; set; }

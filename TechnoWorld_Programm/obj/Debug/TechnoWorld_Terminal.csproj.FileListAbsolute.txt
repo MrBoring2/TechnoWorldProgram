@@ -136,8 +136,8 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\TechnoWo
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\TechnoWorld_Terminal.exe
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\TechnoWorld_Terminal.pdb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.csproj.CopyComplete
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.csproj.AssemblyReference.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\ElectronicsDetailPage.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\Views\Pages\ElectronicsDetailPage.baml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Programm\obj\Debug\TechnoWorld_Terminal.csproj.AssemblyReference.cache

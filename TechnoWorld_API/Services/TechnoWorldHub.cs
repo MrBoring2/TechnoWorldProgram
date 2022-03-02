@@ -37,6 +37,12 @@ namespace TechnoWorld_API.Services
                 ConnectedUsers.TryGetValue(userName, out connectionId);
                 Groups.AddToGroupAsync(connectionId, SignalRGroups.terminal_group);
             }
+            else if (roleName == "cash_user")
+            {
+                string connectionId;
+                ConnectedUsers.TryGetValue(userName, out connectionId);
+                Groups.AddToGroupAsync(connectionId, SignalRGroups.cash_group);
+            }
         }
     }
 }

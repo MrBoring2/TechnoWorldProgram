@@ -16,7 +16,9 @@ namespace TechoWorld_DataModels
         public int StorageId { get; set; }
         public int SupplierId { get; set; }
         public DateTime DateOfDelivery { get; set; }
+        public int EmployeeId { get; set; }
 
+        public virtual Employee Employee { get; set; }
         public virtual Storage Storage { get; set; }
         public virtual Supplier Supplier { get; set; }
         public virtual ICollection<ElectronicsToDelivery> ElectronicsToDeliveries { get; set; }

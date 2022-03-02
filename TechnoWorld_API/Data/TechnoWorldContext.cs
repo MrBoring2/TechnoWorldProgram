@@ -16,11 +16,11 @@ namespace BNS_API.Data
         public TechnoWorldContext(DbContextOptions<TechnoWorldContext> options)
             : base(options)
         {
-          
+
         }
+        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Delivery> Deliveries { get; set; }
         public virtual DbSet<ElectrnicsType> ElectrnicsTypes { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Electronic> Electronics { get; set; }
         public virtual DbSet<ElectronicsToDelivery> ElectronicsToDeliveries { get; set; }
         public virtual DbSet<ElectronicsToStorage> ElectronicsToStorages { get; set; }
@@ -30,6 +30,7 @@ namespace BNS_API.Data
         public virtual DbSet<OrderElectronic> OrderElectronics { get; set; }
         public virtual DbSet<Post> Posts { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<Status> Statuses { get; set; }
         public virtual DbSet<Storage> Storages { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }
 
@@ -38,7 +39,7 @@ namespace BNS_API.Data
             if (!optionsBuilder.IsConfigured)
             {
 
-            
+
             }
             //optionsBuilder.UseLazyLoadingProxies();
         }
@@ -47,7 +48,17 @@ namespace BNS_API.Data
         {
             modelBuilder.HasAnnotation("Relational:Collation", "Cyrillic_General_CI_AS");
 
-            
+            modelBuilder.Entity<Category>(entity =>
+            {
+                entity.ToTable("Category");
+
+                entity.Property(e => e.Image).HasColumnType("image");
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(80)
+                    .IsUnicode(false);
+            });
 
             modelBuilder.Entity<Delivery>(entity =>
             {
@@ -56,6 +67,12 @@ namespace BNS_API.Data
                 entity.ToTable("Delivery");
 
                 entity.Property(e => e.DateOfDelivery).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Employee)
+                    .WithMany(p => p.Deliveries)
+                    .HasForeignKey(d => d.EmployeeId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Delivery_Employee");
 
                 entity.HasOne(d => d.Storage)
                     .WithMany(p => p.Deliveries)
@@ -81,17 +98,22 @@ namespace BNS_API.Data
                     .IsRequired()
                     .HasMaxLength(30)
                     .IsUnicode(false);
-            });
 
-            modelBuilder.Entity<Category>(entity =>
-            {
-                entity.HasKey(p => p.Id);
-                entity.ToTable("Category");
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.ElectrnicsTypes)
+                    .HasForeignKey(d => d.CategoryId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ElectrnicsType_Category");
             });
 
             modelBuilder.Entity<Electronic>(entity =>
             {
                 entity.HasKey(e => e.ElectronicsId);
+
+                entity.Property(e => e.Color)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Description)
                     .IsRequired()
@@ -99,26 +121,29 @@ namespace BNS_API.Data
 
                 entity.Property(e => e.Image).HasColumnType("image");
 
+                entity.Property(e => e.ManufacturerСountry)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Model)
                     .IsRequired()
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Color)
-                    .IsRequired()
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.ManufacturerСountry)
-                    .IsRequired()
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
+                entity.Property(e => e.Price).HasColumnType("money");
 
                 entity.HasOne(d => d.Manufacturer)
                     .WithMany(p => p.Electronics)
                     .HasForeignKey(d => d.ManufactrurerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Electronics_Manufacturer");
+
+                entity.HasOne(d => d.Type)
+                    .WithMany(p => p.Electronics)
+                    .HasForeignKey(d => d.TypeId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Electronics_Type");
             });
 
             modelBuilder.Entity<ElectronicsToDelivery>(entity =>
@@ -170,6 +195,16 @@ namespace BNS_API.Data
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Login)
+                    .IsRequired()
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.PhoneNumber)
                     .IsRequired()
                     .HasMaxLength(11)
@@ -204,11 +239,19 @@ namespace BNS_API.Data
 
                 entity.Property(e => e.DateOfRegistration).HasColumnType("datetime");
 
-                entity.Property(e => e.Status)
-                    .IsRequired()
-                    .HasMaxLength(20)
+                entity.Property(e => e.OrderNumber)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
+                entity.HasOne(d => d.Employee)
+                    .WithMany(p => p.Orders)
+                    .HasForeignKey(d => d.EmployeeId)
+                    .HasConstraintName("FK_Order_Employee");
+
+                entity.HasOne(d => d.Status)
+                    .WithMany(p => p.Orders)
+                    .HasForeignKey(d => d.StatusId)
+                    .HasConstraintName("FK_Order_Status");
             });
 
             modelBuilder.Entity<OrderElectronic>(entity =>
@@ -248,6 +291,16 @@ namespace BNS_API.Data
                     .IsUnicode(false);
             });
 
+            modelBuilder.Entity<Status>(entity =>
+            {
+                entity.ToTable("Status");
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+            });
+
             modelBuilder.Entity<Storage>(entity =>
             {
                 entity.ToTable("Storage");
@@ -277,6 +330,7 @@ namespace BNS_API.Data
 
             OnModelCreatingPartial(modelBuilder);
         }
+
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Notification.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -100,7 +101,8 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             var order = new Order
             {
                 DateOfRegistration = DateTime.Now,
-                Status = "Ожидается подтверждения",
+                OrderNumber = GenerateOrderNumber(),
+                StatusId = 1,
                 OrderElectronics = new List<OrderElectronic>()
             };
             foreach (var item in ClientService.Instance.Cart)
@@ -111,8 +113,21 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             var response = await ApiService.PostReqeust("api/Orders", order);
             if (response.StatusCode == System.Net.HttpStatusCode.Created)
             {
-
+                CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Оповещение", Message = $"Заказ успешно оформлен. Подойдите к кассе. Номер заказа: {order.OrderNumber}", Type = NotificationType.Success }, "MainNotificationArea");
+                ClientService.Instance.Cart.Clear();    
             }
+        }
+
+        private string GenerateOrderNumber()
+        {
+            Random random = new Random();
+            string number = "";
+            string keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            for (int i = 0; i < 10; i++)
+            {
+                number += keys[random.Next(0, keys.Length)];
+            }
+            return number;
         }
 
         private void BackToElectronics(object obj)

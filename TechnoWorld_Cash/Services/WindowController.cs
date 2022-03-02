@@ -74,7 +74,7 @@ namespace TechnoWorld_Cash.Services
 
         public void ShowModalPresentation(ModalWindowVMBase vm)
         {
-            Application.Current.Dispatcher.Invoke(() =>
+            App.Current.Dispatcher.Invoke(() =>
             {
                 var window = CreateWindowInstanceWithVM(vm);
                 window.WindowStartupLocation = WindowStartupLocation.CenterScreen;

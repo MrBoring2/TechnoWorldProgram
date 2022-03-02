@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -18,5 +19,7 @@ namespace TechoWorld_DataModels
         public virtual Category Category { get; set; }
         [NotMapped]
         public bool IsSelected { get=>isSelected; set { isSelected = value; OnSelectionChanged?.Invoke(this, new EventArgs()); } }
+        [JsonIgnore]
+        public virtual ICollection<Electronic> Electronics { get; set; }
     }
 }
