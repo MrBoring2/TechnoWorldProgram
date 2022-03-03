@@ -36,9 +36,10 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             var orderApi = GetOrder(order);
 
             OrderItems = new ObservableCollection<OrderItem>();
+            int id = 1;
             foreach (var item in orderApi.OrderElectronics)
             {
-                int id = 1;
+                
                 OrderItems.Add(new OrderItem(id, item.Electronics.Model, item.Count, item.Electronics.Price, item.Count * item.Electronics.Price));
                 id++;
             }

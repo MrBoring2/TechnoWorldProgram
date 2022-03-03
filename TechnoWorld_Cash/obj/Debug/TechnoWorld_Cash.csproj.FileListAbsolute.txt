@@ -207,5 +207,5 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\TechoWorld_D
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\TechoWorld_DataModels.pdb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\Views\Windows\PaymentWindow.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\Views\Windows\PaymentWindow.baml
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.AssemblyReference.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.ResolveComReference.cache
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.AssemblyReference.cache

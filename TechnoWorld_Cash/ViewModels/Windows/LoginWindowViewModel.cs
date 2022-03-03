@@ -44,6 +44,11 @@ namespace TechnoWorld_Cash.ViewModels.Windows
 
             ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
         }
+
+        /// <summary>
+        /// Авторизация
+        /// </summary>
+        /// <param name="obj"></param>
         private async void Authorize(object obj)
         {
             try

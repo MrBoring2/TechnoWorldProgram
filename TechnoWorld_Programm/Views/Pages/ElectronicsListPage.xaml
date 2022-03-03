@@ -102,7 +102,7 @@
                                         <TextBlock Text="До" Margin="5,0,5,0"/>
                                         <Slider Minimum="0" Maximum="1000000" Value="{Binding MaxPrice}" Margin="5,0,5,0"/>
                                         <TextBox Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}" Margin="5,0,5,5"/>-->
-                                        <Button Content="Применить" Background="Orange" Command="{Binding ConfirmSortCommand}" BorderBrush="Orange" Margin="5" />
+                                        <Button Content="Применить" Background="Orange" Command="{Binding ConfirmSortCommand}" BorderBrush="Orange" Margin="5" Cursor="Hand" />
                                     </StackPanel>
                                 </Border>
                             </Expander>

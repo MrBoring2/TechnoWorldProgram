@@ -1,9 +1,4 @@
-﻿using TechnoWorld_Terminal.ViewModels.Windows;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using TechoWorld_DataModels;
 using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Services;
@@ -34,7 +29,6 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             BackToElectronicsCommand = new RelayCommand(BackToElectronics);
             AddToCardCommand = new RelayCommand(AddToCard);
         }
-
 
         public RelayCommand BackToElectronicsCommand { get; set; }
         public RelayCommand AddToCardCommand { get; set; }
@@ -118,7 +112,9 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 OnPropertyChanged();
             }
         }
-
+        /// <summary>
+        /// Загрузка данных на форму
+        /// </summary>
         private void InitializeFields()
         {
             Model = CurrentElectronic.Model;
@@ -130,13 +126,22 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             Image = CurrentElectronic.Image;
             Color = CurrentElectronic.Color;
             Weight = CurrentElectronic.Weight;
+            ManufacturerCountry = CurrentElectronic.ManufacturerСountry;
         }
 
+        /// <summary>
+        /// Назад к списку электроники
+        /// </summary>
+        /// <param name="obj"></param>
         private void BackToElectronics(object obj)
         {
             PageNavigation.Navigate(typeof(ElectronicsListPageVM));
         }
 
+        /// <summary>
+        /// Добавить в корзину
+        /// </summary>
+        /// <param name="obj"></param>
         private void AddToCard(object obj)
         {
 
