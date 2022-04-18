@@ -296,7 +296,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             var response = (RestResponse)ApiService.GetRequestWithParameter("api/Manufacturers", "categoryId", CurrentCategory.Id).Result;
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Manufacturers = JsonConvert.DeserializeObject<List<Manufacturer>>(response.Content).OrderBy(p=>p.Name).ToList();
+                Manufacturers = JsonConvert.DeserializeObject<List<Manufacturer>>(response.Content).OrderBy(p => p.Name).ToList();
                 foreach (var item in Manufacturers)
                 {
                     item.OnSelectionChanged += Manufacturer_OnSelectionChanged;
@@ -390,7 +390,10 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             }
 
             DisplayedElectronics = new ObservableCollection<Electronic>(list);
-
+            if (PagesNumbers != null)
+            {
+                RefreshPages();
+            }
 
             if (DisplayedElectronics.Count() <= 0)
             {
