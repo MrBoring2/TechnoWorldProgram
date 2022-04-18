@@ -89,8 +89,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         public RelayCommand PaymentCommand { get; set; }
         private void Initiailze()
         {
-            startDate = DateTime.Now.Date - new TimeSpan(7, 0, 0, 0);
-            endDate = DateTime.Now;
+
             currentPage = 0;
             itemsPerPage = 20;
             maxDisplayedPages = 5;
@@ -166,6 +165,8 @@ namespace TechnoWorld_Cash.ViewModels.Windows
                 LoadPages();
                 DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers.Take(maxDisplayedPages));
 
+                startDate = Orders.Min(p => p.DateOfRegistration);
+                endDate = DateTime.Now;
                 selectedPageNumber = DisplayedPagesNumbers.FirstOrDefault();
                 OnPropertyChanged(nameof(SelectedPageNumber));
             }
@@ -189,8 +190,8 @@ namespace TechnoWorld_Cash.ViewModels.Windows
 
         private void RefreshOrders()
         {
-            var list = Orders.Where(p => p.DateOfRegistration.Date <= EndDate.Date && p.DateOfRegistration.Date >= StartDate.Date).OrderBy(p => p.OrderNumber).ToList();
-            list = list.Where(p => p.OrderNumber.ToLower().Contains(Search.ToLower())).OrderBy(p => p.OrderNumber).ToList();
+            var list = Orders.Where(p => p.DateOfRegistration.Date <= EndDate.Date && p.DateOfRegistration.Date >= StartDate.Date).OrderByDescending(p => p.DateOfRegistration).ToList();
+            list = list.Where(p => p.OrderNumber.ToLower().Contains(Search.ToLower())).ToList();
 
 
             list = list.Where(p => SelectedStatus != "Все" ? p.Status.Name.Equals(SelectedStatus) : true).ToList();
