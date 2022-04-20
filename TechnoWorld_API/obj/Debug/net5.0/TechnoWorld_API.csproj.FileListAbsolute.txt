@@ -295,3 +295,13 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\Techno
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\ref\TechnoWorld_API.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.pdb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.genruntimeconfig.cache
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\Serilog.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\Serilog.AspNetCore.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\Serilog.Sinks.File.dll

@@ -9,7 +9,7 @@ namespace TechnoWorld_Terminal.Services
 {
     public class ApiService
     {
-        public const string apiUrl = "http://localhost:29320/";
+        public const string apiUrl = "http://localhost:5000/";
         public static Task<IRestResponse> Authorize()
         {
             try

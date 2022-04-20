@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using TechnoWorld_API.Services;
 using Microsoft.AspNetCore.SignalR;
 using TechnoWorld_API.Helpers;
+using Serilog;
 
 namespace TechnoWorld_API.Controllers
 {
@@ -21,7 +22,7 @@ namespace TechnoWorld_API.Controllers
     {
         private readonly IHubContext<TechnoWorldHub> _hubContext;
         private readonly TechnoWorldContext _context;
-
+        readonly IDiagnosticContext _diagnosticContext;
         public CategoriesController(TechnoWorldContext context, IHubContext<TechnoWorldHub> hubContext)
         {
             _context = context;

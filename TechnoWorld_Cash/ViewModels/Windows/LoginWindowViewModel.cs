@@ -34,7 +34,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         private void Initialize()
         {
             ClientService.Instance.HubConnection = new HubConnectionBuilder()
-                .WithUrl("http://localhost:29320/technoWorldHub",
+                .WithUrl($"{ApiService.apiUrl}technoWorldHub",
 
                 options =>
                 {

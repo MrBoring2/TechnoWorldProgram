@@ -19,6 +19,8 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using TechnoWorld_API.Helpers;
 using Microsoft.AspNetCore.Http;
+using Serilog;
+using Serilog.Events;
 
 namespace BNS_API
 {
@@ -96,6 +98,23 @@ namespace BNS_API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BNS_API v1"));
             }
+
+            app.UseSerilogRequestLogging();
+            //app.UseSerilogRequestLogging(options =>
+            //{
+            //    // Customize the message template
+            //    options.MessageTemplate = "Handled {RequestPath}";
+
+            //    // Emit debug-level events instead of the defaults
+            //    options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
+
+            //    // Attach additional properties to the request completion event
+            //    options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+            //    {
+            //        diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
+            //        diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
+            //    };
+            //});
 
             app.UseRouting();
             //app.UseSession();

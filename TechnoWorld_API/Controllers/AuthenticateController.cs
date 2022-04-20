@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -74,6 +75,7 @@ namespace TechnoWorld_API.Controllers
                 {
                     if (connectionId != null)
                     {
+                        Log.Warning($"Провальная попытка входа пользователя {model.UserName}: Данный пользователь уже авторизирован");
                         return BadRequest("Пользователь уже авторизирован!");
                     }
                 }
@@ -81,6 +83,7 @@ namespace TechnoWorld_API.Controllers
 
                 if (identity.Result == null)
                 {
+                    Log.Warning($"Провальная попытка входа пользователя {model.UserName}: Неверный логин или пароль");
                     return BadRequest("Неверное имя пользователя или пароль");
                 }
                 var a = identity.Result.FindFirst("role_id").Value;
@@ -94,6 +97,7 @@ namespace TechnoWorld_API.Controllers
 
 
                 var token = CreateToken(identity.Result);
+                Log.Information($"Пользователь {model.UserName} авторизирован в системе");
                 return Ok(token);
             }
             else return BadRequest();
