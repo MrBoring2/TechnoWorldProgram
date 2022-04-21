@@ -115,13 +115,6 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             {
                 var paymentVM = new PaymentWindowViewModel(SelectedOrder);
                 await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(paymentVM));
-                if (paymentVM.DialogResult == true)
-                {
-                    SelectedOrder.StatusId = 2;
-                    SelectedOrder.EmployeeId = ClientService.Instance.User.UserId;
-                    var response = ApiService.PutRequest("api/Orders", SelectedOrder.OrderId, SelectedOrder);
-
-                }
             }
             else
             {

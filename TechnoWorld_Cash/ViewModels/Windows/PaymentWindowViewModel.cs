@@ -163,8 +163,15 @@ namespace TechnoWorld_Cash.ViewModels.Windows
                 document.SaveAs2(AppDomain.CurrentDomain.BaseDirectory + $@"Чеки/Чек №{Order.OrderNumber}.pdf", Word.WdExportFormat.wdExportFormatPDF);
 
             });
-            CustomMessageBox.Show("Заказ усешно оплачен", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
-            DialogResult = true;
+            Order.StatusId = 2;
+            Order.EmployeeId = ClientService.Instance.User.UserId;
+            var response = await ApiService.PutRequest("api/Orders", Order.OrderId, Order);
+            if(response.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                CustomMessageBox.Show("Заказ усешно оплачен", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                DialogResult = true;
+            }
+            
         }
         private void Cancel(object obj)
         {

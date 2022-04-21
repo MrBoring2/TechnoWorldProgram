@@ -11,6 +11,7 @@ using TechnoWorld_API.Services;
 using Microsoft.AspNetCore.SignalR;
 using TechnoWorld_API.Helpers;
 using Newtonsoft.Json;
+using Serilog;
 
 namespace TechnoWorld_API.Controllers
 {
@@ -63,10 +64,12 @@ namespace TechnoWorld_API.Controllers
                 return BadRequest();
             }
 
-            var orderInDb = _context.Orders.Find(id);
+            var orderInDb = _context.Orders.Include(p => p.Status).FirstOrDefault(p => p.OrderId == order.OrderId);
+            var lastStatus = orderInDb.Status;
             orderInDb.StatusId = order.StatusId;
             orderInDb.EmployeeId = order.EmployeeId;
 
+            Log.Information($"Статус заказа с номером {order.OrderNumber} изменён с '{lastStatus.Name}' на '{_context.Statuses.Find(order.StatusId).Name}'");
             try
             {
                 await _context.SaveChangesAsync();
@@ -93,7 +96,7 @@ namespace TechnoWorld_API.Controllers
 
             }
 
-            return NoContent();
+            return Ok();
         }
 
         // POST: api/Orders
@@ -104,6 +107,8 @@ namespace TechnoWorld_API.Controllers
             order.DateOfRegistration = order.DateOfRegistration.ToLocalTime();
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
+
+            Log.Information($"Создан новый заказ с номером {order.OrderNumber}");
 
             try
             {
