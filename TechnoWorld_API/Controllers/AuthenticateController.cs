@@ -94,6 +94,13 @@ namespace TechnoWorld_API.Controllers
                         return BadRequest("Данный пользователь не может здесь авторизироваться");
                     }
                 }
+                else if (model.Programm == "warehouse_accounting")
+                {
+                    if (identity.Result.FindFirst("role_id").Value == "1")
+                    {
+                        return BadRequest("Данный пользователь не может здесь авторизироваться");
+                    }
+                }
 
 
                 var token = CreateToken(identity.Result);

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\App.xaml
-3-862874104
+51404389428
 
-22-996531149
-155834049517
-Resources\Styles\MainTheme.xaml;Views\Pages\Page1.xaml;Views\Windows\MainAppWindow.xaml;
+26-1742259477
+157264318333
+Resources\Styles\MainTheme.xaml;Views\Pages\Page1.xaml;Views\Windows\CustomMessageBox.xaml;Views\Windows\LoginWindow.xaml;Views\Windows\MainAppWindow.xaml;
 resources\images\splash_screen.png
 True
 

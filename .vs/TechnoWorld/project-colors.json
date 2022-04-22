@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3f42b0a6-c30a-4ae8-ad71-a3819e5a0107": {
+      "ProjectGuid": "3f42b0a6-c30a-4ae8-ad71-a3819e5a0107",
+      "DisplayName": "TechnoWorld_API",
+      "ColorIndex": 0
+    },
+    "97d2bb67-0e08-4af9-8b46-ca7e9daf9de6": {
+      "ProjectGuid": "97d2bb67-0e08-4af9-8b46-ca7e9daf9de6",
+      "DisplayName": "TechnoWorld_WarehouseAccounting",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

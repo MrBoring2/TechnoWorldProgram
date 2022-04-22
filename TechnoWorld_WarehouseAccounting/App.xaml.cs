@@ -21,12 +21,13 @@ namespace TechnoWorld_WarehouseAccounting
             base.OnStartup(e);
 
             RegisterWindows();
-            var mainAppWindowVM = new MainAppWindowVM();
-            WindowNavigation.Instance.OpenWindow(mainAppWindowVM);
+            var loginWindow = new LoginWindowVM();
+            WindowNavigation.Instance.OpenWindow(loginWindow);
         }
 
         private void RegisterWindows()
         {
+            WindowNavigation.Instance.RegisterWindow<LoginWindowVM, LoginWindow>();
             WindowNavigation.Instance.RegisterWindow<MainAppWindowVM, MainAppWindow>();
         }
     }

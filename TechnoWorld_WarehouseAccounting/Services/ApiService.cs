@@ -15,7 +15,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
             try
             {
                 RestRequest request = new RestRequest($"{apiUrl}userToken", Method.POST);
-                request.AddJsonBody(new { userName = login, password = password, programm = "cash" });
+                request.AddJsonBody(new { userName = login, password = password, programm = "warehouse_accounting" });
                 var response = ClientService.Instance.RestClient.ExecuteAsync(request);
                 return response;
             }
