@@ -109,3 +109,4 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Deb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.csproj.CopyComplete
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.exe
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.pdb
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.csproj.AssemblyReference.cache

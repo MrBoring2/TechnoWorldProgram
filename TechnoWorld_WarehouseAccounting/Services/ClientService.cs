@@ -58,6 +58,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
             Token = null;
             HubConnection.StopAsync();
             RestClient = null;
+            PageNavigation.Instance.CrearCreatedPages();
         }
     }
 }

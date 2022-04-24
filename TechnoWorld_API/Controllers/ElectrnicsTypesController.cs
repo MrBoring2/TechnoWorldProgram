@@ -22,7 +22,11 @@ namespace BNS_API.Controllers
         {
             _context = context;
         }
-
+        [HttpGet("All")]
+        public async Task<ActionResult<IEnumerable<ElectrnicsType>>> GetAllElectrnicsTypes()
+        {
+            return await _context.ElectrnicsTypes.Include(p => p.Category).ToListAsync();
+        }
         // GET: api/ElectrnicsTypes
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ElectrnicsType>>> GetElectrnicsTypes(int categoryId)

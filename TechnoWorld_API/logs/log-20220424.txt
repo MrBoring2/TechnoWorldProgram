@@ -1,0 +1,65 @@
+2022-04-24 15:44:07.250 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-24 15:44:07.293 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-24 15:44:07.294 +05:00 [INF] Hosting environment: Development
+2022-04-24 15:44:07.295 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-24 15:44:34.238 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-24 15:44:34.313 +05:00 [INF] HTTP POST /userToken responded 200 in 4701.8251 ms
+2022-04-24 15:44:34.521 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 58.9921 ms
+2022-04-24 15:44:42.184 +05:00 [INF] admin отключен от системы
+2022-04-24 15:44:42.190 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 7606.7015 ms
+2022-04-24 15:45:00.347 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-24 15:45:00.350 +05:00 [INF] HTTP POST /userToken responded 200 in 34.7539 ms
+2022-04-24 15:45:00.565 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.6055 ms
+2022-04-24 15:45:19.552 +05:00 [INF] admin отключен от системы
+2022-04-24 15:45:19.553 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 18875.6745 ms
+2022-04-24 15:45:40.467 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-24 15:45:40.469 +05:00 [INF] HTTP POST /userToken responded 200 in 10.8870 ms
+2022-04-24 15:45:40.659 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.3790 ms
+2022-04-24 15:45:42.088 +05:00 [INF] HTTP GET /api/Electronics responded 200 in 137.2569 ms
+2022-04-24 15:45:58.467 +05:00 [INF] admin отключен от системы
+2022-04-24 15:45:58.469 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 17691.0609 ms
+2022-04-24 15:46:26.603 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-24 15:46:26.605 +05:00 [INF] HTTP POST /userToken responded 200 in 10.7282 ms
+2022-04-24 15:46:26.809 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.3708 ms
+2022-04-24 15:46:28.449 +05:00 [INF] HTTP GET /api/Electronics responded 200 in 5.7996 ms
+2022-04-24 15:47:08.528 +05:00 [INF] admin отключен от системы
+2022-04-24 15:47:08.530 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 41613.9298 ms
+2022-04-24 15:47:13.509 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-24 15:47:13.510 +05:00 [INF] HTTP POST /userToken responded 200 in 6.1800 ms
+2022-04-24 15:47:13.514 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.3155 ms
+2022-04-24 15:47:14.804 +05:00 [INF] HTTP GET /api/Electronics responded 200 in 4.6662 ms
+2022-04-24 15:47:43.725 +05:00 [INF] admin отключен от системы
+2022-04-24 15:47:48.736 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 35171.6489 ms
+2022-04-24 15:50:13.474 +05:00 [INF] HTTP GET /api/Electronics responded 401 in 2.4966 ms
+2022-04-24 15:52:03.519 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-24 15:52:03.551 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-24 15:52:03.551 +05:00 [INF] Hosting environment: Development
+2022-04-24 15:52:03.552 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-24 15:52:04.781 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Electronics" for actions - BNS_API.Controllers.ElectronicsController.GetElectronics (TechnoWorld_API),BNS_API.Controllers.ElectronicsController.GetElectronics (TechnoWorld_API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-24 15:52:14.535 +05:00 [INF] Application is shutting down...
+2022-04-24 15:52:35.928 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-24 15:52:35.964 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-24 15:52:35.965 +05:00 [INF] Hosting environment: Development
+2022-04-24 15:52:35.966 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-24 15:52:37.751 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Electronics" for actions - BNS_API.Controllers.ElectronicsController.GetAllElectronics (TechnoWorld_API),BNS_API.Controllers.ElectronicsController.GetElectronicsByCategory (TechnoWorld_API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-24 15:53:12.502 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-24 15:53:12.533 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-24 15:53:12.535 +05:00 [INF] Hosting environment: Development
+2022-04-24 15:53:12.536 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-24 15:54:11.663 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-24 15:54:11.701 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-24 15:54:11.701 +05:00 [INF] Hosting environment: Development
+2022-04-24 15:54:11.702 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-24 15:54:30.609 +05:00 [INF] HTTP GET /api/Electronics/All responded 401 in 89.2596 ms

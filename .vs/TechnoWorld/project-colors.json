@@ -20,7 +20,17 @@
       "ProjectGuid": "61e24ee4-d51e-47ab-88a5-a507174d814e",
       "DisplayName": "TechnoWorld_Terminal",
       "ColorIndex": 2
+    },
+    "c2776fb3-3909-4a6b-9b8b-565264b08e10": {
+      "ProjectGuid": "c2776fb3-3909-4a6b-9b8b-565264b08e10",
+      "DisplayName": "TechoWorld_DataModels",
+      "ColorIndex": 3
+    },
+    "3f42b0a6-c30a-4ae8-ad71-a3819e5a0107": {
+      "ProjectGuid": "3f42b0a6-c30a-4ae8-ad71-a3819e5a0107",
+      "DisplayName": "TechnoWorld_API",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }

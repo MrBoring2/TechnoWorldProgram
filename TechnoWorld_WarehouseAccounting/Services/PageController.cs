@@ -23,7 +23,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
             where VM : BasePageVM
         {
             var vmType = typeof(VM);
-            viewModelsToPagesMapping[vmType] = typeof(P);           
+            viewModelsToPagesMapping[vmType] = typeof(P);
         }
 
         public void CreatePage(Type vmType)
@@ -32,7 +32,13 @@ namespace TechnoWorld_WarehouseAccounting.Services
             var page = CreatePageInstanceWithVM(vm);
             createdPages[vm] = page;
         }
-
+        public void ClearPages()
+        {
+            if (createdPages != null)
+            {
+                createdPages.Clear();
+            }
+        }
         public void UnregisterPageType<VM>()
         {
             var vmType = typeof(VM);

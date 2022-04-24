@@ -22,10 +22,15 @@ namespace BNS_API.Controllers
         {
             _context = context;
         }
-
+        // GET: api/Electronics
+        [HttpGet("All")]
+        public async Task<ActionResult<IEnumerable<Electronic>>> GetAllElectronics()
+        {
+            return await _context.Electronics.Include(p => p.Manufacturer).Include(p => p.ElectronicsToStorages).Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
+        }
         // GET: api/Electronics
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Electronic>>> GetElectronics(int categoryId)
+        public async Task<ActionResult<IEnumerable<Electronic>>> GetElectronicsByCategory(int categoryId)
         {
             return await _context.Electronics.Include(p => p.Manufacturer).Include(p => p.Type).Include(p => p.ElectronicsToStorages).Where(p => p.Type.CategoryId == categoryId).ToListAsync();
         }
@@ -37,7 +42,7 @@ namespace BNS_API.Controllers
             var electronic = await _context.Electronics.FindAsync(id);
 
             if (electronic == null)
-            { 
+            {
                 return NotFound();
             }
 

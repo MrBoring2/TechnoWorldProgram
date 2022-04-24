@@ -3,28 +3,72 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
       xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="1100"
       Title="ProductManagementPage" Background="White">
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="90"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="149*"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
-        <DataGrid Grid.Row="1" ItemsSource="{Binding DisplayedElectronics}" Margin="5" AutoGenerateColumns="False" CanUserAddRows="False" CanUserReorderColumns="False">
+
+        <Grid Margin="5,5,5,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row="0" Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Введите название модели..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.ColumnSpan="1">
+                <ComboBox Width="250" ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}" materialDesign:HintAssist.Hint="Категория" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
+                <ComboBox Width="250" Margin="5,0,0,0" ItemsSource="{Binding ElectronicsTypes}" SelectedItem="{Binding SelectedType}" IsEnabled="{Binding IsCategorySelected}" materialDesign:HintAssist.Hint="Тип" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                <ComboBox Width="250" ItemsSource="{Binding SortParameters}" SelectedItem="{Binding SelectedSort}" DisplayMemberPath="Title" materialDesign:HintAssist.Hint="Сортировка" materialDesign:HintAssist.IsFloating="True" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <CheckBox Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAcsending}" VerticalAlignment="Center" FontSize="16" Margin="5,0,0,0" Command="{Binding SortOrderChangedCommand}"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="2" Margin="0,0,0,0" HorizontalAlignment="Right">
+                <materialDesign:PackIcon Kind="AddCircleOutline" Width="35" Height="35" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
+                    <materialDesign:PackIcon.ToolTip>
+                        <TextBlock Text="Добавить"/>
+                    </materialDesign:PackIcon.ToolTip>
+                </materialDesign:PackIcon>
+                <materialDesign:PackIcon Kind="EditOutline" Width="35" Height="35" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
+                    <materialDesign:PackIcon.ToolTip>
+                        <TextBlock Text="Редактировать"/>
+                    </materialDesign:PackIcon.ToolTip>
+                </materialDesign:PackIcon>
+            </StackPanel>
+        </Grid>
+
+        <DataGrid Grid.Row="1" ItemsSource="{Binding DisplayedElectronics}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True">
+            <DataGrid.Resources>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Orange" />
+                    <Setter Property="Foreground" Value="Black" />
+                </Style>
+            </DataGrid.Resources>
             <DataGrid.Columns>
-                <DataGridTemplateColumn Header="Модель">
+                <DataGridTemplateColumn Header="Модель"  Width="2*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate DataType="DataGridCell">
                             <TextBlock Text="{Binding Model}" TextWrapping="Wrap"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Категория" Binding="{Binding ElectrnicsType.Category.Name}"/>
-                <DataGridTextColumn Header="Тип" Binding="{Binding ElectrnicsType.Name}"/>
-                <DataGridTextColumn Header="Цена" Binding="{Binding Price}"/>
+                <DataGridTextColumn Header="Категория" Binding="{Binding Type.Category.Name}" Width="*"/>
+                <DataGridTextColumn Header="Тип" Binding="{Binding Type.Name}" Width="*"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Price}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

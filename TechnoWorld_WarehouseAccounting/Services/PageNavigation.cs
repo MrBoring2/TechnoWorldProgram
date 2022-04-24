@@ -86,6 +86,10 @@ namespace TechnoWorld_WarehouseAccounting.Services
             //CreatePage(typeof(CartPageVM));
             //CreatePage(typeof(CategoriesPageVM));
         }
+        public void CrearCreatedPages()
+        {
+            pageController.ClearPages();
+        }
         protected void RegisterPageWithVM<VM, Pag>()
             where VM : BasePageVM
             where Pag : Page

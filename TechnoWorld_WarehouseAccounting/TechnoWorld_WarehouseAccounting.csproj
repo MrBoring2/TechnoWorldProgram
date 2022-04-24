@@ -221,6 +221,7 @@
     </Compile>
     <Compile Include="Common\NotifyPropertyChangedBase.cs" />
     <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Models\SortParameter.cs" />
     <Compile Include="Models\TokenModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Services\ApiService.cs" />

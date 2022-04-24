@@ -8,7 +8,7 @@
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
         xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
         mc:Ignorable="d"
-       Title="ТЕХНО МИР | Главное окно" Height="542" Width="947" WindowStartupLocation="CenterScreen" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality">
+       Title="ТЕХНО МИР | Главное окно" Height="700" Width="1100" MinHeight="600" MinWidth="1100" WindowStartupLocation="CenterScreen" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality">
     <local:BaseWindow.Resources>
         <ResourceDictionary>
             <!--  This is the template for all menu items. In this sample we use the glyph items.  -->
