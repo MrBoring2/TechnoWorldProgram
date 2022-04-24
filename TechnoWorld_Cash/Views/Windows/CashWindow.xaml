@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:TechnoWorld_Cash.Views.Windows"
         mc:Ignorable="d" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:mahaaps="http://metro.mahapps.com/winfx/xaml/controls"
-        xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" RenderOptions.BitmapScalingMode="HighQuality"
-        Title="ТЕХНО МИР | Касса" Height="680" Width="1200" BorderBackgroundBrush="Orange" Icon="/Resources/Images/logo.png">
+        xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" RenderOptions.BitmapScalingMode="HighQuality" Icon="/Resources/Images/logo1.ico"
+        Title="ТЕХНО МИР | Касса" Height="680" Width="1200" BorderBackgroundBrush="Orange" >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>

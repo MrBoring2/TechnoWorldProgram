@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TechnoWorld_WarehouseAccounting.Services;
 
 namespace TechnoWorld_WarehouseAccounting.Views.Windows
 {
@@ -22,6 +23,8 @@ namespace TechnoWorld_WarehouseAccounting.Views.Windows
         public MainAppWindow()
         {
             InitializeComponent();
+            PageNavigation.Service = MainFraim.NavigationService;
+           
         }
     }
 }

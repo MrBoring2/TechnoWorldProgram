@@ -146,7 +146,6 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\runtim
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\TechoWorld_DataModels.dll
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\TechoWorld_DataModels.pdb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\scopedcss\bundle\TechnoWorld_API.styles.css
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\staticwebassets\TechnoWorld_API.StaticWebAssets.Manifest.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.RazorTargetAssemblyInfo.cache

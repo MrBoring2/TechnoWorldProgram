@@ -10,7 +10,7 @@ namespace TechnoWorld_WarehouseAccounting.Models
 {
     public class MenuItem
     {
-        public MenuItem(string title, PackIconKind icon, BasePageVM pageDestination = null)
+        public MenuItem(string title, PackIconKind icon, Type pageDestination = null)
         {
             Title = title;
             Icon = icon;
@@ -19,6 +19,6 @@ namespace TechnoWorld_WarehouseAccounting.Models
 
         public string Title { get; set; }
         public PackIconKind Icon { get; set; }
-        public BasePageVM PageDestination { get; set; }
+        public Type PageDestination { get; set; }
     }
 }

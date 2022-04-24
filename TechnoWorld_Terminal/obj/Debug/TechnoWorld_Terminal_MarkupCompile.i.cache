@@ -16,5 +16,5 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\App.xaml
 167-353008365
 CustomElements\UserControlMenuItem.xaml;Resources\Templates\PageToPageVM.xaml;Views\Pages\CartPage.xaml;Views\Pages\CategoriesPage.xaml;Views\Pages\ElectronicsDetailPage.xaml;Views\Pages\ElectronicsListPage.xaml;Resources\Templates\ListViewTemplates.xaml;Resources\Themes\MainTheme.xaml;Resources\Themes\SubStyles.xaml;Views\Windows\MainAppWindow.xaml;
 resources\splash_screen.png
-True
+False
 

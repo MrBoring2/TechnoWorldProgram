@@ -16,5 +16,5 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\App.xaml
 160883146069
 Resources\Styles\MainTheme.xaml;Views\Windows\CashWindow.xaml;Views\Windows\CustomMessageBox.xaml;Views\Windows\LoginWindow.xaml;Views\Windows\PaymentWindow.xaml;
 resources\images\splash_screen.png
-True
+False
 

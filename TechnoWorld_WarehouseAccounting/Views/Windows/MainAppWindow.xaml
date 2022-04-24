@@ -4,10 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
-        xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" RenderOptions.BitmapScalingMode="HighQuality"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
         xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
         mc:Ignorable="d"
-       Title="ТЕХНО МИР | Главное окно" Height="542" Width="947" WindowStartupLocation="CenterScreen" Icon="/Resources/Images/logo.png">
+       Title="ТЕХНО МИР | Главное окно" Height="542" Width="947" WindowStartupLocation="CenterScreen" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality">
     <local:BaseWindow.Resources>
         <ResourceDictionary>
             <!--  This is the template for all menu items. In this sample we use the glyph items.  -->
@@ -50,25 +51,33 @@
             </DataTemplate>
         </ResourceDictionary>
     </local:BaseWindow.Resources>
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding WindowLoadedCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
     <Grid>
-       
-        
-        <TextBlock Text="dsad" VerticalAlignment="Top" Grid.Column="1" Margin="70,0,0,0"/>
+
+        <Frame x:Name="MainFraim" Margin="48,0,0,0"/>
         <mah:HamburgerMenu Grid.Column="0" PaneBackground="Orange" ItemsSource="{Binding MenuItems}" OptionsItemsSource="{Binding OptionalMenuItems}"
                            DisplayMode="CompactOverlay"
                            IsPaneOpen="False"
-                          
-                          ItemTemplate="{StaticResource HamburgerMenuItem}"
-                          OptionsItemTemplate="{StaticResource HamburgerOptionsMenuItem}">
+                           SelectedItem="{Binding SelectedMenuItem}" 
+                           SelectedOptionsItem="{Binding SelectedOptionsMenuItem}"
+                           ItemTemplate="{StaticResource HamburgerMenuItem}"
+                           OptionsItemTemplate="{StaticResource HamburgerOptionsMenuItem}">
             <mah:HamburgerMenu.HamburgerMenuHeaderTemplate>
                 <DataTemplate>
                     <Border Margin="5" Background="GhostWhite" CornerRadius="5">
-                        <Image HorizontalAlignment="Center" Width="100" Height="50"
+                        <Image HorizontalAlignment="Center" Height="80"
                    VerticalAlignment="Center"
-                   Source="/Resources/Images/logo.png" Stretch="Fill" />
+                    Stretch="Fill" Source="/Resources/Images/logo.png" />
                     </Border>
                 </DataTemplate>
             </mah:HamburgerMenu.HamburgerMenuHeaderTemplate>
         </mah:HamburgerMenu>
+       
     </Grid>
 </local:BaseWindow>

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace TechnoWorld_WarehouseAccounting.Views.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Page1.xaml
+    /// Логика взаимодействия для ProductManagementPage.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class ProductManagementPage : Page
     {
-        public Page1()
+        public ProductManagementPage()
         {
             InitializeComponent();
         }

@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:TechnoWorld_Cash.Views.Windows"
         mc:Ignorable="d" BorderBackgroundBrush="Orange" RenderOptions.BitmapScalingMode="HighQuality"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:extentials="clr-namespace:MaterialDesignExtensions.Themes;assembly=MaterialDesignExtensions"
+        xmlns:extentials="clr-namespace:MaterialDesignExtensions.Themes;assembly=MaterialDesignExtensions" Icon="/Resources/Images/logo1.ico"
         xmlns:dr="clr-namespace:TechnoWorld_Cash.Services"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
-        Title="ТЕХНО МИР | Оплата" MinWidth="1050" MinHeight="700" Width="1050" Height="700" Icon="/Resources/Images/logo.png">
+        Title="ТЕХНО МИР | Оплата" MinWidth="1050" MinHeight="700" Width="1050" Height="700">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
