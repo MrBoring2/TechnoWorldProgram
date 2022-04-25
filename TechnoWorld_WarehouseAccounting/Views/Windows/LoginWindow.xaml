@@ -5,6 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
         xmlns:mahaaps="http://metro.mahapps.com/winfx/xaml/controls"
+                  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"   
+        FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
         mc:Ignorable="d" RenderOptions.BitmapScalingMode="HighQuality"
         Title="ТЕХНО МИР | Авторизация" Height="514.748" Width="521.583" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" >

@@ -29,6 +29,7 @@ namespace TechnoWorld_WarehouseAccounting
         {
             WindowNavigation.Instance.RegisterWindow<LoginWindowVM, LoginWindow>();
             WindowNavigation.Instance.RegisterWindow<MainAppWindowVM, MainAppWindow>();
+            WindowNavigation.Instance.RegisterWindow<ProductWindowVM, ProductWindow>();
         }
     }
 }

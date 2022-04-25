@@ -5,6 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
         mc:Ignorable="d" BorderBackgroundBrush="Orange"
+                  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"   
+        FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:material="http://materialdesigninxaml.net/winfx/xaml/themes" WindowStartupLocation="CenterScreen"
         Title="{Binding Header}"  Height="273" Width="533" ResizeMode="NoResize">
     <Grid>

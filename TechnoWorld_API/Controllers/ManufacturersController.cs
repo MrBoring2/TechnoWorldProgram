@@ -22,7 +22,11 @@ namespace BNS_API.Controllers
         {
             _context = context;
         }
-
+        [HttpGet("All")]
+        public async Task<ActionResult<IEnumerable<Manufacturer>>> GetAllManufacturers()
+        {
+            return _context.Manufacturers.ToList();
+        }
         // GET: api/Manufacturers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Manufacturer>>> GetManufacturers(int categoryId)

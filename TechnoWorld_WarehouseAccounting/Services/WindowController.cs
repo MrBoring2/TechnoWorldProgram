@@ -71,7 +71,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
             openWindows.Remove(windowViewModel);
         }
 
-        public void ShowModalPresentation(ModalWindowVMBase vm)
+        public void ShowModalPresentation(BaseModalWindowVM vm)
         {
             App.Current.Dispatcher.Invoke(() =>
             {

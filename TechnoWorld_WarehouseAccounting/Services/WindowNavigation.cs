@@ -63,7 +63,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
                 displayRootRegistry.HidePresentation(currentWindowVM);
             }
         }
-        public void OpenModalWindow(ModalWindowVMBase windowVM)
+        public void OpenModalWindow(BaseModalWindowVM windowVM)
         {
             if (windowVM != null)
             {

@@ -230,6 +230,7 @@
     <Compile Include="Services\DialogCloser.cs" />
     <Compile Include="Services\PageController.cs" />
     <Compile Include="Services\PageNavigation.cs" />
+    <Compile Include="Services\Paginator.cs" />
     <Compile Include="Services\WindowController.cs" />
     <Compile Include="Services\WindowNavigation.cs" />
     <Compile Include="ViewModels\Pages\BasePageVM.cs" />
@@ -237,7 +238,8 @@
     <Compile Include="ViewModels\Windows\BaseWindowVM.cs" />
     <Compile Include="ViewModels\Windows\LoginWindowVM.cs" />
     <Compile Include="ViewModels\Windows\MainAppWindowVM.cs" />
-    <Compile Include="ViewModels\Windows\ModalWindowVMBase.cs" />
+    <Compile Include="ViewModels\Windows\BaseModalWindowVM.cs" />
+    <Compile Include="ViewModels\Windows\ProductWindowVM.cs" />
     <Compile Include="Views\Pages\ProductManagementPage.xaml.cs">
       <DependentUpon>ProductManagementPage.xaml</DependentUpon>
     </Compile>
@@ -250,6 +252,9 @@
     </Compile>
     <Compile Include="Views\Windows\MainAppWindow.xaml.cs">
       <DependentUpon>MainAppWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\ProductWindow.xaml.cs">
+      <DependentUpon>ProductWindow.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -301,6 +306,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Windows\MainAppWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\ProductWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

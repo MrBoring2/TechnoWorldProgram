@@ -6,6 +6,10 @@
       xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
       xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Pages"
       mc:Ignorable="d" 
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"   
+        FontFamily="{DynamicResource MaterialDesignFont}"
+       xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
       d:DesignHeight="600" d:DesignWidth="1100"
       Title="ProductManagementPage" Background="White">
 
@@ -36,22 +40,36 @@
                 <ComboBox Width="250" ItemsSource="{Binding SortParameters}" SelectedItem="{Binding SelectedSort}" DisplayMemberPath="Title" materialDesign:HintAssist.Hint="Сортировка" materialDesign:HintAssist.IsFloating="True" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 <CheckBox Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAcsending}" VerticalAlignment="Center" FontSize="16" Margin="5,0,0,0" Command="{Binding SortOrderChangedCommand}"/>
             </StackPanel>
-            
+
             <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="2" Margin="0,0,0,0" HorizontalAlignment="Right">
-                <materialDesign:PackIcon Kind="AddCircleOutline" Width="35" Height="35" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
-                    <materialDesign:PackIcon.ToolTip>
-                        <TextBlock Text="Добавить"/>
-                    </materialDesign:PackIcon.ToolTip>
-                </materialDesign:PackIcon>
-                <materialDesign:PackIcon Kind="EditOutline" Width="35" Height="35" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
-                    <materialDesign:PackIcon.ToolTip>
-                        <TextBlock Text="Редактировать"/>
-                    </materialDesign:PackIcon.ToolTip>
-                </materialDesign:PackIcon>
+                <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenProductWindowCommand}">
+                    <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
+                        <interactions:Interaction.Triggers>
+                            <interactions:EventTrigger EventName="LeftMouseClick">
+                                <interactions:InvokeCommandAction Command="{Binding OpenProductWindowCommand}"/>
+                            </interactions:EventTrigger>
+                        </interactions:Interaction.Triggers>
+                        <materialDesign:PackIcon.ToolTip>
+                            <TextBlock Text="Добавить"/>
+                        </materialDesign:PackIcon.ToolTip>
+                    </materialDesign:PackIcon>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenEditProductWindowCommand}" Cursor="Hand">
+                    <materialDesign:PackIcon Kind="EditOutline" Width="35" Height="35" Margin="-15" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
+                        <interactions:Interaction.Triggers>
+                            <interactions:EventTrigger EventName="LeftMouseClick">
+                                <interactions:InvokeCommandAction Command="{Binding OpenProductWindowCommand}"/>
+                            </interactions:EventTrigger>
+                        </interactions:Interaction.Triggers>
+                        <materialDesign:PackIcon.ToolTip>
+                            <TextBlock Text="Редактировать"/>
+                        </materialDesign:PackIcon.ToolTip>
+                    </materialDesign:PackIcon>
+                </Button>
             </StackPanel>
         </Grid>
 
-        <DataGrid Grid.Row="1" ItemsSource="{Binding DisplayedElectronics}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True">
+        <DataGrid Grid.Row="1" ItemsSource="{Binding DisplayedElectronics}" SelectedItem="{Binding SelectedElectronic}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True">
             <DataGrid.Resources>
                 <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Orange" />
@@ -71,5 +89,49 @@
                 <DataGridTextColumn Header="Цена" Binding="{Binding Price}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
+
+        <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Margin="10" Grid.Row="1">
+            <Image Source="/Resources/Images/empty.png" Width="280" Height="190"/>
+            <TextBlock  Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock  Text="Выберите другие критерии или проверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" Name="Paginator" HorizontalAlignment="Center"  Grid.Row="2" Grid.Column="0">
+            <Button x:Name="ToFirst" Background="Orange" BorderBrush="Orange" Command="{Binding ChangePageCommand}" CommandParameter="-1" Margin="0,7.5,0,7.5" Height="35" Width="50" FontSize="30" Cursor="Hand">
+                <Button.Content>
+                    <TextBlock Text="«" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Height="47"/>
+                </Button.Content>
+            </Button>
+            <ListView Margin="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectedItem="{Binding Paginator.SelectedPageNumber}" ItemsSource="{Binding Paginator.DisplayedPagesNumbers, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="35" Width="auto">
+                <interactions:Interaction.Triggers>
+                    <interactions:EventTrigger EventName="SelectionChanged">
+                        <interactions:InvokeCommandAction Command="{Binding ChangePageCommand}"/>
+                    </interactions:EventTrigger>
+                </interactions:Interaction.Triggers>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="VerticalAlignment" Value="Stretch"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" Height="20" Width="45" FontSize="18" TextAlignment="Center"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding ChangePageCommand}" CommandParameter="1" Margin="0" Height="35" Width="50" FontSize="30" Cursor="Hand">
+                <Button.Content>
+                    <TextBlock Text="»" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Height="47"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+
     </Grid>
 </Page>
