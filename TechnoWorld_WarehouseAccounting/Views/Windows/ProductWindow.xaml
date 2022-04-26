@@ -6,12 +6,13 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"   
         FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
         xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
         mc:Ignorable="d"
         xmlns:dr="clr-namespace:TechnoWorld_WarehouseAccounting.Services"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
-        Title="ТЕХНО МИР | Карточка товара" Height="802" Width="706" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
+        Title="ТЕХНО МИР | Карточка товара" Height="875" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
@@ -28,19 +29,20 @@
         <materialDesign:Card Grid.Column="0" Grid.Row="1" Margin="5" UniformCornerRadius="5">
             <Image  Margin="5,5,5,5" Source="{Binding Image}"/>
         </materialDesign:Card>
-        <Button Grid.Column="0" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Выбрать изображение" Style="{StaticResource btn}" Margin="5"/>
+        <Button Grid.Column="0" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Выбрать изображение" Style="{StaticResource btn}" Margin="5" Command="{Binding LoadImageCommand}" Cursor="Hand"/>
         <Border Grid.Column="1" Grid.Row="1" CornerRadius="5" BorderBrush="Orange" BorderThickness="0" Grid.RowSpan="2" Margin="5,5,5,5">
             <materialDesign:Card  UniformCornerRadius="5">
                 <StackPanel>
                     <TextBlock Text="Основаная информация" HorizontalAlignment="Center" Margin="5" FontSize="20"/>
-                    <TextBox Text="{Binding Model}" materialDesign:HintAssist.Hint="Модель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <ComboBox ItemsSource="{Binding Categories}" SelectedValue="{Binding Category.Id}" SelectedValuePath="Id" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Категория" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <ComboBox ItemsSource="{Binding ElectronicsTypes}" SelectedValue="{Binding ElectrnicsType.TypeId}" SelectedValuePath="TypeId" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Тип" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <TextBox Text="{Binding Model}" materialDesign:HintAssist.Hint="Модель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <ComboBox ItemsSource="{Binding Categories}" IsEnabled="{Binding IsAdd}" SelectedItem="{Binding Category}" SelectedValue="{Binding Category.Id}" SelectedValuePath="Id" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Категория" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <ComboBox ItemsSource="{Binding ElectronicsTypes}" SelectedItem="{Binding ElectrnicsType}" SelectedValue="{Binding ElectrnicsType.TypeId}" IsEnabled="{Binding IsAdd}" SelectedValuePath="TypeId" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Тип" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
                     <TextBox Text="{Binding Price}" materialDesign:HintAssist.Hint="Цена" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
-                    <ComboBox ItemsSource="{Binding Manufacturers}" SelectedValue="{Binding Manufacturer.ManufacturerId}" SelectedValuePath="ManufacturerId"  DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <ComboBox ItemsSource="{Binding Manufacturers}" SelectedItem="{Binding Manufacturer}" SelectedValue="{Binding Manufacturer.ManufacturerId}" SelectedValuePath="ManufacturerId"  DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
                     <TextBox Text="{Binding ManufacturerCountry}" materialDesign:HintAssist.Hint="Страна производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Template="{Binding Color}" materialDesign:HintAssist.Hint="Цвет" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Template="{Binding Weight}" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <TextBox Text="{Binding Color}" materialDesign:HintAssist.Hint="Цвет" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <TextBox Text="{Binding Weight}" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <CheckBox IsChecked="{Binding IsOfferedForSale}" Content="Выставлен на продажу" HorizontalAlignment="Center" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
                 </StackPanel>
             </materialDesign:Card>
         </Border>
@@ -52,7 +54,8 @@
 
         <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Content="Сохранить" Width="200" Margin="0,0,15,0" Style="{StaticResource btn}" Command="{Binding SaveCommand}" Cursor="Hand"/>
-            <Button Content="Отмена" Width="200" Style="{StaticResource btn}"/>
+            <Button Content="Отмена" Width="200" Style="{StaticResource btn}" Command="{Binding CancelCommand}" Cursor="Hand"/>
         </StackPanel>
+       
     </Grid>
 </local:BaseWindow>

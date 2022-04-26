@@ -8,6 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using BNS_API.Data;
 using TechoWorld_DataModels;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.SignalR;
+using TechnoWorld_API.Services;
+using Serilog;
+using TechnoWorld_API.Helpers;
+using Newtonsoft.Json;
 
 namespace BNS_API.Controllers
 {
@@ -16,11 +21,13 @@ namespace BNS_API.Controllers
     [Authorize]
     public class ElectronicsController : ControllerBase
     {
+        private readonly IHubContext<TechnoWorldHub> _hubContext;
         private readonly TechnoWorldContext _context;
 
-        public ElectronicsController(TechnoWorldContext context)
+        public ElectronicsController(TechnoWorldContext context, IHubContext<TechnoWorldHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
         // GET: api/Electronics
         [HttpGet("All")]
@@ -32,7 +39,7 @@ namespace BNS_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Electronic>>> GetElectronicsByCategory(int categoryId)
         {
-            return await _context.Electronics.Include(p => p.Manufacturer).Include(p => p.Type).Include(p => p.ElectronicsToStorages).Where(p => p.Type.CategoryId == categoryId).ToListAsync();
+            return await _context.Electronics.Include(p => p.Manufacturer).Include(p => p.Type).Include(p => p.ElectronicsToStorages).Where(p => p.Type.CategoryId == categoryId).Where(p => p.IsOfferedForSale == true).ToListAsync();
         }
 
         // GET: api/Electronics/5
@@ -76,7 +83,7 @@ namespace BNS_API.Controllers
                     throw;
                 }
             }
-
+            Log.Information($"Изменён товар {electronic.Model}");
             return NoContent();
         }
 
@@ -85,8 +92,18 @@ namespace BNS_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Electronic>> PostElectronic(Electronic electronic)
         {
+            _context.Entry(electronic).State = EntityState.Added;
             _context.Electronics.Add(electronic);
             await _context.SaveChangesAsync();
+
+            Log.Information($"Добавлен товар {electronic.Model}");
+            var allElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(allElectronics, Formatting.None,
+                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+
+            var categoryElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).Where(p => p.Type.CategoryId == electronic.Type.CategoryId).ToListAsync();
+            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(categoryElectronics, Formatting.None,
+                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
 
             return CreatedAtAction("GetElectronic", new { id = electronic.ElectronicsId }, electronic);
         }

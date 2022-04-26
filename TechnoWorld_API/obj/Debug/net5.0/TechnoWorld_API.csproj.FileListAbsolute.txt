@@ -1,11 +1,3 @@
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.csproj.SuggestedBindingRedirects.cache
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.dll.config
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.AssemblyInfoInputs.cache
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.AssemblyInfo.cs
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.csproj.CoreCompileInputs.cache
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\appsettings.json
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\TechnoWorld_API.exe
@@ -146,6 +138,16 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\runtim
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\TechoWorld_DataModels.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\TechoWorld_DataModels.pdb
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.csproj.AssemblyReference.cache
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.csproj.SuggestedBindingRedirects.cache
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.dll.config
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.AssemblyInfoInputs.cache
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.AssemblyInfo.cs
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.csproj.CoreCompileInputs.cache
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\scopedcss\bundle\TechnoWorld_API.styles.css
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\staticwebassets\TechnoWorld_API.StaticWebAssets.Manifest.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.RazorTargetAssemblyInfo.cache
@@ -154,5 +156,3 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\Techno
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\ref\TechnoWorld_API.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.pdb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.genruntimeconfig.cache
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\obj\Debug\net5.0\TechnoWorld_API.csproj.AssemblyReference.cache
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\bin\Debug\net5.0\TechoWorld_DataModels.pdb

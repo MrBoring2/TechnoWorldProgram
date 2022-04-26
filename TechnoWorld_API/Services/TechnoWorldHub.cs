@@ -27,7 +27,7 @@ namespace TechnoWorld_API.Services
             var userName = context.User.Identity.Name;
             string temp;
             ConnectedUsers.TryRemove(userName, out temp);
-            if(temp != string.Empty)
+            if (temp != string.Empty)
             {
                 Log.Information($"{userName} отключен от системы");
             }
@@ -39,16 +39,23 @@ namespace TechnoWorld_API.Services
             if (roleName == "terminalUser")
             {
                 string connectionId;
-                Log.Information($"Подключенин терминал {userName}");
+                Log.Information($"Подключенин терминал: {userName}");
                 ConnectedUsers.TryGetValue(userName, out connectionId);
                 Groups.AddToGroupAsync(connectionId, SignalRGroups.terminal_group);
             }
             else if (roleName == "cash_user")
             {
                 string connectionId;
-                Log.Information($"Подключен пользователь кассы {userName}");
+                Log.Information($"Подключен пользователь кассы: {userName}");
                 ConnectedUsers.TryGetValue(userName, out connectionId);
                 Groups.AddToGroupAsync(connectionId, SignalRGroups.cash_group);
+            }
+            else if (roleName == "storage_worker")
+            {
+                string connectionId;
+                Log.Information($"Подключен пользователь к приложению управление предприятием: {userName}");
+                ConnectedUsers.TryGetValue(userName, out connectionId);
+                Groups.AddToGroupAsync(connectionId, SignalRGroups.storage_group);
             }
         }
     }

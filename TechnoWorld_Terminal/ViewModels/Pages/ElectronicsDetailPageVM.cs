@@ -147,8 +147,15 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
             if (ClientService.Instance.Cart.FirstOrDefault(p => p.Electronic.ElectronicsId == CurrentElectronic.ElectronicsId) == null)
             {
-                ClientService.Instance.Cart.Add(new Models.CartItem(CurrentElectronic));
-                CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Оповещение", Message = "Товар добавлен в корзину", Type = NotificationType.Information }, "ElectronicNotificationArea");
+                if (CurrentElectronic.AmountInStorage > 0)
+                {
+                    ClientService.Instance.Cart.Add(new Models.CartItem(CurrentElectronic));
+                    CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Оповещение", Message = "Товар добавлен в корзину", Type = NotificationType.Information }, "ElectronicNotificationArea");
+                }
+                else
+                {
+                    CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Внимание", Message = "Товар нет в наличии", Type = NotificationType.Warning }, "ElectronicNotificationArea");
+                }
             }
             else
             {

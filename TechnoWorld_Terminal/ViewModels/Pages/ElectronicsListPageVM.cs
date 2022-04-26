@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.SignalR.Client;
+using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -48,6 +49,15 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             {
                 Id = 1
             };
+            ClientService.Instance.HubConnection.On<string>("UpdateElectronics", (electronics) =>
+            {
+                var result = JsonConvert.DeserializeObject<List<Electronic>>(electronics);
+                if (CurrentCategory.Id == result.FirstOrDefault().Type.CategoryId)
+                {
+                    Electronics = result;
+                    RefreshElectronics();
+                }
+            });
         }
 
         #region Properties

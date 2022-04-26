@@ -21,7 +21,7 @@ namespace TechoWorld_DataModels
         public string Model { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
-        public int Discount { get; set; }
+        public bool IsOfferedForSale { get; set; }
         public int ManufactrurerId { get; set; }
         public int TypeId { get; set; }
         public byte[] Image { get; set; }

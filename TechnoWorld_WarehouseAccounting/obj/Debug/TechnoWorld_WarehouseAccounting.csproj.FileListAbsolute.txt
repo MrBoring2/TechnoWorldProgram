@@ -4,6 +4,7 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Deb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\CustomMessageBox.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\LoginWindow.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\MainAppWindow.g.cs
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\ProductWindow.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\App.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting_MarkupCompile.cache
@@ -97,11 +98,13 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\bin\Deb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\bin\Debug\Ru\MaterialDesignExtensions.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\bin\Debug\ru-ru\MaterialDesignExtensions.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\bin\Debug\uz-Latn-UZ\MaterialDesignExtensions.resources.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.csproj.AssemblyReference.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\App.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Pages\ProductManagementPage.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\CustomMessageBox.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\LoginWindow.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\MainAppWindow.baml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\ProductWindow.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.g.resources
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.Properties.Resources.resources
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.csproj.GenerateResource.cache
@@ -109,6 +112,3 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Deb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.csproj.CopyComplete
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.exe
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.pdb
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.csproj.AssemblyReference.cache
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\ProductWindow.g.cs
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\ProductWindow.baml

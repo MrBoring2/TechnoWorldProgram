@@ -22,7 +22,6 @@ namespace TechnoWorld_API.Controllers
     {
         private readonly IHubContext<TechnoWorldHub> _hubContext;
         private readonly TechnoWorldContext _context;
-        readonly IDiagnosticContext _diagnosticContext;
         public CategoriesController(TechnoWorldContext context, IHubContext<TechnoWorldHub> hubContext)
         {
             _context = context;
@@ -34,7 +33,6 @@ namespace TechnoWorld_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
-            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("SendHello", "Привет");
             return await _context.Categories.ToListAsync();
         }
 

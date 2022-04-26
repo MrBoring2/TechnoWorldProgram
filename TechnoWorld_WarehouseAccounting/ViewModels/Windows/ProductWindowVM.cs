@@ -1,7 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿
+using Microsoft.Win32;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +18,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
     public class ProductWindowVM : BaseModalWindowVM
     {
-        private bool isEdit;
+        private bool isAdd;
         private ObservableCollection<Category> categories;
         private ObservableCollection<ElectrnicsType> electrnicsTypes;
         private ObservableCollection<Manufacturer> manufacturers;
@@ -24,17 +27,22 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public ProductWindowVM()
         {
             SaveCommand = new RelayCommand(Save);
+            LoadImageCommand = new RelayCommand(LoadImage);
+            CancelCommand = new RelayCommand(Cancel);
             CurrentElectronic = new Electronic();
-            isEdit = false;
+            IsAdd = true;
             Task.Run(() => Initialize().Wait());
             Task.Run(() => LoadData().Wait());
         }
+
+
         public ProductWindowVM(Electronic electronic) : this()
         {
             Task.Run(() => InitializeFields(electronic).Wait());
         }
         public RelayCommand SaveCommand { get; set; }
-
+        public RelayCommand CancelCommand { get; set; }
+        public RelayCommand LoadImageCommand { get; set; }
 
         public ObservableCollection<Category> Categories
         {
@@ -46,14 +54,31 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             get { return manufacturers; }
             set { manufacturers = value; OnPropertyChanged(); }
         }
+        public ObservableCollection<ElectrnicsType> AllElectronicsTypes { get; set; }
         public ObservableCollection<ElectrnicsType> ElectronicsTypes
         {
             get { return electrnicsTypes; }
             set { electrnicsTypes = value; OnPropertyChanged(); }
         }
+        public bool IsAdd { get => isAdd; set { isAdd = value; OnPropertyChanged(); } }
         public string Model { get => CurrentElectronic.Model; set { CurrentElectronic.Model = value; OnPropertyChanged(); } }
-        public Category Category { get => CurrentElectronic.Type.Category; set { CurrentElectronic.Type.Category = value; CurrentElectronic.Type.CategoryId = value.Id; OnPropertyChanged(); } }
-        public ElectrnicsType ElectrnicsType { get => CurrentElectronic.Type; set { CurrentElectronic.Type = value; CurrentElectronic.TypeId = value.TypeId; OnPropertyChanged(); } }
+        public Category Category
+        {
+            get => CurrentElectronic.Type == null ? null : CurrentElectronic.Type.Category;
+            set
+            {
+                if (CurrentElectronic.Type != null)
+                {
+                    CurrentElectronic.Type.Category = value;
+                    //CurrentElectronic.Type.CategoryId = value.Id;
+                   // ElectrnicsType = null;
+                    ElectronicsTypes = new ObservableCollection<ElectrnicsType>(AllElectronicsTypes.Where(p => p.CategoryId == Category.Id).ToList());
+                    ElectrnicsType = ElectronicsTypes.FirstOrDefault();
+                }
+                OnPropertyChanged();
+            }
+        }
+        public ElectrnicsType ElectrnicsType { get => CurrentElectronic.Type; set { CurrentElectronic.Type = value; OnPropertyChanged(); } }
         public decimal Price { get => CurrentElectronic.Price; set { CurrentElectronic.Price = value; OnPropertyChanged(); } }
         public Manufacturer Manufacturer { get => CurrentElectronic.Manufacturer; set { CurrentElectronic.Manufacturer = value; CurrentElectronic.ManufactrurerId = value.ManufacturerId; OnPropertyChanged(); } }
         public string ManufacturerCountry { get => CurrentElectronic.ManufacturerСountry; set { CurrentElectronic.ManufacturerСountry = value; OnPropertyChanged(); } }
@@ -61,6 +86,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public double Weight { get => CurrentElectronic.Weight; set { CurrentElectronic.Weight = value; OnPropertyChanged(); } }
         public string Description { get => CurrentElectronic.Description; set { CurrentElectronic.Description = value; OnPropertyChanged(); } }
         public byte[] Image { get => CurrentElectronic.Image; set { CurrentElectronic.Image = value; OnPropertyChanged(); } }
+        public bool IsOfferedForSale { get => CurrentElectronic.IsOfferedForSale; set { CurrentElectronic.IsOfferedForSale = value; OnPropertyChanged(); } }
 
         private async Task Initialize()
         {
@@ -68,7 +94,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async Task InitializeFields(Electronic electronic)
         {
-            isEdit = true;
+            IsAdd = false;
             CurrentElectronic = electronic;
         }
         private async Task LoadData()
@@ -95,10 +121,10 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             var response = await ApiService.GetRequest("api/ElectrnicsTypes/All");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                ElectronicsTypes = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content));
+                AllElectronicsTypes = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content));
                 if (ElectrnicsType == null)
                 {
-                    ElectrnicsType = ElectronicsTypes.FirstOrDefault();
+                    ElectrnicsType = AllElectronicsTypes.FirstOrDefault();
                 }
             }
         }
@@ -116,23 +142,20 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             }
         }
 
+        private void LoadImage(object obj)
+        {
+            var openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Файлы изображения |*.jpg;*.jpeg;*.png;*.gif;*.tif;";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                Image = File.ReadAllBytes(openFileDialog.FileName);
+            }
+        }
         private async void Save(object obj)
         {
             if (Validate())
             {
-                if (isEdit)
-                {
-                    var response = await ApiService.PutRequest("api/Electronics", CurrentElectronic.ElectronicsId, CurrentElectronic);
-                    if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
-                    {
-                        DialogResult = true;
-                    }
-                    else
-                    {
-                        CustomMessageBox.Show(JsonConvert.DeserializeObject<string>(response.Content), "Произошла ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                    }
-                }
-                else
+                if (isAdd)
                 {
                     var response = await ApiService.PostRequest("api/Electronics", CurrentElectronic);
                     if (response.StatusCode == System.Net.HttpStatusCode.Created)
@@ -144,11 +167,59 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                         CustomMessageBox.Show(JsonConvert.DeserializeObject<string>(response.Content), "Произошла ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
+                else
+                {
+                    var response = await ApiService.PutRequest("api/Electronics", CurrentElectronic.ElectronicsId, CurrentElectronic);
+                    if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
+                    {
+                        DialogResult = true;
+                    }
+                    else
+                    {
+                        CustomMessageBox.Show(JsonConvert.DeserializeObject<string>(response.Content), "Произошла ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+
+                }
             }
         }
 
+        private void Cancel(object obj)
+        {
+            DialogResult = false;
+        }
         private bool Validate()
         {
+            if (string.IsNullOrEmpty(Model))
+            {
+                CustomMessageBox.Show("Поле модель не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return false;
+            }
+            else if (Price <= 0)
+            {
+                CustomMessageBox.Show("Цена не должна быть отрицательной!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return false;
+            }
+            else if (string.IsNullOrEmpty(Model))
+            {
+                CustomMessageBox.Show("Поле страна производитель не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return false;
+            }
+            else if (string.IsNullOrEmpty(Color))
+            {
+                CustomMessageBox.Show("Поле цвет не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return false;
+            }
+            else if (Weight <= 0)
+            {
+                CustomMessageBox.Show("Вес не должен быть отрицательным!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return false;
+            }
+            else if (string.IsNullOrEmpty(Description))
+            {
+                CustomMessageBox.Show("Поле описание не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return false;
+            }
+
             return true;
         }
     }

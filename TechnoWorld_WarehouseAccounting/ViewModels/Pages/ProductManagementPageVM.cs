@@ -20,6 +20,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         private ObservableCollection<string> categories;
         private ObservableCollection<SortParameter> sortParameters;
         private ObservableCollection<string> electronicsTypes { get; set; }
+        private ObservableCollection<string> forDisplayList { get; set; }
         private int itemsPerPage;
         private string selectedCategory;
         private string selectedType;
@@ -28,6 +29,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         private Visibility emptyVisibility;
         private Electronic selectedElectronc;
         private bool isCategorySelected;
+        private string selectedDisplay;
         private string search;
         public ProductManagementPageVM()
         {
@@ -42,6 +44,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         public ObservableCollection<string> Categories { get => categories; set { categories = value; OnPropertyChanged(); } }
         public ObservableCollection<ElectrnicsType> AllElectronicsTypes { get; set; }
         public ObservableCollection<SortParameter> SortParameters { get => sortParameters; set { sortParameters = value; OnPropertyChanged(); } }
+        public ObservableCollection<string> ForDisplayList { get => forDisplayList; set { forDisplayList = value; OnPropertyChanged(); } }
         public ObservableCollection<string> ElectronicsTypes
         {
             get => electronicsTypes;
@@ -83,6 +86,11 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             get { return itemsPerPage; }
             set { itemsPerPage = value; OnPropertyChanged(); }
         }
+        public string SelectedDisplay
+        {
+            get { return selectedDisplay; }
+            set { selectedDisplay = value; OnPropertyChanged(); OnPropertyChanged(nameof(DisplayedElectronics)); }
+        }
         public Visibility EmptyVisibility { get => emptyVisibility; set { emptyVisibility = value; OnPropertyChanged(); } }
         public string Search { get => search; set { search = value; OnPropertyChanged(); OnPropertyChanged(nameof(DisplayedElectronics)); } }
         public SortParameter SelectedSort { get => selectedSort; set { selectedSort = value; OnPropertyChanged(); OnPropertyChanged(nameof(DisplayedElectronics)); } }
@@ -120,9 +128,18 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 new SortParameter("Модель", "Model"),
                 new SortParameter("Цена", "Price")
             };
+            ForDisplayList = new ObservableCollection<string>
+            {
+                "Все",
+                "Выстевлены на продажу",
+                "Сняты с продажи"
+            };
+
+            selectedDisplay = ForDisplayList.FirstOrDefault(p => p.Equals("Выстевлены на продажу"));
             selectedSort = SortParameters.FirstOrDefault();
 
-            OnPropertyChanged(nameof(search));
+            OnPropertyChanged(nameof(Search));
+            OnPropertyChanged(nameof(SelectedDisplay));
             OnPropertyChanged(nameof(SelectedSort));
         }
 
@@ -199,7 +216,22 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         {
             var list = SortElectronics(electronics).ToList();
 
-            list = list.Where(p => p.Model.ToLower().Contains(Search.ToLower())).ToList();
+            if (SelectedDisplay != "Все")
+            {
+                if (SelectedDisplay == "Выстевлены на продажу")
+                {
+                    list = list.Where(p => p.IsOfferedForSale == true).ToList();
+                }
+                else if (SelectedDisplay == "Сняты с продажи")
+                {
+                    list = list.Where(p => p.IsOfferedForSale == false).ToList();
+                }
+            }
+
+            if (list.Count > 0)
+            {
+                list = list.Where(p => p.Model.ToLower().Contains(Search.ToLower())).ToList();
+            }
 
             if (list.Count > 0)
             {
@@ -210,6 +242,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             {
                 list = list.Where(p => SelectedType != "Все" && SelectedType != null ? p.Type.Name.Equals(SelectedType) : true).ToList();
             }
+
+
+
             return list;
         }
 
@@ -242,6 +277,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(productWindowVM));
             if (productWindowVM.DialogResult == true)
             {
+                await LoadElectronics();
                 CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно добавлен", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
@@ -260,10 +296,11 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
                 if (productWindowVM.DialogResult == true)
                 {
-                    CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно добавлен", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                    await LoadElectronics();
+                    CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно изменён", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
-            
+
         }
         //private async void ToLastPage(object obj)
         //{
