@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 
@@ -14,8 +15,9 @@ namespace TechoWorld_DataModels
 
         public int StorageId { get; set; }
         public string Name { get; set; }
-
+        [JsonIgnore]
         public virtual ICollection<Delivery> Deliveries { get; set; }
+        [JsonIgnore]
         public virtual ICollection<ElectronicsToStorage> ElectronicsToStorages { get; set; }
     }
 }

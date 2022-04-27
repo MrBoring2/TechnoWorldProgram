@@ -81,14 +81,16 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 case 3:
                     {
                         MenuItems.Add(new MenuItem("Управление товарами", MaterialDesignThemes.Wpf.PackIconKind.FormSelect, typeof(ProductManagementPageVM)));
-                        MenuItems.Add(new MenuItem("Поставка товара", MaterialDesignThemes.Wpf.PackIconKind.BoxAdd));
+                        MenuItems.Add(new MenuItem("Поставка товара", MaterialDesignThemes.Wpf.PackIconKind.BoxAdd, typeof(DeliveryManagementPageVM)));
                     }
                     break;
                 case 4:
                     {
                         MenuItems.Add(new MenuItem("Управление товарами", MaterialDesignThemes.Wpf.PackIconKind.FormSelect, typeof(ProductManagementPageVM)));
                         MenuItems.Add(new MenuItem("Управление сотрудниками", MaterialDesignThemes.Wpf.PackIconKind.Users));
-                        MenuItems.Add(new MenuItem("Поставка товара", MaterialDesignThemes.Wpf.PackIconKind.BoxAdd));
+                        MenuItems.Add(new MenuItem("Поставка товара", MaterialDesignThemes.Wpf.PackIconKind.BoxAdd, typeof(DeliveryManagementPageVM)));
+                        MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.Table));
+                        MenuItems.Add(new MenuItem("Отчётная деятельность", MaterialDesignThemes.Wpf.PackIconKind.ChartBar));
                     }
                     break;
                 default:

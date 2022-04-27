@@ -1,4 +1,3 @@
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.AssemblyReference.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.SuggestedBindingRedirects.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.ResolveComReference.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\Resources\Styles\MainTheme.baml
@@ -111,3 +110,4 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.CopyComplete
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.exe
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.pdb
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.AssemblyReference.cache

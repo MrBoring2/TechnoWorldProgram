@@ -101,7 +101,6 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\bin\Debug\System.T
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\bin\Debug\System.Threading.Channels.xml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\bin\Debug\System.ValueTuple.xml
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\bin\Debug\TechoWorld_DataModels.pdb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\bin\Debug\de\MahApps.Metro.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\bin\Debug\ar-DZ\MaterialDesignExtensions.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\bin\Debug\cs\MaterialDesignExtensions.resources.dll
@@ -141,3 +140,4 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\obj\Debug\TechnoWo
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\obj\Debug\TechnoWorld_Terminal.csproj.CopyComplete
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\obj\Debug\TechnoWorld_Terminal.exe
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\obj\Debug\TechnoWorld_Terminal.pdb
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Terminal\bin\Debug\TechoWorld_DataModels.pdb

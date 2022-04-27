@@ -25,7 +25,7 @@
                     <TextBlock Text="{Binding Manufacturer.Name}" Margin="10,0,0,0" FontSize="14" VerticalAlignment="Bottom"/>
                 </StackPanel>
                 <StackPanel Grid.Column="2" Orientation="Vertical">
-                    <TextBlock Text="{Binding Price, StringFormat={}{0:F0} ₽}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
+                    <TextBlock Text="{Binding SalePrice, StringFormat={}{0:F0} ₽}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
                     <TextBlock Text="{Binding AmountInStorage, StringFormat={}{0} на складе}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
                 </StackPanel>
             </Grid>
@@ -66,7 +66,7 @@
 
                 <StackPanel Grid.Column="2" VerticalAlignment="Center">
                     <mde:OversizedNumberSpinner Max="10" Min="0" HorizontalAlignment="Center" Grid.Column="3" Background="Orange"    Value="{Binding Amount, Mode=TwoWay}" Margin="5,5,5,5"/>
-                    <TextBlock Text="{Binding Price, StringFormat={}{0:F0} ₽ /шт.}" Grid.Column="2" HorizontalAlignment="Center" FontSize="12"/>
+                    <TextBlock Text="{Binding SalePrice, StringFormat={}{0:F0} ₽ /шт.}" Grid.Column="2" HorizontalAlignment="Center" FontSize="12"/>
                 </StackPanel>
                 <TextBlock Grid.Column="4" Text="{Binding TotalPrice, StringFormat={}{0:F0} ₽}" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="22" Margin="5,5,5,5"/>
             </Grid>

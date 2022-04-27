@@ -65,7 +65,7 @@
             </StackPanel>
         </Grid>
 
-        <DataGrid Grid.Row="2" ItemsSource="{Binding DisplayedElectronics}" SelectedItem="{Binding SelectedElectronic}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True">
+        <DataGrid Grid.Row="2" ItemsSource="{Binding DisplayedElectronics}" SelectedItem="{Binding SelectedElectronic}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto">
             <DataGrid.Resources>
                 <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Orange" />
@@ -80,9 +80,30 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Категория" Binding="{Binding Type.Category.Name}" Width="*"/>
+                <DataGridTemplateColumn Header="Категория" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding Type.Category.Name}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
                 <DataGridTextColumn Header="Тип" Binding="{Binding Type.Name}" Width="*"/>
-                <DataGridTextColumn Header="Цена" Binding="{Binding Price}" Width="*"/>
+                <DataGridTextColumn Header="Цена продажи" Binding="{Binding SalePrice, StringFormat={}{0:F2} ₽}" Width="*"/>
+                <DataGridTextColumn Header="Цена закупки" Binding="{Binding PurchasePrice, StringFormat={}{0:F2} ₽}" Width="*"/>
+                <DataGridTemplateColumn Header="Количество" Width="1.5*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding AmountnAveryStorage}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Статус" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding Status}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
 

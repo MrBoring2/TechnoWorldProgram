@@ -387,7 +387,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             }
 
             if (MaxPrice > 0)
-                list = list.Where(p => p.Price >= MinPrice && p.Price <= MaxPrice).ToList();
+                list = list.Where(p => p.SalePrice >= MinPrice && p.SalePrice <= MaxPrice).ToList();
 
             list = list.Skip((SelectedPageNumber - 1) * itemsPerPage)
                             .Take(itemsPerPage).ToList();
@@ -454,7 +454,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             }
 
             if (MaxPrice > 0)
-                list = list.Where(p => p.Price >= MinPrice && p.Price <= MaxPrice).ToList();
+                list = list.Where(p => p.SalePrice >= MinPrice && p.SalePrice <= MaxPrice).ToList();
 
             return (int)Math.Ceiling((float)list.Count / (float)ItemsPerPage);
         }

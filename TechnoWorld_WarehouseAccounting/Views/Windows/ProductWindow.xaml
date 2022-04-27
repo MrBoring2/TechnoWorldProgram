@@ -12,7 +12,7 @@
         mc:Ignorable="d"
         xmlns:dr="clr-namespace:TechnoWorld_WarehouseAccounting.Services"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
-        Title="ТЕХНО МИР | Карточка товара" Height="875" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
+        Title="ТЕХНО МИР | Карточка товара" Height="961" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
@@ -37,10 +37,11 @@
                     <TextBox Text="{Binding Model}" materialDesign:HintAssist.Hint="Модель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <ComboBox ItemsSource="{Binding Categories}" IsEnabled="{Binding IsAdd}" SelectedItem="{Binding Category}" SelectedValue="{Binding Category.Id}" SelectedValuePath="Id" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Категория" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
                     <ComboBox ItemsSource="{Binding ElectronicsTypes}" SelectedItem="{Binding ElectrnicsType}" SelectedValue="{Binding ElectrnicsType.TypeId}" IsEnabled="{Binding IsAdd}" SelectedValuePath="TypeId" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Тип" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Text="{Binding Price}" materialDesign:HintAssist.Hint="Цена" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <TextBox Text="{Binding PurchasePrice}" materialDesign:HintAssist.Hint="Цена продажи" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <TextBox Text="{Binding SalePrice}" materialDesign:HintAssist.Hint="Цена закупки" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <ComboBox ItemsSource="{Binding Manufacturers}" SelectedItem="{Binding Manufacturer}" SelectedValue="{Binding Manufacturer.ManufacturerId}" SelectedValuePath="ManufacturerId"  DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
                     <TextBox Text="{Binding ManufacturerCountry}" materialDesign:HintAssist.Hint="Страна производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Text="{Binding Color}" materialDesign:HintAssist.Hint="Цвет" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <TextBox Text="{Binding Color}" materialDesign:HintAssist.Hint="Цвет" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <TextBox Text="{Binding Weight}" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
                     <CheckBox IsChecked="{Binding IsOfferedForSale}" Content="Выставлен на продажу" HorizontalAlignment="Center" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
                 </StackPanel>

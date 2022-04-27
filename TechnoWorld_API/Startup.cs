@@ -29,6 +29,7 @@ namespace BNS_API
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+          
         }
 
         public IConfiguration Configuration { get; }
@@ -37,9 +38,11 @@ namespace BNS_API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<TechnoWorldContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Home")));
-            services.AddControllers().AddNewtonsoftJson(options =>
+            services.AddControllers();
+            services.AddMvc().AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+               
                 //options.SerializerSettings.TypeNameHandling = Newtonsoft.Json.TypeNameHandling.Objects;
                 //options.SerializerSettings.TypeNameAssemblyFormatHandling = Newtonsoft.Json.TypeNameAssemblyFormatHandling.Simple;
             });

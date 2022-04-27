@@ -13,5 +13,7 @@ namespace TechoWorld_DataModels
         public string Name { get; set; }
         [JsonIgnore]
         public virtual ICollection<Order> Orders { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<Delivery> Deliveries { get; set; }
     }
 }

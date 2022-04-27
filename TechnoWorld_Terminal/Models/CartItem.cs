@@ -51,12 +51,12 @@ namespace TechnoWorld_Terminal.Models
                 else
                 {
                     amount = value;
-                    TotalPrice = amount * Price;
+                    TotalPrice = amount * SalePrice;
                 }
                 OnPropertyChanged();
             }
         }
-        public decimal Price => Electronic.Price;
+        public decimal SalePrice => Electronic.SalePrice;
         public decimal TotalPrice
         {
             get => totalPrice;

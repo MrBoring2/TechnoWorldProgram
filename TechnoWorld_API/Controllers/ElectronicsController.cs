@@ -33,13 +33,32 @@ namespace BNS_API.Controllers
         [HttpGet("All")]
         public async Task<ActionResult<IEnumerable<Electronic>>> GetAllElectronics()
         {
-            return await _context.Electronics.Include(p => p.Manufacturer).Include(p => p.ElectronicsToStorages).Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
+            var list = await _context.Electronics.Include(p => p.Manufacturer).Include(p => p.ElectronicsToStorages).Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
+
+            foreach (var item in list)
+            {
+                foreach (var storage in item.ElectronicsToStorages)
+                {
+                    await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
+                }
+            }
+
+            return list;
         }
         // GET: api/Electronics
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Electronic>>> GetElectronicsByCategory(int categoryId)
         {
-            return await _context.Electronics.Include(p => p.Manufacturer).Include(p => p.Type).Include(p => p.ElectronicsToStorages).Where(p => p.Type.CategoryId == categoryId).Where(p => p.IsOfferedForSale == true).ToListAsync();
+            var list = await _context.Electronics.Include(p => p.Manufacturer).Include(p => p.Type).Include(p => p.ElectronicsToStorages).Where(p => p.Type.CategoryId == categoryId).Where(p => p.IsOfferedForSale == true).ToListAsync();
+
+            foreach (var item in list)
+            {
+                foreach (var storage in item.ElectronicsToStorages)
+                {
+                    _context.Entry(storage).Reference(p => p.Storage).Load();
+                }
+            }
+            return list;
         }
 
         // GET: api/Electronics/5
@@ -84,6 +103,29 @@ namespace BNS_API.Controllers
                 }
             }
             Log.Information($"Изменён товар {electronic.Model}");
+
+            var allElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
+            foreach (var item in allElectronics)
+            {
+                foreach (var storage in item.ElectronicsToStorages)
+                {
+                    await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
+                }
+            }
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(allElectronics, Formatting.None,
+                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+
+            var categoryElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).Where(p => p.Type.CategoryId == electronic.Type.CategoryId).ToListAsync();
+            foreach (var item in categoryElectronics)
+            {
+                foreach (var storage in item.ElectronicsToStorages)
+                {
+                    await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
+                }
+            }
+            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(categoryElectronics, Formatting.None,
+                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+
             return NoContent();
         }
 
@@ -98,10 +140,24 @@ namespace BNS_API.Controllers
 
             Log.Information($"Добавлен товар {electronic.Model}");
             var allElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
+            foreach (var item in allElectronics)
+            {
+                foreach (var storage in item.ElectronicsToStorages)
+                {
+                    await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
+                }
+            }
             await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(allElectronics, Formatting.None,
                     new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
 
             var categoryElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).Where(p => p.Type.CategoryId == electronic.Type.CategoryId).ToListAsync();
+            foreach (var item in categoryElectronics)
+            {
+                foreach (var storage in item.ElectronicsToStorages)
+                {
+                    await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
+                }
+            }
             await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(categoryElectronics, Formatting.None,
                     new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
 

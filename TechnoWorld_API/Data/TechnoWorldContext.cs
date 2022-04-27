@@ -16,7 +16,7 @@ namespace BNS_API.Data
         public TechnoWorldContext(DbContextOptions<TechnoWorldContext> options)
             : base(options)
         {
-
+            
         }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Delivery> Deliveries { get; set; }
@@ -131,7 +131,8 @@ namespace BNS_API.Data
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Price).HasColumnType("money");
+                entity.Property(e => e.SalePrice).HasColumnType("money");
+                entity.Property(e => e.PurchasePrice).HasColumnType("money");
 
                 entity.HasOne(d => d.Manufacturer)
                     .WithMany(p => p.Electronics)

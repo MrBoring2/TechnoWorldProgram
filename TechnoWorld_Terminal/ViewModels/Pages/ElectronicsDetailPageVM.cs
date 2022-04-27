@@ -49,7 +49,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             get { return electrnicsType; }
             set { electrnicsType = value; OnPropertyChanged(); }
         }
-        public decimal Price
+        public decimal SalePrice
         {
             get { return price; }
             set { price = value; OnPropertyChanged(); }
@@ -120,7 +120,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             Model = CurrentElectronic.Model;
             Manufacturer = CurrentElectronic.Manufacturer;
             ElectronicType = CurrentElectronic.Type;
-            Price = CurrentElectronic.Price;
+            SalePrice = CurrentElectronic.SalePrice;
             AmountInStorage = CurrentElectronic.AmountInStorage;
             Description = CurrentElectronic.Description;
             Image = CurrentElectronic.Image;

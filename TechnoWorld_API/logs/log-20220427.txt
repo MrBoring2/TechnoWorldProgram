@@ -1,0 +1,857 @@
+2022-04-27 15:44:44.871 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:44:44.914 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:44:44.916 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:44:44.917 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:45:15.695 +05:00 [WRN] As of ""2022-04-27T10:45:13.8077188+00:00"", the heartbeat has been running for ""00:00:01.8845667"" which is longer than ""00:00:01"". This could be caused by thread pool starvation.
+2022-04-27 15:45:16.210 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 15:45:16.308 +05:00 [INF] HTTP POST /userToken responded 200 in 5393.3051 ms
+2022-04-27 15:45:16.588 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 61.8077 ms
+2022-04-27 15:46:05.767 +05:00 [INF] HTTP GET /api/Categories responded 200 in 117.3241 ms
+2022-04-27 15:46:05.909 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 46.2162 ms
+2022-04-27 15:46:06.613 +05:00 [ERR] HTTP GET /api/Electronics/All responded 500 in 643.8462 ms
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-04-27 15:46:06.708 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-27 15:46:21.658 +05:00 [INF] admin отключен от системы
+2022-04-27 15:46:21.663 +05:00 [INF] Application is shutting down...
+2022-04-27 15:46:21.663 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 64878.8927 ms
+2022-04-27 15:46:49.804 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:46:49.836 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:46:49.837 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:46:49.838 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:47:05.149 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 15:47:05.211 +05:00 [INF] HTTP POST /userToken responded 200 in 2079.4697 ms
+2022-04-27 15:47:05.463 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 62.5226 ms
+2022-04-27 15:47:06.682 +05:00 [INF] HTTP GET /api/Categories responded 200 in 62.2476 ms
+2022-04-27 15:47:06.850 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 35.0221 ms
+2022-04-27 15:47:07.342 +05:00 [ERR] HTTP GET /api/Electronics/All responded 500 in 424.3990 ms
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-04-27 15:47:07.383 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-27 15:47:28.164 +05:00 [INF] admin отключен от системы
+2022-04-27 15:47:28.171 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 22546.3840 ms
+2022-04-27 15:48:09.734 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:48:09.763 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:48:09.764 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:48:09.765 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:50:35.246 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:50:35.276 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:50:35.276 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:50:35.277 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:51:13.502 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:51:13.532 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:51:13.533 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:51:13.534 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:51:52.686 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:51:52.716 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:51:52.717 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:51:52.718 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:52:44.866 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:52:44.895 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:52:44.896 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:52:44.897 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:53:16.000 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:53:16.030 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:53:16.031 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:53:16.032 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:53:39.125 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:53:39.155 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:53:39.156 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:53:39.157 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:53:58.199 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 15:53:58.261 +05:00 [INF] HTTP POST /userToken responded 200 in 1979.2197 ms
+2022-04-27 15:53:58.520 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 65.8892 ms
+2022-04-27 15:53:59.593 +05:00 [INF] HTTP GET /api/Categories responded 200 in 62.0997 ms
+2022-04-27 15:53:59.755 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 33.6127 ms
+2022-04-27 15:54:14.681 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 14861.9328 ms
+2022-04-27 15:54:43.129 +05:00 [INF] admin отключен от системы
+2022-04-27 15:54:43.134 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 44460.5951 ms
+2022-04-27 15:54:45.065 +05:00 [INF] Application is shutting down...
+2022-04-27 15:55:37.441 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:55:37.472 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:55:37.472 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:55:37.473 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:55:48.255 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 15:55:48.315 +05:00 [INF] HTTP POST /userToken responded 200 in 1282.4935 ms
+2022-04-27 15:55:48.577 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 68.1597 ms
+2022-04-27 15:55:49.394 +05:00 [INF] HTTP GET /api/Categories responded 200 in 66.9342 ms
+2022-04-27 15:55:49.564 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 34.9701 ms
+2022-04-27 15:55:52.988 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 3359.9919 ms
+2022-04-27 15:56:19.474 +05:00 [INF] admin отключен от системы
+2022-04-27 15:56:24.489 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 35743.7103 ms
+2022-04-27 15:56:59.346 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:56:59.376 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:56:59.376 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:56:59.377 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:57:08.453 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 15:57:08.514 +05:00 [INF] HTTP POST /userToken responded 200 in 1284.4161 ms
+2022-04-27 15:57:08.767 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 58.6158 ms
+2022-04-27 15:57:09.713 +05:00 [INF] HTTP GET /api/Categories responded 200 in 67.9560 ms
+2022-04-27 15:57:09.886 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 40.5108 ms
+2022-04-27 15:57:10.359 +05:00 [ERR] HTTP GET /api/Electronics/All responded 500 in 407.6874 ms
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-04-27 15:57:10.388 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-27 15:57:25.479 +05:00 [INF] admin отключен от системы
+2022-04-27 15:57:25.483 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 16658.7220 ms
+2022-04-27 15:57:33.068 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 15:57:33.103 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 15:57:33.103 +05:00 [INF] Hosting environment: Development
+2022-04-27 15:57:33.104 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 15:57:50.073 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 15:57:50.136 +05:00 [INF] HTTP POST /userToken responded 200 in 1316.2697 ms
+2022-04-27 15:57:50.392 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 60.7931 ms
+2022-04-27 15:57:51.791 +05:00 [INF] HTTP GET /api/Categories responded 200 in 64.5275 ms
+2022-04-27 15:57:51.959 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 35.5455 ms
+2022-04-27 15:57:52.389 +05:00 [ERR] HTTP GET /api/Electronics/All responded 500 in 361.7153 ms
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-04-27 15:57:52.428 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-27 15:58:06.014 +05:00 [INF] admin отключен от системы
+2022-04-27 15:58:06.019 +05:00 [INF] Application is shutting down...
+2022-04-27 15:58:06.020 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 15470.6779 ms
+2022-04-27 16:05:37.323 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:05:37.354 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:05:37.355 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:05:37.355 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:05:51.070 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:05:51.133 +05:00 [INF] HTTP POST /userToken responded 200 in 1283.9432 ms
+2022-04-27 16:05:51.380 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 56.2610 ms
+2022-04-27 16:05:52.839 +05:00 [INF] HTTP GET /api/Categories responded 200 in 64.3489 ms
+2022-04-27 16:05:53.008 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 37.7651 ms
+2022-04-27 16:05:53.504 +05:00 [ERR] HTTP GET /api/Electronics/All responded 500 in 431.1507 ms
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-04-27 16:05:53.529 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-27 16:06:37.738 +05:00 [INF] admin отключен от системы
+2022-04-27 16:06:37.744 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 46204.3276 ms
+2022-04-27 16:06:50.062 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:06:50.097 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:06:50.097 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:06:50.098 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:06:55.201 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:06:55.286 +05:00 [INF] HTTP POST /userToken responded 200 in 1774.0221 ms
+2022-04-27 16:06:55.506 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 70.0333 ms
+2022-04-27 16:07:04.458 +05:00 [INF] HTTP GET /api/Categories responded 200 in 79.4919 ms
+2022-04-27 16:07:04.511 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 40.0514 ms
+2022-04-27 16:08:33.266 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:08:33.340 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:08:33.341 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:08:33.342 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:08:42.795 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:08:42.874 +05:00 [INF] HTTP POST /userToken responded 200 in 1669.5682 ms
+2022-04-27 16:08:42.945 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 69.5157 ms
+2022-04-27 16:08:48.346 +05:00 [INF] HTTP GET /api/Categories responded 200 in 88.2689 ms
+2022-04-27 16:08:48.408 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 48.0638 ms
+2022-04-27 16:09:06.783 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 18369.4172 ms
+2022-04-27 16:09:28.407 +05:00 [INF] admin отключен от системы
+2022-04-27 16:09:28.412 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 45465.0152 ms
+2022-04-27 16:09:31.721 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:09:31.723 +05:00 [INF] HTTP POST /userToken responded 200 in 6.4684 ms
+2022-04-27 16:09:31.728 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 3.7455 ms
+2022-04-27 16:09:32.436 +05:00 [INF] HTTP GET /api/Categories responded 200 in 13.2412 ms
+2022-04-27 16:09:32.477 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 21.7412 ms
+2022-04-27 16:10:23.737 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:10:23.767 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:10:23.769 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:10:23.769 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:10:32.476 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:10:32.526 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:10:32.528 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:10:32.529 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:10:38.780 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:10:38.856 +05:00 [INF] HTTP POST /userToken responded 200 in 1619.7620 ms
+2022-04-27 16:10:39.081 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 76.0849 ms
+2022-04-27 16:10:39.991 +05:00 [INF] HTTP GET /api/Categories responded 200 in 81.5582 ms
+2022-04-27 16:10:40.129 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 46.3380 ms
+2022-04-27 16:12:36.346 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:12:36.404 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:12:36.404 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:12:36.405 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:12:41.339 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:12:41.421 +05:00 [INF] HTTP POST /userToken responded 200 in 2070.1158 ms
+2022-04-27 16:12:41.489 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 67.1884 ms
+2022-04-27 16:12:42.777 +05:00 [INF] HTTP GET /api/Categories responded 200 in 101.1601 ms
+2022-04-27 16:12:42.832 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 44.3372 ms
+2022-04-27 16:13:15.793 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:13:15.842 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:13:15.843 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:13:15.844 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:13:23.075 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:13:23.156 +05:00 [INF] HTTP POST /userToken responded 200 in 1999.9711 ms
+2022-04-27 16:13:23.225 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 67.8679 ms
+2022-04-27 16:13:23.890 +05:00 [INF] HTTP GET /api/Categories responded 200 in 84.0051 ms
+2022-04-27 16:13:23.963 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 58.7317 ms
+2022-04-27 16:13:57.080 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:13:57.148 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:13:57.149 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:13:57.149 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:14:08.295 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:14:08.409 +05:00 [INF] HTTP POST /userToken responded 200 in 2090.9004 ms
+2022-04-27 16:14:08.477 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 67.1570 ms
+2022-04-27 16:14:09.652 +05:00 [INF] HTTP GET /api/Categories responded 200 in 98.4070 ms
+2022-04-27 16:14:09.703 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 43.8740 ms
+2022-04-27 16:14:44.790 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:14:44.821 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:14:44.822 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:14:44.823 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:14:56.928 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:14:56.989 +05:00 [INF] HTTP POST /userToken responded 200 in 1408.1124 ms
+2022-04-27 16:14:57.232 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 56.7929 ms
+2022-04-27 16:14:58.124 +05:00 [INF] HTTP GET /api/Categories responded 200 in 66.3328 ms
+2022-04-27 16:14:58.319 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 39.8335 ms
+2022-04-27 16:15:02.820 +05:00 [INF] admin отключен от системы
+2022-04-27 16:15:02.823 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 5530.8889 ms
+2022-04-27 16:15:10.608 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:15:10.609 +05:00 [INF] HTTP POST /userToken responded 200 in 9.2982 ms
+2022-04-27 16:15:10.797 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.6106 ms
+2022-04-27 16:15:11.546 +05:00 [INF] HTTP GET /api/Categories responded 200 in 5.0059 ms
+2022-04-27 16:15:11.776 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 39.8728 ms
+2022-04-27 16:15:34.114 +05:00 [INF] admin отключен от системы
+2022-04-27 16:15:34.116 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 23205.6351 ms
+2022-04-27 16:15:52.604 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:15:52.635 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:15:52.636 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:15:52.637 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:16:04.071 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:16:04.133 +05:00 [INF] HTTP POST /userToken responded 200 in 1397.5506 ms
+2022-04-27 16:16:04.375 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 57.0972 ms
+2022-04-27 16:16:05.235 +05:00 [INF] HTTP GET /api/Categories responded 200 in 65.5875 ms
+2022-04-27 16:16:05.456 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 41.8417 ms
+2022-04-27 16:16:13.805 +05:00 [INF] admin отключен от системы
+2022-04-27 16:16:13.809 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 9374.3866 ms
+2022-04-27 16:18:54.137 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:18:54.168 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:18:54.169 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:18:54.170 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:19:12.168 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:19:12.236 +05:00 [INF] HTTP POST /userToken responded 200 in 1434.4232 ms
+2022-04-27 16:19:12.476 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 57.8161 ms
+2022-04-27 16:19:13.306 +05:00 [INF] HTTP GET /api/Categories responded 200 in 68.0137 ms
+2022-04-27 16:19:13.477 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 42.4592 ms
+2022-04-27 16:19:22.473 +05:00 [INF] admin отключен от системы
+2022-04-27 16:19:22.478 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 9942.6723 ms
+2022-04-27 16:19:34.571 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:19:34.601 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:19:34.602 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:19:34.603 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:19:44.726 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:19:44.790 +05:00 [INF] HTTP POST /userToken responded 200 in 1289.9973 ms
+2022-04-27 16:19:45.037 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 59.3807 ms
+2022-04-27 16:19:45.934 +05:00 [INF] HTTP GET /api/Categories responded 200 in 64.6356 ms
+2022-04-27 16:19:46.132 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 34.4797 ms
+2022-04-27 16:19:51.709 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 3368.4872 ms
+2022-04-27 16:20:00.306 +05:00 [INF] admin отключен от системы
+2022-04-27 16:20:00.311 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 15120.5259 ms
+2022-04-27 16:20:03.245 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:20:03.246 +05:00 [INF] HTTP POST /userToken responded 200 in 6.2324 ms
+2022-04-27 16:20:03.252 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.6943 ms
+2022-04-27 16:20:04.079 +05:00 [INF] HTTP GET /api/Categories responded 200 in 6.2985 ms
+2022-04-27 16:20:04.187 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 9.6125 ms
+2022-04-27 16:20:09.494 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 3516.1123 ms
+2022-04-27 16:20:56.602 +05:00 [INF] admin отключен от системы
+2022-04-27 16:21:01.612 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 58317.9469 ms
+2022-04-27 16:24:58.434 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:24:58.465 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:24:58.466 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:24:58.467 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:25:37.266 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:25:37.335 +05:00 [INF] HTTP POST /userToken responded 200 in 1313.3604 ms
+2022-04-27 16:25:37.587 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 59.8494 ms
+2022-04-27 16:25:38.685 +05:00 [INF] HTTP GET /api/Categories responded 200 in 66.1279 ms
+2022-04-27 16:25:38.855 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 35.0653 ms
+2022-04-27 16:25:44.284 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 3405.9397 ms
+2022-04-27 16:25:51.324 +05:00 [INF] admin отключен от системы
+2022-04-27 16:25:51.329 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 13602.6991 ms
+2022-04-27 16:25:58.455 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:25:58.457 +05:00 [INF] HTTP POST /userToken responded 200 in 13.0430 ms
+2022-04-27 16:25:58.641 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.6299 ms
+2022-04-27 16:25:59.430 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.7180 ms
+2022-04-27 16:25:59.626 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 8.1803 ms
+2022-04-27 16:26:04.681 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 3197.6788 ms
+2022-04-27 16:26:29.480 +05:00 [INF] admin отключен от системы
+2022-04-27 16:26:34.493 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 35736.5818 ms
+2022-04-27 16:27:44.204 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:27:44.237 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:27:44.238 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:27:44.239 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:28:02.105 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:28:02.135 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:28:02.136 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:28:02.136 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:29:05.693 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:29:05.728 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:29:05.729 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:29:05.729 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:29:25.244 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:29:25.276 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:29:25.277 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:29:25.277 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:29:36.744 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:29:36.810 +05:00 [INF] HTTP POST /userToken responded 200 in 1314.1815 ms
+2022-04-27 16:29:37.052 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 58.3130 ms
+2022-04-27 16:29:37.886 +05:00 [INF] HTTP GET /api/Categories responded 200 in 66.2848 ms
+2022-04-27 16:29:38.049 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 38.0076 ms
+2022-04-27 16:29:43.884 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 3315.3218 ms
+2022-04-27 16:30:08.287 +05:00 [INF] admin отключен от системы
+2022-04-27 16:30:12.280 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 35076.6898 ms
+2022-04-27 16:30:33.955 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:30:33.987 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:30:33.987 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:30:33.989 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:30:34.476 +05:00 [INF] Application is shutting down...
+2022-04-27 16:30:35.949 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:30:35.980 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:30:35.981 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:30:35.982 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:30:52.927 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:30:52.991 +05:00 [INF] HTTP POST /userToken responded 200 in 1360.5208 ms
+2022-04-27 16:30:53.232 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 53.4150 ms
+2022-04-27 16:30:54.224 +05:00 [INF] HTTP GET /api/Categories responded 200 in 71.4469 ms
+2022-04-27 16:30:54.395 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 35.6273 ms
+2022-04-27 16:30:58.051 +05:00 [ERR] HTTP GET /api/Electronics/All responded 500 in 378.4932 ms
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-04-27 16:30:58.116 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'AmountnAveryStorage' on 'TechoWorld_DataModels.Electronic'.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.Electronic.get_AmountnAveryStorage() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\Electronic.cs:line 65
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-27 16:31:01.416 +05:00 [INF] admin отключен от системы
+2022-04-27 16:31:01.419 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 8127.8260 ms
+2022-04-27 16:31:22.193 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:31:22.224 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:31:22.225 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:31:22.225 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:31:30.237 +05:00 [INF] Application is shutting down...
+2022-04-27 16:31:34.444 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:31:34.478 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:31:34.479 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:31:34.480 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:31:45.560 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:31:45.622 +05:00 [INF] HTTP POST /userToken responded 200 in 1321.1087 ms
+2022-04-27 16:31:45.870 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 62.9565 ms
+2022-04-27 16:31:46.821 +05:00 [INF] HTTP GET /api/Categories responded 200 in 63.7383 ms
+2022-04-27 16:31:46.985 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 35.0339 ms
+2022-04-27 16:31:49.092 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 493.9046 ms
+2022-04-27 16:31:57.132 +05:00 [INF] admin отключен от системы
+2022-04-27 16:31:57.136 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 11128.8948 ms
+2022-04-27 16:35:47.770 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:35:47.802 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:35:47.802 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:35:47.803 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:35:52.361 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:35:52.412 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:35:52.413 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:35:52.414 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:35:55.266 +05:00 [INF] Application is shutting down...
+2022-04-27 16:35:59.284 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:35:59.314 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:35:59.314 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:35:59.315 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:36:10.827 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:36:10.888 +05:00 [INF] HTTP POST /userToken responded 200 in 1324.9215 ms
+2022-04-27 16:36:11.124 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 49.0612 ms
+2022-04-27 16:36:11.939 +05:00 [INF] HTTP GET /api/Categories responded 200 in 64.8513 ms
+2022-04-27 16:36:12.107 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 34.9233 ms
+2022-04-27 16:36:14.477 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 494.8595 ms
+2022-04-27 16:36:16.642 +05:00 [INF] admin отключен от системы
+2022-04-27 16:36:16.645 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 5445.1719 ms
+2022-04-27 16:36:34.381 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:36:34.382 +05:00 [INF] HTTP POST /userToken responded 200 in 7.8352 ms
+2022-04-27 16:36:34.530 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.2965 ms
+2022-04-27 16:36:35.176 +05:00 [INF] HTTP GET /api/Categories responded 200 in 5.1277 ms
+2022-04-27 16:36:35.271 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 7.1557 ms
+2022-04-27 16:36:35.637 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 291.4205 ms
+2022-04-27 16:36:48.749 +05:00 [INF] admin отключен от системы
+2022-04-27 16:36:48.750 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 14131.0305 ms
+2022-04-27 16:37:23.598 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:37:23.599 +05:00 [INF] HTTP POST /userToken responded 200 in 8.0515 ms
+2022-04-27 16:37:23.786 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.4757 ms
+2022-04-27 16:37:28.814 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4397.1526 ms
+2022-04-27 16:37:28.842 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 8.2949 ms
+2022-04-27 16:37:31.490 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 336.7956 ms
+2022-04-27 16:38:10.435 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.6325 ms
+2022-04-27 16:38:10.447 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 9.3592 ms
+2022-04-27 16:38:10.465 +05:00 [INF] HTTP GET /api/Manufacturers/All responded 200 in 12.2378 ms
+2022-04-27 16:38:14.339 +05:00 [INF] HTTP PUT /api/Electronics/68 responded 400 in 61.7457 ms
+2022-04-27 16:38:36.359 +05:00 [INF] admin отключен от системы
+2022-04-27 16:38:36.362 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 72468.9998 ms
+2022-04-27 16:39:03.444 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:39:03.445 +05:00 [INF] HTTP POST /userToken responded 200 in 6.7472 ms
+2022-04-27 16:39:04.625 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.2485 ms
+2022-04-27 16:39:05.773 +05:00 [INF] HTTP GET /api/Categories responded 200 in 5.2868 ms
+2022-04-27 16:39:05.977 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 10.0669 ms
+2022-04-27 16:39:06.447 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 373.3954 ms
+2022-04-27 16:39:08.674 +05:00 [INF] HTTP GET /api/Categories responded 200 in 5.0599 ms
+2022-04-27 16:39:08.689 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 9.4229 ms
+2022-04-27 16:39:08.696 +05:00 [INF] HTTP GET /api/Manufacturers/All responded 200 in 1.6474 ms
+2022-04-27 16:39:10.787 +05:00 [INF] HTTP PUT /api/Electronics/68 responded 400 in 19.6747 ms
+2022-04-27 16:39:12.601 +05:00 [INF] admin отключен от системы
+2022-04-27 16:39:12.607 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 7879.8653 ms
+2022-04-27 16:40:08.933 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:40:08.934 +05:00 [INF] HTTP POST /userToken responded 200 in 6.5028 ms
+2022-04-27 16:40:09.123 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.1906 ms
+2022-04-27 16:40:10.587 +05:00 [INF] HTTP GET /api/Categories responded 200 in 5.0393 ms
+2022-04-27 16:40:10.798 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 7.6626 ms
+2022-04-27 16:40:11.243 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 346.4791 ms
+2022-04-27 16:40:15.021 +05:00 [INF] HTTP GET /api/Categories responded 200 in 3.7265 ms
+2022-04-27 16:40:15.033 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 9.3363 ms
+2022-04-27 16:40:15.043 +05:00 [INF] HTTP GET /api/Manufacturers/All responded 200 in 1.2852 ms
+2022-04-27 16:40:39.390 +05:00 [INF] HTTP PUT /api/Electronics/68 responded 400 in 17.6315 ms
+2022-04-27 16:40:47.339 +05:00 [INF] admin отключен от системы
+2022-04-27 16:40:47.341 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 38100.5153 ms
+2022-04-27 16:41:00.492 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 16:41:00.521 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 16:41:00.522 +05:00 [INF] Hosting environment: Development
+2022-04-27 16:41:00.522 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 16:41:39.021 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:41:39.088 +05:00 [INF] HTTP POST /userToken responded 200 in 1714.2895 ms
+2022-04-27 16:41:39.333 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 60.0737 ms
+2022-04-27 16:41:39.952 +05:00 [INF] HTTP GET /api/Categories responded 200 in 70.1695 ms
+2022-04-27 16:41:40.149 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 36.0628 ms
+2022-04-27 16:41:40.721 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 513.6370 ms
+2022-04-27 16:42:01.162 +05:00 [INF] admin отключен от системы
+2022-04-27 16:42:01.170 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 21696.3837 ms
+2022-04-27 16:42:56.613 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:42:56.615 +05:00 [INF] HTTP POST /userToken responded 200 in 11.1698 ms
+2022-04-27 16:42:57.792 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.3486 ms
+2022-04-27 16:42:58.888 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.9439 ms
+2022-04-27 16:42:59.090 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 9.3883 ms
+2022-04-27 16:42:59.539 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 359.1452 ms
+2022-04-27 16:43:11.536 +05:00 [INF] HTTP GET /api/Categories responded 200 in 5.6827 ms
+2022-04-27 16:43:11.546 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 6.7829 ms
+2022-04-27 16:43:11.563 +05:00 [INF] HTTP GET /api/Manufacturers/All responded 200 in 11.3915 ms
+2022-04-27 16:43:17.076 +05:00 [INF] Изменён товар 123dsadasdasd
+2022-04-27 16:43:17.310 +05:00 [INF] HTTP PUT /api/Electronics/68 responded 204 in 464.3294 ms
+2022-04-27 16:43:17.645 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 318.5618 ms
+2022-04-27 16:47:08.685 +05:00 [INF] admin отключен от системы
+2022-04-27 16:47:08.688 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 250778.9219 ms
+2022-04-27 16:49:41.662 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:49:41.663 +05:00 [INF] HTTP POST /userToken responded 200 in 10.6623 ms
+2022-04-27 16:49:43.045 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.4683 ms
+2022-04-27 16:49:44.011 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.1975 ms
+2022-04-27 16:49:44.221 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 13.1932 ms
+2022-04-27 16:49:44.693 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 383.8298 ms
+2022-04-27 16:49:48.823 +05:00 [INF] HTTP GET /api/Categories responded 200 in 3.2873 ms
+2022-04-27 16:49:48.832 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 7.1378 ms
+2022-04-27 16:49:48.839 +05:00 [INF] HTTP GET /api/Manufacturers/All responded 200 in 1.3159 ms
+2022-04-27 16:49:54.280 +05:00 [INF] HTTP GET /api/Categories responded 200 in 3.1720 ms
+2022-04-27 16:49:54.290 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 7.7484 ms
+2022-04-27 16:49:54.298 +05:00 [INF] HTTP GET /api/Manufacturers/All responded 200 in 1.0641 ms
+2022-04-27 16:49:57.155 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.5771 ms
+2022-04-27 16:49:57.216 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 57.6575 ms
+2022-04-27 16:49:57.222 +05:00 [INF] HTTP GET /api/Manufacturers/All responded 200 in 0.9934 ms
+2022-04-27 16:50:20.879 +05:00 [INF] HTTP GET /api/Categories responded 200 in 8.0063 ms
+2022-04-27 16:50:20.891 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 8.3288 ms
+2022-04-27 16:50:20.896 +05:00 [INF] HTTP GET /api/Manufacturers/All responded 200 in 1.5549 ms
+2022-04-27 16:50:51.399 +05:00 [INF] admin отключен от системы
+2022-04-27 16:50:51.401 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 68226.5243 ms
+2022-04-27 16:51:12.974 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 16:51:12.975 +05:00 [INF] HTTP POST /userToken responded 200 in 6.7322 ms
+2022-04-27 16:51:13.171 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.1701 ms
+2022-04-27 16:51:14.071 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.8630 ms
+2022-04-27 16:51:14.274 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 9.4606 ms
+2022-04-27 16:51:14.697 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 326.4692 ms
+2022-04-27 16:51:34.520 +05:00 [INF] admin отключен от системы
+2022-04-27 16:51:34.523 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 21248.1752 ms
+2022-04-27 16:54:28.596 +05:00 [WRN] Провальная попытка входа пользователя rom: Неверный логин или пароль
+2022-04-27 16:54:28.597 +05:00 [INF] HTTP POST /userToken responded 400 in 5.9420 ms
+2022-04-27 16:54:36.133 +05:00 [INF] Пользователь rom авторизирован в системе
+2022-04-27 16:54:36.134 +05:00 [INF] HTTP POST /userToken responded 200 in 5.3232 ms
+2022-04-27 16:54:36.255 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.1890 ms
+2022-04-27 16:54:41.085 +05:00 [INF] rom отключен от системы
+2022-04-27 16:54:41.087 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 4739.9570 ms
+2022-04-27 16:54:44.797 +05:00 [INF] HTTP POST /userToken responded 400 in 3.8126 ms
+2022-04-27 16:54:48.828 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-04-27 16:54:48.830 +05:00 [INF] HTTP POST /userToken responded 200 in 3.2090 ms
+2022-04-27 16:54:48.834 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.2013 ms
+2022-04-27 16:54:48.976 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-04-27 16:54:49.628 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.2395 ms
+2022-04-27 16:54:49.810 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 10.8918 ms
+2022-04-27 16:54:50.289 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 389.2903 ms
+2022-04-27 16:55:28.106 +05:00 [INF] kov отключен от системы
+2022-04-27 16:55:28.110 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 39243.2315 ms
+2022-04-27 16:55:30.610 +05:00 [INF] Application is shutting down...

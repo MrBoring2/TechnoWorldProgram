@@ -63,7 +63,7 @@
 
     <Grid>
 
-        <Frame x:Name="MainFraim" Margin="48,0,0,0"/>
+        <Frame x:Name="MainFraim" Margin="48,0,0,0" NavigationUIVisibility="Hidden"/>
         <mah:HamburgerMenu Grid.Column="0" PaneBackground="Orange" ItemsSource="{Binding MenuItems}" OptionsItemsSource="{Binding OptionalMenuItems}"
                            DisplayMode="CompactOverlay"
                            IsPaneOpen="False"

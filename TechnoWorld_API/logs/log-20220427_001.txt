@@ -1,0 +1,106 @@
+2022-04-27 16:41:01.821 +05:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт).
+ ---> System.Net.Sockets.SocketException (10048): Обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт).
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass29_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2022-04-27 17:05:21.663 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 17:05:21.697 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 17:05:21.698 +05:00 [INF] Hosting environment: Development
+2022-04-27 17:05:21.699 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 17:06:16.996 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 17:06:17.026 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 17:06:17.027 +05:00 [INF] Hosting environment: Development
+2022-04-27 17:06:17.028 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 17:11:09.887 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-04-27 17:11:09.949 +05:00 [INF] HTTP POST /userToken responded 200 in 1901.9048 ms
+2022-04-27 17:11:10.189 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 53.1073 ms
+2022-04-27 17:11:10.319 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-04-27 17:11:11.203 +05:00 [INF] HTTP GET /api/Categories responded 200 in 67.1149 ms
+2022-04-27 17:11:11.355 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 36.3923 ms
+2022-04-27 17:11:12.017 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 587.7500 ms
+2022-04-27 17:11:23.865 +05:00 [INF] kov отключен от системы
+2022-04-27 17:11:23.870 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 13620.1087 ms
+2022-04-27 17:11:26.697 +05:00 [INF] Application is shutting down...
+2022-04-27 17:13:17.857 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 17:13:17.888 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 17:13:17.889 +05:00 [INF] Hosting environment: Development
+2022-04-27 17:13:17.890 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 17:13:33.955 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 17:13:34.015 +05:00 [INF] HTTP POST /userToken responded 200 in 2279.4011 ms
+2022-04-27 17:13:34.291 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 71.5431 ms
+2022-04-27 17:13:35.174 +05:00 [INF] HTTP GET /api/Categories responded 200 in 64.2243 ms
+2022-04-27 17:13:35.346 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 34.3879 ms
+2022-04-27 17:13:35.948 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 536.5838 ms
+2022-04-27 17:13:57.708 +05:00 [INF] admin отключен от системы
+2022-04-27 17:13:57.712 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 23262.7061 ms
+2022-04-27 17:15:23.738 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 17:15:23.769 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 17:15:23.770 +05:00 [INF] Hosting environment: Development
+2022-04-27 17:15:23.771 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 17:18:03.537 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 17:18:03.576 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 17:18:03.579 +05:00 [INF] Hosting environment: Development
+2022-04-27 17:18:03.579 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 17:19:14.737 +05:00 [INF] Now listening on: http://localhost:5000
+2022-04-27 17:19:14.768 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-27 17:19:14.769 +05:00 [INF] Hosting environment: Development
+2022-04-27 17:19:14.770 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-27 17:22:16.205 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 17:22:16.268 +05:00 [INF] HTTP POST /userToken responded 200 in 1902.5109 ms
+2022-04-27 17:22:16.516 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 62.5183 ms
+2022-04-27 17:22:17.653 +05:00 [INF] HTTP GET /api/Categories responded 200 in 63.9754 ms
+2022-04-27 17:22:35.947 +05:00 [INF] admin отключен от системы
+2022-04-27 17:22:35.951 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 19376.8579 ms
+2022-04-27 17:23:00.960 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-04-27 17:23:00.961 +05:00 [INF] HTTP POST /userToken responded 200 in 15.0838 ms
+2022-04-27 17:23:01.148 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.3538 ms
+2022-04-27 17:23:01.315 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-04-27 17:23:01.756 +05:00 [INF] HTTP GET /api/Categories responded 200 in 6.1888 ms
+2022-04-27 17:23:04.530 +05:00 [INF] kov отключен от системы
+2022-04-27 17:23:04.532 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 3267.3210 ms
+2022-04-27 17:23:41.932 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 17:23:41.933 +05:00 [INF] HTTP POST /userToken responded 200 in 5.2791 ms
+2022-04-27 17:23:42.126 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.2803 ms
+2022-04-27 17:23:42.976 +05:00 [INF] HTTP GET /api/Categories responded 200 in 6.2648 ms
+2022-04-27 17:23:43.203 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 29.2771 ms
+2022-04-27 17:23:44.579 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 1299.4766 ms
+2022-04-27 17:23:55.024 +05:00 [INF] admin отключен от системы
+2022-04-27 17:23:55.026 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 12793.7486 ms
+2022-04-27 17:24:20.865 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 17:24:20.867 +05:00 [INF] HTTP POST /userToken responded 200 in 7.0016 ms
+2022-04-27 17:24:22.090 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.5823 ms
+2022-04-27 17:24:22.727 +05:00 [INF] HTTP GET /api/Categories responded 200 in 3.6650 ms
+2022-04-27 17:24:22.946 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 8.3940 ms
+2022-04-27 17:24:23.475 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 424.3350 ms
+2022-04-27 17:25:38.164 +05:00 [INF] admin отключен от системы
+2022-04-27 17:25:38.166 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 75959.9922 ms
+2022-04-27 17:25:55.013 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-27 17:25:55.014 +05:00 [INF] HTTP POST /userToken responded 200 in 3.5055 ms
+2022-04-27 17:25:55.160 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.2199 ms
+2022-04-27 17:25:56.273 +05:00 [INF] HTTP GET /api/Categories responded 200 in 3.1856 ms
+2022-04-27 17:25:57.117 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 8.6478 ms
+2022-04-27 17:25:57.504 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 374.5847 ms
+2022-04-27 17:26:45.282 +05:00 [INF] HTTP GET /api/Categories responded 200 in 3.4368 ms
+2022-04-27 17:26:45.294 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 7.5177 ms
+2022-04-27 17:26:45.311 +05:00 [INF] HTTP GET /api/Manufacturers/All responded 200 in 11.5444 ms
+2022-04-27 17:27:24.424 +05:00 [INF] admin отключен от системы
+2022-04-27 17:27:24.426 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 89171.6374 ms
+2022-04-27 17:27:26.970 +05:00 [INF] Application is shutting down...

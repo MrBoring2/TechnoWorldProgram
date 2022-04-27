@@ -20,7 +20,8 @@ namespace TechoWorld_DataModels
         public int ElectronicsId { get; set; }
         public string Model { get; set; }
         public string Description { get; set; }
-        public decimal Price { get; set; }
+        public decimal SalePrice { get; set; }
+        public decimal PurchasePrice { get; set; }
         public bool IsOfferedForSale { get; set; }
         public int ManufactrurerId { get; set; }
         public int TypeId { get; set; }
@@ -43,10 +44,51 @@ namespace TechoWorld_DataModels
         {
             get
             {
-                return ElectronicsToStorages.Count() > 0 && ElectronicsToStorages != null ? ElectronicsToStorages.FirstOrDefault().Quantity : 0;
+                return ElectronicsToStorages.Count() > 0 && ElectronicsToStorages != null ? ElectronicsToStorages.Sum(p => p.Quantity) : 0;
             }
         }
-
+        [NotMapped]
+        public string AmountnAveryStorage
+        {
+            get
+            {
+                var str = "";
+                if (ElectronicsToStorages.Count() > 0 && ElectronicsToStorages != null)
+                {
+                    foreach (var item in ElectronicsToStorages)
+                    {
+                        if (item != ElectronicsToStorages.LastOrDefault())
+                        {
+                            str += $"На складе {item.Storage.Name}: {item.Quantity} шт.\n";
+                        }
+                        else
+                        {
+                            str += $"На складе {item.Storage.Name}: {item.Quantity} шт.";
+                        }
+                    }
+                }
+                else
+                {
+                    str += "Нет в наличии";
+                }
+                return str;
+            }
+        }
+        [NotMapped]
+        public string Status
+        {
+            get
+            {
+                if (IsOfferedForSale)
+                {
+                    return "Выставлен на продажу";
+                }
+                else
+                {
+                    return "Снят с продажи";
+                }
+            }
+        }
         public object GetProperty(string property)
         {
             return GetType().GetProperty(property).GetValue(this);

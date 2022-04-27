@@ -64,13 +64,17 @@ namespace TechnoWorld_WarehouseAccounting.Services
                 case 3:
                     {
                         RegisterPageWithVM<ProductManagementPageVM, ProductManagementPage>();
+                        RegisterPageWithVM<DeliveryManagementPageVM, DeliveryManagementPage>();
                         CreatePage(typeof(ProductManagementPageVM));
+                        CreatePage(typeof(DeliveryManagementPageVM));
                     }
                     break;
                 case 4:
                     {
                         RegisterPageWithVM<ProductManagementPageVM, ProductManagementPage>();
+                        RegisterPageWithVM<DeliveryManagementPageVM, DeliveryManagementPage>();
                         CreatePage(typeof(ProductManagementPageVM));
+                        CreatePage(typeof(DeliveryManagementPageVM));
                     }
                     break;
                 default:

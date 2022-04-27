@@ -31,6 +31,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             CancelCommand = new RelayCommand(Cancel);
             CurrentElectronic = new Electronic();
             IsAdd = true;
+
             Task.Run(() => Initialize().Wait());
             Task.Run(() => LoadData().Wait());
         }
@@ -79,7 +80,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             }
         }
         public ElectrnicsType ElectrnicsType { get => CurrentElectronic.Type; set { CurrentElectronic.Type = value; OnPropertyChanged(); } }
-        public decimal Price { get => CurrentElectronic.Price; set { CurrentElectronic.Price = value; OnPropertyChanged(); } }
+        public decimal SalePrice { get => CurrentElectronic.SalePrice; set { CurrentElectronic.SalePrice = value; OnPropertyChanged(); } }
+        public decimal PurchasePrice { get => CurrentElectronic.PurchasePrice; set { CurrentElectronic.PurchasePrice = value; OnPropertyChanged(); } }
         public Manufacturer Manufacturer { get => CurrentElectronic.Manufacturer; set { CurrentElectronic.Manufacturer = value; CurrentElectronic.ManufactrurerId = value.ManufacturerId; OnPropertyChanged(); } }
         public string ManufacturerCountry { get => CurrentElectronic.ManufacturerСountry; set { CurrentElectronic.ManufacturerСountry = value; OnPropertyChanged(); } }
         public string Color { get => CurrentElectronic.Color; set { CurrentElectronic.Color = value; OnPropertyChanged(); } }
@@ -194,7 +196,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 CustomMessageBox.Show("Поле модель не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return false;
             }
-            else if (Price <= 0)
+            else if (SalePrice <= 0)
             {
                 CustomMessageBox.Show("Цена не должна быть отрицательной!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return false;

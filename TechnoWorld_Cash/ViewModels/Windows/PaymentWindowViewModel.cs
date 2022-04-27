@@ -40,7 +40,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             foreach (var item in orderApi.OrderElectronics)
             {
                 
-                OrderItems.Add(new OrderItem(id, item.Electronics.Model, item.Count, item.Electronics.Price, item.Count * item.Electronics.Price));
+                OrderItems.Add(new OrderItem(id, item.Electronics.Model, item.Count, item.Electronics.SalePrice, item.Count * item.Electronics.SalePrice));
                 id++;
             }
 
