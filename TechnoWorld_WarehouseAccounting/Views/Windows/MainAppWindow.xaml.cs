@@ -24,7 +24,7 @@ namespace TechnoWorld_WarehouseAccounting.Views.Windows
         {
             InitializeComponent();
             PageNavigation.Service = MainFraim.NavigationService;
-           
+            this.WindowState = WindowState.Maximized;
         }
     }
 }

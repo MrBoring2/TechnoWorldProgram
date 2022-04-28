@@ -220,6 +220,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Common\NotifyPropertyChangedBase.cs" />
+    <Compile Include="Models\DeliveryItem.cs" />
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\SortParameter.cs" />
     <Compile Include="Models\TokenModel.cs" />
@@ -237,9 +238,11 @@
     <Compile Include="ViewModels\Pages\DeliveryManagementPageVM.cs" />
     <Compile Include="ViewModels\Pages\ProductManagementPageVM.cs" />
     <Compile Include="ViewModels\Windows\BaseWindowVM.cs" />
+    <Compile Include="ViewModels\Windows\DeliveryWindowVM.cs" />
     <Compile Include="ViewModels\Windows\LoginWindowVM.cs" />
     <Compile Include="ViewModels\Windows\MainAppWindowVM.cs" />
     <Compile Include="ViewModels\Windows\BaseModalWindowVM.cs" />
+    <Compile Include="ViewModels\Windows\ProductListWindowVM.cs" />
     <Compile Include="ViewModels\Windows\ProductWindowVM.cs" />
     <Compile Include="Views\Pages\DeliveryManagementPage.xaml.cs">
       <DependentUpon>DeliveryManagementPage.xaml</DependentUpon>
@@ -251,11 +254,17 @@
     <Compile Include="Views\Windows\CustomMessageBox.xaml.cs">
       <DependentUpon>CustomMessageBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Windows\DeliveryWindow.xaml.cs">
+      <DependentUpon>DeliveryWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\MainAppWindow.xaml.cs">
       <DependentUpon>MainAppWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\ProductsListWindow.xaml.cs">
+      <DependentUpon>ProductsListWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\ProductWindow.xaml.cs">
       <DependentUpon>ProductWindow.xaml</DependentUpon>
@@ -309,11 +318,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\Windows\DeliveryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Windows\LoginWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Windows\MainAppWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\ProductsListWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

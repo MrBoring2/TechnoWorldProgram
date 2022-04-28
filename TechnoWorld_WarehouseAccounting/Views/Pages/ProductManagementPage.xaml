@@ -30,7 +30,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBox Grid.Row="0" Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Введите название модели..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+            <TextBox Grid.Row="0" Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Введите название модели..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Arrow"/>
             <StackPanel Grid.Row="1" Orientation="Horizontal">
                 <ComboBox Width="250" ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}" materialDesign:HintAssist.Hint="Категория" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
                 <ComboBox Width="250" Margin="5,0,0,0" ItemsSource="{Binding ElectronicsTypes}" SelectedItem="{Binding SelectedType}" IsEnabled="{Binding IsCategorySelected}" materialDesign:HintAssist.Hint="Тип" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
@@ -110,7 +110,7 @@
         <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Grid.Row="2" Height="270" Width="746">
             <Image Source="/Resources/Images/empty.png" Width="280" Height="190"/>
             <TextBlock  Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBlock  Text="Выберите другие критерии или проверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock  Text="Выберите другие критерии или проверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center"/>
         </StackPanel>
         <ComboBox Width="250" HorizontalAlignment="Left" Margin="5,0,0,0" ItemsSource="{Binding ForDisplayList}" SelectedItem="{Binding SelectedDisplay}" materialDesign:HintAssist.Hint="Отображать" materialDesign:HintAssist.IsFloating="True" FontSize="16" Grid.Row="1"/>
 

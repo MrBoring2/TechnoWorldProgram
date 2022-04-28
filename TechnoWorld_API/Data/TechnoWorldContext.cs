@@ -5,7 +5,7 @@ using TechoWorld_DataModels;
 
 #nullable disable
 
-namespace BNS_API.Data
+namespace TechnoWorld_API.Data
 {
     public partial class TechnoWorldContext : DbContext
     {

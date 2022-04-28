@@ -13,8 +13,10 @@ namespace TechoWorld_DataModels
         }
 
         public int DelivertId { get; set; }
+        public string DeliveryNumber { get; set; }
         public int StorageId { get; set; }
         public int SupplierId { get; set; }
+        public DateTime DateOfOrder { get; set; }
         public DateTime DateOfDelivery { get; set; }
         public int EmployeeId { get; set; }
         public int StatusId { get; set; }

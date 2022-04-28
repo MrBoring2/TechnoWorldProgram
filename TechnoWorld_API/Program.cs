@@ -1,4 +1,4 @@
-using BNS_API.Data;
+using TechnoWorld_API.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;

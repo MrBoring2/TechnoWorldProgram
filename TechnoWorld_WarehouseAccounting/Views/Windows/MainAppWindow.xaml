@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
-                  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"   
         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 

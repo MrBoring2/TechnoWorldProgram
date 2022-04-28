@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using BNS_API.Data;
+using TechnoWorld_API.Data;
 using TechoWorld_DataModels;
 using TechnoWorld_API.Services;
 using Microsoft.AspNetCore.SignalR;

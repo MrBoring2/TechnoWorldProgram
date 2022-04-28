@@ -10,12 +10,84 @@
         TextElement.FontWeight="Regular"   
         FontFamily="{DynamicResource MaterialDesignFont}"
        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
-      d:DesignHeight="600" Width="1000"
-      Title="ProductManagementPage" Background="White" >
+      d:DesignHeight="600"
+      Title="ProductManagementPage" Background="White" d:DesignWidth="1200">
 
     <Grid>
-        <DataGrid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="527*"/>
+                <ColumnDefinition Width="73*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBox Text="{Binding Search}" Margin="5,0,5,0" materialDesign:HintAssist.Hint="Введите номер поставки для поиска..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Center" Grid.ColumnSpan="2" Cursor="Arrow"/>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <ComboBox Margin="5" materialDesign:HintAssist.Hint="Статус" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
+                <DatePicker Margin="5" materialDesign:HintAssist.Hint="Начало периода" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
+                <DatePicker Margin="5" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
+            </StackPanel>
             
+            
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Right">
+                <Button Margin="5" Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenDeliveryWindowCommand}" Cursor="Hand">
+                    <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
+                        <materialDesign:PackIcon.ToolTip>
+                            <TextBlock Text="Добавить"/>
+                        </materialDesign:PackIcon.ToolTip>
+                    </materialDesign:PackIcon>
+                </Button>
+            </StackPanel>
+
+
+        </Grid>
+
+        
+
+
+        <DataGrid Grid.Row="1" ItemsSource="{Binding DisplayedElectronics}" SelectedItem="{Binding SelectedElectronic}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto">
+            <DataGrid.Resources>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Orange" />
+                    <Setter Property="Foreground" Value="Black" />
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Номер поставки"  Width="1.3*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding Model}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Склад назначения" Width="1.3*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding Type.Category.Name}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Дата заказа" Binding="{Binding Type.Name}" Width="*"/>
+                <DataGridTextColumn Header="Плановая дата поставки" Binding="{Binding SalePrice, StringFormat={}{0:F2} ₽}" Width="1.7*"/>
+                <DataGridTextColumn Header="Стоимость поставки" Binding="{Binding PurchasePrice, StringFormat={}{0:F2} ₽}" Width="1.2*"/>
+                <DataGridTextColumn Header="Сколичество товаров" Binding="{Binding PurchasePrice, StringFormat={}{0:F2} ₽}" Width="1.25*"/>
+                <DataGridTemplateColumn Header="Статус" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding Status}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
         </DataGrid>
     </Grid>
 </Page>
