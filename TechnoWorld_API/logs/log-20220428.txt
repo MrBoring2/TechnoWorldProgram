@@ -313,3 +313,104 @@
 2022-04-28 18:15:31.925 +05:00 [INF] Application started. Press Ctrl+C to shut down.
 2022-04-28 18:15:31.925 +05:00 [INF] Hosting environment: Development
 2022-04-28 18:15:31.926 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-04-28 18:18:15.226 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-04-28 18:18:15.289 +05:00 [INF] HTTP POST /userToken responded 200 in 1702.5365 ms
+2022-04-28 18:18:15.522 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 48.7067 ms
+2022-04-28 18:18:15.654 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-04-28 18:18:16.981 +05:00 [INF] HTTP GET /api/Categories responded 200 in 63.7208 ms
+2022-04-28 18:18:17.200 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 35.3809 ms
+2022-04-28 18:18:17.858 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 589.1207 ms
+2022-04-28 18:18:19.531 +05:00 [INF] HTTP GET /api/Storages responded 200 in 7.2690 ms
+2022-04-28 18:18:19.555 +05:00 [INF] HTTP GET /api/Suppliers responded 200 in 29.2781 ms
+2022-04-28 18:18:23.945 +05:00 [INF] kov отключен от системы
+2022-04-28 18:18:23.949 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 8364.9428 ms
+2022-04-28 18:19:02.458 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-28 18:19:02.459 +05:00 [INF] HTTP POST /userToken responded 200 in 10.0565 ms
+2022-04-28 18:19:02.648 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.4302 ms
+2022-04-28 18:19:04.140 +05:00 [INF] HTTP GET /api/Categories responded 200 in 861.2303 ms
+2022-04-28 18:19:04.169 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 10.1577 ms
+2022-04-28 18:19:04.534 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 339.3010 ms
+2022-04-28 18:19:08.366 +05:00 [INF] HTTP GET /api/Storages responded 200 in 1.6913 ms
+2022-04-28 18:19:08.369 +05:00 [INF] HTTP GET /api/Suppliers responded 200 in 2.0104 ms
+2022-04-28 18:19:28.122 +05:00 [INF] admin отключен от системы
+2022-04-28 18:19:28.124 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 25364.4046 ms
+2022-04-28 18:22:40.269 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-04-28 18:22:40.270 +05:00 [INF] HTTP POST /userToken responded 200 in 8.0824 ms
+2022-04-28 18:22:40.454 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.3342 ms
+2022-04-28 18:22:40.618 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-04-28 18:22:42.289 +05:00 [INF] HTTP GET /api/Categories responded 200 in 1058.7514 ms
+2022-04-28 18:22:42.320 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 9.3786 ms
+2022-04-28 18:22:42.753 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 410.9191 ms
+2022-04-28 18:22:43.927 +05:00 [INF] HTTP GET /api/Storages responded 200 in 1.6092 ms
+2022-04-28 18:22:43.929 +05:00 [INF] HTTP GET /api/Suppliers responded 200 in 1.4622 ms
+2022-04-28 18:22:48.617 +05:00 [INF] kov отключен от системы
+2022-04-28 18:22:48.619 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 8051.0508 ms
+2022-04-28 18:23:16.525 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-28 18:23:16.526 +05:00 [INF] HTTP POST /userToken responded 200 in 4.9688 ms
+2022-04-28 18:23:16.710 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.2501 ms
+2022-04-28 18:23:17.444 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.6448 ms
+2022-04-28 18:23:18.287 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 620.2900 ms
+2022-04-28 18:23:18.658 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 353.2097 ms
+2022-04-28 18:23:24.457 +05:00 [INF] HTTP GET /api/Storages responded 200 in 1.6312 ms
+2022-04-28 18:23:24.459 +05:00 [INF] HTTP GET /api/Suppliers responded 200 in 1.9551 ms
+2022-04-28 18:23:32.784 +05:00 [INF] admin отключен от системы
+2022-04-28 18:23:32.787 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 15968.7826 ms
+2022-04-28 18:25:09.283 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-28 18:25:09.285 +05:00 [INF] HTTP POST /userToken responded 200 in 7.9238 ms
+2022-04-28 18:25:09.471 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.2641 ms
+2022-04-28 18:25:11.333 +05:00 [INF] HTTP GET /api/Categories responded 200 in 491.4263 ms
+2022-04-28 18:25:11.364 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 11.4379 ms
+2022-04-28 18:25:11.750 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 358.6465 ms
+2022-04-28 18:25:20.514 +05:00 [INF] HTTP GET /api/Storages responded 200 in 1.4483 ms
+2022-04-28 18:25:20.516 +05:00 [INF] HTTP GET /api/Suppliers responded 200 in 1.4621 ms
+2022-04-28 18:26:50.741 +05:00 [INF] admin отключен от системы
+2022-04-28 18:26:50.743 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 101156.6303 ms
+2022-04-28 18:27:32.992 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-28 18:27:32.993 +05:00 [INF] HTTP POST /userToken responded 200 in 6.6784 ms
+2022-04-28 18:27:33.183 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.1577 ms
+2022-04-28 18:27:34.453 +05:00 [INF] HTTP GET /api/Categories responded 200 in 5.2344 ms
+2022-04-28 18:27:34.695 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 7.5565 ms
+2022-04-28 18:27:35.115 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 381.1906 ms
+2022-04-28 18:27:36.937 +05:00 [INF] HTTP GET /api/Storages responded 200 in 1.4688 ms
+2022-04-28 18:27:36.939 +05:00 [INF] HTTP GET /api/Suppliers responded 200 in 1.4814 ms
+2022-04-28 18:27:37.955 +05:00 [INF] HTTP GET /api/Categories responded 200 in 3.5993 ms
+2022-04-28 18:27:38.134 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 11.7974 ms
+2022-04-28 18:27:38.556 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 416.5625 ms
+2022-04-28 18:27:50.876 +05:00 [INF] admin отключен от системы
+2022-04-28 18:27:50.878 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 16491.1765 ms
+2022-04-28 18:28:19.289 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-04-28 18:28:19.290 +05:00 [INF] HTTP POST /userToken responded 200 in 8.3232 ms
+2022-04-28 18:28:19.473 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.1795 ms
+2022-04-28 18:28:19.640 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-04-28 18:28:20.262 +05:00 [INF] HTTP GET /api/Categories responded 200 in 3.4817 ms
+2022-04-28 18:28:20.492 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 8.1081 ms
+2022-04-28 18:28:21.916 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 1326.5757 ms
+2022-04-28 18:28:22.280 +05:00 [INF] HTTP GET /api/Storages responded 200 in 1.3625 ms
+2022-04-28 18:28:22.282 +05:00 [INF] HTTP GET /api/Suppliers responded 200 in 1.1988 ms
+2022-04-28 18:28:23.386 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.7605 ms
+2022-04-28 18:28:23.567 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 10.5624 ms
+2022-04-28 18:28:23.981 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 408.9023 ms
+2022-04-28 18:28:25.926 +05:00 [INF] HTTP GET /api/Categories responded 200 in 3.4723 ms
+2022-04-28 18:28:26.086 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 11.7508 ms
+2022-04-28 18:28:26.484 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 392.9724 ms
+2022-04-28 18:28:28.910 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.0799 ms
+2022-04-28 18:28:29.072 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 14.5641 ms
+2022-04-28 18:28:29.444 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 367.1074 ms
+2022-04-28 18:29:34.816 +05:00 [INF] kov отключен от системы
+2022-04-28 18:29:34.818 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 75227.1328 ms
+2022-04-28 18:30:08.857 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-04-28 18:30:08.858 +05:00 [INF] HTTP POST /userToken responded 200 in 6.4319 ms
+2022-04-28 18:30:09.042 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.1825 ms
+2022-04-28 18:30:10.540 +05:00 [INF] HTTP GET /api/Categories responded 200 in 782.8033 ms
+2022-04-28 18:30:10.572 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 7.1969 ms
+2022-04-28 18:30:10.958 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 365.5109 ms
+2022-04-28 18:30:12.521 +05:00 [INF] HTTP GET /api/Storages responded 200 in 1.4608 ms
+2022-04-28 18:30:12.523 +05:00 [INF] HTTP GET /api/Suppliers responded 200 in 1.4628 ms
+2022-04-28 18:30:14.486 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.1306 ms
+2022-04-28 18:30:14.662 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 9.4289 ms
+2022-04-28 18:30:15.098 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 427.9867 ms
+2022-04-28 18:30:17.507 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.5715 ms
+2022-04-28 18:30:17.664 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 10.6221 ms
+2022-04-28 18:30:18.003 +05:00 [INF] HTTP GET /api/Electronics/All responded 200 in 334.3013 ms
+2022-04-28 18:31:07.647 +05:00 [INF] admin отключен от системы
+2022-04-28 18:31:07.649 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 58498.5299 ms
