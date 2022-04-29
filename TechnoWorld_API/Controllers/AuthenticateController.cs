@@ -131,7 +131,8 @@ namespace TechnoWorld_API.Controllers
                 full_name = identity.FindFirst("full_name")?.Value.ToString(),
                 role_name = identity.FindFirst(ClaimsIdentity.DefaultRoleClaimType).Value.ToString(),
                 user_id = identity.FindFirst("user_id")?.Value.ToString(),
-                role_id = identity.FindFirst("role_id")?.Value.ToString()
+                role_id = identity.FindFirst("role_id")?.Value.ToString(),
+                post = identity.FindFirst("post")?.Value.ToString()
             };
 
             return response;
@@ -155,7 +156,7 @@ namespace TechnoWorld_API.Controllers
         }
         private async Task<ClaimsIdentity> GetIdentity(UserLoginModel model)
         {
-            Employee user = await _context.Employees.Include(r => r.Role)
+            Employee user = await _context.Employees.Include(r => r.Role).Include(p=>p.Post)
                 .FirstOrDefaultAsync(x => x.Login == model.UserName && x.Password == model.Password);
 
             if (user != null)
@@ -166,6 +167,7 @@ namespace TechnoWorld_API.Controllers
                     new Claim("full_name", user.FullName.ToString()),
                     new Claim(ClaimsIdentity.DefaultNameClaimType, user.Login),
                     new Claim("role_id", user.Role.RoleId.ToString()),
+                    new Claim("post", user.Post.Name.ToString()),
                     new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role.Name.ToString())
                 };
                 ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);

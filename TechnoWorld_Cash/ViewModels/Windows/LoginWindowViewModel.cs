@@ -58,7 +58,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     var data = JsonConvert.DeserializeObject<TokenModel>(response.Content);
-                    ClientService.Instance.SetClient(data.user_name, data.full_name, data.role_id, data.user_id, data.access_token);
+                    ClientService.Instance.SetClient(data.user_name, data.full_name, data.role_id, data.user_id, data.post, data.access_token);
                     ClientService.Instance.HubConnection.StartAsync();
 
                     CustomMessageBox.Show($"Добро пожаловать, {data.full_name}", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);

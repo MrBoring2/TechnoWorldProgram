@@ -11,6 +11,7 @@ namespace TechnoWorld_WarehouseAccounting.Models
         public string Name { get; set; }
         public int RoleId { get; set; }
         public int UserId { get; set; }
+        public string Post { get; set; }
         public string FullName { get; set; }
     }
 }

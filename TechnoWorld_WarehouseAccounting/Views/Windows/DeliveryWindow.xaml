@@ -29,10 +29,10 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding CancelDeliveryCommand}" CommandParameter="1" Margin="5" Height="35" Width="200" FontSize="16" Cursor="Hand">
                 <Button.Content>
-                    <TextBlock Text="Отменить заказ" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
+                    <TextBlock Text="Отменить заказ" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Visibility="{Binding CalncelVisibility}"/>
                 </Button.Content>
             </Button>
-            <Button TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding PayDeliveryCommand}" CommandParameter="1" Margin="5" Height="35" Width="200" FontSize="16" Cursor="Hand">
+            <Button TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding PayDeliveryCommand}" Visibility="{Binding PayVisibility}" CommandParameter="1" Margin="5" Height="35" Width="200" FontSize="16" Cursor="Hand">
                 <Button.Content>
                     <TextBlock Text="Оплатить заказ" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
                 </Button.Content>
@@ -79,7 +79,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button  TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding CreateDeliveryCommand}" CommandParameter="1" Margin="5,0" Height="35" Width="200" FontSize="16" Cursor="Hand">
+            <Button  TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding CreateDeliveryCommand}" Visibility="{Binding CreateVisibility}" CommandParameter="1" Margin="5,0" Height="35" Width="200" FontSize="16" Cursor="Hand">
                 <Button.Content>
                     <TextBlock Text="Сформировать заказ" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
                 </Button.Content>

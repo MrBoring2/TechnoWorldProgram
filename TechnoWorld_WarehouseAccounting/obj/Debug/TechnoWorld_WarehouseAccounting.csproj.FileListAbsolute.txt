@@ -111,10 +111,13 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Deb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.csproj.CopyComplete
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.exe
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.pdb
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.csproj.AssemblyReference.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Pages\DeliveryManagementPage.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Pages\DeliveryManagementPage.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\DeliveryWindow.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\DeliveryWindow.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\ProductsLIstWindow.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\Views\Windows\ProductsLIstWindow.baml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\bin\Debug\itextsharp.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\bin\Debug\itextsharp.xml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_WarehouseAccounting\obj\Debug\TechnoWorld_WarehouseAccounting.csproj.AssemblyReference.cache

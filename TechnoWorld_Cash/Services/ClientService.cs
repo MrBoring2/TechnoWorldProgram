@@ -39,7 +39,7 @@ namespace TechnoWorld_Terminal.Services
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
-        public void SetClient(string user_name, string full_name, int role_id, int user_id, string token)
+        public void SetClient(string user_name, string full_name, int role_id, int user_id, string post, string token)
         {
             Token = token;
             User = new User()
@@ -47,8 +47,8 @@ namespace TechnoWorld_Terminal.Services
                 Name = user_name,
                 RoleId = role_id,
                 UserId = user_id,
-                FullName = full_name
-                
+                FullName = full_name,
+                Post = post
             };
         }
 

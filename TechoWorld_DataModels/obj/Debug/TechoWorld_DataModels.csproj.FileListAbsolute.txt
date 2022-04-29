@@ -47,4 +47,3 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWo
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.csproj.CopyComplete
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.pdb
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\obj\Debug\TechoWorld_DataModels.csproj.AssemblyReference.cache
