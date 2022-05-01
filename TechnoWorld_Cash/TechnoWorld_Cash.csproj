@@ -227,6 +227,7 @@
     <Compile Include="Services\ClientService.cs" />
     <Compile Include="Services\CustomNotificationManager.cs" />
     <Compile Include="Services\DialogCloser.cs" />
+    <Compile Include="Services\Paginator.cs" />
     <Compile Include="Services\WindowController.cs" />
     <Compile Include="Services\WindowNavigation.cs" />
     <Compile Include="ViewModels\Windows\BaseWindowVM.cs" />

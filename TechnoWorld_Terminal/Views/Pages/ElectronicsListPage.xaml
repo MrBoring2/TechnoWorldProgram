@@ -83,7 +83,7 @@
                                             </StackPanel>
                                         </Grid>
 
-                                        <mah:RangeSlider Height="20" LargeChange="100" LowerValue="{Binding MinPrice}" ExtendedMode="True" UpperValue="{Binding MaxPrice}" Minimum="1" Maximum="400000" AutoToolTipPlacement="TopLeft" IsMoveToPointEnabled="True"  Orientation="Horizontal" SmallChange="1">
+                                        <mah:RangeSlider Height="20" LargeChange="100" MinRangeWidth="1" LowerValue="{Binding MinPrice}" ExtendedMode="True" UpperValue="{Binding MaxPrice}" Minimum="1" Maximum="1000000" AutoToolTipPlacement="TopLeft" IsMoveToPointEnabled="True"  Orientation="Horizontal" SmallChange="1">
                                             <mah:RangeSlider.AutoToolTipRangeValuesTemplate>
                                                 <DataTemplate DataType="mah:RangeSliderAutoTooltipValues">
                                                     <UniformGrid Columns="2" Rows="2">
@@ -115,7 +115,7 @@
                                         <ComboBox ItemsSource="{Binding SortParameters}" Margin="5" SelectedItem="{Binding SelectedSort, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Title"/>
                                         <Grid>
                                             <materialDesign:PackIcon VerticalAlignment="Center" Kind="OrderAlphabeticalAscending"/>
-                                            <CheckBox Margin="20,0,5,0" VerticalAlignment="Center" x:Name="isDesceningCheck" Content="По убыванию" IsChecked="{Binding SelectedSort.IsDescening}"/>
+                                            <CheckBox Margin="20,0,5,0" VerticalAlignment="Center" x:Name="isDesceningCheck" Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAscending}" Command="{Binding SortOrderChangedCommand}"/>
                                         </Grid>
                                     </StackPanel>
                                 </Border>
@@ -127,7 +127,7 @@
         </Grid>
         <materialDesign:Card Margin="5">
             <Grid>
-                <ListView x:Name="electronicsList" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic, Mode=TwoWay}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding DisplayedElectronics, Mode=TwoWay}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
+                <ListView x:Name="electronicsList" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic, Mode=TwoWay}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding Electronics, Mode=TwoWay}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -148,8 +148,8 @@
             </Grid>
         </materialDesign:Card>
         <StackPanel Orientation="Horizontal" Name="Paginator" HorizontalAlignment="Center"  Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" >
-            <Button x:Name="ToFirst" Background="Orange" BorderBrush="Orange" Command="{Binding ToFirstPageCommand}" CommandParameter="0" Content="«" Margin="0,7.5,0,7.5" Height="Auto" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}" Cursor="Hand"/>
-            <ListView Margin="0,7,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectedItem="{Binding SelectedPageNumber, Mode=TwoWay}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="45" ItemsSource="{Binding DisplayedPagesNumbers}">
+            <Button x:Name="ToFirst" Background="Orange" BorderBrush="Orange" Command="{Binding ChangePageCommand}" CommandParameter="-1" Content="«" Margin="0,7.5,0,7.5" Height="Auto" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}" Cursor="Hand"/>
+            <ListView Margin="0,7,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" IsEnabled="{Binding Paginator.IsSelectionEnabled}" SelectedItem="{Binding Paginator.SelectedPageNumber, Mode=TwoWay}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="45" ItemsSource="{Binding Paginator.DisplayedPagesNumbers}">
                 <interactions:Interaction.Triggers>
                     <interactions:EventTrigger EventName="SelectionChanged">
                         <interactions:InvokeCommandAction Command="{Binding ChangePageCommand}"/>
@@ -172,7 +172,7 @@
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
             </ListView>
-            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding ToLastPageCommand}" CommandParameter="1"  Content="»" Margin="0" Height="35" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}" Cursor="Hand"/>
+            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding ChangePageCommand}" CommandParameter="1"  Content="»" Margin="0" Height="35" Width="50" FontSize="30" ContentTemplate="{StaticResource buttonTemplate}" Cursor="Hand"/>
         </StackPanel>
         <Button Content="Назад к категориям" Command="{Binding BackToCategoriesCommand}"  Background="Orange" BorderBrush="Orange" Grid.Column="1" HorizontalAlignment="Left" Margin="8,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="253"/>
 

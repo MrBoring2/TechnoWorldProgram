@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
-
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace TechoWorld_DataModels
 {
@@ -20,7 +20,10 @@ namespace TechoWorld_DataModels
         public DateTime DateOfDelivery { get; set; }
         public int EmployeeId { get; set; }
         public int StatusId { get; set; }
-
+        [NotMapped]
+        public decimal TotalPrice => ElectronicsToDeliveries.Any(p => p.Electronics == null) ? 0 : ElectronicsToDeliveries.Sum(p => p.Electronics.PurchasePrice * p.Quantity + (p.Electronics.PurchasePrice * p.Quantity * 18 / 100));
+        [NotMapped]
+        public decimal TotalCount => ElectronicsToDeliveries.Sum(p => p.Quantity);
         public virtual Employee Employee { get; set; }
         public virtual Storage Storage { get; set; }
         public virtual Supplier Supplier { get; set; }

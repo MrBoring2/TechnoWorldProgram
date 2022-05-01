@@ -249,6 +249,9 @@
     </Compile>
     <Compile Include="Common\NotifyPropertyChangedBase.cs" />
     <Compile Include="Models\DeliveryItem.cs" />
+    <Compile Include="Models\FilteredDeliveries.cs" />
+    <Compile Include="Models\FilteredElectronic.cs" />
+    <Compile Include="Models\ItemWithTitle.cs" />
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\SortParameter.cs" />
     <Compile Include="Models\TokenModel.cs" />

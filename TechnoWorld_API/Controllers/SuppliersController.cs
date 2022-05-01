@@ -81,7 +81,7 @@ namespace TechnoWorld_API.Controllers
             _context.Suppliers.Add(supplier);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetStatus", new { id = supplier.SupplierId }, supplier);
+            return CreatedAtAction("GetSupplier", new { id = supplier.SupplierId }, supplier);
         }
 
         // DELETE: api/Status/5

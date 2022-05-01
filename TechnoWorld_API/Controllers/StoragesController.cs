@@ -81,7 +81,7 @@ namespace TechnoWorld_API.Controllers
             _context.Storages.Add(storage);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetStatus", new { id = storage.StorageId }, storage);
+            return CreatedAtAction("GetStorage", new { id = storage.StorageId }, storage);
         }
 
         // DELETE: api/Status/5

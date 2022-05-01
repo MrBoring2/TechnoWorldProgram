@@ -53,6 +53,8 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
                 .Build();
 
             ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
+            ClientService.Instance.RestClient.Timeout = 20000;
+            ClientService.Instance.RestClient.ReadWriteTimeout = 20000;
 
 
             WindowLoadedCommand = new RelayCommand(WindowLoaded);

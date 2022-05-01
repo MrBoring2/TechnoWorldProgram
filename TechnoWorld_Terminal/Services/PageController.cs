@@ -23,7 +23,7 @@ namespace TechnoWorld_Terminal.Services
             where VM : PageVMBase
         {
             var vmType = typeof(VM);
-            viewModelsToPagesMapping[vmType] = typeof(P);           
+            viewModelsToPagesMapping[vmType] = typeof(P);
         }
 
         public void CreatePage(Type vmType)
@@ -32,7 +32,17 @@ namespace TechnoWorld_Terminal.Services
             var page = CreatePageInstanceWithVM(vm);
             createdPages[vm] = page;
         }
-
+        public void ClearPages()
+        {
+            if (createdPages != null)
+            {
+                createdPages.Clear();
+            }
+        }
+        public bool IsPageCreated(Type type)
+        {
+            return createdPages.Any(p => p.Key.GetType() == type);
+        }
         public void UnregisterPageType<VM>()
         {
             var vmType = typeof(VM);
@@ -84,8 +94,9 @@ namespace TechnoWorld_Terminal.Services
             }
             else
             {
-                page = CreatePageInstanceWithVM((PageVMBase)Activator.CreateInstance(vmPageType));
-                createdPages[(PageVMBase)Activator.CreateInstance(vmPageType)] = page;
+                var pageVM = (PageVMBase)Activator.CreateInstance(vmPageType);
+                page = CreatePageInstanceWithVM(pageVM);
+                createdPages[pageVM] = page;
                 return page;
             }
         }

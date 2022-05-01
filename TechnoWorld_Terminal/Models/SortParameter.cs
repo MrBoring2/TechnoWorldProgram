@@ -8,19 +8,20 @@ namespace TechnoWorld_Terminal.Models
 {
     public class SortParameter : NotifyPropertyChangedModel
     {
-        private bool isDescening;
+        private bool isAscending;
         public SortParameter(string title, string property)
         {
             Title = title;
             Property = property;
+            IsAscending = true;
         }
 
         public string Title { get; set; }
         public string Property { get; set; }
-        public bool IsDescening
+        public bool IsAscending
         {
-            get => isDescening; 
-            set { isDescening = value; OnPropertyChanged(); }
+            get => isAscending; 
+            set { isAscending = value; OnPropertyChanged(); }
         }
     }
 }

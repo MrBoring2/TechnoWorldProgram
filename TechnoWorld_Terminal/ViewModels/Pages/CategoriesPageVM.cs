@@ -23,11 +23,6 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public CategoriesPageVM()
         {
             LoadCategories();
-            ClientService.Instance.HubConnection.On<string>("SendHello", (message) =>
-            {
-                MessageBox.Show(message);
-            });
-            TestCommand = new RelayCommand(Test);
             OpenCategoryCommand = new RelayCommand(OpenCategory);
         }
 
@@ -42,15 +37,6 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         }
 
         public RelayCommand OpenCategoryCommand { get; set; }
-        private async void Test(object obj)
-        {
-            var response = (RestResponse)await ApiService.GetRequest("api/Categories");
-            if (response.StatusCode == System.Net.HttpStatusCode.OK)
-            {
-
-
-            }
-        }
 
         public ObservableCollection<Category> Categories { get => categories; set { categories = value; OnPropertyChanged(); } }
         public Category SelectedCategory { get => selectedCategory; set { selectedCategory = value; OnPropertyChanged(); } }

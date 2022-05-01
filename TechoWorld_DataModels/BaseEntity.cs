@@ -9,6 +9,10 @@ namespace TechoWorld_DataModels
 {
     public class BaseEntity : INotifyPropertyChanged
     {
+        public object GetProperty(string property)
+        {
+            return GetType().GetProperty(property).GetValue(this);
+        }
         public event PropertyChangedEventHandler PropertyChanged;
     }
 }

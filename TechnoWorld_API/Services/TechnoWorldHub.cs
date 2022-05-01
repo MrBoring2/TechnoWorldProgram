@@ -50,7 +50,7 @@ namespace TechnoWorld_API.Services
                 ConnectedUsers.TryGetValue(userName, out connectionId);
                 Groups.AddToGroupAsync(connectionId, SignalRGroups.cash_group);
             }
-            else if (roleName == "storage_worker")
+            else if (roleName == "storage_worker" || roleName == "administrator")
             {
                 string connectionId;
                 Log.Information($"Подключен пользователь к приложению управление предприятием: {userName}");

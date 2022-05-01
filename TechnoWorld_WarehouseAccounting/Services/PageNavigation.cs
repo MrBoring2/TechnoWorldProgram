@@ -56,41 +56,44 @@ namespace TechnoWorld_WarehouseAccounting.Services
                 case 1:
                     {
 
-                    }break;
+                    }
+                    break;
                 case 2:
                     {
 
-                    }break;
+                    }
+                    break;
                 case 3:
                     {
                         RegisterPageWithVM<ProductManagementPageVM, ProductManagementPage>();
                         RegisterPageWithVM<DeliveryManagementPageVM, DeliveryManagementPage>();
-                        CreatePage(typeof(ProductManagementPageVM));
-                        CreatePage(typeof(DeliveryManagementPageVM));
+                        //CreatePage(typeof(ProductManagementPageVM));
+                        //CreatePage(typeof(DeliveryManagementPageVM));
                     }
                     break;
                 case 4:
                     {
                         RegisterPageWithVM<ProductManagementPageVM, ProductManagementPage>();
                         RegisterPageWithVM<DeliveryManagementPageVM, DeliveryManagementPage>();
-                        CreatePage(typeof(ProductManagementPageVM));
-                        CreatePage(typeof(DeliveryManagementPageVM));
+                        //CreatePage(typeof(ProductManagementPageVM));
+                        //CreatePage(typeof(DeliveryManagementPageVM));
                     }
                     break;
                 default:
                     {
 
-                    }break;
+                    }
+                    break;
             }
-            
+
             //RegisterPageWithVM<CartPageVM, CartPage>();
             //RegisterPageWithVM<CategoriesPageVM, CategoriesPage>();
             //RegisterPageWithVM<ElectronicsDetailPageVM, ElectronicsDetailPage>();
-           
+
             //CreatePage(typeof(CartPageVM));
             //CreatePage(typeof(CategoriesPageVM));
         }
-        public void CrearCreatedPages()
+        public void ClearCreatedPages()
         {
             pageController.ClearPages();
         }
@@ -105,9 +108,12 @@ namespace TechnoWorld_WarehouseAccounting.Services
             //    //SwitchPage((PageVMBase)pageController.GetFirstPage().DataContext);
             //}
         }
-        protected void CreatePage(Type vmType)
+        public static void CreatePage(Type vmType)
         {
-            pageController.CreatePage(vmType);
+            if (!pageController.IsPageCreated(vmType))
+            {
+                pageController.CreatePage(vmType);
+            }
         }
         protected BasePageVM GetPageInstance(Type vmType)
         {

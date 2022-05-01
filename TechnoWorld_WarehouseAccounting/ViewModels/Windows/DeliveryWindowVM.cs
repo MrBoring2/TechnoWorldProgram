@@ -12,6 +12,7 @@ using System.Windows;
 using TechnoWorld_WarehouseAccounting.Common;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
+using TechnoWorld_WarehouseAccounting.Views.Windows;
 using TechoWorld_DataModels;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
@@ -27,7 +28,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         private Visibility cancelVisibility;
         private Visibility payVisibility;
         private Visibility createVisibility;
+        private Visibility createReceiptInvoiceVisibility;
         private string deliveryNumber;
+        private DateTime dateOfDelivery;
         public DeliveryWindowVM()
         {
             Initialize();
@@ -42,6 +45,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 PayVisibility = Visibility.Visible;
                 CancelVisibility = Visibility.Visible;
                 CreateVisivility = Visibility.Collapsed;
+                CreateReceiptInvoiceVisibility = Visibility.Visible;
             }
         }
 
@@ -49,11 +53,15 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public RelayCommand AddProductCommand { get; set; }
         public RelayCommand RemoveProductCommand { get; set; }
         public RelayCommand CreateDeliveryCommand { get; set; }
+        public RelayCommand CreateReceiptInvoiceCommand { get; set; }
         public DeliveryItem SelectedDeliveryItem { get => selectedDeliveryItem; set { selectedDeliveryItem = value; OnPropertyChanged(); } }
         public string DeliveryNumber { get => deliveryNumber; set { deliveryNumber = value; OnPropertyChanged(); } }
+        public string DeliveryTitle => $"{DeliveryNumber} от {DateTime.Now.ToShortDateString()}";
+        public DateTime DateOfDelivery { get => dateOfDelivery; set { dateOfDelivery = value.Date >= DateTime.Now.Date ? value : dateOfDelivery; OnPropertyChanged(); } }
         public Visibility PayVisibility { get => payVisibility; set { payVisibility = value; OnPropertyChanged(); } }
         public Visibility CancelVisibility { get => cancelVisibility; set { cancelVisibility = value; OnPropertyChanged(); } }
         public Visibility CreateVisivility { get => createVisibility; set { createVisibility = value; OnPropertyChanged(); } }
+        public Visibility CreateReceiptInvoiceVisibility { get => createReceiptInvoiceVisibility; set { createReceiptInvoiceVisibility = value; OnPropertyChanged(); } }
         public Storage SelectedStorage { get => selectedStorage; set { selectedStorage = value; OnPropertyChanged(); } }
         public Supplier SelectedSupplier { get => selectedSupplier; set { selectedSupplier = value; OnPropertyChanged(); } }
         public ObservableCollection<DeliveryItem> DeliveryItems { get => deliveryItems; set { deliveryItems = value; OnPropertyChanged(); } }
@@ -63,14 +71,18 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             Delivery = new Delivery();
             DeliveryNumber = $"ЗП{GenerateDeliveryNumber()}";
+            DateOfDelivery = DateTime.Now;
             AddProductCommand = new RelayCommand(AddProduct);
             RemoveProductCommand = new RelayCommand(RemoveProduct);
             CreateDeliveryCommand = new RelayCommand(CreateDelivery);
+            CreateReceiptInvoiceCommand = new RelayCommand(CreateReceiptInvoice);
             DeliveryItems = new ObservableCollection<DeliveryItem>();
             DeliveryItems.CollectionChanged += DeliveryItems_CollectionChanged;
             PayVisibility = Visibility.Collapsed;
             CancelVisibility = Visibility.Collapsed;
             CreateVisivility = Visibility.Visible;
+            CreateReceiptInvoiceVisibility = Visibility.Collapsed;
+            OnPropertyChanged(nameof(DeliveryTitle));
         }
 
 
@@ -111,18 +123,44 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 {
                     DeliveryItems.Add(new DeliveryItem(productsListVM.SelectedElectronic, 0));
                 }
-                //await LoadElectronics();
-                //CustomMessageBox.Show($"Заказ поиставщику номер упешно добавлен", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
         private async void CreateDelivery(object obj)
         {
-            GenerateReceiptInvoice(SelectedStorage, SelectedSupplier, DeliveryItems);
+            if (DeliveryItems.Any(p => p.Count <= 0))
+            {
+                CustomMessageBox.Show("Не у всех товаров установлено количество!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            Delivery.DeliveryNumber = DeliveryNumber;
+            Delivery.DateOfOrder = DateTime.Now.Date.ToLocalTime();
+            Delivery.DateOfDelivery = DateOfDelivery.Date.ToLocalTime();
+            Delivery.StatusId = 1;
+            Delivery.StorageId = SelectedStorage.StorageId;
+            Delivery.SupplierId = SelectedSupplier.SupplierId;
+            Delivery.EmployeeId = ClientService.Instance.User.UserId;
+            Delivery.ElectronicsToDeliveries = DeliveryItems.Select(p => new ElectronicsToDelivery { ElectronicsId = p.Electronic.ElectronicsId, Quantity = p.Count }).ToList();
+            var response = await ApiService.PostRequest("api/Deliveries", Delivery);
+            if (response.StatusCode == System.Net.HttpStatusCode.Created)
+            {
+                GenerateReceiptInvoice(GenerateDeliveryNumber(), SelectedStorage, SelectedSupplier, Delivery.DateOfOrder, Delivery.DateOfDelivery, DeliveryItems);
+                DialogResult = true;
+            }
+            else
+            {
+                CustomMessageBox.Show($"{response.Content}", "Произошла ошибка при добавлении!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void CreateReceiptInvoice(object obj)
+        {
+            GenerateReceiptInvoice(Delivery.DeliveryNumber, SelectedStorage, SelectedSupplier, Delivery.DateOfOrder, Delivery.DateOfDelivery, DeliveryItems);
+            CustomMessageBox.Show($"Приходная накладная сформирована в папке Приходные накладные", "Произошла ошибка при добавлении!", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
-        private async void GenerateReceiptInvoice(Storage storage, Supplier supplier, IEnumerable<DeliveryItem> deliveryItems)
+        private void GenerateReceiptInvoice(string deliveryNumber, Storage storage, Supplier supplier, DateTime dateOfOrder, DateTime dateOfDelivery, IEnumerable<DeliveryItem> deliveryItems)
         {
-            var recieptInviceNumber = $"ПН{GenerateDeliveryNumber()}";
+            var recieptInviceNumber = $"ПН{deliveryNumber}";
             FileStream fs = new FileStream($"Приходные накладные/{recieptInviceNumber}.pdf", FileMode.Create, FileAccess.Write, FileShare.None);
             Rectangle rec2 = new Rectangle(PageSize.A4);
 
@@ -144,7 +182,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             doc.Open();
 
             Paragraph paragraph;
-            paragraph = new Paragraph($"Приходная накладная {recieptInviceNumber} от {DateTime.Now.Day}.{DateTime.Now.Month}.{DateTime.Now.Year}", titleFont);
+            paragraph = new Paragraph($"Приходная накладная {recieptInviceNumber} от {dateOfOrder.Day}.{dateOfOrder.Month}.{dateOfOrder.Year}", titleFont);
             paragraph.Alignment = 0;
             //paragraph.ExtraParagraphSpace = 20;
             paragraph.Leading = 30;
@@ -162,6 +200,11 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             doc.Add(paragraph);
 
             paragraph = new Paragraph($"Покупатель: ООО «Техно Мир»", textFont);
+            paragraph.Alignment = 3;
+            paragraph.SpacingAfter = 20;
+            doc.Add(paragraph);
+
+            paragraph = new Paragraph($"Плановая дата поставки: {dateOfDelivery}", textFont);
             paragraph.Alignment = 3;
             paragraph.SpacingAfter = 20;
             doc.Add(paragraph);

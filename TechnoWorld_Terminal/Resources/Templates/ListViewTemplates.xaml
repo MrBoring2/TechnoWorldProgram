@@ -23,6 +23,7 @@
                 <StackPanel Grid.Column="1" Orientation="Vertical">
                     <TextBlock Text="{Binding Model}" FontSize="20" FontWeight="Bold"  Margin="10" TextWrapping="Wrap"/>
                     <TextBlock Text="{Binding Manufacturer.Name}" Margin="10,0,0,0" FontSize="14" VerticalAlignment="Bottom"/>
+                    <TextBlock Text="{Binding Type.Name}" Margin="10,0,0,0" FontSize="14" VerticalAlignment="Bottom"/>
                 </StackPanel>
                 <StackPanel Grid.Column="2" Orientation="Vertical">
                     <TextBlock Text="{Binding SalePrice, StringFormat={}{0:F0} ₽}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>

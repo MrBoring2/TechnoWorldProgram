@@ -18,7 +18,7 @@ namespace TechnoWorld_Terminal.Services
         private NavigationService _navService;
 
         private PageNavigation() { RegisterPages(); }
-        private static PageNavigation Instance
+        public static PageNavigation Instance
         {
             get
             {
@@ -49,6 +49,11 @@ namespace TechnoWorld_Terminal.Services
                 Instance._navService.Navigated += Instance._navService_Navigated;
             }
         }
+
+        public void ClearCreatedPages()
+        {
+            pageController.ClearPages();
+        }
         protected void RegisterPageWithVM<VM, Pag>()
             where VM : PageVMBase
             where Pag : Page
@@ -60,9 +65,12 @@ namespace TechnoWorld_Terminal.Services
             //    //SwitchPage((PageVMBase)pageController.GetFirstPage().DataContext);
             //}
         }
-        protected void CreatePage(Type vmType)
+        public static void CreatePage(Type vmType)
         {
-            pageController.CreatePage(vmType);
+            if (!pageController.IsPageCreated(vmType))
+            {
+                pageController.CreatePage(vmType);
+            }
         }
         protected PageVMBase GetPageInstance(Type vmType)
         {
@@ -112,16 +120,17 @@ namespace TechnoWorld_Terminal.Services
                 Instance._navService.Navigate(page);
             }
         }
+
         private void RegisterPages()
         {
             RegisterPageWithVM<ElectronicsListPageVM, ElectronicsListPage>();
             RegisterPageWithVM<CartPageVM, CartPage>();
             RegisterPageWithVM<CategoriesPageVM, CategoriesPage>();
             RegisterPageWithVM<ElectronicsDetailPageVM, ElectronicsDetailPage>();
-            CreatePage(typeof(ElectronicsListPageVM));
-            CreatePage(typeof(CartPageVM));
-            CreatePage(typeof(CategoriesPageVM));
-            
+            //CreatePage(typeof(ElectronicsListPageVM));
+            //CreatePage(typeof(CartPageVM));
+            //CreatePage(typeof(CategoriesPageVM));
+
         }
     }
 }

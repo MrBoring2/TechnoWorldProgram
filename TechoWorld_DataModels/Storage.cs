@@ -17,7 +17,7 @@ namespace TechoWorld_DataModels
         public string Name { get; set; }
         [JsonIgnore]
         public virtual ICollection<Delivery> Deliveries { get; set; }
-        [JsonIgnore]
+     
         public virtual ICollection<ElectronicsToStorage> ElectronicsToStorages { get; set; }
     }
 }

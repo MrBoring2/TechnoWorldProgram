@@ -13,6 +13,7 @@ using TechnoWorld_API.Services;
 using Serilog;
 using TechnoWorld_API.Helpers;
 using Newtonsoft.Json;
+using TechnoWorld_API.Models;
 
 namespace BNS_API.Controllers
 {
@@ -23,7 +24,6 @@ namespace BNS_API.Controllers
     {
         private readonly IHubContext<TechnoWorldHub> _hubContext;
         private readonly TechnoWorldContext _context;
-
         public ElectronicsController(TechnoWorldContext context, IHubContext<TechnoWorldHub> hubContext)
         {
             _context = context;
@@ -44,6 +44,99 @@ namespace BNS_API.Controllers
             }
 
             return list;
+        }
+
+        [HttpGet("TerminalFilter")]
+        public async Task<ActionResult<FilteredElectronic>> GetElectronicsForTerminalByFilter(string jsonFilter)
+        {
+            IEnumerable<Electronic> list = null;
+            int count = 0;
+            await Task.Run(() =>
+            {
+                ElectronicsTerminalFilter filter = JsonConvert.DeserializeObject<ElectronicsTerminalFilter>(jsonFilter);
+
+                list = _context.Electronics.Include(p => p.Type)
+                                                .Include(p => p.Type.Category)
+                                                .Include(p => p.Manufacturer)
+                                                .Include(p => p.ElectronicsToStorages)
+                                                .AsSplitQuery()
+                                                //.AsNoTracking()
+                                                .Where(filter.FilterExpression)
+                                                .AsEnumerable();
+
+                if (filter.IsAscending)
+                {
+                    list = list.OrderBy(p => p.GetProperty(filter.SortParameter));
+                }
+                else
+                {
+                    list = list.OrderByDescending(p => p.GetProperty(filter.SortParameter));
+                }
+                count = list.Count();
+                list = list.ToList();
+                if (filter.CurrentPage > 1)
+                {
+                    list = list.Skip((filter.CurrentPage - 1) * filter.ItemsPerPage);
+                }
+                list = list.Take(filter.ItemsPerPage);
+                foreach (var item in list)
+                {
+                    foreach (var storage in item.ElectronicsToStorages)
+                    {
+                        _context.Entry(storage).Reference(p => p.Storage).Load();
+                    }
+                }
+            });
+
+            return new FilteredElectronic(list, count);
+        }
+
+
+        [HttpGet("Filter")]
+        public async Task<ActionResult<FilteredElectronic>> GetElectronicsByFilter(string jsonFilter)
+        {
+            IEnumerable<Electronic> list = null;
+            int count = 0;
+            await Task.Run(() =>
+            {
+                ElectronicsFilter filter = JsonConvert.DeserializeObject<ElectronicsFilter>(jsonFilter);
+
+                list = _context.Electronics.Include(p => p.Type)
+                                                .Include(p => p.Type.Category)
+                                                .Include(p => p.Manufacturer)
+                                                .Include(p => p.ElectronicsToStorages)
+                                                .AsSplitQuery()
+                                                //.AsNoTracking()
+                                                .Where(filter.FilterExpression)
+                                                .AsEnumerable();
+                
+                if (filter.IsAscending)
+                {
+                    list = list.OrderBy(p => p.GetProperty(filter.SortParameter));
+                }
+                else
+                {
+                    list = list.OrderByDescending(p => p.GetProperty(filter.SortParameter));
+                }
+                count = list.Count();
+
+                if (filter.CurrentPage > 1)
+                {
+                    list = list.Skip((filter.CurrentPage - 1) * filter.ItemsPerPage);
+                }
+                list = list.Take(filter.ItemsPerPage);
+
+                foreach (var item in list)
+                {
+                    foreach (var storage in item.ElectronicsToStorages)
+                    {
+                        _context.Entry(storage).Reference(p => p.Storage).Load();
+                    }
+                }
+          
+            });
+
+            return new FilteredElectronic(list, count);
         }
         // GET: api/Electronics
         [HttpGet]
@@ -104,27 +197,29 @@ namespace BNS_API.Controllers
             }
             Log.Information($"Изменён товар {electronic.Model}");
 
-            var allElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
-            foreach (var item in allElectronics)
-            {
-                foreach (var storage in item.ElectronicsToStorages)
-                {
-                    await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
-                }
-            }
-            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(allElectronics, Formatting.None,
-                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            //var allElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
+            //foreach (var item in allElectronics)
+            //{
+            //    foreach (var storage in item.ElectronicsToStorages)
+            //    {
+            //        await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
+            //    }
+            //}
+            //await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(allElectronics, Formatting.None,
+            //        new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", "о");
 
-            var categoryElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).Where(p => p.Type.CategoryId == electronic.Type.CategoryId).ToListAsync();
-            foreach (var item in categoryElectronics)
-            {
-                foreach (var storage in item.ElectronicsToStorages)
-                {
-                    await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
-                }
-            }
-            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(categoryElectronics, Formatting.None,
-                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            //var categoryElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).Where(p => p.Type.CategoryId == electronic.Type.CategoryId).ToListAsync();
+            //foreach (var item in categoryElectronics)
+            //{
+            //    foreach (var storage in item.ElectronicsToStorages)
+            //    {
+            //        await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
+            //    }
+            //}
+            //await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(categoryElectronics, Formatting.None,
+            //        new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", "о");
 
             return NoContent();
         }
@@ -138,29 +233,29 @@ namespace BNS_API.Controllers
             _context.Electronics.Add(electronic);
             await _context.SaveChangesAsync();
 
-            Log.Information($"Добавлен товар {electronic.Model}");
-            var allElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
-            foreach (var item in allElectronics)
-            {
-                foreach (var storage in item.ElectronicsToStorages)
-                {
-                    await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
-                }
-            }
-            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(allElectronics, Formatting.None,
-                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
-
-            var categoryElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).Where(p => p.Type.CategoryId == electronic.Type.CategoryId).ToListAsync();
-            foreach (var item in categoryElectronics)
-            {
-                foreach (var storage in item.ElectronicsToStorages)
-                {
-                    await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
-                }
-            }
-            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(categoryElectronics, Formatting.None,
-                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
-
+            //Log.Information($"Добавлен товар {electronic.Model}");
+            //var allElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
+            //foreach (var item in allElectronics)
+            //{
+            //    foreach (var storage in item.ElectronicsToStorages)
+            //    {
+            //        await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
+            //    }
+            //}
+            //await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(allElectronics, Formatting.None,
+            //        new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", "о");
+            //var categoryElectronics = await _context.Electronics.Include(p => p.Type).Include(p => p.Type.Category).Where(p => p.Type.CategoryId == electronic.Type.CategoryId).ToListAsync();
+            //foreach (var item in categoryElectronics)
+            //{
+            //    foreach (var storage in item.ElectronicsToStorages)
+            //    {
+            //        await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
+            //    }
+            //}
+            //await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(categoryElectronics, Formatting.None,
+            //        new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", "о");
             return CreatedAtAction("GetElectronic", new { id = electronic.ElectronicsId }, electronic);
         }
 

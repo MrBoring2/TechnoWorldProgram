@@ -16,6 +16,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
@@ -29,15 +30,15 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBox Text="{Binding Search}" Margin="5,0,5,0" materialDesign:HintAssist.Hint="Введите номер поставки для поиска..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Center" Grid.ColumnSpan="2" Cursor="Arrow"/>
+            <TextBox Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" Margin="5,0,5,0" materialDesign:HintAssist.Hint="Введите номер поставки для поиска..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Center" Grid.ColumnSpan="2" Cursor="Arrow"/>
 
             <StackPanel Grid.Row="1" Orientation="Horizontal">
-                <ComboBox Margin="5" materialDesign:HintAssist.Hint="Статус" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
-                <DatePicker Margin="5" materialDesign:HintAssist.Hint="Начало периода" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
-                <DatePicker Margin="5" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
+                <ComboBox Margin="5" materialDesign:HintAssist.Hint="Статус" DisplayMemberPath="Title" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left" ItemsSource="{Binding Statuses}" SelectedItem="{Binding SelectedStatus}"/>
+                <DatePicker SelectedDate="{Binding StartDate}" Margin="5" materialDesign:HintAssist.Hint="Начало периода" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
+                <DatePicker SelectedDate="{Binding EndDate}" Margin="5" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
             </StackPanel>
-            
-            
+
+
             <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Right">
                 <Button Margin="5" Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenDeliveryWindowCommand}" Cursor="Hand">
                     <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
@@ -47,14 +48,14 @@
                     </materialDesign:PackIcon>
                 </Button>
             </StackPanel>
-
-
         </Grid>
-
         
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <ComboBox Width="250" Margin="5,0,0,0" ItemsSource="{Binding SortParameters}" SelectedItem="{Binding SelectedSort}" DisplayMemberPath="Title" materialDesign:HintAssist.Hint="Сортировка" materialDesign:HintAssist.IsFloating="True" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <CheckBox Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAcsending}" VerticalAlignment="Center" FontSize="16" Margin="5,0,0,0" Command="{Binding SortOrderChangedCommand}"/>
+        </StackPanel>
 
-
-        <DataGrid Grid.Row="1" ItemsSource="{Binding DisplayedElectronics}" SelectedItem="{Binding SelectedElectronic}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto">
+        <DataGrid Grid.Row="2" ItemsSource="{Binding DisplayedDeliveries}" SelectedItem="{Binding SelectedDelivery}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto" Grid.RowSpan="1">
             <DataGrid.Resources>
                 <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Orange" />
@@ -65,29 +66,67 @@
                 <DataGridTemplateColumn Header="Номер поставки"  Width="1.3*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate DataType="DataGridCell">
-                            <TextBlock Text="{Binding Model}" TextWrapping="Wrap"/>
+                            <TextBlock Text="{Binding DeliveryNumber}" TextWrapping="Wrap"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTemplateColumn Header="Склад назначения" Width="1.3*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate DataType="DataGridCell">
-                            <TextBlock Text="{Binding Type.Category.Name}" TextWrapping="Wrap"/>
+                            <TextBlock Text="{Binding Storage.Name}" TextWrapping="Wrap"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Дата заказа" Binding="{Binding Type.Name}" Width="*"/>
-                <DataGridTextColumn Header="Плановая дата поставки" Binding="{Binding SalePrice, StringFormat={}{0:F2} ₽}" Width="1.7*"/>
-                <DataGridTextColumn Header="Стоимость поставки" Binding="{Binding PurchasePrice, StringFormat={}{0:F2} ₽}" Width="1.2*"/>
-                <DataGridTextColumn Header="Сколичество товаров" Binding="{Binding PurchasePrice, StringFormat={}{0:F2} ₽}" Width="1.25*"/>
+                <DataGridTextColumn Header="Дата заказа" Binding="{Binding DateOfOrder, StringFormat={}{0:dd.MM.yyyy}}" Width="*"/>
+                <DataGridTextColumn Header="Плановая дата поставки" Binding="{Binding DateOfDelivery, StringFormat={}{0:dd.MM.yyyy}}" Width="1.7*"/>
+                <DataGridTextColumn Header="Стоимость поставки" Binding="{Binding TotalPrice, StringFormat={}{0:F2} ₽}" Width="1.2*"/>
+                <DataGridTextColumn Header="Количество товаров" Binding="{Binding TotalCount, StringFormat={}{0} шт.}" Width="1.25*"/>
                 <DataGridTemplateColumn Header="Статус" Width="*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate DataType="DataGridCell">
-                            <TextBlock Text="{Binding Status}" TextWrapping="Wrap"/>
+                            <TextBlock Text="{Binding Status.Name}" TextWrapping="Wrap"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
+
+        <StackPanel Orientation="Horizontal" Name="Paginator" HorizontalAlignment="Center"  Grid.Row="3">
+            <Button x:Name="ToFirst" Background="Orange" BorderBrush="Orange" Command="{Binding ChangePageCommand}" CommandParameter="-1" Margin="0,7.5,0,7.5" Height="35" Width="50" FontSize="30" Cursor="Hand">
+                <Button.Content>
+                    <TextBlock Text="«" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Height="47"/>
+                </Button.Content>
+            </Button>
+            <ListView Margin="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" IsEnabled="{Binding Paginator.IsSelectionEnabled}" SelectedItem="{Binding Paginator.SelectedPageNumber}" ItemsSource="{Binding Paginator.DisplayedPagesNumbers, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="35" Width="auto">
+                <interactions:Interaction.Triggers>
+                    <interactions:EventTrigger EventName="SelectionChanged">
+                        <interactions:InvokeCommandAction Command="{Binding ChangePageCommand}"/>
+                    </interactions:EventTrigger>
+                </interactions:Interaction.Triggers>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="VerticalAlignment" Value="Stretch"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" Height="20" Width="45" FontSize="18" TextAlignment="Center"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding ChangePageCommand}" CommandParameter="1" Margin="0" Height="35" Width="50" FontSize="30" Cursor="Hand">
+                <Button.Content>
+                    <TextBlock Text="»" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Height="47"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+
+
     </Grid>
 </Page>

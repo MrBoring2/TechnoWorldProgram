@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace TechnoWorld_WarehouseAccounting.Services
 {
@@ -13,6 +14,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
     {
         private int maxDisplayedPages;
         private int selectedPageNumber;
+        private bool isSelectionEnabled = true;
         private ObservableCollection<int> pagesNumbers;
         private ObservableCollection<int> displayedPagesNumbers;
 
@@ -30,19 +32,20 @@ namespace TechnoWorld_WarehouseAccounting.Services
             SelectedPageNumber = DisplayedPagesNumbers.FirstOrDefault();
         }
         public ObservableCollection<int> DisplayedPagesNumbers
-        { 
-            get => displayedPagesNumbers; 
+        {
+            get => displayedPagesNumbers;
             set
-            { 
-                displayedPagesNumbers = value; 
+            {
+                displayedPagesNumbers = value;
                 OnPropertyChanged();
-            } 
+            }
         }
         public ObservableCollection<int> PagesNumbers { get => pagesNumbers; private set { pagesNumbers = value; OnPropertyChanged(); } }
+        public bool IsSelectionEnabled { get => isSelectionEnabled; set { isSelectionEnabled = value; OnPropertyChanged(); } }
         public int SelectedPageNumber
         {
             get { return selectedPageNumber; }
-            set { selectedPageNumber = value <= 0 ? 1 : value; OnPropertyChanged(); }
+            set { selectedPageNumber = value; OnPropertyChanged(); IsSelectionEnabled = false; OnPropertyChanged(nameof(IsSelectionEnabled)); WaitSelection(); }
         }
         private void LoadPages(int maxPage)
         {
@@ -61,6 +64,23 @@ namespace TechnoWorld_WarehouseAccounting.Services
             {
                 SelectedPageNumber = DisplayedPagesNumbers.LastOrDefault();
             }
+        }
+        public void ChangePage(int page)
+        {
+            if (page > 0)
+            {
+                selectedPageNumber = page;
+                OnPropertyChanged(nameof(SelectedPageNumber));
+            }
+        }
+        private async void WaitSelection()
+        {
+            await Task.Delay(300).ContinueWith(_ =>
+            {
+                IsSelectionEnabled = true;
+                OnPropertyChanged(nameof(IsSelectionEnabled));
+             
+            });
         }
         public void RefrashPaginator()
         {

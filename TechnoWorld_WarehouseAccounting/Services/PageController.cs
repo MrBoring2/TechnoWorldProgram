@@ -47,7 +47,10 @@ namespace TechnoWorld_WarehouseAccounting.Services
                     $"Тип {vmType.FullName} не зарегистрирован");
             viewModelsToPagesMapping.Remove(vmType);
         }
-
+        public bool IsPageCreated(Type type)
+        {
+            return createdPages.Any(p => p.Key.GetType() == type);
+        }
         public Page CreatePageInstanceWithVM(BasePageVM vm)
         {
             if (vm == null)
@@ -90,8 +93,9 @@ namespace TechnoWorld_WarehouseAccounting.Services
             }
             else
             {
-                page = CreatePageInstanceWithVM((BasePageVM)Activator.CreateInstance(vmPageType));
-                createdPages[(BasePageVM)Activator.CreateInstance(vmPageType)] = page;
+                var pageVM = (BasePageVM)Activator.CreateInstance(vmPageType);
+                page = CreatePageInstanceWithVM(pageVM);
+                createdPages[pageVM] = page;
                 return page;
             }
         }

@@ -18,7 +18,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
     {
         private MenuItem selectedMenuItem;
         private MenuItem selectedOptionsMenuItem;
-
+        private string windowTitle;
         public MainAppWindowVM()
         {
             WindowLoadedCommand = new RelayCommand(WindowLoaded);
@@ -34,6 +34,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 {
                     selectedMenuItem = value;
                     OnPropertyChanged();
+                    WindowTitle = $"ТЕХНО МИР | {selectedMenuItem.Title}";
                     if (selectedMenuItem != null)
                     {
                         PageNavigation.Navigate(selectedMenuItem.PageDestination);
@@ -59,6 +60,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 }
             }
         }
+        public string WindowTitle { get => windowTitle; set { windowTitle = value; OnPropertyChanged(); } }
         public RelayCommand WindowLoadedCommand { get; set; }
         public ObservableCollection<MenuItem> MenuItems { get; set; }
         public ObservableCollection<MenuItem> OptionalMenuItems { get; set; }
@@ -100,7 +102,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     break;
             }
 
-            
+
 
             OptionalMenuItems = new ObservableCollection<MenuItem>
             {

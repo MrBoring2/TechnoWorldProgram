@@ -32,8 +32,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             CurrentElectronic = new Electronic();
             IsAdd = true;
 
-            Task.Run(() => Initialize().Wait());
-            Task.Run(() => LoadData().Wait());
+            Task.Run(() => Initialize());
+            Task.Run(() => LoadData());
         }
 
 

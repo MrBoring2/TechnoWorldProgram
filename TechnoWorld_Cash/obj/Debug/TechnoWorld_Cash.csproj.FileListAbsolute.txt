@@ -85,7 +85,6 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\System.Text.
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\System.Threading.Channels.xml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\System.ValueTuple.xml
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\TechoWorld_DataModels.pdb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\de\MahApps.Metro.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\ar-DZ\MaterialDesignExtensions.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\cs\MaterialDesignExtensions.resources.dll
@@ -111,3 +110,4 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.exe
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.pdb
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\obj\Debug\TechnoWorld_Cash.csproj.AssemblyReference.cache
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Cash\bin\Debug\TechoWorld_DataModels.pdb
