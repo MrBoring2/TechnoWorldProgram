@@ -40,11 +40,6 @@
             <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Right">
                 <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenProductWindowCommand}" Cursor="Hand">
                     <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
-                        <interactions:Interaction.Triggers>
-                            <interactions:EventTrigger EventName="LeftMouseClick">
-                                <interactions:InvokeCommandAction Command="{Binding OpenProductWindowCommand}"/>
-                            </interactions:EventTrigger>
-                        </interactions:Interaction.Triggers>
                         <materialDesign:PackIcon.ToolTip>
                             <TextBlock Text="Добавить"/>
                         </materialDesign:PackIcon.ToolTip>
@@ -52,11 +47,6 @@
                 </Button>
                 <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenEditProductWindowCommand}" Cursor="Hand">
                     <materialDesign:PackIcon Kind="EditOutline" Width="35" Height="35" Margin="-15" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
-                        <interactions:Interaction.Triggers>
-                            <interactions:EventTrigger EventName="LeftMouseClick">
-                                <interactions:InvokeCommandAction Command="{Binding OpenProductWindowCommand}"/>
-                            </interactions:EventTrigger>
-                        </interactions:Interaction.Triggers>
                         <materialDesign:PackIcon.ToolTip>
                             <TextBlock Text="Редактировать"/>
                         </materialDesign:PackIcon.ToolTip>
@@ -66,6 +56,12 @@
         </Grid>
 
         <DataGrid Grid.Row="2" ItemsSource="{Binding DisplayedElectronics}" SelectedItem="{Binding SelectedElectronic}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto">
+
+            <interactions:Interaction.Triggers>
+                <interactions:EventTrigger EventName="MouseDoubleClick">
+                    <interactions:InvokeCommandAction Command="{Binding OpenEditProductWindowCommand}"/>
+                </interactions:EventTrigger>
+            </interactions:Interaction.Triggers>
             <DataGrid.Resources>
                 <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Orange" />

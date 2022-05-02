@@ -110,19 +110,16 @@ namespace TechnoWorld_API.Controllers
             {
                 return BadRequest();
             }
-
+            delivery.DateOfDelivery = delivery.DateOfDelivery.ToLocalTime();
+            delivery.DateOfOrder = delivery.DateOfOrder.ToLocalTime();
             var deliveryInDb = _context.Deliveries.Include(p => p.Status).FirstOrDefault(p => p.DelivertId == id);
+            var lastStatus = deliveryInDb.Status;
 
             _context.Entry(deliveryInDb).CurrentValues.SetValues(delivery);
-
-            var lastStatus = deliveryInDb.Status;
-            deliveryInDb.StatusId = delivery.StatusId;
-            deliveryInDb.EmployeeId = delivery.EmployeeId;
-
             try
             {
                 await _context.SaveChangesAsync();
-                Log.Information($"Статус заказа с номером {delivery.DeliveryNumber} изменён с '{lastStatus.Name}' на '{_context.Statuses.Find(delivery.StatusId).Name}'");
+                Log.Information($"Статус заказа с номером {deliveryInDb.DeliveryNumber} изменён с '{lastStatus.Name}' на '{_context.Statuses.Find(deliveryInDb.StatusId).Name}'");
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -136,18 +133,19 @@ namespace TechnoWorld_API.Controllers
                 }
             }
 
-            var list = await _context.Deliveries.Include(p => p.Status).Include(p => p.Storage).Include(p => p.ElectronicsToDeliveries).ToListAsync();
-            foreach (var item in list)
-            {
-                foreach (var electronic in item.ElectronicsToDeliveries)
-                {
-                    await _context.Entry(electronic).Reference(p => p.Electronics).LoadAsync();
-                }
-            }
-            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateDeliveries", JsonConvert.SerializeObject(list, Formatting.None,
-                new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            //var list = await _context.Deliveries.Include(p => p.Status).Include(p => p.Storage).Include(p => p.ElectronicsToDeliveries).ToListAsync();
+            //foreach (var item in list)
+            //{
+            //    foreach (var electronic in item.ElectronicsToDeliveries)
+            //    {
+            //        await _context.Entry(electronic).Reference(p => p.Electronics).LoadAsync();
+            //    }
+            //}
+            //await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateDeliveries", JsonConvert.SerializeObject(list, Formatting.None,
+            //    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateDeliveries", "d");
 
-            return NoContent();
+            return Ok();
         }
 
         // POST: api/Categories
@@ -155,21 +153,35 @@ namespace TechnoWorld_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Category>> PostDelivery(Delivery delivery)
         {
-            _context.Deliveries.Add(delivery);
-
-            Log.Information($"Создан заказ на поставку с номером {delivery.DeliveryNumber}");
-            await _context.SaveChangesAsync();
-
-            var list = await _context.Deliveries.Include(p => p.Status).Include(p => p.Storage).Include(p => p.ElectronicsToDeliveries).ToListAsync();
-            foreach (var item in list)
+            delivery.DateOfDelivery = delivery.DateOfDelivery.ToLocalTime();
+            delivery.DateOfOrder = delivery.DateOfOrder.ToLocalTime();
+            _context.Entry(delivery).State = EntityState.Added;
+            foreach (var item in delivery.ElectronicsToDeliveries)
             {
-                foreach (var electronic in item.ElectronicsToDeliveries)
-                {
-                    await _context.Entry(electronic).Reference(p => p.Electronics).LoadAsync();
-                }
+                _context.Entry(item).State = EntityState.Added;
             }
-            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateDeliveries", JsonConvert.SerializeObject(list, Formatting.None,
-                new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            
+            _context.Deliveries.Add(delivery);
+            try
+            {
+                await _context.SaveChangesAsync();
+
+                Log.Information($"Создан заказ на поставку с номером {delivery.DeliveryNumber}");
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+
+            }
+
+            //var list = await _context.Deliveries.Include(p => p.Status).Include(p => p.Storage).Include(p => p.ElectronicsToDeliveries).ToListAsync();
+            //foreach (var item in list)
+            //{
+            //    foreach (var electronic in item.ElectronicsToDeliveries)
+            //    {
+            //        await _context.Entry(electronic).Reference(p => p.Electronics).LoadAsync();
+            //    }
+            //}
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateDeliveries", "d");
 
             return CreatedAtAction("GetDelivery", new { id = delivery.DelivertId }, delivery);
         }

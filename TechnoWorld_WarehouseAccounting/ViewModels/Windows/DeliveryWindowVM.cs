@@ -23,13 +23,12 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         private ObservableCollection<Storage> storages;
         private ObservableCollection<DeliveryItem> deliveryItems;
         private DeliveryItem selectedDeliveryItem;
-        private Storage selectedStorage;
-        private Supplier selectedSupplier;
         private Visibility cancelVisibility;
         private Visibility payVisibility;
         private Visibility createVisibility;
+        private Visibility unloadVisibility;
         private Visibility createReceiptInvoiceVisibility;
-        private string deliveryNumber;
+        private bool isAdd;
         private DateTime dateOfDelivery;
         public DeliveryWindowVM()
         {
@@ -39,61 +38,103 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         public DeliveryWindowVM(Delivery delivery) : this()
         {
+            InitializeFields(delivery);
+        }
+        private void InitializeFields(Delivery delivery)
+        {
+            IsAdd = false;
             Delivery = delivery;
+            DateOfDelivery = Delivery.DateOfDelivery;
+            int id = 1;
+            DeliveryItems = new ObservableCollection<DeliveryItem>();
+            foreach (var item in Delivery.ElectronicsToDeliveries)
+            {
+                DeliveryItems.Add(new DeliveryItem { Id = id, Count = item.Quantity, Electronic = item.Electronics });
+                id++;
+            }
             if (Delivery.StatusId == 1)
             {
                 PayVisibility = Visibility.Visible;
                 CancelVisibility = Visibility.Visible;
-                CreateVisivility = Visibility.Collapsed;
+                CreateVisibility = Visibility.Collapsed;
                 CreateReceiptInvoiceVisibility = Visibility.Visible;
+                UnloadVisibility = Visibility.Collapsed;
+            }
+            else if (Delivery.StatusId == 5)
+            {
+                PayVisibility = Visibility.Collapsed;
+                CancelVisibility = Visibility.Collapsed;
+                CreateVisibility = Visibility.Collapsed;
+                CreateReceiptInvoiceVisibility = Visibility.Visible;
+                UnloadVisibility = Visibility.Visible;
+            }
+            else if (Delivery.StatusId == 4 || Delivery.StatusId == 3)
+            {
+                PayVisibility = Visibility.Collapsed;
+                CancelVisibility = Visibility.Collapsed;
+                CreateVisibility = Visibility.Collapsed;
+                CreateReceiptInvoiceVisibility = Visibility.Collapsed;
+                UnloadVisibility = Visibility.Collapsed;
             }
         }
-
         public Delivery Delivery { get; set; }
+        public RelayCommand BackCommand { get; set; }
         public RelayCommand AddProductCommand { get; set; }
         public RelayCommand RemoveProductCommand { get; set; }
         public RelayCommand CreateDeliveryCommand { get; set; }
         public RelayCommand CreateReceiptInvoiceCommand { get; set; }
+        public RelayCommand PayDeliveryCommand { get; set; }
+        public RelayCommand CancelDeliveryCommand { get; set; }
+        public RelayCommand UnloadToStorageCommand { get; set; }
         public DeliveryItem SelectedDeliveryItem { get => selectedDeliveryItem; set { selectedDeliveryItem = value; OnPropertyChanged(); } }
-        public string DeliveryNumber { get => deliveryNumber; set { deliveryNumber = value; OnPropertyChanged(); } }
-        public string DeliveryTitle => $"{DeliveryNumber} от {DateTime.Now.ToShortDateString()}";
-        public DateTime DateOfDelivery { get => dateOfDelivery; set { dateOfDelivery = value.Date >= DateTime.Now.Date ? value : dateOfDelivery; OnPropertyChanged(); } }
+        public string DeliveryNumber { get => Delivery.DeliveryNumber; set { Delivery.DeliveryNumber = value; OnPropertyChanged(); } }
+        public string DeliveryTitle => $"{DeliveryNumber} от {Delivery.DateOfOrder.ToShortDateString()}";
+        public bool IsAdd { get => isAdd; set { isAdd = value; OnPropertyChanged(); } }
+        public DateTime DateOfDelivery { get => dateOfDelivery; set { dateOfDelivery = value.Date >= Delivery.DateOfOrder.Date ? value : dateOfDelivery; OnPropertyChanged(); } }
         public Visibility PayVisibility { get => payVisibility; set { payVisibility = value; OnPropertyChanged(); } }
         public Visibility CancelVisibility { get => cancelVisibility; set { cancelVisibility = value; OnPropertyChanged(); } }
-        public Visibility CreateVisivility { get => createVisibility; set { createVisibility = value; OnPropertyChanged(); } }
+        public Visibility CreateVisibility { get => createVisibility; set { createVisibility = value; OnPropertyChanged(); } }
+        public Visibility UnloadVisibility { get => unloadVisibility; set { unloadVisibility = value; OnPropertyChanged(); } }
         public Visibility CreateReceiptInvoiceVisibility { get => createReceiptInvoiceVisibility; set { createReceiptInvoiceVisibility = value; OnPropertyChanged(); } }
-        public Storage SelectedStorage { get => selectedStorage; set { selectedStorage = value; OnPropertyChanged(); } }
-        public Supplier SelectedSupplier { get => selectedSupplier; set { selectedSupplier = value; OnPropertyChanged(); } }
+        public Storage SelectedStorage { get => Delivery.Storage; set { Delivery.Storage = value; Delivery.StorageId = value.StorageId; OnPropertyChanged(); } }
+        public Supplier SelectedSupplier { get => Delivery.Supplier; set { Delivery.Supplier = value; Delivery.SupplierId = value.SupplierId; OnPropertyChanged(); } }
         public ObservableCollection<DeliveryItem> DeliveryItems { get => deliveryItems; set { deliveryItems = value; OnPropertyChanged(); } }
         public ObservableCollection<Supplier> Suppliers { get => suppliers; set { suppliers = value; OnPropertyChanged(); } }
         public ObservableCollection<Storage> Storages { get => storages; set { storages = value; OnPropertyChanged(); } }
+        public decimal PayPrice => IsAdd ? 0 : Delivery.TotalPrice;
         private void Initialize()
         {
+            IsAdd = true;
             Delivery = new Delivery();
             DeliveryNumber = $"ЗП{GenerateDeliveryNumber()}";
+            Delivery.DateOfOrder = DateTime.Now;
             DateOfDelivery = DateTime.Now;
+            BackCommand = new RelayCommand(Back);
             AddProductCommand = new RelayCommand(AddProduct);
             RemoveProductCommand = new RelayCommand(RemoveProduct);
             CreateDeliveryCommand = new RelayCommand(CreateDelivery);
             CreateReceiptInvoiceCommand = new RelayCommand(CreateReceiptInvoice);
+            UnloadToStorageCommand = new RelayCommand(UnloadToStorage);
+            CancelDeliveryCommand = new RelayCommand(CancelDelivery);
+            PayDeliveryCommand = new RelayCommand(PayDelivery);
             DeliveryItems = new ObservableCollection<DeliveryItem>();
             DeliveryItems.CollectionChanged += DeliveryItems_CollectionChanged;
             PayVisibility = Visibility.Collapsed;
             CancelVisibility = Visibility.Collapsed;
-            CreateVisivility = Visibility.Visible;
+            CreateVisibility = Visibility.Visible;
+            UnloadVisibility = Visibility.Collapsed;
             CreateReceiptInvoiceVisibility = Visibility.Collapsed;
             OnPropertyChanged(nameof(DeliveryTitle));
         }
 
-
-        private void LoadData()
+        private async void LoadData()
         {
-            LoadStorages();
-            LoadSuppliers();
+            await LoadStorages();
+            await LoadSuppliers();
         }
 
 
-        private async void LoadSuppliers()
+        private async Task LoadSuppliers()
         {
             var response = await ApiService.GetRequest("api/Suppliers");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
@@ -103,7 +144,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             }
         }
 
-        private async void LoadStorages()
+        private async Task LoadStorages()
         {
             var response = await ApiService.GetRequest("api/Storages");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
@@ -132,10 +173,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 CustomMessageBox.Show("Не у всех товаров установлено количество!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-
-            Delivery.DeliveryNumber = DeliveryNumber;
-            Delivery.DateOfOrder = DateTime.Now.Date.ToLocalTime();
-            Delivery.DateOfDelivery = DateOfDelivery.Date.ToLocalTime();
+            Delivery.DateOfDelivery = DateOfDelivery;
             Delivery.StatusId = 1;
             Delivery.StorageId = SelectedStorage.StorageId;
             Delivery.SupplierId = SelectedSupplier.SupplierId;
@@ -155,7 +193,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         private void CreateReceiptInvoice(object obj)
         {
             GenerateReceiptInvoice(Delivery.DeliveryNumber, SelectedStorage, SelectedSupplier, Delivery.DateOfOrder, Delivery.DateOfDelivery, DeliveryItems);
-            CustomMessageBox.Show($"Приходная накладная сформирована в папке Приходные накладные", "Произошла ошибка при добавлении!", MessageBoxButton.OK, MessageBoxImage.Error);
+            CustomMessageBox.Show($"Приходная накладная сформирована в папке «Приходные накладные»", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void GenerateReceiptInvoice(string deliveryNumber, Storage storage, Supplier supplier, DateTime dateOfOrder, DateTime dateOfDelivery, IEnumerable<DeliveryItem> deliveryItems)
@@ -376,33 +414,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             doc.Close();
             writer.Close();
             fs.Close();
-            //if (doc == null)
-            //{
-            //    await Task.Run(() => doc = new Document());
-            //}
-            //try
-            //{
-
-            //    await Task.Run(()=>writer = PdfWriter.GetInstance(doc, fs));
-            //}
-            //catch (NullReferenceException ex)
-            //{
-
-            //}
-            //finally
-            //{
-            //    doc.Open();
-            //    doc.Add(new Paragraph("dasdsadsadsad"));
-            //    doc.Close();
-            //}
-            //PdfDocument pdf = new PdfDocument(writer);
-            //Document doc = new Document(pdf, PageSize.A4);
-            //doc.SetFont(Element)
-            //var par = new Paragraph("dsadas");
-            //par.SetHorizontalAlignment(iText.Layout.Properties.HorizontalAlignment.CENTER);
-            //doc.Add(par);
-            //doc.Close();
-            //});
         }
 
         private void RemoveProduct(object obj)
@@ -425,6 +436,54 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             //number += $"{DateTime.Now.Day}{DateTime.Now.Month}{DateTime.Now.Year}";
 
             return number;
+        }
+
+        private void UnloadToStorage(object obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Back(object obj)
+        {
+            DialogResult = false;
+        }
+
+        private async void CancelDelivery(object obj)
+        {
+            var result = CustomMessageBox.Show("Вы точно хотите отменить заказ?", "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                Delivery.StatusId = 4;
+                var response = await ApiService.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    DialogResult = true;
+                    CustomMessageBox.Show($"Заказа поставщику № {Delivery.DeliveryNumber} отменён.", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    CustomMessageBox.Show($"{response.Content}", "Произошла ошибка при изменении!", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+
+        private async void PayDelivery(object obj)
+        {
+            var result = CustomMessageBox.Show("Оплатить заказ?", "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                Delivery.StatusId = 5;
+                var response = await ApiService.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    DialogResult = true;
+                    CustomMessageBox.Show($"Заказа поставщику № {Delivery.DeliveryNumber} оплачен.", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    CustomMessageBox.Show($"{response.Content}", "Произошла ошибка при изменении!", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
         }
 
         private void DeliveryItems_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)

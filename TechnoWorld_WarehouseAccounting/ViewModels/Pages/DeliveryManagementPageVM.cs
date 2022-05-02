@@ -30,6 +30,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         private ObservableCollection<SortParameter> sortParameters;
         private SortParameter selectedSort;
         private ItemWithTitle<Status> selectedStatus;
+        private Delivery selectedDelivery;
         private DateTime startDate;
         private DateTime endDate;
         public DeliveryManagementPageVM()
@@ -44,13 +45,19 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         public Paginator Paginator { get => paginator; set { paginator = value; OnPropertyChanged(); } }
         public RelayCommand OpenDeliveryWindowCommand { get; set; }
         public RelayCommand SortOrderChangedCommand { get; set; }
+        public RelayCommand OpenEditDeliveryWindowCommand { get; set; }
+        public RelayCommand ChangePageCommand { get; set; }
         public ObservableCollection<Delivery> Deliveries { get; set; }
         public ObservableCollection<SortParameter> SortParameters { get => sortParameters; set { sortParameters = value; OnPropertyChanged(); } }
         public ObservableCollection<ItemWithTitle<Status>> Statuses { get => statuses; set { statuses = value; OnPropertyChanged(); } }
         public ObservableCollection<Delivery> DisplayedDeliveries => Deliveries;
+        public Delivery SelectedDelivery { get => selectedDelivery; set { selectedDelivery = value; OnPropertyChanged(); } }
         public Visibility EmptyVisibility { get => emptyVisibility; set { emptyVisibility = value; OnPropertyChanged(); } }
-        public string Search { get => search; 
-            set { search = value; OnPropertyChanged(); GetDeliveriesWithFilter(); } }
+        public string Search
+        {
+            get => search;
+            set { search = value; OnPropertyChanged(); GetDeliveriesWithFilter(); }
+        }
         public ItemWithTitle<Status> SelectedStatus { get => selectedStatus; set { selectedStatus = value; OnPropertyChanged(); GetDeliveriesWithFilter(); } }
         public int ItemsPerPage
         {
@@ -86,8 +93,11 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         }
         private void Initialize()
         {
+
             OpenDeliveryWindowCommand = new RelayCommand(OpenDeliveryWindow);
             SortOrderChangedCommand = new RelayCommand(SortOrderChanged);
+            OpenEditDeliveryWindowCommand = new RelayCommand(OpenEditDeliveryWindow);
+            ChangePageCommand = new RelayCommand(ChangePage);
             search = string.Empty;
             ItemsPerPage = 15;
             startDate = DateTime.Now.ToLocalTime().AddDays(-7);
@@ -168,9 +178,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         }
 
 
-        private void SortOrderChanged(object obj)
+        private async void SortOrderChanged(object obj)
         {
-            OnPropertyChanged(nameof(DisplayedDeliveries));
+            await GetDeliveriesWithFilter();
         }
         private async void OpenDeliveryWindow(object obj)
         {
@@ -179,8 +189,19 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
             if (deliveryWindowVM.DialogResult == true)
             {
-                //await LoadElectronics();
-                CustomMessageBox.Show($"Заказ поставщику номер {deliveryWindowVM.Delivery.DeliveryNumber} упешно добавлен!", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                CustomMessageBox.Show($"Заказ поставщику номер {deliveryWindowVM.Delivery.DeliveryNumber} упешно добавлен, сформирована приходаня накладная!", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+        private async void OpenEditDeliveryWindow(object obj)
+        {
+            if (SelectedDelivery != null)
+            {
+                var deliveryWindowVM = new DeliveryWindowVM(SelectedDelivery);
+                await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(deliveryWindowVM));
+            }
+            else
+            {
+                MessageBox.Show("dsadas");
             }
         }
 
@@ -192,8 +213,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
                 Paginator.RefreshPages(maxPage == 0 ? 1 : maxPage);
 
-                // var electronicsList = GetFilteredElectronics(Electronics);
-
                 //Если после фильтрации у нас количество элементов 0, то выводим Пусто
                 if (Deliveries.Count() <= 0)
                 {
@@ -202,48 +221,11 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 }
                 else EmptyVisibility = Visibility.Hidden;
 
-                //electronicsList = electronicsList.Skip((Paginator.SelectedPageNumber - 1) * itemsPerPage)
-                //   .Take(itemsPerPage).ToList();
-
                 OnPropertyChanged(nameof(DisplayedDeliveries));
             });
         }
-        //private IEnumerable<Delivery> GetFilteredDeliveries(IEnumerable<Delivery> deliveries)
-        //{
-        //    var list = SortDeliveries(deliveries).ToList();
-
-        //    if (list.Count > 0)
-        //    {
-        //        list = list.Where(p => p.DeliveryNumber.ToLower().Contains(Search.ToLower())).ToList();
-        //    }
-
-        //    if (list.Count > 0)
-        //    {
-        //        list = list.Where(p => SelectedStatus != "Все" && SelectedStatus != null ? p.Status.Name.Equals(SelectedStatus) : true).ToList();
-        //    }
-
-
-
-        //    return list;
-        //}
-
-        //private IEnumerable<Delivery> SortDeliveries(IEnumerable<Delivery> deliveries)
-        //{
-        //    if (SelectedSort.IsAcsending)
-        //    {
-        //        return deliveries.OrderBy(p => p.GetProperty(SelectedSort.Property));
-        //    }
-        //    else
-        //    {
-        //        return deliveries.OrderByDescending(p => p.GetProperty(SelectedSort.Property));
-        //    }
-        //}
-
         private int MaxPage()
         {
-            //Фильтруем наш список по поисковой строке
-            //var list = GetFilteredDeliveries(Deliveries);
-
             return (int)Math.Ceiling((float)totalFilteredCount / (float)ItemsPerPage);
         }
 
@@ -271,6 +253,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 OnPropertyChanged(nameof(DisplayedDeliveries));
                 if (lastPage != Paginator.SelectedPageNumber)
                 {
+                    lastPage = Paginator.SelectedPageNumber;
                     await GetDeliveriesWithFilter();
                 }
                 lastPage = Paginator.SelectedPageNumber;

@@ -363,6 +363,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 OnPropertyChanged(nameof(DisplayedElectronics));
                 if (lastPage != Paginator.SelectedPageNumber)
                 {
+                    lastPage = Paginator.SelectedPageNumber;
                     await GetElectronicsWithFilter();
                 }
                 lastPage = Paginator.SelectedPageNumber;

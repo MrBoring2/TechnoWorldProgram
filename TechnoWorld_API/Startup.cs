@@ -21,6 +21,8 @@ using TechnoWorld_API.Helpers;
 using Microsoft.AspNetCore.Http;
 using Serilog;
 using Serilog.Events;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 namespace BNS_API
 {
@@ -29,7 +31,7 @@ namespace BNS_API
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-          
+
         }
 
         public IConfiguration Configuration { get; }
@@ -42,7 +44,7 @@ namespace BNS_API
             services.AddMvc().AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-               
+
                 //options.SerializerSettings.TypeNameHandling = Newtonsoft.Json.TypeNameHandling.Objects;
                 //options.SerializerSettings.TypeNameAssemblyFormatHandling = Newtonsoft.Json.TypeNameAssemblyFormatHandling.Simple;
             });
@@ -133,6 +135,23 @@ namespace BNS_API
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            var supportedCultures = new[]
+            {
+                new CultureInfo("en-US"),
+                new CultureInfo("en-GB"),
+                new CultureInfo("en"),
+                new CultureInfo("ru-RU"),
+                new CultureInfo("ru"),
+                new CultureInfo("de-DE"),
+                new CultureInfo("de")
+            };
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("ru-RU"),
+                //SupportedCultures = supportedCultures,
+                //SupportedUICultures = supportedCultures
+            });
 
             app.UseEndpoints(endpoints =>
             {

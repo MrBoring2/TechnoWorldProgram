@@ -13,6 +13,7 @@ namespace TechnoWorld_WarehouseAccounting.Models
     {
         private int count;
         private int id;
+        public DeliveryItem() { }
         public DeliveryItem(Electronic electronic, int count)
         {
 

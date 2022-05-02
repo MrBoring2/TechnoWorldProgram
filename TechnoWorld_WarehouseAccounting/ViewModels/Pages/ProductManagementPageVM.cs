@@ -405,6 +405,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 OnPropertyChanged(nameof(DisplayedElectronics));
                 if (lastPage != Paginator.SelectedPageNumber)
                 {
+                    lastPage = Paginator.SelectedPageNumber;
                     await GetElectronicsWithFilter();
                 }
                 lastPage = Paginator.SelectedPageNumber;

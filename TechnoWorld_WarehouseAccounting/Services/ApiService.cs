@@ -47,7 +47,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
         }
         public async static Task<IRestResponse> PutRequest(string url, int id, object data)
         {
-            var response = await ClientService.Instance.RestClient.ExecuteAsync(CreateRequest($"{url}/{id}" , Method.PUT, data));
+            var response = await ClientService.Instance.RestClient.ExecuteAsync(CreateRequest($"{url}/{id}", Method.PUT, data));
             return response;
         }
 
@@ -55,6 +55,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
         {
             var restReqeust = new RestRequest(url, httpMethod);
             restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Instance.Token);
+            restReqeust.AddParameter("culture", "ru-RU");
             return restReqeust;
         }
 
@@ -62,6 +63,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
         {
             var restReqeust = new RestRequest($"{url}/{id}", httpMethod);
             restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Instance.Token);
+            restReqeust.AddParameter("culture", "ru-RU");
             return restReqeust;
         }
         private static IRestRequest CreateRequestWithParameter(string url, Method httpMethod, string parameterName, object parameter)
@@ -69,6 +71,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
             var restReqeust = new RestRequest(url, httpMethod);
             restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Instance.Token);
             restReqeust.AddParameter(parameterName, parameter);
+            restReqeust.AddParameter("culture", "ru-RU");
             return restReqeust;
         }
         private static IRestRequest CreateRequest(string url, Method httpMethod, object data)
@@ -76,6 +79,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
             var restReqeust = new RestRequest(url, httpMethod);
             restReqeust.AddHeader("Authorization", "Bearer " + ClientService.Instance.Token);
             restReqeust.AddJsonBody(data);
+            restReqeust.AddParameter("culture", "ru-RU");
             return restReqeust;
         }
     }

@@ -11,24 +11,24 @@
        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
                   xmlns:dr="clr-namespace:TechnoWorld_WarehouseAccounting.Services"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
-      Title="Заказ поставки" Background="White" Width="950" MinWidth="950" MinHeight="650" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" Height="700">
+      Title="Заказ поставки" Background="White" Width="950" MinWidth="950" MinHeight="700" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" Height="700">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="55"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="37"/>
-            <RowDefinition Height="42"/>
-            <RowDefinition Height="69*"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <TextBlock Text="{Binding DeliveryTitle, StringFormat={}Заказ поставщику {0}}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Height="37"/>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.RowSpan="1">
-            <ComboBox materialDesign:HintAssist.Hint="Склад" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" Margin="5"  ItemsSource="{Binding Storages}" SelectedItem="{Binding SelectedStorage}" DisplayMemberPath="Name"/>
-            <ComboBox materialDesign:HintAssist.Hint="Поставщик" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" Margin="5" ItemsSource="{Binding Suppliers}" SelectedItem="{Binding SelectedSupplier}" DisplayMemberPath="Name"/>
+        <StackPanel VerticalAlignment="Top" Grid.Row="1" Orientation="Horizontal" Grid.RowSpan="1" Height="52">
+            <ComboBox materialDesign:HintAssist.Hint="Склад" IsEnabled="{Binding IsAdd}" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" Margin="5"  ItemsSource="{Binding Storages}" SelectedItem="{Binding SelectedStorage}" DisplayMemberPath="Name"/>
+            <ComboBox materialDesign:HintAssist.Hint="Поставщик" IsEnabled="{Binding IsAdd}" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" Margin="5" ItemsSource="{Binding Suppliers}" SelectedItem="{Binding SelectedSupplier}" DisplayMemberPath="Name"/>
         </StackPanel>
-        <DatePicker Grid.Row="2" materialDesign:HintAssist.Hint="Плановая дата поставки" materialDesign:HintAssist.IsFloating="True" SelectedDate="{Binding DateOfDelivery}" Width="250" FontSize="16" HorizontalAlignment="Left" Margin="5,0,0,0" Height="42"/>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="530,0,0,0" Width="420" Grid.RowSpan="1">
+        <DatePicker VerticalAlignment="Top" Grid.Row="2" IsEnabled="{Binding IsAdd}" materialDesign:HintAssist.Hint="Плановая дата поставки" materialDesign:HintAssist.IsFloating="True" SelectedDate="{Binding DateOfDelivery}" Width="250" FontSize="16" HorizontalAlignment="Left" Margin="5,0,0,0" Height="42"/>
+        <StackPanel VerticalAlignment="Top" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,0" Grid.RowSpan="1" Height="45">
             <Button TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding CancelDeliveryCommand}" Visibility="{Binding CancelVisibility}" CommandParameter="1" Margin="5" Height="35" Width="200" FontSize="16" Cursor="Hand">
                 <Button.Content>
                     <TextBlock Text="Отменить заказ" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
@@ -39,18 +39,24 @@
                     <TextBlock Text="Оплатить заказ" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
                 </Button.Content>
             </Button>
+            <Button TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding UnloadToStorageCommand}" Visibility="{Binding UnloadVisibility}" CommandParameter="1" Margin="5" Height="35" Width="200" FontSize="16" Cursor="Hand">
+                <Button.Content>
+                    <TextBlock Text="Выгрузить на склад" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                </Button.Content>
+            </Button>
         </StackPanel>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,130,10" Visibility="{Binding PayVisibility}" Text="{Binding PayPrice, StringFormat={}К оплате: {0:F2} ₽}" FontSize="14" Height="17"/>
         <TextBlock Grid.Row="3" Text="Товары" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Height="26" Width="72"/>
 
         <StackPanel Orientation="Horizontal" Grid.Row="4">
-            <Button Margin="5" Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding AddProductCommand}" Cursor="Hand" HorizontalAlignment="Left">
+            <Button Margin="5" Background="Transparent" BorderThickness="0" Width="35" Height="35" IsEnabled="{Binding IsAdd}" Command="{Binding AddProductCommand}" Cursor="Hand" HorizontalAlignment="Left">
                 <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
                     <materialDesign:PackIcon.ToolTip>
                         <TextBlock Text="Добавить товар в поставку"/>
                     </materialDesign:PackIcon.ToolTip>
                 </materialDesign:PackIcon>
             </Button>
-            <Button Margin="5" Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding RemoveProductCommand}" Cursor="Hand" HorizontalAlignment="Left">
+            <Button Margin="5" Background="Transparent" BorderThickness="0" Width="35" Height="35" IsEnabled="{Binding IsAdd}" Command="{Binding RemoveProductCommand}" Cursor="Hand" HorizontalAlignment="Left">
                 <materialDesign:PackIcon Kind="RemoveCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="Red">
                     <materialDesign:PackIcon.ToolTip>
                         <TextBlock Text="Удалить товар из поставки"/>
@@ -80,7 +86,7 @@
                 <DataGridTextColumn Header="Сумма с НДС (18%)" Binding="{Binding TotalPriceWithNDS, StringFormat={}{0:F2} ₽}" Width="*" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,0">
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.RowSpan="2">
             <Button  TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding CreateDeliveryCommand}" Visibility="{Binding CreateVisibility}" CommandParameter="1" Margin="5,0" Height="35" Width="200" FontSize="16" Cursor="Hand">
                 <Button.Content>
                     <TextBlock Text="Сформировать заказ" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
