@@ -341,7 +341,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(productWindowVM));
             if (productWindowVM.DialogResult == true)
             {
-                await LoadElectronics();
                 CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно добавлен", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
@@ -360,7 +359,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
                 if (productWindowVM.DialogResult == true)
                 {
-                    await LoadElectronics();
                     CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно изменён", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }

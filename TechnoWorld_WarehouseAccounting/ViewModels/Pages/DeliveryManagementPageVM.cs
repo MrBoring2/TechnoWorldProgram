@@ -198,11 +198,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             {
                 var deliveryWindowVM = new DeliveryWindowVM(SelectedDelivery);
                 await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(deliveryWindowVM));
-            }
-            else
-            {
-                MessageBox.Show("dsadas");
-            }
+            }           
         }
 
         private async Task RefreshDelieries()

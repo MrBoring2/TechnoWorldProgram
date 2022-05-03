@@ -36,46 +36,50 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             LoadData();
 
         }
-        public DeliveryWindowVM(Delivery delivery) : this()
+        public DeliveryWindowVM(Delivery delivery)
         {
-            InitializeFields(delivery);
+            Initialize();
+            LoadData(delivery);
         }
-        private void InitializeFields(Delivery delivery)
+        private async Task InitializeFields(Delivery delivery)
         {
-            IsAdd = false;
-            Delivery = delivery;
-            DateOfDelivery = Delivery.DateOfDelivery;
-            int id = 1;
-            DeliveryItems = new ObservableCollection<DeliveryItem>();
-            foreach (var item in Delivery.ElectronicsToDeliveries)
+            await Task.Run(() =>
             {
-                DeliveryItems.Add(new DeliveryItem { Id = id, Count = item.Quantity, Electronic = item.Electronics });
-                id++;
-            }
-            if (Delivery.StatusId == 1)
-            {
-                PayVisibility = Visibility.Visible;
-                CancelVisibility = Visibility.Visible;
-                CreateVisibility = Visibility.Collapsed;
-                CreateReceiptInvoiceVisibility = Visibility.Visible;
-                UnloadVisibility = Visibility.Collapsed;
-            }
-            else if (Delivery.StatusId == 5)
-            {
-                PayVisibility = Visibility.Collapsed;
-                CancelVisibility = Visibility.Collapsed;
-                CreateVisibility = Visibility.Collapsed;
-                CreateReceiptInvoiceVisibility = Visibility.Visible;
-                UnloadVisibility = Visibility.Visible;
-            }
-            else if (Delivery.StatusId == 4 || Delivery.StatusId == 3)
-            {
-                PayVisibility = Visibility.Collapsed;
-                CancelVisibility = Visibility.Collapsed;
-                CreateVisibility = Visibility.Collapsed;
-                CreateReceiptInvoiceVisibility = Visibility.Collapsed;
-                UnloadVisibility = Visibility.Collapsed;
-            }
+                IsAdd = false;
+                Delivery = delivery;
+                DateOfDelivery = Delivery.DateOfDelivery;
+                int id = 1;
+                DeliveryItems = new ObservableCollection<DeliveryItem>();
+                foreach (var item in Delivery.ElectronicsToDeliveries)
+                {
+                    DeliveryItems.Add(new DeliveryItem { Id = id, Count = item.Quantity, Electronic = item.Electronics });
+                    id++;
+                }
+                if (Delivery.StatusId == 1)
+                {
+                    PayVisibility = Visibility.Visible;
+                    CancelVisibility = Visibility.Visible;
+                    CreateVisibility = Visibility.Collapsed;
+                    CreateReceiptInvoiceVisibility = Visibility.Visible;
+                    UnloadVisibility = Visibility.Collapsed;
+                }
+                else if (Delivery.StatusId == 5)
+                {
+                    PayVisibility = Visibility.Collapsed;
+                    CancelVisibility = Visibility.Collapsed;
+                    CreateVisibility = Visibility.Collapsed;
+                    CreateReceiptInvoiceVisibility = Visibility.Visible;
+                    UnloadVisibility = Visibility.Visible;
+                }
+                else if (Delivery.StatusId == 4 || Delivery.StatusId == 3)
+                {
+                    PayVisibility = Visibility.Collapsed;
+                    CancelVisibility = Visibility.Collapsed;
+                    CreateVisibility = Visibility.Collapsed;
+                    CreateReceiptInvoiceVisibility = Visibility.Collapsed;
+                    UnloadVisibility = Visibility.Collapsed;
+                }
+            });
         }
         public Delivery Delivery { get; set; }
         public RelayCommand BackCommand { get; set; }
@@ -101,6 +105,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public ObservableCollection<DeliveryItem> DeliveryItems { get => deliveryItems; set { deliveryItems = value; OnPropertyChanged(); } }
         public ObservableCollection<Supplier> Suppliers { get => suppliers; set { suppliers = value; OnPropertyChanged(); } }
         public ObservableCollection<Storage> Storages { get => storages; set { storages = value; OnPropertyChanged(); } }
+        
         public decimal PayPrice => IsAdd ? 0 : Delivery.TotalPrice;
         private void Initialize()
         {
@@ -129,29 +134,49 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async void LoadData()
         {
-            await LoadStorages();
-            await LoadSuppliers();
+            var task1 = LoadStorages();
+            var task2 = LoadSuppliers();
+            await Task.WhenAll(task1, task2);
+        }
+        private async void LoadData(Delivery delivery)
+        {
+            var task1 = LoadStorages();
+            var task2 = LoadSuppliers();
+            var task3 = InitializeFields(delivery);
+            await Task.WhenAll(task1, task2).ContinueWith(p => task3);
         }
 
 
         private async Task LoadSuppliers()
         {
-            var response = await ApiService.GetRequest("api/Suppliers");
-            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            await Task.Run(async () =>
             {
-                Suppliers = new ObservableCollection<Supplier>(JsonConvert.DeserializeObject<List<Supplier>>(response.Content));
-                SelectedSupplier = Suppliers.FirstOrDefault();
-            }
+                var response = await ApiService.GetRequest("api/Suppliers");
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    Suppliers = new ObservableCollection<Supplier>(JsonConvert.DeserializeObject<List<Supplier>>(response.Content));
+                    if (SelectedSupplier == null)
+                    {
+                        SelectedSupplier = Suppliers.FirstOrDefault();
+                    }
+                }
+            });
         }
 
         private async Task LoadStorages()
         {
-            var response = await ApiService.GetRequest("api/Storages");
-            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            await Task.Run(async () =>
             {
-                Storages = new ObservableCollection<Storage>(JsonConvert.DeserializeObject<List<Storage>>(response.Content));
-                SelectedStorage = Storages.FirstOrDefault();
-            }
+                var response = await ApiService.GetRequest("api/Storages");
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    Storages = new ObservableCollection<Storage>(JsonConvert.DeserializeObject<List<Storage>>(response.Content));
+                    if (SelectedStorage == null)
+                    {
+                        SelectedStorage = Storages.FirstOrDefault();
+                    }
+                }
+            });
         }
         private async void AddProduct(object obj)
         {
@@ -175,8 +200,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             }
             Delivery.DateOfDelivery = DateOfDelivery;
             Delivery.StatusId = 1;
-            Delivery.StorageId = SelectedStorage.StorageId;
-            Delivery.SupplierId = SelectedSupplier.SupplierId;
+            //Delivery.StorageId = SelectedStorage.StorageId;
+            //Delivery.SupplierId = SelectedSupplier.SupplierId;
             Delivery.EmployeeId = ClientService.Instance.User.UserId;
             Delivery.ElectronicsToDeliveries = DeliveryItems.Select(p => new ElectronicsToDelivery { ElectronicsId = p.Electronic.ElectronicsId, Quantity = p.Count }).ToList();
             var response = await ApiService.PostRequest("api/Deliveries", Delivery);
@@ -438,9 +463,14 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             return number;
         }
 
-        private void UnloadToStorage(object obj)
+        private async void UnloadToStorage(object obj)
         {
-            throw new NotImplementedException();
+            var response = await ApiService.PutRequest($"api/Deliveries/Unload", Delivery.DelivertId);
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                DialogResult = true;
+                CustomMessageBox.Show($"Поставка с номером {Delivery.DeliveryNumber} выгружена.", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
 
         private void Back(object obj)

@@ -219,7 +219,7 @@ namespace BNS_API.Controllers
             //}
             //await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", JsonConvert.SerializeObject(categoryElectronics, Formatting.None,
             //        new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
-            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", "о");
+            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", "о");
 
             return NoContent();
         }

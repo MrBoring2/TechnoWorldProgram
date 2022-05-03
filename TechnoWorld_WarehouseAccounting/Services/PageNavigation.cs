@@ -67,6 +67,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
                     {
                         RegisterPageWithVM<ProductManagementPageVM, ProductManagementPage>();
                         RegisterPageWithVM<DeliveryManagementPageVM, DeliveryManagementPage>();
+                        RegisterPageWithVM<ProductDistributionPageVM, ProductDistributionPage>();
                         //CreatePage(typeof(ProductManagementPageVM));
                         //CreatePage(typeof(DeliveryManagementPageVM));
                     }
@@ -75,6 +76,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
                     {
                         RegisterPageWithVM<ProductManagementPageVM, ProductManagementPage>();
                         RegisterPageWithVM<DeliveryManagementPageVM, DeliveryManagementPage>();
+                        RegisterPageWithVM<ProductDistributionPageVM, ProductDistributionPage>();
                         //CreatePage(typeof(ProductManagementPageVM));
                         //CreatePage(typeof(DeliveryManagementPageVM));
                     }

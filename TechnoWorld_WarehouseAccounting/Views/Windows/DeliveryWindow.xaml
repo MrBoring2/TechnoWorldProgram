@@ -24,8 +24,8 @@
         </Grid.RowDefinitions>
         <TextBlock Text="{Binding DeliveryTitle, StringFormat={}Заказ поставщику {0}}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Height="37"/>
         <StackPanel VerticalAlignment="Top" Grid.Row="1" Orientation="Horizontal" Grid.RowSpan="1" Height="52">
-            <ComboBox materialDesign:HintAssist.Hint="Склад" IsEnabled="{Binding IsAdd}" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" Margin="5"  ItemsSource="{Binding Storages}" SelectedItem="{Binding SelectedStorage}" DisplayMemberPath="Name"/>
-            <ComboBox materialDesign:HintAssist.Hint="Поставщик" IsEnabled="{Binding IsAdd}" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" Margin="5" ItemsSource="{Binding Suppliers}" SelectedItem="{Binding SelectedSupplier}" DisplayMemberPath="Name"/>
+            <ComboBox materialDesign:HintAssist.Hint="Склад" IsEnabled="{Binding IsAdd}" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" Margin="5"  ItemsSource="{Binding Storages}" SelectedItem="{Binding SelectedStorage}" SelectedValue="{Binding SelectedStorage.StorageId}" SelectedValuePath="StorageId" DisplayMemberPath="Name"/>
+            <ComboBox materialDesign:HintAssist.Hint="Поставщик" IsEnabled="{Binding IsAdd}" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" Margin="5" ItemsSource="{Binding Suppliers}" SelectedItem="{Binding SelectedSupplier}" SelectedValue="{Binding SelectedSupplier.SupplierId}" SelectedValuePath="SupplierId" DisplayMemberPath="Name"/>
         </StackPanel>
         <DatePicker VerticalAlignment="Top" Grid.Row="2" IsEnabled="{Binding IsAdd}" materialDesign:HintAssist.Hint="Плановая дата поставки" materialDesign:HintAssist.IsFloating="True" SelectedDate="{Binding DateOfDelivery}" Width="250" FontSize="16" HorizontalAlignment="Left" Margin="5,0,0,0" Height="42"/>
         <StackPanel VerticalAlignment="Top" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,0" Grid.RowSpan="1" Height="45">

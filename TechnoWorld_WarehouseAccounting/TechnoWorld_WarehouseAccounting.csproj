@@ -267,6 +267,7 @@
     <Compile Include="Services\WindowNavigation.cs" />
     <Compile Include="ViewModels\Pages\BasePageVM.cs" />
     <Compile Include="ViewModels\Pages\DeliveryManagementPageVM.cs" />
+    <Compile Include="ViewModels\Pages\ProductDistributionPageVM.cs" />
     <Compile Include="ViewModels\Pages\ProductManagementPageVM.cs" />
     <Compile Include="ViewModels\Windows\BaseWindowVM.cs" />
     <Compile Include="ViewModels\Windows\DeliveryWindowVM.cs" />
@@ -277,6 +278,9 @@
     <Compile Include="ViewModels\Windows\ProductWindowVM.cs" />
     <Compile Include="Views\Pages\DeliveryManagementPage.xaml.cs">
       <DependentUpon>DeliveryManagementPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\ProductDistributionPage.xaml.cs">
+      <DependentUpon>ProductDistributionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\ProductManagementPage.xaml.cs">
       <DependentUpon>ProductManagementPage.xaml</DependentUpon>
@@ -338,6 +342,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Pages\DeliveryManagementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\ProductDistributionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

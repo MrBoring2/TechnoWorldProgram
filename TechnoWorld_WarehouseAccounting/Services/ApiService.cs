@@ -50,6 +50,11 @@ namespace TechnoWorld_WarehouseAccounting.Services
             var response = await ClientService.Instance.RestClient.ExecuteAsync(CreateRequest($"{url}/{id}", Method.PUT, data));
             return response;
         }
+        public async static Task<IRestResponse> PutRequest(string url, int id)
+        {
+            var response = await ClientService.Instance.RestClient.ExecuteAsync(CreateRequest($"{url}/{id}", Method.PUT));
+            return response;
+        }
 
         private static IRestRequest CreateRequest(string url, Method httpMethod)
         {

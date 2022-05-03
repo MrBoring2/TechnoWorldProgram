@@ -64,6 +64,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public RelayCommand WindowLoadedCommand { get; set; }
         public ObservableCollection<MenuItem> MenuItems { get; set; }
         public ObservableCollection<MenuItem> OptionalMenuItems { get; set; }
+        public string CurrentUserFullName => $"Текущий пользователь: {ClientService.Instance.User.FullName}";
+        public string CurrentUserPost => $"Должность: {ClientService.Instance.User.Post}";
         private void WindowLoaded(object obj)
         {
             PageNavigation.Instance.RegisterPages(ClientService.Instance.User.RoleId);
@@ -76,7 +78,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             {
                 case 2:
                     {
-                        MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.Table));
+                        MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.ClipboardEditOutline));
                         MenuItems.Add(new MenuItem("Отчётная деятельность", MaterialDesignThemes.Wpf.PackIconKind.ChartBar));
                     }
                     break;
@@ -84,6 +86,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     {
                         MenuItems.Add(new MenuItem("Управление товарами", MaterialDesignThemes.Wpf.PackIconKind.FormSelect, typeof(ProductManagementPageVM)));
                         MenuItems.Add(new MenuItem("Поставка товара", MaterialDesignThemes.Wpf.PackIconKind.BoxAdd, typeof(DeliveryManagementPageVM)));
+                        MenuItems.Add(new MenuItem("Выдача товара", MaterialDesignThemes.Wpf.PackIconKind.Dolly, typeof(ProductDistributionPageVM)));
                     }
                     break;
                 case 4:
@@ -91,7 +94,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                         MenuItems.Add(new MenuItem("Управление товарами", MaterialDesignThemes.Wpf.PackIconKind.FormSelect, typeof(ProductManagementPageVM)));
                         MenuItems.Add(new MenuItem("Управление сотрудниками", MaterialDesignThemes.Wpf.PackIconKind.Users));
                         MenuItems.Add(new MenuItem("Поставка товара", MaterialDesignThemes.Wpf.PackIconKind.BoxAdd, typeof(DeliveryManagementPageVM)));
-                        MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.Table));
+                        MenuItems.Add(new MenuItem("Выдача товара", MaterialDesignThemes.Wpf.PackIconKind.Dolly, typeof(ProductDistributionPageVM)));
+                        MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.ClipboardEditOutline));
                         MenuItems.Add(new MenuItem("Отчётная деятельность", MaterialDesignThemes.Wpf.PackIconKind.ChartBar));
                     }
                     break;

@@ -112,7 +112,7 @@ namespace TechnoWorld_API.Controllers
             }
             delivery.DateOfDelivery = delivery.DateOfDelivery.ToLocalTime();
             delivery.DateOfOrder = delivery.DateOfOrder.ToLocalTime();
-            var deliveryInDb = _context.Deliveries.Include(p => p.Status).FirstOrDefault(p => p.DelivertId == id);
+            var deliveryInDb = await _context.Deliveries.Include(p => p.Status).FirstOrDefaultAsync(p => p.DelivertId == id);
             var lastStatus = deliveryInDb.Status;
 
             _context.Entry(deliveryInDb).CurrentValues.SetValues(delivery);
@@ -160,7 +160,7 @@ namespace TechnoWorld_API.Controllers
             {
                 _context.Entry(item).State = EntityState.Added;
             }
-            
+
             _context.Deliveries.Add(delivery);
             try
             {
@@ -184,6 +184,54 @@ namespace TechnoWorld_API.Controllers
             await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateDeliveries", "d");
 
             return CreatedAtAction("GetDelivery", new { id = delivery.DelivertId }, delivery);
+        }
+        [HttpPut("Unload/{deliveryId}")]
+        public async Task<ActionResult> UnloadDelivery(int deliveryId)
+        {
+            var delivery = await _context.Deliveries.Include(p => p.Storage).Include(p => p.ElectronicsToDeliveries).FirstOrDefaultAsync(p => p.DelivertId == deliveryId);
+            if (delivery == null)
+            {
+                return NotFound();
+            }
+
+            var storage = delivery.Storage;
+            await _context.Entry(storage).Collection(p => p.ElectronicsToStorages).LoadAsync();
+            Log.Information($"Происходит выгрузка товара на склад '{storage.Name}'...");
+            foreach (var item in delivery.ElectronicsToDeliveries)
+            {
+                if (storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == item.ElectronicsId) == null)
+                {
+                    await _context.Entry(item).Reference(p => p.Electronics).LoadAsync();
+                    storage.ElectronicsToStorages.Add(new ElectronicsToStorage { ElectronicsId = item.ElectronicsId, StorageId = storage.StorageId, Quantity = item.Quantity });
+                    Log.Information($"Выгрузка товара {item.Electronics.Model}, текущее количество: {item.Quantity}");
+                }
+                else
+                {
+                    await _context.Entry(item).Reference(p => p.Electronics).LoadAsync();
+                    var itemInStorage = storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == item.ElectronicsId);
+                    itemInStorage.Quantity += item.Quantity;
+                    Log.Information($"Выгрузка товара {item.Electronics.Model}, текущее количество: {itemInStorage.Quantity}");
+                }
+            }
+
+            try
+            {
+                delivery.StatusId = 3;
+                await _context.SaveChangesAsync();
+                Log.Information($"Выгрузка товара завершена.");
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                Log.Error($"Выгрузка товара завершена.");
+                return BadRequest("Произошла ошибка при выгрузке товара...");
+            }
+
+
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateDeliveries", "d");
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", "d");
+            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", "d");
+
+            return Ok();
         }
 
         // DELETE: api/Categories/5
