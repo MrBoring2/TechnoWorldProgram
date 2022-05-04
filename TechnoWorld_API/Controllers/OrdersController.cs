@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.SignalR;
 using TechnoWorld_API.Helpers;
 using Newtonsoft.Json;
 using Serilog;
+using TechnoWorld_WarehouseAccounting.Models;
+using TechnoWorld_API.Models;
 
 namespace TechnoWorld_API.Controllers
 {
@@ -53,7 +55,49 @@ namespace TechnoWorld_API.Controllers
             }
             return Ok(order);
         }
+        [HttpGet("Filter")]
+        public async Task<ActionResult<FilteredOrders>> GetElectronicsByFilter(string jsonFilter)
+        {
+            IEnumerable<Order> list = null;
+            int count = 0;
+            await Task.Run(() =>
+            {
+                OrdersFilter filter = JsonConvert.DeserializeObject<OrdersFilter>(jsonFilter);
 
+                list = _context.Orders.Include(p => p.OrderElectronics)
+                                                .AsSplitQuery()
+                                                //.AsNoTracking()
+                                                .Where(filter.FilterExpression)
+                                                .AsEnumerable();
+
+                if (filter.IsAscending)
+                {
+                    list = list.OrderBy(p => p.GetProperty(filter.SortParameter));
+                }
+                else
+                {
+                    list = list.OrderByDescending(p => p.GetProperty(filter.SortParameter));
+                }
+                count = list.Count();
+
+                if (filter.CurrentPage > 1)
+                {
+                    list = list.Skip((filter.CurrentPage - 1) * filter.ItemsPerPage);
+                }
+                list = list.Take(filter.ItemsPerPage);
+
+                foreach (var item in list)
+                {
+                    foreach (var electronicInOrder in item.OrderElectronics)
+                    {
+                        _context.Entry(electronicInOrder).Reference(p => p.Electronics).Load();
+                    }
+                }
+
+            });
+
+            return new FilteredOrders(list, count);
+        }
         // PUT: api/Orders/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

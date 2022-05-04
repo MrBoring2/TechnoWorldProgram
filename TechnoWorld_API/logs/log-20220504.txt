@@ -2,3 +2,1324 @@
 2022-05-04 09:17:43.842 +05:00 [INF] Application started. Press Ctrl+C to shut down.
 2022-05-04 09:17:43.843 +05:00 [INF] Hosting environment: Development
 2022-05-04 09:17:43.844 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 18:13:05.277 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 18:13:05.315 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 18:13:05.316 +05:00 [INF] Hosting environment: Development
+2022-05-04 18:13:05.316 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 18:13:34.283 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-04 18:13:34.351 +05:00 [INF] HTTP POST /userToken responded 200 in 5354.9959 ms
+2022-05-04 18:13:34.655 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 57.0594 ms
+2022-05-04 18:13:34.961 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-04 18:13:36.410 +05:00 [INF] HTTP GET /api/Categories responded 200 in 86.5611 ms
+2022-05-04 18:13:36.510 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 57.6877 ms
+2022-05-04 18:13:37.367 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 777.2792 ms
+2022-05-04 18:13:39.320 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 85.6214 ms
+2022-05-04 18:13:40.496 +05:00 [INF] HTTP GET /api/Status responded 200 in 20.6853 ms
+2022-05-04 18:13:40.710 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 171.4190 ms
+2022-05-04 18:13:40.861 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 90.3240 ms
+2022-05-04 18:13:41.700 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 167.8756 ms
+2022-05-04 18:13:45.593 +05:00 [INF] kov отключен от системы
+2022-05-04 18:13:45.598 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 10857.4999 ms
+2022-05-04 18:14:00.702 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-04 18:14:00.703 +05:00 [INF] HTTP POST /userToken responded 200 in 7.5564 ms
+2022-05-04 18:14:00.913 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.3983 ms
+2022-05-04 18:14:01.072 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-04 18:14:03.306 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.7140 ms
+2022-05-04 18:14:03.427 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 12.0194 ms
+2022-05-04 18:14:03.753 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 194.4952 ms
+2022-05-04 18:14:11.379 +05:00 [INF] admin отключен от системы
+2022-05-04 18:14:11.381 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 10360.7059 ms
+2022-05-04 18:40:11.749 +05:00 [WRN] Провальная попытка входа пользователя kov: Неверный логин или пароль
+2022-05-04 18:40:11.751 +05:00 [INF] HTTP POST /userToken responded 400 in 208.4922 ms
+2022-05-04 18:40:14.615 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-04 18:40:14.616 +05:00 [INF] HTTP POST /userToken responded 200 in 7.4637 ms
+2022-05-04 18:40:14.738 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.3351 ms
+2022-05-04 18:40:14.880 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-04 18:40:15.598 +05:00 [INF] HTTP GET /api/Categories responded 200 in 17.5485 ms
+2022-05-04 18:40:15.714 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 23.0239 ms
+2022-05-04 18:40:16.171 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 346.3382 ms
+2022-05-04 18:40:17.106 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 163.8119 ms
+2022-05-04 18:40:29.070 +05:00 [INF] kov отключен от системы
+2022-05-04 18:40:29.073 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 14242.2910 ms
+2022-05-04 18:41:00.698 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 18:41:00.730 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 18:41:00.731 +05:00 [INF] Hosting environment: Development
+2022-05-04 18:41:00.732 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 18:52:17.838 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 18:52:17.874 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 18:52:17.875 +05:00 [INF] Hosting environment: Development
+2022-05-04 18:52:17.876 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 18:52:35.692 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-04 18:52:35.755 +05:00 [INF] HTTP POST /userToken responded 200 in 2087.4369 ms
+2022-05-04 18:52:36.000 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 55.7148 ms
+2022-05-04 18:52:36.250 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-04 18:52:36.832 +05:00 [INF] HTTP GET /api/Categories responded 200 in 76.5350 ms
+2022-05-04 18:52:36.910 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 35.2310 ms
+2022-05-04 18:52:37.517 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 505.0640 ms
+2022-05-04 18:52:39.462 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 67.6603 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:39.551 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:47.721 +05:00 [INF] HTTP GET /api/Status responded 200 in 11.9654 ms
+2022-05-04 18:52:47.860 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 121.8594 ms
+2022-05-04 18:52:48.017 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 96.1098 ms
+2022-05-04 18:52:50.030 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 6.2541 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:50.045 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:50.418 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 3.0247 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:50.432 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:50.674 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.7042 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:50.687 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:50.793 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.5293 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:50.807 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:50.812 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 5.0551 ms
+2022-05-04 18:52:50.891 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 2.8571 ms
+2022-05-04 18:52:51.008 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 3.7785 ms
+2022-05-04 18:52:51.011 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 4.0165 ms
+2022-05-04 18:52:51.259 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 2.7346 ms
+2022-05-04 18:52:51.770 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 12.5514 ms
+2022-05-04 18:52:51.793 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 4.1155 ms
+2022-05-04 18:52:51.824 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.7286 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:51.838 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:51.865 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.2990 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:51.877 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:51.889 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.8388 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:51.902 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:52.514 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.8183 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:52.527 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:52.594 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.9824 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:52.608 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:52.609 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 2.8188 ms
+2022-05-04 18:52:52.675 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 3.4123 ms
+2022-05-04 18:52:52.867 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 4.6100 ms
+2022-05-04 18:52:53.367 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.5696 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:53.380 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:53.407 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.3512 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:53.420 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:53.431 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.8951 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:53.445 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:54.009 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 6.7678 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:54.022 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:54.198 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 10.8992 ms
+2022-05-04 18:52:54.372 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 8.6550 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:54.386 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:52:54.562 +05:00 [ERR] HTTP GET /api/Orders/Filter responded 500 in 2.5548 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-04 18:52:54.575 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechoWorld_DataModels.BaseEntity.GetProperty(String property) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechoWorld_DataModels\BaseEntity.cs:line 14
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_1.<GetElectronicsByFilter>b__2(Order p) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 75
+   at System.Linq.EnumerableSorter`2.ComputeKeys(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.ComputeMap(TElement[] elements, Int32 count)
+   at System.Linq.EnumerableSorter`1.Sort(TElement[] elements, Int32 count, Int32 minIdx, Int32 maxIdx)
+   at System.Linq.OrderedEnumerable`1.GetEnumerator(Int32 minIdx, Int32 maxIdx)+MoveNext()
+   at TechnoWorld_API.Controllers.OrdersController.<>c__DisplayClass5_0.<GetElectronicsByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 89
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.OrdersController.GetElectronicsByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 63
+   at lambda_method531(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-04 18:53:51.258 +05:00 [INF] admin отключен от системы
+2022-05-04 18:53:51.264 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 75203.8106 ms
+2022-05-04 18:54:24.709 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 18:54:24.755 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 18:54:24.757 +05:00 [INF] Hosting environment: Development
+2022-05-04 18:54:24.758 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 18:54:28.011 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-04 18:54:28.091 +05:00 [INF] HTTP POST /userToken responded 200 in 1900.3828 ms
+2022-05-04 18:54:28.321 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 73.7433 ms
+2022-05-04 18:54:28.442 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-04 18:54:29.112 +05:00 [INF] HTTP GET /api/Categories responded 200 in 89.7817 ms
+2022-05-04 18:54:29.242 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 41.6831 ms
+2022-05-04 18:54:29.826 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 542.0775 ms
+2022-05-04 18:55:29.273 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 18:55:29.304 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 18:55:29.305 +05:00 [INF] Hosting environment: Development
+2022-05-04 18:55:29.306 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 18:55:48.480 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-04 18:55:48.538 +05:00 [INF] HTTP POST /userToken responded 200 in 1928.9235 ms
+2022-05-04 18:55:48.738 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 55.9730 ms
+2022-05-04 18:55:48.850 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-04 18:55:49.762 +05:00 [INF] HTTP GET /api/Categories responded 200 in 72.7197 ms
+2022-05-04 18:55:49.842 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 43.8079 ms
+2022-05-04 18:55:50.375 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 459.9198 ms
+2022-05-04 18:55:52.633 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 155.0862 ms
+2022-05-04 18:56:03.883 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 48.8305 ms
+2022-05-04 18:56:04.685 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 102.1596 ms
+2022-05-04 18:56:05.317 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 45.4041 ms
+2022-05-04 18:56:05.901 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 90.6554 ms
+2022-05-04 18:56:06.475 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 44.7582 ms
+2022-05-04 18:56:06.973 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 66.7679 ms
+2022-05-04 18:56:07.479 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 46.7443 ms
+2022-05-04 18:56:12.380 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 51.4654 ms
+2022-05-04 18:56:14.470 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 61.5339 ms
+2022-05-04 18:56:16.128 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 10.1268 ms
+2022-05-04 18:56:16.148 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 8.3308 ms
+2022-05-04 18:56:16.206 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 6.3067 ms
+2022-05-04 18:56:16.209 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 6.2095 ms
+2022-05-04 18:56:16.502 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 9.3065 ms
+2022-05-04 18:56:16.716 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 9.3467 ms
+2022-05-04 18:56:16.923 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 67.4091 ms
+2022-05-04 18:56:18.168 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 29.6234 ms
+2022-05-04 18:56:18.320 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 13.3239 ms
+2022-05-04 18:56:18.897 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 10.0876 ms
+2022-05-04 18:56:19.160 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 65.0426 ms
+2022-05-04 18:56:20.145 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 18.2028 ms
+2022-05-04 18:56:20.362 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 3.0134 ms
+2022-05-04 18:56:20.652 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 9.4007 ms
+2022-05-04 18:56:20.915 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 74.3858 ms
+2022-05-04 18:56:26.788 +05:00 [INF] admin отключен от системы
+2022-05-04 18:56:26.792 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 38005.6850 ms
+2022-05-04 19:01:49.558 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:01:49.589 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:01:49.590 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:01:49.591 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 19:02:34.034 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:02:34.066 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:02:34.067 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:02:34.067 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 19:02:49.014 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:02:49.044 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:02:49.045 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:02:49.046 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 19:02:54.561 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:02:54.591 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:02:54.593 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:02:54.593 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 19:03:04.335 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:03:04.364 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:03:04.365 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:03:04.366 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 19:03:14.731 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:03:14.760 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:03:14.762 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:03:14.763 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 19:08:50.128 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-04 19:08:50.187 +05:00 [INF] HTTP POST /userToken responded 200 in 2522.8746 ms
+2022-05-04 19:08:50.425 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 54.0613 ms
+2022-05-04 19:08:50.555 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-04 19:08:51.396 +05:00 [INF] HTTP GET /api/Categories responded 200 in 77.6125 ms
+2022-05-04 19:08:51.458 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 35.2378 ms
+2022-05-04 19:08:52.035 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 481.1074 ms
+2022-05-04 19:08:53.229 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 142.7373 ms
+2022-05-04 19:09:07.781 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 95.5190 ms
+2022-05-04 19:09:09.141 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 104.4338 ms
+2022-05-04 19:09:10.060 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 142.9840 ms
+2022-05-04 19:09:10.957 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 106.9228 ms
+2022-05-04 19:09:13.794 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 141.0150 ms
+2022-05-04 19:09:15.225 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 102.4492 ms
+2022-05-04 19:09:16.427 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 92.8363 ms
+2022-05-04 19:09:16.925 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 101.5707 ms
+2022-05-04 19:09:46.091 +05:00 [INF] kov отключен от системы
+2022-05-04 19:09:46.095 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 55609.2468 ms
+2022-05-04 19:12:12.116 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:12:12.147 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:12:12.148 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:12:12.149 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 19:12:27.933 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-04 19:12:27.997 +05:00 [INF] HTTP POST /userToken responded 200 in 2574.8221 ms
+2022-05-04 19:12:28.242 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 55.6751 ms
+2022-05-04 19:12:28.461 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-04 19:12:29.594 +05:00 [INF] HTTP GET /api/Categories responded 200 in 136.9430 ms
+2022-05-04 19:12:29.696 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 47.9590 ms
+2022-05-04 19:12:36.510 +05:00 [INF] HTTP GET /api/Status responded 200 in 16.1832 ms
+2022-05-04 19:12:36.541 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 6692.2363 ms
+2022-05-04 19:12:36.698 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 145.9446 ms
+2022-05-04 19:12:36.936 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 91.8187 ms
+2022-05-04 19:12:43.292 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 189.2462 ms
+2022-05-04 19:12:48.171 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 96.8000 ms
+2022-05-04 19:13:04.619 +05:00 [INF] kov отключен от системы
+2022-05-04 19:13:04.624 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 36237.0654 ms
+2022-05-04 19:13:11.252 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:13:11.297 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:13:11.298 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:13:11.299 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 19:13:16.757 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-04 19:13:16.831 +05:00 [INF] HTTP POST /userToken responded 200 in 1718.9788 ms
+2022-05-04 19:13:17.042 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 60.1163 ms
+2022-05-04 19:13:17.166 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-04 19:13:18.116 +05:00 [INF] HTTP GET /api/Categories responded 200 in 88.4391 ms
+2022-05-04 19:13:18.271 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 61.9277 ms
+2022-05-04 19:13:18.771 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 459.3843 ms
+2022-05-04 19:13:23.735 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 3141.9698 ms
+2022-05-04 19:15:40.228 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:15:40.260 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:15:40.261 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:15:40.261 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 19:16:00.095 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-04 19:16:00.156 +05:00 [INF] HTTP POST /userToken responded 200 in 2454.6087 ms
+2022-05-04 19:16:00.399 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 55.6541 ms
+2022-05-04 19:16:00.530 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-04 19:16:01.290 +05:00 [INF] HTTP GET /api/Categories responded 200 in 73.9315 ms
+2022-05-04 19:16:01.384 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 48.7875 ms
+2022-05-04 19:16:01.924 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 454.1653 ms
+2022-05-04 19:16:02.803 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 35.4864 ms
+2022-05-04 19:16:08.415 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 122.7270 ms
+2022-05-04 19:16:13.091 +05:00 [INF] kov отключен от системы
+2022-05-04 19:16:13.095 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 12635.6957 ms
+2022-05-04 19:17:12.338 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-04 19:17:12.340 +05:00 [INF] HTTP POST /userToken responded 200 in 70.2776 ms
+2022-05-04 19:17:13.685 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.8643 ms
+2022-05-04 19:17:13.850 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-04 19:17:14.986 +05:00 [INF] HTTP GET /api/Categories responded 200 in 15.4351 ms
+2022-05-04 19:17:15.078 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 9.1936 ms
+2022-05-04 19:17:15.451 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 245.9325 ms
+2022-05-04 19:17:16.650 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 60.2894 ms
+2022-05-04 19:17:20.779 +05:00 [INF] HTTP GET /api/Status responded 200 in 33.3089 ms
+2022-05-04 19:17:20.907 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 117.4507 ms
+2022-05-04 19:17:21.031 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 65.8815 ms
+2022-05-04 19:17:24.248 +05:00 [INF] kov отключен от системы
+2022-05-04 19:17:24.250 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 10451.7306 ms
+2022-05-04 19:19:04.074 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-04 19:19:04.075 +05:00 [INF] HTTP POST /userToken responded 200 in 9.3423 ms
+2022-05-04 19:19:04.260 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.4737 ms
+2022-05-04 19:19:04.414 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-04 19:19:05.933 +05:00 [INF] HTTP GET /api/Categories responded 200 in 127.2947 ms
+2022-05-04 19:19:06.046 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 38.5096 ms
+2022-05-04 19:19:14.100 +05:00 [INF] HTTP GET /api/Status responded 200 in 11.0497 ms
+2022-05-04 19:19:14.205 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 85.0773 ms
+2022-05-04 19:19:14.405 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 76.9651 ms
+2022-05-04 19:19:16.386 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 10168.1606 ms
+2022-05-04 19:19:20.955 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 60.9865 ms
+2022-05-04 19:19:27.346 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 109.1977 ms
+2022-05-04 19:19:53.813 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 104.6024 ms
+2022-05-04 19:20:05.003 +05:00 [INF] kov отключен от системы
+2022-05-04 19:20:05.004 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 60638.2633 ms
+2022-05-04 19:20:06.398 +05:00 [INF] Application is shutting down...
+2022-05-04 19:20:46.786 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:20:46.851 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:20:46.852 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:20:46.853 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-04 19:20:59.176 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-04 19:20:59.237 +05:00 [INF] HTTP POST /userToken responded 200 in 2441.5070 ms
+2022-05-04 19:20:59.487 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 49.0721 ms
+2022-05-04 19:20:59.735 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-04 19:21:00.482 +05:00 [INF] HTTP GET /api/Categories responded 200 in 65.8238 ms
+2022-05-04 19:21:00.555 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 35.8527 ms
+2022-05-04 19:21:01.100 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 450.9178 ms
+2022-05-04 19:21:02.340 +05:00 [INF] HTTP GET /api/Status responded 200 in 35.5662 ms
+2022-05-04 19:21:02.479 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 121.5675 ms
+2022-05-04 19:21:02.607 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 65.8869 ms
+2022-05-04 19:21:05.754 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 93.4383 ms
+2022-05-04 19:21:16.843 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 101.9869 ms
+2022-05-04 19:21:30.092 +05:00 [INF] kov отключен от системы
+2022-05-04 19:21:30.096 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 30541.6078 ms
+2022-05-04 19:22:13.547 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-04 19:22:13.583 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-04 19:22:13.584 +05:00 [INF] Hosting environment: Development
+2022-05-04 19:22:13.585 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
