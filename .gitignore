@@ -1,0 +1,12 @@
+packages/
+.vs/
+TechnoWorld_API/bin/
+TechnoWorld_API/obj/
+TechnoWorld_Cash/bin/
+TechnoWorld_Cash/obj/
+TechnoWorld_Terminal/bin/
+TechnoWorld_Terminal/obj/
+TechnoWorld_WarehouseAccounting/bin/
+TechnoWorld_WarehouseAccounting/obj/
+TechoWorld_DataModels/bin/
+TechoWorld_DataModels/obj/
