@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 
 namespace TechnoWorld_WarehouseAccounting.Models
 {

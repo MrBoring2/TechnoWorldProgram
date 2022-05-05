@@ -15,7 +15,7 @@ using TechnoWorld_Terminal.Models;
 using TechnoWorld_Terminal.Services;
 using TechnoWorld_Terminal.ViewModels.Windows;
 using TechnoWorld_WarehouseAccounting.Services;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {

@@ -12,7 +12,7 @@ using TechnoWorld_Cash.Models;
 using TechnoWorld_Cash.Views.Windows;
 using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Services;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 using Word = Microsoft.Office.Interop.Word;
 namespace TechnoWorld_Cash.ViewModels.Windows
 {

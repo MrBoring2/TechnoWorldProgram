@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Linq.Expressions;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 
 namespace TechnoWorld_API.Models
 {

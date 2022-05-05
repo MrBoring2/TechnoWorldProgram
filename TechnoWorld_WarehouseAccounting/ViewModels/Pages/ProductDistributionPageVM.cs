@@ -10,7 +10,7 @@ using System.Windows;
 using TechnoWorld_WarehouseAccounting.Common;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 {

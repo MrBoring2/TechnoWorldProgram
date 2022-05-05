@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TechnoWorld_API.Data;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 using TechnoWorld_API.Services;
 using Microsoft.AspNetCore.SignalR;
 using TechnoWorld_API.Helpers;

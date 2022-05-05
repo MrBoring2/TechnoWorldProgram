@@ -12,7 +12,7 @@ using System.Windows;
 using TechnoWorld_WarehouseAccounting.Common;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {

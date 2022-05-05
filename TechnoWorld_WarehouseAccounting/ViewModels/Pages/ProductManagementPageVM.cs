@@ -11,7 +11,7 @@ using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 using TechnoWorld_API.Models;
 using Microsoft.AspNetCore.SignalR.Client;
 

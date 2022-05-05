@@ -337,6 +337,12 @@
     <Resource Include="Resources\Images\logo1.ico" />
     <Resource Include="Resources\Images\logo_cash.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TechnoWorld_DataModels_v2\TechnoWorld_DataModels_v2.csproj">
+      <Project>{8359945d-4d78-47e0-8b9a-3fcaed38e701}</Project>
+      <Name>TechnoWorld_DataModels_v2</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

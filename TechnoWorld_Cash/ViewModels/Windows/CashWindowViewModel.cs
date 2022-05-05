@@ -11,7 +11,7 @@ using TechnoWorld_Cash.Services;
 using TechnoWorld_Cash.Views.Windows;
 using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Services;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 namespace TechnoWorld_Cash.ViewModels.Windows
 {
     public class CashWindowViewModel : BaseWindowVM

@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 
 namespace TechnoWorld_API.Models
 {

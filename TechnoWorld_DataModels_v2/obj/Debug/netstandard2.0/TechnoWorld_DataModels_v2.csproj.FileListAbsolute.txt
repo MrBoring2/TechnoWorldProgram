@@ -1,0 +1,10 @@
+C:\Users\user452.CHENK\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\bin\Debug\netstandard2.0\TechnoWorld_DataModels_v2.deps.json
+C:\Users\user452.CHENK\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\bin\Debug\netstandard2.0\TechnoWorld_DataModels_v2.dll
+C:\Users\user452.CHENK\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\bin\Debug\netstandard2.0\TechnoWorld_DataModels_v2.pdb
+C:\Users\user452.CHENK\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user452.CHENK\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.AssemblyInfoInputs.cache
+C:\Users\user452.CHENK\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.AssemblyInfo.cs
+C:\Users\user452.CHENK\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.csproj.CoreCompileInputs.cache
+C:\Users\user452.CHENK\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.dll
+C:\Users\user452.CHENK\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.pdb
+C:\Users\user452.CHENK\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.csproj.AssemblyReference.cache

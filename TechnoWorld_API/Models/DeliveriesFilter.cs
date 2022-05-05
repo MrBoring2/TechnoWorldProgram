@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 
 namespace TechnoWorld_API.Models
 {

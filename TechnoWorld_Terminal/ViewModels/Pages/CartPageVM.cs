@@ -10,7 +10,7 @@ using System.Windows;
 using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Models;
 using TechnoWorld_Terminal.Services;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {

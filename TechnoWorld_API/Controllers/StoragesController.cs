@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 

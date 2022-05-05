@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using TechoWorld_DataModels;
+using TechoWorld_DataModels_v2;
 
 #nullable disable
 
