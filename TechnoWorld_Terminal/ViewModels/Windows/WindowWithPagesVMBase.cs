@@ -10,7 +10,7 @@ using TechnoWorld_Terminal.ViewModels.Pages;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
-    public class WindowWithPagesVMBase : WindowVMBase
+    public class WindowWithPagesVMBase : BaseWindowVM
     {
         private readonly PageController pageController;
         private Page currentPage;

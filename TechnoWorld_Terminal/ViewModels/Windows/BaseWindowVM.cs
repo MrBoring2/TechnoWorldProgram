@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
-    public class WindowVMBase : NotifyPropertyChangedBase
+    public class BaseWindowVM : NotifyPropertyChangedBase
     {
         
     }

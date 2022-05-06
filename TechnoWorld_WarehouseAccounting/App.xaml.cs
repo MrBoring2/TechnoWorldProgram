@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +24,10 @@ namespace TechnoWorld_WarehouseAccounting
             RegisterWindows();
             var loginWindow = new LoginWindowVM();
             WindowNavigation.Instance.OpenWindow(loginWindow);
+            if (!Directory.Exists("Приходные накладные"))
+            {
+                Directory.CreateDirectory("Приходные накладные");
+            }
         }
 
         private void RegisterWindows()
@@ -32,6 +37,7 @@ namespace TechnoWorld_WarehouseAccounting
             WindowNavigation.Instance.RegisterWindow<ProductWindowVM, ProductWindow>();
             WindowNavigation.Instance.RegisterWindow<DeliveryWindowVM, DeliveryWindow>();
             WindowNavigation.Instance.RegisterWindow<ProductListWindowVM, ProductsListWindow>();
+            WindowNavigation.Instance.RegisterWindow<DestributionOrderWindowVM, DestributionOrderWindow>();
         }
     }
 }

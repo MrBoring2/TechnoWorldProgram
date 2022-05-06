@@ -16,11 +16,11 @@
             <Grid>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,105,0,0">
                     <materialDesign:PackIcon Kind="AccountOutline" Width="80" Height="80"/>
-                    <TextBox x:Name="loginText" Text="{Binding Login}" Width="300" materialDesign:HintAssist.FloatingScale="1" materialDesign:HintAssist.Hint="Логин" FontSize="20" VerticalAlignment="Center" materialDesign:HintAssist.IsFloating="True"/>
+                    <TextBox x:Name="loginText" Text="{Binding Login, UpdateSourceTrigger=PropertyChanged}" MaxHeight="70" Width="300" materialDesign:HintAssist.FloatingScale="1" materialDesign:HintAssist.Hint="Логин" FontSize="20" VerticalAlignment="Center" materialDesign:HintAssist.IsFloating="True" TextWrapping="NoWrap" AcceptsReturn="False"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,190,0,0">
                     <materialDesign:PackIcon Kind="PasswordOutline" Width="80" Height="80"/>
-                    <PasswordBox mahaaps:PasswordBoxBindingBehavior.Password="{Binding Password}" FontSize="20" Width="300" materialDesign:HintAssist.FloatingScale="1" materialDesign:HintAssist.Hint="Пароль" VerticalAlignment="Center" materialDesign:HintAssist.IsFloating="True"/>
+                    <PasswordBox mahaaps:PasswordBoxBindingBehavior.Password="{Binding Password, UpdateSourceTrigger=PropertyChanged}" MaxHeight="70" FontSize="20" Width="300" materialDesign:HintAssist.FloatingScale="1" materialDesign:HintAssist.Hint="Пароль" VerticalAlignment="Center" materialDesign:HintAssist.IsFloating="True"/>
                 </StackPanel>
                 <Button IsEnabled="{Binding IsEnabled}" Style="{StaticResource btn}" Height="40" VerticalAlignment="Bottom" Command="{Binding LoginCommand}" HorizontalAlignment="Center" Margin="10" Width="200" FontSize="20" Cursor="Hand">
                     <Button.Content>

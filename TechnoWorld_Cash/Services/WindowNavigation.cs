@@ -72,5 +72,9 @@ namespace TechnoWorld_Cash.Services
 
             }
         }
+        public void CloseWindows()
+        {
+            displayRootRegistry.CloseAllWindow();
+        }
     }
 }

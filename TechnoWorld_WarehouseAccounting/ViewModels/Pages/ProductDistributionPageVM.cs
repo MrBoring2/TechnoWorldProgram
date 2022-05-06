@@ -10,6 +10,8 @@ using System.Windows;
 using TechnoWorld_WarehouseAccounting.Common;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
+using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
+using TechnoWorld_WarehouseAccounting.Views.Windows;
 using TechoWorld_DataModels_v2;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
@@ -38,6 +40,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             });
         }
         public RelayCommand SortOrderChangedCommand { get; set; }
+        public RelayCommand OpenDestributionWindowCommand { get; set; }
         public RelayCommand ChangePageCommand { get; set; }
         public Paginator Paginator { get => paginator; set { paginator = value; OnPropertyChanged(); } }
         public ObservableCollection<Order> DisplayedOrders => Orders;
@@ -83,6 +86,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         private void Initialize()
         {
             ChangePageCommand = new RelayCommand(ChangePage);
+            OpenDestributionWindowCommand = new RelayCommand(OpenDestributionWindow);
             SortOrderChangedCommand = new RelayCommand(SortOrderChanged);
             // OpenProductWindowCommand = new RelayCommand(OpenProductWindow);
             // OpenEditProductWindowCommand = new RelayCommand(OpenEditProductWindow);
@@ -105,7 +109,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             OnPropertyChanged(nameof(StartDate));
             OnPropertyChanged(nameof(EndDate));
         }
-
 
         private async void LoadData()
         {
@@ -185,6 +188,16 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             //
             await GetOrdersWithFilter();
         }
+        private async void OpenDestributionWindow(object obj)
+        {
+            var destributionWindow = new DestributionOrderWindowVM(SelectedOrder);
+            await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(destributionWindow));
+            if (destributionWindow.DialogResult == true)
+            {
+                CustomMessageBox.Show($"Товары из заказа {SelectedOrder.OrderNumber} успешно выданы со склада.", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
         private async void ChangePage(object obj)
         {
             if (obj != null)

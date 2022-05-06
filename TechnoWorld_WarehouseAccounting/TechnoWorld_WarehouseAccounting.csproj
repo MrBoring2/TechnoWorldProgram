@@ -234,9 +234,6 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="TechoWorld_DataModels">
-      <HintPath>..\TechoWorld_DataModels\bin\Debug\TechoWorld_DataModels.dll</HintPath>
-    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -269,12 +266,14 @@
     <Compile Include="Services\Paginator.cs" />
     <Compile Include="Services\WindowController.cs" />
     <Compile Include="Services\WindowNavigation.cs" />
+    <Compile Include="ViewModels\ForElements\ElectronicsInOrderWithStorageVM.cs" />
     <Compile Include="ViewModels\Pages\BasePageVM.cs" />
     <Compile Include="ViewModels\Pages\DeliveryManagementPageVM.cs" />
     <Compile Include="ViewModels\Pages\ProductDistributionPageVM.cs" />
     <Compile Include="ViewModels\Pages\ProductManagementPageVM.cs" />
     <Compile Include="ViewModels\Windows\BaseWindowVM.cs" />
     <Compile Include="ViewModels\Windows\DeliveryWindowVM.cs" />
+    <Compile Include="ViewModels\Windows\DestributionOrderWindowVM.cs" />
     <Compile Include="ViewModels\Windows\LoginWindowVM.cs" />
     <Compile Include="ViewModels\Windows\MainAppWindowVM.cs" />
     <Compile Include="ViewModels\Windows\BaseModalWindowVM.cs" />

@@ -34,6 +34,11 @@
             </StackPanel>
         </Grid>
         <DataGrid Grid.Row="1" ItemsSource="{Binding DisplayedOrders}" Margin="5" SelectedItem="{Binding SelectedOrder}" IsReadOnly="True" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" BorderThickness="1" BorderBrush="Orange">
+            <interactions:Interaction.Triggers>
+                <interactions:EventTrigger EventName="MouseDoubleClick">
+                    <interactions:InvokeCommandAction Command="{Binding OpenDestributionWindowCommand}"/>
+                </interactions:EventTrigger>
+            </interactions:Interaction.Triggers>
             <DataGrid.Resources>
                 <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Orange" />
@@ -43,8 +48,8 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Номер заказа" Width="2*" Binding="{Binding OrderNumber}"/>
                 <DataGridTextColumn Header="Дата заказа" Width="*" Binding="{Binding DateOfRegistration, StringFormat={}{0:dd.MM.yyyy}}"/>
-                <DataGridTextColumn Header="Кол-во товаров в заказе" Width="*" Binding="{Binding ProductCount, StringFormat={}{0:F2} ₽}"/>
-                <DataGridTextColumn Header="Сумма заказа" Width="*" Binding="{Binding OrderPrice}"/>
+                <DataGridTextColumn Header="Кол-во товаров в заказе" Width="*" Binding="{Binding ProductCount, StringFormat={}{0} шт.}"/>
+                <DataGridTextColumn Header="Сумма заказа" Width="*" Binding="{Binding OrderPrice, StringFormat={}{0:F2} ₽}"/>
             </DataGrid.Columns>
         </DataGrid>
 

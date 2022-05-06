@@ -1,18 +1,60 @@
-﻿<Window x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.DestributionOrderWindow"
+﻿<local:BaseWindow BorderBackgroundBrush="Orange" x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.DestributionOrderWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
-      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"   
         FontFamily="{DynamicResource MaterialDesignFont}"
-       xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
-                  xmlns:dr="clr-namespace:TechnoWorld_WarehouseAccounting.Services"
+        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:dr="clr-namespace:TechnoWorld_WarehouseAccounting.Services"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
-      Title="ТЕХНО МИР | Выдача заказа" Background="White" Width="950" MinWidth="950" MinHeight="700" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" Height="700">
+      Title="ТЕХНО МИР | Выдача заказа" Background="White" Width="1056" MinWidth="950" MinHeight="700" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" Height="700">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding OrderNumber}" FontSize="37" HorizontalAlignment="Center"/>
+        <ComboBox Grid.Row="1" ItemsSource="{Binding Storages}" SelectedItem="{Binding SelectedStorage}" DisplayMemberPath="Name" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.Hint="Склад" Margin="5" FontSize="16"/>
+        <DataGrid ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedProduct}" Grid.Row="2" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" HorizontalScrollBarVisibility="Auto" Grid.RowSpan="1">
+            <DataGrid.Resources>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Orange" />
+                    <Setter Property="Foreground" Value="Black" />
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Модель" Width="2*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding Electronic.Model}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Количество" Width="0.8*" Binding="{Binding Count}"/>
+                <DataGridTextColumn Header="Цена за 1" Width="0.8*" Binding="{Binding Electronic.SalePrice, StringFormat={}{0:F2} ₽}"/>
+                <DataGridTextColumn Header="Сумма" Width="1.1*" Binding="{Binding TotalPrice, StringFormat={}{0:F2} ₽}"/>
+                <DataGridTextColumn Header="Статус товара" Binding="{Binding IsOfferedForSale}" Width="1.2*"/>
+                <DataGridTextColumn Header="В наличии" Binding="{Binding CountInStorage, StringFormat={}{0} шт.}" Width="0.8*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Style="{StaticResource btn}" Height="40" Margin="5" VerticalAlignment="Bottom" Command="{Binding CancelCommand}" HorizontalAlignment="Center"  Width="250" FontSize="20" Cursor="Hand">
+                <Button.Content>
+                    <TextBlock Text="Отмена" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button.Content>
+            </Button>
+            <Button Style="{StaticResource btn}" Height="40" VerticalAlignment="Bottom" Command="{Binding DestributeOrderCommand}" HorizontalAlignment="Center" Margin="5" Width="250" FontSize="20" Cursor="Hand">
+                <Button.Content>
+                    <TextBlock Text="Выдать товары" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
         
     </Grid>
-</Window>
+</local:BaseWindow>

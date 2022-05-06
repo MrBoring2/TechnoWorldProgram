@@ -23,6 +23,9 @@ using Serilog;
 using Serilog.Events;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
+using Microsoft.AspNetCore.HttpOverrides;
+using System.Net;
+using System.Security.Claims;
 
 namespace BNS_API
 {
@@ -39,7 +42,7 @@ namespace BNS_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TechnoWorldContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Home")));
+            services.AddDbContext<TechnoWorldContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Chenk")));
             services.AddControllers();
             services.AddMvc().AddNewtonsoftJson(options =>
             {
@@ -97,29 +100,67 @@ namespace BNS_API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseForwardedHeaders(new ForwardedHeadersOptions { ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto });
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BNS_API v1"));
+                //app.UseSerilogRequestLogging();
+                app.UseSerilogRequestLogging(options =>
+                {
+                    // Customize the message template
+                    options.MessageTemplate = "Запрос от {UserName} ({ClientIp}:{ClientPort}) по {RequestMethod} {RequestPath} ответил {StatusCode} за {Elapsed:0.0000} мс";
+
+                    // Emit debug-level events instead of the defaults
+                    //options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
+
+                    // Attach additional properties to the request completion event
+                    options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+                    {
+                        //diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
+                        //diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
+                        string userName = "";
+                        if (httpContext.User?.Claims.Count() == 0)
+                        {
+                            userName = "Не установлено";
+                        }
+                        else
+                        {
+                            userName = httpContext.User?.Claims.FirstOrDefault(p => p.Type == ClaimsIdentity.DefaultNameClaimType).Value;
+                        }
+                        diagnosticContext.Set("UserName", userName);
+                        diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
+                        diagnosticContext.Set("ClientIp", httpContext.Connection?.RemoteIpAddress);
+                        diagnosticContext.Set("ClientPort", httpContext.Connection?.RemotePort);
+                    };
+                });
+            }
+            else
+            {
+                app.UseSerilogRequestLogging(options =>
+                {
+                    // Customize the message template
+                    options.MessageTemplate = "Запрос от {ClientIp}:{ClientPort} на {RequestMethod} {RequestPath} ответил {StatusCode} за {Elapsed:0.0000} мс | {RequestHost}";
+
+                    // Emit debug-level events instead of the defaults
+                    options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
+
+                    // Attach additional properties to the request completion event
+                    options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+                    {
+                        //diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
+                        //diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
+                        diagnosticContext.Set("UserName", httpContext.User?.Claims.FirstOrDefault(p => p.Type == ClaimsIdentity.DefaultNameClaimType));
+                        diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
+                        diagnosticContext.Set("ClientIp", httpContext.Connection?.RemoteIpAddress);
+                        diagnosticContext.Set("ClientPort", httpContext.Connection?.RemotePort);
+                    };
+                });
             }
 
-            app.UseSerilogRequestLogging();
-            //app.UseSerilogRequestLogging(options =>
-            //{
-            //    // Customize the message template
-            //    options.MessageTemplate = "Handled {RequestPath}";
 
-            //    // Emit debug-level events instead of the defaults
-            //    options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
 
-            //    // Attach additional properties to the request completion event
-            //    options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
-            //    {
-            //        diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
-            //        diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
-            //    };
-            //});
 
             app.UseRouting();
             //app.UseSession();

@@ -71,14 +71,25 @@ namespace TechnoWorld_Cash.Services
             window.Close();
             openWindows.Remove(windowViewModel);
         }
-
-        public void ShowModalPresentation(ModalWindowVMBase vm)
+        public void CloseAllWindow()
+        {
+            foreach (var item in openWindows)
+            {
+                if (item.Key.GetType() != typeof(LoginWindowViewModel))
+                {
+                    item.Value.Close();
+                }
+            }
+        }
+        public void ShowModalPresentation(BaseWindowVM vm)
         {
             App.Current.Dispatcher.Invoke(() =>
             {
                 var window = CreateWindowInstanceWithVM(vm);
+                openWindows[vm] = window;
                 window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
                 window.ShowDialog();
+                openWindows.Remove(vm);
             });
         }
     }

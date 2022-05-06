@@ -7,10 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using TechnoWorld_API.Models;
 using TechnoWorld_Cash.Services;
 using TechnoWorld_Cash.Views.Windows;
 using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Services;
+using TechnoWorld_WarehouseAccounting.Models;
 using TechoWorld_DataModels_v2;
 namespace TechnoWorld_Cash.ViewModels.Windows
 {
@@ -19,23 +21,27 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         private ObservableCollection<Order> displayedOrders;
         private List<int> pagesNumbers;
         private ObservableCollection<int> displayedPagesNumbers;
+        private ObservableCollection<ItemWithTitle<Status>> statuses;
         private string search;
         private int currentPage;
         private int itemsPerPage;
         private int maxDisplayedPages;
+        private int totalFilteredCount;
         private int totalPages;
+        private int lastPage;
         private int selectedPageNumber;
         private Order selectedOrder;
-        private string selectedStatus;
+        private ItemWithTitle<Status> selectedStatus;
         private DateTime startDate;
         private DateTime endDate;
+        private Paginator paginator;
         private Visibility emptyVisibility;
         public CashWindowViewModel()
         {
             Initiailze();
             LoadData();
         }
-        public List<Order> Orders { get; set; }
+        public ObservableCollection<Order> Orders { get; set; }
         public ObservableCollection<int> DisplayedPagesNumbers { get => displayedPagesNumbers; set { displayedPagesNumbers = value; OnPropertyChanged(); } }
         public List<int> PagesNumbers { get => pagesNumbers; set { pagesNumbers = value; OnPropertyChanged(); } }
         public int CurrentPage
@@ -69,9 +75,9 @@ namespace TechnoWorld_Cash.ViewModels.Windows
                 OnPropertyChanged();
             }
         }
-        public List<string> Statuses { get; set; }
+        public ObservableCollection<ItemWithTitle<Status>> Statuses { get => statuses; set { statuses = value; OnPropertyChanged(); } }
         public Visibility EmptyVisibility { get => emptyVisibility; set { emptyVisibility = value; OnPropertyChanged(); } }
-        public string SelectedStatus { get { return selectedStatus; } set { selectedStatus = value; OnPropertyChanged(); RefreshOrders(); } }
+        public ItemWithTitle<Status> SelectedStatus { get { return selectedStatus; } set { selectedStatus = value; OnPropertyChanged(); RefreshOrders(); } }
         public Order SelectedOrder { get { return selectedOrder; } set { selectedOrder = value; OnPropertyChanged(); } }
         public string Search { get { return search; } set { search = value; OnPropertyChanged(); RefreshOrders(); } }
         public DateTime StartDate
@@ -81,6 +87,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         }
         public DateTime EndDate { get => endDate; set { endDate = (value.Date >= startDate.Date && value.Date <= DateTime.Now.Date) || startDate == DateTime.MinValue ? value : endDate; OnPropertyChanged(); RefreshOrders(); } }
         public ObservableCollection<Order> DisplayedOrders { get => displayedOrders; set { displayedOrders = value; OnPropertyChanged(); } }
+        public Paginator Paginator { get => paginator; set { paginator = value; OnPropertyChanged(); } }
         public RelayCommand ChangePageCommand { get; set; }
         public RelayCommand ToFirstPageCommand { get; set; }
         public RelayCommand ToLastPageCommand { get; set; }
@@ -90,21 +97,19 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         private void Initiailze()
         {
 
-            currentPage = 0;
-            itemsPerPage = 20;
-            maxDisplayedPages = 5;
             search = string.Empty;
+            ItemsPerPage = 15;
+            lastPage = 1;
+            startDate = DateTime.Now.ToLocalTime().AddMonths(-2);
+            endDate = DateTime.Now.ToLocalTime().AddDays(7);
             ChangePageCommand = new RelayCommand(ChangePage);
-            ToFirstPageCommand = new RelayCommand(ToFirstPage);
-            ToLastPageCommand = new RelayCommand(ToLastPage);
             ExitCommand = new RelayCommand(Exit);
             PaymentCommand = new RelayCommand(Payment);
             CancelOrderCommand = new RelayCommand(CancelOrder);
             EmptyVisibility = Visibility.Collapsed;
             ClientService.Instance.HubConnection.On<string>("UpdateOrders", (orders) =>
             {
-                Orders = JsonConvert.DeserializeObject<List<Order>>(orders);
-                RefreshOrders();
+                GetOrdersWithFilter();
             });
         }
 
@@ -139,150 +144,133 @@ namespace TechnoWorld_Cash.ViewModels.Windows
 
         private async void LoadData()
         {
-            await Task.Run(LoadStatuses);
-            await Task.Run(LoadOrders);
+            await LoadStatuses();
+            await LoadOrders();
             OnPropertyChanged(nameof(SelectedStatus));
             OnPropertyChanged(nameof(CurrentPage));
             OnPropertyChanged(nameof(StartDate));
             OnPropertyChanged(nameof(EndDate));
         }
-
-        private void LoadOrders()
+        private async Task LoadOrders()
         {
-            var orders = ApiService.GetRequest("api/Orders");
-            if (orders.Result.StatusCode == System.Net.HttpStatusCode.OK)
+            await GetOrdersWithFilter();
+            //OnPropertyChanged(nameof(DisplayedElectronics));
+        }
+        private async Task GetOrdersWithFilter()
+        {
+            var request = await ApiService.GetRequestWithParameter("api/Orders/Filter", "jsonFilter", JsonConvert.SerializeObject(
+                new
+                {
+                    search = Search,
+                    statusId = 2,
+                    startDate = StartDate,
+                    endDate = EndDate,
+                    sortParameter = "DateOfRegistration",
+                    isAscending = true,
+                    currentPage = Paginator == null ? 1 : Paginator.SelectedPageNumber,
+                    itemsPerPage = ItemsPerPage
+                }));
+            if (request.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Orders = JsonConvert.DeserializeObject<List<Order>>(orders.Result.Content);
-                RefreshOrders();
-
-                LoadPages();
-                DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers.Take(maxDisplayedPages));
-
-                startDate = Orders.Min(p => p.DateOfRegistration);
-                endDate = DateTime.Now;
-                selectedPageNumber = DisplayedPagesNumbers.FirstOrDefault();
-                OnPropertyChanged(nameof(SelectedPageNumber));
+                var result = JsonConvert.DeserializeObject<FilteredOrders>(request.Content);
+                Orders = new ObservableCollection<Order>(result.Orders);
+                totalFilteredCount = result.TotalFilteredCount;
+                if (Paginator != null)
+                {
+                    await RefreshOrders();
+                }
+                else
+                {
+                    Paginator = new Paginator(5, MaxPage());
+                    await RefreshOrders();
+                }
+                //dd.Add(JsonConvert.DeserializeObject<List<Electronic>>(request.Content));
             }
         }
 
-
-        private void LoadStatuses()
+        private async Task RefreshOrders()
         {
-            Statuses = new List<string> { "Все" };
-            var statusesJson = ApiService.GetRequest("api/Status");
-            if (statusesJson.Result.StatusCode == System.Net.HttpStatusCode.OK)
+            await Task.Run(() =>
             {
-                var statusesList = JsonConvert.DeserializeObject<List<Status>>(statusesJson.Result.Content);
-                foreach (var item in statusesList)
+                var maxPage = MaxPage();
+
+                Paginator.RefreshPages(maxPage == 0 ? 1 : maxPage);
+
+                // var electronicsList = GetFilteredElectronics(Electronics);
+
+                //Если после фильтрации у нас количество элементов 0, то выводим Пусто
+                if (Orders.Count() <= 0)
                 {
-                    Statuses.Add(item.Name);
+                    EmptyVisibility = Visibility.Visible;
+                    Paginator.SelectedPageNumber = 1;
                 }
+                else EmptyVisibility = Visibility.Hidden;
+
+                //electronicsList = electronicsList.Skip((Paginator.SelectedPageNumber - 1) * itemsPerPage)
+                //   .Take(itemsPerPage).ToList();
+
+                OnPropertyChanged(nameof(DisplayedOrders));
+            });
+        }
+        private int MaxPage()
+        {
+            //Фильтруем наш список по поисковой строке
+            //var list = GetFilteredElectronics(Electronics);
+
+            return (int)Math.Ceiling((float)totalFilteredCount / (float)ItemsPerPage);
+        }
+        private async void SortOrderChanged(object obj)
+        {
+            //
+            await GetOrdersWithFilter();
+        }
+        private async Task LoadStatuses()
+        {
+            var statusesJson = await ApiService.GetRequest("api/Status");
+            if (statusesJson.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                Statuses = new ObservableCollection<ItemWithTitle<Status>>(JsonConvert.DeserializeObject<List<Status>>(statusesJson.Content).Select(p => new ItemWithTitle<Status>(p, p.Name)));
+                Statuses = new ObservableCollection<ItemWithTitle<Status>>(Statuses.Where(p => p.Item.Id != 5 && p.Item.Id != 3));
+                Statuses.Insert(0, new ItemWithTitle<Status>(null, "Все"));
                 selectedStatus = Statuses.FirstOrDefault();
             }
         }
-
-        private void RefreshOrders()
-        {
-            var list = Orders.Where(p => p.DateOfRegistration.Date <= EndDate.Date && p.DateOfRegistration.Date >= StartDate.Date).OrderByDescending(p => p.DateOfRegistration).ToList();
-            list = list.Where(p => p.OrderNumber.ToLower().Contains(Search.ToLower())).ToList();
-
-
-            list = list.Where(p => SelectedStatus != "Все" ? p.Status.Name.Equals(SelectedStatus) : true).ToList();
-            list = list.Skip((SelectedPageNumber - 1) * itemsPerPage)
-                           .Take(itemsPerPage).ToList();
-            DisplayedOrders = new ObservableCollection<Order>(list);
-
-            if (DisplayedOrders.Count() <= 0)
-            {
-                EmptyVisibility = Visibility.Visible;
-            }
-            else EmptyVisibility = Visibility.Hidden;
-
-        }
-        private async void ToLastPage(object obj)
-        {
-            SelectedPageNumber = PagesNumbers.LastOrDefault();
-
-            await Task.Run(RefrashPaginator);
-            OnPropertyChanged(nameof(SelectedPageNumber));
-        }
-
-        private async void ToFirstPage(object obj)
-        {
-            SelectedPageNumber = PagesNumbers.FirstOrDefault();
-
-            await Task.Run(RefrashPaginator);
-            OnPropertyChanged(nameof(SelectedPageNumber));
-        }
-        private void ChangePage(object obj)
+        private async void ChangePage(object obj)
         {
             if (obj != null)
             {
-                if (Convert.ToInt32(obj) == 0)
+                if (Paginator != null)
                 {
-                    SelectedPageNumber = 1;
+
+                    if (Convert.ToInt32(obj) == -1)
+                    {
+                        Paginator.ChangePage(1);
+                    }
+                    else if (Convert.ToInt32(obj) == 1)
+                    {
+                        Paginator.ChangePage(MaxPage());
+                    }
                 }
-                else if (Convert.ToInt32(obj) == 1)
+                else return;
+            }
+            if (Paginator.DisplayedPagesNumbers.Count > 0)
+            {
+                await Task.Run(Paginator.RefrashPaginator);
+                OnPropertyChanged(nameof(DisplayedOrders));
+                if (lastPage != Paginator.SelectedPageNumber)
                 {
-                    SelectedPageNumber = MaxPage();
+                    lastPage = Paginator.SelectedPageNumber;
+                    await GetOrdersWithFilter();
                 }
+                lastPage = Paginator.SelectedPageNumber;
             }
-            if (DisplayedPagesNumbers.Count > 0)
-            {
-                RefrashPaginator();
-                RefreshOrders();
-            }
-        }
-        private async void LoadPages()
-        {
-
-            PagesNumbers = new List<int>();
-            var max = MaxPage();
-            for (int i = 0; i < max; i++)
-            {
-                PagesNumbers.Add(i + 1);
-            }
-
         }
         private void Exit(object obj)
         {
             ClientService.Instance.Logout();
             WindowNavigation.Instance.OpenAndHideWindow(this, new LoginWindowViewModel());
         }
-        private int MaxPage()
-        {
-            var list = Orders
-                     .Where(p => p.OrderNumber.ToLower().Contains(Search.ToLower())).ToList();
 
 
-            list = list.Where(p => SelectedStatus != "Все" ? p.Status.Name.Equals(SelectedStatus) : true).ToList();
-
-
-            return (int)Math.Ceiling((float)list.Count / (float)ItemsPerPage);
-        }
-        public void RefrashPaginator()
-        {
-            if (SelectedPageNumber <= PageListAvg(DisplayedPagesNumbers))
-            {
-                DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers
-                    .Take(maxDisplayedPages));
-            }
-            else
-            {
-                if (PagesNumbers.Skip(SelectedPageNumber - PageListAvg(DisplayedPagesNumbers)).Count() > maxDisplayedPages)
-                    DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers
-                        .Skip(SelectedPageNumber - PageListAvg(DisplayedPagesNumbers))
-                        .Take(maxDisplayedPages));
-
-                else
-                    DisplayedPagesNumbers = new ObservableCollection<int>(PagesNumbers
-                       .Skip(PagesNumbers.Count - maxDisplayedPages)
-                       .Take(maxDisplayedPages));
-            }
-        }
-        private int PageListAvg(IEnumerable<int> collection)
-        {
-            return Convert.ToInt32(Math.Ceiling(collection.Count() / (float)2));
-        }
     }
 }

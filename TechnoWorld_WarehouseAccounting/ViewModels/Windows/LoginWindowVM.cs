@@ -26,8 +26,12 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             Initialize();
             LoginCommand = new RelayCommand(Authorize);
         }
-        public string Login { get => login; set { login = value; OnPropertyChanged(); } }
-        public string Password { get => password; set { password = value; OnPropertyChanged(); } }
+        public string Login
+        {
+            get => login;
+            set { login = value.Length >= 30 ? login : value; OnPropertyChanged(); }
+        }
+        public string Password { get => password; set { password = value.Length >= 30 ? password : value; OnPropertyChanged(); } }
         public bool IsEnabled { get => isEnabled; set { isEnabled = value; OnPropertyChanged(); } }
         public RelayCommand LoginCommand { get; set; }
         private void Initialize()
@@ -40,10 +44,23 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     options.AccessTokenProvider = () => Task.FromResult(ClientService.Instance.Token);
                 })
                 .Build();
+            ClientService.Instance.HubConnection.Closed += HubConnection_Closed;
 
             ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
             ClientService.Instance.RestClient.Timeout = 20000;
             ClientService.Instance.RestClient.ReadWriteTimeout = 20000;
+        }
+
+        private Task HubConnection_Closed(Exception arg)
+        {
+            return App.Current.Dispatcher.InvokeAsync(() =>
+            {
+                CustomMessageBox.Show("Потеряно соединение с сервером!", "Критическая ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                WindowNavigation.Instance.OpenWindow(new LoginWindowVM());
+                PageNavigation.Instance.ClearCreatedPages();
+                WindowNavigation.Instance.CloseWindows();
+
+            }).Task;
         }
 
         /// <summary>
@@ -54,6 +71,12 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             try
             {
+                if (Login.Length >= 30 || Password.Length >= 30)
+                {
+                    CustomMessageBox.Show("Слишком большие данные", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
                 IsEnabled = false;
                 var response = await ApiService.Authorize(Login, Password);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
@@ -65,9 +88,14 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     CustomMessageBox.Show($"Добро пожаловать, {data.full_name}", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
                     WindowNavigation.Instance.OpenAndHideWindow(this, new MainAppWindowVM());
                 }
-                else
+                else if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
                 {
                     CustomMessageBox.Show(JsonConvert.DeserializeObject<string>(response.Content), "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    IsEnabled = true;
+                }
+                else
+                {
+                    CustomMessageBox.Show("Не удаётся соединиться с сервером!", "Критическая ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                     IsEnabled = true;
                 }
             }

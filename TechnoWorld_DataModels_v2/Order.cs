@@ -22,7 +22,7 @@ namespace TechoWorld_DataModels_v2
         public virtual Status Status { get; set; }
 
         public int ProductCount => OrderElectronics.Count;
-        public decimal OrderPrice => OrderElectronics.Sum(p => p.Electronics.SalePrice * p.Count);
+        public decimal OrderPrice => OrderElectronics.Any(p => p.Electronics == null) ? 0 : OrderElectronics.Sum(p => p.Electronics.SalePrice * p.Count);
 
         public virtual ICollection<OrderElectronic> OrderElectronics { get; set; }
     }

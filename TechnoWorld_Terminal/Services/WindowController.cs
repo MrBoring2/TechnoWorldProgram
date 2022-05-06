@@ -16,7 +16,7 @@ namespace TechnoWorld_Terminal.Services
 
         public void RegisterWindowType<VM, Win>()
             where Win : MaterialWindow
-            where VM : WindowVMBase
+            where VM : BaseWindowVM
         {
             var vmType = typeof(VM);
             viewModelsToWindowsMapping[vmType] = typeof(Win);
@@ -31,7 +31,7 @@ namespace TechnoWorld_Terminal.Services
             viewModelsToWindowsMapping.Remove(vmType);
         }
 
-        public MaterialWindow CreateWindowInstanceWithVM(WindowVMBase vm)
+        public MaterialWindow CreateWindowInstanceWithVM(BaseWindowVM vm)
         {
             if (vm == null)
                 throw new ArgumentNullException("ViewModel is null");
@@ -51,8 +51,8 @@ namespace TechnoWorld_Terminal.Services
         }
 
 
-        Dictionary<WindowVMBase, MaterialWindow> openWindows = new Dictionary<WindowVMBase, MaterialWindow>();
-        public void ShowPresentation(WindowVMBase windowViewModel)
+        Dictionary<BaseWindowVM, MaterialWindow> openWindows = new Dictionary<BaseWindowVM, MaterialWindow>();
+        public void ShowPresentation(BaseWindowVM windowViewModel)
         {
             if (windowViewModel == null)
                 throw new ArgumentNullException("ViewModel is null");
@@ -63,7 +63,7 @@ namespace TechnoWorld_Terminal.Services
             openWindows[windowViewModel] = window;
         }
 
-        public void HidePresentation(WindowVMBase windowViewModel)
+        public void HidePresentation(BaseWindowVM windowViewModel)
         {
             MaterialWindow window;
             if (!openWindows.TryGetValue(windowViewModel, out window))
@@ -71,14 +71,25 @@ namespace TechnoWorld_Terminal.Services
             window.Close();
             openWindows.Remove(windowViewModel);
         }
-
-        public void ShowModalPresentation(ModalWindowVMBase vm)
+        public void CloseAllWindow()
         {
-            Application.Current.Dispatcher.Invoke(() =>
+            foreach (var item in openWindows)
+            {
+                //if (item.Key.GetType() != typeof(LoginWindowVM))
+                //{
+                item.Value.Close();
+                //}
+            }
+        }
+        public void ShowModalPresentation(BaseWindowVM vm)
+        {
+            App.Current.Dispatcher.Invoke(() =>
             {
                 var window = CreateWindowInstanceWithVM(vm);
+                openWindows[vm] = window;
                 window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
                 window.ShowDialog();
+                openWindows.Remove(vm);
             });
         }
     }

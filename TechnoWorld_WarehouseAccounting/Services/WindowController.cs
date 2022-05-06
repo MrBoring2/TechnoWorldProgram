@@ -71,13 +71,25 @@ namespace TechnoWorld_WarehouseAccounting.Services
             openWindows.Remove(windowViewModel);
         }
 
+        public void CloseAllWindow()
+        {
+            foreach (var item in openWindows)
+            {
+                if (item.Key.GetType() != typeof(LoginWindowVM))
+                {
+                    item.Value.Close();
+                }
+            }
+        }
         public void ShowModalPresentation(BaseModalWindowVM vm)
         {
             App.Current.Dispatcher.Invoke(() =>
             {
                 var window = CreateWindowInstanceWithVM(vm);
+                openWindows[vm] = window;
                 window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
                 window.ShowDialog();
+                openWindows.Remove(vm);
             });
         }
     }

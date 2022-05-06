@@ -17,7 +17,7 @@ namespace TechnoWorld_WarehouseAccounting.Views.Windows
     /// <summary>
     /// Логика взаимодействия для DestributionOrderWindow.xaml
     /// </summary>
-    public partial class DestributionOrderWindow : Window
+    public partial class DestributionOrderWindow : BaseWindow
     {
         public DestributionOrderWindow()
         {

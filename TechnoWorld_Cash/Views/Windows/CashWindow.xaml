@@ -27,8 +27,12 @@
                 <DatePicker SelectedDate="{Binding EndDate}" HorizontalAlignment="Right" FontSize="16" Width="140" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="1"/>
             </Grid>
         </Grid>
-        <DataGrid Grid.Row="1" ItemsSource="{Binding DisplayedOrders}" Margin="5" SelectedItem="{Binding SelectedOrder}" IsReadOnly="True" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False">
+        <DataGrid Grid.Row="1" ItemsSource="{Binding DisplayedOrders}" Margin="5" SelectedItem="{Binding SelectedOrder}" IsReadOnly="True" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" BorderThickness="1" BorderBrush="Orange">
             <DataGrid.Resources>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Orange" />
+                    <Setter Property="Foreground" Value="Black" />
+                </Style>
                 <ContextMenu x:Key="contextMenu">
                     <ContextMenu.Items>
                         <MenuItem Header="Оплата" Command="{Binding DataContext.PaymentCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=DataGrid}}"/>
@@ -54,13 +58,13 @@
             <TextBlock  Text="Выберите другие критерии или проверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" Name="Paginator" HorizontalAlignment="Center"  Grid.Row="2" >
-            <Button x:Name="ToFirst" Style="{StaticResource btn}" Command="{Binding ToFirstPageCommand}" CommandParameter="0" Margin="0,7.5,0,7.5" Height="35" Width="50" FontSize="30"  Cursor="Hand">
+        <StackPanel Orientation="Horizontal" Name="Paginator" HorizontalAlignment="Center"  Grid.Row="3">
+            <Button x:Name="ToFirst" Background="Orange" BorderBrush="Orange" Command="{Binding ChangePageCommand}" CommandParameter="-1" Margin="0,7.5,0,7.5" Height="35" Width="50" FontSize="30" Cursor="Hand">
                 <Button.Content>
-                    <TextBlock Text="«" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45"/>
+                    <TextBlock Text="«" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Height="47"/>
                 </Button.Content>
             </Button>
-            <ListView Margin="0,7,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectedItem="{Binding SelectedPageNumber, Mode=TwoWay}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="45" ItemsSource="{Binding DisplayedPagesNumbers}">
+            <ListView Margin="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" IsEnabled="{Binding Paginator.IsSelectionEnabled}" SelectedItem="{Binding Paginator.SelectedPageNumber}" ItemsSource="{Binding Paginator.DisplayedPagesNumbers, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="35" Width="auto">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="SelectionChanged">
                         <i:InvokeCommandAction Command="{Binding ChangePageCommand}"/>
@@ -83,9 +87,9 @@
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
             </ListView>
-            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Style="{StaticResource btn}" Command="{Binding ToLastPageCommand}" CommandParameter="1" Margin="0" Height="35" Width="50" FontSize="30">
+            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding ChangePageCommand}" CommandParameter="1" Margin="0" Height="35" Width="50" FontSize="30" Cursor="Hand">
                 <Button.Content>
-                    <TextBlock Text="»" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Center" Height="45"/>
+                    <TextBlock Text="»" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Height="47"/>
                 </Button.Content>
             </Button>
         </StackPanel>

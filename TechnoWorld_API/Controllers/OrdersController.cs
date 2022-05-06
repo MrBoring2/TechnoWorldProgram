@@ -98,6 +98,52 @@ namespace TechnoWorld_API.Controllers
 
             return new FilteredOrders(list, count);
         }
+        [HttpPut("Distribute/{orderId}")]
+        public async Task<ActionResult> DistributeOrder(int orderId, [FromBody] int storageId)
+        {
+            var order = await _context.Orders.Include(p => p.OrderElectronics).FirstOrDefaultAsync(p => p.OrderId == orderId);
+            var storage = await _context.Storages.Include(p => p.ElectronicsToStorages).FirstOrDefaultAsync(p => p.StorageId == storageId);
+            foreach (var item in order.OrderElectronics)
+            {
+                _context.Entry(item).Reference(p => p.Electronics).Load();
+            }
+            Log.Information($"Начинается выдача заказа {order.OrderNumber}...");
+            if (order != null && storage != null)
+            {
+                foreach (var electronic in order.OrderElectronics)
+                {
+                    if (storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == electronic.ElectronicsId) == null)
+                    {
+                        Log.Information($"Не хватает товара {electronic.Electronics.Model}на складе");
+                        return BadRequest($"Не хватает товара {electronic.Electronics.Model} на складе");
+                    }
+                    else
+                    {
+                        storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == electronic.ElectronicsId).Quantity -= electronic.Count;
+                        Log.Information($"Выдан товар {electronic.Electronics.Model} в количествуе {electronic.Count}");
+                    }
+                }
+            }
+            try
+            {
+                order.StatusId = 3;
+                _context.SaveChanges();
+                Log.Information($"Выдача заказа {order.OrderNumber} закончена.");
+                await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", "о");
+                await _hubContext.Clients.Group(SignalRGroups.cash_group).SendAsync("UpdateOrders", "о");
+                await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateOrders", "о");
+                await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronics", "о");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+            return Ok();
+
+
+        }
+
         // PUT: api/Orders/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

@@ -1,0 +1,1658 @@
+2022-05-06 08:25:29.279 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 08:25:29.309 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 08:25:29.310 +05:00 [INF] Hosting environment: Development
+2022-05-06 08:25:29.311 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 08:26:04.113 +05:00 [INF] Application is shutting down...
+2022-05-06 08:26:20.899 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 08:26:20.925 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 08:26:20.926 +05:00 [INF] Hosting environment: Development
+2022-05-06 08:26:20.927 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 08:26:36.665 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 08:26:36.730 +05:00 [INF] HTTP POST /userToken responded 200 in 1499.6044 ms
+2022-05-06 08:26:36.964 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 49.1895 ms
+2022-05-06 08:26:37.293 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 08:26:40.676 +05:00 [INF] HTTP GET /api/Categories responded 200 in 62.6032 ms
+2022-05-06 08:26:40.767 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 42.2572 ms
+2022-05-06 08:26:41.419 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 547.3054 ms
+2022-05-06 08:26:43.274 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 118.1587 ms
+2022-05-06 08:26:43.931 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 99.6674 ms
+2022-05-06 08:26:44.476 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 74.1077 ms
+2022-05-06 08:26:45.275 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 94.8146 ms
+2022-05-06 08:26:45.798 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 88.4837 ms
+2022-05-06 08:26:47.185 +05:00 [INF] HTTP GET /api/Status responded 200 in 12.6006 ms
+2022-05-06 08:26:47.311 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 79.4171 ms
+2022-05-06 08:26:47.392 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 46.6392 ms
+2022-05-06 08:26:50.070 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 81.0977 ms
+2022-05-06 08:27:02.267 +05:00 [INF] admin отключен от системы
+2022-05-06 08:27:02.271 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 25250.3666 ms
+2022-05-06 08:31:09.155 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 08:31:09.182 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 08:31:09.183 +05:00 [INF] Hosting environment: Development
+2022-05-06 08:31:09.183 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 08:49:46.916 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 08:49:46.949 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 08:49:46.950 +05:00 [INF] Hosting environment: Development
+2022-05-06 08:49:46.950 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 08:50:03.418 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 08:50:03.480 +05:00 [INF] HTTP POST /userToken responded 200 in 1238.5451 ms
+2022-05-06 08:50:03.720 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 63.2848 ms
+2022-05-06 08:50:03.938 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 08:50:04.829 +05:00 [INF] HTTP GET /api/Categories responded 200 in 64.3203 ms
+2022-05-06 08:50:04.919 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 48.4482 ms
+2022-05-06 08:50:05.394 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 365.8534 ms
+2022-05-06 08:50:07.466 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 80.2432 ms
+2022-05-06 08:50:08.270 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 102.0172 ms
+2022-05-06 08:50:08.898 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 143.1164 ms
+2022-05-06 08:50:10.836 +05:00 [INF] admin отключен от системы
+2022-05-06 08:50:10.843 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 6971.0714 ms
+2022-05-06 08:50:48.434 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 08:50:48.462 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 08:50:48.463 +05:00 [INF] Hosting environment: Development
+2022-05-06 08:50:48.464 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 08:50:58.477 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 08:50:58.505 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 08:50:58.506 +05:00 [INF] Hosting environment: Development
+2022-05-06 08:50:58.507 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 09:18:36.859 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 09:18:36.887 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 09:18:36.888 +05:00 [INF] Hosting environment: Development
+2022-05-06 09:18:36.888 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 09:19:05.343 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 09:19:05.400 +05:00 [INF] HTTP POST /userToken responded 200 in 1230.0323 ms
+2022-05-06 09:19:05.634 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 50.6219 ms
+2022-05-06 09:19:05.762 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 09:19:06.799 +05:00 [INF] HTTP GET /api/Categories responded 200 in 60.8566 ms
+2022-05-06 09:19:06.940 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 97.8486 ms
+2022-05-06 09:19:07.323 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 330.1453 ms
+2022-05-06 09:19:10.700 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 81.1049 ms
+2022-05-06 09:19:11.264 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 90.9135 ms
+2022-05-06 09:19:12.363 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 136.1927 ms
+2022-05-06 09:19:15.143 +05:00 [INF] HTTP GET /api/Status responded 200 in 14.1965 ms
+2022-05-06 09:19:15.265 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 82.9885 ms
+2022-05-06 09:19:15.332 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 34.0275 ms
+2022-05-06 09:19:23.359 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 143.8866 ms
+2022-05-06 09:19:33.783 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 3.1073 ms
+2022-05-06 09:19:34.241 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 32.9385 ms
+2022-05-06 09:19:49.887 +05:00 [INF] admin отключен от системы
+2022-05-06 09:19:49.892 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 44199.2125 ms
+2022-05-06 09:21:03.311 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 09:21:03.312 +05:00 [INF] HTTP POST /userToken responded 200 in 9.9171 ms
+2022-05-06 09:21:03.491 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.3994 ms
+2022-05-06 09:21:03.638 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 09:21:06.080 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.1930 ms
+2022-05-06 09:21:06.190 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 8.7127 ms
+2022-05-06 09:21:06.487 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 162.7431 ms
+2022-05-06 09:21:07.678 +05:00 [INF] HTTP GET /api/Status responded 200 in 1.5536 ms
+2022-05-06 09:21:07.733 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 37.3911 ms
+2022-05-06 09:21:07.870 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 33.8107 ms
+2022-05-06 09:21:13.279 +05:00 [INF] admin отключен от системы
+2022-05-06 09:21:13.281 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 9691.1054 ms
+2022-05-06 09:21:52.988 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 09:21:52.989 +05:00 [INF] HTTP POST /userToken responded 200 in 7.3779 ms
+2022-05-06 09:21:53.159 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.2667 ms
+2022-05-06 09:21:53.318 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 09:21:54.157 +05:00 [INF] HTTP GET /api/Categories responded 200 in 3.7812 ms
+2022-05-06 09:21:54.271 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 9.9479 ms
+2022-05-06 09:21:54.589 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 170.7864 ms
+2022-05-06 09:21:57.599 +05:00 [INF] HTTP GET /api/Status responded 200 in 1.6032 ms
+2022-05-06 09:22:08.942 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 35.7526 ms
+2022-05-06 09:22:17.498 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 52.1921 ms
+2022-05-06 09:22:19.076 +05:00 [INF] admin отключен от системы
+2022-05-06 09:22:19.078 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 25809.3689 ms
+2022-05-06 09:22:45.346 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 09:22:45.347 +05:00 [INF] HTTP POST /userToken responded 200 in 3.9173 ms
+2022-05-06 09:22:45.517 +05:00 [INF] HTTP POST /technoWorldHub/negotiate responded 200 in 0.3402 ms
+2022-05-06 09:22:45.674 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 09:22:46.290 +05:00 [INF] HTTP GET /api/Categories responded 200 in 4.0876 ms
+2022-05-06 09:22:46.402 +05:00 [INF] HTTP GET /api/ElectrnicsTypes/All responded 200 in 8.7107 ms
+2022-05-06 09:22:46.712 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 171.2151 ms
+2022-05-06 09:22:48.935 +05:00 [INF] HTTP GET /api/Status responded 200 in 1.0695 ms
+2022-05-06 09:22:48.989 +05:00 [INF] HTTP GET /api/Deliveries/Filter responded 200 in 35.2745 ms
+2022-05-06 09:22:51.313 +05:00 [INF] HTTP GET /api/Orders/Filter responded 200 in 50.9288 ms
+2022-05-06 09:25:17.261 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 99.7836 ms
+2022-05-06 09:25:18.755 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 140.7334 ms
+2022-05-06 09:25:20.069 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 101.1882 ms
+2022-05-06 09:25:20.518 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 63.4786 ms
+2022-05-06 09:25:21.015 +05:00 [INF] HTTP GET /api/Electronics/Filter responded 200 in 77.5198 ms
+2022-05-06 09:25:39.657 +05:00 [INF] admin отключен от системы
+2022-05-06 09:25:39.659 +05:00 [INF] HTTP GET /technoWorldHub responded 101 in 174034.0493 ms
+2022-05-06 09:26:20.536 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 09:26:20.564 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 09:26:20.565 +05:00 [INF] Hosting environment: Development
+2022-05-06 09:26:20.566 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 09:26:37.931 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 09:26:37.958 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 09:26:37.959 +05:00 [INF] Hosting environment: Development
+2022-05-06 09:26:37.960 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 09:26:59.404 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 09:26:59.809 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 09:28:16.791 +05:00 [INF] admin отключен от системы
+2022-05-06 09:28:31.817 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 09:28:31.844 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 09:28:31.845 +05:00 [INF] Hosting environment: Development
+2022-05-06 09:28:31.846 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 09:28:50.201 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 09:28:50.621 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 09:28:56.165 +05:00 [INF] admin отключен от системы
+2022-05-06 09:29:12.645 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 09:29:12.674 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 09:29:12.675 +05:00 [INF] Hosting environment: Development
+2022-05-06 09:29:12.676 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 09:36:19.407 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 09:36:19.435 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 09:36:19.435 +05:00 [INF] Hosting environment: Development
+2022-05-06 09:36:19.436 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 09:36:47.195 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 09:36:47.252 +05:00 [INF] Handled /userToken
+2022-05-06 09:36:47.474 +05:00 [INF] Handled /technoWorldHub/negotiate
+2022-05-06 09:36:47.704 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 09:36:51.245 +05:00 [INF] Handled /api/Categories
+2022-05-06 09:36:51.385 +05:00 [INF] Handled /api/ElectrnicsTypes/All
+2022-05-06 09:36:51.783 +05:00 [INF] Handled /api/Electronics/Filter
+2022-05-06 09:38:24.970 +05:00 [INF] admin отключен от системы
+2022-05-06 09:38:24.973 +05:00 [INF] Application is shutting down...
+2022-05-06 09:38:24.974 +05:00 [INF] Handled /technoWorldHub
+2022-05-06 09:46:31.945 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 09:46:31.972 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 09:46:31.973 +05:00 [INF] Hosting environment: Development
+2022-05-06 09:46:31.974 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 09:46:58.373 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 09:46:58.436 +05:00 [INF] Запрос на POST /userToken ответил 200 за 1265.2234 мс
+2022-05-06 09:46:58.660 +05:00 [INF] Запрос на POST /technoWorldHub/negotiate ответил 200 за 59.3002 мс
+2022-05-06 09:46:58.787 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 09:47:18.742 +05:00 [INF] Запрос на GET /api/Categories ответил 200 за 63.4764 мс
+2022-05-06 09:47:18.830 +05:00 [INF] Запрос на GET /api/ElectrnicsTypes/All ответил 200 за 36.9755 мс
+2022-05-06 09:47:19.325 +05:00 [INF] Запрос на GET /api/Electronics/Filter ответил 200 за 351.9448 мс
+2022-05-06 09:47:24.984 +05:00 [INF] admin отключен от системы
+2022-05-06 09:47:24.989 +05:00 [INF] Запрос на GET /technoWorldHub ответил 101 за 26273.3110 мс
+2022-05-06 10:05:59.346 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 10:05:59.374 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:05:59.375 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:05:59.375 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:06:21.118 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 10:06:21.539 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 10:06:36.079 +05:00 [INF] admin отключен от системы
+2022-05-06 10:06:52.899 +05:00 [INF] Application is shutting down...
+2022-05-06 10:07:20.064 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 10:07:20.095 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:07:20.096 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:07:20.097 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:07:23.230 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 10:07:23.310 +05:00 [INF] Запрос на POST /userToken ответил 200 за 1652.1043 мс
+2022-05-06 10:07:23.528 +05:00 [INF] Запрос на POST /technoWorldHub/negotiate ответил 200 за 70.2590 мс
+2022-05-06 10:07:23.649 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 10:07:25.839 +05:00 [INF] Запрос на GET /api/Categories ответил 200 за 96.7427 мс
+2022-05-06 10:07:25.934 +05:00 [INF] Запрос на GET /api/ElectrnicsTypes/All ответил 200 за 73.2950 мс
+2022-05-06 10:07:26.363 +05:00 [INF] Запрос на GET /api/Electronics/Filter ответил 200 за 365.8211 мс
+2022-05-06 10:08:40.921 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 10:08:40.955 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:08:40.955 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:08:40.956 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:09:07.163 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 10:09:07.195 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:09:07.195 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:09:07.196 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:09:08.373 +05:00 [INF] Application is shutting down...
+2022-05-06 10:10:31.270 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-06 10:10:31.299 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:10:31.300 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:10:31.300 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:10:39.136 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 10:10:39.194 +05:00 [INF] Запрос от 127.0.0.1:63398 на POST /userToken ответил 200 за 1143.7401 мс | localhost:5000
+2022-05-06 10:10:39.246 +05:00 [INF] Запрос от 127.0.0.1:63399 на POST /technoWorldHub/negotiate ответил 200 за 55.6798 мс | localhost:5000
+2022-05-06 10:10:39.271 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 10:10:42.930 +05:00 [INF] Запрос от 127.0.0.1:63398 на GET /api/Categories ответил 200 за 83.8143 мс | localhost:5000
+2022-05-06 10:10:43.005 +05:00 [INF] Запрос от 127.0.0.1:63398 на GET /api/ElectrnicsTypes/All ответил 200 за 38.9742 мс | localhost:5000
+2022-05-06 10:10:43.358 +05:00 [INF] Запрос от 127.0.0.1:63398 на GET /api/Electronics/Filter ответил 200 за 348.2789 мс | localhost:5000
+2022-05-06 10:11:20.704 +05:00 [INF] admin отключен от системы
+2022-05-06 10:15:06.017 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:15:06.047 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:15:06.048 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:15:06.049 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:16:59.496 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:16:59.525 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:16:59.526 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:16:59.526 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:17:18.920 +05:00 [INF] Application is shutting down...
+2022-05-06 10:18:03.020 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:18:03.047 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:18:03.048 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:18:03.049 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:18:18.356 +05:00 [INF] Запрос от 172.20.1.3:62901 на POST /terminalToken ответил 200 за 305.0509 мс | 172.20.1.165:5000
+2022-05-06 10:18:18.547 +05:00 [INF] Запрос от 172.20.1.3:50446 на POST /technoWorldHub/negotiate ответил 200 за 42.1676 мс | 172.20.1.165:5000
+2022-05-06 10:18:18.857 +05:00 [INF] Запрос от 172.20.1.3:61014 на POST /technoWorldHub/negotiate ответил 200 за 0.3682 мс | 172.20.1.165:5000
+2022-05-06 10:18:19.637 +05:00 [INF] Запрос от 172.20.1.3:50446 на GET /api/Categories ответил 200 за 913.7565 мс | 172.20.1.165:5000
+2022-05-06 10:18:20.973 +05:00 [INF] Запрос от 172.20.1.3:64261 на GET /api/ElectrnicsTypes ответил 200 за 109.0242 мс | 172.20.1.165:5000
+2022-05-06 10:18:20.975 +05:00 [INF] Запрос от 172.20.1.3:50446 на GET /api/Manufacturers ответил 200 за 113.5654 мс | 172.20.1.165:5000
+2022-05-06 10:18:21.010 +05:00 [INF] Запрос от 172.20.1.3:63783 на POST /technoWorldHub ответил 200 за 1.2973 мс | 172.20.1.165:5000
+2022-05-06 10:18:21.021 +05:00 [INF] Подключенин терминал: terminal_896b08a4-9d83-453c-a7b1-1162e82f0218
+2022-05-06 10:18:22.709 +05:00 [INF] terminal_896b08a4-9d83-453c-a7b1-1162e82f0218 отключен от системы
+2022-05-06 10:18:22.713 +05:00 [INF] Запрос от 172.20.1.3:61014 на GET /technoWorldHub ответил 200 за 3835.0547 мс | 172.20.1.165:5000
+2022-05-06 10:18:44.993 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 10:18:44.994 +05:00 [INF] Запрос от 172.20.1.165:55054 на POST /userToken ответил 200 за 69.0907 мс | 172.20.1.165:5000
+2022-05-06 10:18:45.178 +05:00 [INF] Запрос от 172.20.1.165:55057 на POST /technoWorldHub/negotiate ответил 200 за 0.2653 мс | 172.20.1.165:5000
+2022-05-06 10:18:45.339 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 10:19:08.938 +05:00 [INF] Запрос от 172.20.1.165:55054 на GET /api/Categories ответил 200 за 7.3721 мс | 172.20.1.165:5000
+2022-05-06 10:19:09.057 +05:00 [INF] Запрос от 172.20.1.165:55054 на GET /api/ElectrnicsTypes/All ответил 200 за 18.9136 мс | 172.20.1.165:5000
+2022-05-06 10:19:09.516 +05:00 [INF] Запрос от 172.20.1.165:55054 на GET /api/Electronics/Filter ответил 200 за 309.9762 мс | 172.20.1.165:5000
+2022-05-06 10:19:13.398 +05:00 [INF] Запрос от 172.20.1.165:55054 на GET /api/Orders/Filter ответил 200 за 88.6375 мс | 172.20.1.165:5000
+2022-05-06 10:19:19.797 +05:00 [INF] Запрос от 172.20.1.3:60278 на POST /terminalToken ответил 200 за 2.6983 мс | 172.20.1.165:5000
+2022-05-06 10:19:19.933 +05:00 [INF] Запрос от 172.20.1.3:53307 на POST /technoWorldHub/negotiate ответил 200 за 0.3408 мс | 172.20.1.165:5000
+2022-05-06 10:19:20.155 +05:00 [INF] Запрос от 172.20.1.3:53307 на GET /api/Categories ответил 200 за 5.4259 мс | 172.20.1.165:5000
+2022-05-06 10:19:20.298 +05:00 [INF] Запрос от 172.20.1.3:54403 на POST /technoWorldHub/negotiate ответил 200 за 0.6655 мс | 172.20.1.165:5000
+2022-05-06 10:19:22.398 +05:00 [INF] Запрос от 172.20.1.3:64170 на POST /technoWorldHub ответил 200 за 0.2830 мс | 172.20.1.165:5000
+2022-05-06 10:19:22.399 +05:00 [INF] Подключенин терминал: terminal_88b3b9bf-9ffd-48ad-b2ba-ea7d473e6815
+2022-05-06 10:19:23.433 +05:00 [INF] Запрос от 172.20.1.3:61732 на POST /technoWorldHub ответил 200 за 0.7223 мс | 172.20.1.165:5000
+2022-05-06 10:19:32.127 +05:00 [INF] Запрос от 172.20.1.3:64424 на GET /api/ElectrnicsTypes ответил 200 за 3.8790 мс | 172.20.1.165:5000
+2022-05-06 10:19:32.133 +05:00 [INF] Запрос от 172.20.1.3:61732 на GET /api/Manufacturers ответил 200 за 12.9989 мс | 172.20.1.165:5000
+2022-05-06 10:19:33.412 +05:00 [INF] terminal_88b3b9bf-9ffd-48ad-b2ba-ea7d473e6815 отключен от системы
+2022-05-06 10:19:33.412 +05:00 [INF] Запрос от 172.20.1.3:54403 на GET /technoWorldHub ответил 200 за 13083.5384 мс | 172.20.1.165:5000
+2022-05-06 10:19:36.875 +05:00 [INF] admin отключен от системы
+2022-05-06 10:19:36.877 +05:00 [INF] Запрос от 172.20.1.165:55060 на GET /technoWorldHub ответил 101 за 51590.3058 мс | 172.20.1.165:5000
+2022-05-06 10:20:12.061 +05:00 [INF] Запрос от 172.20.1.165:55808 на POST /terminalToken ответил 200 за 1.7282 мс | 172.20.1.165:5000
+2022-05-06 10:20:12.241 +05:00 [INF] Запрос от 172.20.1.165:55811 на POST /technoWorldHub/negotiate ответил 200 за 0.2195 мс | 172.20.1.165:5000
+2022-05-06 10:20:12.577 +05:00 [INF] Запрос от 172.20.1.165:55808 на GET /api/Categories ответил 200 за 4.4021 мс | 172.20.1.165:5000
+2022-05-06 10:20:12.784 +05:00 [INF] Подключенин терминал: terminal_3f49f4d4-6564-42dc-b54a-35ac78fb1285
+2022-05-06 10:20:17.763 +05:00 [INF] Запрос от 172.20.1.3:63557 на POST /terminalToken ответил 200 за 0.3956 мс | 172.20.1.165:5000
+2022-05-06 10:20:17.898 +05:00 [INF] Запрос от 172.20.1.3:57496 на POST /technoWorldHub/negotiate ответил 200 за 0.2186 мс | 172.20.1.165:5000
+2022-05-06 10:20:18.131 +05:00 [INF] Запрос от 172.20.1.3:57496 на GET /api/Categories ответил 200 за 8.4968 мс | 172.20.1.165:5000
+2022-05-06 10:20:18.267 +05:00 [INF] Запрос от 172.20.1.3:60600 на POST /technoWorldHub/negotiate ответил 200 за 0.1967 мс | 172.20.1.165:5000
+2022-05-06 10:20:19.385 +05:00 [INF] Запрос от 172.20.1.3:63982 на POST /technoWorldHub ответил 200 за 0.5174 мс | 172.20.1.165:5000
+2022-05-06 10:20:19.385 +05:00 [INF] Подключенин терминал: terminal_e313a6bd-5f48-46e3-b932-7b43b1db4ef1
+2022-05-06 10:20:19.597 +05:00 [INF] Запрос от 172.20.1.3:60389 на GET /api/ElectrnicsTypes ответил 200 за 3.8540 мс | 172.20.1.165:5000
+2022-05-06 10:20:19.603 +05:00 [INF] Запрос от 172.20.1.3:63982 на GET /api/Manufacturers ответил 200 за 12.1026 мс | 172.20.1.165:5000
+2022-05-06 10:20:20.242 +05:00 [INF] Запрос от 172.20.1.165:55824 на GET /api/ElectrnicsTypes ответил 200 за 6.6748 мс | 172.20.1.165:5000
+2022-05-06 10:20:20.243 +05:00 [INF] Запрос от 172.20.1.165:55808 на GET /api/Manufacturers ответил 200 за 11.6364 мс | 172.20.1.165:5000
+2022-05-06 10:20:20.867 +05:00 [INF] terminal_e313a6bd-5f48-46e3-b932-7b43b1db4ef1 отключен от системы
+2022-05-06 10:20:20.868 +05:00 [INF] Запрос от 172.20.1.3:60600 на GET /technoWorldHub ответил 200 за 2576.9115 мс | 172.20.1.165:5000
+2022-05-06 10:20:33.897 +05:00 [INF] terminal_3f49f4d4-6564-42dc-b54a-35ac78fb1285 отключен от системы
+2022-05-06 10:20:33.899 +05:00 [INF] Запрос от 172.20.1.165:55814 на GET /technoWorldHub ответил 101 за 21179.4884 мс | 172.20.1.165:5000
+2022-05-06 10:20:52.223 +05:00 [INF] Запрос от 172.20.1.3:55635 на POST /terminalToken ответил 200 за 0.4242 мс | 172.20.1.165:5000
+2022-05-06 10:20:52.358 +05:00 [INF] Запрос от 172.20.1.3:58141 на POST /technoWorldHub/negotiate ответил 200 за 0.4030 мс | 172.20.1.165:5000
+2022-05-06 10:20:52.585 +05:00 [INF] Запрос от 172.20.1.3:58141 на GET /api/Categories ответил 200 за 4.7024 мс | 172.20.1.165:5000
+2022-05-06 10:20:52.727 +05:00 [INF] Запрос от 172.20.1.3:53028 на POST /technoWorldHub/negotiate ответил 200 за 0.1697 мс | 172.20.1.165:5000
+2022-05-06 10:20:53.833 +05:00 [INF] Запрос от 172.20.1.3:51859 на POST /technoWorldHub ответил 200 за 0.1905 мс | 172.20.1.165:5000
+2022-05-06 10:20:53.833 +05:00 [INF] Подключенин терминал: terminal_5a325afa-3891-4927-ba22-a1589ef27426
+2022-05-06 10:20:54.856 +05:00 [INF] Запрос от 172.20.1.3:64256 на POST /technoWorldHub ответил 200 за 0.1532 мс | 172.20.1.165:5000
+2022-05-06 10:21:09.984 +05:00 [INF] Запрос от 172.20.1.3:63838 на POST /technoWorldHub ответил 200 за 0.1526 мс | 172.20.1.165:5000
+2022-05-06 10:21:25.073 +05:00 [INF] Запрос от 172.20.1.3:55059 на POST /technoWorldHub ответил 200 за 0.1517 мс | 172.20.1.165:5000
+2022-05-06 10:21:40.168 +05:00 [INF] Запрос от 172.20.1.3:53961 на POST /technoWorldHub ответил 200 за 0.1805 мс | 172.20.1.165:5000
+2022-05-06 10:21:55.275 +05:00 [INF] Запрос от 172.20.1.3:50136 на POST /technoWorldHub ответил 200 за 0.1357 мс | 172.20.1.165:5000
+2022-05-06 10:22:00.322 +05:00 [INF] terminal_5a325afa-3891-4927-ba22-a1589ef27426 отключен от системы
+2022-05-06 10:22:00.326 +05:00 [INF] Запрос от 172.20.1.3:53028 на GET /technoWorldHub ответил 200 за 67566.4055 мс | 172.20.1.165:5000
+2022-05-06 10:22:17.851 +05:00 [INF] Запрос от 172.20.1.3:56937 на POST /terminalToken ответил 200 за 1.2909 мс | 172.20.1.165:5000
+2022-05-06 10:22:17.986 +05:00 [INF] Запрос от 172.20.1.3:63264 на POST /technoWorldHub/negotiate ответил 200 за 0.6418 мс | 172.20.1.165:5000
+2022-05-06 10:22:18.225 +05:00 [INF] Запрос от 172.20.1.3:63264 на GET /api/Categories ответил 200 за 11.8650 мс | 172.20.1.165:5000
+2022-05-06 10:22:18.363 +05:00 [INF] Запрос от 172.20.1.3:63589 на POST /technoWorldHub/negotiate ответил 200 за 0.1526 мс | 172.20.1.165:5000
+2022-05-06 10:22:19.220 +05:00 [INF] Запрос от 172.20.1.3:51218 на GET /api/ElectrnicsTypes ответил 200 за 7.5600 мс | 172.20.1.165:5000
+2022-05-06 10:22:19.227 +05:00 [INF] Запрос от 172.20.1.3:56103 на GET /api/Manufacturers ответил 200 за 16.5301 мс | 172.20.1.165:5000
+2022-05-06 10:22:19.468 +05:00 [INF] Запрос от 172.20.1.3:61989 на POST /technoWorldHub ответил 200 за 0.1861 мс | 172.20.1.165:5000
+2022-05-06 10:22:19.468 +05:00 [INF] Подключенин терминал: terminal_72b3039c-521f-4fa1-ae85-14daa6d76559
+2022-05-06 10:22:19.585 +05:00 [INF] Запрос от 172.20.1.3:56103 на GET /api/Electronics/TerminalFilter ответил 200 за 233.0955 мс | 172.20.1.165:5000
+2022-05-06 10:22:20.503 +05:00 [INF] Запрос от 172.20.1.3:56466 на POST /technoWorldHub ответил 200 за 0.1721 мс | 172.20.1.165:5000
+2022-05-06 10:22:33.184 +05:00 [INF] terminal_72b3039c-521f-4fa1-ae85-14daa6d76559 отключен от системы
+2022-05-06 10:22:33.186 +05:00 [INF] Запрос от 172.20.1.3:63589 на GET /technoWorldHub ответил 200 за 14788.2788 мс | 172.20.1.165:5000
+2022-05-06 10:22:57.040 +05:00 [INF] Запрос от 172.20.1.165:57909 на POST /terminalToken ответил 200 за 1.5799 мс | 172.20.1.165:5000
+2022-05-06 10:22:57.211 +05:00 [INF] Запрос от 172.20.1.165:57912 на POST /technoWorldHub/negotiate ответил 200 за 0.2014 мс | 172.20.1.165:5000
+2022-05-06 10:22:57.560 +05:00 [INF] Запрос от 172.20.1.165:57909 на GET /api/Categories ответил 200 за 5.3665 мс | 172.20.1.165:5000
+2022-05-06 10:22:57.756 +05:00 [INF] Подключенин терминал: terminal_c081654d-0527-4064-918b-3f3c4a8dbb25
+2022-05-06 10:22:58.352 +05:00 [INF] Запрос от 172.20.1.165:57918 на GET /api/ElectrnicsTypes ответил 200 за 7.1415 мс | 172.20.1.165:5000
+2022-05-06 10:22:58.361 +05:00 [INF] Запрос от 172.20.1.165:57909 на GET /api/Manufacturers ответил 200 за 19.6816 мс | 172.20.1.165:5000
+2022-05-06 10:22:58.708 +05:00 [INF] Запрос от 172.20.1.165:57909 на GET /api/Electronics/TerminalFilter ответил 200 за 180.9699 мс | 172.20.1.165:5000
+2022-05-06 10:23:17.653 +05:00 [INF] terminal_c081654d-0527-4064-918b-3f3c4a8dbb25 отключен от системы
+2022-05-06 10:23:17.655 +05:00 [INF] Запрос от 172.20.1.165:57915 на GET /technoWorldHub ответил 101 за 19964.3245 мс | 172.20.1.165:5000
+2022-05-06 10:24:00.894 +05:00 [INF] Запрос от 172.20.1.165:58600 на POST /terminalToken ответил 200 за 1.6214 мс | 172.20.1.165:5000
+2022-05-06 10:24:01.073 +05:00 [INF] Запрос от 172.20.1.165:58603 на POST /technoWorldHub/negotiate ответил 200 за 0.1874 мс | 172.20.1.165:5000
+2022-05-06 10:24:01.435 +05:00 [INF] Запрос от 172.20.1.165:58600 на GET /api/Categories ответил 200 за 4.4581 мс | 172.20.1.165:5000
+2022-05-06 10:24:01.627 +05:00 [INF] Подключенин терминал: terminal_7baa73c4-5efc-46ed-a2b6-bc6ced80a663
+2022-05-06 10:24:02.380 +05:00 [INF] Запрос от 172.20.1.165:58609 на GET /api/ElectrnicsTypes ответил 200 за 3.9212 мс | 172.20.1.165:5000
+2022-05-06 10:24:02.390 +05:00 [INF] Запрос от 172.20.1.165:58600 на GET /api/Manufacturers ответил 200 за 20.9015 мс | 172.20.1.165:5000
+2022-05-06 10:24:02.658 +05:00 [INF] Запрос от 172.20.1.165:58600 на GET /api/Electronics/TerminalFilter ответил 200 за 105.5309 мс | 172.20.1.165:5000
+2022-05-06 10:24:27.565 +05:00 [INF] terminal_7baa73c4-5efc-46ed-a2b6-bc6ced80a663 отключен от системы
+2022-05-06 10:24:27.568 +05:00 [INF] Запрос от 172.20.1.165:58606 на GET /technoWorldHub ответил 101 за 26003.5371 мс | 172.20.1.165:5000
+2022-05-06 10:24:30.614 +05:00 [INF] Запрос от 172.20.1.165:59053 на POST /terminalToken ответил 200 за 0.4146 мс | 172.20.1.165:5000
+2022-05-06 10:24:30.798 +05:00 [INF] Запрос от 172.20.1.165:59056 на POST /technoWorldHub/negotiate ответил 200 за 0.1863 мс | 172.20.1.165:5000
+2022-05-06 10:24:31.153 +05:00 [INF] Запрос от 172.20.1.165:59053 на GET /api/Categories ответил 200 за 6.2162 мс | 172.20.1.165:5000
+2022-05-06 10:24:31.357 +05:00 [INF] Подключенин терминал: terminal_e7261782-4499-4705-90b7-a1cf85c69398
+2022-05-06 10:24:32.723 +05:00 [INF] Запрос от 172.20.1.165:59221 на GET /api/ElectrnicsTypes ответил 200 за 6.7966 мс | 172.20.1.165:5000
+2022-05-06 10:24:32.728 +05:00 [INF] Запрос от 172.20.1.165:59053 на GET /api/Manufacturers ответил 200 за 14.6236 мс | 172.20.1.165:5000
+2022-05-06 10:24:33.002 +05:00 [INF] Запрос от 172.20.1.165:59053 на GET /api/Electronics/TerminalFilter ответил 200 за 121.9888 мс | 172.20.1.165:5000
+2022-05-06 10:24:53.218 +05:00 [INF] terminal_e7261782-4499-4705-90b7-a1cf85c69398 отключен от системы
+2022-05-06 10:24:53.220 +05:00 [INF] Запрос от 172.20.1.165:59092 на GET /technoWorldHub ответил 101 за 21928.5142 мс | 172.20.1.165:5000
+2022-05-06 10:25:30.524 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:25:30.555 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:25:30.555 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:25:30.556 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:25:43.335 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:25:43.373 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:25:43.374 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:25:43.374 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:25:46.090 +05:00 [INF] Запрос от 172.20.1.165:60243 на POST /terminalToken ответил 200 за 333.3768 мс | 172.20.1.165:5000
+2022-05-06 10:25:46.358 +05:00 [INF] Запрос от 172.20.1.165:60246 на POST /technoWorldHub/negotiate ответил 200 за 54.2183 мс | 172.20.1.165:5000
+2022-05-06 10:25:46.989 +05:00 [INF] Подключенин терминал: terminal_8d85de14-c2a3-4b50-a3f0-76723375830e
+2022-05-06 10:25:47.830 +05:00 [INF] Запрос от 172.20.1.165:60243 на GET /api/Categories ответил 200 за 1189.2584 мс | 172.20.1.165:5000
+2022-05-06 10:25:48.638 +05:00 [INF] Запрос от 172.20.1.165:60253 на GET /api/ElectrnicsTypes ответил 200 за 130.8031 мс | 172.20.1.165:5000
+2022-05-06 10:25:48.638 +05:00 [INF] Запрос от 172.20.1.165:60243 на GET /api/Manufacturers ответил 200 за 139.3658 мс | 172.20.1.165:5000
+2022-05-06 10:25:49.001 +05:00 [INF] Запрос от 172.20.1.165:60243 на GET /api/Electronics/TerminalFilter ответил 200 за 271.0283 мс | 172.20.1.165:5000
+2022-05-06 10:25:52.459 +05:00 [INF] Создан новый заказ с номером 3JE73I9E1U
+2022-05-06 10:25:52.495 +05:00 [INF] Запрос от 172.20.1.165:60243 на POST /api/Orders ответил 201 за 194.8548 мс | 172.20.1.165:5000
+2022-05-06 10:25:58.728 +05:00 [INF] terminal_8d85de14-c2a3-4b50-a3f0-76723375830e отключен от системы
+2022-05-06 10:25:58.735 +05:00 [INF] Запрос от 172.20.1.165:60250 на GET /technoWorldHub ответил 101 за 11930.0691 мс | 172.20.1.165:5000
+2022-05-06 10:26:46.639 +05:00 [INF] Запрос от 172.20.1.3:63000 на POST /terminalToken ответил 200 за 1.9514 мс | 172.20.1.165:5000
+2022-05-06 10:26:46.779 +05:00 [INF] Запрос от 172.20.1.3:57506 на POST /technoWorldHub/negotiate ответил 200 за 0.2614 мс | 172.20.1.165:5000
+2022-05-06 10:26:47.015 +05:00 [INF] Запрос от 172.20.1.3:57506 на GET /api/Categories ответил 200 за 9.0022 мс | 172.20.1.165:5000
+2022-05-06 10:26:47.150 +05:00 [INF] Запрос от 172.20.1.3:59688 на POST /technoWorldHub/negotiate ответил 200 за 0.8247 мс | 172.20.1.165:5000
+2022-05-06 10:26:49.091 +05:00 [INF] Запрос от 172.20.1.3:61966 на GET /api/ElectrnicsTypes ответил 200 за 7.8240 мс | 172.20.1.165:5000
+2022-05-06 10:26:49.096 +05:00 [INF] Запрос от 172.20.1.3:55062 на GET /api/Manufacturers ответил 200 за 14.3333 мс | 172.20.1.165:5000
+2022-05-06 10:26:49.249 +05:00 [INF] Запрос от 172.20.1.3:60194 на POST /technoWorldHub ответил 200 за 2.7651 мс | 172.20.1.165:5000
+2022-05-06 10:26:49.250 +05:00 [INF] Подключенин терминал: terminal_a374236f-8d9a-4e14-8253-767e868ab2dd
+2022-05-06 10:26:49.341 +05:00 [INF] Запрос от 172.20.1.3:55062 на GET /api/Electronics/TerminalFilter ответил 200 за 117.4947 мс | 172.20.1.165:5000
+2022-05-06 10:26:50.279 +05:00 [INF] Запрос от 172.20.1.3:59025 на POST /technoWorldHub ответил 200 за 0.8436 мс | 172.20.1.165:5000
+2022-05-06 10:26:57.014 +05:00 [INF] Создан новый заказ с номером GCY28HX44V
+2022-05-06 10:26:57.018 +05:00 [INF] Запрос от 172.20.1.3:54771 на POST /api/Orders ответил 201 за 14.0853 мс | 172.20.1.165:5000
+2022-05-06 10:27:01.366 +05:00 [INF] Запрос от 172.20.1.3:54771 на GET /api/Electronics/TerminalFilter ответил 200 за 62.0822 мс | 172.20.1.165:5000
+2022-05-06 10:27:05.343 +05:00 [INF] Запрос от 172.20.1.3:51020 на POST /technoWorldHub ответил 200 за 0.6814 мс | 172.20.1.165:5000
+2022-05-06 10:27:07.429 +05:00 [INF] Запрос от 172.20.1.3:51020 на GET /api/Electronics/TerminalFilter ответил 200 за 40.3729 мс | 172.20.1.165:5000
+2022-05-06 10:27:07.498 +05:00 [INF] Запрос от 172.20.1.3:51020 на GET /api/Electronics/TerminalFilter ответил 200 за 51.4697 мс | 172.20.1.165:5000
+2022-05-06 10:27:12.057 +05:00 [INF] Запрос от 172.20.1.3:51020 на GET /api/Electronics/TerminalFilter ответил 200 за 43.6293 мс | 172.20.1.165:5000
+2022-05-06 10:27:12.418 +05:00 [INF] Запрос от 172.20.1.3:51020 на GET /api/Electronics/TerminalFilter ответил 200 за 69.5651 мс | 172.20.1.165:5000
+2022-05-06 10:27:14.428 +05:00 [INF] Запрос от 172.20.1.3:51020 на GET /api/Electronics/TerminalFilter ответил 200 за 55.6334 мс | 172.20.1.165:5000
+2022-05-06 10:27:20.362 +05:00 [INF] Запрос от 172.20.1.3:54610 на POST /technoWorldHub ответил 200 за 0.1773 мс | 172.20.1.165:5000
+2022-05-06 10:27:25.362 +05:00 [INF] Создан новый заказ с номером WEJ3XDCEMA
+2022-05-06 10:27:25.365 +05:00 [INF] Запрос от 172.20.1.3:52363 на POST /api/Orders ответил 201 за 9.8589 мс | 172.20.1.165:5000
+2022-05-06 10:27:35.388 +05:00 [INF] Запрос от 172.20.1.3:63427 на POST /technoWorldHub ответил 200 за 0.2126 мс | 172.20.1.165:5000
+2022-05-06 10:27:50.422 +05:00 [INF] Запрос от 172.20.1.3:59026 на POST /technoWorldHub ответил 200 за 0.5997 мс | 172.20.1.165:5000
+2022-05-06 10:27:54.012 +05:00 [INF] Запрос от 172.20.1.3:51362 на POST /terminalToken ответил 200 за 0.6423 мс | 172.20.1.165:5000
+2022-05-06 10:27:54.165 +05:00 [INF] Запрос от 172.20.1.3:52672 на POST /technoWorldHub/negotiate ответил 200 за 0.2439 мс | 172.20.1.165:5000
+2022-05-06 10:27:54.416 +05:00 [INF] Запрос от 172.20.1.3:52672 на GET /api/Categories ответил 200 за 8.6908 мс | 172.20.1.165:5000
+2022-05-06 10:27:54.555 +05:00 [INF] Запрос от 172.20.1.3:57281 на POST /technoWorldHub/negotiate ответил 200 за 0.2088 мс | 172.20.1.165:5000
+2022-05-06 10:27:55.698 +05:00 [INF] Создан новый заказ с номером 07GDLX0HPR
+2022-05-06 10:27:55.701 +05:00 [INF] Запрос от 172.20.1.3:65077 на POST /api/Orders ответил 201 за 17.0723 мс | 172.20.1.165:5000
+2022-05-06 10:27:56.667 +05:00 [INF] Запрос от 172.20.1.3:51085 на POST /technoWorldHub ответил 200 за 0.6132 мс | 172.20.1.165:5000
+2022-05-06 10:27:56.668 +05:00 [INF] Подключенин терминал: terminal_e7a128de-b5cf-4b8e-af60-5a3be2a9aa0c
+2022-05-06 10:27:57.697 +05:00 [INF] Запрос от 172.20.1.3:64014 на POST /technoWorldHub ответил 200 за 0.4489 мс | 172.20.1.165:5000
+2022-05-06 10:27:59.805 +05:00 [INF] Запрос от 172.20.1.3:57450 на GET /api/ElectrnicsTypes ответил 200 за 4.7275 мс | 172.20.1.165:5000
+2022-05-06 10:27:59.811 +05:00 [INF] Запрос от 172.20.1.3:64014 на GET /api/Manufacturers ответил 200 за 13.4834 мс | 172.20.1.165:5000
+2022-05-06 10:28:00.100 +05:00 [INF] Запрос от 172.20.1.3:64014 на GET /api/Electronics/TerminalFilter ответил 200 за 155.9393 мс | 172.20.1.165:5000
+2022-05-06 10:28:05.450 +05:00 [INF] Запрос от 172.20.1.3:65456 на POST /technoWorldHub ответил 200 за 0.4731 мс | 172.20.1.165:5000
+2022-05-06 10:28:09.483 +05:00 [INF] Создан новый заказ с номером 33W1YZ4ORW
+2022-05-06 10:28:09.487 +05:00 [INF] Запрос от 172.20.1.3:55756 на POST /api/Orders ответил 201 за 11.1113 мс | 172.20.1.165:5000
+2022-05-06 10:28:12.806 +05:00 [INF] Запрос от 172.20.1.3:65357 на POST /technoWorldHub ответил 200 за 0.4988 мс | 172.20.1.165:5000
+2022-05-06 10:28:15.447 +05:00 [INF] Запрос от 172.20.1.3:65357 на GET /api/Electronics/TerminalFilter ответил 200 за 55.1407 мс | 172.20.1.165:5000
+2022-05-06 10:28:20.468 +05:00 [INF] Запрос от 172.20.1.3:63463 на POST /technoWorldHub ответил 200 за 0.1682 мс | 172.20.1.165:5000
+2022-05-06 10:28:27.024 +05:00 [INF] Запрос от 172.20.1.3:63463 на GET /api/Electronics/TerminalFilter ответил 200 за 74.3627 мс | 172.20.1.165:5000
+2022-05-06 10:28:27.219 +05:00 [INF] Создан новый заказ с номером LEA63WUEE4
+2022-05-06 10:28:27.221 +05:00 [INF] Запрос от 172.20.1.3:54682 на POST /api/Orders ответил 201 за 31.3906 мс | 172.20.1.165:5000
+2022-05-06 10:28:27.825 +05:00 [INF] Запрос от 172.20.1.3:63651 на POST /technoWorldHub ответил 200 за 0.4578 мс | 172.20.1.165:5000
+2022-05-06 10:28:35.501 +05:00 [INF] Запрос от 172.20.1.3:57358 на POST /technoWorldHub ответил 200 за 0.4690 мс | 172.20.1.165:5000
+2022-05-06 10:28:42.842 +05:00 [INF] Запрос от 172.20.1.3:63264 на POST /technoWorldHub ответил 200 за 0.2094 мс | 172.20.1.165:5000
+2022-05-06 10:28:50.543 +05:00 [INF] Запрос от 172.20.1.3:57390 на POST /technoWorldHub ответил 200 за 0.5147 мс | 172.20.1.165:5000
+2022-05-06 10:28:57.927 +05:00 [INF] Запрос от 172.20.1.3:61557 на POST /technoWorldHub ответил 200 за 0.1867 мс | 172.20.1.165:5000
+2022-05-06 10:29:05.592 +05:00 [INF] Запрос от 172.20.1.3:55518 на POST /technoWorldHub ответил 200 за 0.4287 мс | 172.20.1.165:5000
+2022-05-06 10:29:13.034 +05:00 [INF] Запрос от 172.20.1.3:54704 на POST /technoWorldHub ответил 200 за 0.1952 мс | 172.20.1.165:5000
+2022-05-06 10:29:19.799 +05:00 [INF] Запрос от 172.20.1.3:56205 на GET /api/ElectrnicsTypes ответил 200 за 5.7500 мс | 172.20.1.165:5000
+2022-05-06 10:29:19.807 +05:00 [INF] Запрос от 172.20.1.3:54704 на GET /api/Manufacturers ответил 200 за 14.1470 мс | 172.20.1.165:5000
+2022-05-06 10:29:19.890 +05:00 [INF] Запрос от 172.20.1.3:54704 на GET /api/Electronics/TerminalFilter ответил 200 за 68.7829 мс | 172.20.1.165:5000
+2022-05-06 10:29:19.922 +05:00 [INF] Запрос от 172.20.1.3:56205 на GET /api/Electronics/TerminalFilter ответил 200 за 68.1621 мс | 172.20.1.165:5000
+2022-05-06 10:29:20.655 +05:00 [INF] Запрос от 172.20.1.3:64883 на POST /technoWorldHub ответил 200 за 0.5054 мс | 172.20.1.165:5000
+2022-05-06 10:29:28.096 +05:00 [INF] Запрос от 172.20.1.3:54194 на POST /technoWorldHub ответил 200 за 0.5674 мс | 172.20.1.165:5000
+2022-05-06 10:29:35.683 +05:00 [INF] Запрос от 172.20.1.3:53823 на POST /technoWorldHub ответил 200 за 0.4494 мс | 172.20.1.165:5000
+2022-05-06 10:29:37.078 +05:00 [INF] Запрос от 172.20.1.3:54704 на GET /api/ElectrnicsTypes ответил 200 за 3.5467 мс | 172.20.1.165:5000
+2022-05-06 10:29:37.079 +05:00 [INF] Запрос от 172.20.1.3:53823 на GET /api/Manufacturers ответил 200 за 5.2933 мс | 172.20.1.165:5000
+2022-05-06 10:29:37.156 +05:00 [INF] Запрос от 172.20.1.3:53823 на GET /api/Electronics/TerminalFilter ответил 200 за 55.1454 мс | 172.20.1.165:5000
+2022-05-06 10:29:37.178 +05:00 [INF] Запрос от 172.20.1.3:54704 на GET /api/Electronics/TerminalFilter ответил 200 за 42.8015 мс | 172.20.1.165:5000
+2022-05-06 10:29:43.129 +05:00 [INF] Запрос от 172.20.1.3:63299 на POST /technoWorldHub ответил 200 за 0.5385 мс | 172.20.1.165:5000
+2022-05-06 10:29:48.126 +05:00 [INF] Запрос от 172.20.1.3:53823 на GET /api/ElectrnicsTypes ответил 200 за 5.8844 мс | 172.20.1.165:5000
+2022-05-06 10:29:48.134 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Manufacturers ответил 200 за 13.5677 мс | 172.20.1.165:5000
+2022-05-06 10:29:48.316 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 168.7898 мс | 172.20.1.165:5000
+2022-05-06 10:29:48.340 +05:00 [INF] Запрос от 172.20.1.3:53823 на GET /api/Electronics/TerminalFilter ответил 200 за 174.6484 мс | 172.20.1.165:5000
+2022-05-06 10:29:48.710 +05:00 [INF] Создан новый заказ с номером G6AUPDLUOJ
+2022-05-06 10:29:48.713 +05:00 [INF] Запрос от 172.20.1.3:65262 на POST /api/Orders ответил 201 за 15.3963 мс | 172.20.1.165:5000
+2022-05-06 10:29:50.731 +05:00 [INF] Запрос от 172.20.1.3:52003 на POST /technoWorldHub ответил 200 за 0.6463 мс | 172.20.1.165:5000
+2022-05-06 10:29:53.172 +05:00 [INF] Запрос от 172.20.1.3:52003 на GET /api/Electronics/TerminalFilter ответил 200 за 50.0702 мс | 172.20.1.165:5000
+2022-05-06 10:29:54.705 +05:00 [INF] Запрос от 172.20.1.3:52003 на GET /api/Electronics/TerminalFilter ответил 200 за 128.1274 мс | 172.20.1.165:5000
+2022-05-06 10:29:55.124 +05:00 [INF] Запрос от 172.20.1.3:52003 на GET /api/Electronics/TerminalFilter ответил 200 за 47.2752 мс | 172.20.1.165:5000
+2022-05-06 10:29:55.138 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 55.4911 мс | 172.20.1.165:5000
+2022-05-06 10:29:55.179 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 36.0969 мс | 172.20.1.165:5000
+2022-05-06 10:29:55.185 +05:00 [INF] Запрос от 172.20.1.3:52003 на GET /api/Electronics/TerminalFilter ответил 200 за 55.6347 мс | 172.20.1.165:5000
+2022-05-06 10:29:55.232 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 46.6530 мс | 172.20.1.165:5000
+2022-05-06 10:29:55.246 +05:00 [INF] Запрос от 172.20.1.3:52003 на GET /api/Electronics/TerminalFilter ответил 200 за 54.5497 мс | 172.20.1.165:5000
+2022-05-06 10:29:55.274 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 37.4306 мс | 172.20.1.165:5000
+2022-05-06 10:29:55.287 +05:00 [INF] Запрос от 172.20.1.3:52003 на GET /api/Electronics/TerminalFilter ответил 200 за 36.7647 мс | 172.20.1.165:5000
+2022-05-06 10:29:55.315 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 35.1176 мс | 172.20.1.165:5000
+2022-05-06 10:29:55.373 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 44.7166 мс | 172.20.1.165:5000
+2022-05-06 10:29:56.260 +05:00 [INF] Запрос от 172.20.1.3:52003 на GET /api/ElectrnicsTypes ответил 200 за 0.8456 мс | 172.20.1.165:5000
+2022-05-06 10:29:56.261 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Manufacturers ответил 200 за 1.9634 мс | 172.20.1.165:5000
+2022-05-06 10:29:56.403 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 116.5129 мс | 172.20.1.165:5000
+2022-05-06 10:29:56.413 +05:00 [INF] Запрос от 172.20.1.3:52003 на GET /api/Electronics/TerminalFilter ответил 200 за 106.8165 мс | 172.20.1.165:5000
+2022-05-06 10:29:56.801 +05:00 [INF] Запрос от 172.20.1.3:52003 на GET /api/Electronics/TerminalFilter ответил 200 за 65.1318 мс | 172.20.1.165:5000
+2022-05-06 10:29:58.178 +05:00 [INF] Запрос от 172.20.1.3:50707 на POST /technoWorldHub ответил 200 за 0.4688 мс | 172.20.1.165:5000
+2022-05-06 10:30:01.509 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 57.3468 мс | 172.20.1.165:5000
+2022-05-06 10:30:01.529 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 89.0576 мс | 172.20.1.165:5000
+2022-05-06 10:30:01.551 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 37.4061 мс | 172.20.1.165:5000
+2022-05-06 10:30:01.606 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 35.8877 мс | 172.20.1.165:5000
+2022-05-06 10:30:01.659 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 41.8042 мс | 172.20.1.165:5000
+2022-05-06 10:30:01.671 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 58.9844 мс | 172.20.1.165:5000
+2022-05-06 10:30:01.699 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 35.5988 мс | 172.20.1.165:5000
+2022-05-06 10:30:01.740 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 35.8179 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.139 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 45.0726 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.143 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 42.2044 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.189 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 39.9646 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.196 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 51.2775 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.233 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 37.6215 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.240 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 38.5933 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.285 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 39.0979 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.286 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 48.8787 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.336 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 44.4017 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.345 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 51.6048 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.412 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 70.6629 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.419 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 69.8240 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.466 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 34.8072 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.479 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 55.8874 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.525 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 38.6598 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.537 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 57.8575 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.565 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 34.4172 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.615 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 72.2987 мс | 172.20.1.165:5000
+2022-05-06 10:30:02.647 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 76.8324 мс | 172.20.1.165:5000
+2022-05-06 10:30:03.279 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 55.8316 мс | 172.20.1.165:5000
+2022-05-06 10:30:03.960 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 86.1657 мс | 172.20.1.165:5000
+2022-05-06 10:30:04.318 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 48.9065 мс | 172.20.1.165:5000
+2022-05-06 10:30:04.759 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 46.9234 мс | 172.20.1.165:5000
+2022-05-06 10:30:05.487 +05:00 [INF] Запрос от 172.20.1.3:50707 на GET /api/Electronics/TerminalFilter ответил 200 за 60.2503 мс | 172.20.1.165:5000
+2022-05-06 10:30:05.758 +05:00 [INF] Запрос от 172.20.1.3:59109 на POST /technoWorldHub ответил 200 за 0.4565 мс | 172.20.1.165:5000
+2022-05-06 10:30:05.867 +05:00 [INF] Запрос от 172.20.1.3:59109 на GET /api/Electronics/TerminalFilter ответил 200 за 59.6307 мс | 172.20.1.165:5000
+2022-05-06 10:30:07.846 +05:00 [INF] Запрос от 172.20.1.3:59109 на GET /api/Electronics/TerminalFilter ответил 200 за 59.4554 мс | 172.20.1.165:5000
+2022-05-06 10:30:08.651 +05:00 [INF] Запрос от 172.20.1.3:59109 на GET /api/Electronics/TerminalFilter ответил 200 за 64.7660 мс | 172.20.1.165:5000
+2022-05-06 10:30:13.225 +05:00 [INF] Запрос от 172.20.1.3:58421 на POST /technoWorldHub ответил 200 за 0.1891 мс | 172.20.1.165:5000
+2022-05-06 10:30:13.624 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/ElectrnicsTypes ответил 200 за 2.2133 мс | 172.20.1.165:5000
+2022-05-06 10:30:13.633 +05:00 [INF] Запрос от 172.20.1.3:58421 на GET /api/Manufacturers ответил 200 за 12.0357 мс | 172.20.1.165:5000
+2022-05-06 10:30:17.579 +05:00 [INF] Запрос от 172.20.1.3:58421 на GET /api/Electronics/TerminalFilter ответил 200 за 3931.0130 мс | 172.20.1.165:5000
+2022-05-06 10:30:17.600 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 3876.4268 мс | 172.20.1.165:5000
+2022-05-06 10:30:18.108 +05:00 [INF] Запрос от 172.20.1.3:63299 на GET /api/Electronics/TerminalFilter ответил 200 за 79.0293 мс | 172.20.1.165:5000
+2022-05-06 10:30:20.775 +05:00 [INF] Запрос от 172.20.1.3:59452 на POST /technoWorldHub ответил 200 за 0.2417 мс | 172.20.1.165:5000
+2022-05-06 10:30:22.655 +05:00 [INF] Создан новый заказ с номером CM0VZTGJ7Q
+2022-05-06 10:30:22.658 +05:00 [INF] Запрос от 172.20.1.3:60810 на POST /api/Orders ответил 201 за 9.2586 мс | 172.20.1.165:5000
+2022-05-06 10:30:28.306 +05:00 [INF] Запрос от 172.20.1.3:58637 на POST /technoWorldHub ответил 200 за 0.1500 мс | 172.20.1.165:5000
+2022-05-06 10:30:28.838 +05:00 [INF] Запрос от 172.20.1.3:58637 на GET /api/Electronics/TerminalFilter ответил 200 за 43.5139 мс | 172.20.1.165:5000
+2022-05-06 10:30:30.301 +05:00 [INF] Запрос от 172.20.1.3:58421 на GET /api/ElectrnicsTypes ответил 200 за 6.3372 мс | 172.20.1.165:5000
+2022-05-06 10:30:30.309 +05:00 [INF] Запрос от 172.20.1.3:58637 на GET /api/Manufacturers ответил 200 за 14.5960 мс | 172.20.1.165:5000
+2022-05-06 10:30:30.445 +05:00 [INF] Запрос от 172.20.1.3:58637 на GET /api/Electronics/TerminalFilter ответил 200 за 120.4462 мс | 172.20.1.165:5000
+2022-05-06 10:30:30.519 +05:00 [INF] Запрос от 172.20.1.3:58421 на GET /api/Electronics/TerminalFilter ответил 200 за 124.7597 мс | 172.20.1.165:5000
+2022-05-06 10:30:35.825 +05:00 [INF] Запрос от 172.20.1.3:58419 на POST /technoWorldHub ответил 200 за 0.4715 мс | 172.20.1.165:5000
+2022-05-06 10:30:39.699 +05:00 [INF] Запрос от 172.20.1.3:58637 на GET /api/ElectrnicsTypes ответил 200 за 2.8744 мс | 172.20.1.165:5000
+2022-05-06 10:30:39.701 +05:00 [INF] Запрос от 172.20.1.3:58419 на GET /api/Manufacturers ответил 200 за 4.9503 мс | 172.20.1.165:5000
+2022-05-06 10:30:39.785 +05:00 [INF] Запрос от 172.20.1.3:58637 на GET /api/Electronics/TerminalFilter ответил 200 за 45.6489 мс | 172.20.1.165:5000
+2022-05-06 10:30:39.806 +05:00 [INF] Запрос от 172.20.1.3:58419 на GET /api/Electronics/TerminalFilter ответил 200 за 81.1303 мс | 172.20.1.165:5000
+2022-05-06 10:30:43.361 +05:00 [INF] Запрос от 172.20.1.3:60557 на POST /technoWorldHub ответил 200 за 0.1456 мс | 172.20.1.165:5000
+2022-05-06 10:30:50.845 +05:00 [INF] Запрос от 172.20.1.3:59446 на POST /technoWorldHub ответил 200 за 0.5795 мс | 172.20.1.165:5000
+2022-05-06 10:30:58.411 +05:00 [INF] Запрос от 172.20.1.3:55352 на POST /technoWorldHub ответил 200 за 0.1612 мс | 172.20.1.165:5000
+2022-05-06 10:31:05.869 +05:00 [INF] Запрос от 172.20.1.3:64814 на POST /technoWorldHub ответил 200 за 0.1260 мс | 172.20.1.165:5000
+2022-05-06 10:31:13.426 +05:00 [INF] Запрос от 172.20.1.3:59414 на POST /technoWorldHub ответил 200 за 0.1236 мс | 172.20.1.165:5000
+2022-05-06 10:31:15.407 +05:00 [INF] Создан новый заказ с номером AGMZVXGD9D
+2022-05-06 10:31:15.410 +05:00 [INF] Запрос от 172.20.1.3:61565 на POST /api/Orders ответил 201 за 10.2019 мс | 172.20.1.165:5000
+2022-05-06 10:31:18.270 +05:00 [INF] Запрос от 172.20.1.3:61565 на GET /api/Electronics/TerminalFilter ответил 200 за 53.0161 мс | 172.20.1.165:5000
+2022-05-06 10:31:20.170 +05:00 [INF] Создан новый заказ с номером T41EX8HRE5
+2022-05-06 10:31:20.174 +05:00 [INF] Запрос от 172.20.1.3:58971 на POST /api/Orders ответил 201 за 8.4524 мс | 172.20.1.165:5000
+2022-05-06 10:31:20.362 +05:00 [INF] Запрос от 172.20.1.3:58971 на GET /api/Electronics/TerminalFilter ответил 200 за 70.9593 мс | 172.20.1.165:5000
+2022-05-06 10:31:20.900 +05:00 [INF] Запрос от 172.20.1.3:54025 на POST /technoWorldHub ответил 200 за 0.1236 мс | 172.20.1.165:5000
+2022-05-06 10:31:21.362 +05:00 [INF] Запрос от 172.20.1.3:54025 на GET /api/Electronics/TerminalFilter ответил 200 за 97.2039 мс | 172.20.1.165:5000
+2022-05-06 10:31:23.305 +05:00 [INF] Запрос от 172.20.1.3:54025 на GET /api/Electronics/TerminalFilter ответил 200 за 71.9686 мс | 172.20.1.165:5000
+2022-05-06 10:31:24.702 +05:00 [INF] Запрос от 172.20.1.3:54025 на GET /api/Electronics/TerminalFilter ответил 200 за 60.4848 мс | 172.20.1.165:5000
+2022-05-06 10:31:28.151 +05:00 [INF] Запрос от 172.20.1.3:54025 на GET /api/Electronics/TerminalFilter ответил 200 за 77.0551 мс | 172.20.1.165:5000
+2022-05-06 10:31:28.455 +05:00 [INF] Запрос от 172.20.1.3:52271 на POST /technoWorldHub ответил 200 за 0.2527 мс | 172.20.1.165:5000
+2022-05-06 10:31:28.892 +05:00 [INF] Запрос от 172.20.1.3:52271 на GET /api/Electronics/TerminalFilter ответил 200 за 123.6874 мс | 172.20.1.165:5000
+2022-05-06 10:31:29.181 +05:00 [INF] Запрос от 172.20.1.3:52271 на GET /api/Electronics/TerminalFilter ответил 200 за 45.3006 мс | 172.20.1.165:5000
+2022-05-06 10:31:35.919 +05:00 [INF] Запрос от 172.20.1.3:64382 на POST /technoWorldHub ответил 200 за 0.2752 мс | 172.20.1.165:5000
+2022-05-06 10:31:43.459 +05:00 [INF] Запрос от 172.20.1.3:65338 на POST /technoWorldHub ответил 200 за 0.1905 мс | 172.20.1.165:5000
+2022-05-06 10:31:50.963 +05:00 [INF] Запрос от 172.20.1.3:55522 на POST /technoWorldHub ответил 200 за 0.4319 мс | 172.20.1.165:5000
+2022-05-06 10:31:54.548 +05:00 [INF] Создан новый заказ с номером 6GJY86OSOQ
+2022-05-06 10:31:54.551 +05:00 [INF] Запрос от 172.20.1.3:54218 на POST /api/Orders ответил 201 за 14.7631 мс | 172.20.1.165:5000
+2022-05-06 10:31:58.553 +05:00 [INF] Запрос от 172.20.1.3:58292 на POST /technoWorldHub ответил 200 за 0.4060 мс | 172.20.1.165:5000
+2022-05-06 10:31:58.902 +05:00 [INF] terminal_a374236f-8d9a-4e14-8253-767e868ab2dd отключен от системы
+2022-05-06 10:31:58.906 +05:00 [INF] Запрос от 172.20.1.3:59688 на GET /technoWorldHub ответил 200 за 311735.5375 мс | 172.20.1.165:5000
+2022-05-06 10:32:05.852 +05:00 [INF] Запрос от 172.20.1.3:63345 на POST /terminalToken ответил 200 за 0.3035 мс | 172.20.1.165:5000
+2022-05-06 10:32:05.985 +05:00 [INF] Запрос от 172.20.1.3:58014 на POST /technoWorldHub/negotiate ответил 200 за 0.5164 мс | 172.20.1.165:5000
+2022-05-06 10:32:06.219 +05:00 [INF] Запрос от 172.20.1.3:58014 на GET /api/Categories ответил 200 за 11.7951 мс | 172.20.1.165:5000
+2022-05-06 10:32:06.354 +05:00 [INF] Запрос от 172.20.1.3:60398 на POST /technoWorldHub/negotiate ответил 200 за 0.5722 мс | 172.20.1.165:5000
+2022-05-06 10:32:07.477 +05:00 [INF] Запрос от 172.20.1.3:64394 на POST /technoWorldHub ответил 200 за 0.3270 мс | 172.20.1.165:5000
+2022-05-06 10:32:07.477 +05:00 [INF] Подключенин терминал: terminal_9891b2f6-b300-469d-b187-b844970e1124
+2022-05-06 10:32:07.913 +05:00 [INF] Запрос от 172.20.1.3:61701 на GET /api/ElectrnicsTypes ответил 200 за 4.4969 мс | 172.20.1.165:5000
+2022-05-06 10:32:07.921 +05:00 [INF] Запрос от 172.20.1.3:64394 на GET /api/Manufacturers ответил 200 за 14.6010 мс | 172.20.1.165:5000
+2022-05-06 10:32:08.122 +05:00 [INF] Запрос от 172.20.1.3:64394 на GET /api/Electronics/TerminalFilter ответил 200 за 75.2352 мс | 172.20.1.165:5000
+2022-05-06 10:32:08.508 +05:00 [INF] Запрос от 172.20.1.3:63617 на POST /technoWorldHub ответил 200 за 0.1436 мс | 172.20.1.165:5000
+2022-05-06 10:32:13.581 +05:00 [INF] Запрос от 172.20.1.3:62012 на POST /technoWorldHub ответил 200 за 0.1623 мс | 172.20.1.165:5000
+2022-05-06 10:32:20.587 +05:00 [INF] Создан новый заказ с номером S52H3L755L
+2022-05-06 10:32:20.589 +05:00 [INF] Запрос от 172.20.1.3:59352 на POST /api/Orders ответил 201 за 5.6222 мс | 172.20.1.165:5000
+2022-05-06 10:32:23.543 +05:00 [INF] Запрос от 172.20.1.3:64284 на POST /technoWorldHub ответил 200 за 0.2018 мс | 172.20.1.165:5000
+2022-05-06 10:32:24.307 +05:00 [INF] Запрос от 172.20.1.3:61701 на GET /api/ElectrnicsTypes ответил 200 за 3.3309 мс | 172.20.1.165:5000
+2022-05-06 10:32:24.312 +05:00 [INF] Запрос от 172.20.1.3:64284 на GET /api/Manufacturers ответил 200 за 10.5916 мс | 172.20.1.165:5000
+2022-05-06 10:32:24.730 +05:00 [INF] Запрос от 172.20.1.3:64284 на GET /api/Electronics/TerminalFilter ответил 200 за 399.7625 мс | 172.20.1.165:5000
+2022-05-06 10:32:24.780 +05:00 [INF] Запрос от 172.20.1.3:61701 на GET /api/Electronics/TerminalFilter ответил 200 за 406.1843 мс | 172.20.1.165:5000
+2022-05-06 10:32:28.605 +05:00 [INF] Запрос от 172.20.1.3:64706 на POST /technoWorldHub ответил 200 за 0.1163 мс | 172.20.1.165:5000
+2022-05-06 10:32:34.326 +05:00 [INF] Запрос от 172.20.1.3:64284 на GET /api/ElectrnicsTypes ответил 200 за 5.0488 мс | 172.20.1.165:5000
+2022-05-06 10:32:34.333 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/Manufacturers ответил 200 за 11.5551 мс | 172.20.1.165:5000
+2022-05-06 10:32:34.407 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/Electronics/TerminalFilter ответил 200 за 59.7858 мс | 172.20.1.165:5000
+2022-05-06 10:32:34.424 +05:00 [INF] Запрос от 172.20.1.3:64284 на GET /api/Electronics/TerminalFilter ответил 200 за 46.8990 мс | 172.20.1.165:5000
+2022-05-06 10:32:34.881 +05:00 [INF] Запрос от 172.20.1.3:64284 на GET /api/Electronics/TerminalFilter ответил 200 за 60.2417 мс | 172.20.1.165:5000
+2022-05-06 10:32:35.593 +05:00 [INF] Запрос от 172.20.1.3:64284 на GET /api/Electronics/TerminalFilter ответил 200 за 75.2368 мс | 172.20.1.165:5000
+2022-05-06 10:32:36.840 +05:00 [INF] Запрос от 172.20.1.3:64284 на GET /api/Electronics/TerminalFilter ответил 200 за 70.4272 мс | 172.20.1.165:5000
+2022-05-06 10:32:37.553 +05:00 [INF] Запрос от 172.20.1.3:64284 на GET /api/Electronics/TerminalFilter ответил 200 за 64.7148 мс | 172.20.1.165:5000
+2022-05-06 10:32:38.591 +05:00 [INF] Запрос от 172.20.1.3:51107 на POST /technoWorldHub ответил 200 за 0.4576 мс | 172.20.1.165:5000
+2022-05-06 10:32:39.486 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/ElectrnicsTypes ответил 200 за 2.3866 мс | 172.20.1.165:5000
+2022-05-06 10:32:39.488 +05:00 [INF] Запрос от 172.20.1.3:51107 на GET /api/Manufacturers ответил 200 за 4.5742 мс | 172.20.1.165:5000
+2022-05-06 10:32:39.580 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/Electronics/TerminalFilter ответил 200 за 40.5948 мс | 172.20.1.165:5000
+2022-05-06 10:32:39.582 +05:00 [INF] Запрос от 172.20.1.3:51107 на GET /api/Electronics/TerminalFilter ответил 200 за 70.4094 мс | 172.20.1.165:5000
+2022-05-06 10:32:39.708 +05:00 [INF] Запрос от 172.20.1.3:51107 на GET /api/Electronics/TerminalFilter ответил 200 за 110.8756 мс | 172.20.1.165:5000
+2022-05-06 10:32:41.850 +05:00 [INF] Запрос от 172.20.1.3:51107 на GET /api/Electronics/TerminalFilter ответил 200 за 60.8476 мс | 172.20.1.165:5000
+2022-05-06 10:32:43.645 +05:00 [INF] Запрос от 172.20.1.3:51999 на POST /technoWorldHub ответил 200 за 0.2008 мс | 172.20.1.165:5000
+2022-05-06 10:32:44.336 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/ElectrnicsTypes ответил 200 за 2.8272 мс | 172.20.1.165:5000
+2022-05-06 10:32:44.338 +05:00 [INF] Запрос от 172.20.1.3:51999 на GET /api/Manufacturers ответил 200 за 5.0087 мс | 172.20.1.165:5000
+2022-05-06 10:32:44.439 +05:00 [INF] Запрос от 172.20.1.3:51999 на GET /api/Electronics/TerminalFilter ответил 200 за 80.1703 мс | 172.20.1.165:5000
+2022-05-06 10:32:44.459 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/Electronics/TerminalFilter ответил 200 за 36.7877 мс | 172.20.1.165:5000
+2022-05-06 10:32:44.496 +05:00 [INF] Запрос от 172.20.1.3:51999 на GET /api/Electronics/TerminalFilter ответил 200 за 40.3574 мс | 172.20.1.165:5000
+2022-05-06 10:32:53.457 +05:00 [INF] Запрос от 172.20.1.3:51999 на GET /api/Electronics/TerminalFilter ответил 200 за 76.3701 мс | 172.20.1.165:5000
+2022-05-06 10:32:53.616 +05:00 [INF] Запрос от 172.20.1.3:60698 на POST /technoWorldHub ответил 200 за 0.4332 мс | 172.20.1.165:5000
+2022-05-06 10:32:58.716 +05:00 [INF] Запрос от 172.20.1.3:54096 на POST /technoWorldHub ответил 200 за 0.1829 мс | 172.20.1.165:5000
+2022-05-06 10:33:01.514 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/ElectrnicsTypes ответил 200 за 4.1271 мс | 172.20.1.165:5000
+2022-05-06 10:33:01.522 +05:00 [INF] Запрос от 172.20.1.3:54096 на GET /api/Manufacturers ответил 200 за 13.2105 мс | 172.20.1.165:5000
+2022-05-06 10:33:01.673 +05:00 [INF] Запрос от 172.20.1.3:54096 на GET /api/Electronics/TerminalFilter ответил 200 за 134.8922 мс | 172.20.1.165:5000
+2022-05-06 10:33:01.714 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/Electronics/TerminalFilter ответил 200 за 130.2071 мс | 172.20.1.165:5000
+2022-05-06 10:33:03.799 +05:00 [INF] Запрос от 172.20.1.3:54096 на GET /api/ElectrnicsTypes ответил 200 за 3.0652 мс | 172.20.1.165:5000
+2022-05-06 10:33:03.801 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/Manufacturers ответил 200 за 5.4160 мс | 172.20.1.165:5000
+2022-05-06 10:33:03.904 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/Electronics/TerminalFilter ответил 200 за 81.3772 мс | 172.20.1.165:5000
+2022-05-06 10:33:03.978 +05:00 [INF] Запрос от 172.20.1.3:54096 на GET /api/Electronics/TerminalFilter ответил 200 за 96.2277 мс | 172.20.1.165:5000
+2022-05-06 10:33:08.005 +05:00 [INF] Запрос от 172.20.1.3:54096 на GET /api/Electronics/TerminalFilter ответил 200 за 58.0522 мс | 172.20.1.165:5000
+2022-05-06 10:33:08.637 +05:00 [INF] Запрос от 172.20.1.3:59383 на POST /technoWorldHub ответил 200 за 0.4248 мс | 172.20.1.165:5000
+2022-05-06 10:33:09.642 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/ElectrnicsTypes ответил 200 за 2.8330 мс | 172.20.1.165:5000
+2022-05-06 10:33:09.644 +05:00 [INF] Запрос от 172.20.1.3:59383 на GET /api/Manufacturers ответил 200 за 5.2711 мс | 172.20.1.165:5000
+2022-05-06 10:33:09.729 +05:00 [INF] Запрос от 172.20.1.3:59383 на GET /api/Electronics/TerminalFilter ответил 200 за 61.3543 мс | 172.20.1.165:5000
+2022-05-06 10:33:09.834 +05:00 [INF] Запрос от 172.20.1.3:59383 на GET /api/Electronics/TerminalFilter ответил 200 за 43.3320 мс | 172.20.1.165:5000
+2022-05-06 10:33:10.306 +05:00 [INF] Запрос от 172.20.1.3:59383 на GET /api/Electronics/TerminalFilter ответил 200 за 46.7952 мс | 172.20.1.165:5000
+2022-05-06 10:33:11.962 +05:00 [INF] Запрос от 172.20.1.3:59383 на GET /api/Electronics/TerminalFilter ответил 200 за 72.0855 мс | 172.20.1.165:5000
+2022-05-06 10:33:13.753 +05:00 [INF] Запрос от 172.20.1.3:61270 на POST /technoWorldHub ответил 200 за 0.4295 мс | 172.20.1.165:5000
+2022-05-06 10:33:23.694 +05:00 [INF] Запрос от 172.20.1.3:57707 на POST /technoWorldHub ответил 200 за 0.4120 мс | 172.20.1.165:5000
+2022-05-06 10:33:28.842 +05:00 [INF] Запрос от 172.20.1.3:58814 на POST /technoWorldHub ответил 200 за 0.1873 мс | 172.20.1.165:5000
+2022-05-06 10:33:38.457 +05:00 [INF] Запрос от 172.20.1.3:64706 на GET /api/ElectrnicsTypes ответил 200 за 2.8889 мс | 172.20.1.165:5000
+2022-05-06 10:33:38.464 +05:00 [INF] Запрос от 172.20.1.3:58814 на GET /api/Manufacturers ответил 200 за 10.5705 мс | 172.20.1.165:5000
+2022-05-06 10:33:38.548 +05:00 [INF] Запрос от 172.20.1.3:58814 на GET /api/Electronics/TerminalFilter ответил 200 за 62.6707 мс | 172.20.1.165:5000
+2022-05-06 10:33:38.621 +05:00 [INF] Запрос от 172.20.1.3:58814 на GET /api/Electronics/TerminalFilter ответил 200 за 67.2888 мс | 172.20.1.165:5000
+2022-05-06 10:33:38.713 +05:00 [INF] Запрос от 172.20.1.3:57789 на POST /technoWorldHub ответил 200 за 0.4205 мс | 172.20.1.165:5000
+2022-05-06 10:33:43.895 +05:00 [INF] Запрос от 172.20.1.3:55610 на POST /technoWorldHub ответил 200 за 0.3996 мс | 172.20.1.165:5000
+2022-05-06 10:33:52.698 +05:00 [INF] Запрос от 172.20.1.3:55610 на GET /api/Electronics/TerminalFilter ответил 200 за 102.6471 мс | 172.20.1.165:5000
+2022-05-06 10:33:53.784 +05:00 [INF] Запрос от 172.20.1.3:51051 на POST /technoWorldHub ответил 200 за 0.2831 мс | 172.20.1.165:5000
+2022-05-06 10:33:58.934 +05:00 [INF] Запрос от 172.20.1.3:54556 на POST /technoWorldHub ответил 200 за 0.4556 мс | 172.20.1.165:5000
+2022-05-06 10:34:08.888 +05:00 [INF] Запрос от 172.20.1.3:55799 на POST /technoWorldHub ответил 200 за 0.4412 мс | 172.20.1.165:5000
+2022-05-06 10:34:13.918 +05:00 [INF] Создан новый заказ с номером 7M63KZCF6N
+2022-05-06 10:34:13.921 +05:00 [INF] Запрос от 172.20.1.3:63282 на POST /api/Orders ответил 201 за 15.6196 мс | 172.20.1.165:5000
+2022-05-06 10:34:13.982 +05:00 [INF] Запрос от 172.20.1.3:52947 на POST /technoWorldHub ответил 200 за 0.2346 мс | 172.20.1.165:5000
+2022-05-06 10:34:24.026 +05:00 [INF] Запрос от 172.20.1.3:56263 на POST /technoWorldHub ответил 200 за 0.3960 мс | 172.20.1.165:5000
+2022-05-06 10:34:28.989 +05:00 [INF] Запрос от 172.20.1.3:64864 на POST /technoWorldHub ответил 200 за 0.4792 мс | 172.20.1.165:5000
+2022-05-06 10:34:39.044 +05:00 [INF] Запрос от 172.20.1.3:60396 на POST /technoWorldHub ответил 200 за 0.3583 мс | 172.20.1.165:5000
+2022-05-06 10:34:44.032 +05:00 [INF] Запрос от 172.20.1.3:54909 на POST /technoWorldHub ответил 200 за 0.1428 мс | 172.20.1.165:5000
+2022-05-06 10:34:54.064 +05:00 [INF] Запрос от 172.20.1.3:62608 на POST /technoWorldHub ответил 200 за 0.1727 мс | 172.20.1.165:5000
+2022-05-06 10:34:59.049 +05:00 [INF] Запрос от 172.20.1.3:63880 на POST /technoWorldHub ответил 200 за 0.4478 мс | 172.20.1.165:5000
+2022-05-06 10:35:09.073 +05:00 [INF] Запрос от 172.20.1.3:60579 на POST /technoWorldHub ответил 200 за 0.3923 мс | 172.20.1.165:5000
+2022-05-06 10:35:11.019 +05:00 [INF] terminal_e7a128de-b5cf-4b8e-af60-5a3be2a9aa0c отключен от системы
+2022-05-06 10:35:11.023 +05:00 [INF] Запрос от 172.20.1.3:57281 на GET /technoWorldHub ответил 200 за 436436.9276 мс | 172.20.1.165:5000
+2022-05-06 10:35:24.092 +05:00 [INF] Запрос от 172.20.1.3:57377 на POST /technoWorldHub ответил 200 за 0.4454 мс | 172.20.1.165:5000
+2022-05-06 10:35:39.105 +05:00 [INF] Запрос от 172.20.1.3:59556 на POST /technoWorldHub ответил 200 за 0.1200 мс | 172.20.1.165:5000
+2022-05-06 10:35:54.116 +05:00 [INF] Запрос от 172.20.1.3:63021 на POST /technoWorldHub ответил 200 за 0.4220 мс | 172.20.1.165:5000
+2022-05-06 10:36:09.140 +05:00 [INF] Запрос от 172.20.1.3:51376 на POST /technoWorldHub ответил 200 за 0.4476 мс | 172.20.1.165:5000
+2022-05-06 10:36:24.146 +05:00 [INF] Запрос от 172.20.1.3:51134 на POST /technoWorldHub ответил 200 за 0.1603 мс | 172.20.1.165:5000
+2022-05-06 10:36:39.171 +05:00 [INF] Запрос от 172.20.1.3:52606 на POST /technoWorldHub ответил 200 за 0.5043 мс | 172.20.1.165:5000
+2022-05-06 10:36:54.232 +05:00 [INF] Запрос от 172.20.1.3:50594 на POST /technoWorldHub ответил 200 за 0.4327 мс | 172.20.1.165:5000
+2022-05-06 10:37:09.256 +05:00 [INF] Запрос от 172.20.1.3:61983 на POST /technoWorldHub ответил 200 за 0.1239 мс | 172.20.1.165:5000
+2022-05-06 10:37:24.280 +05:00 [INF] Запрос от 172.20.1.3:59310 на POST /technoWorldHub ответил 200 за 0.1381 мс | 172.20.1.165:5000
+2022-05-06 10:37:39.303 +05:00 [INF] Запрос от 172.20.1.3:53005 на POST /technoWorldHub ответил 200 за 0.4194 мс | 172.20.1.165:5000
+2022-05-06 10:37:54.320 +05:00 [INF] Запрос от 172.20.1.3:54255 на POST /technoWorldHub ответил 200 за 0.1522 мс | 172.20.1.165:5000
+2022-05-06 10:38:09.341 +05:00 [INF] Запрос от 172.20.1.3:50242 на POST /technoWorldHub ответил 200 за 0.6333 мс | 172.20.1.165:5000
+2022-05-06 10:38:24.362 +05:00 [INF] Запрос от 172.20.1.3:56230 на POST /technoWorldHub ответил 200 за 0.1522 мс | 172.20.1.165:5000
+2022-05-06 10:38:39.398 +05:00 [INF] Запрос от 172.20.1.3:58952 на POST /technoWorldHub ответил 200 за 0.4446 мс | 172.20.1.165:5000
+2022-05-06 10:38:54.410 +05:00 [INF] Запрос от 172.20.1.3:51523 на POST /technoWorldHub ответил 200 за 0.3995 мс | 172.20.1.165:5000
+2022-05-06 10:39:09.431 +05:00 [INF] Запрос от 172.20.1.3:53363 на POST /technoWorldHub ответил 200 за 0.4584 мс | 172.20.1.165:5000
+2022-05-06 10:39:24.458 +05:00 [INF] Запрос от 172.20.1.3:53661 на POST /technoWorldHub ответил 200 за 0.1489 мс | 172.20.1.165:5000
+2022-05-06 10:39:39.476 +05:00 [INF] Запрос от 172.20.1.3:58071 на POST /technoWorldHub ответил 200 за 0.2799 мс | 172.20.1.165:5000
+2022-05-06 10:39:54.501 +05:00 [INF] Запрос от 172.20.1.3:62371 на POST /technoWorldHub ответил 200 за 0.1287 мс | 172.20.1.165:5000
+2022-05-06 10:40:09.521 +05:00 [INF] Запрос от 172.20.1.3:63620 на POST /technoWorldHub ответил 200 за 0.1980 мс | 172.20.1.165:5000
+2022-05-06 10:40:24.539 +05:00 [INF] Запрос от 172.20.1.3:61064 на POST /technoWorldHub ответил 200 за 0.2253 мс | 172.20.1.165:5000
+2022-05-06 10:40:39.569 +05:00 [INF] Запрос от 172.20.1.3:52813 на POST /technoWorldHub ответил 200 за 0.1149 мс | 172.20.1.165:5000
+2022-05-06 10:40:54.588 +05:00 [INF] Запрос от 172.20.1.3:56963 на POST /technoWorldHub ответил 200 за 0.4265 мс | 172.20.1.165:5000
+2022-05-06 10:41:09.600 +05:00 [INF] Запрос от 172.20.1.3:51797 на POST /technoWorldHub ответил 200 за 0.1168 мс | 172.20.1.165:5000
+2022-05-06 10:41:24.624 +05:00 [INF] Запрос от 172.20.1.3:52646 на POST /technoWorldHub ответил 200 за 2.7737 мс | 172.20.1.165:5000
+2022-05-06 10:41:39.635 +05:00 [INF] Запрос от 172.20.1.3:55964 на POST /technoWorldHub ответил 200 за 0.3977 мс | 172.20.1.165:5000
+2022-05-06 10:41:54.643 +05:00 [INF] Запрос от 172.20.1.3:64038 на POST /technoWorldHub ответил 200 за 1.0091 мс | 172.20.1.165:5000
+2022-05-06 10:42:09.657 +05:00 [INF] Запрос от 172.20.1.3:61688 на POST /technoWorldHub ответил 200 за 0.4780 мс | 172.20.1.165:5000
+2022-05-06 10:42:24.677 +05:00 [INF] Запрос от 172.20.1.3:62242 на POST /technoWorldHub ответил 200 за 0.1321 мс | 172.20.1.165:5000
+2022-05-06 10:42:39.699 +05:00 [INF] Запрос от 172.20.1.3:58674 на POST /technoWorldHub ответил 200 за 0.4534 мс | 172.20.1.165:5000
+2022-05-06 10:42:54.708 +05:00 [INF] Запрос от 172.20.1.3:59375 на POST /technoWorldHub ответил 200 за 0.3978 мс | 172.20.1.165:5000
+2022-05-06 10:43:09.737 +05:00 [INF] Запрос от 172.20.1.3:53622 на POST /technoWorldHub ответил 200 за 2.1679 мс | 172.20.1.165:5000
+2022-05-06 10:43:24.753 +05:00 [INF] Запрос от 172.20.1.3:58218 на POST /technoWorldHub ответил 200 за 0.4234 мс | 172.20.1.165:5000
+2022-05-06 10:43:39.780 +05:00 [INF] Запрос от 172.20.1.3:61887 на POST /technoWorldHub ответил 200 за 0.5017 мс | 172.20.1.165:5000
+2022-05-06 10:43:54.799 +05:00 [INF] Запрос от 172.20.1.3:58542 на POST /technoWorldHub ответил 200 за 0.4231 мс | 172.20.1.165:5000
+2022-05-06 10:44:09.825 +05:00 [INF] Запрос от 172.20.1.3:59025 на POST /technoWorldHub ответил 200 за 0.2782 мс | 172.20.1.165:5000
+2022-05-06 10:44:24.845 +05:00 [INF] Запрос от 172.20.1.3:50021 на POST /technoWorldHub ответил 200 за 0.4841 мс | 172.20.1.165:5000
+2022-05-06 10:44:39.864 +05:00 [INF] Запрос от 172.20.1.3:55192 на POST /technoWorldHub ответил 200 за 0.5622 мс | 172.20.1.165:5000
+2022-05-06 10:44:54.884 +05:00 [INF] Запрос от 172.20.1.3:52026 на POST /technoWorldHub ответил 200 за 0.4954 мс | 172.20.1.165:5000
+2022-05-06 10:45:09.904 +05:00 [INF] Запрос от 172.20.1.3:64300 на POST /technoWorldHub ответил 200 за 0.3904 мс | 172.20.1.165:5000
+2022-05-06 10:45:17.219 +05:00 [INF] Создан новый заказ с номером P2T0FGEULT
+2022-05-06 10:45:17.223 +05:00 [INF] Запрос от 172.20.1.3:63533 на POST /api/Orders ответил 201 за 17.4964 мс | 172.20.1.165:5000
+2022-05-06 10:45:24.919 +05:00 [INF] Запрос от 172.20.1.3:65394 на POST /technoWorldHub ответил 200 за 0.4667 мс | 172.20.1.165:5000
+2022-05-06 10:45:39.949 +05:00 [INF] Запрос от 172.20.1.3:53888 на POST /technoWorldHub ответил 200 за 0.1219 мс | 172.20.1.165:5000
+2022-05-06 10:45:55.049 +05:00 [INF] Запрос от 172.20.1.3:60191 на POST /technoWorldHub ответил 200 за 0.3731 мс | 172.20.1.165:5000
+2022-05-06 10:46:14.512 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:46:14.539 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:46:14.540 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:46:14.541 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:46:43.993 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:46:44.021 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:46:44.021 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:46:44.022 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:46:55.304 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 10:46:55.369 +05:00 [INF] Запрос от 172.20.1.165:58117 на POST /userToken ответил 200 за 1255.6691 мс | 172.20.1.165:5000
+2022-05-06 10:46:55.608 +05:00 [INF] Запрос от 172.20.1.165:58120 на POST /technoWorldHub/negotiate ответил 200 за 55.3271 мс | 172.20.1.165:5000
+2022-05-06 10:46:55.742 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 10:47:01.388 +05:00 [INF] Запрос от 172.20.1.165:58117 на GET /api/Categories ответил 200 за 65.3984 мс | 172.20.1.165:5000
+2022-05-06 10:47:01.584 +05:00 [INF] Запрос от 172.20.1.165:58117 на GET /api/ElectrnicsTypes/All ответил 200 за 56.9523 мс | 172.20.1.165:5000
+2022-05-06 10:47:02.095 +05:00 [INF] Запрос от 172.20.1.165:58117 на GET /api/Electronics/Filter ответил 200 за 306.2281 мс | 172.20.1.165:5000
+2022-05-06 10:47:06.032 +05:00 [INF] admin отключен от системы
+2022-05-06 10:47:06.036 +05:00 [INF] Запрос от 172.20.1.165:58123 на GET /technoWorldHub ответил 101 за 10361.6888 мс | 172.20.1.165:5000
+2022-05-06 10:50:07.968 +05:00 [INF] Application is shutting down...
+2022-05-06 10:50:17.483 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:50:17.515 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:50:17.516 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:50:17.516 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:50:20.519 +05:00 [INF] Application is shutting down...
+2022-05-06 10:50:31.376 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:50:31.403 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:50:31.403 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:50:31.404 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:50:52.267 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 10:50:52.327 +05:00 [INF] Запрос от 2768311468:55268 на POST /userToken ответил 200 за 1272.6672 мс | 172.20.1.165:5000
+2022-05-06 10:50:52.563 +05:00 [INF] Запрос от 2768311468:55271 на POST /technoWorldHub/negotiate ответил 200 за 56.5232 мс | 172.20.1.165:5000
+2022-05-06 10:50:52.697 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 10:50:57.406 +05:00 [INF] Запрос от 2768311468:55268 на GET /api/Categories ответил 200 за 65.7989 мс | 172.20.1.165:5000
+2022-05-06 10:50:57.547 +05:00 [INF] admin отключен от системы
+2022-05-06 10:50:57.554 +05:00 [INF] Запрос от 2768311468:55274 на GET /technoWorldHub ответил 101 за 4925.0826 мс | 172.20.1.165:5000
+2022-05-06 10:51:51.038 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:51:51.067 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:51:51.068 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:51:51.069 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:52:00.056 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 10:52:00.114 +05:00 [INF] Запрос от 172.20.1.165:59235 на POST /userToken ответил 200 за 1182.1935 мс | 172.20.1.165:5000
+2022-05-06 10:52:00.304 +05:00 [INF] Запрос от 172.20.1.165:59238 на POST /technoWorldHub/negotiate ответил 200 за 55.5255 мс | 172.20.1.165:5000
+2022-05-06 10:52:00.422 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 10:52:04.538 +05:00 [INF] Запрос от 172.20.1.165:59235 на GET /api/Categories ответил 200 за 65.6518 мс | 172.20.1.165:5000
+2022-05-06 10:52:04.715 +05:00 [INF] Запрос от 172.20.1.165:59235 на GET /api/ElectrnicsTypes/All ответил 200 за 53.3327 мс | 172.20.1.165:5000
+2022-05-06 10:52:05.145 +05:00 [INF] Запрос от 172.20.1.165:59235 на GET /api/Electronics/Filter ответил 200 за 297.0800 мс | 172.20.1.165:5000
+2022-05-06 10:54:10.383 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:54:10.409 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:54:10.410 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:54:10.411 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:54:57.286 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 10:54:57.346 +05:00 [INF] Запрос от 172.20.1.165:65524 на POST /userToken ответил 200 за 1200.6030 мс | 172.20.1.165:5000
+2022-05-06 10:54:57.585 +05:00 [INF] Запрос от 172.20.1.165:49156 на POST /technoWorldHub/negotiate ответил 200 за 57.9845 мс | 172.20.1.165:5000
+2022-05-06 10:54:57.856 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 10:55:01.846 +05:00 [INF] Запрос от 172.20.1.165:65524 на GET /api/Categories ответил 200 за 100.8160 мс | 172.20.1.165:5000
+2022-05-06 10:55:02.000 +05:00 [INF] Запрос от 172.20.1.165:65524 на GET /api/ElectrnicsTypes/All ответил 200 за 40.6495 мс | 172.20.1.165:5000
+2022-05-06 10:55:02.500 +05:00 [INF] Запрос от 172.20.1.165:65524 на GET /api/Electronics/Filter ответил 200 за 299.6132 мс | 172.20.1.165:5000
+2022-05-06 10:55:18.959 +05:00 [INF] Запрос от 172.20.1.3:54130 на POST /terminalToken ответил 200 за 4.6717 мс | 172.20.1.165:5000
+2022-05-06 10:55:19.092 +05:00 [INF] Запрос от 172.20.1.3:59232 на POST /technoWorldHub/negotiate ответил 200 за 0.3022 мс | 172.20.1.165:5000
+2022-05-06 10:55:19.325 +05:00 [INF] Запрос от 172.20.1.3:59232 на GET /api/Categories ответил 200 за 9.3798 мс | 172.20.1.165:5000
+2022-05-06 10:55:19.464 +05:00 [INF] Запрос от 172.20.1.3:54211 на POST /technoWorldHub/negotiate ответил 200 за 0.3375 мс | 172.20.1.165:5000
+2022-05-06 10:55:21.572 +05:00 [INF] Запрос от 172.20.1.3:50116 на POST /technoWorldHub ответил 200 за 4.9889 мс | 172.20.1.165:5000
+2022-05-06 10:55:21.573 +05:00 [INF] Подключенин терминал: terminal_5ddeac44-cccd-4235-ad82-94a3504c5255
+2022-05-06 10:55:22.609 +05:00 [INF] Запрос от 172.20.1.3:63347 на POST /technoWorldHub ответил 200 за 0.2567 мс | 172.20.1.165:5000
+2022-05-06 10:55:34.084 +05:00 [INF] terminal_5ddeac44-cccd-4235-ad82-94a3504c5255 отключен от системы
+2022-05-06 10:55:34.088 +05:00 [INF] Запрос от 172.20.1.3:54211 на GET /technoWorldHub ответил 200 за 14588.6876 мс | 172.20.1.165:5000
+2022-05-06 10:56:04.846 +05:00 [INF] admin отключен от системы
+2022-05-06 10:56:04.847 +05:00 [INF] Запрос от 172.20.1.165:49159 на GET /technoWorldHub ответил 101 за 67191.9002 мс | 172.20.1.165:5000
+2022-05-06 10:56:56.672 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:56:56.701 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:56:56.702 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:56:56.702 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:57:14.336 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 10:57:14.392 +05:00 [INF] Запрос от 2768311468:49398 на POST /userToken ответил 200 за 1169.7199 мс | 172.20.1.165:5000
+2022-05-06 10:57:14.580 +05:00 [INF] Запрос от 2768311468:49401 на POST /technoWorldHub/negotiate ответил 200 за 51.6587 мс | 172.20.1.165:5000
+2022-05-06 10:57:14.697 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 10:57:19.850 +05:00 [INF] Запрос от 2768311468:49398 на GET /api/Categories ответил 200 за 62.9322 мс | 172.20.1.165:5000
+2022-05-06 10:57:20.019 +05:00 [INF] Запрос от 2768311468:49398 на GET /api/ElectrnicsTypes/All ответил 200 за 39.5604 мс | 172.20.1.165:5000
+2022-05-06 10:57:20.454 +05:00 [INF] Запрос от 2768311468:49398 на GET /api/Electronics/Filter ответил 200 за 300.2597 мс | 172.20.1.165:5000
+2022-05-06 10:57:47.963 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:57:47.991 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:57:47.992 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:57:47.993 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:57:54.686 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 10:57:54.743 +05:00 [INF] Запрос от 172.20.1.165:49436 на POST /userToken ответил 200 за 1172.0914 мс | 172.20.1.165:5000
+2022-05-06 10:57:54.800 +05:00 [INF] Запрос от 172.20.1.165:49439 на POST /technoWorldHub/negotiate ответил 200 за 53.7117 мс | 172.20.1.165:5000
+2022-05-06 10:57:54.833 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 10:58:04.742 +05:00 [INF] Запрос от 172.20.1.165:49436 на GET /api/Categories ответил 200 за 81.1401 мс | 172.20.1.165:5000
+2022-05-06 10:58:04.838 +05:00 [INF] Запрос от 172.20.1.165:49436 на GET /api/ElectrnicsTypes/All ответил 200 за 40.0486 мс | 172.20.1.165:5000
+2022-05-06 10:58:05.254 +05:00 [INF] Запрос от 172.20.1.165:49436 на GET /api/Electronics/Filter ответил 200 за 321.2715 мс | 172.20.1.165:5000
+2022-05-06 10:58:06.490 +05:00 [INF] kov отключен от системы
+2022-05-06 10:58:06.494 +05:00 [INF] Запрос от 172.20.1.165:49442 на GET /technoWorldHub ответил 101 за 11685.7065 мс | 172.20.1.165:5000
+2022-05-06 10:58:11.822 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 10:58:11.850 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 10:58:11.851 +05:00 [INF] Hosting environment: Development
+2022-05-06 10:58:11.851 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 10:58:17.926 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 10:58:17.985 +05:00 [INF] Запрос от ::ffff:172.20.1.165:49466 на POST /userToken ответил 200 за 1166.4216 мс | 172.20.1.165:5000
+2022-05-06 10:58:18.043 +05:00 [INF] Запрос от ::ffff:172.20.1.165:49469 на POST /technoWorldHub/negotiate ответил 200 за 55.8176 мс | 172.20.1.165:5000
+2022-05-06 10:58:18.072 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 10:58:31.856 +05:00 [INF] Запрос от ::ffff:172.20.1.165:49466 на GET /api/Categories ответил 200 за 109.6779 мс | 172.20.1.165:5000
+2022-05-06 10:58:31.936 +05:00 [INF] Запрос от ::ffff:172.20.1.165:49466 на GET /api/ElectrnicsTypes/All ответил 200 за 38.5340 мс | 172.20.1.165:5000
+2022-05-06 10:58:32.366 +05:00 [INF] Запрос от ::ffff:172.20.1.165:49466 на GET /api/Electronics/Filter ответил 200 за 326.7493 мс | 172.20.1.165:5000
+2022-05-06 11:04:22.546 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:04:22.574 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:04:22.575 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:04:22.576 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:05:17.112 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 11:05:17.173 +05:00 [INF] Запрос от null (172.20.1.165:49967) по POST /userToken ответил 200 за 1199.8660 мс
+2022-05-06 11:05:17.406 +05:00 [INF] Запрос от http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: kov (172.20.1.165:49970) по POST /technoWorldHub/negotiate ответил 200 за 53.7327 мс
+2022-05-06 11:05:17.634 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 11:05:24.713 +05:00 [INF] Запрос от http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: kov (172.20.1.165:49967) по GET /api/Categories ответил 200 за 63.2833 мс
+2022-05-06 11:05:24.891 +05:00 [INF] Запрос от http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: kov (172.20.1.165:49967) по GET /api/ElectrnicsTypes/All ответил 200 за 39.4194 мс
+2022-05-06 11:05:25.421 +05:00 [INF] Запрос от http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: kov (172.20.1.165:49967) по GET /api/Electronics/Filter ответил 200 за 304.9412 мс
+2022-05-06 11:05:28.177 +05:00 [INF] kov отключен от системы
+2022-05-06 11:05:28.182 +05:00 [INF] Запрос от http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: kov (172.20.1.165:49973) по GET /technoWorldHub ответил 101 за 10618.0084 мс
+2022-05-06 11:05:58.688 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:05:58.717 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:05:58.718 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:05:58.719 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:06:18.786 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:06:18.850 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-06 11:06:18.885 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2022-05-06 11:06:18.888 +05:00 [ERR] Connection id "0HMHF4PUS8DMN", Request id "0HMHF4PUS8DMN:00000002": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-05-06 11:06:19.072 +05:00 [INF] Запрос от admin (172.20.1.165:50028) по POST /technoWorldHub/negotiate ответил 200 за 52.7135 мс
+2022-05-06 11:06:19.211 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:06:36.075 +05:00 [INF] Запрос от admin (172.20.1.165:50052) по GET /api/Categories ответил 200 за 63.0834 мс
+2022-05-06 11:06:36.248 +05:00 [INF] Запрос от admin (172.20.1.165:50052) по GET /api/ElectrnicsTypes/All ответил 200 за 38.6468 мс
+2022-05-06 11:06:36.771 +05:00 [INF] Запрос от admin (172.20.1.165:50052) по GET /api/Electronics/Filter ответил 200 за 304.8793 мс
+2022-05-06 11:06:38.676 +05:00 [INF] admin отключен от системы
+2022-05-06 11:06:38.681 +05:00 [INF] Запрос от admin (172.20.1.165:50031) по GET /technoWorldHub ответил 101 за 19539.9330 мс
+2022-05-06 11:06:55.276 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:06:55.278 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-06 11:06:55.286 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2022-05-06 11:06:55.287 +05:00 [ERR] Connection id "0HMHF4PUS8DMR", Request id "0HMHF4PUS8DMR:00000002": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-05-06 11:06:55.422 +05:00 [INF] Запрос от admin (172.20.1.165:50076) по POST /technoWorldHub/negotiate ответил 200 за 0.3143 мс
+2022-05-06 11:06:55.561 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:07:52.531 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:07:52.558 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:07:52.559 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:07:52.560 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:07:54.557 +05:00 [INF] Запрос от admin (172.20.1.165:50128) по GET /api/Categories ответил 200 за 1283.5691 мс
+2022-05-06 11:07:54.731 +05:00 [INF] Запрос от admin (172.20.1.165:50128) по GET /api/ElectrnicsTypes/All ответил 200 за 125.3309 мс
+2022-05-06 11:07:54.885 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-06 11:08:10.595 +05:00 [INF] Application is shutting down...
+2022-05-06 11:08:12.406 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:08:12.433 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:08:12.434 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:08:12.435 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:08:35.933 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:08:35.993 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-06 11:08:36.012 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2022-05-06 11:08:36.017 +05:00 [ERR] Connection id "0HMHF4R6J406M", Request id "0HMHF4R6J406M:00000002": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-05-06 11:08:36.226 +05:00 [INF] Запрос от admin (172.20.1.165:51077) по POST /technoWorldHub/negotiate ответил 200 за 53.5898 мс
+2022-05-06 11:08:36.356 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:08:41.100 +05:00 [INF] Запрос от admin (172.20.1.165:51314) по GET /api/Categories ответил 200 за 66.5811 мс
+2022-05-06 11:08:41.252 +05:00 [INF] Запрос от admin (172.20.1.165:51314) по GET /api/ElectrnicsTypes/All ответил 200 за 90.3381 мс
+2022-05-06 11:08:41.827 +05:00 [INF] Запрос от admin (172.20.1.165:51314) по GET /api/Electronics/Filter ответил 200 за 309.3907 мс
+2022-05-06 11:08:45.588 +05:00 [INF] admin отключен от системы
+2022-05-06 11:08:45.592 +05:00 [INF] Запрос от admin (172.20.1.165:51089) по GET /technoWorldHub ответил 101 за 9306.8536 мс
+2022-05-06 11:09:10.962 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:09:11.000 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:09:11.001 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:09:11.002 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:09:13.924 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:10:00.913 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-06 11:10:00.955 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2022-05-06 11:10:00.958 +05:00 [ERR] Connection id "0HMHF4RO2RO87", Request id "0HMHF4RO2RO87:00000002": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-05-06 11:10:01.107 +05:00 [INF] Запрос от admin (172.20.1.165:51803) по POST /technoWorldHub/negotiate ответил 200 за 29267.5355 мс
+2022-05-06 11:10:01.175 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:10:20.363 +05:00 [INF] Запрос от admin (172.20.1.165:52943) по GET /api/Categories ответил 200 за 75.1819 мс
+2022-05-06 11:10:20.417 +05:00 [INF] Запрос от admin (172.20.1.165:52943) по GET /api/ElectrnicsTypes/All ответил 200 за 47.4718 мс
+2022-05-06 11:10:20.871 +05:00 [INF] Запрос от admin (172.20.1.165:52943) по GET /api/Electronics/Filter ответил 200 за 326.1822 мс
+2022-05-06 11:10:56.909 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:10:56.938 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:10:56.939 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:10:56.941 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:11:03.709 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:11:03.770 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-06 11:11:03.792 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2022-05-06 11:11:03.798 +05:00 [ERR] Connection id "0HMHF4SNOINL9", Request id "0HMHF4SNOINL9:00000002": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-05-06 11:11:03.850 +05:00 [INF] Запрос от admin (172.20.1.165:54032) по POST /technoWorldHub/negotiate ответил 200 за 75.2833 мс
+2022-05-06 11:11:03.876 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:11:08.098 +05:00 [INF] Запрос от admin (172.20.1.165:54038) по GET /api/Categories ответил 200 за 80.7416 мс
+2022-05-06 11:11:08.211 +05:00 [INF] Запрос от admin (172.20.1.165:54038) по GET /api/ElectrnicsTypes/All ответил 200 за 57.4082 мс
+2022-05-06 11:11:08.621 +05:00 [INF] Запрос от admin (172.20.1.165:54038) по GET /api/Electronics/Filter ответил 200 за 313.7902 мс
+2022-05-06 11:12:15.207 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:12:15.236 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:12:15.237 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:12:15.237 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:12:26.130 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:12:26.188 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-06 11:12:26.210 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2022-05-06 11:12:26.213 +05:00 [ERR] Connection id "0HMHF4TF36UJH", Request id "0HMHF4TF36UJH:00000002": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 123
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-05-06 11:12:26.257 +05:00 [INF] Запрос от admin (172.20.1.165:54085) по POST /technoWorldHub/negotiate ответил 200 за 65.2743 мс
+2022-05-06 11:12:26.284 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:12:29.858 +05:00 [INF] Запрос от admin (172.20.1.165:54091) по GET /api/Categories ответил 200 за 80.6019 мс
+2022-05-06 11:12:29.959 +05:00 [INF] Запрос от admin (172.20.1.165:54091) по GET /api/ElectrnicsTypes/All ответил 200 за 43.4885 мс
+2022-05-06 11:12:30.396 +05:00 [INF] Запрос от admin (172.20.1.165:54091) по GET /api/Electronics/Filter ответил 200 за 336.2936 мс
+2022-05-06 11:12:34.171 +05:00 [INF] admin отключен от системы
+2022-05-06 11:12:34.175 +05:00 [INF] Запрос от admin (172.20.1.165:54088) по GET /technoWorldHub ответил 101 за 7913.0747 мс
+2022-05-06 11:12:38.641 +05:00 [INF] Application is shutting down...
+2022-05-06 11:12:51.406 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:12:51.437 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:12:51.438 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:12:51.439 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:12:56.288 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:14:40.281 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:14:40.311 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:14:40.312 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:14:40.312 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:14:43.757 +05:00 [INF] Запрос от admin (172.20.1.165:54183) по GET /api/Categories ответил 200 за 1128.0759 мс
+2022-05-06 11:14:43.920 +05:00 [INF] Запрос от admin (172.20.1.165:54183) по GET /api/ElectrnicsTypes/All ответил 200 за 117.3934 мс
+2022-05-06 11:14:44.431 +05:00 [INF] Запрос от admin (172.20.1.165:54183) по GET /api/Electronics/Filter ответил 200 за 383.9295 мс
+2022-05-06 11:14:49.797 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:14:49.834 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 130
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-06 11:14:49.848 +05:00 [INF] Запрос от admin (172.20.1.165:54192) по POST /technoWorldHub/negotiate ответил 200 за 10.5252 мс
+2022-05-06 11:14:49.853 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2022-05-06 11:14:49.859 +05:00 [ERR] Connection id "0HMHF4UQAM5CP", Request id "0HMHF4UQAM5CP:00000005": An unhandled exception was thrown by the application.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BNS_API.Startup.<>c.<Configure>b__5_4(IDiagnosticContext diagnosticContext, HttpContext httpContext) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 130
+   at Serilog.AspNetCore.RequestLoggingMiddleware.LogCompletion(HttpContext httpContext, DiagnosticContextCollector collector, Int32 statusCode, Double elapsedMs, Exception ex)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-05-06 11:14:49.982 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:14:50.748 +05:00 [INF] Запрос от admin (172.20.1.165:54198) по GET /api/Categories ответил 200 за 5.7971 мс
+2022-05-06 11:14:50.868 +05:00 [INF] Запрос от admin (172.20.1.165:54198) по GET /api/ElectrnicsTypes/All ответил 200 за 12.1539 мс
+2022-05-06 11:14:51.137 +05:00 [INF] Запрос от admin (172.20.1.165:54198) по GET /api/Electronics/Filter ответил 200 за 174.9366 мс
+2022-05-06 11:15:17.137 +05:00 [INF] admin отключен от системы
+2022-05-06 11:15:17.141 +05:00 [INF] Запрос от admin (172.20.1.165:54195) по GET /technoWorldHub ответил 101 за 27222.3090 мс
+2022-05-06 11:15:18.930 +05:00 [INF] Application is shutting down...
+2022-05-06 11:15:24.418 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:15:24.450 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:15:24.451 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:15:24.452 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:15:26.889 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:16:29.761 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:16:29.794 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:16:29.794 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:16:29.795 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:16:47.017 +05:00 [INF] Запрос от admin (172.20.1.165:54258) по GET /api/Categories ответил 200 за 1461.7644 мс
+2022-05-06 11:16:56.354 +05:00 [INF] Запрос от Не установлено (172.20.1.165:54258) по GET /api/ElectrnicsTypes/All ответил 401 за 5.4293 мс
+2022-05-06 11:16:56.358 +05:00 [INF] Запрос от Не установлено (172.20.1.165:54269) по GET /api/Electronics/Filter ответил 401 за 0.7272 мс
+2022-05-06 11:16:56.571 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:16:56.618 +05:00 [INF] Запрос от Не установлено (172.20.1.165:54263) по POST /userToken ответил 200 за 14577.7461 мс
+2022-05-06 11:18:46.461 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:18:46.462 +05:00 [INF] Запрос от Не установлено (172.20.1.165:54305) по POST /userToken ответил 200 за 25.1577 мс
+2022-05-06 11:18:46.487 +05:00 [INF] Запрос от admin (172.20.1.165:54308) по POST /technoWorldHub/negotiate ответил 200 за 10.0396 мс
+2022-05-06 11:18:46.537 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:18:47.361 +05:00 [INF] Запрос от admin (172.20.1.165:54305) по GET /api/Categories ответил 200 за 7.5970 мс
+2022-05-06 11:18:47.539 +05:00 [INF] Запрос от admin (172.20.1.165:54305) по GET /api/ElectrnicsTypes/All ответил 200 за 65.3802 мс
+2022-05-06 11:18:48.015 +05:00 [INF] Запрос от admin (172.20.1.165:54305) по GET /api/Electronics/Filter ответил 200 за 380.9121 мс
+2022-05-06 11:18:52.999 +05:00 [INF] admin отключен от системы
+2022-05-06 11:18:53.004 +05:00 [INF] Запрос от admin (172.20.1.165:54311) по GET /technoWorldHub ответил 101 за 6496.8697 мс
+2022-05-06 11:18:56.931 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:18:56.933 +05:00 [INF] Запрос от Не установлено (172.20.1.165:54305) по POST /userToken ответил 200 за 4.4485 мс
+2022-05-06 11:18:56.939 +05:00 [INF] Запрос от admin (172.20.1.165:54314) по POST /technoWorldHub/negotiate ответил 200 за 0.6860 мс
+2022-05-06 11:18:56.978 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:19:00.316 +05:00 [INF] Запрос от admin (172.20.1.165:54305) по GET /api/Categories ответил 200 за 10.3652 мс
+2022-05-06 11:19:00.433 +05:00 [INF] Запрос от admin (172.20.1.165:54305) по GET /api/ElectrnicsTypes/All ответил 200 за 12.0081 мс
+2022-05-06 11:19:00.723 +05:00 [INF] Запрос от admin (172.20.1.165:54305) по GET /api/Electronics/Filter ответил 200 за 191.5566 мс
+2022-05-06 11:19:04.008 +05:00 [INF] admin отключен от системы
+2022-05-06 11:19:04.010 +05:00 [INF] Запрос от admin (172.20.1.165:54317) по GET /technoWorldHub ответил 101 за 7037.9418 мс
+2022-05-06 11:19:09.805 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:19:09.807 +05:00 [INF] Запрос от Не установлено (172.20.1.165:54305) по POST /userToken ответил 200 за 8.0254 мс
+2022-05-06 11:19:09.817 +05:00 [INF] Запрос от admin (172.20.1.165:54320) по POST /technoWorldHub/negotiate ответил 200 за 1.0347 мс
+2022-05-06 11:19:09.853 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:19:29.172 +05:00 [INF] Запрос от admin (172.20.1.165:54305) по GET /api/Categories ответил 200 за 11.9431 мс
+2022-05-06 11:19:29.287 +05:00 [INF] Запрос от admin (172.20.1.165:54305) по GET /api/ElectrnicsTypes/All ответил 200 за 15.2764 мс
+2022-05-06 11:19:29.574 +05:00 [INF] Запрос от admin (172.20.1.165:54305) по GET /api/Electronics/Filter ответил 200 за 186.7087 мс
+2022-05-06 11:25:56.121 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:25:56.148 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:25:56.149 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:25:56.150 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:27:57.269 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:27:57.330 +05:00 [INF] Запрос от Не установлено (172.20.1.165:59676) по POST /userToken ответил 200 за 1246.2843 мс
+2022-05-06 11:27:57.583 +05:00 [INF] Запрос от admin (172.20.1.165:59679) по POST /technoWorldHub/negotiate ответил 200 за 54.6849 мс
+2022-05-06 11:27:57.868 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:27:58.670 +05:00 [INF] Запрос от admin (172.20.1.165:59676) по GET /api/Categories ответил 200 за 72.7331 мс
+2022-05-06 11:27:58.869 +05:00 [INF] Запрос от admin (172.20.1.165:59676) по GET /api/ElectrnicsTypes/All ответил 200 за 38.7569 мс
+2022-05-06 11:27:59.406 +05:00 [INF] Запрос от admin (172.20.1.165:59676) по GET /api/Electronics/Filter ответил 200 за 304.8523 мс
+2022-05-06 11:28:03.064 +05:00 [INF] admin отключен от системы
+2022-05-06 11:28:03.067 +05:00 [INF] Application is shutting down...
+2022-05-06 11:28:03.067 +05:00 [INF] Запрос от admin (172.20.1.165:59682) по GET /technoWorldHub ответил 101 за 5282.6877 мс
+2022-05-06 11:31:38.302 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:31:38.331 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:31:38.332 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:31:38.333 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:31:52.807 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:31:52.870 +05:00 [INF] Запрос от Не установлено (172.20.1.165:59973) по POST /userToken ответил 200 за 1286.4125 мс
+2022-05-06 11:31:53.106 +05:00 [INF] Запрос от admin (172.20.1.165:59976) по POST /technoWorldHub/negotiate ответил 200 за 49.1095 мс
+2022-05-06 11:31:53.240 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:31:53.923 +05:00 [INF] Запрос от admin (172.20.1.165:59973) по GET /api/Categories ответил 200 за 65.6510 мс
+2022-05-06 11:31:54.125 +05:00 [INF] Запрос от admin (172.20.1.165:59973) по GET /api/ElectrnicsTypes/All ответил 200 за 40.5322 мс
+2022-05-06 11:31:54.634 +05:00 [INF] Запрос от admin (172.20.1.165:59973) по GET /api/Electronics/Filter ответил 200 за 312.1280 мс
+2022-05-06 11:32:01.280 +05:00 [INF] admin отключен от системы
+2022-05-06 11:32:01.283 +05:00 [INF] Application is shutting down...
+2022-05-06 11:32:01.284 +05:00 [INF] Запрос от admin (172.20.1.165:59979) по GET /technoWorldHub ответил 101 за 8112.7836 мс
+2022-05-06 11:33:46.798 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:33:46.826 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:33:46.827 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:33:46.827 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:34:02.208 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:34:02.270 +05:00 [INF] Запрос от Не установлено (172.20.1.165:60040) по POST /userToken ответил 200 за 1268.0146 мс
+2022-05-06 11:34:02.495 +05:00 [INF] Запрос от admin (172.20.1.165:60043) по POST /technoWorldHub/negotiate ответил 200 за 53.4447 мс
+2022-05-06 11:34:02.638 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:34:03.730 +05:00 [INF] Запрос от admin (172.20.1.165:60040) по GET /api/Categories ответил 200 за 99.8796 мс
+2022-05-06 11:34:03.889 +05:00 [INF] Запрос от admin (172.20.1.165:60040) по GET /api/ElectrnicsTypes/All ответил 200 за 38.3386 мс
+2022-05-06 11:34:04.403 +05:00 [INF] Запрос от admin (172.20.1.165:60040) по GET /api/Electronics/Filter ответил 200 за 311.9989 мс
+2022-05-06 11:34:07.517 +05:00 [INF] admin отключен от системы
+2022-05-06 11:34:07.522 +05:00 [INF] Application is shutting down...
+2022-05-06 11:34:07.523 +05:00 [INF] Запрос от admin (172.20.1.165:60046) по GET /technoWorldHub ответил 101 за 4955.1107 мс
+2022-05-06 11:34:42.478 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:34:42.507 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:34:42.507 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:34:42.508 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:34:48.669 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:34:48.728 +05:00 [INF] Запрос от Не установлено (172.20.1.165:60060) по POST /userToken ответил 200 за 1194.0573 мс
+2022-05-06 11:34:48.918 +05:00 [INF] Запрос от admin (172.20.1.165:60063) по POST /technoWorldHub/negotiate ответил 200 за 56.6797 мс
+2022-05-06 11:34:49.039 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:34:49.836 +05:00 [INF] Запрос от admin (172.20.1.165:60060) по GET /api/Categories ответил 200 за 63.8140 мс
+2022-05-06 11:34:50.004 +05:00 [INF] Запрос от admin (172.20.1.165:60060) по GET /api/ElectrnicsTypes/All ответил 200 за 39.1865 мс
+2022-05-06 11:34:50.463 +05:00 [INF] Запрос от admin (172.20.1.165:60060) по GET /api/Electronics/Filter ответил 200 за 324.6492 мс
+2022-05-06 11:34:51.701 +05:00 [INF] admin отключен от системы
+2022-05-06 11:34:51.705 +05:00 [INF] Application is shutting down...
+2022-05-06 11:34:51.705 +05:00 [INF] Запрос от admin (172.20.1.165:60066) по GET /technoWorldHub ответил 101 за 2730.3163 мс
+2022-05-06 11:34:56.440 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:34:56.468 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:34:56.469 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:34:56.471 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:35:01.744 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 11:35:01.804 +05:00 [INF] Запрос от Не установлено (172.20.1.165:60074) по POST /userToken ответил 200 за 1198.2812 мс
+2022-05-06 11:35:01.871 +05:00 [INF] Запрос от kov (172.20.1.165:60077) по POST /technoWorldHub/negotiate ответил 200 за 63.5757 мс
+2022-05-06 11:35:01.901 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 11:35:05.094 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/Status ответил 200 за 45.6772 мс
+2022-05-06 11:35:05.375 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/Deliveries/Filter ответил 200 за 211.4717 мс
+2022-05-06 11:35:05.482 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/Deliveries/Filter ответил 200 за 59.1071 мс
+2022-05-06 11:35:13.051 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/Categories ответил 200 за 21.4561 мс
+2022-05-06 11:35:13.117 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/ElectrnicsTypes/All ответил 200 за 25.8325 мс
+2022-05-06 11:35:13.223 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/Manufacturers/All ответил 200 за 11.2074 мс
+2022-05-06 11:35:29.322 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/Categories ответил 200 за 8.2495 мс
+2022-05-06 11:35:29.371 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/ElectrnicsTypes/All ответил 200 за 8.8651 мс
+2022-05-06 11:35:29.464 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/Manufacturers/All ответил 200 за 1.1383 мс
+2022-05-06 11:35:44.532 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/Categories ответил 200 за 8.5959 мс
+2022-05-06 11:35:44.583 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/ElectrnicsTypes/All ответил 200 за 10.1292 мс
+2022-05-06 11:35:44.676 +05:00 [INF] Запрос от kov (172.20.1.165:60074) по GET /api/Manufacturers/All ответил 200 за 1.4654 мс
+2022-05-06 11:35:58.725 +05:00 [INF] kov отключен от системы
+2022-05-06 11:35:58.729 +05:00 [INF] Application is shutting down...
+2022-05-06 11:35:58.729 +05:00 [INF] Запрос от kov (172.20.1.165:60080) по GET /technoWorldHub ответил 101 за 56851.3718 мс
+2022-05-06 11:39:06.109 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:39:06.137 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:39:06.138 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:39:06.139 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:39:21.542 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 11:39:21.604 +05:00 [INF] Запрос от Не установлено (172.20.1.165:60186) по POST /userToken ответил 200 за 1229.5550 мс
+2022-05-06 11:39:21.825 +05:00 [INF] Запрос от kov (172.20.1.165:60237) по POST /technoWorldHub/negotiate ответил 200 за 51.4841 мс
+2022-05-06 11:39:21.958 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 11:39:23.019 +05:00 [INF] Запрос от kov (172.20.1.165:60186) по GET /api/Categories ответил 200 за 66.6151 мс
+2022-05-06 11:39:23.220 +05:00 [INF] Запрос от kov (172.20.1.165:60186) по GET /api/ElectrnicsTypes/All ответил 200 за 59.8831 мс
+2022-05-06 11:39:23.715 +05:00 [INF] Запрос от kov (172.20.1.165:60186) по GET /api/Electronics/Filter ответил 200 за 311.9201 мс
+2022-05-06 11:39:24.512 +05:00 [INF] Запрос от kov (172.20.1.165:60186) по GET /api/Status ответил 200 за 14.1988 мс
+2022-05-06 11:39:24.638 +05:00 [INF] Запрос от kov (172.20.1.165:60186) по GET /api/Deliveries/Filter ответил 200 за 80.7763 мс
+2022-05-06 11:39:24.734 +05:00 [INF] Запрос от kov (172.20.1.165:60186) по GET /api/Deliveries/Filter ответил 200 за 45.3489 мс
+2022-05-06 11:39:25.226 +05:00 [INF] Запрос от kov (172.20.1.165:60186) по GET /api/Orders/Filter ответил 200 за 82.7543 мс
+2022-05-06 11:39:47.387 +05:00 [INF] kov отключен от системы
+2022-05-06 11:39:47.391 +05:00 [INF] Запрос от kov (172.20.1.165:60246) по GET /technoWorldHub ответил 101 за 25499.9604 мс
+2022-05-06 11:40:19.661 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 11:40:19.662 +05:00 [INF] Запрос от Не установлено (172.20.1.165:60984) по POST /userToken ответил 200 за 10.0961 мс
+2022-05-06 11:40:19.836 +05:00 [INF] Запрос от kov (172.20.1.165:60987) по POST /technoWorldHub/negotiate ответил 200 за 0.5552 мс
+2022-05-06 11:40:19.995 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 11:40:20.740 +05:00 [INF] Запрос от kov (172.20.1.165:60984) по GET /api/Categories ответил 200 за 4.8390 мс
+2022-05-06 11:40:20.851 +05:00 [INF] Запрос от kov (172.20.1.165:60984) по GET /api/ElectrnicsTypes/All ответил 200 за 12.5563 мс
+2022-05-06 11:40:21.320 +05:00 [INF] Запрос от kov (172.20.1.165:60984) по GET /api/Electronics/Filter ответил 200 за 149.4977 мс
+2022-05-06 11:40:21.980 +05:00 [INF] Запрос от kov (172.20.1.165:60984) по GET /api/Status ответил 200 за 1.4272 мс
+2022-05-06 11:40:22.061 +05:00 [INF] Запрос от kov (172.20.1.165:60984) по GET /api/Deliveries/Filter ответил 200 за 60.7024 мс
+2022-05-06 11:40:22.181 +05:00 [INF] Запрос от kov (172.20.1.165:60984) по GET /api/Deliveries/Filter ответил 200 за 32.5892 мс
+2022-05-06 11:40:22.469 +05:00 [INF] Запрос от kov (172.20.1.165:60984) по GET /api/Orders/Filter ответил 200 за 49.2076 мс
+2022-05-06 11:40:32.956 +05:00 [INF] kov отключен от системы
+2022-05-06 11:40:32.959 +05:00 [INF] Запрос от kov (172.20.1.165:60990) по GET /technoWorldHub ответил 101 за 13013.8604 мс
+2022-05-06 11:40:41.389 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:40:41.391 +05:00 [INF] Запрос от Не установлено (172.20.1.165:61277) по POST /userToken ответил 200 за 7.3552 мс
+2022-05-06 11:40:41.567 +05:00 [INF] Запрос от admin (172.20.1.165:61280) по POST /technoWorldHub/negotiate ответил 200 за 0.2706 мс
+2022-05-06 11:40:41.739 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:40:42.402 +05:00 [INF] Запрос от admin (172.20.1.165:61277) по GET /api/Categories ответил 200 за 4.7808 мс
+2022-05-06 11:40:42.514 +05:00 [INF] Запрос от admin (172.20.1.165:61277) по GET /api/ElectrnicsTypes/All ответил 200 за 7.6012 мс
+2022-05-06 11:40:42.829 +05:00 [INF] Запрос от admin (172.20.1.165:61277) по GET /api/Electronics/Filter ответил 200 за 162.2284 мс
+2022-05-06 11:40:45.176 +05:00 [INF] Запрос от admin (172.20.1.165:61277) по GET /api/Orders/Filter ответил 200 за 55.2629 мс
+2022-05-06 11:40:48.171 +05:00 [INF] Запрос от admin (172.20.1.165:61277) по GET /api/Storages ответил 200 за 6.6646 мс
+2022-05-06 11:41:11.579 +05:00 [INF] admin отключен от системы
+2022-05-06 11:41:11.581 +05:00 [INF] Запрос от admin (172.20.1.165:61283) по GET /technoWorldHub ответил 101 за 29892.2767 мс
+2022-05-06 11:42:39.350 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:42:39.352 +05:00 [INF] Запрос от Не установлено (172.20.1.165:61588) по POST /userToken ответил 200 за 5.7001 мс
+2022-05-06 11:42:39.500 +05:00 [INF] Запрос от admin (172.20.1.165:61591) по POST /technoWorldHub/negotiate ответил 200 за 0.2286 мс
+2022-05-06 11:42:39.637 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:42:40.244 +05:00 [INF] Запрос от admin (172.20.1.165:61588) по GET /api/Categories ответил 200 за 3.7766 мс
+2022-05-06 11:42:40.355 +05:00 [INF] Запрос от admin (172.20.1.165:61588) по GET /api/ElectrnicsTypes/All ответил 200 за 11.1064 мс
+2022-05-06 11:42:40.668 +05:00 [INF] Запрос от admin (172.20.1.165:61588) по GET /api/Electronics/Filter ответил 200 за 174.5669 мс
+2022-05-06 11:42:41.717 +05:00 [INF] Запрос от admin (172.20.1.165:61588) по GET /api/Orders/Filter ответил 200 за 62.3990 мс
+2022-05-06 11:42:43.097 +05:00 [INF] Запрос от admin (172.20.1.165:61588) по GET /api/Storages ответил 200 за 1.7181 мс
+2022-05-06 11:42:51.687 +05:00 [INF] admin отключен от системы
+2022-05-06 11:42:51.689 +05:00 [INF] Запрос от admin (172.20.1.165:61594) по GET /technoWorldHub ответил 101 за 12097.0927 мс
+2022-05-06 11:43:34.945 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 11:43:34.946 +05:00 [INF] Запрос от Не установлено (172.20.1.165:61616) по POST /userToken ответил 200 за 11.6446 мс
+2022-05-06 11:43:35.136 +05:00 [INF] Запрос от kov (172.20.1.165:61619) по POST /technoWorldHub/negotiate ответил 200 за 0.2871 мс
+2022-05-06 11:43:35.304 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 11:43:35.813 +05:00 [INF] Запрос от kov (172.20.1.165:61616) по GET /api/Categories ответил 200 за 4.2969 мс
+2022-05-06 11:43:35.923 +05:00 [INF] Запрос от kov (172.20.1.165:61616) по GET /api/ElectrnicsTypes/All ответил 200 за 8.4014 мс
+2022-05-06 11:43:36.268 +05:00 [INF] Запрос от kov (172.20.1.165:61616) по GET /api/Electronics/Filter ответил 200 за 190.9016 мс
+2022-05-06 11:43:37.138 +05:00 [INF] Запрос от kov (172.20.1.165:61616) по GET /api/Orders/Filter ответил 200 за 49.7946 мс
+2022-05-06 11:43:38.032 +05:00 [INF] Запрос от kov (172.20.1.165:61616) по GET /api/Storages ответил 200 за 1.1235 мс
+2022-05-06 11:44:05.353 +05:00 [INF] kov отключен от системы
+2022-05-06 11:44:05.357 +05:00 [INF] Запрос от kov (172.20.1.165:61622) по GET /technoWorldHub ответил 101 за 30103.4867 мс
+2022-05-06 11:47:34.943 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 11:47:34.944 +05:00 [INF] Запрос от Не установлено (172.20.1.165:61697) по POST /userToken ответил 200 за 6.4547 мс
+2022-05-06 11:47:35.124 +05:00 [INF] Запрос от kov (172.20.1.165:61700) по POST /technoWorldHub/negotiate ответил 200 за 0.2003 мс
+2022-05-06 11:47:35.277 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 11:47:36.648 +05:00 [INF] Запрос от kov (172.20.1.165:61697) по GET /api/Categories ответил 200 за 4.4183 мс
+2022-05-06 11:47:36.773 +05:00 [INF] Запрос от kov (172.20.1.165:61697) по GET /api/ElectrnicsTypes/All ответил 200 за 8.2353 мс
+2022-05-06 11:47:37.092 +05:00 [INF] Запрос от kov (172.20.1.165:61697) по GET /api/Electronics/Filter ответил 200 за 169.2532 мс
+2022-05-06 11:47:40.768 +05:00 [INF] Запрос от kov (172.20.1.165:61697) по GET /api/Orders/Filter ответил 200 за 54.7548 мс
+2022-05-06 11:47:42.087 +05:00 [INF] Запрос от kov (172.20.1.165:61697) по GET /api/Storages ответил 200 за 1.3393 мс
+2022-05-06 11:48:13.475 +05:00 [INF] kov отключен от системы
+2022-05-06 11:48:13.477 +05:00 [INF] Application is shutting down...
+2022-05-06 11:48:13.477 +05:00 [INF] Запрос от kov (172.20.1.165:61703) по GET /technoWorldHub ответил 101 за 38248.4928 мс
+2022-05-06 11:54:49.682 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:54:49.711 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:54:49.712 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:54:49.713 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:55:01.709 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 11:55:01.770 +05:00 [INF] Запрос от Не установлено (172.20.1.165:62050) по POST /userToken ответил 200 за 1235.3638 мс
+2022-05-06 11:55:02.004 +05:00 [INF] Запрос от admin (172.20.1.165:62053) по POST /technoWorldHub/negotiate ответил 200 за 48.4856 мс
+2022-05-06 11:55:02.276 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 11:55:07.047 +05:00 [INF] Запрос от admin (172.20.1.165:62050) по GET /api/Categories ответил 200 за 65.5680 мс
+2022-05-06 11:55:07.248 +05:00 [INF] Запрос от admin (172.20.1.165:62050) по GET /api/ElectrnicsTypes/All ответил 200 за 57.2069 мс
+2022-05-06 11:55:07.766 +05:00 [INF] Запрос от admin (172.20.1.165:62050) по GET /api/Electronics/Filter ответил 200 за 317.8675 мс
+2022-05-06 11:55:09.822 +05:00 [INF] Запрос от admin (172.20.1.165:62050) по GET /api/Orders/Filter ответил 200 за 91.8273 мс
+2022-05-06 11:55:13.538 +05:00 [INF] Запрос от admin (172.20.1.165:62050) по GET /api/Storages ответил 200 за 6.5758 мс
+2022-05-06 11:55:20.116 +05:00 [INF] admin отключен от системы
+2022-05-06 11:55:20.119 +05:00 [INF] Application is shutting down...
+2022-05-06 11:55:20.119 +05:00 [INF] Запрос от admin (172.20.1.165:62056) по GET /technoWorldHub ответил 101 за 17913.3754 мс
+2022-05-06 11:58:42.398 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 11:58:42.425 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 11:58:42.427 +05:00 [INF] Hosting environment: Development
+2022-05-06 11:58:42.427 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 11:58:48.166 +05:00 [INF] Запрос от Не установлено (172.20.1.165:50623) по POST /terminalToken ответил 200 за 327.8786 мс
+2022-05-06 11:58:48.385 +05:00 [INF] Запрос от terminal_3572fef8-803c-428a-95c5-67d9a779e097 (172.20.1.165:50662) по POST /technoWorldHub/negotiate ответил 200 за 46.1836 мс
+2022-05-06 11:58:48.900 +05:00 [INF] Подключенин терминал: terminal_3572fef8-803c-428a-95c5-67d9a779e097
+2022-05-06 11:58:49.608 +05:00 [INF] Запрос от terminal_3572fef8-803c-428a-95c5-67d9a779e097 (172.20.1.165:50623) по GET /api/Categories ответил 200 за 895.6456 мс
+2022-05-06 11:58:55.175 +05:00 [INF] terminal_3572fef8-803c-428a-95c5-67d9a779e097 отключен от системы
+2022-05-06 11:58:55.181 +05:00 [INF] Запрос от terminal_3572fef8-803c-428a-95c5-67d9a779e097 (172.20.1.165:50698) по GET /technoWorldHub ответил 101 за 6365.6953 мс
+2022-05-06 12:09:28.518 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 12:09:28.519 +05:00 [INF] Запрос от Не установлено (172.20.1.165:51006) по POST /userToken ответил 200 за 168.0903 мс
+2022-05-06 12:09:28.691 +05:00 [INF] Запрос от kov (172.20.1.165:51009) по POST /technoWorldHub/negotiate ответил 200 за 0.3919 мс
+2022-05-06 12:09:28.851 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 12:09:29.588 +05:00 [INF] Запрос от kov (172.20.1.165:51006) по GET /api/Categories ответил 200 за 15.7466 мс
+2022-05-06 12:09:29.709 +05:00 [INF] Запрос от kov (172.20.1.165:51006) по GET /api/ElectrnicsTypes/All ответил 200 за 30.2599 мс
+2022-05-06 12:09:30.192 +05:00 [INF] Запрос от kov (172.20.1.165:51006) по GET /api/Electronics/Filter ответил 200 за 336.1135 мс
+2022-05-06 12:09:31.077 +05:00 [INF] Запрос от kov (172.20.1.165:51006) по GET /api/Orders/Filter ответил 200 за 91.2901 мс
+2022-05-06 12:09:32.091 +05:00 [INF] Запрос от kov (172.20.1.165:51006) по GET /api/Storages ответил 200 за 8.5555 мс
+2022-05-06 12:09:36.418 +05:00 [INF] kov отключен от системы
+2022-05-06 12:09:36.420 +05:00 [INF] Запрос от kov (172.20.1.165:51012) по GET /technoWorldHub ответил 101 за 7619.0802 мс
+2022-05-06 12:10:26.123 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 12:10:26.124 +05:00 [INF] Запрос от Не установлено (172.20.1.165:51046) по POST /userToken ответил 200 за 7.7107 мс
+2022-05-06 12:10:26.295 +05:00 [INF] Запрос от admin (172.20.1.165:51049) по POST /technoWorldHub/negotiate ответил 200 за 0.3495 мс
+2022-05-06 12:10:26.453 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 12:10:28.284 +05:00 [INF] Запрос от admin (172.20.1.165:51046) по GET /api/Categories ответил 200 за 4.6558 мс
+2022-05-06 12:10:28.398 +05:00 [INF] Запрос от admin (172.20.1.165:51046) по GET /api/ElectrnicsTypes/All ответил 200 за 10.1111 мс
+2022-05-06 12:10:28.722 +05:00 [INF] Запрос от admin (172.20.1.165:51046) по GET /api/Electronics/Filter ответил 200 за 180.9972 мс
+2022-05-06 12:10:32.038 +05:00 [INF] Запрос от admin (172.20.1.165:51046) по GET /api/Status ответил 200 за 10.3101 мс
+2022-05-06 12:10:32.159 +05:00 [INF] Запрос от admin (172.20.1.165:51046) по GET /api/Deliveries/Filter ответил 200 за 75.8410 мс
+2022-05-06 12:10:32.241 +05:00 [INF] Запрос от admin (172.20.1.165:51046) по GET /api/Deliveries/Filter ответил 200 за 31.9065 мс
+2022-05-06 12:10:33.386 +05:00 [INF] Запрос от admin (172.20.1.165:51046) по GET /api/Orders/Filter ответил 200 за 67.0608 мс
+2022-05-06 12:10:35.066 +05:00 [INF] Запрос от admin (172.20.1.165:51046) по GET /api/Storages ответил 200 за 2.9749 мс
+2022-05-06 12:10:51.237 +05:00 [INF] admin отключен от системы
+2022-05-06 12:10:51.239 +05:00 [INF] Запрос от admin (172.20.1.165:51052) по GET /technoWorldHub ответил 101 за 24836.3349 мс
+2022-05-06 12:11:07.272 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 12:11:07.274 +05:00 [INF] Запрос от Не установлено (172.20.1.165:51064) по POST /userToken ответил 200 за 6.7457 мс
+2022-05-06 12:11:07.450 +05:00 [INF] Запрос от kov (172.20.1.165:51070) по POST /technoWorldHub/negotiate ответил 200 за 0.2065 мс
+2022-05-06 12:11:07.612 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 12:11:08.230 +05:00 [INF] Запрос от kov (172.20.1.165:51064) по GET /api/Categories ответил 200 за 4.9127 мс
+2022-05-06 12:11:08.345 +05:00 [INF] Запрос от kov (172.20.1.165:51064) по GET /api/ElectrnicsTypes/All ответил 200 за 7.8519 мс
+2022-05-06 12:11:08.662 +05:00 [INF] Запрос от kov (172.20.1.165:51064) по GET /api/Electronics/Filter ответил 200 за 167.2891 мс
+2022-05-06 12:11:10.314 +05:00 [INF] Запрос от kov (172.20.1.165:51064) по GET /api/Orders/Filter ответил 200 за 54.5707 мс
+2022-05-06 12:11:17.621 +05:00 [INF] kov отключен от системы
+2022-05-06 12:11:17.625 +05:00 [INF] Запрос от kov (172.20.1.165:51073) по GET /technoWorldHub ответил 101 за 10060.1265 мс
+2022-05-06 12:12:09.840 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 12:12:09.841 +05:00 [INF] Запрос от Не установлено (172.20.1.165:51100) по POST /userToken ответил 200 за 7.4020 мс
+2022-05-06 12:12:10.024 +05:00 [INF] Запрос от admin (172.20.1.165:51103) по POST /technoWorldHub/negotiate ответил 200 за 0.2397 мс
+2022-05-06 12:12:10.185 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 12:12:10.733 +05:00 [INF] Запрос от admin (172.20.1.165:51100) по GET /api/Categories ответил 200 за 4.8710 мс
+2022-05-06 12:12:10.865 +05:00 [INF] Запрос от admin (172.20.1.165:51100) по GET /api/ElectrnicsTypes/All ответил 200 за 21.3393 мс
+2022-05-06 12:12:11.197 +05:00 [INF] Запрос от admin (172.20.1.165:51100) по GET /api/Electronics/Filter ответил 200 за 175.5202 мс
+2022-05-06 12:12:11.975 +05:00 [INF] Запрос от admin (172.20.1.165:51100) по GET /api/Orders/Filter ответил 200 за 64.8148 мс
+2022-05-06 12:12:12.780 +05:00 [INF] Запрос от admin (172.20.1.165:51100) по GET /api/Storages ответил 200 за 1.3785 мс
+2022-05-06 12:12:16.044 +05:00 [INF] admin отключен от системы
+2022-05-06 12:12:16.046 +05:00 [INF] Запрос от admin (172.20.1.165:51106) по GET /technoWorldHub ответил 101 за 5910.7301 мс
+2022-05-06 12:12:40.041 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 12:12:40.042 +05:00 [INF] Запрос от Не установлено (172.20.1.165:52306) по POST /userToken ответил 200 за 6.5545 мс
+2022-05-06 12:12:40.227 +05:00 [INF] Запрос от kov (172.20.1.165:52321) по POST /technoWorldHub/negotiate ответил 200 за 0.2601 мс
+2022-05-06 12:12:40.399 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 12:12:41.402 +05:00 [INF] Запрос от kov (172.20.1.165:52306) по GET /api/Categories ответил 200 за 3.7038 мс
+2022-05-06 12:12:41.523 +05:00 [INF] Запрос от kov (172.20.1.165:52306) по GET /api/ElectrnicsTypes/All ответил 200 за 11.0874 мс
+2022-05-06 12:12:41.851 +05:00 [INF] Запрос от kov (172.20.1.165:52306) по GET /api/Electronics/Filter ответил 200 за 177.2178 мс
+2022-05-06 12:12:42.799 +05:00 [INF] Запрос от kov (172.20.1.165:52306) по GET /api/Orders/Filter ответил 200 за 52.6924 мс
+2022-05-06 12:12:43.894 +05:00 [INF] Запрос от kov (172.20.1.165:52306) по GET /api/Storages ответил 200 за 1.2103 мс
+2022-05-06 12:13:04.372 +05:00 [INF] kov отключен от системы
+2022-05-06 12:13:04.375 +05:00 [INF] Запрос от kov (172.20.1.165:52330) по GET /technoWorldHub ответил 101 за 24027.3152 мс
+2022-05-06 12:13:31.515 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 12:13:31.543 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 12:13:31.544 +05:00 [INF] Hosting environment: Development
+2022-05-06 12:13:31.545 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 12:13:43.130 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 12:13:43.190 +05:00 [INF] Запрос от Не установлено (172.20.1.165:54076) по POST /userToken ответил 200 за 1226.6919 мс
+2022-05-06 12:13:43.410 +05:00 [INF] Запрос от kov (172.20.1.165:54133) по POST /technoWorldHub/negotiate ответил 200 за 45.7685 мс
+2022-05-06 12:13:43.547 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 12:13:44.654 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Categories ответил 200 за 64.6772 мс
+2022-05-06 12:13:44.850 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/ElectrnicsTypes/All ответил 200 за 60.3438 мс
+2022-05-06 12:13:45.329 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Electronics/Filter ответил 200 за 298.9920 мс
+2022-05-06 12:13:47.397 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Orders/Filter ответил 200 за 94.5627 мс
+2022-05-06 12:13:48.455 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Storages ответил 200 за 22.4380 мс
+2022-05-06 12:13:50.856 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Storages ответил 200 за 1.5146 мс
+2022-05-06 12:13:52.491 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Storages ответил 200 за 4.3901 мс
+2022-05-06 12:13:53.945 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Storages ответил 200 за 5.7004 мс
+2022-05-06 12:13:57.451 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Orders/Filter ответил 200 за 93.8757 мс
+2022-05-06 12:13:59.583 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Orders/Filter ответил 200 за 89.4162 мс
+2022-05-06 12:14:00.456 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Storages ответил 200 за 1.4396 мс
+2022-05-06 12:14:03.960 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Storages ответил 200 за 1.4522 мс
+2022-05-06 12:14:05.642 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Storages ответил 200 за 3.5223 мс
+2022-05-06 12:14:07.888 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Storages ответил 200 за 1.8940 мс
+2022-05-06 12:14:09.495 +05:00 [INF] Запрос от kov (172.20.1.165:54076) по GET /api/Storages ответил 200 за 1.5467 мс
+2022-05-06 12:14:31.040 +05:00 [INF] kov отключен от системы
+2022-05-06 12:14:31.045 +05:00 [INF] Запрос от kov (172.20.1.165:54136) по GET /technoWorldHub ответил 101 за 47564.8133 мс
+2022-05-06 12:14:49.130 +05:00 [INF] Запрос от Не установлено (172.20.1.165:56151) по POST /terminalToken ответил 200 за 6.1431 мс
+2022-05-06 12:14:49.274 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56154) по POST /technoWorldHub/negotiate ответил 200 за 0.3851 мс
+2022-05-06 12:14:49.511 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Categories ответил 200 за 5.1620 мс
+2022-05-06 12:14:49.724 +05:00 [INF] Подключенин терминал: terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99
+2022-05-06 12:14:52.222 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56160) по GET /api/ElectrnicsTypes ответил 200 за 7.0116 мс
+2022-05-06 12:14:52.239 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Manufacturers ответил 200 за 26.5866 мс
+2022-05-06 12:14:52.450 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 89.9820 мс
+2022-05-06 12:16:02.511 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56160) по GET /api/ElectrnicsTypes ответил 200 за 2.5837 мс
+2022-05-06 12:16:02.524 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Manufacturers ответил 200 за 16.3891 мс
+2022-05-06 12:16:02.628 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56160) по GET /api/Electronics/TerminalFilter ответил 200 за 74.6510 мс
+2022-05-06 12:16:02.628 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 87.4359 мс
+2022-05-06 12:16:09.263 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56160) по GET /api/ElectrnicsTypes ответил 200 за 1.2287 мс
+2022-05-06 12:16:09.263 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Manufacturers ответил 200 за 2.5203 мс
+2022-05-06 12:16:09.389 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 95.1263 мс
+2022-05-06 12:16:09.467 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56160) по GET /api/Electronics/TerminalFilter ответил 200 за 105.1180 мс
+2022-05-06 12:16:12.275 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 44.1110 мс
+2022-05-06 12:16:14.942 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56160) по GET /api/ElectrnicsTypes ответил 200 за 1.1564 мс
+2022-05-06 12:16:14.942 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Manufacturers ответил 200 за 2.0519 мс
+2022-05-06 12:16:15.097 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 112.0619 мс
+2022-05-06 12:16:15.122 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56160) по GET /api/Electronics/TerminalFilter ответил 200 за 111.2740 мс
+2022-05-06 12:16:17.941 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56160) по GET /api/ElectrnicsTypes ответил 200 за 2.1453 мс
+2022-05-06 12:16:17.951 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Manufacturers ответил 200 за 13.1380 мс
+2022-05-06 12:16:18.091 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 119.2497 мс
+2022-05-06 12:16:18.136 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56160) по GET /api/Electronics/TerminalFilter ответил 200 за 104.8149 мс
+2022-05-06 12:16:23.631 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 39.9665 мс
+2022-05-06 12:16:24.782 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 47.1876 мс
+2022-05-06 12:16:25.959 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 63.2129 мс
+2022-05-06 12:16:26.597 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 77.2027 мс
+2022-05-06 12:16:27.786 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 57.2284 мс
+2022-05-06 12:16:28.289 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 73.7616 мс
+2022-05-06 12:16:29.880 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 53.6894 мс
+2022-05-06 12:16:30.493 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 48.9387 мс
+2022-05-06 12:16:31.006 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56151) по GET /api/Electronics/TerminalFilter ответил 200 за 44.5598 мс
+2022-05-06 12:24:14.511 +05:00 [INF] terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 отключен от системы
+2022-05-06 12:24:14.513 +05:00 [INF] Запрос от terminal_30078bbe-c3d4-496c-84f3-c29960ec6d99 (172.20.1.165:56157) по GET /technoWorldHub ответил 101 за 564885.1116 мс
+2022-05-06 12:24:29.107 +05:00 [INF] Запрос от Не установлено (172.20.1.165:56294) по POST /terminalToken ответил 200 за 4.4919 мс
+2022-05-06 12:24:29.317 +05:00 [INF] Запрос от terminal_c10bfff8-aa12-4cac-b7b9-15ab63a163c1 (172.20.1.165:56297) по POST /technoWorldHub/negotiate ответил 200 за 0.3010 мс
+2022-05-06 12:24:29.709 +05:00 [INF] Запрос от terminal_c10bfff8-aa12-4cac-b7b9-15ab63a163c1 (172.20.1.165:56294) по GET /api/Categories ответил 200 за 8.6069 мс
+2022-05-06 12:24:29.961 +05:00 [INF] Подключенин терминал: terminal_c10bfff8-aa12-4cac-b7b9-15ab63a163c1
+2022-05-06 12:29:47.371 +05:00 [INF] terminal_c10bfff8-aa12-4cac-b7b9-15ab63a163c1 отключен от системы
+2022-05-06 12:29:47.373 +05:00 [INF] Application is shutting down...
+2022-05-06 12:29:47.373 +05:00 [INF] Запрос от terminal_c10bfff8-aa12-4cac-b7b9-15ab63a163c1 (172.20.1.165:56300) по GET /technoWorldHub ответил 101 за 317513.9202 мс
+2022-05-06 12:30:51.394 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 12:30:51.421 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 12:30:51.423 +05:00 [INF] Hosting environment: Development
+2022-05-06 12:30:51.424 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 12:31:15.133 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 12:31:15.193 +05:00 [INF] Запрос от Не установлено (172.20.1.165:62503) по POST /userToken ответил 200 за 1203.3441 мс
+2022-05-06 12:31:15.428 +05:00 [INF] Запрос от admin (172.20.1.165:62506) по POST /technoWorldHub/negotiate ответил 200 за 58.5994 мс
+2022-05-06 12:31:15.669 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 12:31:17.807 +05:00 [INF] Запрос от admin (172.20.1.165:62503) по GET /api/Categories ответил 200 за 70.1610 мс
+2022-05-06 12:31:17.989 +05:00 [INF] Запрос от admin (172.20.1.165:62503) по GET /api/ElectrnicsTypes/All ответил 200 за 37.7700 мс
+2022-05-06 12:31:18.517 +05:00 [INF] Запрос от admin (172.20.1.165:62503) по GET /api/Electronics/Filter ответил 200 за 323.5051 мс
+2022-05-06 12:31:19.963 +05:00 [INF] Запрос от admin (172.20.1.165:62503) по GET /api/Orders/Filter ответил 200 за 91.5474 мс
+2022-05-06 12:31:21.202 +05:00 [INF] Запрос от admin (172.20.1.165:62503) по GET /api/Storages ответил 200 за 22.0370 мс
+2022-05-06 12:31:25.021 +05:00 [INF] Запрос от admin (172.20.1.165:62503) по GET /api/Orders/Filter ответил 200 за 88.1062 мс
+2022-05-06 12:31:27.012 +05:00 [INF] Запрос от admin (172.20.1.165:62503) по GET /api/Storages ответил 200 за 7.9397 мс
+2022-05-06 12:31:51.276 +05:00 [INF] admin отключен от системы
+2022-05-06 12:31:51.281 +05:00 [INF] Запрос от admin (172.20.1.165:62509) по GET /technoWorldHub ответил 101 за 35682.4820 мс
+2022-05-06 12:32:21.378 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 12:32:21.379 +05:00 [INF] Запрос от Не установлено (172.20.1.165:62527) по POST /userToken ответил 200 за 10.0851 мс
+2022-05-06 12:32:21.557 +05:00 [INF] Запрос от admin (172.20.1.165:62530) по POST /technoWorldHub/negotiate ответил 200 за 0.4390 мс
+2022-05-06 12:32:21.723 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 12:32:22.648 +05:00 [INF] Запрос от admin (172.20.1.165:62527) по GET /api/Categories ответил 200 за 4.5935 мс
+2022-05-06 12:32:22.779 +05:00 [INF] Запрос от admin (172.20.1.165:62527) по GET /api/ElectrnicsTypes/All ответил 200 за 9.7882 мс
+2022-05-06 12:32:23.109 +05:00 [INF] Запрос от admin (172.20.1.165:62527) по GET /api/Electronics/Filter ответил 200 за 178.9954 мс
+2022-05-06 12:32:23.522 +05:00 [INF] admin отключен от системы
+2022-05-06 12:32:23.527 +05:00 [INF] Запрос от admin (172.20.1.165:62533) по GET /technoWorldHub ответил 101 за 1853.9161 мс
+2022-05-06 12:33:04.338 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 12:33:04.340 +05:00 [INF] Запрос от Не установлено (172.20.1.165:62554) по POST /userToken ответил 200 за 6.7833 мс
+2022-05-06 12:33:04.513 +05:00 [INF] Запрос от admin (172.20.1.165:62557) по POST /technoWorldHub/negotiate ответил 200 за 0.3820 мс
+2022-05-06 12:33:04.676 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 12:33:05.354 +05:00 [INF] Запрос от admin (172.20.1.165:62554) по GET /api/Categories ответил 200 за 3.7455 мс
+2022-05-06 12:33:05.476 +05:00 [INF] Запрос от admin (172.20.1.165:62554) по GET /api/ElectrnicsTypes/All ответил 200 за 9.5503 мс
+2022-05-06 12:33:05.805 +05:00 [INF] Запрос от admin (172.20.1.165:62554) по GET /api/Electronics/Filter ответил 200 за 187.5330 мс
+2022-05-06 12:33:06.666 +05:00 [INF] Запрос от admin (172.20.1.165:62554) по GET /api/Status ответил 200 за 10.6454 мс
+2022-05-06 12:33:06.784 +05:00 [INF] Запрос от admin (172.20.1.165:62554) по GET /api/Deliveries/Filter ответил 200 за 75.0983 мс
+2022-05-06 12:33:06.866 +05:00 [INF] Запрос от admin (172.20.1.165:62554) по GET /api/Deliveries/Filter ответил 200 за 30.6718 мс
+2022-05-06 12:33:07.316 +05:00 [INF] Запрос от admin (172.20.1.165:62554) по GET /api/Orders/Filter ответил 200 за 51.0481 мс
+2022-05-06 12:33:27.592 +05:00 [INF] Запрос от admin (172.20.1.165:62554) по GET /api/Orders/Filter ответил 200 за 114.5320 мс
+2022-05-06 12:33:31.815 +05:00 [INF] Запрос от admin (172.20.1.165:62554) по GET /api/Storages ответил 200 за 2.4105 мс
+2022-05-06 12:33:48.402 +05:00 [INF] admin отключен от системы
+2022-05-06 12:33:48.405 +05:00 [INF] Запрос от admin (172.20.1.165:62560) по GET /technoWorldHub ответил 101 за 43779.6885 мс
+2022-05-06 12:34:28.709 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 12:34:28.711 +05:00 [INF] Запрос от Не установлено (172.20.1.165:62584) по POST /userToken ответил 200 за 10.0363 мс
+2022-05-06 12:34:28.892 +05:00 [INF] Запрос от admin (172.20.1.165:62587) по POST /technoWorldHub/negotiate ответил 200 за 0.2998 мс
+2022-05-06 12:34:29.054 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 12:34:32.044 +05:00 [INF] Запрос от admin (172.20.1.165:62584) по GET /api/Categories ответил 200 за 5.4596 мс
+2022-05-06 12:34:32.159 +05:00 [INF] Запрос от admin (172.20.1.165:62584) по GET /api/ElectrnicsTypes/All ответил 200 за 9.1487 мс
+2022-05-06 12:34:32.483 +05:00 [INF] Запрос от admin (172.20.1.165:62584) по GET /api/Electronics/Filter ответил 200 за 171.9230 мс
+2022-05-06 12:34:33.743 +05:00 [INF] Запрос от admin (172.20.1.165:62584) по GET /api/Orders/Filter ответил 200 за 54.9836 мс
+2022-05-06 12:34:34.783 +05:00 [INF] Запрос от admin (172.20.1.165:62584) по GET /api/Storages ответил 200 за 2.1192 мс
+2022-05-06 12:36:28.612 +05:00 [INF] Запрос от admin (172.20.1.165:62631) по GET /api/Orders/Filter ответил 200 за 86.0080 мс
+2022-05-06 12:36:32.368 +05:00 [INF] admin отключен от системы
+2022-05-06 12:36:32.372 +05:00 [INF] Запрос от admin (172.20.1.165:62590) по GET /technoWorldHub ответил 101 за 123369.3790 мс
+2022-05-06 12:55:09.892 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 12:55:09.920 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 12:55:09.921 +05:00 [INF] Hosting environment: Development
+2022-05-06 12:55:09.922 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 12:55:19.089 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 12:55:19.147 +05:00 [INF] Запрос от Не установлено (172.20.1.165:51784) по POST /userToken ответил 200 за 1191.0195 мс
+2022-05-06 12:55:19.340 +05:00 [INF] Запрос от kov (172.20.1.165:51787) по POST /technoWorldHub/negotiate ответил 200 за 56.9401 мс
+2022-05-06 12:55:19.461 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 12:55:20.211 +05:00 [INF] Запрос от kov (172.20.1.165:51784) по GET /api/Categories ответил 200 за 66.3963 мс
+2022-05-06 12:55:20.372 +05:00 [INF] Запрос от kov (172.20.1.165:51784) по GET /api/ElectrnicsTypes/All ответил 200 за 38.5257 мс
+2022-05-06 12:55:20.809 +05:00 [INF] Запрос от kov (172.20.1.165:51784) по GET /api/Electronics/Filter ответил 200 за 301.0783 мс
+2022-05-06 12:55:26.366 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 12:55:26.367 +05:00 [INF] Запрос от Не установлено (172.20.1.165:51793) по POST /userToken ответил 200 за 4.3485 мс
+2022-05-06 12:55:26.505 +05:00 [INF] Запрос от admin (172.20.1.165:51796) по POST /technoWorldHub/negotiate ответил 200 за 0.2916 мс
+2022-05-06 12:55:26.644 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 12:55:27.378 +05:00 [INF] Запрос от admin (172.20.1.165:51793) по GET /api/Categories ответил 200 за 3.8811 мс
+2022-05-06 12:55:27.485 +05:00 [INF] Запрос от admin (172.20.1.165:51793) по GET /api/ElectrnicsTypes/All ответил 200 за 8.3365 мс
+2022-05-06 12:55:27.781 +05:00 [INF] Запрос от admin (172.20.1.165:51793) по GET /api/Electronics/Filter ответил 200 за 152.2726 мс
+2022-05-06 12:55:30.805 +05:00 [INF] Запрос от admin (172.20.1.165:51793) по GET /api/Orders/Filter ответил 200 за 91.8585 мс
+2022-05-06 12:55:35.567 +05:00 [INF] Запрос от admin (172.20.1.165:51793) по GET /api/Orders/Filter ответил 200 за 92.7535 мс
+2022-05-06 12:55:42.225 +05:00 [INF] Запрос от admin (172.20.1.165:51793) по GET /api/Storages ответил 200 за 18.8055 мс
+2022-05-06 12:55:52.446 +05:00 [INF] admin отключен от системы
+2022-05-06 12:55:52.452 +05:00 [INF] Запрос от admin (172.20.1.165:51799) по GET /technoWorldHub ответил 101 за 25854.5673 мс
+2022-05-06 12:55:55.119 +05:00 [INF] kov отключен от системы
+2022-05-06 12:55:55.121 +05:00 [INF] Application is shutting down...
+2022-05-06 12:55:55.121 +05:00 [INF] Запрос от kov (172.20.1.165:51790) по GET /technoWorldHub ответил 101 за 35723.1884 мс
+2022-05-06 13:07:36.491 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 13:07:36.518 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 13:07:36.519 +05:00 [INF] Hosting environment: Development
+2022-05-06 13:07:36.519 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 13:07:49.912 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 13:07:49.975 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57217) по POST /userToken ответил 200 за 1216.5880 мс
+2022-05-06 13:07:50.210 +05:00 [INF] Запрос от admin (172.20.1.165:57220) по POST /technoWorldHub/negotiate ответил 200 за 61.0180 мс
+2022-05-06 13:07:50.467 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 13:07:50.995 +05:00 [INF] Запрос от admin (172.20.1.165:57217) по GET /api/Categories ответил 200 за 70.0360 мс
+2022-05-06 13:07:51.181 +05:00 [INF] Запрос от admin (172.20.1.165:57217) по GET /api/ElectrnicsTypes/All ответил 200 за 43.3633 мс
+2022-05-06 13:07:51.711 +05:00 [INF] Запрос от admin (172.20.1.165:57217) по GET /api/Electronics/Filter ответил 200 за 329.0253 мс
+2022-05-06 13:07:52.836 +05:00 [INF] Запрос от admin (172.20.1.165:57217) по GET /api/Orders/Filter ответил 200 за 92.0190 мс
+2022-05-06 13:07:55.384 +05:00 [INF] Запрос от admin (172.20.1.165:57217) по GET /api/Storages ответил 200 за 18.8873 мс
+2022-05-06 13:08:01.272 +05:00 [INF] admin отключен от системы
+2022-05-06 13:08:01.277 +05:00 [INF] Запрос от admin (172.20.1.165:57223) по GET /technoWorldHub ответил 101 за 11001.0941 мс
+2022-05-06 13:08:24.631 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 13:08:24.632 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57232) по POST /userToken ответил 200 за 7.0596 мс
+2022-05-06 13:08:24.815 +05:00 [INF] Запрос от admin (172.20.1.165:57235) по POST /technoWorldHub/negotiate ответил 200 за 0.3521 мс
+2022-05-06 13:08:24.985 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 13:08:25.845 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/Categories ответил 200 за 4.4620 мс
+2022-05-06 13:08:25.969 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/ElectrnicsTypes/All ответил 200 за 16.0022 мс
+2022-05-06 13:08:26.301 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/Electronics/Filter ответил 200 за 183.2354 мс
+2022-05-06 13:08:27.137 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/Status ответил 200 за 11.5189 мс
+2022-05-06 13:08:27.255 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/Deliveries/Filter ответил 200 за 73.9330 мс
+2022-05-06 13:08:27.365 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/Deliveries/Filter ответил 200 за 42.9987 мс
+2022-05-06 13:08:27.967 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/Orders/Filter ответил 200 за 63.6430 мс
+2022-05-06 13:08:28.902 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/Storages ответил 200 за 2.8613 мс
+2022-05-06 13:08:32.871 +05:00 [INF] Начинается выдача заказа 9OMURI4L7K...
+2022-05-06 13:08:32.933 +05:00 [INF] Выдача заказа 9OMURI4L7K закончена.
+2022-05-06 13:08:32.937 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по PUT /api/Orders/Distribute/18 ответил 200 за 81.6777 мс
+2022-05-06 13:08:33.009 +05:00 [INF] Запрос от admin (172.20.1.165:57244) по GET /api/Storages ответил 200 за 9.5228 мс
+2022-05-06 13:08:33.014 +05:00 [INF] Запрос от admin (172.20.1.165:57250) по GET /api/Storages ответил 200 за 8.5031 мс
+2022-05-06 13:08:33.057 +05:00 [INF] Запрос от admin (172.20.1.165:57247) по GET /api/Orders/Filter ответил 200 за 55.9497 мс
+2022-05-06 13:08:33.057 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/Orders/Filter ответил 200 за 61.7033 мс
+2022-05-06 13:08:33.244 +05:00 [INF] Запрос от admin (172.20.1.165:57253) по GET /api/Electronics/Filter ответил 200 за 238.5725 мс
+2022-05-06 13:08:37.443 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/Storages ответил 200 за 1.7632 мс
+2022-05-06 13:08:40.057 +05:00 [INF] Начинается выдача заказа IGTY038IV5...
+2022-05-06 13:08:40.060 +05:00 [INF] Выдача заказа IGTY038IV5 закончена.
+2022-05-06 13:08:40.061 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по PUT /api/Orders/Distribute/16 ответил 200 за 5.1814 мс
+2022-05-06 13:08:40.070 +05:00 [INF] Запрос от admin (172.20.1.165:57247) по GET /api/Storages ответил 200 за 5.1984 мс
+2022-05-06 13:08:40.070 +05:00 [INF] Запрос от admin (172.20.1.165:57250) по GET /api/Storages ответил 200 за 4.1449 мс
+2022-05-06 13:08:40.086 +05:00 [INF] Запрос от admin (172.20.1.165:57256) по GET /api/Storages ответил 200 за 14.9931 мс
+2022-05-06 13:08:40.088 +05:00 [INF] Запрос от admin (172.20.1.165:57232) по GET /api/Storages ответил 200 за 18.2409 мс
+2022-05-06 13:08:40.187 +05:00 [INF] Запрос от admin (172.20.1.165:57253) по GET /api/Orders/Filter ответил 200 за 119.9078 мс
+2022-05-06 13:08:40.188 +05:00 [INF] Запрос от admin (172.20.1.165:57244) по GET /api/Orders/Filter ответил 200 за 123.4196 мс
+2022-05-06 13:08:40.356 +05:00 [INF] Запрос от admin (172.20.1.165:57259) по GET /api/Electronics/Filter ответил 200 за 283.5017 мс
+2022-05-06 13:08:43.885 +05:00 [INF] admin отключен от системы
+2022-05-06 13:08:43.887 +05:00 [INF] Запрос от admin (172.20.1.165:57241) по GET /technoWorldHub ответил 101 за 18954.1726 мс
+2022-05-06 13:09:51.347 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 13:09:51.352 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57274) по POST /userToken ответил 200 за 8.4114 мс
+2022-05-06 13:09:51.491 +05:00 [INF] Запрос от admin (172.20.1.165:57277) по POST /technoWorldHub/negotiate ответил 200 за 0.2288 мс
+2022-05-06 13:09:51.628 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 13:09:52.822 +05:00 [INF] Запрос от admin (172.20.1.165:57274) по GET /api/Categories ответил 200 за 4.2149 мс
+2022-05-06 13:09:53.017 +05:00 [INF] Запрос от admin (172.20.1.165:57274) по GET /api/ElectrnicsTypes/All ответил 200 за 10.6243 мс
+2022-05-06 13:09:53.318 +05:00 [INF] Запрос от admin (172.20.1.165:57274) по GET /api/Electronics/Filter ответил 200 за 161.9099 мс
+2022-05-06 13:10:03.332 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 13:10:03.334 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57289) по POST /userToken ответил 200 за 3.5635 мс
+2022-05-06 13:10:03.474 +05:00 [INF] Запрос от kov (172.20.1.165:57292) по POST /technoWorldHub/negotiate ответил 200 за 0.1734 мс
+2022-05-06 13:10:03.605 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 13:10:04.737 +05:00 [INF] Запрос от kov (172.20.1.165:57289) по GET /api/Categories ответил 200 за 3.2865 мс
+2022-05-06 13:10:04.841 +05:00 [INF] Запрос от kov (172.20.1.165:57289) по GET /api/ElectrnicsTypes/All ответил 200 за 9.2671 мс
+2022-05-06 13:10:05.123 +05:00 [INF] Запрос от kov (172.20.1.165:57289) по GET /api/Electronics/Filter ответил 200 за 145.5090 мс
+2022-05-06 13:10:10.656 +05:00 [INF] Запрос от admin (172.20.1.165:57274) по GET /api/Orders/Filter ответил 200 за 31.0946 мс
+2022-05-06 13:10:13.303 +05:00 [INF] Запрос от admin (172.20.1.165:57274) по GET /api/Orders/Filter ответил 200 за 75.5310 мс
+2022-05-06 13:10:14.794 +05:00 [INF] Запрос от admin (172.20.1.165:57274) по GET /api/Storages ответил 200 за 2.1803 мс
+2022-05-06 13:10:21.539 +05:00 [INF] Начинается выдача заказа XVXCRHLOH9...
+2022-05-06 13:10:21.542 +05:00 [INF] Выдача заказа XVXCRHLOH9 закончена.
+2022-05-06 13:10:21.543 +05:00 [INF] Запрос от admin (172.20.1.165:57274) по PUT /api/Orders/Distribute/8 ответил 200 за 7.5092 мс
+2022-05-06 13:10:21.610 +05:00 [INF] Запрос от admin (172.20.1.165:57298) по GET /api/Storages ответил 200 за 5.9330 мс
+2022-05-06 13:10:21.623 +05:00 [INF] Запрос от admin (172.20.1.165:57307) по GET /api/Storages ответил 200 за 14.9968 мс
+2022-05-06 13:10:21.719 +05:00 [INF] Запрос от admin (172.20.1.165:57303) по GET /api/Orders/Filter ответил 200 за 111.3115 мс
+2022-05-06 13:10:21.719 +05:00 [INF] Запрос от admin (172.20.1.165:57274) по GET /api/Orders/Filter ответил 200 за 116.8516 мс
+2022-05-06 13:10:21.854 +05:00 [INF] Запрос от admin (172.20.1.165:57306) по GET /api/Electronics/Filter ответил 200 за 236.0852 мс
+2022-05-06 13:10:21.855 +05:00 [INF] Запрос от kov (172.20.1.165:57289) по GET /api/Electronics/Filter ответил 200 за 266.9961 мс
+2022-05-06 13:10:33.107 +05:00 [INF] Запрос от kov (172.20.1.165:57289) по GET /api/Electronics/Filter ответил 200 за 98.6131 мс
+2022-05-06 13:10:33.495 +05:00 [INF] Запрос от kov (172.20.1.165:57289) по GET /api/Electronics/Filter ответил 200 за 162.2903 мс
+2022-05-06 13:10:34.040 +05:00 [INF] Запрос от kov (172.20.1.165:57289) по GET /api/Electronics/Filter ответил 200 за 91.2652 мс
+2022-05-06 13:10:34.438 +05:00 [INF] Запрос от kov (172.20.1.165:57289) по GET /api/Electronics/Filter ответил 200 за 160.0957 мс
+2022-05-06 13:10:46.876 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 13:10:46.910 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 13:10:46.912 +05:00 [INF] Hosting environment: Development
+2022-05-06 13:10:46.912 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 13:10:57.820 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 13:10:57.892 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57345) по POST /userToken ответил 200 за 1507.6058 мс
+2022-05-06 13:10:57.958 +05:00 [INF] Запрос от admin (172.20.1.165:57355) по POST /technoWorldHub/negotiate ответил 200 за 63.0443 мс
+2022-05-06 13:10:58.005 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 13:11:06.195 +05:00 [INF] Запрос от admin (172.20.1.165:57345) по GET /api/Storages ответил 200 за 130.3783 мс
+2022-05-06 13:11:08.926 +05:00 [INF] Начинается выдача заказа GSJUY6BBJZ...
+2022-05-06 13:11:09.009 +05:00 [INF] Выдача заказа GSJUY6BBJZ закончена.
+2022-05-06 13:11:09.015 +05:00 [INF] Запрос от admin (172.20.1.165:57345) по PUT /api/Orders/Distribute/17 ответил 200 за 131.8604 мс
+2022-05-06 13:11:09.025 +05:00 [INF] Запрос от admin (172.20.1.165:57374) по GET /api/Storages ответил 200 за 7.5204 мс
+2022-05-06 13:11:09.035 +05:00 [INF] Запрос от admin (172.20.1.165:57377) по GET /api/Storages ответил 200 за 17.1978 мс
+2022-05-06 13:11:22.032 +05:00 [INF] Запрос от admin (172.20.1.165:57345) по GET /api/Storages ответил 200 за 4.5809 мс
+2022-05-06 13:13:14.523 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 13:13:14.551 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 13:13:14.552 +05:00 [INF] Hosting environment: Development
+2022-05-06 13:13:14.552 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 13:13:26.336 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 13:13:26.396 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57512) по POST /userToken ответил 200 за 1208.4796 мс
+2022-05-06 13:13:26.591 +05:00 [INF] Запрос от admin (172.20.1.165:57515) по POST /technoWorldHub/negotiate ответил 200 за 52.7064 мс
+2022-05-06 13:13:26.716 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 13:13:33.440 +05:00 [INF] Запрос от admin (172.20.1.165:57512) по GET /api/Categories ответил 200 за 69.5745 мс
+2022-05-06 13:13:33.564 +05:00 [INF] Запрос от admin (172.20.1.165:57512) по GET /api/ElectrnicsTypes/All ответил 200 за 36.7768 мс
+2022-05-06 13:13:34.013 +05:00 [INF] Запрос от admin (172.20.1.165:57512) по GET /api/Electronics/Filter ответил 200 за 313.9159 мс
+2022-05-06 13:13:38.869 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 13:13:38.870 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57527) по POST /userToken ответил 200 за 4.9649 мс
+2022-05-06 13:13:38.877 +05:00 [INF] Запрос от kov (172.20.1.165:57530) по POST /technoWorldHub/negotiate ответил 200 за 0.6211 мс
+2022-05-06 13:13:38.922 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 13:14:01.303 +05:00 [INF] Запрос от kov (172.20.1.165:57527) по GET /api/Storages ответил 200 за 19.6519 мс
+2022-05-06 13:14:07.356 +05:00 [INF] Запрос от kov (172.20.1.165:57527) по GET /api/Orders/Filter ответил 200 за 126.8773 мс
+2022-05-06 13:14:09.621 +05:00 [INF] Запрос от kov (172.20.1.165:57527) по GET /api/Storages ответил 200 за 5.3421 мс
+2022-05-06 13:14:12.890 +05:00 [INF] Запрос от kov (172.20.1.165:57527) по GET /api/Storages ответил 200 за 1.6173 мс
+2022-05-06 13:14:15.647 +05:00 [INF] Запрос от kov (172.20.1.165:57527) по GET /api/Storages ответил 200 за 3.5856 мс
+2022-05-06 13:14:29.198 +05:00 [INF] Начинается выдача заказа ZD5WVSF06U...
+2022-05-06 13:14:29.201 +05:00 [ERR] Запрос от kov (172.20.1.165:57527) по PUT /api/Orders/Distribute/6 ответил 500 за 32.4953 мс
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Controllers.OrdersController.DistributeOrder(Int32 orderId, Int32 storageId) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 119
+   at lambda_method683(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-06 13:14:29.246 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Controllers.OrdersController.DistributeOrder(Int32 orderId, Int32 storageId) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 119
+   at lambda_method683(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-06 13:14:31.223 +05:00 [INF] kov отключен от системы
+2022-05-06 13:14:31.229 +05:00 [INF] Запрос от kov (172.20.1.165:57533) по GET /technoWorldHub ответил 101 за 52308.4801 мс
+2022-05-06 13:14:56.964 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 13:14:56.999 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 13:14:57.000 +05:00 [INF] Hosting environment: Development
+2022-05-06 13:14:57.001 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 13:15:03.701 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-06 13:15:03.771 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57558) по POST /userToken ответил 200 за 1491.8564 мс
+2022-05-06 13:15:03.833 +05:00 [INF] Запрос от kov (172.20.1.165:57561) по POST /technoWorldHub/negotiate ответил 200 за 57.3332 мс
+2022-05-06 13:15:03.870 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-06 13:15:59.207 +05:00 [INF] Запрос от kov (172.20.1.165:57558) по GET /api/Status ответил 200 за 54.9574 мс
+2022-05-06 13:15:59.501 +05:00 [INF] Запрос от kov (172.20.1.165:57558) по GET /api/Deliveries/Filter ответил 200 за 232.9536 мс
+2022-05-06 13:15:59.587 +05:00 [INF] Запрос от kov (172.20.1.165:57558) по GET /api/Deliveries/Filter ответил 200 за 38.7284 мс
+2022-05-06 13:15:59.799 +05:00 [INF] Запрос от kov (172.20.1.165:57558) по GET /api/Orders/Filter ответил 200 за 167.0467 мс
+2022-05-06 13:16:05.419 +05:00 [INF] Запрос от kov (172.20.1.165:57558) по GET /api/Orders/Filter ответил 200 за 98.9146 мс
+2022-05-06 13:16:12.112 +05:00 [INF] Запрос от kov (172.20.1.165:57558) по GET /api/Storages ответил 200 за 29.4820 мс
+2022-05-06 13:16:27.933 +05:00 [INF] Начинается выдача заказа ZD5WVSF06U...
+2022-05-06 13:19:26.674 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 13:19:26.705 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 13:19:26.706 +05:00 [INF] Hosting environment: Development
+2022-05-06 13:19:26.706 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 13:24:29.329 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-06 13:24:29.396 +05:00 [INF] Запрос от Не установлено (172.20.1.165:62986) по POST /userToken ответил 200 за 1252.0310 мс
+2022-05-06 13:24:29.630 +05:00 [INF] Запрос от admin (172.20.1.165:62989) по POST /technoWorldHub/negotiate ответил 200 за 49.9275 мс
+2022-05-06 13:24:29.770 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-06 13:24:30.689 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по GET /api/Categories ответил 200 за 64.3378 мс
+2022-05-06 13:24:30.889 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по GET /api/ElectrnicsTypes/All ответил 200 за 53.2755 мс
+2022-05-06 13:24:31.400 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по GET /api/Electronics/Filter ответил 200 за 320.2445 мс
+2022-05-06 13:24:33.689 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по GET /api/Status ответил 200 за 14.7078 мс
+2022-05-06 13:24:33.829 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по GET /api/Deliveries/Filter ответил 200 за 91.4678 мс
+2022-05-06 13:24:33.922 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по GET /api/Deliveries/Filter ответил 200 за 29.3356 мс
+2022-05-06 13:24:34.264 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по GET /api/Orders/Filter ответил 200 за 83.9280 мс
+2022-05-06 13:24:37.629 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по GET /api/Orders/Filter ответил 200 за 82.1759 мс
+2022-05-06 13:24:39.145 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по GET /api/Storages ответил 200 за 17.8082 мс
+2022-05-06 13:24:41.512 +05:00 [INF] Начинается выдача заказа ZD5WVSF06U...
+2022-05-06 13:24:41.514 +05:00 [INF] Выдан товар Atlant 4621-141 серебристый в количествуе 1
+2022-05-06 13:24:41.515 +05:00 [INF] Выдан товар Beko ELE 67511 ZSW в количествуе 1
+2022-05-06 13:24:41.515 +05:00 [INF] Выдан товар Midea MVFS4004 в количествуе 1
+2022-05-06 13:24:41.581 +05:00 [INF] Выдача заказа ZD5WVSF06U закончена.
+2022-05-06 13:24:41.586 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по PUT /api/Orders/Distribute/6 ответил 200 за 102.2743 мс
+2022-05-06 13:24:41.656 +05:00 [INF] Запрос от admin (172.20.1.165:62998) по GET /api/Storages ответил 200 за 7.2505 мс
+2022-05-06 13:24:41.656 +05:00 [INF] Запрос от admin (172.20.1.165:63004) по GET /api/Storages ответил 200 за 5.3386 мс
+2022-05-06 13:24:41.771 +05:00 [INF] Запрос от admin (172.20.1.165:62986) по GET /api/Orders/Filter ответил 200 за 123.8942 мс
+2022-05-06 13:24:41.780 +05:00 [INF] Запрос от admin (172.20.1.165:63001) по GET /api/Orders/Filter ответил 200 за 130.2380 мс
+2022-05-06 13:24:41.879 +05:00 [INF] Запрос от admin (172.20.1.165:63007) по GET /api/Electronics/Filter ответил 200 за 226.2255 мс
+2022-05-06 13:25:30.406 +05:00 [INF] admin отключен от системы
+2022-05-06 13:25:30.411 +05:00 [INF] Запрос от admin (172.20.1.165:62992) по GET /technoWorldHub ответил 101 за 60712.3086 мс
+2022-05-06 13:25:31.916 +05:00 [INF] Application is shutting down...
+2022-05-06 13:48:23.852 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 13:48:23.882 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 13:48:23.883 +05:00 [INF] Hosting environment: Development
+2022-05-06 13:48:23.883 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 13:50:01.615 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-06 13:50:01.677 +05:00 [INF] Запрос от Не установлено (172.20.1.165:52481) по POST /userToken ответил 200 за 1236.1515 мс
+2022-05-06 13:50:01.910 +05:00 [INF] Запрос от sh (172.20.1.165:52484) по POST /technoWorldHub/negotiate ответил 200 за 48.0198 мс
+2022-05-06 13:50:02.142 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-06 13:50:04.614 +05:00 [INF] Запрос от sh (172.20.1.165:52481) по GET /api/Status ответил 200 за 48.4474 мс
+2022-05-06 13:50:04.895 +05:00 [INF] Запрос от sh (172.20.1.165:52481) по GET /api/Orders/Filter ответил 200 за 118.2413 мс
+2022-05-06 13:50:04.929 +05:00 [INF] Запрос от sh (172.20.1.165:52481) по GET /api/Orders/Filter ответил 200 за 8.1957 мс
+2022-05-06 13:50:10.485 +05:00 [INF] sh отключен от системы
+2022-05-06 13:50:10.493 +05:00 [INF] Запрос от sh (172.20.1.165:52487) по GET /technoWorldHub ответил 101 за 8515.5573 мс
+2022-05-06 13:53:19.924 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-06 13:53:19.925 +05:00 [INF] Запрос от Не установлено (172.20.1.165:56877) по POST /userToken ответил 200 за 10.0946 мс
+2022-05-06 13:53:20.106 +05:00 [INF] Запрос от sh (172.20.1.165:56880) по POST /technoWorldHub/negotiate ответил 200 за 0.3655 мс
+2022-05-06 13:53:20.277 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-06 13:53:21.733 +05:00 [INF] Запрос от sh (172.20.1.165:56877) по GET /api/Status ответил 200 за 1.9582 мс
+2022-05-06 13:53:22.074 +05:00 [INF] Запрос от sh (172.20.1.165:56877) по GET /api/Orders/Filter ответил 200 за 132.7322 мс
+2022-05-06 13:53:31.734 +05:00 [INF] sh отключен от системы
+2022-05-06 13:53:31.736 +05:00 [INF] Запрос от sh (172.20.1.165:56883) по GET /technoWorldHub ответил 101 за 11512.7125 мс
+2022-05-06 13:54:12.734 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-06 13:54:12.762 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-06 13:54:12.763 +05:00 [INF] Hosting environment: Development
+2022-05-06 13:54:12.765 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-06 13:54:31.789 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-06 13:54:31.853 +05:00 [INF] Запрос от Не установлено (172.20.1.165:56933) по POST /userToken ответил 200 за 1514.4988 мс
+2022-05-06 13:54:32.082 +05:00 [INF] Запрос от sh (172.20.1.165:56936) по POST /technoWorldHub/negotiate ответил 200 за 48.6681 мс
+2022-05-06 13:54:32.244 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-06 13:54:33.261 +05:00 [INF] Запрос от sh (172.20.1.165:56933) по GET /api/Status ответил 200 за 48.9924 мс
+2022-05-06 13:54:33.659 +05:00 [INF] Запрос от sh (172.20.1.165:56933) по GET /api/Orders/Filter ответил 200 за 240.3675 мс
+2022-05-06 13:54:43.604 +05:00 [INF] sh отключен от системы
+2022-05-06 13:54:43.608 +05:00 [INF] Запрос от sh (172.20.1.165:56939) по GET /technoWorldHub ответил 101 за 11433.3986 мс
+2022-05-06 13:54:49.854 +05:00 [INF] Application is shutting down...

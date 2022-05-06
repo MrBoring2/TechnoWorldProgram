@@ -33,13 +33,13 @@ namespace TechnoWorld_Terminal.Services
         }
 
         public void RegisterWindow<VM, Win>()
-            where VM : WindowVMBase
+            where VM : BaseWindowVM
             where Win : MaterialWindow
         {
             displayRootRegistry.RegisterWindowType<VM, Win>();
         }
 
-        public void OpenWindow(WindowVMBase newWindowVM)
+        public void OpenWindow(BaseWindowVM newWindowVM)
         {
 
             if (newWindowVM != null)
@@ -48,7 +48,7 @@ namespace TechnoWorld_Terminal.Services
             }
         }
 
-        public void OpenAndHideWindow(WindowVMBase currentWindowVM, WindowVMBase newWindowVM)
+        public void OpenAndHideWindow(BaseWindowVM currentWindowVM, BaseWindowVM newWindowVM)
         {
             if (currentWindowVM != null && newWindowVM != null)
             {
@@ -56,7 +56,7 @@ namespace TechnoWorld_Terminal.Services
                 displayRootRegistry.HidePresentation(currentWindowVM);
             }
         }
-        public void CloseWindow(WindowVMBase currentWindowVM)
+        public void CloseWindow(BaseWindowVM currentWindowVM)
         {
             if (currentWindowVM != null)
             {
@@ -69,6 +69,10 @@ namespace TechnoWorld_Terminal.Services
             {
                 displayRootRegistry.ShowModalPresentation(windowVM);
             }
+        }
+        public void CloseWindows()
+        {
+            displayRootRegistry.CloseAllWindow();
         }
     }
 }

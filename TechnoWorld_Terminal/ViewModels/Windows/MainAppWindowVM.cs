@@ -22,7 +22,7 @@ using TechnoWorld_Terminal.Models;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
-    public class MainAppWindowVM : WindowVMBase
+    public class MainAppWindowVM : BaseWindowVM
     {
         protected List<PageVMBase> _pageVMs;
         public MainAppWindowVM()
@@ -51,7 +51,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
                     options.AccessTokenProvider = () => Task.FromResult(ClientService.Instance.Token);
                 })
                 .Build();
-
+            ClientService.Instance.HubConnection.Closed += HubConnection_Closed;
             ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
             ClientService.Instance.RestClient.Timeout = 20000;
             ClientService.Instance.RestClient.ReadWriteTimeout = 20000;
@@ -60,7 +60,17 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             WindowLoadedCommand = new RelayCommand(WindowLoaded);
 
         }
+        private Task HubConnection_Closed(Exception arg)
+        {
+            return App.Current.Dispatcher.InvokeAsync(() =>
+            {
+                MessageBox.Show("Потеряно соединение с сервером!", "Критическая ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                WindowNavigation.Instance.OpenWindow(new MainAppWindowVM());
+                PageNavigation.Instance.ClearCreatedPages();
+                WindowNavigation.Instance.CloseWindows();
 
+            }).Task;
+        }
         private void Authorize()
         {
             try

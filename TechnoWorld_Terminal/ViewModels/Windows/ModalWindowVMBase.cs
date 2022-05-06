@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
-    public class ModalWindowVMBase : WindowVMBase
+    public class ModalWindowVMBase : BaseWindowVM
     {
     }
 }

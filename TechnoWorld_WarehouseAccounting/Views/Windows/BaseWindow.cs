@@ -11,5 +11,6 @@ namespace TechnoWorld_WarehouseAccounting.Views.Windows
 {
     public class BaseWindow : MaterialWindow
     {
+        
     }
 }

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2dzB/34Y1QURXw4JILCK4ToUaHWlgo0/PSXnXpCaXxo00ghEie9MivPUvMqwNRzqtIy2jBRiuZLTYyWRlFUSKQ==",
+  "dgSpecHash": "TcFnsAFUekDnya/zG0zt/TaJTRszG/Yi7HhP+q5vJpS9UE1xIYrc6aPo6pfXYa+BzY7jp3+s0CjEP7tLP3/BUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\TechnoWorld_DataModels_v2.csproj",
+  "projectFilePath": "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\TechnoWorld_DataModels_v2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MrBoring\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\MrBoring\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\MrBoring\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\MrBoring\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\user452.CHENK\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\user452.CHENK\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\user452.CHENK\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\user452.CHENK\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -25,7 +25,7 @@ namespace TechnoWorld_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Storage>>> GetStorages()
         {
-            return await _context.Storages.ToListAsync();
+            return await _context.Storages.Include(p => p.ElectronicsToStorages).ToListAsync();
         }
 
         // GET: api/Status/5

@@ -72,5 +72,9 @@ namespace TechnoWorld_WarehouseAccounting.Services
 
             }
         }
+        public void CloseWindows()
+        {
+            displayRootRegistry.CloseAllWindow();
+        }
     }
 }
