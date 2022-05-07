@@ -16,6 +16,11 @@ using TechnoWorld_API.Helpers;
 using TechnoWorld_API.Models;
 using TechnoWorld_API.Services;
 using TechoWorld_DataModels_v2;
+using TechnoWorld_API.Extentions;
+using TechnoWorld_API.Validation;
+using Microsoft.AspNetCore.Identity;
+using TechnoWorld_WarehouseAccounting.Models;
+using TechoWorld_DataModels_v2.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -25,36 +30,25 @@ namespace TechnoWorld_API.Controllers
     [ApiController]
     public class AuthenticateController : ControllerBase
     {
-        private readonly IHubContext<TechnoWorldHub> _hubContext;
         private readonly TechnoWorldContext _context;
-        public AuthenticateController(TechnoWorldContext context, IHubContext<TechnoWorldHub> hubContext)
+        public AuthenticateController(TechnoWorldContext context)
         {
             _context = context;
-            _hubContext = hubContext;
         }
-        // GET: api/<AuthenticateController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
 
         [HttpPost("/terminalToken")]
-        public async Task<IActionResult> Token(TerminalLoginModel model)
+        public IActionResult Token(TerminalLoginModel model)
         {
             if (ModelState.IsValid)
             {
+                var terminalClaims = ClaimsExtentions.BuildClaimsForTerminal(model);
 
+                var token = JwtTokenGenerator.GenerateToken(terminalClaims);
 
-                var identity = GetIdentity(model);
-
-                if (identity == null)
+                if (token == null)
                 {
-                    return BadRequest("Неверное имя пользователя или пароль");
+                    return BadRequest("Произошла ошибка при авторизации!");
                 }
-
-                var token = CreateToken(identity.Result);
 
                 return Ok(token);
             }
@@ -66,118 +60,53 @@ namespace TechnoWorld_API.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (string.IsNullOrEmpty(model.UserName) || string.IsNullOrEmpty(model.Password))
+                ClaimsIdentity userClaims = null;
+                var validationResult = UserValidation.ValidateLoginPassword(model);
+                if (validationResult.Result == true)
                 {
-                    return BadRequest("Поля не должны быть пустыми!");
-                }
-
-                if (TechnoWorldHub.ConnectedUsers.TryGetValue(model.UserName, out string connectionId))
-                {
-                    if (connectionId != null)
+                    var user = await TryGetUser(model.UserName, model.Password);
+                    if (user == null)
                     {
-                        Log.Warning($"Провальная попытка входа пользователя {model.UserName}: Данный пользователь уже авторизирован");
-                        return BadRequest("Пользователь уже авторизирован!");
+                        LogService.LodMessage($"Провальная попытка входа пользователя {model.UserName}: Неверный логин или пароль", LogLevel.Warning);
+                        return BadRequest("Неверное имя пользователя или пароль");
+                    }
+                    else
+                    {
+                        userClaims = ClaimsExtentions.BuildClaimsForUser(user);
                     }
                 }
-                var identity = GetIdentity(model);
+                else
+                {
+                    return BadRequest(validationResult.Message);
+                }
+                var token = JwtTokenGenerator.GenerateToken(userClaims);
 
-                if (identity.Result == null)
+                if (token == null)
                 {
-                    Log.Warning($"Провальная попытка входа пользователя {model.UserName}: Неверный логин или пароль");
-                    return BadRequest("Неверное имя пользователя или пароль");
-                }
-                var a = identity.Result.FindFirst("role_id").Value;
-                if (model.Programm == "cash")
-                {
-                    if (identity.Result.FindFirst("role_id").Value != "1")
-                    {
-                        return BadRequest("Данный пользователь не может здесь авторизироваться");
-                    }
-                }
-                else if (model.Programm == "warehouse_accounting")
-                {
-                    if (identity.Result.FindFirst("role_id").Value == "1")
-                    {
-                        return BadRequest("Данный пользователь не может здесь авторизироваться");
-                    }
+                    return BadRequest("Произошла ошибка при авторизации!");
                 }
 
+                LogService.LodMessage($"Пользователь {model.UserName} авторизирован в системе", LogLevel.Info);
 
-                var token = CreateToken(identity.Result);
-                Log.Information($"Пользователь {model.UserName} авторизирован в системе");
-                return Ok(token);
-            }
-            else return BadRequest();
-        }
-        private dynamic CreateToken(ClaimsIdentity identity)
-        {
-            var now = DateTime.UtcNow;
+                HttpContext.Response.Cookies.Append(".AspNetCore.Application.Id", token.access_token);
 
-            var jwt = new JwtSecurityToken(
-                issuer: AuthOptions.ISSUER,
-                audience: AuthOptions.AUDIENCE,
-                notBefore: now,
-                claims: identity.Claims,
-                expires: now.Add(TimeSpan.FromHours(AuthOptions.LIFETIME)),
-                signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(),
-                SecurityAlgorithms.HmacSha256));
-            var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
-
-            //HttpContext.Session.SetString("JWToken", encodedJwt);
-            var response = new
-            {
-                access_token = encodedJwt,
-                user_name = identity.FindFirst(ClaimsIdentity.DefaultNameClaimType).Value.ToString(),
-                full_name = identity.FindFirst("full_name")?.Value.ToString(),
-                role_name = identity.FindFirst(ClaimsIdentity.DefaultRoleClaimType).Value.ToString(),
-                user_id = identity.FindFirst("user_id")?.Value.ToString(),
-                role_id = identity.FindFirst("role_id")?.Value.ToString(),
-                post = identity.FindFirst("post")?.Value.ToString()
-            };
-
-            return response;
-        }
-        private async Task<ClaimsIdentity> GetIdentity(TerminalLoginModel model)
-        {
-            if (model != null)
-            {
-
-                var claims = new List<Claim>
+                return Ok(new AuthResponseModel
                 {
-                    new Claim(ClaimsIdentity.DefaultNameClaimType, model.TerminalName),
-                    new Claim(ClaimsIdentity.DefaultRoleClaimType, "terminalUser")
-                };
-                ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
-
-                return claimsIdentity;
+                    user_name = userClaims.FindFirst(ClaimsIdentity.DefaultNameClaimType).Value.ToString(),
+                    full_name = userClaims.FindFirst("full_name")?.Value.ToString(),
+                    role_name = userClaims.FindFirst(ClaimsIdentity.DefaultRoleClaimType).Value.ToString(),
+                    user_id = Convert.ToInt32(userClaims.FindFirst("user_id")?.Value),
+                    role_id = Convert.ToInt32(userClaims.FindFirst("role_id")?.Value),
+                    post = userClaims.FindFirst("post")?.Value.ToString()
+                });
             }
-
-            return null;
+            else return BadRequest("Модель не валидна");
         }
-        private async Task<ClaimsIdentity> GetIdentity(UserLoginModel model)
+
+        private async Task<Employee> TryGetUser(string login, string password)
         {
-            Employee user = await _context.Employees.Include(r => r.Role).Include(p=>p.Post)
-                .FirstOrDefaultAsync(x => x.Login == model.UserName && x.Password == model.Password);
-
-            if (user != null)
-            {
-                var claims = new List<Claim>
-                {
-                    new Claim("user_id", user.EmployeeId.ToString()),
-                    new Claim("full_name", user.FullName.ToString()),
-                    new Claim(ClaimsIdentity.DefaultNameClaimType, user.Login),
-                    new Claim("role_id", user.Role.RoleId.ToString()),
-                    new Claim("post", user.Post.Name.ToString()),
-                    new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role.Name.ToString())
-                };
-                ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
-
-                return claimsIdentity;
-            }
-
-            return null;
+            return await _context.Employees.Include(p => p.Role).Include(p => p.Post).FirstOrDefaultAsync(p => p.Login == login && p.Password == password);
         }
-
 
     }
 }

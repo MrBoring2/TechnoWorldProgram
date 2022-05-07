@@ -1,10 +1,11 @@
-﻿<local:BaseWindow BorderBackgroundBrush="Orange" x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.MainAppWindow"
+﻿<mde:MaterialWindow BorderBackgroundBrush="Orange" x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.MainAppWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"   
         FontFamily="{DynamicResource MaterialDesignFont}"
@@ -12,7 +13,7 @@
         xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
         mc:Ignorable="d"
        Title="{Binding WindowTitle}" Height="700" Width="1100" MinHeight="600" MinWidth="1100" WindowStartupLocation="CenterScreen" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality">
-    <local:BaseWindow.Resources>
+    <mde:MaterialWindow.Resources>
         <ResourceDictionary>
             <!--  This is the template for all menu items. In this sample we use the glyph items.  -->
             <DataTemplate x:Key="HamburgerMenuItem" DataType="{x:Type mah:HamburgerMenuGlyphItem}">
@@ -53,7 +54,7 @@
                 </Grid>
             </DataTemplate>
         </ResourceDictionary>
-    </local:BaseWindow.Resources>
+    </mde:MaterialWindow.Resources>
 
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
@@ -90,4 +91,4 @@
         </mah:HamburgerMenu>
 
     </Grid>
-</local:BaseWindow>
+</mde:MaterialWindow>

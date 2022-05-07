@@ -9,11 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using TechnoWorld_WarehouseAccounting.Common;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Abstractions;
+using WPF_Helpers.Common;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
@@ -151,7 +154,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             await Task.Run(async () =>
             {
-                var response = await ApiService.GetRequest("api/Suppliers");
+                var response = await ApiService.Instance.GetRequest("api/Suppliers");
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     Suppliers = new ObservableCollection<Supplier>(JsonConvert.DeserializeObject<List<Supplier>>(response.Content));
@@ -167,7 +170,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             await Task.Run(async () =>
             {
-                var response = await ApiService.GetRequest("api/Storages");
+                var response = await ApiService.Instance.GetRequest("api/Storages");
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     Storages = new ObservableCollection<Storage>(JsonConvert.DeserializeObject<List<Storage>>(response.Content));
@@ -204,7 +207,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             //Delivery.SupplierId = SelectedSupplier.SupplierId;
             Delivery.EmployeeId = ClientService.Instance.User.UserId;
             Delivery.ElectronicsToDeliveries = DeliveryItems.Select(p => new ElectronicsToDelivery { ElectronicsId = p.Electronic.ElectronicsId, Quantity = p.Count }).ToList();
-            var response = await ApiService.PostRequest("api/Deliveries", Delivery);
+            var response = await ApiService.Instance.PostRequest("api/Deliveries", Delivery);
             if (response.StatusCode == System.Net.HttpStatusCode.Created)
             {
                 GenerateReceiptInvoice(GenerateDeliveryNumber(), SelectedStorage, SelectedSupplier, Delivery.DateOfOrder, Delivery.DateOfDelivery, DeliveryItems);
@@ -465,7 +468,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async void UnloadToStorage(object obj)
         {
-            var response = await ApiService.PutRequest($"api/Deliveries/Unload", Delivery.DelivertId);
+            var response = await ApiService.Instance.PutRequest($"api/Deliveries/Unload", Delivery.DelivertId);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 DialogResult = true;
@@ -484,7 +487,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             if (result == MessageBoxResult.Yes)
             {
                 Delivery.StatusId = 4;
-                var response = await ApiService.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
+                var response = await ApiService.Instance.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     DialogResult = true;
@@ -503,7 +506,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             if (result == MessageBoxResult.Yes)
             {
                 Delivery.StatusId = 5;
-                var response = await ApiService.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
+                var response = await ApiService.Instance.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     DialogResult = true;

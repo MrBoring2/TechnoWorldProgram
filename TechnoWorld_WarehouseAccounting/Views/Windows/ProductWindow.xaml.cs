@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignExtensions.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace TechnoWorld_WarehouseAccounting.Views.Windows
     /// <summary>
     /// Логика взаимодействия для ProductWindow.xaml
     /// </summary>
-    public partial class ProductWindow : BaseWindow
+    public partial class ProductWindow : MaterialWindow
     {
         public ProductWindow()
         {

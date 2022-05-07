@@ -11,6 +11,7 @@ using TechnoWorld_API.Helpers;
 using TechnoWorld_API.Models;
 using TechnoWorld_API.Services;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

@@ -9,10 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using TechnoWorld_WarehouseAccounting.Common;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Abstractions;
+using WPF_Helpers.Common;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
@@ -108,7 +111,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async Task LoadCategories()
         {
-            var response = await ApiService.GetRequest("api/Categories");
+            var response = await ApiService.Instance.GetRequest("api/Categories");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Categories = new ObservableCollection<Category>(JsonConvert.DeserializeObject<List<Category>>(response.Content));
@@ -120,7 +123,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async Task LoadTypes()
         {
-            var response = await ApiService.GetRequest("api/ElectrnicsTypes/All");
+            var response = await ApiService.Instance.GetRequest("api/ElectrnicsTypes/All");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 AllElectronicsTypes = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content));
@@ -133,7 +136,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async Task LoadManufacturers()
         {
-            var response = await ApiService.GetRequest("api/Manufacturers/All");
+            var response = await ApiService.Instance.GetRequest("api/Manufacturers/All");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Manufacturers = new ObservableCollection<Manufacturer>(JsonConvert.DeserializeObject<List<Manufacturer>>(response.Content));
@@ -159,7 +162,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             {
                 if (isAdd)
                 {
-                    var response = await ApiService.PostRequest("api/Electronics", CurrentElectronic);
+                    var response = await ApiService.Instance.PostRequest("api/Electronics", CurrentElectronic);
                     if (response.StatusCode == System.Net.HttpStatusCode.Created)
                     {
                         DialogResult = true;
@@ -171,7 +174,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 }
                 else
                 {
-                    var response = await ApiService.PutRequest("api/Electronics", CurrentElectronic.ElectronicsId, CurrentElectronic);
+                    var response = await ApiService.Instance.PutRequest("api/Electronics", CurrentElectronic.ElectronicsId, CurrentElectronic);
                     if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
                     {
                         DialogResult = true;

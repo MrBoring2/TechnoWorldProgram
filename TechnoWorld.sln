@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnoWorld_WarehouseAccoun
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnoWorld_DataModels_v2", "TechnoWorld_DataModels_v2\TechnoWorld_DataModels_v2.csproj", "{8359945D-4D78-47E0-8B9A-3FCAED38E701}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Helpers", "WPF_Helpers\WPF_Helpers.csproj", "{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8359945D-4D78-47E0-8B9A-3FCAED38E701}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8359945D-4D78-47E0-8B9A-3FCAED38E701}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8359945D-4D78-47E0-8B9A-3FCAED38E701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

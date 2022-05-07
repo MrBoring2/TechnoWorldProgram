@@ -9,6 +9,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using TechnoWorld_WarehouseAccounting.Models;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.Services
 {
@@ -19,8 +20,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
         public string Token { get; set; }
 
         private ClientService() { }
-        public RestClient RestClient { get; set; }
-        public HubConnection HubConnection { get; set; }
+
         public static ClientService Instance
         {
             get
@@ -39,9 +39,8 @@ namespace TechnoWorld_WarehouseAccounting.Services
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
-        public void SetClient(string user_name, string full_name, int role_id, int user_id, string post, string token)
+        public void SetClient(string user_name, string full_name, int role_id, int user_id, string post)
         {
-            Token = token;
             User = new User()
             {
                 Name = user_name,
@@ -56,8 +55,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
         {
             User = null;
             Token = null;
-            HubConnection.StopAsync();
-            RestClient = null;
+            ApiService.Instance.ShutDownService();
             PageNavigation.Instance.ClearCreatedPages();
         }
     }

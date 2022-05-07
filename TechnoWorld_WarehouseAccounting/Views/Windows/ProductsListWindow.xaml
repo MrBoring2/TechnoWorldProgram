@@ -1,4 +1,4 @@
-﻿<local:BaseWindow BorderBackgroundBrush="Orange" x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.ProductsListWindow"
+﻿<mde:MaterialWindow BorderBackgroundBrush="Orange" x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.ProductsListWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,14 +6,15 @@
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+                  xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
         TextElement.FontWeight="Regular"   
         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
         xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
         mc:Ignorable="d"
-                  xmlns:dr="clr-namespace:TechnoWorld_WarehouseAccounting.Services"
+        xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
-                  Title="ТЕХНО МИР | Список товаров" Height="700" Width="1100" MinHeight="600" MinWidth="1100" WindowStartupLocation="CenterScreen" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality">
+        Title="ТЕХНО МИР | Список товаров" Height="700" Width="1100" MinHeight="600" MinWidth="1100" WindowStartupLocation="CenterScreen" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="109"/>
@@ -132,4 +133,4 @@
         </StackPanel>
 
     </Grid>
-</local:BaseWindow>
+</mde:MaterialWindow>

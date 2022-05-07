@@ -10,9 +10,12 @@ using System.Threading.Tasks;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.ForElements;
 using TechoWorld_DataModels_v2;
-using TechnoWorld_WarehouseAccounting.Common;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
 using System.Windows;
+using WPF_VM_Abstractions;
+using WPF_Helpers.Abstractions;
+using WPF_Helpers.Common;
+using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
@@ -26,7 +29,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             Initialize(order);
             LoadData();
-            ClientService.Instance.HubConnection.On<string>("UpdateOrders", (deliveries) =>
+            ApiService.Instance.GetHubConnection.On<string>("UpdateOrders", (deliveries) =>
             {
                 LoadData();
             });
@@ -58,7 +61,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async Task LoadStorages()
         {
-            var response = await ApiService.GetRequest("api/Storages");
+            var response = await ApiService.Instance.GetRequest("api/Storages");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Storages = new ObservableCollection<Storage>(JsonConvert.DeserializeObject<List<Storage>>(response.Content));
@@ -71,7 +74,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             var result = CustomMessageBox.Show("Подтвердите выдачу товара.", "Подтверждение", System.Windows.MessageBoxButton.YesNo, System.Windows.MessageBoxImage.Question);
             if (result == System.Windows.MessageBoxResult.Yes)
             {
-                var response = await ApiService.PutRequest($"api/Orders/Distribute", Order.OrderId, SelectedStorage.StorageId);
+                var response = await ApiService.Instance.PutRequest($"api/Orders/Distribute", Order.OrderId, SelectedStorage.StorageId);
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     DialogResult = true;

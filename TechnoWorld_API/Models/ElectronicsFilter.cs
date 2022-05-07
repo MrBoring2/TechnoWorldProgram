@@ -2,6 +2,7 @@
 using System;
 using System.Linq.Expressions;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_API.Models
 {

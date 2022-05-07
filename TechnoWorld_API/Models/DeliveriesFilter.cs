@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_API.Models
 {
@@ -51,7 +52,7 @@ namespace TechnoWorld_API.Models
                     }
 
                     res2 = p.DateOfOrder >= StartDate;
-                    res3 = p.DateOfDelivery <= EndDate;
+                    res3 = p.DateOfOrder <= EndDate;
 
                     return res1 && res2 && res3 && res4;
                 };

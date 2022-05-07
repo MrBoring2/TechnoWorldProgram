@@ -1,4 +1,4 @@
-﻿<local:BaseWindow x:Class="TechnoWorld_Cash.Views.Windows.PaymentWindow"
+﻿<mde:MaterialWindow x:Class="TechnoWorld_Cash.Views.Windows.PaymentWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,7 +7,8 @@
         mc:Ignorable="d" BorderBackgroundBrush="Orange" RenderOptions.BitmapScalingMode="HighQuality"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:extentials="clr-namespace:MaterialDesignExtensions.Themes;assembly=MaterialDesignExtensions" Icon="/Resources/Images/logo1.ico"
-        xmlns:dr="clr-namespace:TechnoWorld_Cash.Services"
+                 xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+        xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
         Title="ТЕХНО МИР | Оплата" MinWidth="1050" MinHeight="700" Width="1050" Height="700">
     <Grid>
@@ -72,4 +73,4 @@
             </Grid>
         </Grid>
     </Grid>
-</local:BaseWindow>
+</mde:MaterialWindow>

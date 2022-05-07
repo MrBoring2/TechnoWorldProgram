@@ -12,6 +12,7 @@ using TechnoWorld_API.Services;
 using Microsoft.AspNetCore.SignalR;
 using TechnoWorld_API.Helpers;
 using Serilog;
+using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_API.Controllers
 {

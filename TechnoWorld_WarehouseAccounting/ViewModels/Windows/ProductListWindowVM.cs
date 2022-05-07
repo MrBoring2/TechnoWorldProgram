@@ -8,10 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_API.Models;
-using TechnoWorld_WarehouseAccounting.Common;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Abstractions;
+using WPF_Helpers.Common;
+using WPF_Helpers.Models;
+using WPF_Helpers.Services;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
@@ -40,9 +45,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
             Initialize();
             LoadData();
-            ClientService.Instance.HubConnection.On<string>("UpdateElectronics", (deliveries) =>
+            ApiService.Instance.GetHubConnection.On<string>("UpdateElectronics", async (deliveries) =>
             {
-                GetElectronicsWithFilter();
+                await GetElectronicsWithFilter();
             });
             //for (int i = 0; i < 10; i++)
             //{
@@ -191,7 +196,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async Task GetElectronicsWithFilter()
         {
-            var request = await ApiService.GetRequestWithParameter("api/Electronics/Filter", "jsonFilter", JsonConvert.SerializeObject(
+            var request = await ApiService.Instance.GetRequestWithParameter("api/Electronics/Filter", "jsonFilter", JsonConvert.SerializeObject(
                 new
                 {
                     search = Search,
@@ -206,8 +211,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             if (request.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 var result = JsonConvert.DeserializeObject<FilteredElectronic>(request.Content);
-                Electronics = new ObservableCollection<Electronic>(result.Electronics);
-                totalFilteredCount = result.TotalFilteredCount;
+                Electronics = new ObservableCollection<Electronic>(result.Objects);
+                totalFilteredCount = result.TotalFiltered;
                 if (Paginator != null)
                 {
                     await RefreshElectronics();
@@ -224,7 +229,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async Task LoadCategories()
         {
-            var request = await ApiService.GetRequest("api/Categories");
+            var request = await ApiService.Instance.GetRequest("api/Categories");
             if (request.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Categories = new ObservableCollection<ItemWithTitle<Category>>(JsonConvert.DeserializeObject<List<Category>>(request.Content).Select(p => new ItemWithTitle<Category>(p, p.Name)));
@@ -235,7 +240,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async Task LoadTypes()
         {
-            var request = await ApiService.GetRequest("api/ElectrnicsTypes/All");
+            var request = await ApiService.Instance.GetRequest("api/ElectrnicsTypes/All");
             if (request.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 AllElectronicsTypes = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(request.Content));
