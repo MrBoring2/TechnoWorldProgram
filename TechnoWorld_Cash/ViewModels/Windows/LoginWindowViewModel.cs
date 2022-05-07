@@ -13,7 +13,7 @@ using System.Windows;
 using System.Security;
 using TechnoWorld_Cash.Services;
 using TechnoWorld_Cash.Views.Windows;
-using WPF_VM_Abstractions;
+using WPF_Helpers.Common;
 
 namespace TechnoWorld_Cash.ViewModels.Windows
 {

@@ -10,7 +10,8 @@ using System.Windows;
 using TechnoWorld_Terminal.Models;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels_v2;
-using WPF_VM_Abstractions;
+using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Common;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {

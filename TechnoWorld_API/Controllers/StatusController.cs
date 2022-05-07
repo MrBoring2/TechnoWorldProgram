@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TechnoWorld_API.Data;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_API.Controllers
 {

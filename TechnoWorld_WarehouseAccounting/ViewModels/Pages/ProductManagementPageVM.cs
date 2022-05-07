@@ -14,6 +14,10 @@ using TechoWorld_DataModels_v2;
 using TechnoWorld_API.Models;
 using Microsoft.AspNetCore.SignalR.Client;
 using WPF_VM_Abstractions;
+using WPF_Helpers.Common;
+using WPF_Helpers.Models;
+using WPF_Helpers;
+using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 {
@@ -39,9 +43,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         {
             Initialize();
             LoadData();
-            ClientService.Instance.HubConnection.On<string>("UpdateElectronics", (deliveries) =>
+            ApiService.Instance.GetHubConnection.On<string>("UpdateElectronics", async (deliveries) =>
             {
-                GetWithFilter();
+                await GetWithFilter();
             });
         }
 
@@ -190,7 +194,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
         private async Task LoadCategories()
         {
-            var request = await ApiService.GetRequest("api/Categories");
+            var request = await ApiService.Instance.GetRequest("api/Categories");
             if (request.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Categories = new ObservableCollection<ItemWithTitle<Category>>(JsonConvert.DeserializeObject<List<Category>>(request.Content).Select(p => new ItemWithTitle<Category>(p, p.Name)));
@@ -201,7 +205,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         }
         private async Task LoadTypes()
         {
-            var request = await ApiService.GetRequest("api/ElectrnicsTypes/All");
+            var request = await ApiService.Instance.GetRequest("api/ElectrnicsTypes/All");
             if (request.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 AllElectronicsTypes = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(request.Content));

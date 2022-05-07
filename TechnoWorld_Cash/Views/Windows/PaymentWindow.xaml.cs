@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignExtensions.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace TechnoWorld_Cash.Views.Windows
     /// <summary>
     /// Логика взаимодействия для PaymentWindow.xaml
     /// </summary>
-    public partial class PaymentWindow : BaseWindow
+    public partial class PaymentWindow : MaterialWindow
     {
         public PaymentWindow()
         {

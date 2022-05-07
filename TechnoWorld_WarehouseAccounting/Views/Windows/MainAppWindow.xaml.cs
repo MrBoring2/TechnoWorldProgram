@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignExtensions.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,7 @@ namespace TechnoWorld_WarehouseAccounting.Views.Windows
     /// <summary>
     /// Логика взаимодействия для MainAppWindow.xaml
     /// </summary>
-    public partial class MainAppWindow : BaseWindow
+    public partial class MainAppWindow : MaterialWindow
     {
         public MainAppWindow()
         {

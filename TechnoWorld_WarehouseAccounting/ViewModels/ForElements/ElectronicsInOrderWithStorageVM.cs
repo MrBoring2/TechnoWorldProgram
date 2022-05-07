@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Abstractions;
 using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.ForElements

@@ -18,7 +18,8 @@ using TechoWorld_DataModels_v2;
 using Microsoft.AspNetCore.SignalR.Client;
 using Newtonsoft.Json;
 using TechnoWorld_Terminal.Models;
-using WPF_VM_Abstractions;
+using WPF_Helpers.Common;
+using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {

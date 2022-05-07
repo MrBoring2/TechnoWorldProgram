@@ -13,6 +13,10 @@ using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers;
+using WPF_Helpers.Common;
+using WPF_Helpers.Models;
 using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
@@ -29,9 +33,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         {
             Initialize();
             LoadData();
-            ClientService.Instance.HubConnection.On<string>("UpdateDeliveries", (deliveries) =>
+            ApiService.Instance.GetHubConnection.On<string>("UpdateDeliveries", async (deliveries) =>
             {
-                GetWithFilter();
+                await GetWithFilter();
             });
         }
         public RelayCommand OpenDeliveryWindowCommand { get; set; }
@@ -111,7 +115,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         {
             return Task.Run(async () =>
             {
-                var response = await ApiService.GetRequest("api/Status");
+                var response = await ApiService.Instance.GetRequest("api/Status");
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     Statuses = new ObservableCollection<ItemWithTitle<Status>>(JsonConvert.DeserializeObject<List<Status>>(response.Content).Select(p => new ItemWithTitle<Status>(p, p.Name)));

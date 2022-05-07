@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 using TechnoWorld_Terminal.Services;
 using TechnoWorld_Terminal.ViewModels.Pages;
-using WPF_VM_Abstractions;
+using WPF_Helpers.Common;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {

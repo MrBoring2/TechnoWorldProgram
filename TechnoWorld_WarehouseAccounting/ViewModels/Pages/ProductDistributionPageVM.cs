@@ -13,6 +13,10 @@ using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers;
+using WPF_Helpers.Common;
+using WPF_Helpers.Models;
 using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
@@ -27,9 +31,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         {
             Initialize();
             LoadData();
-            ClientService.Instance.HubConnection.On<string>("UpdateOrders", (deliveries) =>
+            ApiService.Instance.GetHubConnection.On<string>("UpdateOrders", async (d) =>
             {
-                GetWithFilter();
+                await GetWithFilter();
             });
         }
         public RelayCommand OpenDestributionWindowCommand { get; set; }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.SignalR;
 using Serilog;
 using System.Collections.Concurrent;
 using System.Security.Claims;
@@ -7,6 +8,7 @@ using TechnoWorld_API.Helpers;
 
 namespace TechnoWorld_API.Services
 {
+    [Authorize]
     public class TechnoWorldHub : Hub
     {
         public static ConcurrentDictionary<string, string> ConnectedUsers = new ConcurrentDictionary<string, string>();
@@ -14,11 +16,16 @@ namespace TechnoWorld_API.Services
         public override Task OnConnectedAsync()
         {
             var context = this.Context.GetHttpContext();
+            var cookuies = context.Request.Cookies;
+            //if(context.User.Claims.GetEnumerator().Current != null)
+            //{
             var userName = context.User.Identity.Name;
             var roleName = context.User.FindFirst(ClaimsIdentity.DefaultRoleClaimType).Value;
 
             ConnectedUsers.TryAdd(userName, Context.ConnectionId);
             AddGroupsToClient(userName, roleName);
+            //}
+
             return base.OnConnectedAsync();
         }
         public override Task OnDisconnectedAsync(System.Exception exception)

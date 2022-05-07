@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using WPF_Helpers;
 
-namespace TechnoWorld_WarehouseAccounting
+namespace TechnoWorld_WarehouseAccounting.Services
 {
     public class PageController
     {
@@ -103,23 +104,6 @@ namespace TechnoWorld_WarehouseAccounting
                 throw new InvalidOperationException(nameof(vm));
 
             createdPages.Remove(vm);
-        }
-
-        public Page GetFirstPage()
-        {
-            //if (createdPages.Count == 0)
-            //    GetPage(viewModelsToPagesMapping.FirstOrDefault().Key.GetType());
-            throw new NotImplementedException();
-            //return createdPages.FirstOrDefault().Value;
-        }
-
-        public Page GetLastPage()
-        {
-            throw new NotImplementedException();
-            //if (createdPages.Count == 0)
-            //    GetPage(viewModelsToPagesMapping.LastOrDefault().Key.GetType());
-
-            //return createdPages.LastOrDefault().Value;
         }
     }
 }

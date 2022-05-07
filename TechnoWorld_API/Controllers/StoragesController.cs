@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using TechoWorld_DataModels_v2;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using TechoWorld_DataModels_v2.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

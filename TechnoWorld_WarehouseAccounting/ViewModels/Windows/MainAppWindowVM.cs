@@ -10,6 +10,8 @@ using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Pages;
 using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
+using WPF_Helpers.Abstractions;
+using WPF_Helpers.Common;
 using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows

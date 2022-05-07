@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnoWorld_API", "TechnoWorld_API\TechnoWorld_API.csproj", "{3F42B0A6-C30A-4AE8-AD71-A3819E5A0107}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnoWorld_WarehouseAccoun
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnoWorld_DataModels_v2", "TechnoWorld_DataModels_v2\TechnoWorld_DataModels_v2.csproj", "{8359945D-4D78-47E0-8B9A-3FCAED38E701}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_VM_Abstractions", "WPF_VM_Abstractions\WPF_VM_Abstractions.csproj", "{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Helpers", "WPF_Helpers\WPF_Helpers.csproj", "{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

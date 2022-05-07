@@ -287,7 +287,6 @@
     <Compile Include="ViewModels\Windows\MainAppWindowVM.cs" />
     <Compile Include="ViewModels\Windows\ModalWindowVMBase.cs" />
     <Compile Include="ViewModels\Windows\BaseWindowVM.cs" />
-    <Compile Include="Views\Windows\BaseWindow.cs" />
     <Compile Include="Views\Windows\MainAppWindow.xaml.cs">
       <DependentUpon>MainAppWindow.xaml</DependentUpon>
     </Compile>
@@ -384,9 +383,9 @@
       <Project>{8359945d-4d78-47e0-8b9a-3fcaed38e701}</Project>
       <Name>TechnoWorld_DataModels_v2</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WPF_VM_Abstractions\WPF_VM_Abstractions.csproj">
+    <ProjectReference Include="..\WPF_Helpers\WPF_Helpers.csproj">
       <Project>{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}</Project>
-      <Name>WPF_VM_Abstractions</Name>
+      <Name>WPF_Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

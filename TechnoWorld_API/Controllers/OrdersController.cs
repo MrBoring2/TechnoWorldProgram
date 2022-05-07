@@ -13,6 +13,7 @@ using TechnoWorld_API.Helpers;
 using Newtonsoft.Json;
 using Serilog;
 using TechnoWorld_API.Models;
+using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_API.Controllers
 {

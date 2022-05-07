@@ -12,7 +12,8 @@ using TechnoWorld_Cash.Models;
 using TechnoWorld_Cash.Views.Windows;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels_v2;
-using WPF_VM_Abstractions;
+using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Common;
 using Word = Microsoft.Office.Interop.Word;
 namespace TechnoWorld_Cash.ViewModels.Windows
 {
