@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
+namespace WPF_VM_Abstractions
 {
     public class BaseModalWindowVM : BaseWindowVM
     {

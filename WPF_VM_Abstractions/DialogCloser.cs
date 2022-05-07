@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace TechnoWorld_WarehouseAccounting.Services
+namespace WPF_VM_Abstractions
 {
     public static class DialogCloser
     {

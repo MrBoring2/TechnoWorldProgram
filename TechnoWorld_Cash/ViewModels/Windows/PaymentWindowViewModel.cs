@@ -10,9 +10,9 @@ using System.Windows;
 using System.Windows.Threading;
 using TechnoWorld_Cash.Models;
 using TechnoWorld_Cash.Views.Windows;
-using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels_v2;
+using WPF_VM_Abstractions;
 using Word = Microsoft.Office.Interop.Word;
 namespace TechnoWorld_Cash.ViewModels.Windows
 {

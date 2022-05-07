@@ -9,13 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
-using TechnoWorld_API.Models;
-using TechnoWorld_Terminal.Common;
+
 using TechnoWorld_Terminal.Models;
 using TechnoWorld_Terminal.Services;
 using TechnoWorld_Terminal.ViewModels.Windows;
-using TechnoWorld_WarehouseAccounting.Services;
 using TechoWorld_DataModels_v2;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {
@@ -261,7 +260,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                     listElectronicsTypeId = Types.Where(p => p.IsSelected).Select(p => p.TypeId),
                     listManufacturersId = Manufacturers.Where(p => p.IsSelected).Select(p => p.ManufacturerId),
                     sortParameter = SelectedSort.Property,
-                    isAscending = SelectedSort.IsAscending,
+                    isAscending = SelectedSort.IsAcsending,
                     isOfferedForSale = true,
                     minPrice = MinPrice,
                     maxPrice = MaxPrice,
@@ -271,8 +270,8 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             if (request.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 var result = JsonConvert.DeserializeObject<FilteredElectronic>(request.Content);
-                Electronics = new ObservableCollection<Electronic>(result.Electronics);
-                totalFilteredCount = result.TotalFilteredCount;
+                Electronics = new ObservableCollection<Electronic>(result.Objects);
+                totalFilteredCount = result.TotalFiltered;
                 if (Paginator != null)
                 {
                     await RefreshElectronics();

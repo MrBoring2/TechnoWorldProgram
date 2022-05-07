@@ -6,13 +6,15 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
-namespace TechnoWorld_Cash.Services
+namespace WPF_VM_Abstractions
 {
     public class Paginator : INotifyPropertyChanged
     {
         private int maxDisplayedPages;
         private int selectedPageNumber;
+        private bool isSelectionEnabled = true;
         private ObservableCollection<int> pagesNumbers;
         private ObservableCollection<int> displayedPagesNumbers;
 
@@ -39,17 +41,12 @@ namespace TechnoWorld_Cash.Services
             }
         }
         public ObservableCollection<int> PagesNumbers { get => pagesNumbers; private set { pagesNumbers = value; OnPropertyChanged(); } }
+        public bool IsSelectionEnabled { get => isSelectionEnabled; set { isSelectionEnabled = value; OnPropertyChanged(); } }
         public int SelectedPageNumber
         {
             get { return selectedPageNumber; }
-            set
-            {
-                if (selectedPageNumber != value) { }
-                selectedPageNumber = value;
-                OnPropertyChanged();
-            }
+            set { selectedPageNumber = value; OnPropertyChanged(); IsSelectionEnabled = false; OnPropertyChanged(nameof(IsSelectionEnabled)); WaitSelection(); }
         }
-
         private void LoadPages(int maxPage)
         {
             PagesNumbers = new ObservableCollection<int>();
@@ -75,6 +72,15 @@ namespace TechnoWorld_Cash.Services
                 selectedPageNumber = page;
                 OnPropertyChanged(nameof(SelectedPageNumber));
             }
+        }
+        private async void WaitSelection()
+        {
+            await Task.Delay(300).ContinueWith(_ =>
+            {
+                IsSelectionEnabled = true;
+                OnPropertyChanged(nameof(IsSelectionEnabled));
+             
+            });
         }
         public void RefrashPaginator()
         {

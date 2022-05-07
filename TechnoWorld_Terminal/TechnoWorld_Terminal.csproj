@@ -244,18 +244,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="CustomElements\UserControlMenuItem.xaml.cs">
       <DependentUpon>UserControlMenuItem.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\CartItem.cs" />
-    <Compile Include="Models\FilteredElectronic.cs" />
     <Compile Include="Models\NotifyPropertyChangedModel.cs" />
-    <Compile Include="Models\SortParameter.cs" />
     <Compile Include="Models\TokenModel.cs" />
     <Compile Include="Services\CustomNotificationManager.cs" />
     <Compile Include="Services\PageNavigation.cs" />
-    <Compile Include="Services\Paginator.cs" />
     <Compile Include="Services\WindowNavigation.cs" />
     <Compile Include="ViewModels\NotifyPropertyChangedBase.cs" />
     <Compile Include="ViewModels\Pages\CartPageVM.cs" />
@@ -377,6 +373,7 @@
     <Resource Include="Resources\empty.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Common\" />
     <Folder Include="ViewModels\UIElements\" />
   </ItemGroup>
   <ItemGroup>
@@ -386,6 +383,10 @@
     <ProjectReference Include="..\TechnoWorld_DataModels_v2\TechnoWorld_DataModels_v2.csproj">
       <Project>{8359945d-4d78-47e0-8b9a-3fcaed38e701}</Project>
       <Name>TechnoWorld_DataModels_v2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPF_VM_Abstractions\WPF_VM_Abstractions.csproj">
+      <Project>{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}</Project>
+      <Name>WPF_VM_Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,11 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using TechnoWorld_WarehouseAccounting.ViewModels.Pages;
-using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
-using TechnoWorld_WarehouseAccounting.Views.Windows;
 
-namespace TechnoWorld_WarehouseAccounting.Services
+namespace TechnoWorld_WarehouseAccounting
 {
     public class PageController
     {

@@ -10,10 +10,10 @@ using RestSharp;
 using Newtonsoft.Json;
 using TechnoWorld_Terminal.Models;
 using System.Windows;
-using TechnoWorld_Terminal.Common;
 using System.Security;
 using TechnoWorld_Cash.Services;
 using TechnoWorld_Cash.Views.Windows;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_Cash.ViewModels.Windows
 {

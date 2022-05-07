@@ -221,8 +221,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Common\RelayCommand.cs" />
-    <Compile Include="Models\FilteredOrders.cs" />
     <Compile Include="Models\ItemWithTitle.cs" />
     <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Models\ss.cs" />
@@ -232,7 +230,6 @@
     <Compile Include="Services\ClientService.cs" />
     <Compile Include="Services\CustomNotificationManager.cs" />
     <Compile Include="Services\DialogCloser.cs" />
-    <Compile Include="Services\Paginator.cs" />
     <Compile Include="Services\WindowController.cs" />
     <Compile Include="Services\WindowNavigation.cs" />
     <Compile Include="ViewModels\Windows\BaseWindowVM.cs" />
@@ -347,6 +344,13 @@
       <Project>{8359945d-4d78-47e0-8b9a-3fcaed38e701}</Project>
       <Name>TechnoWorld_DataModels_v2</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WPF_VM_Abstractions\WPF_VM_Abstractions.csproj">
+      <Project>{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}</Project>
+      <Name>WPF_VM_Abstractions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets')" />

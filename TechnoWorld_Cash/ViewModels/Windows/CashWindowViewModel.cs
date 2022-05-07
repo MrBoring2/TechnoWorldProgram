@@ -10,10 +10,10 @@ using System.Windows;
 using TechnoWorld_API.Models;
 using TechnoWorld_Cash.Services;
 using TechnoWorld_Cash.Views.Windows;
-using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Services;
-using TechnoWorld_WarehouseAccounting.Models;
 using TechoWorld_DataModels_v2;
+using WPF_VM_Abstractions;
+
 namespace TechnoWorld_Cash.ViewModels.Windows
 {
     public class CashWindowViewModel : BaseWindowVM
@@ -173,8 +173,8 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             if (request.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 var result = JsonConvert.DeserializeObject<FilteredOrders>(request.Content);
-                Orders = new ObservableCollection<Order>(result.Orders);
-                totalFilteredCount = result.TotalFilteredCount;
+                Orders = new ObservableCollection<Order>(result.Objects);
+                totalFilteredCount = result.TotalFiltered;
                 if (Paginator != null)
                 {
                     await RefreshOrders();

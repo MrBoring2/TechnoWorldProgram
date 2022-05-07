@@ -6,8 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
+using WPF_VM_Abstractions;
 
-namespace TechnoWorld_WarehouseAccounting.Services
+namespace TechnoWorld_WarehouseAccounting
 {
     public class WindowController
     {

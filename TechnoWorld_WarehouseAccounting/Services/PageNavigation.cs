@@ -7,8 +7,9 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using TechnoWorld_WarehouseAccounting.ViewModels.Pages;
 using TechnoWorld_WarehouseAccounting.Views.Pages;
+using TechoWorld_DataModels_v2;
 
-namespace TechnoWorld_WarehouseAccounting.Services
+namespace TechnoWorld_WarehouseAccounting
 {
     public class PageNavigation
     {

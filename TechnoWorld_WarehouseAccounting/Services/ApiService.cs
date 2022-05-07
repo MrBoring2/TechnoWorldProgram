@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechnoWorld_WarehouseAccounting.Services;
 
-namespace TechnoWorld_WarehouseAccounting.Services
+namespace WPF_VM_Abstractions
 {
     public class ApiService
     {

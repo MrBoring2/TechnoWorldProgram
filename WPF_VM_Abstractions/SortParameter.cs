@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TechnoWorld_WarehouseAccounting.Models
+namespace WPF_VM_Abstractions
 {
     public class SortParameter : INotifyPropertyChanged
     {

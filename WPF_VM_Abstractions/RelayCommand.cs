@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace TechnoWorld_Terminal.Common
+namespace WPF_VM_Abstractions
 {
     public class RelayCommand : ICommand
     {

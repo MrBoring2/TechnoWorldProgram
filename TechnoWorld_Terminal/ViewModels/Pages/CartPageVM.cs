@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using TechnoWorld_Terminal.Common;
 using TechnoWorld_Terminal.Models;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels_v2;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {

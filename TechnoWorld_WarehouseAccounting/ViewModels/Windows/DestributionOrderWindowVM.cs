@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.ForElements;
 using TechoWorld_DataModels_v2;
-using TechnoWorld_WarehouseAccounting.Common;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
 using System.Windows;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
