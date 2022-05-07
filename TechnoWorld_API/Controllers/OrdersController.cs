@@ -64,11 +64,11 @@ namespace TechnoWorld_API.Controllers
             {
                 OrdersFilter filter = JsonConvert.DeserializeObject<OrdersFilter>(jsonFilter);
 
-                list = _context.Orders.Include(p => p.OrderElectronics)
-                                                .AsSplitQuery()
-                                                //.AsNoTracking()
-                                                .Where(filter.FilterExpression)
-                                                .AsEnumerable();
+                list = _context.Orders.Include(p => p.Status)
+                                      .Include(p => p.OrderElectronics)
+                                      .AsSplitQuery()
+                                      .Where(filter.FilterExpression)
+                                      .AsEnumerable();
 
                 if (filter.IsAscending)
                 {

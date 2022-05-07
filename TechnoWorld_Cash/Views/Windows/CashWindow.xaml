@@ -21,7 +21,7 @@
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
             <TextBox Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" FontSize="16" Grid.Column="0" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Введите номер заказа для поиска..." materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="1" Margin="5,0" Cursor="IBeam" />
-            <ComboBox ItemsSource="{Binding Statuses}" SelectedItem="{Binding SelectedStatus}" Grid.Column="1" FontSize="16" Margin="5,0" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Статус заказа" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="1"/>
+            <ComboBox ItemsSource="{Binding Statuses}" SelectedItem="{Binding SelectedStatus}" DisplayMemberPath="Title" Grid.Column="1" FontSize="16" Margin="5,0" VerticalAlignment="Center" materialDesign:HintAssist.Hint="Статус заказа" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="1"/>
             <Grid Grid.Column="2" Margin="5,0">
                 <DatePicker SelectedDate="{Binding StartDate}" HorizontalAlignment="Left" FontSize="16" Width="140" materialDesign:HintAssist.Hint="Начало периода" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="1"/>
                 <DatePicker SelectedDate="{Binding EndDate}" HorizontalAlignment="Right" FontSize="16" Width="140" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="1"/>

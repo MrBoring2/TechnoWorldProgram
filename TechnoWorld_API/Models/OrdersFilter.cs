@@ -40,7 +40,7 @@ namespace TechnoWorld_API.Models
                         return false;
                     }
 
-                    res2 = p.StatusId == StatusId;
+                    res2 = StatusId == 0 ? true : p.StatusId == StatusId;
                     res3 = p.DateOfRegistration >= StartDate.ToLocalTime() && p.DateOfRegistration <= EndDate.ToLocalTime();
 
                     return res1 && res2 && res3;

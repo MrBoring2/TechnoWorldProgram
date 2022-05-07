@@ -77,16 +77,16 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         }
         public ObservableCollection<ItemWithTitle<Status>> Statuses { get => statuses; set { statuses = value; OnPropertyChanged(); } }
         public Visibility EmptyVisibility { get => emptyVisibility; set { emptyVisibility = value; OnPropertyChanged(); } }
-        public ItemWithTitle<Status> SelectedStatus { get { return selectedStatus; } set { selectedStatus = value; OnPropertyChanged(); RefreshOrders(); } }
+        public ItemWithTitle<Status> SelectedStatus { get { return selectedStatus; } set { selectedStatus = value; OnPropertyChanged(); GetOrdersWithFilter(); } }
         public Order SelectedOrder { get { return selectedOrder; } set { selectedOrder = value; OnPropertyChanged(); } }
-        public string Search { get { return search; } set { search = value; OnPropertyChanged(); RefreshOrders(); } }
+        public string Search { get { return search; } set { search = value; OnPropertyChanged(); GetOrdersWithFilter(); } }
         public DateTime StartDate
         {
             get => startDate;
-            set { startDate = (value.Date <= endDate.Date && value.Date <= DateTime.Now.Date) || endDate == DateTime.MinValue ? value : startDate; OnPropertyChanged(); RefreshOrders(); }
+            set { startDate = (value.Date <= endDate.Date && value.Date <= DateTime.Now.Date) || endDate == DateTime.MinValue ? value : startDate; OnPropertyChanged(); GetOrdersWithFilter(); }
         }
-        public DateTime EndDate { get => endDate; set { endDate = (value.Date >= startDate.Date && value.Date <= DateTime.Now.Date) || startDate == DateTime.MinValue ? value : endDate; OnPropertyChanged(); RefreshOrders(); } }
-        public ObservableCollection<Order> DisplayedOrders { get => displayedOrders; set { displayedOrders = value; OnPropertyChanged(); } }
+        public DateTime EndDate { get => endDate; set { endDate = (value.Date >= startDate.Date && value.Date <= DateTime.Now.Date) || startDate == DateTime.MinValue ? value : endDate; OnPropertyChanged(); GetOrdersWithFilter(); } }
+        public ObservableCollection<Order> DisplayedOrders => Orders;
         public Paginator Paginator { get => paginator; set { paginator = value; OnPropertyChanged(); } }
         public RelayCommand ChangePageCommand { get; set; }
         public RelayCommand ToFirstPageCommand { get; set; }
@@ -162,7 +162,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
                 new
                 {
                     search = Search,
-                    statusId = 2,
+                    statusId = SelectedStatus.Item == null ? 0 : SelectedStatus.Item.Id,
                     startDate = StartDate,
                     endDate = EndDate,
                     sortParameter = "DateOfRegistration",
