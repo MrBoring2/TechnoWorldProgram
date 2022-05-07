@@ -111,3 +111,1420 @@
 2022-05-07 10:05:28.738 +05:00 [INF] sh отключен от системы
 2022-05-07 10:05:28.742 +05:00 [INF] Запрос от sh (172.20.1.165:50660) по GET /technoWorldHub ответил 101 за 38866.4964 мс
 2022-05-07 10:06:21.877 +05:00 [INF] Application is shutting down...
+2022-05-07 11:18:12.597 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-07 11:18:12.625 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 11:18:12.626 +05:00 [INF] Hosting environment: Development
+2022-05-07 11:18:12.627 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 11:18:25.119 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:18:25.177 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57949) по POST /userToken ответил 200 за 1379.4338 мс
+2022-05-07 11:18:25.415 +05:00 [INF] Запрос от kov (172.20.1.165:57952) по POST /technoWorldHub/negotiate ответил 200 за 55.6460 мс
+2022-05-07 11:18:25.593 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:18:27.327 +05:00 [INF] Запрос от kov (172.20.1.165:57949) по GET /api/Categories ответил 200 за 68.6379 мс
+2022-05-07 11:18:27.499 +05:00 [INF] Запрос от kov (172.20.1.165:57949) по GET /api/ElectrnicsTypes/All ответил 200 за 38.4485 мс
+2022-05-07 11:18:28.084 +05:00 [INF] Запрос от kov (172.20.1.165:57949) по GET /api/Electronics/Filter ответил 200 за 382.7346 мс
+2022-05-07 11:18:41.852 +05:00 [INF] kov отключен от системы
+2022-05-07 11:18:41.857 +05:00 [INF] Запрос от kov (172.20.1.165:57955) по GET /technoWorldHub ответил 101 за 16329.4221 мс
+2022-05-07 11:18:49.816 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:18:49.817 +05:00 [INF] Запрос от Не установлено (172.20.1.165:58081) по POST /userToken ответил 200 за 8.0031 мс
+2022-05-07 11:18:49.991 +05:00 [INF] Запрос от kov (172.20.1.165:58084) по POST /technoWorldHub/negotiate ответил 200 за 0.3334 мс
+2022-05-07 11:18:50.149 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:18:51.079 +05:00 [INF] Запрос от kov (172.20.1.165:58081) по GET /api/Categories ответил 200 за 3.9388 мс
+2022-05-07 11:18:51.179 +05:00 [INF] Запрос от kov (172.20.1.165:58081) по GET /api/ElectrnicsTypes/All ответил 200 за 7.2067 мс
+2022-05-07 11:18:55.158 +05:00 [INF] Запрос от kov (172.20.1.165:58081) по GET /api/Electronics/Filter ответил 200 за 183.2787 мс
+2022-05-07 11:19:38.640 +05:00 [INF] kov отключен от системы
+2022-05-07 11:19:43.651 +05:00 [INF] Запрос от kov (172.20.1.165:58087) по GET /technoWorldHub ответил 101 за 53555.8861 мс
+2022-05-07 11:27:18.543 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-07 11:27:18.570 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 11:27:18.571 +05:00 [INF] Hosting environment: Development
+2022-05-07 11:27:18.571 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 11:27:34.307 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:27:34.380 +05:00 [INF] Запрос от Не установлено (172.20.1.165:52049) по POST /userToken ответил 200 за 1317.6517 мс
+2022-05-07 11:27:34.612 +05:00 [INF] Запрос от kov (172.20.1.165:52091) по POST /technoWorldHub/negotiate ответил 200 за 51.5048 мс
+2022-05-07 11:27:34.895 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:27:36.058 +05:00 [INF] Запрос от kov (172.20.1.165:52049) по GET /api/Categories ответил 200 за 67.0303 мс
+2022-05-07 11:27:36.227 +05:00 [INF] Запрос от kov (172.20.1.165:52049) по GET /api/ElectrnicsTypes/All ответил 200 за 37.5721 мс
+2022-05-07 11:27:41.303 +05:00 [INF] Запрос от kov (172.20.1.165:52049) по GET /api/Electronics/Filter ответил 200 за 420.8539 мс
+2022-05-07 11:27:49.825 +05:00 [INF] kov отключен от системы
+2022-05-07 11:27:49.830 +05:00 [INF] Запрос от kov (172.20.1.165:52094) по GET /technoWorldHub ответил 101 за 15000.4955 мс
+2022-05-07 11:28:47.134 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:28:47.135 +05:00 [INF] Запрос от Не установлено (172.20.1.165:52561) по POST /userToken ответил 200 за 9.9462 мс
+2022-05-07 11:28:47.315 +05:00 [INF] Запрос от kov (172.20.1.165:52564) по POST /technoWorldHub/negotiate ответил 200 за 0.3603 мс
+2022-05-07 11:28:47.475 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:28:48.150 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Categories ответил 200 за 4.9847 мс
+2022-05-07 11:28:48.272 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/ElectrnicsTypes/All ответил 200 за 24.1407 мс
+2022-05-07 11:28:48.606 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 186.2735 мс
+2022-05-07 11:28:50.139 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 93.1552 мс
+2022-05-07 11:28:50.876 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 85.4280 мс
+2022-05-07 11:28:51.515 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 101.4822 мс
+2022-05-07 11:28:52.833 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 91.5942 мс
+2022-05-07 11:28:53.550 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 145.7844 мс
+2022-05-07 11:28:54.986 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 95.3916 мс
+2022-05-07 11:28:55.400 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 80.6091 мс
+2022-05-07 11:28:55.989 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 94.3271 мс
+2022-05-07 11:28:56.634 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 147.9436 мс
+2022-05-07 11:28:59.550 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 113.4131 мс
+2022-05-07 11:29:01.226 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 80.0751 мс
+2022-05-07 11:29:02.829 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 91.1224 мс
+2022-05-07 11:29:04.567 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 100.1707 мс
+2022-05-07 11:29:06.200 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 117.2501 мс
+2022-05-07 11:29:07.990 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 116.0539 мс
+2022-05-07 11:29:10.907 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 120.8468 мс
+2022-05-07 11:29:23.110 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 124.0933 мс
+2022-05-07 11:29:25.222 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 124.1466 мс
+2022-05-07 11:29:27.827 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 105.1897 мс
+2022-05-07 11:29:29.255 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 117.1320 мс
+2022-05-07 11:29:32.550 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 132.3679 мс
+2022-05-07 11:29:34.793 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 111.3545 мс
+2022-05-07 11:29:37.453 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 116.3657 мс
+2022-05-07 11:29:39.484 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 106.6179 мс
+2022-05-07 11:29:40.266 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 70.2661 мс
+2022-05-07 11:29:41.130 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 95.7866 мс
+2022-05-07 11:29:43.489 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 111.3131 мс
+2022-05-07 11:29:46.829 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 170.6638 мс
+2022-05-07 11:30:12.564 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 115.2860 мс
+2022-05-07 11:30:14.716 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 97.8270 мс
+2022-05-07 11:30:16.103 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 69.3791 мс
+2022-05-07 11:30:21.517 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 98.7570 мс
+2022-05-07 11:30:38.313 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 95.4347 мс
+2022-05-07 11:30:41.309 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 67.2529 мс
+2022-05-07 11:30:42.946 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 72.8643 мс
+2022-05-07 11:30:44.182 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 83.6933 мс
+2022-05-07 11:30:48.749 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 107.4137 мс
+2022-05-07 11:30:50.148 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 66.3280 мс
+2022-05-07 11:30:52.583 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 61.0394 мс
+2022-05-07 11:30:54.227 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 81.2419 мс
+2022-05-07 11:30:55.266 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 71.5893 мс
+2022-05-07 11:30:56.501 +05:00 [INF] Запрос от kov (172.20.1.165:52561) по GET /api/Electronics/Filter ответил 200 за 59.4980 мс
+2022-05-07 11:31:16.911 +05:00 [INF] kov отключен от системы
+2022-05-07 11:31:16.914 +05:00 [INF] Запрос от kov (172.20.1.165:52567) по GET /technoWorldHub ответил 101 за 149489.6777 мс
+2022-05-07 11:31:49.218 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:31:49.219 +05:00 [INF] Запрос от Не установлено (172.20.1.165:55753) по POST /userToken ответил 200 за 6.8242 мс
+2022-05-07 11:31:49.394 +05:00 [INF] Запрос от kov (172.20.1.165:55756) по POST /technoWorldHub/negotiate ответил 200 за 0.3442 мс
+2022-05-07 11:31:49.555 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:31:51.059 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Categories ответил 200 за 4.1217 мс
+2022-05-07 11:31:51.164 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/ElectrnicsTypes/All ответил 200 за 8.7760 мс
+2022-05-07 11:31:51.478 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 167.0664 мс
+2022-05-07 11:31:54.760 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 116.1620 мс
+2022-05-07 11:31:56.628 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 121.8019 мс
+2022-05-07 11:31:57.804 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 168.5633 мс
+2022-05-07 11:31:57.809 +05:00 [INF] Запрос от kov (172.20.1.165:55774) по GET /api/Electronics/Filter ответил 200 за 171.8099 мс
+2022-05-07 11:32:00.915 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 134.4962 мс
+2022-05-07 11:32:02.117 +05:00 [INF] Запрос от kov (172.20.1.165:55774) по GET /api/Electronics/Filter ответил 200 за 110.3341 мс
+2022-05-07 11:32:02.119 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 115.0024 мс
+2022-05-07 11:32:03.684 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 91.2364 мс
+2022-05-07 11:32:05.040 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 71.0272 мс
+2022-05-07 11:32:06.182 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 67.0351 мс
+2022-05-07 11:32:09.232 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 103.3558 мс
+2022-05-07 11:32:10.642 +05:00 [INF] Запрос от kov (172.20.1.165:55774) по GET /api/Electronics/Filter ответил 200 за 147.2592 мс
+2022-05-07 11:32:10.657 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 164.0386 мс
+2022-05-07 11:32:11.916 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 121.6904 мс
+2022-05-07 11:32:13.108 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 107.3763 мс
+2022-05-07 11:32:14.796 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 107.1754 мс
+2022-05-07 11:32:16.121 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 150.4739 мс
+2022-05-07 11:32:16.122 +05:00 [INF] Запрос от kov (172.20.1.165:55774) по GET /api/Electronics/Filter ответил 200 за 150.5695 мс
+2022-05-07 11:32:21.016 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 102.4036 мс
+2022-05-07 11:32:21.891 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Electronics/Filter ответил 200 за 78.0595 мс
+2022-05-07 11:32:23.453 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Status ответил 200 за 22.4207 мс
+2022-05-07 11:32:23.539 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Deliveries/Filter ответил 200 за 51.3539 мс
+2022-05-07 11:32:29.266 +05:00 [INF] Запрос от kov (172.20.1.165:55753) по GET /api/Orders/Filter ответил 200 за 99.1654 мс
+2022-05-07 11:32:36.658 +05:00 [INF] kov отключен от системы
+2022-05-07 11:32:36.660 +05:00 [INF] Запрос от kov (172.20.1.165:55759) по GET /technoWorldHub ответил 101 за 47156.8122 мс
+2022-05-07 11:32:49.737 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:32:49.738 +05:00 [INF] Запрос от Не установлено (172.20.1.165:56701) по POST /userToken ответил 200 за 7.3081 мс
+2022-05-07 11:32:49.917 +05:00 [INF] Запрос от kov (172.20.1.165:56704) по POST /technoWorldHub/negotiate ответил 200 за 0.3077 мс
+2022-05-07 11:32:50.077 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:32:50.995 +05:00 [INF] Запрос от kov (172.20.1.165:56701) по GET /api/Categories ответил 200 за 4.5208 мс
+2022-05-07 11:32:51.103 +05:00 [INF] Запрос от kov (172.20.1.165:56701) по GET /api/ElectrnicsTypes/All ответил 200 за 8.1269 мс
+2022-05-07 11:32:56.894 +05:00 [INF] Запрос от kov (172.20.1.165:56701) по GET /api/Electronics/Filter ответил 200 за 164.7536 мс
+2022-05-07 11:33:02.325 +05:00 [INF] Запрос от kov (172.20.1.165:56701) по GET /api/Orders/Filter ответил 200 за 62.1613 мс
+2022-05-07 11:33:13.125 +05:00 [INF] kov отключен от системы
+2022-05-07 11:33:13.127 +05:00 [INF] Запрос от kov (172.20.1.165:56707) по GET /technoWorldHub ответил 101 за 23100.6122 мс
+2022-05-07 11:33:23.404 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:33:23.404 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57358) по POST /userToken ответил 200 за 3.2798 мс
+2022-05-07 11:33:23.578 +05:00 [INF] Запрос от kov (172.20.1.165:57364) по POST /technoWorldHub/negotiate ответил 200 за 0.2052 мс
+2022-05-07 11:33:23.731 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:33:24.248 +05:00 [INF] Запрос от kov (172.20.1.165:57358) по GET /api/Categories ответил 200 за 7.6248 мс
+2022-05-07 11:33:24.359 +05:00 [INF] Запрос от kov (172.20.1.165:57358) по GET /api/ElectrnicsTypes/All ответил 200 за 6.8140 мс
+2022-05-07 11:33:25.532 +05:00 [INF] Запрос от kov (172.20.1.165:57358) по GET /api/Electronics/Filter ответил 200 за 232.4783 мс
+2022-05-07 11:33:30.720 +05:00 [INF] Запрос от kov (172.20.1.165:57358) по GET /api/Orders/Filter ответил 200 за 50.7575 мс
+2022-05-07 11:33:54.575 +05:00 [INF] kov отключен от системы
+2022-05-07 11:33:59.589 +05:00 [INF] Запрос от kov (172.20.1.165:57367) по GET /technoWorldHub ответил 101 за 35906.0181 мс
+2022-05-07 11:34:43.672 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-07 11:34:43.674 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57931) по POST /userToken ответил 200 за 5.9369 мс
+2022-05-07 11:34:43.851 +05:00 [INF] Запрос от admin (172.20.1.165:57934) по POST /technoWorldHub/negotiate ответил 200 за 0.1847 мс
+2022-05-07 11:34:44.010 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-07 11:34:44.713 +05:00 [INF] Запрос от admin (172.20.1.165:57931) по GET /api/Categories ответил 200 за 4.3589 мс
+2022-05-07 11:34:44.829 +05:00 [INF] Запрос от admin (172.20.1.165:57931) по GET /api/ElectrnicsTypes/All ответил 200 за 10.5191 мс
+2022-05-07 11:34:57.712 +05:00 [INF] Запрос от admin (172.20.1.165:57931) по GET /api/Electronics/Filter ответил 200 за 9094.2482 мс
+2022-05-07 11:34:58.278 +05:00 [INF] Запрос от admin (172.20.1.165:57946) по GET /api/Orders/Filter ответил 200 за 56.6811 мс
+2022-05-07 11:35:01.558 +05:00 [INF] admin отключен от системы
+2022-05-07 11:35:01.560 +05:00 [INF] Запрос от admin (172.20.1.165:57937) по GET /technoWorldHub ответил 101 за 17597.1893 мс
+2022-05-07 11:35:09.216 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-07 11:35:09.217 +05:00 [INF] Запрос от Не установлено (172.20.1.165:57961) по POST /userToken ответил 200 за 6.0140 мс
+2022-05-07 11:35:09.391 +05:00 [INF] Запрос от admin (172.20.1.165:57964) по POST /technoWorldHub/negotiate ответил 200 за 0.2786 мс
+2022-05-07 11:35:09.551 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-07 11:35:10.393 +05:00 [INF] Запрос от admin (172.20.1.165:57961) по GET /api/Categories ответил 200 за 3.4147 мс
+2022-05-07 11:35:10.512 +05:00 [INF] Запрос от admin (172.20.1.165:57961) по GET /api/ElectrnicsTypes/All ответил 200 за 11.6307 мс
+2022-05-07 11:35:12.390 +05:00 [INF] Запрос от admin (172.20.1.165:57961) по GET /api/Electronics/Filter ответил 200 за 151.8451 мс
+2022-05-07 11:35:22.448 +05:00 [INF] Запрос от admin (172.20.1.165:57961) по GET /api/Orders/Filter ответил 200 за 46.2029 мс
+2022-05-07 11:35:40.573 +05:00 [INF] admin отключен от системы
+2022-05-07 11:35:45.579 +05:00 [INF] Запрос от admin (172.20.1.165:57967) по GET /technoWorldHub ответил 101 за 36075.0985 мс
+2022-05-07 11:39:29.038 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:39:29.040 +05:00 [INF] Запрос от Не установлено (172.20.1.165:62683) по POST /userToken ответил 200 за 6.3792 мс
+2022-05-07 11:39:29.212 +05:00 [INF] Запрос от kov (172.20.1.165:62686) по POST /technoWorldHub/negotiate ответил 200 за 0.1776 мс
+2022-05-07 11:39:29.376 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:39:30.121 +05:00 [INF] Запрос от kov (172.20.1.165:62683) по GET /api/Categories ответил 200 за 3.2341 мс
+2022-05-07 11:39:30.287 +05:00 [INF] Запрос от kov (172.20.1.165:62683) по GET /api/ElectrnicsTypes/All ответил 200 за 66.0225 мс
+2022-05-07 11:39:32.814 +05:00 [INF] Запрос от kov (172.20.1.165:62683) по GET /api/Electronics/Filter ответил 200 за 190.6757 мс
+2022-05-07 11:39:38.236 +05:00 [INF] Запрос от kov (172.20.1.165:62683) по GET /api/Orders/Filter ответил 200 за 55.8124 мс
+2022-05-07 11:39:46.820 +05:00 [INF] Запрос от kov (172.20.1.165:62683) по GET /api/Status ответил 200 за 3.2242 мс
+2022-05-07 11:39:46.849 +05:00 [INF] Запрос от kov (172.20.1.165:62683) по GET /api/Deliveries/Filter ответил 200 за 10.0649 мс
+2022-05-07 11:39:50.532 +05:00 [INF] kov отключен от системы
+2022-05-07 11:39:50.534 +05:00 [INF] Запрос от kov (172.20.1.165:62695) по GET /technoWorldHub ответил 101 за 21206.7956 мс
+2022-05-07 11:39:59.032 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:39:59.034 +05:00 [INF] Запрос от Не установлено (172.20.1.165:62806) по POST /userToken ответил 200 за 4.0565 мс
+2022-05-07 11:39:59.209 +05:00 [INF] Запрос от kov (172.20.1.165:62809) по POST /technoWorldHub/negotiate ответил 200 за 0.1604 мс
+2022-05-07 11:39:59.369 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:40:00.442 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Categories ответил 200 за 2.8489 мс
+2022-05-07 11:40:00.571 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/ElectrnicsTypes/All ответил 200 за 7.3426 мс
+2022-05-07 11:40:00.881 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Electronics/Filter ответил 200 за 157.4569 мс
+2022-05-07 11:40:15.815 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Status ответил 200 за 4.6182 мс
+2022-05-07 11:40:18.368 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Deliveries/Filter ответил 200 за 7.0136 мс
+2022-05-07 11:40:44.573 +05:00 [INF] kov отключен от системы
+2022-05-07 11:40:49.589 +05:00 [INF] Запрос от kov (172.20.1.165:62812) по GET /technoWorldHub ответил 101 за 50266.8241 мс
+2022-05-07 11:41:09.125 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:41:09.126 +05:00 [INF] Запрос от Не установлено (172.20.1.165:62806) по POST /userToken ответил 200 за 5.5604 мс
+2022-05-07 11:41:09.135 +05:00 [INF] Запрос от kov (172.20.1.165:63058) по POST /technoWorldHub/negotiate ответил 200 за 0.2587 мс
+2022-05-07 11:41:09.170 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:41:10.870 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Categories ответил 200 за 3.5613 мс
+2022-05-07 11:41:10.993 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/ElectrnicsTypes/All ответил 200 за 9.1386 мс
+2022-05-07 11:41:14.867 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Electronics/Filter ответил 200 за 164.3676 мс
+2022-05-07 11:41:17.486 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Status ответил 200 за 1.7845 мс
+2022-05-07 11:41:18.446 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Deliveries/Filter ответил 200 за 6.6452 мс
+2022-05-07 11:41:26.459 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Deliveries/Filter ответил 200 за 46.4200 мс
+2022-05-07 11:42:00.652 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Deliveries/Filter ответил 200 за 38.6118 мс
+2022-05-07 11:42:28.409 +05:00 [INF] Запрос от kov (172.20.1.165:63805) по GET /api/Suppliers ответил 200 за 11.4307 мс
+2022-05-07 11:42:28.415 +05:00 [INF] Запрос от kov (172.20.1.165:62806) по GET /api/Storages ответил 200 за 20.1106 мс
+2022-05-07 11:43:44.696 +05:00 [INF] kov отключен от системы
+2022-05-07 11:43:44.697 +05:00 [INF] Запрос от kov (172.20.1.165:63061) по GET /technoWorldHub ответил 101 за 155528.5939 мс
+2022-05-07 11:44:17.770 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-07 11:44:17.801 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 11:44:17.802 +05:00 [INF] Hosting environment: Development
+2022-05-07 11:44:17.802 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 11:44:20.040 +05:00 [INF] Пользователь admin авторизирован в системе
+2022-05-07 11:44:20.124 +05:00 [INF] Запрос от Не установлено (172.20.1.165:49203) по POST /userToken ответил 200 за 1695.9188 мс
+2022-05-07 11:44:20.330 +05:00 [INF] Запрос от admin (172.20.1.165:49229) по POST /technoWorldHub/negotiate ответил 200 за 54.8945 мс
+2022-05-07 11:44:20.452 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin
+2022-05-07 11:44:22.082 +05:00 [INF] Запрос от admin (172.20.1.165:49203) по GET /api/Categories ответил 200 за 80.9876 мс
+2022-05-07 11:44:22.258 +05:00 [INF] Запрос от admin (172.20.1.165:49203) по GET /api/ElectrnicsTypes/All ответил 200 за 64.3212 мс
+2022-05-07 11:44:22.732 +05:00 [INF] Запрос от admin (172.20.1.165:49203) по GET /api/Electronics/Filter ответил 200 за 330.3505 мс
+2022-05-07 11:44:24.593 +05:00 [INF] Запрос от admin (172.20.1.165:49203) по GET /api/Status ответил 200 за 14.7480 мс
+2022-05-07 11:44:24.670 +05:00 [INF] Запрос от admin (172.20.1.165:49203) по GET /api/Deliveries/Filter ответил 200 за 44.4457 мс
+2022-05-07 11:44:36.145 +05:00 [INF] Запрос от admin (172.20.1.165:49203) по GET /api/Deliveries/Filter ответил 200 за 56.1573 мс
+2022-05-07 11:44:45.536 +05:00 [INF] Запрос от admin (172.20.1.165:49203) по GET /api/Deliveries/Filter ответил 200 за 48.0788 мс
+2022-05-07 11:44:48.118 +05:00 [INF] Запрос от admin (172.20.1.165:49203) по GET /api/Deliveries/Filter ответил 200 за 41.7201 мс
+2022-05-07 11:45:29.857 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-07 11:45:29.902 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 11:45:29.902 +05:00 [INF] Hosting environment: Development
+2022-05-07 11:45:29.903 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 11:45:52.025 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:45:52.096 +05:00 [INF] Запрос от Не установлено (172.20.1.165:49794) по POST /userToken ответил 200 за 1502.3382 мс
+2022-05-07 11:45:52.167 +05:00 [INF] Запрос от kov (172.20.1.165:49797) по POST /technoWorldHub/negotiate ответил 200 за 66.2584 мс
+2022-05-07 11:45:52.202 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:45:52.885 +05:00 [INF] Запрос от kov (172.20.1.165:49794) по GET /api/Categories ответил 200 за 91.9378 мс
+2022-05-07 11:45:52.988 +05:00 [INF] Запрос от kov (172.20.1.165:49794) по GET /api/ElectrnicsTypes/All ответил 200 за 67.1100 мс
+2022-05-07 11:45:53.448 +05:00 [INF] Запрос от kov (172.20.1.165:49794) по GET /api/Electronics/Filter ответил 200 за 361.8094 мс
+2022-05-07 11:45:58.256 +05:00 [INF] Запрос от kov (172.20.1.165:49794) по GET /api/Orders/Filter ответил 200 за 4451.9285 мс
+2022-05-07 11:46:00.802 +05:00 [INF] Запрос от kov (172.20.1.165:49794) по GET /api/Status ответил 200 за 9.1057 мс
+2022-05-07 11:46:00.866 +05:00 [INF] Запрос от kov (172.20.1.165:49794) по GET /api/Deliveries/Filter ответил 200 за 43.6348 мс
+2022-05-07 11:46:13.123 +05:00 [INF] Запрос от kov (172.20.1.165:49794) по GET /api/Deliveries/Filter ответил 200 за 80.9287 мс
+2022-05-07 11:46:27.944 +05:00 [INF] kov отключен от системы
+2022-05-07 11:46:27.949 +05:00 [INF] Запрос от kov (172.20.1.165:49800) по GET /technoWorldHub ответил 101 за 35776.6567 мс
+2022-05-07 11:47:53.247 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-07 11:47:53.275 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 11:47:53.276 +05:00 [INF] Hosting environment: Development
+2022-05-07 11:47:53.276 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 11:48:03.547 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 11:48:03.610 +05:00 [INF] Запрос от Не установлено (172.20.1.165:52008) по POST /userToken ответил 200 за 1262.0212 мс
+2022-05-07 11:48:03.843 +05:00 [INF] Запрос от kov (172.20.1.165:52023) по POST /technoWorldHub/negotiate ответил 200 за 54.8198 мс
+2022-05-07 11:48:03.977 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 11:48:04.592 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/Categories ответил 200 за 78.8569 мс
+2022-05-07 11:48:04.796 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/ElectrnicsTypes/All ответил 200 за 56.5838 мс
+2022-05-07 11:48:09.805 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/Electronics/Filter ответил 200 за 345.4937 мс
+2022-05-07 11:48:11.743 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/Orders/Filter ответил 200 за 101.7937 мс
+2022-05-07 11:48:12.394 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/Status ответил 200 за 6.3331 мс
+2022-05-07 11:48:12.516 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/Deliveries/Filter ответил 200 за 98.4779 мс
+2022-05-07 11:48:21.373 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/Orders/Filter ответил 200 за 87.6269 мс
+2022-05-07 11:48:41.549 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/Deliveries/Filter ответил 200 за 83.3618 мс
+2022-05-07 11:48:47.420 +05:00 [INF] Запрос от kov (172.20.1.165:52125) по GET /api/Suppliers ответил 200 за 11.6598 мс
+2022-05-07 11:48:47.426 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/Storages ответил 200 за 21.6269 мс
+2022-05-07 11:48:48.658 +05:00 [INF] Происходит выгрузка товара на склад 'Основной'...
+2022-05-07 11:48:48.663 +05:00 [INF] Выгрузка товара Bosch Serie 2 NatureCool KGV36NL1AR серебристый, текущее количество: 103
+2022-05-07 11:48:48.665 +05:00 [INF] Выгрузка товара Moulinex DD655832 Quickchef 1000 Вт, текущее количество: 105
+2022-05-07 11:48:48.737 +05:00 [INF] Выгрузка товара завершена.
+2022-05-07 11:48:48.742 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по PUT /api/Deliveries/Unload/26 ответил 200 за 116.0548 мс
+2022-05-07 11:48:48.924 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/Deliveries/Filter ответил 200 за 114.7887 мс
+2022-05-07 11:48:49.004 +05:00 [INF] Запрос от kov (172.20.1.165:52125) по GET /api/Electronics/Filter ответил 200 за 189.9078 мс
+2022-05-07 11:48:56.072 +05:00 [INF] Запрос от kov (172.20.1.165:52125) по GET /api/Suppliers ответил 200 за 1.5025 мс
+2022-05-07 11:48:56.073 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по GET /api/Storages ответил 200 за 2.0019 мс
+2022-05-07 11:48:57.146 +05:00 [INF] Происходит выгрузка товара на склад 'Основной'...
+2022-05-07 11:48:57.268 +05:00 [INF] Выгрузка товара 6.5 Смартфон realme C25S 128 ГБ синий, текущее количество: 104
+2022-05-07 11:48:57.273 +05:00 [INF] Выгрузка товара завершена.
+2022-05-07 11:48:57.274 +05:00 [INF] Запрос от kov (172.20.1.165:52008) по PUT /api/Deliveries/Unload/24 ответил 200 за 131.0625 мс
+2022-05-07 11:48:57.380 +05:00 [INF] Запрос от kov (172.20.1.165:52125) по GET /api/Deliveries/Filter ответил 200 за 103.2078 мс
+2022-05-07 11:48:57.481 +05:00 [INF] Запрос от kov (172.20.1.165:52128) по GET /api/Electronics/Filter ответил 200 за 203.5092 мс
+2022-05-07 11:49:33.436 +05:00 [INF] kov отключен от системы
+2022-05-07 11:49:33.440 +05:00 [INF] Запрос от kov (172.20.1.165:52026) по GET /technoWorldHub ответил 101 за 89531.9718 мс
+2022-05-07 11:51:23.015 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-07 11:51:23.043 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 11:51:23.044 +05:00 [INF] Hosting environment: Development
+2022-05-07 11:51:23.044 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 11:51:34.750 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-07 11:51:34.833 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 11:51:34.837 +05:00 [INF] Hosting environment: Development
+2022-05-07 11:51:34.837 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 12:01:29.497 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-07 12:01:29.529 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 12:01:29.529 +05:00 [INF] Hosting environment: Development
+2022-05-07 12:01:29.530 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 12:13:04.985 +05:00 [INF] Now listening on: http://172.20.1.165:5000
+2022-05-07 12:13:05.015 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 12:13:05.015 +05:00 [INF] Hosting environment: Development
+2022-05-07 12:13:05.017 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 12:13:08.313 +05:00 [INF] Application is shutting down...
+2022-05-07 17:59:32.358 +05:00 [FTL] Unable to start Kestrel.
+System.Net.Sockets.SocketException (10049): Требуемый адрес для своего контекста неверен.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass29_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2022-05-07 18:00:36.941 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:00:36.976 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:00:36.977 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:00:36.977 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:00:44.017 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:00:44.047 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:00:44.048 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:00:44.049 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:01:20.910 +05:00 [ERR] An error occurred using the connection to database 'BNS' on server 'PK452-12\SQLEXPRESS'.
+2022-05-07 18:01:20.941 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2022-05-07 18:01:20.984 +05:00 [ERR] Запрос от Не установлено (127.0.0.1:53117) по POST /userToken ответил 500 за 21158.4091 мс
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.AuthenticateController.TryGetUser(String login, String password) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 93
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2022-05-07 18:01:21.048 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.AuthenticateController.TryGetUser(String login, String password) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 93
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2022-05-07 18:02:08.400 +05:00 [ERR] An error occurred using the connection to database 'BNS' on server 'PK452-12\SQLEXPRESS'.
+2022-05-07 18:02:08.404 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2022-05-07 18:02:08.444 +05:00 [ERR] Запрос от Не установлено (127.0.0.1:53172) по POST /userToken ответил 500 за 16119.6191 мс
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.AuthenticateController.TryGetUser(String login, String password) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 93
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2022-05-07 18:02:08.491 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.AuthenticateController.TryGetUser(String login, String password) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 93
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2022-05-07 18:02:28.698 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:02:28.740 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:02:28.741 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:02:28.741 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:03:20.027 +05:00 [ERR] An error occurred using the connection to database 'BNS' on server 'PK452-12\SQLEXPRESS'.
+2022-05-07 18:03:20.211 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2022-05-07 18:03:21.357 +05:00 [ERR] Запрос от Не установлено (127.0.0.1:53215) по POST /userToken ответил 500 за 49969.9077 мс
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.AuthenticateController.TryGetUser(String login, String password) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 93
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2022-05-07 18:03:21.713 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.AuthenticateController.TryGetUser(String login, String password) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 93
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2022-05-07 18:05:00.714 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:05:00.749 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:05:00.750 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:05:00.751 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:05:19.262 +05:00 [ERR] Запрос от Не установлено (127.0.0.1:53601) по POST /userToken ответил 500 за 15947.2324 мс
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Extentions.ClaimsExtentions.BuildClaimsForUser[T](T user) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Extentions\ClaimsExtentions.cs:line 17
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-07 18:05:19.539 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Extentions.ClaimsExtentions.BuildClaimsForUser[T](T user) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Extentions\ClaimsExtentions.cs:line 17
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-07 18:05:32.702 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:05:32.740 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:05:32.741 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:05:32.742 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:05:44.692 +05:00 [ERR] Запрос от Не установлено (127.0.0.1:53661) по POST /userToken ответил 500 за 7292.9725 мс
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Extentions.ClaimsExtentions.BuildClaimsForUser[T](T user) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Extentions\ClaimsExtentions.cs:line 17
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-07 18:05:44.963 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Extentions.ClaimsExtentions.BuildClaimsForUser[T](T user) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Extentions\ClaimsExtentions.cs:line 17
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-07 18:06:32.743 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:06:32.786 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:06:32.787 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:06:32.787 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:06:43.297 +05:00 [ERR] Запрос от Не установлено (127.0.0.1:53766) по POST /userToken ответил 500 за 8447.5337 мс
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Extentions.ClaimsExtentions.BuildClaimsForUser[T](T user) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Extentions\ClaimsExtentions.cs:line 17
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-07 18:06:43.562 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Extentions.ClaimsExtentions.BuildClaimsForUser[T](T user) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Extentions\ClaimsExtentions.cs:line 17
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-07 18:06:51.476 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:06:51.511 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:06:51.512 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:06:51.512 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:08:35.678 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:08:35.713 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:08:35.714 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:08:35.715 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:08:46.738 +05:00 [ERR] Запрос от Не установлено (127.0.0.1:54111) по POST /userToken ответил 500 за 8921.7707 мс
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Extentions.ClaimsExtentions.BuildClaimsForUser[T](T user) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Extentions\ClaimsExtentions.cs:line 17
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-07 18:08:47.039 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Extentions.ClaimsExtentions.BuildClaimsForUser[T](T user) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Extentions\ClaimsExtentions.cs:line 17
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BNS_API.Startup.<>c.<<Configure>b__5_3>d.MoveNext() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Startup.cs:line 154
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-07 18:08:52.149 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:08:52.198 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:08:52.199 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:08:52.200 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:09:48.375 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:09:48.416 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:09:48.417 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:09:48.418 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:10:04.915 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:10:07.449 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54268) по POST /userToken ответил 200 за 17052.2568 мс
+2022-05-07 18:10:18.106 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54276) по POST /technoWorldHub/negotiate ответил 200 за 10434.1953 мс
+2022-05-07 18:10:24.007 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 18
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 18:10:24.051 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54282) по GET /technoWorldHub ответил 101 за 5889.8365 мс
+2022-05-07 18:10:28.929 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54268) по GET /api/Categories ответил 401 за 11.6485 мс
+2022-05-07 18:10:28.998 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54268) по GET /api/ElectrnicsTypes/All ответил 401 за 3.9254 мс
+2022-05-07 18:10:37.126 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:10:37.156 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:10:37.156 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:10:37.157 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:10:56.425 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:10:56.460 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54339) по POST /userToken ответил 200 за 2173.3284 мс
+2022-05-07 18:10:56.616 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54341) по POST /technoWorldHub/negotiate ответил 200 за 10.0625 мс
+2022-05-07 18:10:56.731 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 18
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 18:10:56.766 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54342) по GET /technoWorldHub ответил 101 за 100.7711 мс
+2022-05-07 18:11:09.569 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54339) по GET /api/Categories ответил 401 за 4.4055 мс
+2022-05-07 18:11:09.637 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54339) по GET /api/ElectrnicsTypes/All ответил 401 за 1.6594 мс
+2022-05-07 18:11:22.531 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:11:22.532 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54358) по POST /userToken ответил 200 за 30.8409 мс
+2022-05-07 18:11:22.682 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54359) по POST /technoWorldHub/negotiate ответил 200 за 0.1997 мс
+2022-05-07 18:11:22.778 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 18
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 18:11:22.786 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54360) по GET /technoWorldHub ответил 101 за 52.5834 мс
+2022-05-07 18:11:31.117 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54358) по GET /api/Categories ответил 401 за 0.7331 мс
+2022-05-07 18:11:31.192 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54358) по GET /api/ElectrnicsTypes/All ответил 401 за 0.2569 мс
+2022-05-07 18:11:54.150 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:11:54.189 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:11:54.190 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:11:54.191 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:12:01.766 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:12:01.813 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54415) по POST /userToken ответил 200 за 4866.6791 мс
+2022-05-07 18:12:01.977 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54419) по POST /technoWorldHub/negotiate ответил 200 за 10.7606 мс
+2022-05-07 18:12:41.683 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54429) по GET /api/ElectrnicsTypes/All ответил 401 за 214.5103 мс
+2022-05-07 18:12:41.702 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54415) по GET /api/Categories ответил 401 за 31135.9210 мс
+2022-05-07 18:12:41.776 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 18
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 18:12:41.845 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54420) по GET /technoWorldHub ответил 101 за 39819.4568 мс
+2022-05-07 18:17:18.042 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:17:18.089 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:17:18.090 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:17:18.091 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:17:29.035 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:18:04.905 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54647) по POST /userToken ответил 200 за 40359.3086 мс
+2022-05-07 18:18:11.399 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:18:12.257 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54666) по POST /userToken ответил 200 за 2538.5226 мс
+2022-05-07 18:18:12.420 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54669) по POST /technoWorldHub/negotiate ответил 200 за 10.4905 мс
+2022-05-07 18:18:38.101 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 18
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 18:18:38.141 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54670) по GET /technoWorldHub ответил 101 за 25673.5130 мс
+2022-05-07 18:18:45.866 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54666) по GET /api/Categories ответил 401 за 6.2969 мс
+2022-05-07 18:19:25.851 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:20:04.475 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:20:04.510 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:20:04.511 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:20:04.512 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:20:26.277 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:20:32.037 +05:00 [INF] Запрос от Не установлено (127.0.0.1:54830) по POST /userToken ответил 200 за 24107.3192 мс
+2022-05-07 18:20:40.593 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:24:26.286 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:24:26.324 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:24:26.325 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:24:26.325 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:25:54.541 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:25:58.580 +05:00 [INF] Запрос от Не установлено (::1:55307) по POST /userToken ответил 200 за 11868.2476 мс
+2022-05-07 18:31:00.299 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:31:00.332 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:31:00.333 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:31:00.334 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:31:13.512 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:31:22.649 +05:00 [INF] Запрос от Не установлено (127.0.0.1:55652) по POST /userToken ответил 200 за 16908.4392 мс
+2022-05-07 18:31:23.605 +05:00 [INF] Запрос от Не установлено (127.0.0.1:55662) по POST /technoWorldHub/negotiate ответил 200 за 7152.9616 мс
+2022-05-07 18:32:08.751 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 18
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 18:32:09.044 +05:00 [INF] Запрос от Не установлено (127.0.0.1:55665) по GET /technoWorldHub ответил 101 за 45438.9879 мс
+2022-05-07 18:32:13.893 +05:00 [INF] Запрос от kov (127.0.0.1:55652) по GET /api/Categories ответил 200 за 34090.0246 мс
+2022-05-07 18:32:14.631 +05:00 [INF] Запрос от kov (127.0.0.1:55681) по GET /api/ElectrnicsTypes/All ответил 200 за 19148.2329 мс
+2022-05-07 18:32:51.996 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:33:02.371 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:33:02.410 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:33:02.411 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:33:02.415 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:33:37.141 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:33:39.120 +05:00 [INF] Запрос от Не установлено (127.0.0.1:55788) по POST /userToken ответил 200 за 11877.3381 мс
+2022-05-07 18:33:45.587 +05:00 [INF] Запрос от Не установлено (127.0.0.1:55794) по POST /technoWorldHub/negotiate ответил 200 за 6274.8530 мс
+2022-05-07 18:33:56.802 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 18
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 18:33:57.088 +05:00 [INF] Запрос от Не установлено (127.0.0.1:55795) по GET /technoWorldHub ответил 101 за 11500.1453 мс
+2022-05-07 18:36:27.653 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:36:27.692 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:36:27.693 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:36:27.694 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:36:40.836 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:36:42.584 +05:00 [INF] Запрос от Не установлено (127.0.0.1:56098) по POST /userToken ответил 200 за 8809.1440 мс
+2022-05-07 18:37:01.488 +05:00 [INF] Запрос от Не установлено (127.0.0.1:56101) по POST /technoWorldHub/negotiate ответил 200 за 18677.8040 мс
+2022-05-07 18:38:01.640 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:38:01.678 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:38:01.679 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:38:01.679 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:39:06.276 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:39:06.311 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:39:06.311 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:39:06.312 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:39:16.753 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:39:18.563 +05:00 [INF] Запрос от Не установлено (127.0.0.1:56295) по POST /userToken ответил 200 за 7766.9396 мс
+2022-05-07 18:39:21.736 +05:00 [INF] Запрос от Не установлено (127.0.0.1:56298) по POST /technoWorldHub/negotiate ответил 200 за 2971.8881 мс
+2022-05-07 18:42:06.533 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:42:06.571 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:42:06.571 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:42:06.572 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:42:35.651 +05:00 [ERR] Запрос от Не установлено (127.0.0.1:56770) по POST /userToken ответил 500 за 23663.3443 мс
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Unexpected end of request content.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelBadHttpRequestException.Throw(RequestRejectionReason reason)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1ContentLengthMessageBody.ReadAsyncInternal(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-07 18:42:35.921 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Unexpected end of request content.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelBadHttpRequestException.Throw(RequestRejectionReason reason)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1ContentLengthMessageBody.ReadAsyncInternal(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-07 18:42:57.168 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:42:57.209 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:42:57.210 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:42:57.211 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:43:06.764 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:43:08.709 +05:00 [INF] Запрос от Не установлено (127.0.0.1:56859) по POST /userToken ответил 200 за 9324.6608 мс
+2022-05-07 18:44:00.187 +05:00 [INF] Запрос от Не установлено (127.0.0.1:56867) по POST /technoWorldHub/negotiate ответил 200 за 51301.1588 мс
+2022-05-07 18:55:12.346 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:55:12.382 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:55:12.383 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:55:12.384 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:55:38.211 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:55:40.393 +05:00 [INF] Запрос от Не установлено (127.0.0.1:57352) по POST /userToken ответил 200 за 18294.1089 мс
+2022-05-07 18:56:05.501 +05:00 [INF] Запрос от Не установлено (127.0.0.1:57360) по POST /technoWorldHub/negotiate ответил 200 за 24917.3240 мс
+2022-05-07 18:56:37.490 +05:00 [INF] Запрос от kov (127.0.0.1:57352) по GET /api/Categories ответил 200 за 19063.1612 мс
+2022-05-07 18:56:49.951 +05:00 [INF] Запрос от kov (127.0.0.1:57352) по GET /api/ElectrnicsTypes/All ответил 200 за 12447.6545 мс
+2022-05-07 18:57:02.235 +05:00 [INF] Запрос от kov (127.0.0.1:57352) по GET /api/Electronics/Filter ответил 200 за 12235.1301 мс
+2022-05-07 18:58:16.089 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:58:16.129 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:58:16.129 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:58:16.130 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:58:33.617 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:58:36.201 +05:00 [INF] Запрос от kov (127.0.0.1:57558) по POST /userToken ответил 200 за 16515.6541 мс
+2022-05-07 18:58:39.384 +05:00 [INF] Запрос от Не установлено (127.0.0.1:57564) по POST /technoWorldHub/negotiate ответил 200 за 3948.2137 мс
+2022-05-07 18:59:21.317 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:59:21.360 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:59:21.360 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:59:21.361 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:59:31.356 +05:00 [INF] Запрос от kov (127.0.0.1:57616) по GET /api/Categories ответил 200 за 6433.3786 мс
+2022-05-07 18:59:36.526 +05:00 [INF] Запрос от kov (127.0.0.1:57616) по GET /api/ElectrnicsTypes/All ответил 200 за 5163.1879 мс
+2022-05-07 18:59:37.301 +05:00 [INF] Запрос от kov (127.0.0.1:57616) по GET /api/Electronics/Filter ответил 200 за 768.5509 мс
+2022-05-07 18:59:42.565 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 18:59:42.615 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 18:59:42.616 +05:00 [INF] Hosting environment: Development
+2022-05-07 18:59:42.617 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 18:59:56.872 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 18:59:59.619 +05:00 [INF] Запрос от kov (127.0.0.1:57656) по POST /userToken ответил 200 за 11274.4268 мс
+2022-05-07 19:00:04.473 +05:00 [INF] Запрос от Не установлено (127.0.0.1:57665) по POST /technoWorldHub/negotiate ответил 200 за 5610.0234 мс
+2022-05-07 19:00:16.943 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 21
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 19:00:17.287 +05:00 [INF] Запрос от Не установлено (127.0.0.1:57667) по GET /technoWorldHub ответил 101 за 14162.6946 мс
+2022-05-07 19:00:42.946 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:00:42.985 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:00:42.989 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:00:42.990 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:00:50.999 +05:00 [INF] Запрос от kov (127.0.0.1:57771) по GET /api/Categories ответил 200 за 7384.9974 мс
+2022-05-07 19:01:21.222 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:01:21.255 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:01:21.256 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:01:21.257 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:01:45.295 +05:00 [WRN] Провальная попытка входа пользователя kov: Неверный логин или пароль
+2022-05-07 19:01:45.326 +05:00 [INF] Запрос от Не установлено (127.0.0.1:57856) по POST /userToken ответил 400 за 8914.2177 мс
+2022-05-07 19:01:56.683 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:01:58.122 +05:00 [INF] Запрос от Не установлено (127.0.0.1:57856) по POST /userToken ответил 200 за 5407.0524 мс
+2022-05-07 19:02:02.435 +05:00 [INF] Запрос от Не установлено (127.0.0.1:57868) по POST /technoWorldHub/negotiate ответил 200 за 4190.3327 мс
+2022-05-07 19:02:13.151 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 21
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 19:02:13.467 +05:00 [INF] Запрос от Не установлено (127.0.0.1:57870) по GET /technoWorldHub ответил 101 за 11031.6174 мс
+2022-05-07 19:10:33.879 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:10:33.911 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:10:33.912 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:10:33.913 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:10:37.681 +05:00 [INF] Запрос от kov (127.0.0.1:58420) по GET /api/Categories ответил 200 за 1343.8889 мс
+2022-05-07 19:10:37.818 +05:00 [INF] Запрос от kov (127.0.0.1:58420) по GET /api/ElectrnicsTypes/All ответил 200 за 125.5565 мс
+2022-05-07 19:10:38.381 +05:00 [INF] Запрос от kov (127.0.0.1:58420) по GET /api/Electronics/Filter ответил 200 за 520.9075 мс
+2022-05-07 19:11:07.778 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:11:07.785 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58450) по POST /userToken ответил 200 за 72.6648 мс
+2022-05-07 19:11:09.172 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58454) по POST /technoWorldHub/negotiate ответил 200 за 12.2019 мс
+2022-05-07 19:11:09.351 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 21
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 19:11:09.490 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58455) по GET /technoWorldHub ответил 101 за 212.3972 мс
+2022-05-07 19:11:19.615 +05:00 [INF] Запрос от kov (127.0.0.1:58450) по GET /api/Categories ответил 200 за 7.4717 мс
+2022-05-07 19:11:19.723 +05:00 [INF] Запрос от kov (127.0.0.1:58450) по GET /api/ElectrnicsTypes/All ответил 200 за 13.3222 мс
+2022-05-07 19:11:20.080 +05:00 [INF] Запрос от kov (127.0.0.1:58450) по GET /api/Electronics/Filter ответил 200 за 230.3380 мс
+2022-05-07 19:11:24.970 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:11:24.972 +05:00 [INF] Запрос от kov (127.0.0.1:58450) по POST /userToken ответил 200 за 6.8400 мс
+2022-05-07 19:11:24.976 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58469) по POST /technoWorldHub/negotiate ответил 200 за 0.3162 мс
+2022-05-07 19:11:25.017 +05:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Services.TechnoWorldHub.OnConnectedAsync() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Services\TechnoWorldHub.cs:line 21
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2022-05-07 19:11:25.161 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58470) по GET /technoWorldHub ответил 101 за 147.9845 мс
+2022-05-07 19:11:27.995 +05:00 [INF] Запрос от kov (127.0.0.1:58450) по GET /api/Categories ответил 200 за 3.2628 мс
+2022-05-07 19:11:28.059 +05:00 [INF] Запрос от kov (127.0.0.1:58450) по GET /api/ElectrnicsTypes/All ответил 200 за 12.0558 мс
+2022-05-07 19:11:28.324 +05:00 [INF] Запрос от kov (127.0.0.1:58450) по GET /api/Electronics/Filter ответил 200 за 202.0216 мс
+2022-05-07 19:13:00.049 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:13:00.051 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58537) по POST /userToken ответил 200 за 39.3226 мс
+2022-05-07 19:15:49.240 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:15:49.241 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58644) по POST /userToken ответил 200 за 8.2333 мс
+2022-05-07 19:17:44.878 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:17:44.879 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58740) по POST /userToken ответил 200 за 7.4967 мс
+2022-05-07 19:19:04.135 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:19:04.136 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58799) по POST /userToken ответил 200 за 6.9581 мс
+2022-05-07 19:20:11.745 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:20:11.747 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58849) по POST /userToken ответил 200 за 9.8575 мс
+2022-05-07 19:20:11.936 +05:00 [INF] Запрос от kov (127.0.0.1:58851) по POST /technoWorldHub/negotiate ответил 200 за 0.3563 мс
+2022-05-07 19:20:12.095 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:20:13.393 +05:00 [INF] Запрос от kov (127.0.0.1:58849) по GET /api/Categories ответил 200 за 4.1780 мс
+2022-05-07 19:20:13.520 +05:00 [INF] Запрос от kov (127.0.0.1:58849) по GET /api/ElectrnicsTypes/All ответил 200 за 8.0245 мс
+2022-05-07 19:20:13.894 +05:00 [INF] Запрос от kov (127.0.0.1:58849) по GET /api/Electronics/Filter ответил 200 за 239.1666 мс
+2022-05-07 19:20:24.893 +05:00 [INF] kov отключен от системы
+2022-05-07 19:20:24.895 +05:00 [INF] Запрос от kov (127.0.0.1:58852) по GET /technoWorldHub ответил 101 за 12849.5931 мс
+2022-05-07 19:20:37.043 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:20:37.045 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58866) по POST /userToken ответил 200 за 7.5813 мс
+2022-05-07 19:20:38.233 +05:00 [INF] Запрос от kov (127.0.0.1:58867) по POST /technoWorldHub/negotiate ответил 200 за 0.2573 мс
+2022-05-07 19:20:38.383 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:20:39.290 +05:00 [INF] Запрос от kov (127.0.0.1:58866) по GET /api/Categories ответил 200 за 4.2674 мс
+2022-05-07 19:20:39.403 +05:00 [INF] Запрос от kov (127.0.0.1:58866) по GET /api/ElectrnicsTypes/All ответил 200 за 9.0619 мс
+2022-05-07 19:20:39.695 +05:00 [INF] Запрос от kov (127.0.0.1:58866) по GET /api/Electronics/Filter ответил 200 за 159.0506 мс
+2022-05-07 19:20:48.364 +05:00 [INF] kov отключен от системы
+2022-05-07 19:20:48.365 +05:00 [INF] Запрос от kov (127.0.0.1:58868) по GET /technoWorldHub ответил 101 за 10028.2992 мс
+2022-05-07 19:20:57.757 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:20:57.803 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:20:57.803 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:20:57.804 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:22:37.183 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:22:40.925 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58994) по POST /userToken ответил 200 за 5497.1178 мс
+2022-05-07 19:22:41.644 +05:00 [INF] Запрос от kov (127.0.0.1:58997) по POST /technoWorldHub/negotiate ответил 200 за 510.7430 мс
+2022-05-07 19:22:55.916 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:23:18.737 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:23:18.823 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:23:18.824 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:23:18.825 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:23:23.559 +05:00 [INF] Запрос от kov (127.0.0.1:59050) по GET /api/Categories ответил 200 за 1641.7527 мс
+2022-05-07 19:23:23.759 +05:00 [INF] Запрос от kov (127.0.0.1:59050) по GET /api/ElectrnicsTypes/All ответил 200 за 190.1020 мс
+2022-05-07 19:23:24.361 +05:00 [INF] Запрос от kov (127.0.0.1:59050) по GET /api/Electronics/Filter ответил 200 за 559.4531 мс
+2022-05-07 19:23:26.253 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:23:30.735 +05:00 [INF] Запрос от kov (127.0.0.1:59050) по POST /userToken ответил 200 за 4555.2693 мс
+2022-05-07 19:23:31.028 +05:00 [INF] Запрос от kov (127.0.0.1:59056) по POST /technoWorldHub/negotiate ответил 200 за 289.6137 мс
+2022-05-07 19:23:31.405 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:23:49.203 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:23:49.237 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:23:49.239 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:23:49.239 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:23:58.917 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:24:01.645 +05:00 [INF] Запрос от kov (127.0.0.1:59103) по POST /userToken ответил 200 за 4512.9720 мс
+2022-05-07 19:24:01.819 +05:00 [INF] Запрос от kov (127.0.0.1:59105) по POST /technoWorldHub/negotiate ответил 200 за 166.4509 мс
+2022-05-07 19:24:11.386 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:25:29.334 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:25:29.397 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:25:29.397 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:25:29.398 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:25:31.991 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Categories ответил 200 за 1898.8564 мс
+2022-05-07 19:25:32.149 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/ElectrnicsTypes/All ответил 200 за 150.3435 мс
+2022-05-07 19:25:32.698 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Electronics/Filter ответил 200 за 545.0383 мс
+2022-05-07 19:25:34.467 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:25:34.474 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по POST /userToken ответил 200 за 77.5627 мс
+2022-05-07 19:25:34.488 +05:00 [INF] Запрос от kov (127.0.0.1:59165) по POST /technoWorldHub/negotiate ответил 200 за 11.8624 мс
+2022-05-07 19:25:34.532 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:25:38.748 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Status ответил 200 за 21.1194 мс
+2022-05-07 19:25:39.223 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Deliveries/Filter ответил 200 за 440.5962 мс
+2022-05-07 19:25:40.205 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Orders/Filter ответил 200 за 114.9772 мс
+2022-05-07 19:25:42.200 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Electronics/Filter ответил 200 за 87.5683 мс
+2022-05-07 19:25:42.884 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Electronics/Filter ответил 200 за 88.9628 мс
+2022-05-07 19:25:43.481 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Electronics/Filter ответил 200 за 95.6384 мс
+2022-05-07 19:25:44.025 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Electronics/Filter ответил 200 за 77.2382 мс
+2022-05-07 19:25:44.577 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Electronics/Filter ответил 200 за 81.7541 мс
+2022-05-07 19:25:45.233 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Electronics/Filter ответил 200 за 173.9752 мс
+2022-05-07 19:25:45.902 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Electronics/Filter ответил 200 за 81.0871 мс
+2022-05-07 19:25:46.457 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Electronics/Filter ответил 200 за 79.0474 мс
+2022-05-07 19:25:49.543 +05:00 [INF] Запрос от kov (127.0.0.1:59159) по GET /api/Electronics/Filter ответил 200 за 96.9793 мс
+2022-05-07 19:25:51.717 +05:00 [INF] kov отключен от системы
+2022-05-07 19:25:51.722 +05:00 [INF] Запрос от kov (127.0.0.1:59166) по GET /technoWorldHub ответил 101 за 17218.4036 мс
+2022-05-07 19:26:40.663 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:26:40.699 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:26:40.700 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:26:40.701 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:26:48.782 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:26:48.816 +05:00 [INF] Запрос от Не установлено (127.0.0.1:59259) по POST /userToken ответил 200 за 1996.4873 мс
+2022-05-07 19:26:49.002 +05:00 [INF] Запрос от kov (127.0.0.1:59260) по POST /technoWorldHub/negotiate ответил 200 за 45.6473 мс
+2022-05-07 19:26:49.113 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:26:54.000 +05:00 [INF] Запрос от kov (127.0.0.1:59259) по GET /api/Categories ответил 200 за 70.0008 мс
+2022-05-07 19:26:54.058 +05:00 [INF] Запрос от kov (127.0.0.1:59259) по GET /api/ElectrnicsTypes/All ответил 200 за 35.8074 мс
+2022-05-07 19:26:54.581 +05:00 [INF] Запрос от kov (127.0.0.1:59259) по GET /api/Electronics/Filter ответил 200 за 430.5846 мс
+2022-05-07 19:26:57.148 +05:00 [INF] kov отключен от системы
+2022-05-07 19:26:57.152 +05:00 [INF] Запрос от kov (127.0.0.1:59261) по GET /technoWorldHub ответил 101 за 8103.9870 мс
+2022-05-07 19:34:01.451 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:34:01.490 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:34:01.491 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:34:01.492 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:34:24.885 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:34:24.921 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:34:24.922 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:34:24.923 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:34:37.469 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:34:37.507 +05:00 [INF] Запрос от Не установлено (127.0.0.1:59408) по POST /userToken ответил 200 за 1445.9640 мс
+2022-05-07 19:34:37.738 +05:00 [INF] Запрос от kov (127.0.0.1:59409) по POST /technoWorldHub/negotiate ответил 200 за 50.1882 мс
+2022-05-07 19:34:37.864 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:35:20.068 +05:00 [INF] Запрос от kov (127.0.0.1:59408) по GET /api/Categories ответил 200 за 105.0235 мс
+2022-05-07 19:35:20.196 +05:00 [INF] Запрос от kov (127.0.0.1:59408) по GET /api/ElectrnicsTypes/All ответил 200 за 36.6400 мс
+2022-05-07 19:35:20.863 +05:00 [INF] Запрос от kov (127.0.0.1:59408) по GET /api/Electronics/Filter ответил 200 за 472.1834 мс
+2022-05-07 19:35:45.825 +05:00 [INF] kov отключен от системы
+2022-05-07 19:35:45.831 +05:00 [INF] Запрос от kov (127.0.0.1:59411) по GET /technoWorldHub ответил 101 за 68033.7021 мс
+2022-05-07 19:36:14.024 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:36:14.025 +05:00 [INF] Запрос от Не установлено (127.0.0.1:59442) по POST /userToken ответил 200 за 10.4027 мс
+2022-05-07 19:36:14.261 +05:00 [INF] Запрос от kov (127.0.0.1:59443) по POST /technoWorldHub/negotiate ответил 200 за 0.7013 мс
+2022-05-07 19:36:14.377 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:36:26.813 +05:00 [INF] Запрос от kov (127.0.0.1:59442) по GET /api/Categories ответил 200 за 4.3469 мс
+2022-05-07 19:36:26.913 +05:00 [INF] Запрос от kov (127.0.0.1:59442) по GET /api/ElectrnicsTypes/All ответил 200 за 9.0385 мс
+2022-05-07 19:36:27.221 +05:00 [INF] Запрос от kov (127.0.0.1:59442) по GET /api/Electronics/Filter ответил 200 за 178.6613 мс
+2022-05-07 19:36:35.509 +05:00 [INF] kov отключен от системы
+2022-05-07 19:36:35.510 +05:00 [INF] Запрос от kov (127.0.0.1:59444) по GET /technoWorldHub ответил 101 за 21180.7217 мс
+2022-05-07 19:37:15.799 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:37:15.801 +05:00 [INF] Запрос от Не установлено (127.0.0.1:59459) по POST /userToken ответил 200 за 8.9371 мс
+2022-05-07 19:37:15.989 +05:00 [INF] Запрос от kov (127.0.0.1:59460) по POST /technoWorldHub/negotiate ответил 200 за 0.6766 мс
+2022-05-07 19:37:16.100 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:37:17.777 +05:00 [INF] Запрос от kov (127.0.0.1:59459) по GET /api/Categories ответил 200 за 6.5585 мс
+2022-05-07 19:37:17.886 +05:00 [INF] Запрос от kov (127.0.0.1:59459) по GET /api/ElectrnicsTypes/All ответил 200 за 9.1912 мс
+2022-05-07 19:37:19.959 +05:00 [INF] Запрос от kov (127.0.0.1:59459) по GET /api/Electronics/Filter ответил 200 за 1941.1045 мс
+2022-05-07 19:37:28.917 +05:00 [INF] kov отключен от системы
+2022-05-07 19:37:28.918 +05:00 [INF] Application is shutting down...
+2022-05-07 19:37:28.918 +05:00 [INF] Запрос от kov (127.0.0.1:59461) по GET /technoWorldHub ответил 101 за 12868.1169 мс
+2022-05-07 19:38:30.262 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:38:30.293 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:38:30.294 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:38:30.295 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:38:58.198 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-07 19:38:58.233 +05:00 [INF] Запрос от Не установлено (127.0.0.1:59640) по POST /userToken ответил 200 за 2039.5307 мс
+2022-05-07 19:38:58.464 +05:00 [INF] Запрос от kov (127.0.0.1:59642) по POST /technoWorldHub/negotiate ответил 200 за 47.3007 мс
+2022-05-07 19:38:58.588 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-07 19:39:00.292 +05:00 [INF] Запрос от kov (127.0.0.1:59640) по GET /api/Categories ответил 200 за 82.0431 мс
+2022-05-07 19:39:00.358 +05:00 [INF] Запрос от kov (127.0.0.1:59640) по GET /api/ElectrnicsTypes/All ответил 200 за 35.0129 мс
+2022-05-07 19:39:00.911 +05:00 [INF] Запрос от kov (127.0.0.1:59640) по GET /api/Electronics/Filter ответил 200 за 450.3314 мс
+2022-05-07 19:39:06.496 +05:00 [INF] kov отключен от системы
+2022-05-07 19:39:06.501 +05:00 [INF] Запрос от kov (127.0.0.1:59643) по GET /technoWorldHub ответил 101 за 7980.6618 мс
+2022-05-07 19:40:24.482 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:40:24.512 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:40:24.513 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:40:24.514 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:40:59.709 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:40:59.740 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:40:59.741 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:40:59.741 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:44:24.460 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:44:24.492 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:44:24.493 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:44:24.493 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 19:45:01.113 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 19:45:01.144 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 19:45:01.145 +05:00 [INF] Hosting environment: Development
+2022-05-07 19:45:01.145 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-07 20:02:00.153 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-07 20:02:00.186 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-07 20:02:00.186 +05:00 [INF] Hosting environment: Development
+2022-05-07 20:02:00.187 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API

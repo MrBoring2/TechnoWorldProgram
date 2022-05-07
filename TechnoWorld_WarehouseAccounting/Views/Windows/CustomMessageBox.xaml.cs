@@ -1,4 +1,5 @@
-﻿using MaterialDesignThemes.Wpf;
+﻿using MaterialDesignExtensions.Controls;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +22,7 @@ namespace TechnoWorld_WarehouseAccounting.Views.Windows
     /// <summary>
     /// Логика взаимодействия для CustomMessageBox.xaml
     /// </summary>
-    public partial class CustomMessageBox : BaseWindow, INotifyPropertyChanged
+    public partial class CustomMessageBox : MaterialWindow, INotifyPropertyChanged
     {
         #region Fields
         private string message;

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_Terminal.Models
 {

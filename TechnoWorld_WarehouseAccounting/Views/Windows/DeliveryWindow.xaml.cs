@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignExtensions.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace TechnoWorld_WarehouseAccounting.Views.Windows
     /// <summary>
     /// Логика взаимодействия для DeliveryWindow.xaml
     /// </summary>
-    public partial class DeliveryWindow : BaseWindow
+    public partial class DeliveryWindow : MaterialWindow
     {
         public DeliveryWindow()
         {

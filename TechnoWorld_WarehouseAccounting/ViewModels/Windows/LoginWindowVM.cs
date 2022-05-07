@@ -10,9 +10,12 @@ using RestSharp;
 using Newtonsoft.Json;
 using TechnoWorld_WarehouseAccounting.Models;
 using System.Windows;
-using TechnoWorld_WarehouseAccounting.Common;
 using System.Security;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
+using WPF_VM_Abstractions;
+using WPF_Helpers.Abstractions;
+using WPF_Helpers.Common;
+using TechoWorld_DataModels_v2;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
@@ -24,45 +27,15 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public LoginWindowVM()
         {
             Initialize();
-            LoginCommand = new RelayCommand(Authorize);
         }
-        public string Login
-        {
-            get => login;
-            set { login = value.Length >= 30 ? login : value; OnPropertyChanged(); }
-        }
+        public string Login { get => login; set { login = value.Length >= 30 ? login : value; OnPropertyChanged(); } }
         public string Password { get => password; set { password = value.Length >= 30 ? password : value; OnPropertyChanged(); } }
         public bool IsEnabled { get => isEnabled; set { isEnabled = value; OnPropertyChanged(); } }
         public RelayCommand LoginCommand { get; set; }
         private void Initialize()
         {
-            ClientService.Instance.HubConnection = new HubConnectionBuilder()
-                .WithUrl($"{ApiService.apiUrl}technoWorldHub",
-
-                options =>
-                {
-                    options.AccessTokenProvider = () => Task.FromResult(ClientService.Instance.Token);
-                })
-                .Build();
-            ClientService.Instance.HubConnection.Closed += HubConnection_Closed;
-
-            ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
-            ClientService.Instance.RestClient.Timeout = 20000;
-            ClientService.Instance.RestClient.ReadWriteTimeout = 20000;
+            LoginCommand = new RelayCommand(Authorize);
         }
-
-        private Task HubConnection_Closed(Exception arg)
-        {
-            return App.Current.Dispatcher.InvokeAsync(() =>
-            {
-                CustomMessageBox.Show("Потеряно соединение с сервером!", "Критическая ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                WindowNavigation.Instance.OpenWindow(new LoginWindowVM());
-                PageNavigation.Instance.ClearCreatedPages();
-                WindowNavigation.Instance.CloseWindows();
-
-            }).Task;
-        }
-
         /// <summary>
         /// Авторизация
         /// </summary>
@@ -78,12 +51,13 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 }
 
                 IsEnabled = false;
-                var response = await ApiService.Authorize(Login, Password);
+                var response = await ApiService.Instance.Authorize(Login, Password);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    var data = JsonConvert.DeserializeObject<TokenModel>(response.Content);
-                    ClientService.Instance.SetClient(data.user_name, data.full_name, data.role_id, data.user_id, data.post, data.access_token);
-                    ClientService.Instance.HubConnection.StartAsync();
+                    var data = JsonConvert.DeserializeObject<AuthResponseModel>(response.Content);
+                    ClientService.Instance.SetClient(data.user_name, data.full_name, data.role_id, data.user_id, data.post);
+
+                    await ApiService.Instance.GetHubConnection.StartAsync();
 
                     CustomMessageBox.Show($"Добро пожаловать, {data.full_name}", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
                     WindowNavigation.Instance.OpenAndHideWindow(this, new MainAppWindowVM());

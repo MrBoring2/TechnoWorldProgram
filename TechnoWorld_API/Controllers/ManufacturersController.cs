@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using TechnoWorld_API.Data;
 using TechoWorld_DataModels_v2;
 using Microsoft.AspNetCore.Authorization;
+using TechoWorld_DataModels_v2.Entities;
 
 namespace BNS_API.Controllers
 {

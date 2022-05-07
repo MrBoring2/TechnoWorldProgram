@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
 
 #nullable disable
 

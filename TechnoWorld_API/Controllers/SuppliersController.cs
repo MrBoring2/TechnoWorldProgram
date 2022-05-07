@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TechnoWorld_API.Data;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
