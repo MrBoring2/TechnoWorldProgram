@@ -1546,3 +1546,4 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 2022-05-07 20:02:37.846 +05:00 [INF] Запрос от kov (127.0.0.1:60992) по GET /api/Electronics/Filter ответил 200 за 75.2622 мс
 2022-05-07 20:02:38.478 +05:00 [INF] kov отключен от системы
 2022-05-07 20:02:38.483 +05:00 [INF] Запрос от kov (127.0.0.1:60996) по GET /technoWorldHub ответил 101 за 16997.7711 мс
+2022-05-07 20:07:17.659 +05:00 [INF] Application is shutting down...
