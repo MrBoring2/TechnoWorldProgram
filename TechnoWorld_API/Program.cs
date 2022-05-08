@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace BNS_API
 {
@@ -16,6 +17,7 @@ namespace BNS_API
     {
         public static void Main(string[] args)
         {
+            ThreadPool.SetMaxThreads(200, 8);
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
 

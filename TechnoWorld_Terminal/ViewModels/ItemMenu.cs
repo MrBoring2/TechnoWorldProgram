@@ -6,12 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using TechnoWorld_Terminal.ViewModels.Pages;
+using WPF_Helpers.Abstractions;
 
 namespace TechnoWorld_Terminal.ViewModels
 {
     public class ItemMenu
     {
-        public ItemMenu(string title, PackIconKind icon, PageVMBase targetPageVM)
+        public ItemMenu(string title, PackIconKind icon, BasePageVM targetPageVM)
         {
             Title = title;
             Icon = icon;
@@ -20,6 +21,6 @@ namespace TechnoWorld_Terminal.ViewModels
 
         public string Title { get; set; }
         public PackIconKind Icon { get; set; }
-        public PageVMBase TargetPageVM { get; set; }
+        public BasePageVM TargetPageVM { get; set; }
     }
 }

@@ -14,6 +14,10 @@ using System.Security;
 using TechnoWorld_Cash.Services;
 using TechnoWorld_Cash.Views.Windows;
 using WPF_Helpers.Common;
+using TechnoWorld_Cash.ViewModels.Pages;
+using WPF_VM_Abstractions;
+using WPF_Helpers.Abstractions;
+using TechoWorld_DataModels_v2.Models;
 
 namespace TechnoWorld_Cash.ViewModels.Windows
 {
@@ -33,18 +37,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         public RelayCommand LoginCommand { get; set; }
         private void Initialize()
         {
-            ClientService.Instance.HubConnection = new HubConnectionBuilder()
-                .WithUrl($"{ApiService.apiUrl}technoWorldHub",
 
-                options =>
-                {
-                    options.AccessTokenProvider = () => Task.FromResult(ClientService.Instance.Token);
-                })
-                .Build();
-
-            ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
-            ClientService.Instance.RestClient.Timeout = 20000;
-            ClientService.Instance.RestClient.ReadWriteTimeout = 20000;
         }
 
         /// <summary>
@@ -56,15 +49,15 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             try
             {
                 IsEnabled = false;
-                var response = await ApiService.Authorize(Login, Password);
+                var response = await ApiService.Instance.Authorize(Login, Password);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    var data = JsonConvert.DeserializeObject<TokenModel>(response.Content);
-                    ClientService.Instance.SetClient(data.user_name, data.full_name, data.role_id, data.user_id, data.post, data.access_token);
-                    ClientService.Instance.HubConnection.StartAsync();
+                    var data = JsonConvert.DeserializeObject<AuthResponseModel>(response.Content);
+                    ClientService.Instance.SetClient(data.user_name, data.full_name, data.role_id, data.user_id, data.post);
+                    await ApiService.Instance.GetHubConnection.StartAsync();
 
                     CustomMessageBox.Show($"Добро пожаловать, {data.full_name}", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
-                    WindowNavigation.Instance.OpenAndHideWindow(this, new CashWindowViewModel());
+                    WindowNavigation.Instance.OpenAndHideWindow(this, new MainAppWindowVM());
                 }
                 else
                 {

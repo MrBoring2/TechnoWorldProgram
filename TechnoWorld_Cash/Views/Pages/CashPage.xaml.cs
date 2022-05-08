@@ -1,5 +1,4 @@
-﻿using MaterialDesignExtensions.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,18 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TechnoWorld_WarehouseAccounting.Services;
-using TechnoWorld_WarehouseAccounting.ViewModels.Pages;
 
-namespace TechnoWorld_WarehouseAccounting.Views.Windows
+namespace TechnoWorld_Cash.Views
 {
     /// <summary>
-    /// Логика взаимодействия для ProductsLIstWindow.xaml
+    /// Логика взаимодействия для CashPage.xaml
     /// </summary>
-    public partial class ProductsListWindow : MaterialWindow
+    public partial class CashPage : Page
     {
-        public ProductsListWindow()
+        public CashPage()
         {
             InitializeComponent();
         }

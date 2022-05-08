@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Navigation;
-using TechnoWorld_WarehouseAccounting.ViewModels.Pages;
-using TechnoWorld_WarehouseAccounting.Views.Pages;
+using TechnoWorld_Cash.ViewModels.Pages;
+using TechnoWorld_Cash.Views;
 using TechoWorld_DataModels_v2;
 using WPF_Helpers;
 using WPF_Helpers.Abstractions;
 
-namespace TechnoWorld_WarehouseAccounting.Services
+namespace TechnoWorld_Cash.Services
 {
     public class PageNavigation
     {
@@ -52,51 +52,9 @@ namespace TechnoWorld_WarehouseAccounting.Services
                 Instance._navService.Navigated += Instance._navService_Navigated;
             }
         }
-        public void RegisterPages(int roleId)
+        public void RegisterPages()
         {
-            switch (roleId)
-            {
-                case 1:
-                    {
-
-                    }
-                    break;
-                case 2:
-                    {
-
-                    }
-                    break;
-                case 3:
-                    {
-                        RegisterPageWithVM<ProductManagementPageVM, ProductManagementPage>();
-                        RegisterPageWithVM<DeliveryManagementPageVM, DeliveryManagementPage>();
-                        RegisterPageWithVM<ProductDistributionPageVM, ProductDistributionPage>();
-                        //CreatePage(typeof(ProductManagementPageVM));
-                        //CreatePage(typeof(DeliveryManagementPageVM));
-                    }
-                    break;
-                case 4:
-                    {
-                        RegisterPageWithVM<ProductManagementPageVM, ProductManagementPage>();
-                        RegisterPageWithVM<DeliveryManagementPageVM, DeliveryManagementPage>();
-                        RegisterPageWithVM<ProductDistributionPageVM, ProductDistributionPage>();
-                        //CreatePage(typeof(ProductManagementPageVM));
-                        //CreatePage(typeof(DeliveryManagementPageVM));
-                    }
-                    break;
-                default:
-                    {
-
-                    }
-                    break;
-            }
-
-            //RegisterPageWithVM<CartPageVM, CartPage>();
-            //RegisterPageWithVM<CategoriesPageVM, CategoriesPage>();
-            //RegisterPageWithVM<ElectronicsDetailPageVM, ElectronicsDetailPage>();
-
-            //CreatePage(typeof(CartPageVM));
-            //CreatePage(typeof(CategoriesPageVM));
+            RegisterPageWithVM<CashPageVM, CashPage>();
         }
         public void ClearCreatedPages()
         {
@@ -107,11 +65,6 @@ namespace TechnoWorld_WarehouseAccounting.Services
             where Pag : Page
         {
             pageController.RegisterPageType<VM, Pag>();
-
-            //if (CurrentPage is null)
-            //{
-            //    //SwitchPage((PageVMBase)pageController.GetFirstPage().DataContext);
-            //}
         }
         public static void CreatePage(Type vmType)
         {

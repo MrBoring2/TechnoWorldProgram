@@ -16,11 +16,7 @@ namespace TechnoWorld_Terminal.Services
     {
 
         private static ClientService instance;
-        public string Token { get; set; }
-
         private ClientService() { }
-        public RestClient RestClient { get; set; }
-        public HubConnection HubConnection { get; set; }
         public static ClientService Instance
         {
             get
@@ -39,9 +35,8 @@ namespace TechnoWorld_Terminal.Services
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
-        public void SetClient(string user_name, string full_name, int role_id, int user_id, string post, string token)
+        public void SetClient(string user_name, string full_name, int role_id, int user_id, string post)
         {
-            Token = token;
             User = new User()
             {
                 Name = user_name,
@@ -55,9 +50,6 @@ namespace TechnoWorld_Terminal.Services
         public void Logout()
         {
             User = null;
-            Token = null;
-            HubConnection.StopAsync();
-            RestClient = null;
         }
     }
 }

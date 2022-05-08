@@ -16,12 +16,10 @@ namespace TechnoWorld_Terminal.Services
     {
         
         private static ClientService instance;
-        public string Token { get; set; }
+      
         private ObservableCollection<CartItem> cart;
 
         private ClientService() { Cart = new ObservableCollection<CartItem>(); }
-        public RestClient RestClient { get; set; }
-        public HubConnection HubConnection { get; set; }
         public static ClientService Instance 
         { 
             get
@@ -29,8 +27,9 @@ namespace TechnoWorld_Terminal.Services
                 if (instance == null)
                     instance = new ClientService();
                 return instance;
-            } 
+            }
         }
+        public string TerminalName { get; set; }
         public int UserId { get; set; }
         public string UserFIO { get; set; }
         public ObservableCollection<CartItem> Cart { get => cart; set { cart = value;  } }
@@ -40,9 +39,9 @@ namespace TechnoWorld_Terminal.Services
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
-        public void SetClient(string user_name, string token)
+        public void SetClient(string user_name)
         {
-            Token = token;
+            TerminalName = user_name;
         }
     }
 }

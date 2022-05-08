@@ -127,7 +127,7 @@
         </Grid>
         <materialDesign:Card Margin="5">
             <Grid>
-                <ListView x:Name="electronicsList" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic, Mode=TwoWay}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding Electronics, Mode=TwoWay}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
+                <ListView x:Name="electronicsList" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedElectronic, Mode=TwoWay}" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemTemplate="{StaticResource electronicsHorizontalListView}" ItemsSource="{Binding EntitiesCollection}" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>

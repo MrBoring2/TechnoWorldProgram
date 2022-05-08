@@ -19,8 +19,8 @@ using TechoWorld_DataModels_v2;
 using TechnoWorld_API.Extentions;
 using TechnoWorld_API.Validation;
 using Microsoft.AspNetCore.Identity;
-using TechnoWorld_WarehouseAccounting.Models;
 using TechoWorld_DataModels_v2.Entities;
+using TechoWorld_DataModels_v2.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -49,8 +49,17 @@ namespace TechnoWorld_API.Controllers
                 {
                     return BadRequest("Произошла ошибка при авторизации!");
                 }
+                HttpContext.Response.Cookies.Append(".AspNetCore.Application.Id", token.access_token);
 
-                return Ok(token);
+                return Ok(new AuthResponseModel
+                {
+                    user_name = terminalClaims.FindFirst(ClaimsIdentity.DefaultNameClaimType).Value.ToString(),
+                    full_name = "terminal",
+                    role_name = "terminal",
+                    user_id = 0,
+                    role_id = 0,
+                    post = "none"
+                });
             }
             else return BadRequest();
         }

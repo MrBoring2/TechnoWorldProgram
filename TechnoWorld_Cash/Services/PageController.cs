@@ -5,12 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using TechnoWorld_Terminal.ViewModels.Pages;
-using TechnoWorld_Terminal.ViewModels.Windows;
-using TechnoWorld_Terminal.Views.Windows;
+using WPF_Helpers;
 using WPF_Helpers.Abstractions;
 
-namespace TechnoWorld_Terminal.Services
+namespace TechnoWorld_Cash.Services
 {
     public class PageController
     {
@@ -27,22 +25,18 @@ namespace TechnoWorld_Terminal.Services
             viewModelsToPagesMapping[vmType] = typeof(P);
         }
 
-        //public void CreatePage(Type vmType)
-        //{
-        //    var vm = (BasePageVM)Activator.CreateInstance(vmType);
-        //    var page = CreatePageInstanceWithVM(vm);
-        //    createdPages[vm] = page;
-        //}
+        public void CreatePage(Type vmType)
+        {
+            var vm = (BasePageVM)Activator.CreateInstance(vmType);
+            var page = CreatePageInstanceWithVM(vm);
+            createdPages[vm] = page;
+        }
         public void ClearPages()
         {
             if (createdPages != null)
             {
                 createdPages.Clear();
             }
-        }
-        public bool IsPageCreated(Type type)
-        {
-            return createdPages.Any(p => p.Key.GetType() == type);
         }
         public void UnregisterPageType<VM>()
         {
@@ -52,7 +46,10 @@ namespace TechnoWorld_Terminal.Services
                     $"Тип {vmType.FullName} не зарегистрирован");
             viewModelsToPagesMapping.Remove(vmType);
         }
-
+        public bool IsPageCreated(Type type)
+        {
+            return createdPages.Any(p => p.Key.GetType() == type);
+        }
         public Page CreatePageInstanceWithVM(BasePageVM vm)
         {
             if (vm == null)
@@ -84,6 +81,9 @@ namespace TechnoWorld_Terminal.Services
         }
         public Page GetPage(Type vmPageType)
         {
+            //if (vm is null)
+            //    throw new ArgumentNullException(nameof(vm));
+
             Page page;
             if (createdPages.Keys.FirstOrDefault(p => p.GetType() == vmPageType) != null)
             {
@@ -92,43 +92,17 @@ namespace TechnoWorld_Terminal.Services
             }
             else
             {
-                return CreatePage(vmPageType);
-            }
-        }
-        public Page GetPage(Type vmPageType, params object[] args)
-        {
-            Page page;
-            if (createdPages.Keys.FirstOrDefault(p => p.GetType() == vmPageType) != null)
-            {
-                createdPages.TryGetValue(createdPages.Keys.FirstOrDefault(p => p.GetType() == vmPageType), out page);
+                var pageVM = (BasePageVM)Activator.CreateInstance(vmPageType);
+                page = CreatePageInstanceWithVM(pageVM);
+                createdPages[pageVM] = page;
                 return page;
             }
-            else
-            {
-                return CreatePage(vmPageType, args);
-            }
         }
 
-        public Page CreatePage(Type vmPageType)
+        public void HidePage(BasePageVM vm)
         {
-            var pageVM = (BasePageVM)Activator.CreateInstance(vmPageType);
-            var page = CreatePageInstanceWithVM(pageVM);
-            createdPages[pageVM] = page;
-            return page;
-        }
-        public Page CreatePage(Type vmPageType, params object[] args)
-        {
-            var pageVM = (BasePageVM)Activator.CreateInstance(vmPageType, args);
-            var page = CreatePageInstanceWithVM(pageVM);
-            createdPages[pageVM] = page;
-            return page;
-        }
-
-        public void HidePage(Type vmPageType)
-        {
-            var vm = createdPages.FirstOrDefault(p => p.Key.GetType() == vmPageType).Key;
-            if (vm == null)
-                return;
+            if (!createdPages.TryGetValue(vm, out var page))
+                throw new InvalidOperationException(nameof(vm));
 
             createdPages.Remove(vm);
         }

@@ -15,17 +15,17 @@ using TechnoWorld_WarehouseAccounting.Views.Windows;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
 using WPF_Helpers;
+using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
 using WPF_Helpers.Models;
 using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 {
-    public class ProductDistributionPageVM : ListViewPageVM<Order, FilteredOrders>
+    public class ProductDistributionPageVM : ListEntitiesPageVM<Order, FilteredOrders>
     {
         private DateTime startDate;
         private DateTime endDate;
-        private Order selectedOrder;
         private ObservableCollection<SortParameter> sortParameters;
         public ProductDistributionPageVM() : base(15)
         {
@@ -39,7 +39,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         public RelayCommand OpenDestributionWindowCommand { get; set; }
         public override ObservableCollection<SortParameter> SortParameters { get => sortParameters; set { sortParameters = value; OnPropertyChanged(); } }
         public ObservableCollection<Order> Orders { get; set; }
-        public Order SelectedOrder { get => selectedOrder; set { selectedOrder = value; OnPropertyChanged(); } }
         public DateTime StartDate
         {
             get => startDate;
@@ -108,11 +107,11 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
         private async void OpenDestributionWindow(object obj)
         {
-            var destributionWindow = new DestributionOrderWindowVM(SelectedOrder);
+            var destributionWindow = new DestributionOrderWindowVM(SelectedEntity);
             await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(destributionWindow));
             if (destributionWindow.DialogResult == true)
             {
-                CustomMessageBox.Show($"Товары из заказа {SelectedOrder.OrderNumber} успешно выданы со склада.", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                CustomMessageBox.Show($"Товары из заказа {SelectedEntity.OrderNumber} успешно выданы со склада.", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
     }

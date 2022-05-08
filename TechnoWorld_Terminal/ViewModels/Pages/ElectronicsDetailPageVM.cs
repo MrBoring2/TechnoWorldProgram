@@ -5,10 +5,11 @@ using TechnoWorld_Terminal.Services;
 using Notification.Wpf;
 using WPF_Helpers.Common;
 using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Abstractions;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {
-    public class ElectronicsDetailPageVM : PageVMBase
+    public class ElectronicsDetailPageVM : BasePageVM
     {
         private string model;
         private Manufacturer manfacturer;

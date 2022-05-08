@@ -55,7 +55,7 @@
             <CheckBox Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAcsending}" VerticalAlignment="Center" FontSize="16" Margin="5,0,0,0" Command="{Binding SortOrderChangedCommand}"/>
         </StackPanel>
 
-        <DataGrid Grid.Row="2" ItemsSource="{Binding ObjectCollection}" SelectedItem="{Binding SelectedDelivery}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto" Grid.RowSpan="1">
+        <DataGrid Grid.Row="2" ItemsSource="{Binding EntitiesCollection}" SelectedItem="{Binding SelectedEntity}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto" Grid.RowSpan="1">
             <interactions:Interaction.Triggers>
                 <interactions:EventTrigger EventName="MouseDoubleClick">
                     <interactions:InvokeCommandAction Command="{Binding OpenEditDeliveryWindowCommand}"/>

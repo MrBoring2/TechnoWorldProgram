@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using TechnoWorld_Terminal.ViewModels.Pages;
 using TechnoWorld_Terminal.Views.Pages;
+using WPF_Helpers.Abstractions;
 
 namespace TechnoWorld_Terminal.Services
 {
@@ -55,7 +56,7 @@ namespace TechnoWorld_Terminal.Services
             pageController.ClearPages();
         }
         protected void RegisterPageWithVM<VM, Pag>()
-            where VM : PageVMBase
+            where VM : BasePageVM
             where Pag : Page
         {
             pageController.RegisterPageType<VM, Pag>();
@@ -65,14 +66,14 @@ namespace TechnoWorld_Terminal.Services
             //    //SwitchPage((PageVMBase)pageController.GetFirstPage().DataContext);
             //}
         }
-        public static void CreatePage(Type vmType)
-        {
-            if (!pageController.IsPageCreated(vmType))
-            {
-                pageController.CreatePage(vmType);
-            }
-        }
-        protected PageVMBase GetPageInstance(Type vmType)
+        //public static void CreatePage(Type vmType)
+        //{
+        //    if (!pageController.IsPageCreated(vmType))
+        //    {
+        //        pageController.CreatePage(vmType);
+        //    }
+        //}
+        protected BasePageVM GetPageInstance(Type vmType)
         {
             if (vmType != null)
             {
@@ -98,9 +99,13 @@ namespace TechnoWorld_Terminal.Services
         {
             return pageController.GetPage(pageVMType);
         }
-        public static Page GetNewPage(PageVMBase pageVM)
+        public static Page GetNewPage(BasePageVM pageVM)
         {
             return pageController.GetNewPage(pageVM);
+        }
+        public static void HidePage(Type vmPageType)
+        {
+            pageController.HidePage(vmPageType);
         }
         public static void Navigate(Type pageVMtype)
         {
@@ -111,7 +116,16 @@ namespace TechnoWorld_Terminal.Services
                 Instance._navService.Navigate(page);
             }
         }
-        public static void Navigate(PageVMBase pageVM)
+        public static void Navigate(Type pageVMtype, params object[] args)
+        {
+            if (Instance._navService != null && pageVMtype != null)
+            {
+                Page page = pageController.GetPage(pageVMtype, args);
+
+                Instance._navService.Navigate(page);
+            }
+        }
+        public static void NavigateToNewPage(BasePageVM pageVM)
         {
             if (Instance._navService != null && pageVM != null)
             {

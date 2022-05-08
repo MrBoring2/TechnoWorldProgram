@@ -11,11 +11,13 @@ using TechnoWorld_Terminal.Models;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {
-    public class CartPageVM : PageVMBase
+    public class CartPageVM : BasePageVM
     {
         private Visibility emptyVisibility;
         private Visibility paymentVisibility;
@@ -67,17 +69,6 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 OnPropertyChanged();
             }
         }
-
-
-        //public decimal DeliveryPrice
-        //{
-        //    get => deliveryPrice;
-        //    set
-        //    {
-        //        deliveryPrice = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
         public decimal ElectronicTotalPrice => ClientService.Instance.Cart.Sum(p => p.TotalPrice);
         public decimal TotalOrderPrice => ElectronicTotalPrice;// + DeliveryPrice;
         public ObservableCollection<CartItem> CartItems => ClientService.Instance.Cart;
@@ -111,7 +102,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 order.OrderElectronics.Add(new OrderElectronic { ElectronicsId = item.Electronic.ElectronicsId, Count = item.Amount });
             }
 
-            var response = await ApiService.PostReqeust("api/Orders", order);
+            var response = await ApiService.Instance.PostRequest( "api/Orders", order);
             if (response.StatusCode == System.Net.HttpStatusCode.Created)
             {
                 CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Оповещение", Message = $"Заказ успешно оформлен. Подойдите к кассе. Номер заказа: {order.OrderNumber}", Type = NotificationType.Success }, "MainNotificationArea");

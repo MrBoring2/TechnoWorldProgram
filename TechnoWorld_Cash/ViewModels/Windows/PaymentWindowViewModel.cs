@@ -13,14 +13,16 @@ using TechnoWorld_Cash.Views.Windows;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
+using WPF_VM_Abstractions;
 using Word = Microsoft.Office.Interop.Word;
 namespace TechnoWorld_Cash.ViewModels.Windows
 {
-    public class PaymentWindowViewModel : ModalWindowVMBase
+    public class PaymentWindowViewModel : BaseModalWindowVM
     {
         private bool isEnabled;
-   
+
         private string orderNumber;
         private DateTime orderDate;
         private string sellerPerson;
@@ -33,14 +35,11 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         public PaymentWindowViewModel(Order order)
         {
             Order = order;
-
-            var orderApi = GetOrder(order);
-
             OrderItems = new ObservableCollection<OrderItem>();
             int id = 1;
-            foreach (var item in orderApi.OrderElectronics)
+            foreach (var item in Order.OrderElectronics)
             {
-                
+
                 OrderItems.Add(new OrderItem(id, item.Electronics.Model, item.Count, item.Electronics.SalePrice, item.Count * item.Electronics.SalePrice));
                 id++;
             }
@@ -61,11 +60,6 @@ namespace TechnoWorld_Cash.ViewModels.Windows
 
 
         private Order Order { get; set; }
-        private Order GetOrder(Order order)
-        {
-            var orderJson = ApiService.GetRequest("api/Orders", order.OrderId);
-            return JsonConvert.DeserializeObject<Order>(orderJson.Result.Content);
-        }
 
         public string OrderNumber { get { return orderNumber; } set { orderNumber = value; OnPropertyChanged(); } }
         public DateTime OrderDate { get { return orderDate; } set { orderDate = value; OnPropertyChanged(); } }
@@ -81,7 +75,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         public RelayCommand ChangePaymentMethodToNalCommand { get; set; }
         public RelayCommand ChangePaymentMethodToBesnalCommand { get; set; }
         private async void Pay(object obj)
-        {     
+        {
             await Task.Run(() =>
             {
                 var app = new Word.Application();
@@ -166,13 +160,13 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             });
             Order.StatusId = 2;
             Order.EmployeeId = ClientService.Instance.User.UserId;
-            var response = await ApiService.PutRequest("api/Orders", Order.OrderId, Order);
-            if(response.StatusCode == System.Net.HttpStatusCode.OK)
+            var response = await ApiService.Instance.PutRequest("api/Orders", Order.OrderId, Order);
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 CustomMessageBox.Show("Заказ усешно оплачен", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
                 DialogResult = true;
             }
-            
+
         }
         private void Cancel(object obj)
         {

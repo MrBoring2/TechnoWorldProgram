@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using WPF_Helpers;
+using WPF_Helpers.Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.Services
 {

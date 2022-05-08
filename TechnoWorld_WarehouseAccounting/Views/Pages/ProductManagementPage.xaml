@@ -38,7 +38,7 @@
                 <CheckBox Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAcsending}" VerticalAlignment="Center" FontSize="16" Margin="5,0,0,0" Command="{Binding SortOrderChangedCommand}"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Right">
-                <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenProductWindowCommand}" Cursor="Hand">
+                <Button Background="Transparent" Visibility="{Binding EditAddVisibility}" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenProductWindowCommand}" Cursor="Hand">
                     <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
                         <materialDesign:PackIcon.ToolTip>
                             <TextBlock Text="Добавить"/>
@@ -46,7 +46,7 @@
                     </materialDesign:PackIcon>
                 </Button>
                 <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenEditProductWindowCommand}" Cursor="Hand">
-                    <materialDesign:PackIcon Kind="EditOutline" Width="35" Height="35" Margin="-15" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
+                    <materialDesign:PackIcon Kind="EditOutline" Visibility="{Binding EditAddVisibility}" Width="35" Height="35" Margin="-15" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
                         <materialDesign:PackIcon.ToolTip>
                             <TextBlock Text="Редактировать"/>
                         </materialDesign:PackIcon.ToolTip>
@@ -55,7 +55,7 @@
             </StackPanel>
         </Grid>
 
-        <DataGrid Grid.Row="2" ItemsSource="{Binding ObjectCollection}" SelectedItem="{Binding SelectedElectronic}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto">
+        <DataGrid Grid.Row="2" ItemsSource="{Binding EntitiesCollection}" SelectedItem="{Binding SelectedEntity}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto">
 
             <interactions:Interaction.Triggers>
                 <interactions:EventTrigger EventName="MouseDoubleClick">

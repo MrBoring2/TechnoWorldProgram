@@ -1,14 +1,16 @@
-﻿<mde:MaterialWindow x:Class="TechnoWorld_Cash.Views.Windows.CashWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TechnoWorld_Cash.Views.Windows"
-           xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+﻿<Page x:Class="TechnoWorld_Cash.Views.CashPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TechnoWorld_Cash.Views"
+      xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
         mc:Ignorable="d" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:mahaaps="http://metro.mahapps.com/winfx/xaml/controls"
-        xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" RenderOptions.BitmapScalingMode="HighQuality" Icon="/Resources/Images/logo1.ico"
-        Title="ТЕХНО МИР | Касса" Height="680" Width="1200" BorderBackgroundBrush="Orange" >
+        xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="600" d:DesignWidth="1000" Background="White"
+      Title="CashPage">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
@@ -28,7 +30,7 @@
                 <DatePicker SelectedDate="{Binding EndDate}" HorizontalAlignment="Right" FontSize="16" Width="140" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="1"/>
             </Grid>
         </Grid>
-        <DataGrid Grid.Row="1" ItemsSource="{Binding DisplayedOrders}" Margin="5" SelectedItem="{Binding SelectedOrder}" IsReadOnly="True" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" BorderThickness="1" BorderBrush="Orange">
+        <DataGrid Grid.Row="1" ItemsSource="{Binding EntitiesCollection}" Margin="5" SelectedItem="{Binding SelectedEntity}" IsReadOnly="True" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" BorderThickness="1" BorderBrush="Orange">
             <DataGrid.Resources>
                 <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
                     <Setter Property="Background" Value="Orange" />
@@ -101,4 +103,4 @@
             </Button.Content>
         </Button>
     </Grid>
-</mde:MaterialWindow>
+</Page>

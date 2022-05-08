@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_Terminal.ViewModels.Windows;
+using WPF_Helpers.Abstractions;
 
 namespace TechnoWorld_Terminal.Services
 {
@@ -63,7 +64,7 @@ namespace TechnoWorld_Terminal.Services
                 displayRootRegistry.HidePresentation(currentWindowVM);
             }
         }
-        public void OpenModalWindow(ModalWindowVMBase windowVM)
+        public void OpenModalWindow(BaseModalWindowVM windowVM)
         {
             if (windowVM != null)
             {

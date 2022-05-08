@@ -19,7 +19,6 @@ namespace WPF_VM_Abstractions
             restClient.Timeout = 200000000;
             restClient.ReadWriteTimeout = 20000000;
             restClient.CookieContainer = new System.Net.CookieContainer();
-            var token = "dsadasdasdasd3213dsad";
             hubConnection = new HubConnectionBuilder()
                 .WithUrl($"{apiUrl}technoWorldHub",
                 options =>
@@ -37,8 +36,20 @@ namespace WPF_VM_Abstractions
         public async void ShutDownService()
         {
             await hubConnection.StopAsync();
-            hubConnection = null;
-            restClient = null;
+        }
+        public Task<IRestResponse> Authorize()
+        {
+            try
+            {
+                RestRequest request = new RestRequest($"{apiUrl}terminalToken", Method.POST);
+                request.AddJsonBody(new { roleName = "terminalUser", terminalName = $"terminal_{Guid.NewGuid()}" });
+                var response = restClient.ExecuteAsync(request);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
         public Task<IRestResponse> Authorize(string login, string password)
         {

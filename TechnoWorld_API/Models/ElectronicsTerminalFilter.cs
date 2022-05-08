@@ -23,9 +23,9 @@ namespace TechnoWorld_API.Models
             {
                 return p =>
                 {
-                    bool? res1 = null;
-                    bool? res2 = null;
-                    bool? res3 = null;
+                    bool res1 = false;
+                    bool res2 = false;
+                    bool res3 = false;
                     bool res4 = false;
                     bool res5 = false;
                     bool res6 = false;
@@ -37,26 +37,34 @@ namespace TechnoWorld_API.Models
                         return false;
                     }
 
+
                     if (CategoryId != 0)
                     {
                         res1 = p.Type.CategoryId == CategoryId;
                     }
-                    if (ListElectronicsTypeId.Count > 0)
-                    {
-                        res2 = ListElectronicsTypeId.Contains(p.TypeId);
-                    }
                     else
+                    {
+                        res1 = true;
+                    }
+
+                    if (ListMaunfacturersId == null || ListMaunfacturersId.Count <= 0)
                     {
                         res2 = true;
                     }
-                    if (ListMaunfacturersId.Count > 0)
-                    {
-                        res6 = ListMaunfacturersId.Contains(p.ManufactrurerId);
-                    }
                     else
+                    {
+                        res2 = ListMaunfacturersId.Contains(p.ManufactrurerId);
+                    }
+
+                    if (ListElectronicsTypeId == null || ListElectronicsTypeId.Count <= 0)
                     {
                         res6 = true;
                     }
+                    else
+                    {
+                        res6 = ListElectronicsTypeId.Contains(p.TypeId);
+                    }
+
                     if (IsOfferedForSale != null)
                     {
                         res3 = p.IsOfferedForSale == IsOfferedForSale;
@@ -64,13 +72,13 @@ namespace TechnoWorld_API.Models
                     if (MinPrice == 0 && MaxPrice == 0)
                     {
                         res5 = true;
-                    }
+                    }                                                      
                     else
                     {
                         res5 = p.SalePrice >= MinPrice && p.SalePrice <= MaxPrice;
                     }
 
-                    return (res1 == null ? true : (bool)res1) && (res2 == null ? true : (bool)res2) && (res3 == null ? true : (bool)res3) && res4 && res5 && res6;
+                    return res1 && res2 && res3 && res4 && res5 && res6;
                 };
 
 

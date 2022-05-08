@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_Cash.ViewModels.Windows;
-
+using WPF_Helpers.Abstractions;
 
 namespace TechnoWorld_Cash.Services
 {

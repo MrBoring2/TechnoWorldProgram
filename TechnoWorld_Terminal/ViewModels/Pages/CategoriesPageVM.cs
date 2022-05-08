@@ -12,11 +12,13 @@ using System.Windows;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {
-    public class CategoriesPageVM : PageVMBase
+    public class CategoriesPageVM : BasePageVM
     {
         public delegate void OpenCategoryDelegate(Category category);
         public event OpenCategoryDelegate onOpenCategory;
@@ -33,8 +35,9 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             if (obj != null)
             {
                 var category = obj as Category;
-                onOpenCategory?.Invoke(category);
-                PageNavigation.Navigate(typeof(ElectronicsListPageVM));
+                //onOpenCategory?.Invoke(category);
+                PageNavigation.HidePage(typeof(ElectronicsListPageVM));
+                PageNavigation.Navigate(typeof(ElectronicsListPageVM), category);
             }
         }
 
@@ -42,10 +45,9 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
         public ObservableCollection<Category> Categories { get => categories; set { categories = value; OnPropertyChanged(); } }
         public Category SelectedCategory { get => selectedCategory; set { selectedCategory = value; OnPropertyChanged(); } }
-        public RelayCommand TestCommand { get; set; }
         private async void LoadCategories()
         {
-            var response = (RestResponse)await ApiService.GetRequest("api/Categories");
+            var response = (RestResponse)await ApiService.Instance.GetRequest("api/Categories");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Categories = JsonConvert.DeserializeObject<ObservableCollection<Category>>(response.Content);

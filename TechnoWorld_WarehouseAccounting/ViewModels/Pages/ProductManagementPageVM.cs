@@ -18,27 +18,22 @@ using WPF_Helpers.Common;
 using WPF_Helpers.Models;
 using WPF_Helpers;
 using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 {
-    public class ProductManagementPageVM : ListViewPageVM<Electronic, FilteredElectronic>
+    public class ProductManagementPageVM : ListEntitiesPageVM<Electronic, FilteredElectronic>
     {
-
-        private ObservableCollection<ItemWithTitle<Category>> categories;
         private ObservableCollection<SortParameter> sortParameters;
+        private ObservableCollection<ItemWithTitle<Category>> categories;
         private ObservableCollection<ItemWithTitle<ElectrnicsType>> electronicsTypes { get; set; }
         private ObservableCollection<ItemWithTitle<bool?>> forDisplayList { get; set; }
-
-
         private ItemWithTitle<Category> selectedCategory;
         private ItemWithTitle<ElectrnicsType> selectedType;
-
-
-        private Electronic selectedElectronc;
-        private bool isCategorySelected;
         private ItemWithTitle<bool?> selectedDisplay;
-        private string search;
-        private int lastPage;
+        private bool isCategorySelected;
+        private Visibility editAddVisibility;
+        public event EventHandler onElectronicSelected;
         public ProductManagementPageVM() : base(15)
         {
             Initialize();
@@ -48,6 +43,18 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 await GetWithFilter();
             });
         }
+        public ProductManagementPageVM(bool isModal = false) : this()
+        {
+            if (isModal)
+            {
+                EditAddVisibility = Visibility.Collapsed;
+            }
+            else
+            {
+                EditAddVisibility = Visibility.Visible;
+            }
+        }
+
 
         public RelayCommand OpenProductWindowCommand { get; set; }
         public RelayCommand OpenEditProductWindowCommand { get; set; }
@@ -64,8 +71,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 OnPropertyChanged();
             }
         }
-        public ObservableCollection<Electronic> Electronics { get; set; }
-        public ObservableCollection<Electronic> DisplayedElectronics => Electronics;
         public bool IsCategorySelected
         {
             get => isCategorySelected;
@@ -97,7 +102,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             set { selectedDisplay = value; OnPropertyChanged(); GetWithFilter(); }
         }
 
-        public Electronic SelectedElectronic { get => selectedElectronc; set { selectedElectronc = value; OnPropertyChanged(); } }
         public ItemWithTitle<Category> SelectedCategory
         {
             get => selectedCategory;
@@ -126,7 +130,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 GetWithFilter();
             }
         }
-
+        public Visibility EditAddVisibility { get => editAddVisibility; set { editAddVisibility = value; OnPropertyChanged(); } }
         protected override string UrlApi => "api/Electronics/Filter";
 
         protected override object FilterParam
@@ -159,7 +163,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
         private void Initialize()
         {
-
+            
             OpenProductWindowCommand = new RelayCommand(OpenProductWindow);
             OpenEditProductWindowCommand = new RelayCommand(OpenEditProductWindow);
             IsCategorySelected = false;
@@ -226,23 +230,29 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         }
         private async void OpenEditProductWindow(object obj)
         {
-            ProductWindowVM productWindowVM;
-            if (SelectedElectronic == null)
+            if (EditAddVisibility != Visibility.Collapsed)
             {
-                CustomMessageBox.Show($"Сначала выберите товар!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                ProductWindowVM productWindowVM;
+                if (SelectedEntity == null)
+                {
+                    CustomMessageBox.Show($"Сначала выберите товар!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+                else
+                {
+                    productWindowVM = new ProductWindowVM(SelectedEntity);
+
+                    await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(productWindowVM));
+
+                    if (productWindowVM.DialogResult == true)
+                    {
+                        CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно изменён", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
             }
             else
             {
-                productWindowVM = new ProductWindowVM(SelectedElectronic);
-
-                await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(productWindowVM));
-
-                if (productWindowVM.DialogResult == true)
-                {
-                    CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно изменён", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
-                }
+                onElectronicSelected.Invoke(this, new EventArgs());
             }
-
         }
 
     }

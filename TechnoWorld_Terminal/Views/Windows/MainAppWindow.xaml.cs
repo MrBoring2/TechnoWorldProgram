@@ -29,6 +29,7 @@ namespace TechnoWorld_Terminal.Views.Windows
         {
             InitializeComponent();
             PageNavigation.Service = MainFraim.NavigationService;
+            WindowState = WindowState.Maximized;
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TechnoWorld_WarehouseAccounting.Models
+namespace TechoWorld_DataModels_v2.Models
 {
     public class AuthResponseModel
     {

@@ -245,6 +245,7 @@
     <Compile Include="Abstractions\BaseModalWindowVM.cs" />
     <Compile Include="Abstractions\BasePageVM.cs" />
     <Compile Include="Abstractions\BaseWindowVM.cs" />
+    <Compile Include="Abstractions\ListEntitiesPageVM.cs" />
     <Compile Include="Services\ApiService.cs" />
     <Compile Include="Services\DialogCloser.cs" />
     <Compile Include="Abstractions\NotifyPropertyChangedBase.cs" />

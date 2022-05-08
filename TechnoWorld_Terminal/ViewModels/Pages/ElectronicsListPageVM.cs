@@ -15,61 +15,44 @@ using TechnoWorld_Terminal.Services;
 using TechnoWorld_Terminal.ViewModels.Windows;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers;
+using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
 using WPF_Helpers.Models;
 using WPF_Helpers.Services;
+using WPF_VM_Abstractions;
 
 namespace TechnoWorld_Terminal.ViewModels.Pages
 {
-    public class ElectronicsListPageVM : PageVMBase
+    public class ElectronicsListPageVM : ListEntitiesPageVM<Electronic, FilteredElectronic>
     {
-        #region Fields
-        private List<int> pagesNumbers;
-        private ObservableCollection<int> displayedPagesNumbers;
-        private ObservableCollection<Electronic> electronics;
-        private ObservableCollection<Electronic> displayedElectronics;
-
-        private List<ElectrnicsType> types;
-        private List<Manufacturer> manufacturers;
+        #region Fields   
+        private ObservableCollection<SortParameter> sortParameters;
+        private ObservableCollection<ElectrnicsType> types;
+        private ObservableCollection<Manufacturer> manufacturers;
         private SortParameter selectedSort;
         private Electronic selectedElectronic;
         private Category category;
-        private Paginator paginator;
-        private Visibility emptyVisibility;
-        private string search;
-        private bool orderByDescening;
-        private int itemsPerPage;
         private int minPrice;
         private int maxPrice;
-        private int lastPage;
-        private int totalFilteredCount;
         #endregion
 
-        public ElectronicsListPageVM()
+        public ElectronicsListPageVM(Category category) : base(5)
         {
-            InitializeFields();
+            InitializeFields(category);
 
-            ClientService.Instance.HubConnection.On<string>("UpdateElectronics", (electronics) =>
+            ApiService.Instance.GetHubConnection.On<string>("UpdateElectronics", async (electronics) =>
             {
-                GetElectronicsWithFilter();
+                await GetWithFilter();
             });
         }
 
-        #region Properties
-        public Paginator Paginator { get => paginator; set { paginator = value; OnPropertyChanged(); } }
-        public RelayCommand ChangePageCommand { get; set; }
-        public RelayCommand ToFirstPageCommand { get; set; }
-        public RelayCommand ToLastPageCommand { get; set; }
+        #region Properties     
         public RelayCommand ConfirmSortCommand { get; set; }
         public RelayCommand BackToCategoriesCommand { get; set; }
         public RelayCommand SelectElectrinicsCommand { get; set; }
         public RelayCommand OpenDetailInfoCommand { get; set; }
-        public RelayCommand SortOrderChangedCommand { get; set; }
-        public ObservableCollection<int> DisplayedPagesNumbers { get => displayedPagesNumbers; set { displayedPagesNumbers = value; OnPropertyChanged(); } }
-        public List<int> PagesNumbers { get => pagesNumbers; set { pagesNumbers = value; OnPropertyChanged(); } }
-        public ObservableCollection<Electronic> Electronics { get => electronics; set { electronics = value; OnPropertyChanged(); } }
-        public ObservableCollection<Electronic> DisplayedElectronics { get => displayedElectronics; set { displayedElectronics = value; OnPropertyChanged(); } }
-        public List<ElectrnicsType> Types
+        public ObservableCollection<ElectrnicsType> Types
         {
             get => types;
             set
@@ -78,7 +61,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 OnPropertyChanged();
             }
         }
-        public List<Manufacturer> Manufacturers
+        public ObservableCollection<Manufacturer> Manufacturers
         {
             get => manufacturers;
             set
@@ -101,36 +84,10 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 OnPropertyChanged();
             }
         }
-        public ObservableCollection<SortParameter> SortParameters { get; set; }
-        public SortParameter SelectedSort
-        {
-            get => selectedSort;
-            set
-            {
-                selectedSort = value ?? SortParameters.FirstOrDefault(); OnPropertyChanged(); GetElectronicsWithFilter();
-            }
-        }
 
         public Electronic SelectedElectronic { get => selectedElectronic; set { selectedElectronic = value; OnPropertyChanged(); } }
 
-        public Visibility EmptyVisibility { get => emptyVisibility; set { emptyVisibility = value; OnPropertyChanged(); } }
 
-        public string Search
-        {
-            get => search;
-            set
-            {
-                search = value;
-                OnPropertyChanged();
-                GetElectronicsWithFilter();
-            }
-        }
-
-        public int ItemsPerPage
-        {
-            get { return itemsPerPage; }
-            set { itemsPerPage = value; OnPropertyChanged(); }
-        }
         public int MinPrice
         {
             get { return minPrice; }
@@ -141,20 +98,34 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             get { return maxPrice; }
             set { maxPrice = value; OnPropertyChanged(); }
         }
-        public bool OrderByDescening { get => orderByDescening; set { orderByDescening = value; OnPropertyChanged(); } }
+
+        protected override string UrlApi => "api/Electronics/TerminalFilter";
+
+        public override ObservableCollection<SortParameter> SortParameters { get => sortParameters; set { sortParameters = value; OnPropertyChanged(); } }
+
+        protected override object FilterParam => new
+        {
+            search = Search,
+            categoryId = CurrentCategory.Id,
+            listElectronicsTypeId = Types == null ? null : Types.Where(p => p.IsSelected).ToList().Select(p => p.TypeId),
+            listManufacturersId = Manufacturers == null ? null : Manufacturers.Where(p => p.IsSelected).ToList().Select(p => p.ManufacturerId),
+            sortParameter = SelectedSort.Property,
+            isAscending = SelectedSort.IsAcsending,
+            isOfferedForSale = true,
+            minPrice = MinPrice,
+            maxPrice = MaxPrice,
+            currentPage = Paginator == null ? 1 : Paginator.SelectedPageNumber,
+            itemsPerPage = ItemsPerPage
+        };
         #endregion
 
-        private void InitializeFields()
+        private void InitializeFields(Category category)
         {
-            lastPage = 1;
-            itemsPerPage = 5;
-            search = string.Empty;
+            CurrentCategory = category;
             MaxPrice = 1000000;
-            ChangePageCommand = new RelayCommand(ChangePage);
             ConfirmSortCommand = new RelayCommand(ConfirmSort);
             BackToCategoriesCommand = new RelayCommand(BackToCategories);
             OpenDetailInfoCommand = new RelayCommand(OpenDetailInfo);
-            SortOrderChangedCommand = new RelayCommand(SortOrderChanged);
             EmptyVisibility = Visibility.Hidden;
         }
 
@@ -165,7 +136,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             {
                 Electronic electronic = obj as Electronic;
                 var vm = new ElectronicsDetailPageVM(electronic);
-                PageNavigation.Navigate(vm);
+                PageNavigation.NavigateToNewPage(vm);
             }
 
         }
@@ -177,61 +148,58 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
         private async void ConfirmSort(object obj)
         {
-            GetElectronicsWithFilter();
+            await GetWithFilter();
         }
 
         private async void LoadData()
         {
-            var task1 = LoadManufacturers();
-            var task2 = LoadTypes();
-            var task3 = LoadSortParams();
+            LoadSortParams();
 
-            await Task.WhenAll(task1, task2, task3);
-            await Task.Run(LoadElectronics);
-
+            await GetWithFilter();
+            await LoadManufacturers();
+            await LoadTypes();
 
             OnPropertyChanged(nameof(SortParameters));
             OnPropertyChanged(nameof(SelectedSort));
         }
 
-        private async Task LoadSortParams()
+        private void LoadSortParams()
         {
-            await Task.Run(() =>
-            {
-                SortParameters = new ObservableCollection<SortParameter>
+
+            SortParameters = new ObservableCollection<SortParameter>
                 {
                 new SortParameter("Модель", "Model"),
                 new SortParameter("Цена", "SalePrice"),
                 new SortParameter("Производитель", "ManufacturerName")
                 };
 
-                selectedSort = SortParameters.FirstOrDefault();
-                OnPropertyChanged(nameof(SortParameters));
-                OnPropertyChanged(nameof(SelectedSort));
-            });
+            selectedSort = SortParameters.FirstOrDefault();
+            OnPropertyChanged(nameof(SortParameters));
+            OnPropertyChanged(nameof(SelectedSort));
+
         }
 
         private async Task LoadTypes()
         {
-            var response = (RestResponse)await ApiService.GetRequestWithParameter("api/ElectrnicsTypes", "categoryId", CurrentCategory.Id);
+            var response = (RestResponse)await ApiService.Instance.GetRequestWithParameter("api/ElectrnicsTypes", "categoryId", CurrentCategory.Id);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Types = JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content).OrderBy(p => p.Name).ToList();
+                Types = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content).OrderBy(p => p.Name));
                 foreach (var item in Types)
                 {
-                    item.OnSelectionChanged += Type_OnSelectionChanged1;
+                    item.OnSelectionChanged += Type_OnSelectionChanged;
                 }
             }
 
         }
         private async Task LoadManufacturers()
         {
-            var response = (RestResponse)await ApiService.GetRequestWithParameter("api/Manufacturers", "categoryId", CurrentCategory.Id);
+            var response = (RestResponse)await ApiService.Instance.GetRequestWithParameter("api/Manufacturers", "categoryId", CurrentCategory.Id);
             await Task.Run(() =>
             {
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    Manufacturers = JsonConvert.DeserializeObject<List<Manufacturer>>(response.Content).OrderBy(p => p.Name).ToList();
+                    Manufacturers = new ObservableCollection<Manufacturer>(JsonConvert.DeserializeObject<List<Manufacturer>>(response.Content).OrderBy(p => p.Name));
                     foreach (var item in Manufacturers)
                     {
                         item.OnSelectionChanged += Manufacturer_OnSelectionChanged;
@@ -239,120 +207,15 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 }
             });
         }
-        private void Manufacturer_OnSelectionChanged(object sender, EventArgs e)
+        private async void Manufacturer_OnSelectionChanged(object sender, EventArgs e)
         {
-            GetElectronicsWithFilter();
+            var a = Manufacturers.Where(p => p.IsSelected).ToList();
+            await GetWithFilter();
         }
-        private void Type_OnSelectionChanged1(object sender, EventArgs e)
+        private async void Type_OnSelectionChanged(object sender, EventArgs e)
         {
-            GetElectronicsWithFilter();
-        }
-
-        private async Task LoadElectronics()
-        {
-            await GetElectronicsWithFilter();
-        }
-
-        private async Task GetElectronicsWithFilter()
-        {
-            var request = await ApiService.GetRequestWithParameter("api/Electronics/TerminalFilter", "jsonFilter", JsonConvert.SerializeObject(
-                new
-                {
-                    search = Search,
-                    categoryId = CurrentCategory.Id,
-                    listElectronicsTypeId = Types.Where(p => p.IsSelected).Select(p => p.TypeId),
-                    listManufacturersId = Manufacturers.Where(p => p.IsSelected).Select(p => p.ManufacturerId),
-                    sortParameter = SelectedSort.Property,
-                    isAscending = SelectedSort.IsAcsending,
-                    isOfferedForSale = true,
-                    minPrice = MinPrice,
-                    maxPrice = MaxPrice,
-                    currentPage = Paginator == null ? 1 : Paginator.SelectedPageNumber,
-                    itemsPerPage = ItemsPerPage
-                }));
-            if (request.StatusCode == System.Net.HttpStatusCode.OK)
-            {
-                var result = JsonConvert.DeserializeObject<FilteredElectronic>(request.Content);
-                Electronics = new ObservableCollection<Electronic>(result.Objects);
-                totalFilteredCount = result.TotalFiltered;
-                if (Paginator != null)
-                {
-                    await RefreshElectronics();
-                }
-                else
-                {
-                    Paginator = new Paginator(5, MaxPage());
-                    await RefreshElectronics();
-                }
-                //dd.Add(JsonConvert.DeserializeObject<List<Electronic>>(request.Content));
-            }
-
-        }
-
-        private async Task RefreshElectronics()
-        {
-            await Task.Run(() =>
-            {
-                var maxPage = MaxPage();
-
-                Paginator.RefreshPages(maxPage == 0 ? 1 : maxPage);
-
-                // var electronicsList = GetFilteredElectronics(Electronics);
-
-                //Если после фильтрации у нас количество элементов 0, то выводим Пусто
-                if (Electronics.Count() <= 0)
-                {
-                    EmptyVisibility = Visibility.Visible;
-                    Paginator.SelectedPageNumber = 1;
-                }
-                else EmptyVisibility = Visibility.Hidden;
-
-                //electronicsList = electronicsList.Skip((Paginator.SelectedPageNumber - 1) * itemsPerPage)
-                //   .Take(itemsPerPage).ToList();
-
-                OnPropertyChanged(nameof(DisplayedElectronics));
-            });
-
-        }
-        private int MaxPage()
-        {
-            return (int)Math.Ceiling((float)totalFilteredCount / (float)ItemsPerPage);
-        }
-        private async void ChangePage(object obj)
-        {
-            if (obj != null)
-            {
-                if (Paginator != null)
-                {
-
-                    if (Convert.ToInt32(obj) == -1)
-                    {
-                        Paginator.ChangePage(1);
-                    }
-                    else if (Convert.ToInt32(obj) == 1)
-                    {
-                        var maxPage = MaxPage();
-                        Paginator.ChangePage(MaxPage());
-                    }
-                }
-                else return;
-            }
-            if (Paginator.DisplayedPagesNumbers.Count > 0)
-            {
-                await Task.Run(Paginator.RefrashPaginator);
-                OnPropertyChanged(nameof(DisplayedElectronics));
-                if (lastPage != Paginator.SelectedPageNumber)
-                {
-                    lastPage = Paginator.SelectedPageNumber;
-                    await GetElectronicsWithFilter();
-                }
-                lastPage = Paginator.SelectedPageNumber;
-            }
-        }
-
-        private async void SortOrderChanged(object obj)
-        {
-            await GetElectronicsWithFilter();
+            var a = Types.Where(p => p.IsSelected).ToList();
+            await GetWithFilter();
         }
     }
 }

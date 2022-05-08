@@ -20,12 +20,14 @@ using Newtonsoft.Json;
 using TechnoWorld_Terminal.Models;
 using WPF_Helpers.Common;
 using TechoWorld_DataModels_v2.Entities;
+using WPF_Helpers.Abstractions;
+using WPF_VM_Abstractions;
+using TechoWorld_DataModels_v2.Models;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
     public class MainAppWindowVM : BaseWindowVM
     {
-        protected List<PageVMBase> _pageVMs;
         public MainAppWindowVM()
         {
             OpenCartCommand = new RelayCommand(OpenCart);
@@ -45,60 +47,34 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         public int ItemsInCart => ClientService.Instance.Cart.Count;
         private void Initialize()
         {
-            ClientService.Instance.HubConnection = new HubConnectionBuilder()
-                .WithUrl($"{ApiService.apiUrl}technoWorldHub",
-                options =>
-                {
-                    options.AccessTokenProvider = () => Task.FromResult(ClientService.Instance.Token);
-                })
-                .Build();
-            ClientService.Instance.HubConnection.Closed += HubConnection_Closed;
-            ClientService.Instance.RestClient = new RestClient(ApiService.apiUrl);
-            ClientService.Instance.RestClient.Timeout = 20000;
-            ClientService.Instance.RestClient.ReadWriteTimeout = 20000;
-
 
             WindowLoadedCommand = new RelayCommand(WindowLoaded);
 
         }
-        private Task HubConnection_Closed(Exception arg)
+        private async void Authorize()
         {
-            return App.Current.Dispatcher.InvokeAsync(() =>
+            var response = await ApiService.Instance.Authorize();
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                MessageBox.Show("Потеряно соединение с сервером!", "Критическая ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                WindowNavigation.Instance.OpenWindow(new MainAppWindowVM());
-                PageNavigation.Instance.ClearCreatedPages();
-                WindowNavigation.Instance.CloseWindows();
-
-            }).Task;
-        }
-        private void Authorize()
-        {
-            try
-            {
-                var response = ApiService.Authorize();
-                if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
-                {
-                    var data = JsonConvert.DeserializeObject<TokenModel>(response.Result.Content);
-                    ClientService.Instance.SetClient(data.user_name, data.access_token);
-                    ClientService.Instance.HubConnection.StartAsync();
-                }
+                var data = JsonConvert.DeserializeObject<AuthResponseModel>(response.Content);
+                ClientService.Instance.SetClient(data.user_name);
+                await ApiService.Instance.GetHubConnection.StartAsync();
             }
-            catch (Exception ex)
+            else
             {
-
+                ApiService.Instance.ShutDownService();
             }
         }
 
-        private void RegisterEvents()
-        {
-            (PageNavigation.GetPage(typeof(CategoriesPageVM)).DataContext as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;
-        }
+        //private void RegisterEvents()
+        //{
+        //    (PageNavigation.GetPage(typeof(CategoriesPageVM)).DataContext as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;
+        //}
 
-        private void MainAppWindowVM_onOpenCategory(Category category)
-        {
-            (PageNavigation.GetPage(typeof(ElectronicsListPageVM)).DataContext as ElectronicsListPageVM).CurrentCategory = category;
-        }
+        //private void MainAppWindowVM_onOpenCategory(Category category)
+        //{
+        //    (PageNavigation.GetPage(typeof(ElectronicsListPageVM)).DataContext as ElectronicsListPageVM).CurrentCategory = category;
+        //}
 
 
         public RelayCommand WindowLoadedCommand { get; set; }
@@ -116,7 +92,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         private void WindowLoaded(object obj)
         {
             PageNavigation.Navigate(typeof(CategoriesPageVM));
-            RegisterEvents();
+            //RegisterEvents();
         }
     }
 }

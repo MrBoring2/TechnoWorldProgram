@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_Terminal.ViewModels.Windows;
 using TechnoWorld_Terminal.Views.Windows;
+using WPF_Helpers.Abstractions;
 
 namespace TechnoWorld_Terminal.Services
 {
@@ -81,7 +82,7 @@ namespace TechnoWorld_Terminal.Services
                 //}
             }
         }
-        public void ShowModalPresentation(BaseWindowVM vm)
+        public void ShowModalPresentation(BaseModalWindowVM vm)
         {
             App.Current.Dispatcher.Invoke(() =>
             {

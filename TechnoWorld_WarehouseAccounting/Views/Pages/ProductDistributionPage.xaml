@@ -33,7 +33,7 @@
                 <DatePicker Margin="10,0" SelectedDate="{Binding EndDate}" HorizontalAlignment="Right" FontSize="16" Width="150" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="1"/>
             </StackPanel>
         </Grid>
-        <DataGrid Grid.Row="1" ItemsSource="{Binding ObjectCollection}" Margin="5" SelectedItem="{Binding SelectedOrder}" IsReadOnly="True" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" BorderThickness="1" BorderBrush="Orange">
+        <DataGrid Grid.Row="1" ItemsSource="{Binding EntitiesCollection}" Margin="5" SelectedItem="{Binding SelectedEntity}" IsReadOnly="True" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" BorderThickness="1" BorderBrush="Orange">
             <interactions:Interaction.Triggers>
                 <interactions:EventTrigger EventName="MouseDoubleClick">
                     <interactions:InvokeCommandAction Command="{Binding OpenDestributionWindowCommand}"/>

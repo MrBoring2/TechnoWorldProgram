@@ -16,6 +16,7 @@ using WPF_VM_Abstractions;
 using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
 using TechoWorld_DataModels_v2;
+using TechoWorld_DataModels_v2.Models;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {

@@ -15,18 +15,18 @@ using TechnoWorld_WarehouseAccounting.Views.Windows;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
 using WPF_Helpers;
+using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
 using WPF_Helpers.Models;
 using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 {
-    public class DeliveryManagementPageVM : ListViewPageVM<Delivery, FilteredDeliveries>
+    public class DeliveryManagementPageVM : ListEntitiesPageVM<Delivery, FilteredDeliveries>
     {
         private ObservableCollection<ItemWithTitle<Status>> statuses;
         private ObservableCollection<SortParameter> sortParameters;
         private ItemWithTitle<Status> selectedStatus;
-        private Delivery selectedDelivery;
         private DateTime startDate;
         private DateTime endDate;
         public DeliveryManagementPageVM() : base(15)
@@ -42,7 +42,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         public RelayCommand OpenEditDeliveryWindowCommand { get; set; }
         public override ObservableCollection<SortParameter> SortParameters { get => sortParameters; set { sortParameters = value; OnPropertyChanged(); } }
         public ObservableCollection<ItemWithTitle<Status>> Statuses { get => statuses; set { statuses = value; OnPropertyChanged(); } }
-        public Delivery SelectedDelivery { get => selectedDelivery; set { selectedDelivery = value; OnPropertyChanged(); } }
         public ItemWithTitle<Status> SelectedStatus { get => selectedStatus; set { selectedStatus = value; OnPropertyChanged(); GetWithFilter(); } }
         public DateTime StartDate
         {
@@ -138,9 +137,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         }
         private async void OpenEditDeliveryWindow(object obj)
         {
-            if (SelectedDelivery != null)
+            if (SelectedEntity != null)
             {
-                var deliveryWindowVM = new DeliveryWindowVM(SelectedDelivery);
+                var deliveryWindowVM = new DeliveryWindowVM(SelectedEntity);
                 await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(deliveryWindowVM));
             }
         }
