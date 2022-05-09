@@ -24,5 +24,7 @@ namespace TechnoWorld_WarehouseAccounting.Views.Windows
         {
             InitializeComponent();
         }
+
+  
     }
 }

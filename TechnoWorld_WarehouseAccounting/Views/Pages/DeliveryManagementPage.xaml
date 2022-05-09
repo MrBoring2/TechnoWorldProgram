@@ -13,6 +13,7 @@
       d:DesignHeight="600"
       Title="ProductManagementPage" Background="White" d:DesignWidth="1200">
 
+       
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
@@ -43,7 +44,9 @@
                 <Button Margin="5" Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenDeliveryWindowCommand}" Cursor="Hand">
                     <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
                         <materialDesign:PackIcon.ToolTip>
-                            <TextBlock Text="Добавить"/>
+                            <ToolTip Style="{StaticResource BaseToolit}">
+                                <TextBlock Text="Добавить"/>
+                            </ToolTip>
                         </materialDesign:PackIcon.ToolTip>
                     </materialDesign:PackIcon>
                 </Button>

@@ -17,7 +17,7 @@ using WPF_VM_Abstractions;
 
 namespace WPF_Helpers.Abstractions
 {
-    public class BasePageVM : NotifyPropertyChangedBase
+    public class BasePageVM : BaseVM
     {
     }
 

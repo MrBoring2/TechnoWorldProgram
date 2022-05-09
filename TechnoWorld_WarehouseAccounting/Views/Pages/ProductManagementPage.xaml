@@ -12,7 +12,21 @@
        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
       d:DesignHeight="600"
       Title="ProductManagementPage" Background="White" >
-
+    <Page.Resources>
+        <Style TargetType="ToolTip" BasedOn="{StaticResource MaterialDesignToolTip}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToolTip}">
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="White" Padding="10,5">
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="Orange"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="109"/>
@@ -41,14 +55,18 @@
                 <Button Background="Transparent" Visibility="{Binding EditAddVisibility}" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenProductWindowCommand}" Cursor="Hand">
                     <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
                         <materialDesign:PackIcon.ToolTip>
-                            <TextBlock Text="Добавить"/>
+                            <ToolTip Style="{StaticResource BaseToolit}">
+                                <TextBlock Text="Добавить"/>
+                            </ToolTip>
                         </materialDesign:PackIcon.ToolTip>
                     </materialDesign:PackIcon>
                 </Button>
                 <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenEditProductWindowCommand}" Cursor="Hand">
                     <materialDesign:PackIcon Kind="EditOutline" Visibility="{Binding EditAddVisibility}" Width="35" Height="35" Margin="-15" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
                         <materialDesign:PackIcon.ToolTip>
-                            <TextBlock Text="Редактировать"/>
+                            <ToolTip Style="{StaticResource BaseToolit}">
+                                <TextBlock Text="Редактировать"/>
+                            </ToolTip>
                         </materialDesign:PackIcon.ToolTip>
                     </materialDesign:PackIcon>
                 </Button>

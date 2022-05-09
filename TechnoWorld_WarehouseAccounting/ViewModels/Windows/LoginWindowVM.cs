@@ -17,6 +17,12 @@ using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Models;
+using SweetAlertSharp;
+using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Data;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
@@ -47,7 +53,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             {
                 if (Login.Length >= 30 || Password.Length >= 30)
                 {
-                    CustomMessageBox.Show("Слишком большие данные", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+
                     return;
                 }
 
@@ -60,17 +66,17 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
                     await ApiService.Instance.GetHubConnection.StartAsync();
 
-                    CustomMessageBox.Show($"Добро пожаловать, {data.full_name}", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
                     WindowNavigation.Instance.OpenAndHideWindow(this, new MainAppWindowVM());
+                    MaterialNotification.Show("Оповещение", $"Добро пожаловать, {data.full_name}.", MaterialNotificationButton.Ok, MaterialNotificationImage.Information);
                 }
                 else if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
                 {
-                    CustomMessageBox.Show(JsonConvert.DeserializeObject<string>(response.Content), "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MaterialNotification.Show("Ошибка", JsonConvert.DeserializeObject<string>(response.Content), MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                     IsEnabled = true;
                 }
                 else
                 {
-                    CustomMessageBox.Show("Не удаётся соединиться с сервером!", "Критическая ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MaterialNotification.Show("Критическая ошибка.", "Потярено соединение с сервером!", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                     IsEnabled = true;
                 }
             }

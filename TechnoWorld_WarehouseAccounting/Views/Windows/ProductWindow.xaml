@@ -6,14 +6,30 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"   
         FontFamily="{DynamicResource MaterialDesignFont}"
-                  
+        xmlns:valudations="clr-namespace:WPF_Helpers.ValidationRules;assembly=WPF_Helpers" 
         xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
         xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
         mc:Ignorable="d"
+                    xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
         Title="ТЕХНО МИР | Карточка товара" Height="961" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
+    <mde:MaterialWindow.Resources>
+        <Style TargetType="ToolTip" BasedOn="{StaticResource MaterialDesignToolTip}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToolTip}">
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="White" Padding="10,5">
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Red"/>
+        </Style>
+    </mde:MaterialWindow.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
@@ -35,22 +51,59 @@
             <materialDesign:Card  UniformCornerRadius="5">
                 <StackPanel>
                     <TextBlock Text="Основаная информация" HorizontalAlignment="Center" Margin="5" FontSize="20"/>
-                    <TextBox Text="{Binding Model}" materialDesign:HintAssist.Hint="Модель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <TextBox x:Name="dd" Text="{Binding Model, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Модель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                        
+                    </TextBox>
                     <ComboBox ItemsSource="{Binding Categories}" IsEnabled="{Binding IsAdd}" SelectedItem="{Binding Category}" SelectedValue="{Binding Category.Id}" SelectedValuePath="Id" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Категория" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
                     <ComboBox ItemsSource="{Binding ElectronicsTypes}" SelectedItem="{Binding ElectrnicsType}" SelectedValue="{Binding ElectrnicsType.TypeId}" IsEnabled="{Binding IsAdd}" SelectedValuePath="TypeId" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Тип" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Text="{Binding SalePrice}" materialDesign:HintAssist.Hint="Цена продажи" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
-                    <TextBox Text="{Binding PurchasePrice}" materialDesign:HintAssist.Hint="Цена закупки" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <TextBox Text="{Binding SalePrice, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, StringFormat=F2}" materialDesign:HintAssist.Hint="Цена продажи" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                        <interactions:Interaction.Triggers>
+                            <interactions:EventTrigger EventName="TextChanged">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                            <interactions:EventTrigger EventName="PreviewTextInput">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="IsAllowedInput"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                        </interactions:Interaction.Triggers>
+                    </TextBox>
+
+                    <TextBox Text="{Binding PurchasePrice, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, StringFormat=F2}" materialDesign:HintAssist.Hint="Цена закупки" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                        <interactions:Interaction.Triggers>
+                            <interactions:EventTrigger EventName="TextChanged">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                            <interactions:EventTrigger EventName="PreviewTextInput">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="IsAllowedInput"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                        </interactions:Interaction.Triggers>
+                    </TextBox>
+
                     <ComboBox ItemsSource="{Binding Manufacturers}" IsEnabled="{Binding IsAdd}" SelectedItem="{Binding Manufacturer}" SelectedValue="{Binding Manufacturer.ManufacturerId}" SelectedValuePath="ManufacturerId"  DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Text="{Binding ManufacturerCountry}" materialDesign:HintAssist.Hint="Страна производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Text="{Binding Color}" materialDesign:HintAssist.Hint="Цвет" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
-                    <TextBox Text="{Binding Weight}" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <TextBox Text="{Binding ManufacturerCountry, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Страна производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <TextBox Text="{Binding Color, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цвет" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <TextBox Text="{Binding Weight, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, StringFormat=F2}" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                        <interactions:Interaction.Triggers>
+                            <interactions:EventTrigger EventName="TextChanged">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                            <interactions:EventTrigger EventName="PreviewTextInput">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="IsAllowedInput"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                        </interactions:Interaction.Triggers>
+                    </TextBox>
                     <CheckBox IsChecked="{Binding IsOfferedForSale}" Content="Выставлен на продажу" HorizontalAlignment="Center" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
                 </StackPanel>
             </materialDesign:Card>
         </Border>
         <Border Margin="5,5,5,5" CornerRadius="5" BorderBrush="Orange" BorderThickness="0" Grid.ColumnSpan="2" Grid.Row="3">
             <materialDesign:Card UniformCornerRadius="5">
-                <TextBox Text="{Binding Description}" VerticalAlignment="Top" Margin="5" materialDesign:HintAssist.Hint="Описание товара" materialDesign:HintAssist.IsFloating="True" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Cursor="Arrow" FontSize="16" materialDesign:HintAssist.FloatingScale="0.8"/>
+                <TextBox Text="{Binding Description, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" VerticalAlignment="Top" Margin="5" materialDesign:HintAssist.Hint="Описание товара" materialDesign:HintAssist.IsFloating="True" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Cursor="Arrow" FontSize="16" materialDesign:HintAssist.FloatingScale="0.8"/>
             </materialDesign:Card>
         </Border>
 
@@ -58,6 +111,6 @@
             <Button Content="Сохранить" Width="200" Margin="0,0,15,0" Style="{StaticResource btn}" Command="{Binding SaveCommand}" Cursor="Hand"/>
             <Button Content="Отмена" Width="200" Style="{StaticResource btn}" Command="{Binding CancelCommand}" Cursor="Hand"/>
         </StackPanel>
-       
+
     </Grid>
 </mde:MaterialWindow>

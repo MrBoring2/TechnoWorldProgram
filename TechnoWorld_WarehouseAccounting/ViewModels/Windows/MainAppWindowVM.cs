@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Pages;
@@ -103,7 +105,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     break;
                 default:
                     {
-                        CustomMessageBox.Show("Неккоректный пользователь", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        MaterialNotification.Show("Оповещение", $"Неккоректный пользователь.", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                     }
                     break;
             }

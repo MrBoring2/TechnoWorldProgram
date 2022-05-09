@@ -18,6 +18,7 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepOrange.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.DeepOrange.xaml" />
                 <ResourceDictionary Source="/Resources/Styles/MainTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/TechnoWorld_Notification;component/Resources/Animation/WindowAnimations.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -54,14 +54,18 @@
             <Button Margin="5" Background="Transparent" BorderThickness="0" Width="35" Height="35" IsEnabled="{Binding IsAdd}" Command="{Binding AddProductCommand}" Cursor="Hand" HorizontalAlignment="Left">
                 <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
                     <materialDesign:PackIcon.ToolTip>
-                        <TextBlock Text="Добавить товар в поставку"/>
+                        <ToolTip Style="{StaticResource BaseToolit}">
+                            <TextBlock Text="Добавить товар в поставку"/>
+                        </ToolTip>
                     </materialDesign:PackIcon.ToolTip>
                 </materialDesign:PackIcon>
             </Button>
             <Button Margin="5" Background="Transparent" BorderThickness="0" Width="35" Height="35" IsEnabled="{Binding IsAdd}" Command="{Binding RemoveProductCommand}" Cursor="Hand" HorizontalAlignment="Left">
                 <materialDesign:PackIcon Kind="RemoveCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="Red">
                     <materialDesign:PackIcon.ToolTip>
-                        <TextBlock Text="Удалить товар из поставки"/>
+                        <ToolTip Style="{StaticResource BaseToolit}">
+                            <TextBlock Text="Удалить товар из поставки"/>
+                        </ToolTip>
                     </materialDesign:PackIcon.ToolTip>
                 </materialDesign:PackIcon>
             </Button>

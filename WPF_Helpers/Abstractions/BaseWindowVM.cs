@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace WPF_Helpers.Abstractions
 {
-    public class BaseWindowVM : NotifyPropertyChangedBase
+    public class BaseWindowVM : BaseVM
     {
     }
 }

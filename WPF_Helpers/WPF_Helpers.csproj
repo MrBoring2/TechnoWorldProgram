@@ -244,6 +244,7 @@
   <ItemGroup>
     <Compile Include="Abstractions\BaseModalWindowVM.cs" />
     <Compile Include="Abstractions\BasePageVM.cs" />
+    <Compile Include="Abstractions\BaseVM.cs" />
     <Compile Include="Abstractions\BaseWindowVM.cs" />
     <Compile Include="Abstractions\ListEntitiesPageVM.cs" />
     <Compile Include="Services\ApiService.cs" />
@@ -253,6 +254,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Models\SortParameter.cs" />
+    <Compile Include="ValidationRules\StringToNumberValidationRule.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TechnoWorld_DataModels_v2\TechnoWorld_DataModels_v2.csproj">

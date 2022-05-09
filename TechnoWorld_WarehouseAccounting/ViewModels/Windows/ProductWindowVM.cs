@@ -4,11 +4,16 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
 using TechoWorld_DataModels_v2;
@@ -37,16 +42,41 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
             Task.Run(() => Initialize());
             Task.Run(() => LoadData());
+
+            ValidationMessageSetter(Weight, nameof(Weight));
+            ValidationMessageSetter(Model == null ? "" : Model, nameof(Model));
+            ValidationMessageSetter(SalePrice, nameof(SalePrice));
+            ValidationMessageSetter(PurchasePrice, nameof(PurchasePrice));
+            ValidationMessageSetter(Color == null ? "" : Color, nameof(Color));
+            ValidationMessageSetter(ManufacturerCountry == null ? "" : ManufacturerCountry, nameof(ManufacturerCountry));
+            ValidationMessageSetter(Description == null ? "" : Description, nameof(Description));
         }
-
-
         public ProductWindowVM(Electronic electronic) : this()
         {
             Task.Run(() => InitializeFields(electronic).Wait());
         }
+        public void TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //if ((sender as TextBox).Text == "")
+            //{
+            //    e.Handled = true;
+            //    (sender as TextBox).Text = "0";
+            //}
+        }
+        public void IsAllowedInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+            var cursorIndex = (sender as TextBox).CaretIndex;
+            var text = (sender as TextBox).Text;
+            if (sender is TextBox textBox && !e.Text.All(ch => char.IsDigit(ch)))
+            {
+                e.Handled = true;
+            }
+        }
+
         public RelayCommand SaveCommand { get; set; }
         public RelayCommand CancelCommand { get; set; }
         public RelayCommand LoadImageCommand { get; set; }
+        public RelayCommand CheckNumerikTextBoxCommand { get; set; }
 
         public ObservableCollection<Category> Categories
         {
@@ -65,7 +95,10 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             set { electrnicsTypes = value; OnPropertyChanged(); }
         }
         public bool IsAdd { get => isAdd; set { isAdd = value; OnPropertyChanged(); } }
-        public string Model { get => CurrentElectronic.Model; set { CurrentElectronic.Model = value; OnPropertyChanged(); } }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
+        [DisplayFormat(ConvertEmptyStringToNull = false)]
+        [StringLength(100, ErrorMessage = "Длина поля Модель слишком большая: максимум {1} символов")]
+        public string Model { get => CurrentElectronic.Model; set { CurrentElectronic.Model = value; ValidationMessageSetter(value); } }
         public Category Category
         {
             get => CurrentElectronic.Type == null ? null : CurrentElectronic.Type.Category;
@@ -74,8 +107,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 if (CurrentElectronic.Type != null)
                 {
                     CurrentElectronic.Type.Category = value;
-                    //CurrentElectronic.Type.CategoryId = value.Id;
-                   // ElectrnicsType = null;
                     ElectronicsTypes = new ObservableCollection<ElectrnicsType>(AllElectronicsTypes.Where(p => p.CategoryId == Category.Id).ToList());
                     ElectrnicsType = ElectronicsTypes.FirstOrDefault();
                 }
@@ -83,13 +114,44 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             }
         }
         public ElectrnicsType ElectrnicsType { get => CurrentElectronic.Type; set { CurrentElectronic.Type = value; OnPropertyChanged(); } }
-        public decimal SalePrice { get => CurrentElectronic.SalePrice; set { CurrentElectronic.SalePrice = value; OnPropertyChanged(); } }
-        public decimal PurchasePrice { get => CurrentElectronic.PurchasePrice; set { CurrentElectronic.PurchasePrice = value; OnPropertyChanged(); } }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
+        [Range(minimum: 1, maximum: 10000000, ErrorMessage = "Указана недопустимая цена продажи: минимум {1}, максимум {2}")]
+        public decimal SalePrice
+        {
+            get => CurrentElectronic.SalePrice;
+            set { CurrentElectronic.SalePrice = Convert.ToDecimal(value); ValidationMessageSetter(value); }
+        }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
+        [Range(minimum: 1, maximum: 10000000, ErrorMessage = "Указан недопустимая цена закупки: минимум {1}, максимум {2}")]
+        public decimal PurchasePrice { get => CurrentElectronic.PurchasePrice; set { CurrentElectronic.PurchasePrice = Convert.ToDecimal(value); ValidationMessageSetter(value); } }
         public Manufacturer Manufacturer { get => CurrentElectronic.Manufacturer; set { CurrentElectronic.Manufacturer = value; CurrentElectronic.ManufactrurerId = value.ManufacturerId; OnPropertyChanged(); } }
-        public string ManufacturerCountry { get => CurrentElectronic.ManufacturerСountry; set { CurrentElectronic.ManufacturerСountry = value; OnPropertyChanged(); } }
-        public string Color { get => CurrentElectronic.Color; set { CurrentElectronic.Color = value; OnPropertyChanged(); } }
-        public double Weight { get => CurrentElectronic.Weight; set { CurrentElectronic.Weight = value; OnPropertyChanged(); } }
-        public string Description { get => CurrentElectronic.Description; set { CurrentElectronic.Description = value; OnPropertyChanged(); } }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
+        [DisplayFormat(ConvertEmptyStringToNull = false)]
+        [StringLength(100, ErrorMessage = "Длина поля Страна производитель слишком большая: максимум {1} символов")]
+        public string ManufacturerCountry { get => CurrentElectronic.ManufacturerСountry; set { CurrentElectronic.ManufacturerСountry = value; ValidationMessageSetter(value); } }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
+        [DisplayFormat(ConvertEmptyStringToNull = false)]
+        [StringLength(100, ErrorMessage = "Длина поля Цвет слишком большая: максимум {1} символов")]
+        public string Color { get => CurrentElectronic.Color; set { CurrentElectronic.Color = value; ValidationMessageSetter(value); } }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
+        [Range(minimum: 0.01, maximum: 10000, ErrorMessage = "Указан недопустимый вес: минимум {1}, максимум {2}")]
+        public double Weight
+        {
+            get => CurrentElectronic.Weight;
+            set
+            {
+                if (CurrentElectronic.Weight != value)
+                {
+                    CurrentElectronic.Weight = value;
+                    CurrentElectronic.Weight = Convert.ToDouble(value);
+                    ValidationMessageSetter(value);
+                }
+            }
+        }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
+        [DisplayFormat(ConvertEmptyStringToNull = false)]
+        [StringLength(2000, ErrorMessage = "Длина поля Описание слишком большая: максимум {1} символов")]
+        public string Description { get => CurrentElectronic.Description; set { CurrentElectronic.Description = value; ValidationMessageSetter(value); } }
         public byte[] Image { get => CurrentElectronic.Image; set { CurrentElectronic.Image = value; OnPropertyChanged(); } }
         public bool IsOfferedForSale { get => CurrentElectronic.IsOfferedForSale; set { CurrentElectronic.IsOfferedForSale = value; OnPropertyChanged(); } }
 
@@ -101,6 +163,16 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             IsAdd = false;
             CurrentElectronic = electronic;
+            OnPropertyChanged(nameof(ElectrnicsType));
+            OnPropertyChanged(nameof(Manufacturer));
+            OnPropertyChanged(nameof(Category));
+            ValidationMessageSetter(Weight, nameof(Weight));
+            ValidationMessageSetter(Model == null ? "" : Model, nameof(Model));
+            ValidationMessageSetter(SalePrice, nameof(SalePrice));
+            ValidationMessageSetter(PurchasePrice, nameof(PurchasePrice));
+            ValidationMessageSetter(Color == null ? "" : Color, nameof(Color));
+            ValidationMessageSetter(ManufacturerCountry == null ? "" : ManufacturerCountry, nameof(ManufacturerCountry));
+            ValidationMessageSetter(Description == null ? "" : Description, nameof(Description));
         }
         private async Task LoadData()
         {
@@ -158,8 +230,18 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async void Save(object obj)
         {
-            if (Validate())
+            if (GetErrorsCount > 0)
             {
+                MaterialNotification.Show("Внимание", "Не все поля заполены верно!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+            }
+            else
+            {
+                if (PurchasePrice > SalePrice)
+                {
+                    MaterialNotification.Show("Внимание", "Цена закупки не должна быть больше цены продажи!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                    return;
+                }
+
                 if (isAdd)
                 {
                     var response = await ApiService.Instance.PostRequest("api/Electronics", CurrentElectronic);
@@ -169,7 +251,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     }
                     else
                     {
-                        CustomMessageBox.Show(JsonConvert.DeserializeObject<string>(response.Content), "Произошла ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        MaterialNotification.Show("Ошибка", JsonConvert.DeserializeObject<string>(response.Content), MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                     }
                 }
                 else
@@ -181,7 +263,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     }
                     else
                     {
-                        CustomMessageBox.Show(JsonConvert.DeserializeObject<string>(response.Content), "Произошла ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        MaterialNotification.Show("Ошибка", JsonConvert.DeserializeObject<string>(response.Content), MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                     }
 
                 }
@@ -192,40 +274,40 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             DialogResult = false;
         }
-        private bool Validate()
-        {
-            if (string.IsNullOrEmpty(Model))
-            {
-                CustomMessageBox.Show("Поле модель не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
-            }
-            else if (SalePrice <= 0)
-            {
-                CustomMessageBox.Show("Цена не должна быть отрицательной!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
-            }
-            else if (string.IsNullOrEmpty(Model))
-            {
-                CustomMessageBox.Show("Поле страна производитель не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
-            }
-            else if (string.IsNullOrEmpty(Color))
-            {
-                CustomMessageBox.Show("Поле цвет не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
-            }
-            else if (Weight <= 0)
-            {
-                CustomMessageBox.Show("Вес не должен быть отрицательным!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
-            }
-            else if (string.IsNullOrEmpty(Description))
-            {
-                CustomMessageBox.Show("Поле описание не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
-            }
+        //private bool Validate()
+        //{
+        //    if (string.IsNullOrEmpty(Model))
+        //    {
+        //        CustomMessageBox.Show("Поле модель не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        return false;
+        //    }
+        //    else if (SalePrice <= 0)
+        //    {
+        //        CustomMessageBox.Show("Цена не должна быть отрицательной!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        return false;
+        //    }
+        //    else if (string.IsNullOrEmpty(Model))
+        //    {
+        //        CustomMessageBox.Show("Поле страна производитель не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        return false;
+        //    }
+        //    else if (string.IsNullOrEmpty(Color))
+        //    {
+        //        CustomMessageBox.Show("Поле цвет не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        return false;
+        //    }
+        //    else if (Weight <= 0)
+        //    {
+        //        CustomMessageBox.Show("Вес не должен быть отрицательным!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        return false;
+        //    }
+        //    else if (string.IsNullOrEmpty(Description))
+        //    {
+        //        CustomMessageBox.Show("Поле описание не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        return false;
+        //    }
 
-            return true;
-        }
+        //    return true;
+        //}
     }
 }

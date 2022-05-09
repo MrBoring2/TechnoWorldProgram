@@ -12,7 +12,21 @@
        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
       d:DesignHeight="600" d:DesignWidth="1100"
       Title="ProductManagementPage" Background="White">
-
+    <Page.Resources>
+        <Style TargetType="ToolTip" BasedOn="{StaticResource MaterialDesignToolTip}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToolTip}">
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="White" Padding="10,5">
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="Orange"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
