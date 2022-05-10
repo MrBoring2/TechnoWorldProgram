@@ -16,6 +16,8 @@ using WPF_VM_Abstractions;
 using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
 using TechoWorld_DataModels_v2.Entities;
+using TechnoWorld_Notification.Enums;
+using TechnoWorld_Notification;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
@@ -71,8 +73,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async void DestributeOrder(object obj)
         {
-            var result = CustomMessageBox.Show("Подтвердите выдачу товара.", "Подтверждение", System.Windows.MessageBoxButton.YesNo, System.Windows.MessageBoxImage.Question);
-            if (result == System.Windows.MessageBoxResult.Yes)
+            var result = MaterialNotification.Show("Подтверждение", $"Подтвердите выдачу товара.", MaterialNotificationButton.Ok, MaterialNotificationImage.Question);
+            if (result == MaterialNotificationResult.Yes)
             {
                 var response = await ApiService.Instance.PutRequest($"api/Orders/Distribute", Order.OrderId, SelectedStorage.StorageId);
                 if (response.StatusCode == HttpStatusCode.OK)
@@ -81,7 +83,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 }
                 else
                 {
-                    CustomMessageBox.Show(JsonConvert.DeserializeObject<string>(response.Content), "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MaterialNotification.Show("Ошибка", $"{JsonConvert.DeserializeObject<string>(response.Content)}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                 }
             }
         }

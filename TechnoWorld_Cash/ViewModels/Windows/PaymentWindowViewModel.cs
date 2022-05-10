@@ -10,6 +10,8 @@ using System.Windows;
 using System.Windows.Threading;
 using TechnoWorld_Cash.Models;
 using TechnoWorld_Cash.Views.Windows;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
@@ -163,7 +165,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             var response = await ApiService.Instance.PutRequest("api/Orders", Order.OrderId, Order);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                CustomMessageBox.Show("Заказ усешно оплачен", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                MaterialNotification.Show("Оповещение", $"Заказ усешно оплачен.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
                 DialogResult = true;
             }
 

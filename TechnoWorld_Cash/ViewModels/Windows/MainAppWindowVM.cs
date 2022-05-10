@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using TechnoWorld_Cash.Services;
 using TechnoWorld_Cash.ViewModels.Pages;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
+using TechnoWorld_Terminal.Services;
 using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
 using WPF_VM_Abstractions;
@@ -29,6 +32,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         {
             PageNavigation.Instance.RegisterPages();
             PageNavigation.Navigate(typeof(CashPageVM));
+            MaterialNotification.Show("Оповещение", $"Добро пожаловать, {ClientService.Instance.User.FullName}", MaterialNotificationButton.Ok, MaterialNotificationImage.Information);
         }
 
         private void Exit(object obj)

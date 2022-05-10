@@ -67,7 +67,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     await ApiService.Instance.GetHubConnection.StartAsync();
 
                     WindowNavigation.Instance.OpenAndHideWindow(this, new MainAppWindowVM());
-                    MaterialNotification.Show("Оповещение", $"Добро пожаловать, {data.full_name}.", MaterialNotificationButton.Ok, MaterialNotificationImage.Information);
+                    
                 }
                 else if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
                 {

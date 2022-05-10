@@ -19,6 +19,8 @@ using WPF_Helpers.Models;
 using WPF_Helpers;
 using TechoWorld_DataModels_v2.Entities;
 using WPF_Helpers.Abstractions;
+using TechnoWorld_Notification.Enums;
+using TechnoWorld_Notification;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 {
@@ -225,7 +227,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(productWindowVM));
             if (productWindowVM.DialogResult == true)
             {
-                CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно добавлен", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                MaterialNotification.Show("Оповещение", $"Товар {productWindowVM.Model} упешно добавлен.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
             }
         }
         private async void OpenEditProductWindow(object obj)
@@ -235,7 +237,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 ProductWindowVM productWindowVM;
                 if (SelectedEntity == null)
                 {
-                    CustomMessageBox.Show($"Сначала выберите товар!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MaterialNotification.Show("Оповещение", $"Сначала выберите товар!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
                 }
                 else
                 {
@@ -245,7 +247,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
                     if (productWindowVM.DialogResult == true)
                     {
-                        CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно изменён", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                        MaterialNotification.Show("Оповещение", $"Товар {productWindowVM.Model} упешно изменён.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
                     }
                 }
             }

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_API.Models;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
@@ -111,7 +113,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(destributionWindow));
             if (destributionWindow.DialogResult == true)
             {
-                CustomMessageBox.Show($"Товары из заказа {SelectedEntity.OrderNumber} успешно выданы со склада.", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                MaterialNotification.Show("Оповещение", $"Товары из заказа {SelectedEntity.OrderNumber} успешно выданы со склада.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
             }
         }
     }

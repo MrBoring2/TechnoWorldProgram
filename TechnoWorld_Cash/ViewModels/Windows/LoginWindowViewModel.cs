@@ -18,6 +18,8 @@ using TechnoWorld_Cash.ViewModels.Pages;
 using WPF_VM_Abstractions;
 using WPF_Helpers.Abstractions;
 using TechoWorld_DataModels_v2.Models;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 
 namespace TechnoWorld_Cash.ViewModels.Windows
 {
@@ -55,8 +57,8 @@ namespace TechnoWorld_Cash.ViewModels.Windows
                     var data = JsonConvert.DeserializeObject<AuthResponseModel>(response.Content);
                     ClientService.Instance.SetClient(data.user_name, data.full_name, data.role_id, data.user_id, data.post);
                     await ApiService.Instance.GetHubConnection.StartAsync();
-
-                    CustomMessageBox.Show($"Добро пожаловать, {data.full_name}", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+            
+           
                     WindowNavigation.Instance.OpenAndHideWindow(this, new MainAppWindowVM());
                 }
                 else

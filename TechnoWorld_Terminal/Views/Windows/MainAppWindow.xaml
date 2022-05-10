@@ -11,7 +11,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         x:Class="TechnoWorld_Terminal.Views.Windows.MainAppWindow" RenderOptions.BitmapScalingMode="HighQuality"
         mc:Ignorable="d" 
-        Title="ТЕХНО МИР" Icon="/Resources/logo1.ico" MinWidth="1350" Height="26" MinHeight="760" Width="214">
+        Title="ТЕХНО МИР" Icon="/Resources/Images/logo1.ico" MinWidth="1350" Height="26" MinHeight="760" Width="214">
     <mde:MaterialWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

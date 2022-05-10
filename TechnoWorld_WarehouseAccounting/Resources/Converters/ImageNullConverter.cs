@@ -8,28 +8,13 @@ using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
 
-namespace TechnoWorld_Terminal.Resources.Converters
+namespace TechnoWorld_WarehouseAccounting.Resources.Converters
 {
-    public class ImageConverter : IValueConverter
+    internal class ImageNullConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value != null)
-            {
-                var image = new BitmapImage();
-                using (var ms = new MemoryStream(value as byte[]))
-                {
-                    image.BeginInit();
-                    image.CacheOption = BitmapCacheOption.OnLoad;
-                    image.DecodePixelHeight = 80;
-                    image.StreamSource = ms;
-                    image.EndInit();
-                }
-
-                image.Freeze();
-                return image;
-            }
-            else
+            if (value as byte[] == null)
             {
                 try
                 {
@@ -48,11 +33,15 @@ namespace TechnoWorld_Terminal.Resources.Converters
                     throw new NullReferenceException("Отсутствует файл изображения в ресурсах!");
                 }
             }
+            else
+            {
+                return value;
+            }
         }
+
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             throw new NotImplementedException();
         }
     }
 }
-

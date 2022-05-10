@@ -11,6 +11,8 @@ using TechnoWorld_API.Models;
 using TechnoWorld_Cash.Services;
 using TechnoWorld_Cash.ViewModels.Windows;
 using TechnoWorld_Cash.Views.Windows;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 using TechnoWorld_Terminal.Services;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
@@ -93,7 +95,7 @@ namespace TechnoWorld_Cash.ViewModels.Pages
             }
             else
             {
-                CustomMessageBox.Show("Оплатить можно только заказы, которые ещё не оплачены.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MaterialNotification.Show("Внимание", $"Оплатить можно только заказы, которые ещё не оплачены.", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
             }
 
 
@@ -108,7 +110,7 @@ namespace TechnoWorld_Cash.ViewModels.Pages
             }
             else
             {
-                CustomMessageBox.Show("Отменить можно только заказы, которые ещё не оплачены.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MaterialNotification.Show("Внимание", $"Отменить можно только заказы, которые ещё не оплачены.", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
             }
         }
 

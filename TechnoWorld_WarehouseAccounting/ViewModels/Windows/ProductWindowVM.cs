@@ -1,5 +1,4 @@
-﻿
-using Microsoft.Win32;
+﻿ using Microsoft.Win32;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -274,40 +273,5 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             DialogResult = false;
         }
-        //private bool Validate()
-        //{
-        //    if (string.IsNullOrEmpty(Model))
-        //    {
-        //        CustomMessageBox.Show("Поле модель не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //        return false;
-        //    }
-        //    else if (SalePrice <= 0)
-        //    {
-        //        CustomMessageBox.Show("Цена не должна быть отрицательной!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //        return false;
-        //    }
-        //    else if (string.IsNullOrEmpty(Model))
-        //    {
-        //        CustomMessageBox.Show("Поле страна производитель не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //        return false;
-        //    }
-        //    else if (string.IsNullOrEmpty(Color))
-        //    {
-        //        CustomMessageBox.Show("Поле цвет не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //        return false;
-        //    }
-        //    else if (Weight <= 0)
-        //    {
-        //        CustomMessageBox.Show("Вес не должен быть отрицательным!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //        return false;
-        //    }
-        //    else if (string.IsNullOrEmpty(Description))
-        //    {
-        //        CustomMessageBox.Show("Поле описание не заполнено!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-        //        return false;
-        //    }
-
-        //    return true;
-        //}
     }
 }

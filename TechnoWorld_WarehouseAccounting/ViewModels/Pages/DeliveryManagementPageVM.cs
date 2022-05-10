@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_API.Models;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
@@ -132,7 +134,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
             if (deliveryWindowVM.DialogResult == true)
             {
-                CustomMessageBox.Show($"Заказ поставщику номер {deliveryWindowVM.Delivery.DeliveryNumber} упешно добавлен, сформирована приходаня накладная!", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                MaterialNotification.Show("Оповещение", $"Заказ поставщику номер {deliveryWindowVM.Delivery.DeliveryNumber} упешно добавлен, сформирована приходаня накладная!", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
             }
         }
         private async void OpenEditDeliveryWindow(object obj)

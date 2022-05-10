@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
@@ -198,7 +200,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             if (DeliveryItems.Any(p => p.Count <= 0))
             {
-                CustomMessageBox.Show("Не у всех товаров установлено количество!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MaterialNotification.Show("Оповещение", $"Не у всех товаров установлено количество!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
                 return;
             }
             Delivery.DateOfDelivery = DateOfDelivery;
@@ -215,13 +217,13 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             }
             else
             {
-                CustomMessageBox.Show($"{response.Content}", "Произошла ошибка при добавлении!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MaterialNotification.Show("Оповещение", $"Произошла ошибка при добавлении!", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
             }
         }
         private void CreateReceiptInvoice(object obj)
         {
             GenerateReceiptInvoice(Delivery.DeliveryNumber, SelectedStorage, SelectedSupplier, Delivery.DateOfOrder, Delivery.DateOfDelivery, DeliveryItems);
-            CustomMessageBox.Show($"Приходная накладная сформирована в папке «Приходные накладные»", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+            MaterialNotification.Show("Оповещение", $"Приходная накладная сформирована в папке «Приходные накладные».", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
         }
 
         private void GenerateReceiptInvoice(string deliveryNumber, Storage storage, Supplier supplier, DateTime dateOfOrder, DateTime dateOfDelivery, IEnumerable<DeliveryItem> deliveryItems)
@@ -472,7 +474,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 DialogResult = true;
-                CustomMessageBox.Show($"Поставка с номером {Delivery.DeliveryNumber} выгружена.", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                MaterialNotification.Show("Оповещение", $"Поставка с номером {Delivery.DeliveryNumber} успешно выгружена.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
             }
         }
 
@@ -483,38 +485,39 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async void CancelDelivery(object obj)
         {
-            var result = CustomMessageBox.Show("Вы точно хотите отменить заказ?", "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (result == MessageBoxResult.Yes)
+            var result = MaterialNotification.Show("Подтверждение", $"Отменить заказ?", MaterialNotificationButton.Ok, MaterialNotificationImage.Question);
+
+            if (result == MaterialNotificationResult.Yes)
             {
                 Delivery.StatusId = 4;
                 var response = await ApiService.Instance.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     DialogResult = true;
-                    CustomMessageBox.Show($"Заказа поставщику № {Delivery.DeliveryNumber} отменён.", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MaterialNotification.Show("Оповещение", $"Заказа поставщику № {Delivery.DeliveryNumber} отменён.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
                 }
                 else
                 {
-                    CustomMessageBox.Show($"{response.Content}", "Произошла ошибка при изменении!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MaterialNotification.Show("Произошла ошибка при изменении!", $"{response.Content}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                 }
             }
         }
 
         private async void PayDelivery(object obj)
         {
-            var result = CustomMessageBox.Show("Оплатить заказ?", "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (result == MessageBoxResult.Yes)
+            var result = MaterialNotification.Show("Подтверждение", $"Оплатить заказ?", MaterialNotificationButton.Ok, MaterialNotificationImage.Question);
+            if (result == MaterialNotificationResult.Yes)
             {
                 Delivery.StatusId = 5;
                 var response = await ApiService.Instance.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     DialogResult = true;
-                    CustomMessageBox.Show($"Заказа поставщику № {Delivery.DeliveryNumber} оплачен.", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MaterialNotification.Show("Оповещение", $"Заказа поставщику № {Delivery.DeliveryNumber} оплачен.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
                 }
                 else
                 {
-                    CustomMessageBox.Show($"{response.Content}", "Произошла ошибка при изменении!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MaterialNotification.Show("Произошла ошибка при изменении!", $"{response.Content}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                 }
             }
         }

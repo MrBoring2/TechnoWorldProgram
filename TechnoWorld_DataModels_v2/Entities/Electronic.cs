@@ -16,64 +16,6 @@ namespace TechoWorld_DataModels_v2.Entities
             OrderElectronics = new HashSet<OrderElectronic>();
         }
 
-        //public string this[string columnName]
-        //{
-        //    get
-        //    {
-        //        string error = string.Empty;
-        //        switch (columnName)
-        //        {
-        //            case "Model":
-        //                if (Model.Length == 0)
-        //                {
-        //                    error = "Поле модель не заполнено.";
-        //                }
-        //                else if (Model.Length > 150)
-        //                {
-        //                    error = "Слишком длинное значение.";
-        //                }
-        //                break;
-        //            case "SalePrice":
-        //                if (SalePrice <= 0)
-        //                {
-        //                    error = "Цена продажи должна быль больше 0.";
-        //                }
-        //                break;
-        //            case "PurchasePrice":
-        //                if (PurchasePrice <= 0)
-        //                {
-        //                    error = "Цена закупки не должна быть больше 0.";
-        //                }
-        //                else if (PurchasePrice > SalePrice)
-        //                {
-        //                    error = "Цена закупки не олжна быть больше цены продажи";
-        //                }
-        //                break;
-        //            case "Color":
-        //                {
-        //                    if (Color.Length == 0)
-        //                    {
-        //                        error = "Поле цвет не заполнено.";
-        //                    }
-        //                }
-        //                break;
-        //            case "Weight":
-        //                if (Weight <= 0)
-        //                {
-        //                    error = "Вес должен быть больше 0.";
-        //                }
-        //                break;
-        //            case "ManufacturerCountry":
-        //                if (ManufacturerСountry.Length == 0)
-        //                {
-        //                    error = "Поле страна производитель не заполнено.";
-        //                }
-        //                break;
-        //        }
-        //        return error;
-        //    }
-        //}
-
         public int ElectronicsId { get; set; }
         public string Model { get; set; }
         public string Description { get; set; }

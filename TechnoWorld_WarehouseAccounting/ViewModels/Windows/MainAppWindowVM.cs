@@ -74,6 +74,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             PageNavigation.Instance.RegisterPages(ClientService.Instance.User.RoleId);
             SelectedMenuItem = MenuItems.FirstOrDefault(p => p.Title.Equals("Управление товарами"));
+            MaterialNotification.Show("Оповещение", $"Добро пожаловать, {ClientService.Instance.User.FullName}.", MaterialNotificationButton.Ok, MaterialNotificationImage.Information);
         }
         private void LoadMenu()
         {
