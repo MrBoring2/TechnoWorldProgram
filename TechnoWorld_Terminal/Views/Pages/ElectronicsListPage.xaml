@@ -115,7 +115,7 @@
                                         <ComboBox ItemsSource="{Binding SortParameters}" Margin="5" SelectedItem="{Binding SelectedSort, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Title"/>
                                         <Grid>
                                             <materialDesign:PackIcon VerticalAlignment="Center" Kind="OrderAlphabeticalAscending"/>
-                                            <CheckBox Margin="20,0,5,0" VerticalAlignment="Center" x:Name="isDesceningCheck" Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAscending}" Command="{Binding SortOrderChangedCommand}"/>
+                                            <CheckBox Margin="20,0,5,0" VerticalAlignment="Center" x:Name="isDesceningCheck" Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAcsending}" Command="{Binding SortOrderChangedCommand}"/>
                                         </Grid>
                                     </StackPanel>
                                 </Border>

@@ -1,4 +1,6 @@
-﻿namespace TechnoWorld_API.Models
+﻿using TechnoWorld_API.Models.Abstractions;
+
+namespace TechnoWorld_API.Models.Auth
 {
     public class UserLoginModel : BaseLoginModel
     {

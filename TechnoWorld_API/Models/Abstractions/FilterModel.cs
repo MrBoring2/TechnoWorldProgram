@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using TechoWorld_DataModels_v2;
 
-namespace TechnoWorld_API.Models
+namespace TechnoWorld_API.Models.Abstractions
 {
     public abstract class FilterModel<BaseEntity>
     {

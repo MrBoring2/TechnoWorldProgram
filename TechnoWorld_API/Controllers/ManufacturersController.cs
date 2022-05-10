@@ -26,24 +26,13 @@ namespace BNS_API.Controllers
         [HttpGet("All")]
         public async Task<ActionResult<IEnumerable<Manufacturer>>> GetAllManufacturers()
         {
-            return _context.Manufacturers.ToList();
+            return await _context.Manufacturers.ToListAsync();
         }
         // GET: api/Manufacturers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Manufacturer>>> GetManufacturers(int categoryId)
         {
-            return Ok(_context.Manufacturers.Where(p => p.Electronics.Any(p => p.Type.CategoryId == categoryId)).AsEnumerable());
-            //{
-            //    foreach (var electronics in item.Electronics)
-            //    {
-            //        _context.Entry(electronics).Reference(p => p.Type).Load();
-            //    }
-            //    if (item.Electronics.Any(p => p.Type.CategoryId == categoryId))
-            //    {
-            //        manufacturers.Add(item);
-            //    }
-            //}
-
+            return await _context.Manufacturers.Where(p => p.Electronics.Any(p => p.Type.CategoryId == categoryId)).ToListAsync();
         }
 
         // GET: api/Manufacturers/5

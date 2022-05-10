@@ -5,6 +5,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using TechnoWorld_API.Models;
+using TechnoWorld_API.Models.Auth;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
 

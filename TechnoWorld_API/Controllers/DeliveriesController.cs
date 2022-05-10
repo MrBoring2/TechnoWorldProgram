@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using TechnoWorld_API.Data;
 using TechnoWorld_API.Helpers;
 using TechnoWorld_API.Models;
+using TechnoWorld_API.Models.Filters;
 using TechnoWorld_API.Services;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
@@ -43,7 +44,7 @@ namespace TechnoWorld_API.Controllers
                                                 .Include(p => p.Storage)
                                                 .Include(p => p.ElectronicsToDeliveries)
                                                 .AsSplitQuery()
-                                                //.AsNoTracking()
+                                                .AsNoTracking()
                                                 .Where(filter.FilterExpression)
                                                 .AsEnumerable();
 
@@ -56,7 +57,6 @@ namespace TechnoWorld_API.Controllers
                     list = list.OrderByDescending(p => p.GetProperty(filter.SortParameter));
                 }
                 count = list.Count();
-                list = list.ToList();
                 if (filter.CurrentPage > 1)
                 {
                     list = list.Skip((filter.CurrentPage - 1) * filter.ItemsPerPage);
@@ -71,21 +71,17 @@ namespace TechnoWorld_API.Controllers
                 }
             });
 
-            return new FilteredDeliveries(list, count);
+            return Ok(new FilteredDeliveries(list, count));
         }
         // GET: api/Categories
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Delivery>>> GetDeliveries()
         {
-            var list = await _context.Deliveries.Include(p => p.Status).Include(p => p.Storage).Include(p => p.ElectronicsToDeliveries).ToListAsync();
-            foreach (var item in list)
-            {
-                foreach (var electronic in item.ElectronicsToDeliveries)
-                {
-                    await _context.Entry(electronic).Reference(p => p.Electronics).LoadAsync();
-                }
-            }
-            return list;
+            return Ok(_context.Deliveries.Include(p => p.Status)
+                                                .Include(p => p.Storage)
+                                                .Include(p => p.ElectronicsToDeliveries)
+                                                .ThenInclude(p => p.Electronics)
+                                                .AsEnumerable());
         }
 
         // GET: api/Categories/5
@@ -120,7 +116,7 @@ namespace TechnoWorld_API.Controllers
             try
             {
                 await _context.SaveChangesAsync();
-                Log.Information($"Статус заказа с номером {deliveryInDb.DeliveryNumber} изменён с '{lastStatus.Name}' на '{_context.Statuses.Find(deliveryInDb.StatusId).Name}'");
+                LogService.LodMessage($"Статус поставки с номером {deliveryInDb.DeliveryNumber} изменён с '{lastStatus.Name}' на '{_context.Statuses.Find(deliveryInDb.StatusId).Name}'", LogLevel.Info);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -134,16 +130,6 @@ namespace TechnoWorld_API.Controllers
                 }
             }
 
-            //var list = await _context.Deliveries.Include(p => p.Status).Include(p => p.Storage).Include(p => p.ElectronicsToDeliveries).ToListAsync();
-            //foreach (var item in list)
-            //{
-            //    foreach (var electronic in item.ElectronicsToDeliveries)
-            //    {
-            //        await _context.Entry(electronic).Reference(p => p.Electronics).LoadAsync();
-            //    }
-            //}
-            //await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateDeliveries", JsonConvert.SerializeObject(list, Formatting.None,
-            //    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
             await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateDeliveries", "d");
 
             return Ok();
@@ -166,22 +152,13 @@ namespace TechnoWorld_API.Controllers
             try
             {
                 await _context.SaveChangesAsync();
-
-                Log.Information($"Создан заказ на поставку с номером {delivery.DeliveryNumber}");
+                LogService.LodMessage($"Создан заказ на поставку с номером {delivery.DeliveryNumber}", LogLevel.Info);
             }
             catch (DbUpdateConcurrencyException)
             {
 
             }
 
-            //var list = await _context.Deliveries.Include(p => p.Status).Include(p => p.Storage).Include(p => p.ElectronicsToDeliveries).ToListAsync();
-            //foreach (var item in list)
-            //{
-            //    foreach (var electronic in item.ElectronicsToDeliveries)
-            //    {
-            //        await _context.Entry(electronic).Reference(p => p.Electronics).LoadAsync();
-            //    }
-            //}
             await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateDeliveries", "d");
 
             return CreatedAtAction("GetDelivery", new { id = delivery.DelivertId }, delivery);
@@ -197,21 +174,22 @@ namespace TechnoWorld_API.Controllers
 
             var storage = delivery.Storage;
             await _context.Entry(storage).Collection(p => p.ElectronicsToStorages).LoadAsync();
-            Log.Information($"Происходит выгрузка товара на склад '{storage.Name}'...");
+
+            LogService.LodMessage($"Происходит выгрузка товара на склад '{storage.Name}'...", LogLevel.Info);
             foreach (var item in delivery.ElectronicsToDeliveries)
             {
                 if (storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == item.ElectronicsId) == null)
                 {
                     await _context.Entry(item).Reference(p => p.Electronics).LoadAsync();
                     storage.ElectronicsToStorages.Add(new ElectronicsToStorage { ElectronicsId = item.ElectronicsId, StorageId = storage.StorageId, Quantity = item.Quantity });
-                    Log.Information($"Выгрузка товара {item.Electronics.Model}, текущее количество: {item.Quantity}");
+                    LogService.LodMessage($"Выгрузка товара {item.Electronics.Model}, текущее количество: {item.Quantity}", LogLevel.Info);
                 }
                 else
                 {
                     await _context.Entry(item).Reference(p => p.Electronics).LoadAsync();
                     var itemInStorage = storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == item.ElectronicsId);
                     itemInStorage.Quantity += item.Quantity;
-                    Log.Information($"Выгрузка товара {item.Electronics.Model}, текущее количество: {itemInStorage.Quantity}");
+                    LogService.LodMessage($"Выгрузка товара {item.Electronics.Model}, текущее количество: {itemInStorage.Quantity}", LogLevel.Info);
                 }
             }
 
@@ -219,11 +197,11 @@ namespace TechnoWorld_API.Controllers
             {
                 delivery.StatusId = 3;
                 await _context.SaveChangesAsync();
-                Log.Information($"Выгрузка товара завершена.");
+                LogService.LodMessage($"Выгрузка товара завершена.", LogLevel.Info);
             }
             catch (DbUpdateConcurrencyException)
-            {
-                Log.Error($"Выгрузка товара завершена.");
+            {                                  
+               LogService.LodMessage($"Произошла ошибка при выгрузке товара...", LogLevel.Error);
                 return BadRequest("Произошла ошибка при выгрузке товара...");
             }
 

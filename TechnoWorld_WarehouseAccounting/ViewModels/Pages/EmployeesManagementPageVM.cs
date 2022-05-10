@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_API.Models;
+using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
 using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
@@ -16,7 +17,7 @@ using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 {
-    internal class EmployeesManagementPageVM : ListEntitiesPageVM<Employee, EmployeesFilter>
+    public class EmployeesManagementPageVM : ListEntitiesPageVM<Employee, FilteredEmployees>
     {
         private ObservableCollection<SortParameter> sortParameters;
         private ObservableCollection<ItemWithTitle<Role>> roles;

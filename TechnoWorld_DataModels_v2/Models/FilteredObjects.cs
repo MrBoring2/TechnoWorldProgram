@@ -36,4 +36,14 @@ namespace TechoWorld_DataModels_v2
         {
         }
     }
+    public class FilteredEmployees : FilteredObjects<Employee>
+    {
+        public FilteredEmployees()
+        {
+
+        }
+        public FilteredEmployees(IEnumerable<Employee> objects, int totalFiltered) : base(objects, totalFiltered)
+        {
+        }
+    }
 }

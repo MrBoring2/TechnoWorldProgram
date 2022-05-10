@@ -1,0 +1,371 @@
+2022-05-11 00:36:53.171 +05:00 [INF] Запрос от kov (127.0.0.1:58349) по GET /api/Electronics/Filter ответил 200 за 469.3392 мс
+2022-05-11 00:36:54.151 +05:00 [INF] Запрос от kov (127.0.0.1:58349) по GET /api/Electronics/Filter ответил 200 за 63.5172 мс
+2022-05-11 00:36:54.711 +05:00 [INF] Запрос от kov (127.0.0.1:58349) по GET /api/Electronics/Filter ответил 200 за 65.2471 мс
+2022-05-11 00:36:55.913 +05:00 [INF] kov отключен от системы
+2022-05-11 00:36:55.919 +05:00 [INF] Запрос от kov (127.0.0.1:56033) по GET /technoWorldHub ответил 101 за 2327802.0896 мс
+2022-05-11 00:37:39.094 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 00:37:39.124 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 00:37:39.125 +05:00 [INF] Hosting environment: Development
+2022-05-11 00:37:39.126 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 00:37:51.692 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 00:37:51.728 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58398) по POST /userToken ответил 200 за 1434.2925 мс
+2022-05-11 00:37:51.980 +05:00 [INF] Запрос от kov (127.0.0.1:58399) по POST /technoWorldHub/negotiate ответил 200 за 49.4707 мс
+2022-05-11 00:37:52.107 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 00:37:52.322 +05:00 [INF] Запрос от kov (127.0.0.1:58398) по GET /api/Categories ответил 200 за 71.6059 мс
+2022-05-11 00:37:52.465 +05:00 [INF] Запрос от kov (127.0.0.1:58398) по GET /api/ElectrnicsTypes/All ответил 200 за 37.7501 мс
+2022-05-11 00:37:52.951 +05:00 [INF] Запрос от kov (127.0.0.1:58398) по GET /api/Electronics/Filter ответил 200 за 379.9705 мс
+2022-05-11 00:38:03.457 +05:00 [INF] Запрос от kov (127.0.0.1:58398) по GET /api/Electronics/Filter ответил 200 за 110.0928 мс
+2022-05-11 00:38:05.128 +05:00 [INF] Запрос от kov (127.0.0.1:58398) по GET /api/Electronics/Filter ответил 200 за 147.7451 мс
+2022-05-11 00:38:05.132 +05:00 [INF] Запрос от kov (127.0.0.1:58410) по GET /api/Electronics/Filter ответил 200 за 150.9439 мс
+2022-05-11 00:38:38.717 +05:00 [INF] Запрос от kov (127.0.0.1:58398) по GET /api/Electronics/Filter ответил 200 за 113.4103 мс
+2022-05-11 00:38:39.897 +05:00 [INF] Запрос от kov (127.0.0.1:58398) по GET /api/Electronics/Filter ответил 200 за 149.1656 мс
+2022-05-11 00:38:39.899 +05:00 [INF] Запрос от kov (127.0.0.1:58410) по GET /api/Electronics/Filter ответил 200 за 150.1238 мс
+2022-05-11 00:38:52.682 +05:00 [INF] Запрос от kov (127.0.0.1:58410) по GET /api/Electronics/Filter ответил 200 за 8114.8124 мс
+2022-05-11 00:38:52.686 +05:00 [INF] Запрос от kov (127.0.0.1:58439) по GET /api/Electronics/Filter ответил 200 за 6883.1663 мс
+2022-05-11 00:38:52.687 +05:00 [INF] Запрос от kov (127.0.0.1:58398) по GET /api/Electronics/Filter ответил 200 за 8870.9358 мс
+2022-05-11 00:38:52.692 +05:00 [INF] Запрос от kov (127.0.0.1:58441) по GET /api/Electronics/Filter ответил 200 за 4619.7249 мс
+2022-05-11 00:38:52.763 +05:00 [INF] Запрос от kov (127.0.0.1:58442) по GET /api/Electronics/Filter ответил 200 за 3943.9984 мс
+2022-05-11 00:39:02.144 +05:00 [INF] Запрос от kov (127.0.0.1:58398) по GET /api/Electronics/Filter ответил 200 за 74.1207 мс
+2022-05-11 00:39:03.429 +05:00 [INF] Запрос от kov (127.0.0.1:58398) по GET /api/Electronics/Filter ответил 200 за 125.8595 мс
+2022-05-11 00:39:25.019 +05:00 [INF] kov отключен от системы
+2022-05-11 00:39:25.023 +05:00 [INF] Запрос от kov (127.0.0.1:58400) по GET /technoWorldHub ответил 101 за 92983.1886 мс
+2022-05-11 00:40:09.739 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 00:40:09.769 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 00:40:09.770 +05:00 [INF] Hosting environment: Development
+2022-05-11 00:40:09.771 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 00:40:22.000 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 00:40:22.030 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 00:40:22.030 +05:00 [INF] Hosting environment: Development
+2022-05-11 00:40:22.031 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 00:40:41.000 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 00:40:41.030 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 00:40:41.031 +05:00 [INF] Hosting environment: Development
+2022-05-11 00:40:41.032 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 00:40:54.499 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 00:40:54.530 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 00:40:54.530 +05:00 [INF] Hosting environment: Development
+2022-05-11 00:40:54.532 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 00:41:41.755 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 00:41:41.786 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 00:41:41.787 +05:00 [INF] Hosting environment: Development
+2022-05-11 00:41:41.787 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 00:58:04.467 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 00:58:04.498 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 00:58:04.499 +05:00 [INF] Hosting environment: Development
+2022-05-11 00:58:04.500 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 00:58:19.273 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 00:58:19.311 +05:00 [INF] Запрос от Не установлено (127.0.0.1:59903) по POST /userToken ответил 200 за 1553.3514 мс
+2022-05-11 00:58:19.545 +05:00 [INF] Запрос от kov (127.0.0.1:59907) по POST /technoWorldHub/negotiate ответил 200 за 50.2006 мс
+2022-05-11 00:58:19.671 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 00:58:19.891 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Categories ответил 200 за 62.9211 мс
+2022-05-11 00:58:20.052 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/ElectrnicsTypes/All ответил 200 за 36.6519 мс
+2022-05-11 00:58:20.546 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 395.5990 мс
+2022-05-11 00:58:23.989 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 63.5057 мс
+2022-05-11 00:58:24.487 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 55.8808 мс
+2022-05-11 00:58:27.165 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 63.8651 мс
+2022-05-11 00:58:27.660 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 56.2084 мс
+2022-05-11 00:58:28.208 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 65.3523 мс
+2022-05-11 00:58:29.189 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 68.9565 мс
+2022-05-11 00:58:29.579 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 59.7477 мс
+2022-05-11 00:58:30.445 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 56.4133 мс
+2022-05-11 00:58:32.139 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 63.3176 мс
+2022-05-11 00:58:32.819 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 60.8789 мс
+2022-05-11 00:58:33.306 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 58.6918 мс
+2022-05-11 00:58:34.110 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 124.1814 мс
+2022-05-11 00:58:48.036 +05:00 [INF] Запрос от kov (127.0.0.1:59921) по GET /api/Electronics/Filter ответил 200 за 10473.7415 мс
+2022-05-11 00:58:48.040 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 13111.2124 мс
+2022-05-11 00:58:48.049 +05:00 [INF] Запрос от kov (127.0.0.1:59918) по GET /api/Electronics/Filter ответил 200 за 12413.5141 мс
+2022-05-11 00:58:48.053 +05:00 [INF] Запрос от kov (127.0.0.1:59920) по GET /api/Electronics/Filter ответил 200 за 11190.1091 мс
+2022-05-11 00:58:52.758 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 63.9563 мс
+2022-05-11 00:58:53.680 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 53.9771 мс
+2022-05-11 00:58:54.412 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 51.9837 мс
+2022-05-11 00:58:54.940 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 56.4970 мс
+2022-05-11 00:58:55.548 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 60.4810 мс
+2022-05-11 00:58:56.288 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 49.1757 мс
+2022-05-11 00:58:56.911 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 55.1108 мс
+2022-05-11 00:58:57.518 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 66.4357 мс
+2022-05-11 00:58:58.335 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 53.6177 мс
+2022-05-11 00:58:59.422 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 49.6008 мс
+2022-05-11 00:59:20.445 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 48.0970 мс
+2022-05-11 00:59:20.539 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 71.1220 мс
+2022-05-11 00:59:28.003 +05:00 [INF] Запрос от kov (127.0.0.1:59918) по GET /api/Electronics/Filter ответил 200 за 3578.0548 мс
+2022-05-11 00:59:28.007 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 6284.1064 мс
+2022-05-11 00:59:29.719 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 43.1474 мс
+2022-05-11 00:59:30.664 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 66.1095 мс
+2022-05-11 00:59:31.713 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 255.4951 мс
+2022-05-11 00:59:33.769 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 94.9099 мс
+2022-05-11 00:59:34.172 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 60.0087 мс
+2022-05-11 00:59:36.050 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 126.1777 мс
+2022-05-11 00:59:39.867 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 191.7982 мс
+2022-05-11 00:59:48.062 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 6978.2517 мс
+2022-05-11 00:59:48.105 +05:00 [INF] Запрос от kov (127.0.0.1:59918) по GET /api/Electronics/Filter ответил 200 за 5962.4930 мс
+2022-05-11 00:59:49.687 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 42.7641 мс
+2022-05-11 00:59:50.270 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 49.2765 мс
+2022-05-11 00:59:51.517 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 45.7900 мс
+2022-05-11 00:59:52.679 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 127.7602 мс
+2022-05-11 00:59:54.258 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 99.1598 мс
+2022-05-11 00:59:55.816 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 123.6865 мс
+2022-05-11 00:59:57.279 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 89.9268 мс
+2022-05-11 00:59:58.441 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 125.6486 мс
+2022-05-11 00:59:59.215 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 41.8830 мс
+2022-05-11 01:00:00.565 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 125.2410 мс
+2022-05-11 01:00:01.480 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 40.5530 мс
+2022-05-11 01:00:02.489 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 46.6892 мс
+2022-05-11 01:00:03.399 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 159.5753 мс
+2022-05-11 01:00:04.472 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 46.9434 мс
+2022-05-11 01:00:06.970 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 44.9267 мс
+2022-05-11 01:00:08.219 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 42.7246 мс
+2022-05-11 01:00:08.721 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 47.4099 мс
+2022-05-11 01:00:09.477 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 130.6837 мс
+2022-05-11 01:00:11.013 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 104.6248 мс
+2022-05-11 01:00:12.355 +05:00 [INF] Запрос от kov (127.0.0.1:59903) по GET /api/Electronics/Filter ответил 200 за 133.1701 мс
+2022-05-11 01:00:45.091 +05:00 [INF] kov отключен от системы
+2022-05-11 01:00:45.099 +05:00 [INF] Запрос от kov (127.0.0.1:59908) по GET /technoWorldHub ответил 101 за 145494.3987 мс
+2022-05-11 01:00:57.785 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:00:57.870 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:00:57.871 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:00:57.881 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:01:03.154 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 01:01:03.191 +05:00 [INF] Запрос от Не установлено (127.0.0.1:59999) по POST /userToken ответил 200 за 1844.6110 мс
+2022-05-11 01:01:03.419 +05:00 [INF] Запрос от kov (127.0.0.1:60000) по POST /technoWorldHub/negotiate ответил 200 за 47.6160 мс
+2022-05-11 01:01:03.533 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 01:01:03.726 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Categories ответил 200 за 62.8622 мс
+2022-05-11 01:01:03.805 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/ElectrnicsTypes/All ответил 200 за 35.9579 мс
+2022-05-11 01:01:04.396 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 493.7161 мс
+2022-05-11 01:01:07.834 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 62.9111 мс
+2022-05-11 01:01:08.431 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 60.6196 мс
+2022-05-11 01:01:09.487 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 62.7915 мс
+2022-05-11 01:01:10.175 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 65.6935 мс
+2022-05-11 01:01:10.636 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 59.7180 мс
+2022-05-11 01:01:11.433 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 59.5490 мс
+2022-05-11 01:01:12.065 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 60.2190 мс
+2022-05-11 01:01:12.547 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 54.6079 мс
+2022-05-11 01:01:13.046 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 74.2044 мс
+2022-05-11 01:01:14.868 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 57.6929 мс
+2022-05-11 01:01:15.708 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 126.1048 мс
+2022-05-11 01:01:16.660 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 60.5472 мс
+2022-05-11 01:01:17.269 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 53.7876 мс
+2022-05-11 01:01:18.229 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 54.9581 мс
+2022-05-11 01:01:18.805 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 71.8384 мс
+2022-05-11 01:01:19.298 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 58.2425 мс
+2022-05-11 01:01:19.816 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 62.0554 мс
+2022-05-11 01:01:20.269 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 51.6958 мс
+2022-05-11 01:01:20.726 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 53.6963 мс
+2022-05-11 01:01:22.731 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 69.6809 мс
+2022-05-11 01:01:23.251 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 58.5804 мс
+2022-05-11 01:01:23.752 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 50.8711 мс
+2022-05-11 01:01:24.674 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 58.7311 мс
+2022-05-11 01:01:25.188 +05:00 [INF] Запрос от kov (127.0.0.1:59999) по GET /api/Electronics/Filter ответил 200 за 54.7638 мс
+2022-05-11 01:01:26.486 +05:00 [INF] kov отключен от системы
+2022-05-11 01:01:26.491 +05:00 [INF] Запрос от kov (127.0.0.1:60001) по GET /technoWorldHub ответил 101 за 23021.3479 мс
+2022-05-11 01:01:30.370 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:01:30.403 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:01:30.405 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:01:30.405 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:01:40.761 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:01:40.827 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:01:40.828 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:01:40.829 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:01:51.693 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:01:51.724 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:01:51.724 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:01:51.725 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:02:52.376 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:02:52.406 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:02:52.406 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:02:52.408 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:02:57.083 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:02:57.115 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:02:57.116 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:02:57.116 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:03:29.426 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:03:29.458 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:03:29.459 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:03:29.460 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:03:34.108 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:03:34.139 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:03:34.140 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:03:34.141 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:03:54.555 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 01:03:54.592 +05:00 [INF] Запрос от Не установлено (127.0.0.1:60181) по POST /userToken ответил 200 за 1504.1440 мс
+2022-05-11 01:03:54.786 +05:00 [INF] Запрос от kov (127.0.0.1:60182) по POST /technoWorldHub/negotiate ответил 200 за 47.5179 мс
+2022-05-11 01:03:54.898 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 01:03:55.101 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Categories ответил 200 за 76.2056 мс
+2022-05-11 01:03:55.175 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/ElectrnicsTypes/All ответил 200 за 36.8367 мс
+2022-05-11 01:03:55.649 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 385.3333 мс
+2022-05-11 01:03:57.223 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 72.5058 мс
+2022-05-11 01:03:57.756 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 53.2249 мс
+2022-05-11 01:03:58.699 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 127.2471 мс
+2022-05-11 01:03:59.349 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 68.0267 мс
+2022-05-11 01:03:59.789 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 59.4216 мс
+2022-05-11 01:04:00.162 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 48.9752 мс
+2022-05-11 01:04:00.775 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 63.4233 мс
+2022-05-11 01:04:01.223 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 145.8047 мс
+2022-05-11 01:04:01.881 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 57.7696 мс
+2022-05-11 01:04:02.508 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 46.5089 мс
+2022-05-11 01:04:03.537 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 72.1125 мс
+2022-05-11 01:04:03.892 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 52.8587 мс
+2022-05-11 01:04:04.325 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 131.5236 мс
+2022-05-11 01:04:04.759 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 58.2645 мс
+2022-05-11 01:04:05.089 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 60.1268 мс
+2022-05-11 01:04:13.105 +05:00 [INF] Запрос от kov (127.0.0.1:60187) по GET /api/Electronics/Filter ответил 200 за 6559.8573 мс
+2022-05-11 01:04:13.109 +05:00 [INF] Запрос от kov (127.0.0.1:60189) по GET /api/Electronics/Filter ответил 200 за 5538.9274 мс
+2022-05-11 01:04:13.190 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 7451.5436 мс
+2022-05-11 01:04:13.191 +05:00 [INF] Запрос от kov (127.0.0.1:60188) по GET /api/Electronics/Filter ответил 200 за 6148.2435 мс
+2022-05-11 01:04:15.275 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 59.4048 мс
+2022-05-11 01:04:15.834 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 47.9936 мс
+2022-05-11 01:04:16.355 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 67.8669 мс
+2022-05-11 01:04:16.855 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 63.6959 мс
+2022-05-11 01:04:17.314 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 60.3939 мс
+2022-05-11 01:04:17.657 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 55.5218 мс
+2022-05-11 01:04:19.863 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 67.4542 мс
+2022-05-11 01:04:20.356 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 52.3611 мс
+2022-05-11 01:04:20.938 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 57.4058 мс
+2022-05-11 01:04:21.616 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 58.4221 мс
+2022-05-11 01:04:22.184 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 61.5521 мс
+2022-05-11 01:04:22.542 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 52.1103 мс
+2022-05-11 01:04:23.596 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 58.4585 мс
+2022-05-11 01:04:24.300 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 53.2673 мс
+2022-05-11 01:04:25.124 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 56.9452 мс
+2022-05-11 01:04:25.585 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 62.3359 мс
+2022-05-11 01:04:26.679 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 58.2226 мс
+2022-05-11 01:04:27.165 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 64.9989 мс
+2022-05-11 01:04:27.939 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 53.1092 мс
+2022-05-11 01:04:28.368 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 61.4481 мс
+2022-05-11 01:04:28.751 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 57.1715 мс
+2022-05-11 01:04:29.118 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 49.4253 мс
+2022-05-11 01:04:29.460 +05:00 [INF] Запрос от kov (127.0.0.1:60181) по GET /api/Electronics/Filter ответил 200 за 46.9097 мс
+2022-05-11 01:04:30.534 +05:00 [INF] kov отключен от системы
+2022-05-11 01:04:30.539 +05:00 [INF] Запрос от kov (127.0.0.1:60183) по GET /technoWorldHub ответил 101 за 35704.3331 мс
+2022-05-11 01:06:16.527 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 01:06:16.528 +05:00 [INF] Запрос от Не установлено (127.0.0.1:60257) по POST /userToken ответил 200 за 6.4201 мс
+2022-05-11 01:06:16.678 +05:00 [INF] Запрос от kov (127.0.0.1:60258) по POST /technoWorldHub/negotiate ответил 200 за 0.3001 мс
+2022-05-11 01:06:16.775 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 01:06:16.907 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Categories ответил 200 за 7.2874 мс
+2022-05-11 01:06:17.032 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/ElectrnicsTypes/All ответил 200 за 7.5334 мс
+2022-05-11 01:06:17.305 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 147.3300 мс
+2022-05-11 01:06:33.162 +05:00 [INF] Запрос от kov (127.0.0.1:60262) по GET /api/Electronics/Filter ответил 200 за 12230.0751 мс
+2022-05-11 01:06:33.163 +05:00 [INF] Запрос от kov (127.0.0.1:60268) по GET /api/Electronics/Filter ответил 200 за 4419.2008 мс
+2022-05-11 01:06:33.167 +05:00 [INF] Запрос от kov (127.0.0.1:60261) по GET /api/Electronics/Filter ответил 200 за 12863.7421 мс
+2022-05-11 01:06:33.184 +05:00 [INF] Запрос от kov (127.0.0.1:60263) по GET /api/Electronics/Filter ответил 200 за 11855.0317 мс
+2022-05-11 01:06:33.186 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 13498.1148 мс
+2022-05-11 01:06:33.191 +05:00 [INF] Запрос от kov (127.0.0.1:60267) по GET /api/Electronics/Filter ответил 200 за 5175.8649 мс
+2022-05-11 01:06:33.198 +05:00 [INF] Запрос от kov (127.0.0.1:60266) по GET /api/Electronics/Filter ответил 200 за 5779.9528 мс
+2022-05-11 01:06:34.582 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 57.9405 мс
+2022-05-11 01:06:35.232 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 52.0169 мс
+2022-05-11 01:06:35.819 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 66.1213 мс
+2022-05-11 01:06:36.774 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 128.2862 мс
+2022-05-11 01:06:37.405 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 68.4308 мс
+2022-05-11 01:06:38.387 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 53.6822 мс
+2022-05-11 01:06:38.994 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 46.1571 мс
+2022-05-11 01:06:39.559 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 51.1646 мс
+2022-05-11 01:06:42.476 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 57.4772 мс
+2022-05-11 01:06:43.096 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 52.1809 мс
+2022-05-11 01:06:43.701 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 47.4923 мс
+2022-05-11 01:06:45.800 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 63.0309 мс
+2022-05-11 01:06:46.350 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 58.4129 мс
+2022-05-11 01:06:48.293 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 49.9640 мс
+2022-05-11 01:06:48.939 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 64.5429 мс
+2022-05-11 01:06:49.421 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 55.7234 мс
+2022-05-11 01:06:49.969 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 65.8918 мс
+2022-05-11 01:06:50.578 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 52.3420 мс
+2022-05-11 01:06:51.013 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 46.4132 мс
+2022-05-11 01:06:51.832 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 54.2106 мс
+2022-05-11 01:06:52.340 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 46.9431 мс
+2022-05-11 01:06:52.716 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 51.6170 мс
+2022-05-11 01:06:53.130 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 65.6539 мс
+2022-05-11 01:06:53.630 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 54.5741 мс
+2022-05-11 01:06:54.034 +05:00 [INF] Запрос от kov (127.0.0.1:60257) по GET /api/Electronics/Filter ответил 200 за 56.2178 мс
+2022-05-11 01:06:55.038 +05:00 [INF] kov отключен от системы
+2022-05-11 01:06:55.040 +05:00 [INF] Запрос от kov (127.0.0.1:60259) по GET /technoWorldHub ответил 101 за 38310.3181 мс
+2022-05-11 01:06:59.296 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:06:59.328 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:06:59.329 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:06:59.329 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:12:48.150 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:12:48.181 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:12:48.182 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:12:48.183 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:13:04.975 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:13:05.006 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:13:05.007 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:13:05.008 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:13:49.691 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58845) по POST /terminalToken ответил 200 за 325.7932 мс
+2022-05-11 01:13:50.065 +05:00 [INF] Запрос от terminal_766b00ba-6724-4b1f-a253-f8ed95a476ce (127.0.0.1:58846) по POST /technoWorldHub/negotiate ответил 200 за 13.3646 мс
+2022-05-11 01:13:50.197 +05:00 [INF] Подключенин терминал: terminal_766b00ba-6724-4b1f-a253-f8ed95a476ce
+2022-05-11 01:13:51.795 +05:00 [INF] Запрос от terminal_766b00ba-6724-4b1f-a253-f8ed95a476ce (127.0.0.1:58845) по GET /api/Categories ответил 200 за 2076.8851 мс
+2022-05-11 01:13:53.307 +05:00 [ERR] Запрос от terminal_766b00ba-6724-4b1f-a253-f8ed95a476ce (127.0.0.1:58845) по GET /api/Electronics/TerminalFilter ответил 500 за 355.1281 мс
+System.InvalidOperationException: The navigation 'ElectronicsToStorage.Storage' cannot be loaded because the entity is not being tracked. Navigations can only be loaded for tracked entities.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Load(INavigation navigation, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.ReferenceEntry.Load()
+   at BNS_API.Controllers.ElectronicsController.<>c__DisplayClass4_0.<GetElectronicsForTerminalByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\ElectronicsController.cs:line 88
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at BNS_API.Controllers.ElectronicsController.GetElectronicsForTerminalByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\ElectronicsController.cs:line 56
+   at lambda_method76(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-11 01:13:53.344 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The navigation 'ElectronicsToStorage.Storage' cannot be loaded because the entity is not being tracked. Navigations can only be loaded for tracked entities.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Load(INavigation navigation, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.ReferenceEntry.Load()
+   at BNS_API.Controllers.ElectronicsController.<>c__DisplayClass4_0.<GetElectronicsForTerminalByFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\ElectronicsController.cs:line 88
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at BNS_API.Controllers.ElectronicsController.GetElectronicsForTerminalByFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\ElectronicsController.cs:line 56
+   at lambda_method76(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-11 01:13:53.427 +05:00 [INF] Запрос от terminal_766b00ba-6724-4b1f-a253-f8ed95a476ce (127.0.0.1:58845) по GET /api/Manufacturers ответил 200 за 56.6179 мс
+2022-05-11 01:13:53.457 +05:00 [INF] Запрос от terminal_766b00ba-6724-4b1f-a253-f8ed95a476ce (127.0.0.1:58845) по GET /api/ElectrnicsTypes ответил 200 за 14.9853 мс
+2022-05-11 01:14:28.561 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:14:28.594 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:14:28.595 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:14:28.595 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:14:31.402 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 01:14:31.436 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 01:14:31.437 +05:00 [INF] Hosting environment: Development
+2022-05-11 01:14:31.438 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 01:14:35.706 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58890) по GET /api/Categories ответил 401 за 6.2276 мс
+2022-05-11 01:14:35.706 +05:00 [INF] Запрос от Не установлено (127.0.0.1:58889) по POST /terminalToken ответил 200 за 300.1231 мс
+2022-05-11 01:14:36.032 +05:00 [INF] Запрос от terminal_fb319e36-7add-481f-80c4-d7d4f689e076 (127.0.0.1:58892) по POST /technoWorldHub/negotiate ответил 200 за 49.9714 мс
+2022-05-11 01:14:36.143 +05:00 [INF] Подключенин терминал: terminal_fb319e36-7add-481f-80c4-d7d4f689e076

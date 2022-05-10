@@ -14,6 +14,7 @@ using Newtonsoft.Json;
 using Serilog;
 using TechnoWorld_API.Models;
 using TechoWorld_DataModels_v2.Entities;
+using TechnoWorld_API.Models.Filters;
 
 namespace TechnoWorld_API.Controllers
 {
@@ -41,17 +42,14 @@ namespace TechnoWorld_API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Order>> GetOrder(int id)
         {
-            var order = await _context.Orders.FindAsync(id);
+            var order = await _context.Orders.Include(p => p.OrderElectronics)
+                                             .ThenInclude(p => p.Electronics)
+                                             .AsQueryable()
+                                             .FirstOrDefaultAsync(p => p.OrderId == id);
 
             if (order == null)
             {
                 return NotFound();
-            }
-            await _context.Entry(order).Collection(p => p.OrderElectronics).LoadAsync();
-            foreach (var item in order.OrderElectronics)
-            {
-                await _context.Entry(item).Reference(p => p.Electronics).LoadAsync();
-                // _context.Entry(item.Electronics).Reference(p => p.Manufacturer).Load();
             }
             return Ok(order);
         }
@@ -66,7 +64,9 @@ namespace TechnoWorld_API.Controllers
 
                 list = _context.Orders.Include(p => p.Status)
                                       .Include(p => p.OrderElectronics)
+                                      .ThenInclude(p => p.Electronics)
                                       .AsSplitQuery()
+                                      .AsNoTracking()
                                       .Where(filter.FilterExpression)
                                       .AsEnumerable();
 
@@ -85,15 +85,6 @@ namespace TechnoWorld_API.Controllers
                     list = list.Skip((filter.CurrentPage - 1) * filter.ItemsPerPage);
                 }
                 list = list.Take(filter.ItemsPerPage);
-
-                foreach (var item in list)
-                {
-                    foreach (var electronicInOrder in item.OrderElectronics)
-                    {
-                        _context.Entry(electronicInOrder).Reference(p => p.Electronics).Load();
-                    }
-                }
-
             });
 
             return new FilteredOrders(list, count);
@@ -101,26 +92,23 @@ namespace TechnoWorld_API.Controllers
         [HttpPut("Distribute/{orderId}")]
         public async Task<ActionResult> DistributeOrder(int orderId, [FromBody] int storageId)
         {
-            var order = await _context.Orders.Include(p => p.OrderElectronics).FirstOrDefaultAsync(p => p.OrderId == orderId);
+            var order = await _context.Orders.Include(p => p.OrderElectronics).ThenInclude(p => p.Electronics).FirstOrDefaultAsync(p => p.OrderId == orderId);
             var storage = await _context.Storages.Include(p => p.ElectronicsToStorages).FirstOrDefaultAsync(p => p.StorageId == storageId);
-            foreach (var item in order.OrderElectronics)
-            {
-                _context.Entry(item).Reference(p => p.Electronics).Load();
-            }
-            Log.Information($"Начинается выдача заказа {order.OrderNumber}...");
+
+            LogService.LodMessage($"Начинается выдача заказа {order.OrderNumber}...", LogLevel.Info);
             if (order != null && storage != null)
             {
                 foreach (var electronic in order.OrderElectronics)
                 {
                     if (storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == electronic.ElectronicsId) == null)
                     {
-                        Log.Information($"Не хватает товара {electronic.Electronics.Model}на складе");
+                        LogService.LodMessage($"Не хватает товара {electronic.Electronics.Model}на складе", LogLevel.Info);
                         return BadRequest($"Не хватает товара {electronic.Electronics.Model} на складе");
                     }
                     else
                     {
                         storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == electronic.ElectronicsId).Quantity -= electronic.Count;
-                        Log.Information($"Выдан товар {electronic.Electronics.Model} в количествуе {electronic.Count}");
+                        LogService.LodMessage($"Выдан товар {electronic.Electronics.Model} в количествуе {electronic.Count}", LogLevel.Info);
                     }
                 }
             }
@@ -128,7 +116,7 @@ namespace TechnoWorld_API.Controllers
             {
                 order.StatusId = 3;
                 _context.SaveChanges();
-                Log.Information($"Выдача заказа {order.OrderNumber} закончена.");
+                LogService.LodMessage($"Выдача заказа {order.OrderNumber} закончена.", LogLevel.Info);
                 await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", "о");
                 await _hubContext.Clients.Group(SignalRGroups.cash_group).SendAsync("UpdateOrders", "о");
                 await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateOrders", "о");
@@ -158,8 +146,7 @@ namespace TechnoWorld_API.Controllers
             var lastStatus = orderInDb.Status;
             orderInDb.StatusId = order.StatusId;
             orderInDb.EmployeeId = order.EmployeeId;
-
-            Log.Information($"Статус заказа с номером {order.OrderNumber} изменён с '{lastStatus.Name}' на '{_context.Statuses.Find(order.StatusId).Name}'");
+            LogService.LodMessage($"Статус заказа с номером {order.OrderNumber} изменён с '{lastStatus.Name}' на '{_context.Statuses.Find(order.StatusId).Name}'", LogLevel.Info);
             try
             {
                 await _context.SaveChangesAsync();
@@ -177,9 +164,7 @@ namespace TechnoWorld_API.Controllers
             }
             try
             {
-                var list = await _context.Orders.Include(p => p.Status).ToListAsync();
-                await _hubContext.Clients.Group(SignalRGroups.cash_group).SendAsync("UpdateOrders", JsonConvert.SerializeObject(list, Formatting.None,
-                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+                await _hubContext.Clients.Group(SignalRGroups.cash_group).SendAsync("UpdateOrders", "d");
             }
             catch (Exception ex)
             {
@@ -198,13 +183,11 @@ namespace TechnoWorld_API.Controllers
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
 
-            Log.Information($"Создан новый заказ с номером {order.OrderNumber}");
+            LogService.LodMessage($"Создан новый заказ с номером {order.OrderNumber}", LogLevel.Info);
 
             try
             {
-                var list = await _context.Orders.Include(p => p.Status).ToListAsync();
-                await _hubContext.Clients.Group(SignalRGroups.cash_group).SendAsync("UpdateOrders", JsonConvert.SerializeObject(list, Formatting.None,
-                    new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+                await _hubContext.Clients.Group(SignalRGroups.cash_group).SendAsync("UpdateOrders", "d");
             }
             catch (Exception ex)
             {

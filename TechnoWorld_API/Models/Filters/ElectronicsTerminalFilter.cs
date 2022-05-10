@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
 
-namespace TechnoWorld_API.Models
+namespace TechnoWorld_API.Models.Filters
 {
     public class ElectronicsTerminalFilter : ElectronicsFilter
     {
@@ -72,7 +72,7 @@ namespace TechnoWorld_API.Models
                     if (MinPrice == 0 && MaxPrice == 0)
                     {
                         res5 = true;
-                    }                                                      
+                    }
                     else
                     {
                         res5 = p.SalePrice >= MinPrice && p.SalePrice <= MaxPrice;

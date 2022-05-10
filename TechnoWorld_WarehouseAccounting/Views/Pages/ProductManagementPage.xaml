@@ -44,7 +44,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBox Margin="0,0,5,0" Grid.Row="0" Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Введите название модели..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Arrow"/>
+            <TextBox Margin="0,0,5,0" Grid.Row="0" Text="{Binding Search, Delay=250, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Введите название модели..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Arrow"/>
             <StackPanel Grid.Row="1" Orientation="Horizontal">
                 <ComboBox Width="250" ItemsSource="{Binding Categories}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedCategory}" materialDesign:HintAssist.Hint="Категория" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
                 <ComboBox Width="250" Margin="5,0,0,0" ItemsSource="{Binding ElectronicsTypes}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedType}" IsEnabled="{Binding IsCategorySelected}" materialDesign:HintAssist.Hint="Тип" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>

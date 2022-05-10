@@ -1,5 +1,7 @@
 ﻿using System.Security.Claims;
 using TechnoWorld_API.Models;
+using TechnoWorld_API.Models.ApiResponse;
+using TechnoWorld_API.Models.Auth;
 using TechnoWorld_API.Services;
 
 namespace TechnoWorld_API.Validation

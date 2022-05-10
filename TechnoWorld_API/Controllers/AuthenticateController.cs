@@ -21,6 +21,7 @@ using TechnoWorld_API.Validation;
 using Microsoft.AspNetCore.Identity;
 using TechoWorld_DataModels_v2.Entities;
 using TechoWorld_DataModels_v2.Models;
+using TechnoWorld_API.Models.Auth;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

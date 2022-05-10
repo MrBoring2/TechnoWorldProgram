@@ -1,4 +1,4 @@
-﻿namespace TechnoWorld_API.Models
+﻿namespace TechnoWorld_API.Models.Auth
 {
     public class User
     {
