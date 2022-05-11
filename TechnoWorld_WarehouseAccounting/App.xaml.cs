@@ -21,16 +21,14 @@ namespace TechnoWorld_WarehouseAccounting
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            RegisterWindows();
-
-            var loginWindow = new LoginWindowVM();
-            WindowNavigation.Instance.OpenWindow(loginWindow);
-
             if (!Directory.Exists("Приходные накладные"))
             {
                 Directory.CreateDirectory("Приходные накладные");
             }
 
+            RegisterWindows();
+            var loginWindow = new LoginWindowVM();
+            WindowNavigation.Instance.OpenWindow(loginWindow);
             ApiService.Instance.GetHubConnection.Closed += HubConnection_Closed;
         }
         private Task HubConnection_Closed(Exception arg)

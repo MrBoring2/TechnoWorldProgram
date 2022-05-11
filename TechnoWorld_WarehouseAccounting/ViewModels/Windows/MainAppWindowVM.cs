@@ -58,7 +58,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     OnPropertyChanged();
                     if (selectedOptionsMenuItem.Title == "Выход")
                     {
-                        ClientService.Instance.Logout();
+                        ApiService.Instance.ShutDownService();
+                        ApiService.Instance.RemoveRestClient();
                         WindowNavigation.Instance.OpenAndHideWindow(this, new LoginWindowVM());
                     }
                 }
@@ -75,7 +76,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             PageNavigation.Instance.RegisterPages(ClientService.Instance.User.RoleId);
             SelectedMenuItem = MenuItems.FirstOrDefault(p => p.Title.Equals("Управление товарами"));
             MaterialNotification.Show("Оповещение", $"Авторизация прошла успешно", MaterialNotificationButton.Ok, MaterialNotificationImage.Information);
-            //Добро пожаловать, {ClientService.Instance.User.FullName}
         }
         private void LoadMenu()
         {

@@ -8,14 +8,27 @@
         mc:Ignorable="d" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:mahaaps="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" RenderOptions.BitmapScalingMode="HighQuality" Icon="/Resources/Images/logo1.ico"
-        Title="ТЕХНО МИР | Касса" Height="680" Width="1200" MinWidth="1100" MinHeight="600" BorderBackgroundBrush="Orange">
+        Title="ТЕХНО МИР: Касса | Окно кассы" Height="680" Width="1200" MinWidth="1120" MinHeight="600" BorderBackgroundBrush="Orange">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="Loaded">
                 <i:InvokeCommandAction Command="{Binding WindowLoadedCommand}"/>
             </i:EventTrigger>
         </i:Interaction.Triggers>
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
-        <Button HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10" Style="{StaticResource btn}" Width="200" FontSize="18" Content="Выход" Command="{Binding ExitCommand}" Cursor="Hand"/>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.RowSpan="2"/>
+        <Button Grid.Row="2" ToolTipService.Placement="Top" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0" Background="Transparent" Width="50" Height="50" BorderThickness="0" FontSize="18" Command="{Binding ExitCommand}" Cursor="Hand" Grid.RowSpan="2">
+            <Button.Content>
+                <materialDesign:PackIcon Kind="ExitToApp" Foreground="Orange" Width="50" Height="50" Margin="-20"/>
+            </Button.Content>
+            <Button.ToolTip>
+                <ToolTip Style="{StaticResource BaseToolit}">
+                    <TextBlock Text="Выход"/>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
     </Grid>
 </mde:MaterialWindow>

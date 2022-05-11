@@ -13,7 +13,7 @@
        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
-      Title="Заказ поставки" Background="White" Width="950" MinWidth="950" MinHeight="700" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" Height="700">
+      Title="ТЕХНО МИР: Управление предприятием | Заказ поставки" Background="White" Width="950" MinWidth="950" MinHeight="700" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" Height="700">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="55"/>

@@ -37,7 +37,13 @@ namespace WPF_VM_Abstractions
         {
             await hubConnection.StopAsync();
         }
-        public Task<IRestResponse> Authorize()
+        public void RemoveRestClient()
+        {
+            restClient = null;
+            hubConnection = null;
+            instance = null;
+        }
+        public Task<IRestResponse> AuthorizeTerminal()
         {
             try
             {
@@ -51,12 +57,26 @@ namespace WPF_VM_Abstractions
                 return null;
             }
         }
-        public Task<IRestResponse> Authorize(string login, string password)
+        public Task<IRestResponse> AuthorizeInWarehouse(string login, string password)
         {
             try
             {
                 RestRequest request = new RestRequest($"{apiUrl}userToken", Method.POST);
                 request.AddJsonBody(new { userName = login, password = password, programm = "warehouse_accounting" });
+                var response = restClient.ExecuteAsync(request);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        public Task<IRestResponse> AuthorizeInCash(string login, string password)
+        {
+            try
+            {
+                RestRequest request = new RestRequest($"{apiUrl}userToken", Method.POST);
+                request.AddJsonBody(new { userName = login, password = password, programm = "cash" });
                 var response = restClient.ExecuteAsync(request);
                 return response;
             }

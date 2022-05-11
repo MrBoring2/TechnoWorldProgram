@@ -16245,3 +16245,949 @@ System.InvalidOperationException: The navigation 'ElectronicsToDelivery.Electron
 2022-05-11 11:45:43.018 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
 2022-05-11 11:45:43.495 +05:00 [INF] Application is shutting down...
 >>>>>>> b500aee359a8464f46c0ac31a2d568c430745173
+2022-05-11 16:10:54.739 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 16:10:54.771 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 16:10:54.772 +05:00 [INF] Hosting environment: Development
+2022-05-11 16:10:54.773 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 16:11:09.318 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:65257) по POST /terminalToken ответил 200 за 485.9650 мс
+2022-05-11 16:11:11.042 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65260) по POST /technoWorldHub/negotiate ответил 200 за 19.2187 мс
+2022-05-11 16:11:11.221 +05:00 [INF] Подключенин терминал: terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6
+2022-05-11 16:11:13.616 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Categories ответил 200 за 3116.7620 мс
+2022-05-11 16:11:33.334 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 487.4175 мс
+2022-05-11 16:11:33.502 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Manufacturers ответил 200 за 54.0517 мс
+2022-05-11 16:11:33.546 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/ElectrnicsTypes ответил 200 за 14.3024 мс
+2022-05-11 16:12:05.366 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 93.2200 мс
+2022-05-11 16:12:07.227 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 62.2475 мс
+2022-05-11 16:12:08.727 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 57.8862 мс
+2022-05-11 16:12:09.659 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 58.1267 мс
+2022-05-11 16:12:10.392 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 68.2675 мс
+2022-05-11 16:12:20.743 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 56.1326 мс
+2022-05-11 16:12:21.504 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 61.2056 мс
+2022-05-11 16:12:22.333 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 61.4604 мс
+2022-05-11 16:12:23.264 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 56.0799 мс
+2022-05-11 16:12:23.802 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 55.6219 мс
+2022-05-11 16:12:28.354 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 53.2796 мс
+2022-05-11 16:12:28.457 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 63.6626 мс
+2022-05-11 16:12:28.771 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 54.4281 мс
+2022-05-11 16:12:29.190 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 51.4574 мс
+2022-05-11 16:12:29.520 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 88.4534 мс
+2022-05-11 16:12:29.822 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 52.1289 мс
+2022-05-11 16:12:30.102 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 56.5298 мс
+2022-05-11 16:12:30.403 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 53.2488 мс
+2022-05-11 16:12:30.686 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 82.3147 мс
+2022-05-11 16:12:31.054 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 49.8318 мс
+2022-05-11 16:12:31.416 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 98.1945 мс
+2022-05-11 16:12:31.650 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 51.8675 мс
+2022-05-11 16:12:31.967 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 60.1818 мс
+2022-05-11 16:12:32.273 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 52.9117 мс
+2022-05-11 16:12:32.583 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 84.4658 мс
+2022-05-11 16:12:32.843 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 53.9080 мс
+2022-05-11 16:12:33.199 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 58.4096 мс
+2022-05-11 16:12:33.497 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 54.4938 мс
+2022-05-11 16:12:33.861 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 97.7180 мс
+2022-05-11 16:12:34.166 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 54.2727 мс
+2022-05-11 16:12:34.478 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 88.6447 мс
+2022-05-11 16:12:34.728 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 50.3862 мс
+2022-05-11 16:12:37.385 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 99.0696 мс
+2022-05-11 16:12:38.003 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 47.5844 мс
+2022-05-11 16:12:39.051 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 89.7317 мс
+2022-05-11 16:12:39.665 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 56.1099 мс
+2022-05-11 16:12:40.274 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 62.8735 мс
+2022-05-11 16:12:41.048 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 64.2915 мс
+2022-05-11 16:12:41.984 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 57.6715 мс
+2022-05-11 16:12:42.942 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 61.3262 мс
+2022-05-11 16:12:43.862 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 44.4602 мс
+2022-05-11 16:12:44.391 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 66.7102 мс
+2022-05-11 16:12:44.998 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 58.9643 мс
+2022-05-11 16:12:45.644 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 58.5051 мс
+2022-05-11 16:12:46.309 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 56.8979 мс
+2022-05-11 16:12:46.782 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 57.2662 мс
+2022-05-11 16:12:47.353 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 53.1955 мс
+2022-05-11 16:12:47.984 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 50.3534 мс
+2022-05-11 16:12:48.527 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 62.5253 мс
+2022-05-11 16:12:49.048 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 44.7978 мс
+2022-05-11 16:12:49.699 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 55.9186 мс
+2022-05-11 16:12:50.362 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 88.4799 мс
+2022-05-11 16:12:50.903 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 57.5823 мс
+2022-05-11 16:12:51.445 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 62.0379 мс
+2022-05-11 16:12:51.915 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 51.5893 мс
+2022-05-11 16:12:52.562 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 47.5220 мс
+2022-05-11 16:12:53.381 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 52.1175 мс
+2022-05-11 16:12:53.873 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 61.5564 мс
+2022-05-11 16:12:54.391 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 76.9877 мс
+2022-05-11 16:12:54.951 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 58.4463 мс
+2022-05-11 16:12:55.483 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 54.6472 мс
+2022-05-11 16:12:56.025 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 51.1125 мс
+2022-05-11 16:12:56.570 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 58.3653 мс
+2022-05-11 16:12:57.104 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 44.7989 мс
+2022-05-11 16:13:03.796 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 6195.3743 мс
+2022-05-11 16:13:03.798 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65411) по GET /api/Electronics/TerminalFilter ответил 200 за 4967.4269 мс
+2022-05-11 16:13:03.803 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65410) по GET /api/Electronics/TerminalFilter ответил 200 за 5779.7591 мс
+2022-05-11 16:13:08.515 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 56.7363 мс
+2022-05-11 16:13:58.024 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 57.0296 мс
+2022-05-11 16:13:58.666 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 65.6689 мс
+2022-05-11 16:13:58.725 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 47.4322 мс
+2022-05-11 16:14:13.866 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65501) по GET /api/Electronics/TerminalFilter ответил 200 за 5116.8049 мс
+2022-05-11 16:14:13.867 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65521) по GET /api/Electronics/TerminalFilter ответил 200 за 4357.8751 мс
+2022-05-11 16:14:13.872 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 8107.7598 мс
+2022-05-11 16:14:13.881 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65411) по GET /api/Electronics/TerminalFilter ответил 200 за 7396.6891 мс
+2022-05-11 16:14:13.882 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65499) по GET /api/Electronics/TerminalFilter ответил 200 за 6114.5429 мс
+2022-05-11 16:14:13.904 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65502) по GET /api/Electronics/TerminalFilter ответил 200 за 4937.8396 мс
+2022-05-11 16:14:13.905 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65509) по GET /api/Electronics/TerminalFilter ответил 200 за 4595.0277 мс
+2022-05-11 16:14:13.921 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65410) по GET /api/Electronics/TerminalFilter ответил 200 за 7972.4428 мс
+2022-05-11 16:14:15.884 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 65.1566 мс
+2022-05-11 16:14:16.460 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 87.6485 мс
+2022-05-11 16:14:17.485 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 48.8640 мс
+2022-05-11 16:14:17.881 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 56.6687 мс
+2022-05-11 16:14:18.148 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 47.2332 мс
+2022-05-11 16:14:18.397 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 80.9952 мс
+2022-05-11 16:14:18.932 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 47.9076 мс
+2022-05-11 16:14:19.352 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 47.4926 мс
+2022-05-11 16:14:19.933 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 48.2172 мс
+2022-05-11 16:14:20.273 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 87.1178 мс
+2022-05-11 16:14:23.340 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 47.5370 мс
+2022-05-11 16:14:23.719 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 41.8527 мс
+2022-05-11 16:14:24.304 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 43.7242 мс
+2022-05-11 16:14:24.579 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 81.7290 мс
+2022-05-11 16:14:26.162 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 51.3342 мс
+2022-05-11 16:15:49.475 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 76.2707 мс
+2022-05-11 16:15:49.834 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 43.1076 мс
+2022-05-11 16:15:50.225 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 44.7623 мс
+2022-05-11 16:15:50.651 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 51.4671 мс
+2022-05-11 16:15:52.025 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 85.0446 мс
+2022-05-11 16:15:53.534 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 55.0930 мс
+2022-05-11 16:15:54.012 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 53.3222 мс
+2022-05-11 16:15:54.426 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 55.0903 мс
+2022-05-11 16:15:54.852 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 85.9974 мс
+2022-05-11 16:15:55.261 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 57.1178 мс
+2022-05-11 16:15:55.741 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 82.5415 мс
+2022-05-11 16:15:56.658 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 53.4048 мс
+2022-05-11 16:15:57.120 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 82.7305 мс
+2022-05-11 16:15:57.553 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 53.8433 мс
+2022-05-11 16:15:58.104 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 74.8270 мс
+2022-05-11 16:15:58.460 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 43.4751 мс
+2022-05-11 16:15:58.971 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 54.3580 мс
+2022-05-11 16:15:59.354 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 52.4489 мс
+2022-05-11 16:15:59.822 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 81.5069 мс
+2022-05-11 16:16:00.328 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 53.4429 мс
+2022-05-11 16:16:01.161 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 54.3917 мс
+2022-05-11 16:16:01.585 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 49.9119 мс
+2022-05-11 16:16:02.055 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 71.9050 мс
+2022-05-11 16:16:02.514 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 55.7699 мс
+2022-05-11 16:16:02.998 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 54.4674 мс
+2022-05-11 16:16:03.462 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 53.1613 мс
+2022-05-11 16:16:03.926 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 87.2255 мс
+2022-05-11 16:16:04.336 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 53.1373 мс
+2022-05-11 16:16:04.790 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65257) по GET /api/Electronics/TerminalFilter ответил 200 за 83.2887 мс
+2022-05-11 16:16:16.714 +05:00 [INF] terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 отключен от системы
+2022-05-11 16:16:16.717 +05:00 [INF] Запрос от terminal_01e19523-4f15-4763-8cd2-d8388c7c5ee6 (127.0.0.1:65261) по GET /technoWorldHub ответил 101 за 305585.1520 мс
+2022-05-11 16:16:24.325 +05:00 [INF] Application is shutting down...
+2022-05-11 20:56:43.716 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 20:56:43.768 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 20:56:43.769 +05:00 [INF] Hosting environment: Development
+2022-05-11 20:56:43.769 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 20:57:11.458 +05:00 [WRN] As of ""2022-05-11T15:57:09.7125689+00:00"", the heartbeat has been running for ""00:00:01.7420829"" which is longer than ""00:00:01"". This could be caused by thread pool starvation.
+2022-05-11 20:57:12.249 +05:00 [ERR] Failed executing DbCommand (112ms) [Parameters=[@__login_0='?' (Size = 20) (DbType = AnsiString), @__password_1='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[DateOfBirth], [e].[Email], [e].[FullName], [e].[Login], [e].[Passport], [e].[Password], [e].[PhoneNumber], [e].[PostId], [e].[RoleId], [r].[RoleId], [r].[Name], [p].[PostId], [p].[Name]
+FROM [Employee] AS [e]
+INNER JOIN [Role] AS [r] ON [e].[RoleId] = [r].[RoleId]
+INNER JOIN [Post] AS [p] ON [e].[PostId] = [p].[PostId]
+WHERE ([e].[Login] = @__login_0) AND ([e].[Password] = @__password_1)
+2022-05-11 20:57:12.324 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "Email".
+Недопустимое имя столбца "Passport".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b1facffa-2106-42aa-9501-975f9895da23
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "Email".
+Недопустимое имя столбца "Passport".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b1facffa-2106-42aa-9501-975f9895da23
+Error Number:207,State:1,Class:16
+2022-05-11 20:57:12.353 +05:00 [ERR] Запрос от Неавторизированный пользователь (127.0.0.1:50543) по POST /userToken ответил 500 за 5667.2713 мс
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "Email".
+Недопустимое имя столбца "Passport".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.AuthenticateController.TryGetUser(String login, String password) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 118
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:b1facffa-2106-42aa-9501-975f9895da23
+Error Number:207,State:1,Class:16
+2022-05-11 20:57:12.412 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "Email".
+Недопустимое имя столбца "Passport".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.AuthenticateController.TryGetUser(String login, String password) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 118
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:b1facffa-2106-42aa-9501-975f9895da23
+Error Number:207,State:1,Class:16
+2022-05-11 20:57:38.477 +05:00 [INF] Application is shutting down...
+2022-05-11 20:58:31.277 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 20:58:31.514 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 20:58:31.515 +05:00 [INF] Hosting environment: Development
+2022-05-11 20:58:31.516 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 20:58:53.026 +05:00 [ERR] Failed executing DbCommand (48ms) [Parameters=[@__login_0='?' (Size = 20) (DbType = AnsiString), @__password_1='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[DateOfBirth], [e].[Email], [e].[FullName], [e].[Login], [e].[Passport], [e].[Password], [e].[PhoneNumber], [e].[PostId], [e].[RoleId], [r].[RoleId], [r].[Name], [p].[PostId], [p].[Name]
+FROM [Employee] AS [e]
+INNER JOIN [Role] AS [r] ON [e].[RoleId] = [r].[RoleId]
+INNER JOIN [Post] AS [p] ON [e].[PostId] = [p].[PostId]
+WHERE ([e].[Login] = @__login_0) AND ([e].[Password] = @__password_1)
+2022-05-11 20:58:53.055 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "Email".
+Недопустимое имя столбца "Passport".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:e49bca8f-96c9-4963-a8ea-1b87fff79805
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "Email".
+Недопустимое имя столбца "Passport".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:e49bca8f-96c9-4963-a8ea-1b87fff79805
+Error Number:207,State:1,Class:16
+2022-05-11 20:58:53.077 +05:00 [ERR] Запрос от Неавторизированный пользователь (127.0.0.1:50648) по POST /userToken ответил 500 за 2896.5403 мс
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "Email".
+Недопустимое имя столбца "Passport".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.AuthenticateController.TryGetUser(String login, String password) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 118
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:e49bca8f-96c9-4963-a8ea-1b87fff79805
+Error Number:207,State:1,Class:16
+2022-05-11 20:58:53.123 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Недопустимое имя столбца "Email".
+Недопустимое имя столбца "Passport".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.AuthenticateController.TryGetUser(String login, String password) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 118
+   at TechnoWorld_API.Controllers.AuthenticateController.Token(UserLoginModel model) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\AuthenticateController.cs:line 77
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:e49bca8f-96c9-4963-a8ea-1b87fff79805
+Error Number:207,State:1,Class:16
+2022-05-11 20:59:03.649 +05:00 [INF] Application is shutting down...
+2022-05-11 21:00:55.221 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 21:00:55.252 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 21:00:55.252 +05:00 [INF] Hosting environment: Development
+2022-05-11 21:00:55.253 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 21:01:08.572 +05:00 [WRN] Провальная попытка входа пользователя kov: Неверный логин или пароль
+2022-05-11 21:01:08.609 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50762) по POST /userToken ответил 400 за 1248.2397 мс
+2022-05-11 21:04:47.851 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 21:04:47.865 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50817) по POST /userToken ответил 200 за 231.2643 мс
+2022-05-11 21:04:48.045 +05:00 [INF] Запрос от kov (127.0.0.1:50818) по POST /technoWorldHub/negotiate ответил 200 за 55.5887 мс
+2022-05-11 21:04:48.161 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 21:04:48.382 +05:00 [INF] Запрос от kov (127.0.0.1:50817) по GET /api/Categories ответил 200 за 84.0187 мс
+2022-05-11 21:04:48.502 +05:00 [INF] Запрос от kov (127.0.0.1:50817) по GET /api/ElectrnicsTypes/All ответил 200 за 30.5369 мс
+2022-05-11 21:04:49.045 +05:00 [INF] Запрос от kov (127.0.0.1:50817) по GET /api/Electronics/Filter ответил 200 за 487.6154 мс
+2022-05-11 21:04:52.144 +05:00 [INF] Запрос от kov (127.0.0.1:50817) по GET /api/Status ответил 200 за 15.4019 мс
+2022-05-11 21:04:52.242 +05:00 [INF] Запрос от kov (127.0.0.1:50817) по GET /api/Deliveries/Filter ответил 200 за 65.4121 мс
+2022-05-11 21:04:53.566 +05:00 [INF] Запрос от kov (127.0.0.1:50817) по GET /api/Orders/Filter ответил 200 за 113.3559 мс
+2022-05-11 21:05:04.535 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 21:05:04.537 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50829) по POST /userToken ответил 400 за 2.9424 мс
+2022-05-11 21:07:24.937 +05:00 [INF] kov отключен от системы
+2022-05-11 21:07:24.947 +05:00 [INF] Запрос от kov (127.0.0.1:50819) по GET /technoWorldHub ответил 101 за 156853.4866 мс
+2022-05-11 21:07:31.486 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50858) по POST /terminalToken ответил 200 за 3.3382 мс
+2022-05-11 21:07:31.793 +05:00 [INF] Запрос от terminal_55c711aa-cb52-4662-a66c-0a7829e1bcb4 (127.0.0.1:50858) по GET /api/Categories ответил 200 за 6.3068 мс
+2022-05-11 21:07:32.114 +05:00 [INF] Запрос от terminal_55c711aa-cb52-4662-a66c-0a7829e1bcb4 (127.0.0.1:50859) по POST /technoWorldHub/negotiate ответил 200 за 0.6428 мс
+2022-05-11 21:07:32.286 +05:00 [INF] Подключенин терминал: terminal_55c711aa-cb52-4662-a66c-0a7829e1bcb4
+2022-05-11 21:07:34.108 +05:00 [INF] Запрос от terminal_55c711aa-cb52-4662-a66c-0a7829e1bcb4 (127.0.0.1:50858) по GET /api/Electronics/TerminalFilter ответил 200 за 871.0194 мс
+2022-05-11 21:07:34.211 +05:00 [INF] Запрос от terminal_55c711aa-cb52-4662-a66c-0a7829e1bcb4 (127.0.0.1:50858) по GET /api/Manufacturers ответил 200 за 30.1598 мс
+2022-05-11 21:07:34.222 +05:00 [INF] Запрос от terminal_55c711aa-cb52-4662-a66c-0a7829e1bcb4 (127.0.0.1:50858) по GET /api/ElectrnicsTypes ответил 200 за 6.3611 мс
+2022-05-11 21:46:57.527 +05:00 [INF] terminal_55c711aa-cb52-4662-a66c-0a7829e1bcb4 отключен от системы
+2022-05-11 21:46:57.531 +05:00 [INF] Запрос от terminal_55c711aa-cb52-4662-a66c-0a7829e1bcb4 (127.0.0.1:50861) по GET /technoWorldHub ответил 101 за 2365346.9520 мс
+2022-05-11 21:47:10.576 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 21:47:10.578 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:49500) по POST /userToken ответил 200 за 16.9269 мс
+2022-05-11 21:47:10.779 +05:00 [INF] Запрос от sh (127.0.0.1:49501) по POST /technoWorldHub/negotiate ответил 200 за 0.4237 мс
+2022-05-11 21:47:10.878 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 21:47:10.989 +05:00 [INF] Запрос от sh (127.0.0.1:49500) по GET /api/Status ответил 200 за 1.6786 мс
+2022-05-11 21:47:11.257 +05:00 [INF] Запрос от sh (127.0.0.1:49500) по GET /api/Orders/Filter ответил 200 за 112.9820 мс
+2022-05-11 21:47:14.763 +05:00 [INF] Запрос от sh (127.0.0.1:49500) по GET /api/Orders/Filter ответил 200 за 65.2736 мс
+2022-05-11 21:47:16.927 +05:00 [INF] Запрос от sh (127.0.0.1:49500) по GET /api/Orders/Filter ответил 200 за 96.6223 мс
+2022-05-11 21:47:17.622 +05:00 [INF] Запрос от sh (127.0.0.1:49500) по GET /api/Orders/Filter ответил 200 за 52.6668 мс
+2022-05-11 21:47:19.513 +05:00 [INF] Запрос от sh (127.0.0.1:49500) по GET /api/Orders/Filter ответил 200 за 112.8811 мс
+2022-05-11 21:47:20.062 +05:00 [INF] Запрос от sh (127.0.0.1:49500) по GET /api/Orders/Filter ответил 200 за 52.1941 мс
+2022-05-11 21:47:24.579 +05:00 [INF] sh отключен от системы
+2022-05-11 21:47:24.581 +05:00 [INF] Запрос от sh (127.0.0.1:49502) по GET /technoWorldHub ответил 101 за 13746.7714 мс
+2022-05-11 21:47:50.617 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 21:47:50.618 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:49515) по POST /userToken ответил 200 за 8.6071 мс
+2022-05-11 21:47:50.823 +05:00 [INF] Запрос от sh (127.0.0.1:49516) по POST /technoWorldHub/negotiate ответил 200 за 0.3614 мс
+2022-05-11 21:47:50.967 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 21:47:51.094 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Status ответил 200 за 2.4438 мс
+2022-05-11 21:47:53.249 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 1852.5528 мс
+2022-05-11 21:48:22.979 +05:00 [INF] Статус заказа с номером LEA63WUEE4 изменён с 'Ожидается оплаты' на 'Отменён'
+2022-05-11 21:48:23.119 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по PUT /api/Orders/25 ответил 200 за 203.9703 мс
+2022-05-11 21:48:23.251 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 97.5869 мс
+2022-05-11 21:48:25.661 +05:00 [INF] Статус заказа с номером LEA63WUEE4 изменён с 'Отменён' на 'Ожидается оплаты'
+2022-05-11 21:48:25.666 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по PUT /api/Orders/25 ответил 200 за 12.4248 мс
+2022-05-11 21:48:25.758 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 89.0444 мс
+2022-05-11 21:48:31.219 +05:00 [INF] Статус заказа с номером LEA63WUEE4 изменён с 'Ожидается оплаты' на 'Отменён'
+2022-05-11 21:48:31.224 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по PUT /api/Orders/25 ответил 200 за 13.2412 мс
+2022-05-11 21:48:31.321 +05:00 [INF] Запрос от sh (127.0.0.1:49533) по GET /api/Orders/Filter ответил 200 за 95.1336 мс
+2022-05-11 21:48:39.538 +05:00 [INF] Статус заказа с номером LEA63WUEE4 изменён с 'Отменён' на 'Ожидается оплаты'
+2022-05-11 21:48:39.541 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по PUT /api/Orders/25 ответил 200 за 7.9861 мс
+2022-05-11 21:48:39.630 +05:00 [INF] Запрос от sh (127.0.0.1:49533) по GET /api/Orders/Filter ответил 200 за 87.9262 мс
+2022-05-11 21:48:50.405 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 71.4695 мс
+2022-05-11 21:48:51.814 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 74.8904 мс
+2022-05-11 21:48:53.032 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 49.7278 мс
+2022-05-11 21:48:54.445 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 104.3140 мс
+2022-05-11 21:48:56.028 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 49.3855 мс
+2022-05-11 21:48:57.205 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 84.6866 мс
+2022-05-11 21:48:59.542 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 56.2423 мс
+2022-05-11 21:48:59.769 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 38.4815 мс
+2022-05-11 21:49:00.408 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 45.1386 мс
+2022-05-11 21:49:00.803 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 32.5284 мс
+2022-05-11 21:49:01.317 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 49.1603 мс
+2022-05-11 21:49:01.560 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по GET /api/Orders/Filter ответил 200 за 90.2731 мс
+2022-05-11 21:49:05.561 +05:00 [INF] Статус заказа с номером LEA63WUEE4 изменён с 'Ожидается оплаты' на 'Отменён'
+2022-05-11 21:49:05.565 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по PUT /api/Orders/25 ответил 200 за 11.0312 мс
+2022-05-11 21:49:05.682 +05:00 [INF] Запрос от sh (127.0.0.1:49533) по GET /api/Orders/Filter ответил 200 за 114.9899 мс
+2022-05-11 21:49:07.398 +05:00 [INF] Статус заказа с номером LEA63WUEE4 изменён с 'Отменён' на 'Ожидается оплаты'
+2022-05-11 21:49:07.402 +05:00 [INF] Запрос от sh (127.0.0.1:49515) по PUT /api/Orders/25 ответил 200 за 11.2377 мс
+2022-05-11 21:49:07.482 +05:00 [INF] Запрос от sh (127.0.0.1:49533) по GET /api/Orders/Filter ответил 200 за 79.7264 мс
+2022-05-11 21:49:10.165 +05:00 [INF] sh отключен от системы
+2022-05-11 21:49:10.167 +05:00 [INF] Запрос от sh (127.0.0.1:49517) по GET /technoWorldHub ответил 101 за 79269.1625 мс
+2022-05-11 21:50:39.050 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 21:50:39.052 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:49564) по POST /userToken ответил 200 за 10.1978 мс
+2022-05-11 21:50:39.239 +05:00 [INF] Запрос от sh (127.0.0.1:49565) по POST /technoWorldHub/negotiate ответил 200 за 0.2501 мс
+2022-05-11 21:50:39.356 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 21:50:39.475 +05:00 [INF] Запрос от sh (127.0.0.1:49564) по GET /api/Status ответил 200 за 3.2818 мс
+2022-05-11 21:50:39.826 +05:00 [INF] Запрос от sh (127.0.0.1:49564) по GET /api/Orders/Filter ответил 200 за 125.8755 мс
+2022-05-11 21:50:42.581 +05:00 [INF] sh отключен от системы
+2022-05-11 21:50:42.582 +05:00 [INF] Запрос от sh (127.0.0.1:49566) по GET /technoWorldHub ответил 101 за 3273.9407 мс
+2022-05-11 21:50:46.632 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 21:50:46.633 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:49564) по POST /userToken ответил 200 за 7.1463 мс
+2022-05-11 21:50:46.637 +05:00 [INF] Запрос от sh (127.0.0.1:49567) по POST /technoWorldHub/negotiate ответил 200 за 0.2286 мс
+2022-05-11 21:50:46.642 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 21:50:54.821 +05:00 [INF] sh отключен от системы
+2022-05-11 21:50:54.823 +05:00 [INF] Запрос от sh (127.0.0.1:49568) по GET /technoWorldHub ответил 101 за 8184.3364 мс
+2022-05-11 21:51:36.915 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 21:51:36.916 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:49577) по POST /userToken ответил 200 за 8.0548 мс
+2022-05-11 21:51:37.110 +05:00 [INF] Запрос от kov (127.0.0.1:49578) по POST /technoWorldHub/negotiate ответил 200 за 0.2604 мс
+2022-05-11 21:51:37.279 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 21:51:37.397 +05:00 [INF] Запрос от kov (127.0.0.1:49577) по GET /api/Status ответил 200 за 2.4241 мс
+2022-05-11 21:51:37.841 +05:00 [INF] Запрос от kov (127.0.0.1:49577) по GET /api/Orders/Filter ответил 200 за 192.1927 мс
+2022-05-11 21:51:47.989 +05:00 [INF] kov отключен от системы
+2022-05-11 21:51:47.994 +05:00 [INF] Запрос от kov (127.0.0.1:49579) по GET /technoWorldHub ответил 101 за 10775.3992 мс
+2022-05-11 21:54:49.524 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 21:54:49.526 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:49613) по POST /userToken ответил 200 за 8.3762 мс
+2022-05-11 21:54:51.085 +05:00 [INF] Запрос от kov (127.0.0.1:49614) по POST /technoWorldHub/negotiate ответил 200 за 0.2729 мс
+2022-05-11 21:54:51.192 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 21:54:51.327 +05:00 [INF] Запрос от kov (127.0.0.1:49613) по GET /api/Categories ответил 200 за 7.5522 мс
+2022-05-11 21:54:51.468 +05:00 [INF] Запрос от kov (127.0.0.1:49613) по GET /api/ElectrnicsTypes/All ответил 200 за 8.7345 мс
+2022-05-11 21:54:51.758 +05:00 [INF] Запрос от kov (127.0.0.1:49613) по GET /api/Electronics/Filter ответил 200 за 169.5320 мс
+2022-05-11 21:54:58.180 +05:00 [INF] kov отключен от системы
+2022-05-11 21:54:58.182 +05:00 [INF] Запрос от kov (127.0.0.1:49615) по GET /technoWorldHub ответил 101 за 7043.8698 мс
+2022-05-11 21:59:50.401 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 21:59:50.403 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:49661) по POST /userToken ответил 200 за 6.4415 мс
+2022-05-11 21:59:50.553 +05:00 [INF] Запрос от kov (127.0.0.1:49662) по POST /technoWorldHub/negotiate ответил 200 за 0.2264 мс
+2022-05-11 21:59:50.649 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 21:59:50.746 +05:00 [INF] Запрос от kov (127.0.0.1:49661) по GET /api/Status ответил 200 за 1.2859 мс
+2022-05-11 21:59:52.080 +05:00 [INF] Запрос от kov (127.0.0.1:49661) по GET /api/Orders/Filter ответил 200 за 1175.8691 мс
+2022-05-11 22:00:05.611 +05:00 [INF] kov отключен от системы
+2022-05-11 22:00:05.614 +05:00 [INF] Запрос от kov (127.0.0.1:49663) по GET /technoWorldHub ответил 101 за 15009.0558 мс
+2022-05-11 22:00:53.676 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:00:53.677 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:49685) по POST /userToken ответил 200 за 5.1446 мс
+2022-05-11 22:00:54.982 +05:00 [INF] Запрос от sh (127.0.0.1:49686) по POST /technoWorldHub/negotiate ответил 200 за 0.2221 мс
+2022-05-11 22:00:55.082 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:00:55.170 +05:00 [INF] Запрос от sh (127.0.0.1:49685) по GET /api/Status ответил 200 за 2.5384 мс
+2022-05-11 22:00:55.426 +05:00 [INF] Запрос от sh (127.0.0.1:49685) по GET /api/Orders/Filter ответил 200 за 87.6571 мс
+2022-05-11 22:05:45.183 +05:00 [INF] sh отключен от системы
+2022-05-11 22:05:45.184 +05:00 [INF] Запрос от sh (127.0.0.1:49687) по GET /technoWorldHub ответил 101 за 290146.7967 мс
+2022-05-11 22:27:07.699 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 22:27:07.744 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 22:27:07.744 +05:00 [INF] Hosting environment: Development
+2022-05-11 22:27:07.745 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 22:31:46.270 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 22:31:46.300 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 22:31:46.301 +05:00 [INF] Hosting environment: Development
+2022-05-11 22:31:46.302 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 22:32:27.225 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:32:27.261 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50115) по POST /userToken ответил 200 за 2146.1833 мс
+2022-05-11 22:32:27.456 +05:00 [INF] Запрос от sh (127.0.0.1:50116) по POST /technoWorldHub/negotiate ответил 200 за 46.4096 мс
+2022-05-11 22:32:27.572 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:32:27.712 +05:00 [INF] Запрос от sh (127.0.0.1:50115) по GET /api/Status ответил 200 за 54.8460 мс
+2022-05-11 22:32:28.041 +05:00 [INF] Запрос от sh (127.0.0.1:50115) по GET /api/Orders/Filter ответил 200 за 238.1592 мс
+2022-05-11 22:32:38.358 +05:00 [INF] Статус заказа с номером LEA63WUEE4 изменён с 'Ожидается оплаты' на 'Ожидается вадыча'
+2022-05-11 22:32:38.444 +05:00 [INF] Запрос от sh (127.0.0.1:50115) по PUT /api/Orders/25 ответил 200 за 138.3309 мс
+2022-05-11 22:32:38.570 +05:00 [INF] Запрос от sh (127.0.0.1:50115) по GET /api/Orders/Filter ответил 200 за 88.3004 мс
+2022-05-11 22:32:41.741 +05:00 [INF] sh отключен от системы
+2022-05-11 22:32:41.745 +05:00 [INF] Запрос от sh (127.0.0.1:50117) по GET /technoWorldHub ответил 101 за 14240.7260 мс
+2022-05-11 22:32:49.493 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:32:49.494 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50124) по POST /userToken ответил 200 за 8.0183 мс
+2022-05-11 22:32:49.691 +05:00 [INF] Запрос от sh (127.0.0.1:50125) по POST /technoWorldHub/negotiate ответил 200 за 0.8268 мс
+2022-05-11 22:32:49.806 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:32:51.093 +05:00 [INF] Запрос от sh (127.0.0.1:50124) по GET /api/Status ответил 200 за 1.7545 мс
+2022-05-11 22:32:51.416 +05:00 [INF] Запрос от sh (127.0.0.1:50124) по GET /api/Orders/Filter ответил 200 за 105.3253 мс
+2022-05-11 22:32:59.711 +05:00 [INF] Статус заказа с номером 33W1YZ4ORW изменён с 'Ожидается оплаты' на 'Ожидается вадыча'
+2022-05-11 22:32:59.715 +05:00 [INF] Запрос от sh (127.0.0.1:50124) по PUT /api/Orders/24 ответил 200 за 7.6432 мс
+2022-05-11 22:32:59.977 +05:00 [INF] Запрос от sh (127.0.0.1:50124) по GET /api/Orders/Filter ответил 200 за 185.1638 мс
+2022-05-11 22:33:12.064 +05:00 [INF] sh отключен от системы
+2022-05-11 22:33:12.067 +05:00 [INF] Запрос от sh (127.0.0.1:50126) по GET /technoWorldHub ответил 101 за 22310.7621 мс
+2022-05-11 22:36:09.537 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 22:36:09.539 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50151) по POST /userToken ответил 200 за 10.3974 мс
+2022-05-11 22:36:09.702 +05:00 [INF] Запрос от kov (127.0.0.1:50152) по POST /technoWorldHub/negotiate ответил 200 за 0.5806 мс
+2022-05-11 22:36:09.801 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 22:36:11.174 +05:00 [INF] Запрос от kov (127.0.0.1:50151) по GET /api/Status ответил 200 за 3.1338 мс
+2022-05-11 22:36:11.428 +05:00 [INF] Запрос от kov (127.0.0.1:50151) по GET /api/Orders/Filter ответил 200 за 86.6752 мс
+2022-05-11 22:36:24.180 +05:00 [INF] kov отключен от системы
+2022-05-11 22:36:24.183 +05:00 [INF] Запрос от kov (127.0.0.1:50153) по GET /technoWorldHub ответил 101 за 14429.3885 мс
+2022-05-11 22:36:52.535 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:36:52.537 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50158) по POST /userToken ответил 200 за 7.9723 мс
+2022-05-11 22:36:52.743 +05:00 [INF] Запрос от sh (127.0.0.1:50159) по POST /technoWorldHub/negotiate ответил 200 за 0.2621 мс
+2022-05-11 22:36:52.855 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:36:54.333 +05:00 [INF] Запрос от sh (127.0.0.1:50158) по GET /api/Status ответил 200 за 2.4192 мс
+2022-05-11 22:36:54.683 +05:00 [INF] Запрос от sh (127.0.0.1:50158) по GET /api/Orders/Filter ответил 200 за 132.1511 мс
+2022-05-11 22:37:00.828 +05:00 [INF] sh отключен от системы
+2022-05-11 22:37:00.830 +05:00 [INF] Запрос от sh (127.0.0.1:50160) по GET /technoWorldHub ответил 101 за 8025.2583 мс
+2022-05-11 22:37:27.470 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 22:37:27.473 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50166) по POST /userToken ответил 200 за 10.8138 мс
+2022-05-11 22:37:27.678 +05:00 [INF] Запрос от kov (127.0.0.1:50167) по POST /technoWorldHub/negotiate ответил 200 за 0.2579 мс
+2022-05-11 22:37:27.795 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 22:37:29.322 +05:00 [INF] Запрос от kov (127.0.0.1:50166) по GET /api/Status ответил 200 за 1.9429 мс
+2022-05-11 22:37:29.708 +05:00 [INF] Запрос от kov (127.0.0.1:50166) по GET /api/Orders/Filter ответил 200 за 162.5384 мс
+2022-05-11 22:37:46.337 +05:00 [INF] Статус заказа с номером 07GDLX0HPR изменён с 'Ожидается оплаты' на 'Ожидается вадыча'
+2022-05-11 22:37:46.342 +05:00 [INF] Запрос от kov (127.0.0.1:50166) по PUT /api/Orders/23 ответил 200 за 12.5899 мс
+2022-05-11 22:37:46.499 +05:00 [INF] Запрос от kov (127.0.0.1:50166) по GET /api/Orders/Filter ответил 200 за 88.4127 мс
+2022-05-11 22:37:51.623 +05:00 [INF] kov отключен от системы
+2022-05-11 22:37:51.631 +05:00 [INF] Запрос от kov (127.0.0.1:50168) по GET /technoWorldHub ответил 101 за 23886.6791 мс
+2022-05-11 22:38:47.068 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:38:47.069 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50181) по POST /userToken ответил 200 за 7.8198 мс
+2022-05-11 22:38:47.224 +05:00 [INF] Запрос от sh (127.0.0.1:50182) по POST /technoWorldHub/negotiate ответил 200 за 0.2731 мс
+2022-05-11 22:38:47.329 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:38:47.423 +05:00 [INF] Запрос от sh (127.0.0.1:50181) по GET /api/Status ответил 200 за 2.0946 мс
+2022-05-11 22:38:47.720 +05:00 [INF] Запрос от sh (127.0.0.1:50181) по GET /api/Orders/Filter ответил 200 за 132.0595 мс
+2022-05-11 22:38:49.668 +05:00 [INF] Запрос от sh (127.0.0.1:50181) по GET /api/Orders/Filter ответил 200 за 52.4181 мс
+2022-05-11 22:39:05.566 +05:00 [INF] Статус заказа с номером P2T0FGEULT изменён с 'Ожидается оплаты' на 'Ожидается вадыча'
+2022-05-11 22:39:05.570 +05:00 [INF] Запрос от sh (127.0.0.1:50181) по PUT /api/Orders/33 ответил 200 за 16.8618 мс
+2022-05-11 22:39:05.655 +05:00 [INF] Запрос от sh (127.0.0.1:50181) по GET /api/Orders/Filter ответил 200 за 50.3127 мс
+2022-05-11 22:42:25.808 +05:00 [INF] sh отключен от системы
+2022-05-11 22:42:25.809 +05:00 [INF] Запрос от sh (127.0.0.1:50183) по GET /technoWorldHub ответил 101 за 218527.6818 мс
+2022-05-11 22:42:32.646 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:42:32.647 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50261) по POST /userToken ответил 200 за 6.8568 мс
+2022-05-11 22:42:32.800 +05:00 [INF] Запрос от sh (127.0.0.1:50262) по POST /technoWorldHub/negotiate ответил 200 за 0.2559 мс
+2022-05-11 22:42:32.896 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:42:32.988 +05:00 [INF] Запрос от sh (127.0.0.1:50261) по GET /api/Status ответил 200 за 2.3180 мс
+2022-05-11 22:42:34.305 +05:00 [INF] Запрос от sh (127.0.0.1:50261) по GET /api/Orders/Filter ответил 200 за 1148.6419 мс
+2022-05-11 22:42:36.281 +05:00 [INF] Запрос от sh (127.0.0.1:50261) по GET /api/Orders/Filter ответил 200 за 54.1569 мс
+2022-05-11 22:42:42.311 +05:00 [INF] Статус заказа с номером 7M63KZCF6N изменён с 'Ожидается оплаты' на 'Ожидается вадыча'
+2022-05-11 22:42:42.316 +05:00 [INF] Запрос от sh (127.0.0.1:50261) по PUT /api/Orders/32 ответил 200 за 13.2446 мс
+2022-05-11 22:42:42.394 +05:00 [INF] Запрос от sh (127.0.0.1:50261) по GET /api/Orders/Filter ответил 200 за 39.0310 мс
+2022-05-11 22:43:32.410 +05:00 [INF] sh отключен от системы
+2022-05-11 22:43:32.412 +05:00 [INF] Запрос от sh (127.0.0.1:50263) по GET /technoWorldHub ответил 101 за 59560.5447 мс
+2022-05-11 22:43:41.384 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 22:43:41.385 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50290) по POST /userToken ответил 200 за 5.3513 мс
+2022-05-11 22:43:41.541 +05:00 [INF] Запрос от kov (127.0.0.1:50291) по POST /technoWorldHub/negotiate ответил 200 за 0.2024 мс
+2022-05-11 22:43:41.642 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 22:43:41.730 +05:00 [INF] Запрос от kov (127.0.0.1:50290) по GET /api/Status ответил 200 за 1.4396 мс
+2022-05-11 22:43:42.043 +05:00 [INF] Запрос от kov (127.0.0.1:50290) по GET /api/Orders/Filter ответил 200 за 139.6045 мс
+2022-05-11 22:43:44.095 +05:00 [INF] Запрос от kov (127.0.0.1:50290) по GET /api/Orders/Filter ответил 200 за 45.7671 мс
+2022-05-11 22:48:33.265 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 22:48:33.267 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50375) по POST /userToken ответил 400 за 2.9316 мс
+2022-05-11 22:48:40.648 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 22:48:40.650 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50375) по POST /userToken ответил 400 за 3.4163 мс
+2022-05-11 22:48:55.353 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 22:48:55.360 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50375) по POST /userToken ответил 400 за 7.7411 мс
+2022-05-11 22:48:57.941 +05:00 [INF] kov отключен от системы
+2022-05-11 22:48:57.943 +05:00 [INF] Запрос от kov (127.0.0.1:50292) по GET /technoWorldHub ответил 101 за 316348.6706 мс
+2022-05-11 22:49:11.274 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:49:11.275 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50377) по POST /userToken ответил 200 за 11.8010 мс
+2022-05-11 22:49:11.427 +05:00 [INF] Запрос от sh (127.0.0.1:50378) по POST /technoWorldHub/negotiate ответил 200 за 0.2868 мс
+2022-05-11 22:49:11.525 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:49:11.615 +05:00 [INF] Запрос от sh (127.0.0.1:50377) по GET /api/Status ответил 200 за 1.5297 мс
+2022-05-11 22:49:11.886 +05:00 [INF] Запрос от sh (127.0.0.1:50377) по GET /api/Orders/Filter ответил 200 за 100.1058 мс
+2022-05-11 22:49:17.695 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 22:49:17.696 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50380) по POST /userToken ответил 200 за 6.1111 мс
+2022-05-11 22:49:17.848 +05:00 [INF] Запрос от kov (127.0.0.1:50381) по POST /technoWorldHub/negotiate ответил 200 за 0.2543 мс
+2022-05-11 22:49:17.945 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 22:49:18.081 +05:00 [INF] Запрос от kov (127.0.0.1:50380) по GET /api/Categories ответил 200 за 20.9440 мс
+2022-05-11 22:49:18.209 +05:00 [INF] Запрос от kov (127.0.0.1:50380) по GET /api/ElectrnicsTypes/All ответил 200 за 24.1648 мс
+2022-05-11 22:49:19.569 +05:00 [INF] Запрос от kov (127.0.0.1:50380) по GET /api/Electronics/Filter ответил 200 за 1261.5003 мс
+2022-05-11 22:49:22.570 +05:00 [INF] kov отключен от системы
+2022-05-11 22:49:22.571 +05:00 [INF] Запрос от kov (127.0.0.1:50382) по GET /technoWorldHub ответил 101 за 4669.8988 мс
+2022-05-11 22:49:25.346 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 22:49:25.347 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50380) по POST /userToken ответил 200 за 2.8579 мс
+2022-05-11 22:49:25.348 +05:00 [INF] Запрос от kov (127.0.0.1:50384) по POST /technoWorldHub/negotiate ответил 200 за 0.1860 мс
+2022-05-11 22:49:25.351 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 22:49:35.207 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 22:49:35.209 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50392) по POST /userToken ответил 400 за 2.4107 мс
+2022-05-11 22:49:37.145 +05:00 [WRN] Провальная попытка входа пользователя sh: Данный пользователь уже авторизирован
+2022-05-11 22:49:37.146 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50392) по POST /userToken ответил 400 за 1.7888 мс
+2022-05-11 22:49:39.036 +05:00 [WRN] Провальная попытка входа пользователя sh: Данный пользователь уже авторизирован
+2022-05-11 22:49:39.037 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50392) по POST /userToken ответил 400 за 1.7576 мс
+2022-05-11 22:49:42.817 +05:00 [WRN] Провальная попытка входа пользователя s: Неверный логин или пароль
+2022-05-11 22:49:42.818 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50392) по POST /userToken ответил 400 за 2.0420 мс
+2022-05-11 22:49:45.100 +05:00 [WRN] Провальная попытка входа пользователя sh: Данный пользователь уже авторизирован
+2022-05-11 22:49:45.102 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50392) по POST /userToken ответил 400 за 1.8833 мс
+2022-05-11 22:49:46.963 +05:00 [INF] sh отключен от системы
+2022-05-11 22:49:46.964 +05:00 [INF] Запрос от sh (127.0.0.1:50379) по GET /technoWorldHub ответил 101 за 35485.6165 мс
+2022-05-11 22:49:47.547 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:49:47.549 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50392) по POST /userToken ответил 200 за 3.4739 мс
+2022-05-11 22:49:47.646 +05:00 [INF] Запрос от sh (127.0.0.1:50394) по POST /technoWorldHub/negotiate ответил 200 за 0.1913 мс
+2022-05-11 22:49:47.741 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:49:52.567 +05:00 [INF] sh отключен от системы
+2022-05-11 22:49:52.570 +05:00 [INF] Запрос от sh (127.0.0.1:50395) по GET /technoWorldHub ответил 101 за 4873.2123 мс
+2022-05-11 22:49:53.475 +05:00 [INF] kov отключен от системы
+2022-05-11 22:49:53.477 +05:00 [INF] Запрос от kov (127.0.0.1:50385) по GET /technoWorldHub ответил 101 за 28127.4691 мс
+2022-05-11 22:50:17.697 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:50:17.698 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50398) по POST /userToken ответил 200 за 6.0589 мс
+2022-05-11 22:50:17.848 +05:00 [INF] Запрос от sh (127.0.0.1:50399) по POST /technoWorldHub/negotiate ответил 200 за 0.1860 мс
+2022-05-11 22:50:17.945 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:50:21.898 +05:00 [INF] sh отключен от системы
+2022-05-11 22:50:21.899 +05:00 [INF] Запрос от sh (127.0.0.1:50400) по GET /technoWorldHub ответил 101 за 3998.7625 мс
+2022-05-11 22:52:39.296 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 22:52:39.331 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 22:52:39.332 +05:00 [INF] Hosting environment: Development
+2022-05-11 22:52:39.334 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 22:52:57.305 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 22:52:57.342 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 22:52:57.343 +05:00 [INF] Hosting environment: Development
+2022-05-11 22:52:57.343 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 22:53:00.929 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:53:00.979 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50474) по POST /userToken ответил 200 за 2799.5288 мс
+2022-05-11 22:53:01.211 +05:00 [INF] Запрос от sh (127.0.0.1:50483) по POST /technoWorldHub/negotiate ответил 200 за 61.1251 мс
+2022-05-11 22:53:01.336 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:53:05.895 +05:00 [INF] sh отключен от системы
+2022-05-11 22:53:05.901 +05:00 [INF] Запрос от sh (127.0.0.1:50484) по GET /technoWorldHub ответил 101 за 4635.6566 мс
+2022-05-11 22:55:04.383 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 22:55:04.414 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 22:55:04.415 +05:00 [INF] Hosting environment: Development
+2022-05-11 22:55:04.416 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 22:55:09.613 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50545) по POST /userToken ответил 400 за 1174.1697 мс
+2022-05-11 22:55:12.459 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50545) по POST /userToken ответил 400 за 26.1759 мс
+2022-05-11 22:55:15.625 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 22:55:15.637 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50545) по POST /userToken ответил 200 за 77.3026 мс
+2022-05-11 22:55:15.686 +05:00 [INF] Запрос от kov (127.0.0.1:50546) по POST /technoWorldHub/negotiate ответил 200 за 46.9413 мс
+2022-05-11 22:55:15.708 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 22:55:15.814 +05:00 [INF] Запрос от kov (127.0.0.1:50545) по GET /api/Categories ответил 200 за 41.1071 мс
+2022-05-11 22:55:15.932 +05:00 [INF] Запрос от kov (127.0.0.1:50545) по GET /api/ElectrnicsTypes/All ответил 200 за 31.6636 мс
+2022-05-11 22:55:16.286 +05:00 [INF] Запрос от kov (127.0.0.1:50545) по GET /api/Electronics/Filter ответил 200 за 262.2810 мс
+2022-05-11 22:55:31.816 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50550) по POST /userToken ответил 400 за 7.9862 мс
+2022-05-11 22:55:34.896 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50554) по POST /userToken ответил 400 за 1.8306 мс
+2022-05-11 22:55:52.274 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50556) по POST /userToken ответил 400 за 4.7330 мс
+2022-05-11 22:56:17.220 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 22:56:17.257 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 22:56:17.258 +05:00 [INF] Hosting environment: Development
+2022-05-11 22:56:17.259 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 22:59:01.404 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 22:59:01.437 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 22:59:01.439 +05:00 [INF] Hosting environment: Development
+2022-05-11 22:59:01.439 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 22:59:08.201 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50946) по POST /userToken ответил 400 за 1167.8336 мс
+2022-05-11 22:59:27.892 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 22:59:27.906 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50951) по POST /userToken ответил 200 за 103.5267 мс
+2022-05-11 22:59:28.136 +05:00 [INF] Запрос от sh (127.0.0.1:50952) по POST /technoWorldHub/negotiate ответил 200 за 71.0291 мс
+2022-05-11 22:59:28.254 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 22:59:28.384 +05:00 [INF] Запрос от sh (127.0.0.1:50951) по GET /api/Status ответил 200 за 36.7027 мс
+2022-05-11 22:59:29.995 +05:00 [INF] Запрос от sh (127.0.0.1:50951) по GET /api/Orders/Filter ответил 200 за 1480.6743 мс
+2022-05-11 22:59:54.018 +05:00 [WRN] Провальная попытка входа пользователя sh: Данный пользователь уже авторизирован
+2022-05-11 22:59:54.020 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50960) по POST /userToken ответил 400 за 2.6026 мс
+2022-05-11 23:00:01.651 +05:00 [WRN] Провальная попытка входа пользователя sh: Данный пользователь уже авторизирован
+2022-05-11 23:00:01.653 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50962) по POST /userToken ответил 400 за 5.1985 мс
+2022-05-11 23:00:05.317 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:00:05.319 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50962) по POST /userToken ответил 200 за 7.3074 мс
+2022-05-11 23:00:05.418 +05:00 [INF] Запрос от kov (127.0.0.1:50963) по POST /technoWorldHub/negotiate ответил 200 за 0.7091 мс
+2022-05-11 23:00:05.510 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:00:05.646 +05:00 [INF] Запрос от kov (127.0.0.1:50962) по GET /api/Categories ответил 200 за 20.3797 мс
+2022-05-11 23:00:05.783 +05:00 [INF] Запрос от kov (127.0.0.1:50962) по GET /api/ElectrnicsTypes/All ответил 200 за 34.2455 мс
+2022-05-11 23:00:06.071 +05:00 [INF] Запрос от kov (127.0.0.1:50962) по GET /api/Electronics/Filter ответил 200 за 186.3368 мс
+2022-05-11 23:00:10.316 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 23:00:10.318 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50960) по POST /userToken ответил 400 за 4.0864 мс
+2022-05-11 23:00:15.341 +05:00 [INF] kov отключен от системы
+2022-05-11 23:00:15.345 +05:00 [INF] Запрос от kov (127.0.0.1:50964) по GET /technoWorldHub ответил 101 за 9878.7590 мс
+2022-05-11 23:00:16.254 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:00:16.255 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50960) по POST /userToken ответил 200 за 7.1652 мс
+2022-05-11 23:00:16.353 +05:00 [INF] Запрос от kov (127.0.0.1:50965) по POST /technoWorldHub/negotiate ответил 200 за 0.5412 мс
+2022-05-11 23:00:16.445 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:00:16.572 +05:00 [INF] Запрос от kov (127.0.0.1:50960) по GET /api/Categories ответил 200 за 8.4654 мс
+2022-05-11 23:00:16.711 +05:00 [INF] Запрос от kov (127.0.0.1:50960) по GET /api/ElectrnicsTypes/All ответил 200 за 13.4858 мс
+2022-05-11 23:00:16.981 +05:00 [INF] Запрос от kov (127.0.0.1:50960) по GET /api/Electronics/Filter ответил 200 за 139.8668 мс
+2022-05-11 23:00:24.492 +05:00 [INF] sh отключен от системы
+2022-05-11 23:00:24.494 +05:00 [INF] Запрос от sh (127.0.0.1:50953) по GET /technoWorldHub ответил 101 за 56305.9665 мс
+2022-05-11 23:00:26.849 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 23:00:26.851 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50951) по POST /userToken ответил 400 за 2.8109 мс
+2022-05-11 23:00:29.925 +05:00 [INF] kov отключен от системы
+2022-05-11 23:00:29.926 +05:00 [INF] Запрос от kov (127.0.0.1:50966) по GET /technoWorldHub ответил 101 за 13524.1399 мс
+2022-05-11 23:01:07.295 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 23:01:07.327 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 23:01:07.327 +05:00 [INF] Hosting environment: Development
+2022-05-11 23:01:07.328 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-11 23:02:03.533 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:02:03.570 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:51012) по POST /userToken ответил 200 за 1241.8273 мс
+2022-05-11 23:02:03.762 +05:00 [INF] Запрос от kov (127.0.0.1:51013) по POST /technoWorldHub/negotiate ответил 200 за 48.0344 мс
+2022-05-11 23:02:03.904 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:02:04.093 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Categories ответил 200 за 63.9863 мс
+2022-05-11 23:02:04.180 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/ElectrnicsTypes/All ответил 200 за 39.1171 мс
+2022-05-11 23:02:04.516 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Electronics/Filter ответил 200 за 250.9368 мс
+2022-05-11 23:02:08.170 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Categories ответил 200 за 4.3869 мс
+2022-05-11 23:02:08.182 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/ElectrnicsTypes/All ответил 200 за 9.1956 мс
+2022-05-11 23:02:08.199 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Manufacturers/All ответил 200 за 11.5316 мс
+2022-05-11 23:02:11.300 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Status ответил 200 за 12.6707 мс
+2022-05-11 23:02:11.397 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Deliveries/Filter ответил 200 за 64.9329 мс
+2022-05-11 23:02:12.581 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Categories ответил 200 за 3.8426 мс
+2022-05-11 23:02:12.593 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/ElectrnicsTypes/All ответил 200 за 7.2976 мс
+2022-05-11 23:02:12.600 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Manufacturers/All ответил 200 за 2.3655 мс
+2022-05-11 23:02:16.919 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Orders/Filter ответил 200 за 112.1998 мс
+2022-05-11 23:02:21.495 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Categories ответил 200 за 5.5478 мс
+2022-05-11 23:02:21.509 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/ElectrnicsTypes/All ответил 200 за 7.5306 мс
+2022-05-11 23:02:21.515 +05:00 [INF] Запрос от kov (127.0.0.1:51012) по GET /api/Manufacturers/All ответил 200 за 1.2234 мс
+2022-05-11 23:02:23.352 +05:00 [INF] kov отключен от системы
+2022-05-11 23:02:23.357 +05:00 [INF] Запрос от kov (127.0.0.1:51014) по GET /technoWorldHub ответил 101 за 19546.7794 мс
+2022-05-11 23:07:43.396 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:07:43.397 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:51107) по POST /userToken ответил 200 за 7.7500 мс
+2022-05-11 23:07:43.553 +05:00 [INF] Запрос от kov (127.0.0.1:51108) по POST /technoWorldHub/negotiate ответил 200 за 0.4778 мс
+2022-05-11 23:07:43.663 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:07:43.791 +05:00 [INF] Запрос от kov (127.0.0.1:51107) по GET /api/Categories ответил 200 за 5.7565 мс
+2022-05-11 23:07:43.905 +05:00 [INF] Запрос от kov (127.0.0.1:51107) по GET /api/ElectrnicsTypes/All ответил 200 за 9.5130 мс
+2022-05-11 23:07:44.193 +05:00 [INF] Запрос от kov (127.0.0.1:51107) по GET /api/Electronics/Filter ответил 200 за 162.4551 мс
+2022-05-11 23:07:46.314 +05:00 [INF] Запрос от kov (127.0.0.1:51107) по GET /api/Categories ответил 200 за 3.2988 мс
+2022-05-11 23:07:46.325 +05:00 [INF] Запрос от kov (127.0.0.1:51107) по GET /api/ElectrnicsTypes/All ответил 200 за 7.1598 мс
+2022-05-11 23:07:46.332 +05:00 [INF] Запрос от kov (127.0.0.1:51107) по GET /api/Manufacturers/All ответил 200 за 1.5770 мс
+2022-05-11 23:08:58.136 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 23:08:58.138 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:51123) по POST /userToken ответил 400 за 5.5509 мс
+2022-05-11 23:09:00.773 +05:00 [INF] kov отключен от системы
+2022-05-11 23:09:00.775 +05:00 [INF] Запрос от kov (127.0.0.1:51109) по GET /technoWorldHub ответил 101 за 77168.4483 мс
+2022-05-11 23:09:01.594 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:09:01.596 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:51123) по POST /userToken ответил 200 за 7.6137 мс
+2022-05-11 23:09:01.721 +05:00 [INF] Запрос от kov (127.0.0.1:51125) по POST /technoWorldHub/negotiate ответил 200 за 0.3575 мс
+2022-05-11 23:09:01.829 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:09:01.972 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/Categories ответил 200 за 5.2995 мс
+2022-05-11 23:09:02.146 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/ElectrnicsTypes/All ответил 200 за 9.5368 мс
+2022-05-11 23:09:02.432 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/Electronics/Filter ответил 200 за 149.5013 мс
+2022-05-11 23:09:05.607 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/Categories ответил 200 за 4.6518 мс
+2022-05-11 23:09:32.335 +05:00 [INF] kov отключен от системы
+2022-05-11 23:09:35.359 +05:00 [INF] Запрос от kov (127.0.0.1:51126) по GET /technoWorldHub ответил 101 за 33579.9785 мс
+2022-05-11 23:09:35.374 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/ElectrnicsTypes/All ответил 200 за 13.7169 мс
+2022-05-11 23:09:35.384 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/Manufacturers/All ответил 200 за 1.6814 мс
+2022-05-11 23:09:40.349 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:09:40.350 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по POST /userToken ответил 200 за 5.3439 мс
+2022-05-11 23:09:40.353 +05:00 [INF] Запрос от kov (127.0.0.1:51137) по POST /technoWorldHub/negotiate ответил 200 за 0.2471 мс
+2022-05-11 23:09:40.358 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:09:40.398 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/Categories ответил 200 за 3.6621 мс
+2022-05-11 23:09:40.528 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/ElectrnicsTypes/All ответил 200 за 13.6124 мс
+2022-05-11 23:09:40.733 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/Electronics/Filter ответил 200 за 143.0564 мс
+2022-05-11 23:09:42.665 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/Categories ответил 200 за 5.7751 мс
+2022-05-11 23:09:43.516 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/ElectrnicsTypes/All ответил 200 за 10.8066 мс
+2022-05-11 23:09:43.524 +05:00 [INF] Запрос от kov (127.0.0.1:51123) по GET /api/Manufacturers/All ответил 200 за 1.8104 мс
+2022-05-11 23:09:54.128 +05:00 [INF] kov отключен от системы
+2022-05-11 23:09:54.129 +05:00 [INF] Запрос от kov (127.0.0.1:51138) по GET /technoWorldHub ответил 101 за 13774.1204 мс
+2022-05-11 23:10:33.407 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:10:33.415 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:51157) по POST /userToken ответил 200 за 17.9322 мс
+2022-05-11 23:10:33.647 +05:00 [INF] Запрос от kov (127.0.0.1:51168) по POST /technoWorldHub/negotiate ответил 200 за 0.2177 мс
+2022-05-11 23:10:33.765 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:10:35.160 +05:00 [INF] Запрос от kov (127.0.0.1:51157) по GET /api/Categories ответил 200 за 5.2377 мс
+2022-05-11 23:10:35.368 +05:00 [INF] Запрос от kov (127.0.0.1:51157) по GET /api/ElectrnicsTypes/All ответил 200 за 8.1895 мс
+2022-05-11 23:10:35.640 +05:00 [INF] Запрос от kov (127.0.0.1:51157) по GET /api/Electronics/Filter ответил 200 за 139.2226 мс
+2022-05-11 23:10:37.761 +05:00 [INF] Запрос от kov (127.0.0.1:51157) по GET /api/Categories ответил 200 за 4.7783 мс
+2022-05-11 23:10:39.999 +05:00 [INF] Запрос от kov (127.0.0.1:51157) по GET /api/ElectrnicsTypes/All ответил 200 за 14.2667 мс
+2022-05-11 23:10:40.006 +05:00 [INF] Запрос от kov (127.0.0.1:51157) по GET /api/Manufacturers/All ответил 200 за 1.3650 мс
+2022-05-11 23:10:53.927 +05:00 [INF] kov отключен от системы
+2022-05-11 23:10:53.929 +05:00 [INF] Запрос от kov (127.0.0.1:51169) по GET /technoWorldHub ответил 101 за 20213.9678 мс
+2022-05-11 23:11:30.368 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:11:30.369 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:51206) по POST /userToken ответил 200 за 5.5631 мс
+2022-05-11 23:11:30.528 +05:00 [INF] Запрос от kov (127.0.0.1:51207) по POST /technoWorldHub/negotiate ответил 200 за 0.1961 мс
+2022-05-11 23:11:30.627 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:11:30.766 +05:00 [INF] Запрос от kov (127.0.0.1:51206) по GET /api/Categories ответил 200 за 3.4866 мс
+2022-05-11 23:11:30.908 +05:00 [INF] Запрос от kov (127.0.0.1:51206) по GET /api/ElectrnicsTypes/All ответил 200 за 14.9286 мс
+2022-05-11 23:11:32.413 +05:00 [INF] Запрос от kov (127.0.0.1:51206) по GET /api/Electronics/Filter ответил 200 за 153.2071 мс
+2022-05-11 23:11:34.700 +05:00 [INF] Запрос от kov (127.0.0.1:51206) по GET /api/Categories ответил 200 за 3.3156 мс
+2022-05-11 23:11:34.710 +05:00 [INF] Запрос от kov (127.0.0.1:51206) по GET /api/ElectrnicsTypes/All ответил 200 за 7.0496 мс
+2022-05-11 23:11:34.717 +05:00 [INF] Запрос от kov (127.0.0.1:51206) по GET /api/Manufacturers/All ответил 200 за 1.3645 мс
+2022-05-11 23:17:00.472 +05:00 [INF] Запрос от kov (127.0.0.1:50755) по GET /api/Categories ответил 200 за 7.8692 мс
+2022-05-11 23:17:00.486 +05:00 [INF] Запрос от kov (127.0.0.1:50755) по GET /api/ElectrnicsTypes/All ответил 200 за 7.6071 мс
+2022-05-11 23:17:00.492 +05:00 [INF] Запрос от kov (127.0.0.1:50755) по GET /api/Manufacturers/All ответил 200 за 1.2067 мс
+2022-05-11 23:23:47.449 +05:00 [INF] Запрос от kov (127.0.0.1:50891) по GET /api/Status ответил 200 за 7.6810 мс
+2022-05-11 23:23:47.524 +05:00 [INF] Запрос от kov (127.0.0.1:50891) по GET /api/Deliveries/Filter ответил 200 за 35.9635 мс
+2022-05-11 23:23:49.008 +05:00 [INF] Запрос от kov (127.0.0.1:50891) по GET /api/Storages ответил 200 за 63.3724 мс
+2022-05-11 23:23:49.029 +05:00 [INF] Запрос от kov (127.0.0.1:50893) по GET /api/Suppliers ответил 200 за 83.6004 мс
+2022-05-11 23:23:53.021 +05:00 [INF] Создан заказ на поставку с номером ЗПSTTBFFPFCC
+2022-05-11 23:23:53.047 +05:00 [INF] Запрос от kov (127.0.0.1:50891) по POST /api/Deliveries ответил 201 за 250.4603 мс
+2022-05-11 23:23:53.418 +05:00 [INF] Запрос от kov (127.0.0.1:50891) по GET /api/Deliveries/Filter ответил 200 за 46.0207 мс
+2022-05-11 23:23:58.513 +05:00 [INF] Запрос от kov (127.0.0.1:50893) по GET /api/Suppliers ответил 200 за 2.0738 мс
+2022-05-11 23:23:58.514 +05:00 [INF] Запрос от kov (127.0.0.1:50891) по GET /api/Storages ответил 200 за 2.4393 мс
+2022-05-11 23:25:35.070 +05:00 [INF] kov отключен от системы
+2022-05-11 23:25:35.072 +05:00 [INF] Запрос от kov (127.0.0.1:51208) по GET /technoWorldHub ответил 101 за 844490.8656 мс
+2022-05-11 23:25:44.028 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:25:44.030 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50920) по POST /userToken ответил 200 за 5.9289 мс
+2022-05-11 23:25:44.184 +05:00 [INF] Запрос от kov (127.0.0.1:50921) по POST /technoWorldHub/negotiate ответил 200 за 0.2227 мс
+2022-05-11 23:25:44.281 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:25:45.496 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Categories ответил 200 за 3.5248 мс
+2022-05-11 23:25:45.631 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/ElectrnicsTypes/All ответил 200 за 9.9581 мс
+2022-05-11 23:25:45.880 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Electronics/Filter ответил 200 за 137.6175 мс
+2022-05-11 23:25:47.359 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Status ответил 200 за 1.3774 мс
+2022-05-11 23:25:47.409 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Deliveries/Filter ответил 200 за 33.9481 мс
+2022-05-11 23:25:51.869 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Storages ответил 200 за 2.7460 мс
+2022-05-11 23:25:51.874 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Suppliers ответил 200 за 1.2166 мс
+2022-05-11 23:25:56.211 +05:00 [INF] Запрос от kov (127.0.0.1:50925) по GET /api/Suppliers ответил 200 за 0.8086 мс
+2022-05-11 23:25:56.217 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Storages ответил 200 за 6.5815 мс
+2022-05-11 23:25:59.266 +05:00 [INF] Статус поставки с номером ЗПSTTBFFPFCC изменён с 'Ожидается оплаты' на 'Отменён'
+2022-05-11 23:25:59.268 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по PUT /api/Deliveries/27 ответил 200 за 34.4850 мс
+2022-05-11 23:25:59.417 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Deliveries/Filter ответил 200 за 35.8496 мс
+2022-05-11 23:26:01.050 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Suppliers ответил 200 за 0.8223 мс
+2022-05-11 23:26:01.051 +05:00 [INF] Запрос от kov (127.0.0.1:50925) по GET /api/Storages ответил 200 за 1.2653 мс
+2022-05-11 23:26:02.863 +05:00 [INF] Запрос от kov (127.0.0.1:50925) по GET /api/Suppliers ответил 200 за 0.8176 мс
+2022-05-11 23:26:02.863 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Storages ответил 200 за 1.2279 мс
+2022-05-11 23:26:05.085 +05:00 [INF] Запрос от kov (127.0.0.1:50925) по GET /api/Suppliers ответил 200 за 0.9378 мс
+2022-05-11 23:26:05.086 +05:00 [INF] Запрос от kov (127.0.0.1:50920) по GET /api/Storages ответил 200 за 2.0418 мс
+2022-05-11 23:26:24.868 +05:00 [INF] kov отключен от системы
+2022-05-11 23:26:24.869 +05:00 [INF] Запрос от kov (127.0.0.1:50922) по GET /technoWorldHub ответил 101 за 40632.1567 мс
+2022-05-11 23:27:39.700 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:27:39.701 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50957) по POST /userToken ответил 200 за 6.7717 мс
+2022-05-11 23:27:39.851 +05:00 [INF] Запрос от kov (127.0.0.1:50958) по POST /technoWorldHub/negotiate ответил 200 за 0.2070 мс
+2022-05-11 23:27:39.947 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:27:40.089 +05:00 [INF] Запрос от kov (127.0.0.1:50957) по GET /api/Categories ответил 200 за 6.6268 мс
+2022-05-11 23:27:40.230 +05:00 [INF] Запрос от kov (127.0.0.1:50957) по GET /api/ElectrnicsTypes/All ответил 200 за 10.8711 мс
+2022-05-11 23:27:41.662 +05:00 [INF] Запрос от kov (127.0.0.1:50957) по GET /api/Electronics/Filter ответил 200 за 1308.2516 мс
+2022-05-11 23:27:42.083 +05:00 [INF] Запрос от kov (127.0.0.1:50957) по GET /api/Status ответил 200 за 1.5696 мс
+2022-05-11 23:27:42.143 +05:00 [INF] Запрос от kov (127.0.0.1:50957) по GET /api/Deliveries/Filter ответил 200 за 43.6416 мс
+2022-05-11 23:34:31.766 +05:00 [INF] kov отключен от системы
+2022-05-11 23:34:31.770 +05:00 [INF] Запрос от kov (127.0.0.1:50959) по GET /technoWorldHub ответил 101 за 411867.0827 мс
+2022-05-11 23:34:50.468 +05:00 [WRN] Провальная попытка входа пользователя kov: Неверный логин или пароль
+2022-05-11 23:34:50.469 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59182) по POST /userToken ответил 400 за 9.6607 мс
+2022-05-11 23:35:35.589 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:35:35.590 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59201) по POST /userToken ответил 200 за 6.1234 мс
+2022-05-11 23:35:35.742 +05:00 [INF] Запрос от kov (127.0.0.1:59202) по POST /technoWorldHub/negotiate ответил 200 за 0.2083 мс
+2022-05-11 23:35:35.838 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:35:35.977 +05:00 [INF] Запрос от kov (127.0.0.1:59201) по GET /api/Categories ответил 200 за 6.7172 мс
+2022-05-11 23:35:36.136 +05:00 [INF] Запрос от kov (127.0.0.1:59201) по GET /api/ElectrnicsTypes/All ответил 200 за 9.9401 мс
+2022-05-11 23:35:36.387 +05:00 [INF] Запрос от kov (127.0.0.1:59201) по GET /api/Electronics/Filter ответил 200 за 136.5238 мс
+2022-05-11 23:35:41.245 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 23:35:41.248 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59182) по POST /userToken ответил 400 за 2.9054 мс
+2022-05-11 23:35:42.742 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 23:35:42.744 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59182) по POST /userToken ответил 400 за 2.1623 мс
+2022-05-11 23:35:44.725 +05:00 [WRN] Провальная попытка входа пользователя kov: Данный пользователь уже авторизирован
+2022-05-11 23:35:44.726 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59182) по POST /userToken ответил 400 за 2.1433 мс
+2022-05-11 23:35:54.421 +05:00 [INF] kov отключен от системы
+2022-05-11 23:35:54.423 +05:00 [INF] Запрос от kov (127.0.0.1:59203) по GET /technoWorldHub ответил 101 за 18628.8643 мс
+2022-05-11 23:36:58.219 +05:00 [INF] Пользователь kov авторизирован в системе
+2022-05-11 23:36:58.220 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60203) по POST /userToken ответил 200 за 6.5486 мс
+2022-05-11 23:36:58.371 +05:00 [INF] Запрос от kov (127.0.0.1:60204) по POST /technoWorldHub/negotiate ответил 200 за 0.1859 мс
+2022-05-11 23:36:58.467 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kov
+2022-05-11 23:36:58.610 +05:00 [INF] Запрос от kov (127.0.0.1:60203) по GET /api/Categories ответил 200 за 8.2527 мс
+2022-05-11 23:36:58.741 +05:00 [INF] Запрос от kov (127.0.0.1:60203) по GET /api/ElectrnicsTypes/All ответил 200 за 8.1564 мс
+2022-05-11 23:36:59.015 +05:00 [INF] Запрос от kov (127.0.0.1:60203) по GET /api/Electronics/Filter ответил 200 за 148.2847 мс
+2022-05-11 23:37:00.743 +05:00 [INF] Запрос от kov (127.0.0.1:60203) по GET /api/Status ответил 200 за 1.3154 мс
+2022-05-11 23:37:00.799 +05:00 [INF] Запрос от kov (127.0.0.1:60203) по GET /api/Deliveries/Filter ответил 200 за 40.1075 мс
+2022-05-11 23:37:03.092 +05:00 [INF] Запрос от kov (127.0.0.1:60203) по GET /api/Storages ответил 200 за 2.8883 мс
+2022-05-11 23:37:03.096 +05:00 [INF] Запрос от kov (127.0.0.1:60206) по GET /api/Suppliers ответил 200 за 5.3407 мс
+2022-05-11 23:37:15.730 +05:00 [INF] kov отключен от системы
+2022-05-11 23:37:15.732 +05:00 [INF] Запрос от kov (127.0.0.1:60205) по GET /technoWorldHub ответил 101 за 17308.3668 мс
+2022-05-11 23:38:40.763 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 23:38:40.764 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60232) по POST /userToken ответил 200 за 6.2063 мс
+2022-05-11 23:38:40.916 +05:00 [INF] Запрос от sh (127.0.0.1:60233) по POST /technoWorldHub/negotiate ответил 200 за 0.2193 мс
+2022-05-11 23:38:41.021 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 23:38:41.116 +05:00 [INF] Запрос от sh (127.0.0.1:60232) по GET /api/Status ответил 200 за 1.3052 мс
+2022-05-11 23:38:41.418 +05:00 [INF] Запрос от sh (127.0.0.1:60232) по GET /api/Orders/Filter ответил 200 за 137.7718 мс
+2022-05-11 23:39:00.661 +05:00 [INF] sh отключен от системы
+2022-05-11 23:39:00.663 +05:00 [INF] Запрос от sh (127.0.0.1:60234) по GET /technoWorldHub ответил 101 за 19688.6455 мс
+2022-05-11 23:39:17.481 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 23:39:17.482 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60236) по POST /userToken ответил 200 за 6.6682 мс
+2022-05-11 23:39:17.640 +05:00 [INF] Запрос от sh (127.0.0.1:60237) по POST /technoWorldHub/negotiate ответил 200 за 0.1929 мс
+2022-05-11 23:39:17.749 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 23:39:19.156 +05:00 [INF] Запрос от sh (127.0.0.1:60236) по GET /api/Status ответил 200 за 1.3178 мс
+2022-05-11 23:39:19.438 +05:00 [INF] Запрос от sh (127.0.0.1:60236) по GET /api/Orders/Filter ответил 200 за 128.3742 мс
+2022-05-11 23:39:27.808 +05:00 [INF] sh отключен от системы
+2022-05-11 23:39:27.810 +05:00 [INF] Запрос от sh (127.0.0.1:60238) по GET /technoWorldHub ответил 101 за 10117.1458 мс
+2022-05-11 23:40:01.812 +05:00 [WRN] Провальная попытка входа пользователя sh: Неверный логин или пароль
+2022-05-11 23:40:01.814 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60248) по POST /userToken ответил 400 за 6.9532 мс
+2022-05-11 23:40:04.697 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 23:40:04.699 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60248) по POST /userToken ответил 200 за 3.6006 мс
+2022-05-11 23:40:04.797 +05:00 [INF] Запрос от sh (127.0.0.1:60249) по POST /technoWorldHub/negotiate ответил 200 за 0.1764 мс
+2022-05-11 23:40:04.891 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 23:40:04.982 +05:00 [INF] Запрос от sh (127.0.0.1:60248) по GET /api/Status ответил 200 за 2.0390 мс
+2022-05-11 23:40:05.254 +05:00 [INF] Запрос от sh (127.0.0.1:60248) по GET /api/Orders/Filter ответил 200 за 107.8242 мс
+2022-05-11 23:40:11.028 +05:00 [INF] sh отключен от системы
+2022-05-11 23:40:11.029 +05:00 [INF] Запрос от sh (127.0.0.1:60250) по GET /technoWorldHub ответил 101 за 6182.0336 мс
+2022-05-11 23:40:50.494 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60266) по POST /userToken ответил 400 за 4.3747 мс
+2022-05-11 23:40:53.728 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 23:40:53.730 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60266) по POST /userToken ответил 200 за 3.4620 мс
+2022-05-11 23:40:53.827 +05:00 [INF] Запрос от sh (127.0.0.1:60267) по POST /technoWorldHub/negotiate ответил 200 за 0.1847 мс
+2022-05-11 23:40:53.923 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 23:40:54.019 +05:00 [INF] Запрос от sh (127.0.0.1:60266) по GET /api/Status ответил 200 за 2.3912 мс
+2022-05-11 23:40:54.258 +05:00 [INF] Запрос от sh (127.0.0.1:60266) по GET /api/Orders/Filter ответил 200 за 107.0915 мс
+2022-05-11 23:40:58.695 +05:00 [INF] sh отключен от системы
+2022-05-11 23:40:58.697 +05:00 [INF] Запрос от sh (127.0.0.1:60268) по GET /technoWorldHub ответил 101 за 4820.1650 мс
+2022-05-11 23:41:14.483 +05:00 [INF] Пользователь sh авторизирован в системе
+2022-05-11 23:41:14.484 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60270) по POST /userToken ответил 200 за 5.9644 мс
+2022-05-11 23:41:14.644 +05:00 [INF] Запрос от sh (127.0.0.1:60271) по POST /technoWorldHub/negotiate ответил 200 за 0.2041 мс
+2022-05-11 23:41:14.748 +05:00 [INF] Подключен пользователь кассы: sh
+2022-05-11 23:41:16.135 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Status ответил 200 за 1.5130 мс
+2022-05-11 23:41:16.425 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 126.0183 мс
+2022-05-11 23:41:31.343 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 44.9177 мс
+2022-05-11 23:41:32.476 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 101.5407 мс
+2022-05-11 23:41:33.539 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 50.6348 мс
+2022-05-11 23:41:34.785 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 76.3216 мс
+2022-05-11 23:41:36.633 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 45.7718 мс
+2022-05-11 23:41:37.092 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 33.9001 мс
+2022-05-11 23:41:37.437 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 34.2320 мс
+2022-05-11 23:41:38.334 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 35.3604 мс
+2022-05-11 23:41:38.576 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 35.9885 мс
+2022-05-11 23:41:38.806 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 79.9839 мс
+2022-05-11 23:41:40.871 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 44.6796 мс
+2022-05-11 23:41:41.507 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 41.3495 мс
+2022-05-11 23:41:42.108 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 41.9152 мс
+2022-05-11 23:41:42.304 +05:00 [INF] Запрос от sh (127.0.0.1:60270) по GET /api/Orders/Filter ответил 200 за 99.8093 мс
+2022-05-11 23:41:52.759 +05:00 [INF] sh отключен от системы
+2022-05-11 23:41:52.762 +05:00 [INF] Запрос от sh (127.0.0.1:60272) по GET /technoWorldHub ответил 101 за 38063.8152 мс
+2022-05-11 23:42:10.595 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-11 23:42:10.644 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-11 23:42:10.644 +05:00 [INF] Hosting environment: Development
+2022-05-11 23:42:10.645 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API

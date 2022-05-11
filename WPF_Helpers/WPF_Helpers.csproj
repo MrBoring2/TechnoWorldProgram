@@ -255,6 +255,7 @@
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Models\SortParameter.cs" />
     <Compile Include="ValidationRules\StringToNumberValidationRule.cs" />
+    <Compile Include="ValidationRules\DateOfBirthValidation.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TechnoWorld_DataModels_v2\TechnoWorld_DataModels_v2.csproj">

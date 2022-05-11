@@ -58,7 +58,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 }
 
                 IsEnabled = false;
-                var response = await ApiService.Instance.Authorize(Login, Password);
+                var response = await ApiService.Instance.AuthorizeInWarehouse(Login, Password);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     var data = JsonConvert.DeserializeObject<AuthResponseModel>(response.Content);

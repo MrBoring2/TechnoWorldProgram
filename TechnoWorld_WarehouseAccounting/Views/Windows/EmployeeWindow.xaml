@@ -4,9 +4,79 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
+       TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"   
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns:valudations="clr-namespace:WPF_Helpers.ValidationRules;assembly=WPF_Helpers" 
+        xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+        xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
         mc:Ignorable="d"
-        Title="EmployeeWindow" Height="450" Width="800">
+        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
+        dr:DialogCloser.DialogResult="{Binding DialogResult}"
+        Title="ТЕХНО МИР: Управление предприятием | Карточка сотрудника" Height="557" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="694"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49"/>
+            <RowDefinition/>
+            <RowDefinition Height="48.04"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Карточка сотрудника" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Height="29" Width="240"/>
+        <Border Grid.Row="1" CornerRadius="5" BorderBrush="Orange" BorderThickness="0" Grid.RowSpan="1" Margin="5,5,5,5">
+            <materialDesign:Card  UniformCornerRadius="5">
+                <StackPanel>
+                    <TextBlock Text="Основаная информация" HorizontalAlignment="Center" Margin="5" FontSize="20"/>
+                    <TextBox Text="{Binding FullName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="ФИО" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <ComboBox ItemsSource="{Binding Posts}" SelectedItem="{Binding Post}" SelectedValue="{Binding Post.Id}" SelectedValuePath="Id" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Должность" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <TextBox Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цена продажи" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                        <interactions:Interaction.Triggers>
+                            <interactions:EventTrigger EventName="TextChanged">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                            <interactions:EventTrigger EventName="PreviewTextInput">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="IsAllowedInput"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                        </interactions:Interaction.Triggers>
+                    </TextBox>
+                    <TextBox Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цена закупки" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                        <interactions:Interaction.Triggers>
+                            <interactions:EventTrigger EventName="TextChanged">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                            <interactions:EventTrigger EventName="PreviewTextInput">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="IsAllowedInput"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                        </interactions:Interaction.Triggers>
+                    </TextBox>
+                    <TextBox Text="{Binding PassportSereies, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Серия и номер паспорта" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                        <interactions:Interaction.Triggers>
+                            <interactions:EventTrigger EventName="TextChanged">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                            <interactions:EventTrigger EventName="PreviewTextInput">
+                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="IsAllowedInput"/>
+                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
+                            </interactions:EventTrigger>
+                        </interactions:Interaction.Triggers>
+                    </TextBox>
+                    <DatePicker Text="{Binding DateOfBirth, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Дата рождения" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <TextBox Text="{Binding Login, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Логин" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <TextBox Text="{Binding Password, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Пароль" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                </StackPanel>
+            </materialDesign:Card>
+        </Border>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center"  VerticalAlignment="Top"  Margin="0,5,0,0" Height="32" Width="414">
+            <Button Content="Сохранить" Width="200" Margin="0,0,15,0" Style="{StaticResource btn}" Command="{Binding SaveCommand}" Cursor="Hand"/>
+            <Button Content="Отмена" Width="200" Style="{StaticResource btn}" Command="{Binding CancelCommand}" Cursor="Hand"/>
+        </StackPanel>
+
     </Grid>
 </Window>

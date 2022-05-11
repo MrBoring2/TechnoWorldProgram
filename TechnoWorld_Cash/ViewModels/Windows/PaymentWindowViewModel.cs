@@ -1,8 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,8 +44,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             int id = 1;
             foreach (var item in Order.OrderElectronics)
             {
-
-                OrderItems.Add(new OrderItem(id, item.Electronics.Model, item.Count, item.Electronics.SalePrice, item.Count * item.Electronics.SalePrice));
+                OrderItems.Add(new OrderItem(id, item.Electronics, item.Count));
                 id++;
             }
 
@@ -76,99 +78,196 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         public RelayCommand CancelCommand { get; set; }
         public RelayCommand ChangePaymentMethodToNalCommand { get; set; }
         public RelayCommand ChangePaymentMethodToBesnalCommand { get; set; }
+
+        private void GenerateCheque(string orderNumber, Order orderm, string cashUserFullName, IEnumerable<OrderItem> otderItems)
+        {
+            var chequeNumber = $"{orderNumber}";
+            FileStream fs = new FileStream($"Чеки/{chequeNumber}.pdf", FileMode.Create, FileAccess.Write, FileShare.None);
+            Rectangle rec2 = new Rectangle(PageSize.A4);
+
+
+            Document doc = new Document(rec2, 50, 50, 10, 10);
+
+            PdfWriter writer = PdfWriter.GetInstance(doc, fs);
+            string ttf = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts), "times.ttf");
+            var baseFont = BaseFont.CreateFont(ttf, BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+            var textFont = new iTextSharp.text.Font(baseFont, 14, iTextSharp.text.Font.NORMAL);
+            var tableFont = new iTextSharp.text.Font(baseFont, 12, iTextSharp.text.Font.NORMAL);
+            var titleFont = new iTextSharp.text.Font(baseFont, 21, iTextSharp.text.Font.NORMAL);
+            var bigTitleFont = new iTextSharp.text.Font(baseFont, 26, iTextSharp.text.Font.NORMAL);
+            writer.SetLanguage("ru-RU");
+            doc.AddAuthor($"{ClientService.Instance.User.FullName}");
+            doc.AddCreator("TechnoWorld_Cash using iTextSharp");
+            doc.AddKeywords("PDF чек");
+            doc.AddSubject("Чек");
+            doc.AddTitle($"Чек №{chequeNumber}");
+            doc.Open();
+
+            Paragraph paragraph;
+
+            paragraph = new Paragraph($"ЧЕК", bigTitleFont);
+            paragraph.Alignment = 1;
+            //paragraph.ExtraParagraphSpace = 20;
+            paragraph.Leading = 30;
+            paragraph.SpacingAfter = 20;
+            doc.Add(paragraph);
+
+            paragraph = new Paragraph($"Заказ № {chequeNumber}", titleFont);
+            paragraph.Alignment = 1;
+            //paragraph.ExtraParagraphSpace = 20;
+            paragraph.Leading = 30;
+            paragraph.SpacingAfter = 20;
+            doc.Add(paragraph);
+
+            paragraph = new Paragraph($"Дата регистарции заказа: {Order.DateOfRegistration.ToLocalTime().ToShortDateString()}", textFont);
+            paragraph.Alignment = 3;
+            paragraph.SpacingAfter = 5;
+            doc.Add(paragraph);
+            paragraph = new Paragraph($"Дата оплаты: {DateTime.Now.ToLocalTime().ToShortDateString()}", textFont);
+            paragraph.Alignment = 3;
+            paragraph.SpacingAfter = 20;
+            doc.Add(paragraph);
+
+
+            paragraph = new Paragraph($"Компания продавец: ООО «Техно-мир»", textFont);
+            paragraph.Alignment = 3;
+            paragraph.SpacingAfter = 5;
+            doc.Add(paragraph);
+
+            paragraph = new Paragraph($"Кассир: {cashUserFullName}", textFont);
+            paragraph.Alignment = 3;
+            paragraph.SpacingAfter = 20;
+            doc.Add(paragraph);
+
+            paragraph = new Paragraph($"Товары", titleFont);
+            paragraph.Alignment = 1;
+            paragraph.SpacingAfter = 5;
+            doc.Add(paragraph);
+
+            PdfPTable table = new PdfPTable(5);
+            table.WidthPercentage = 100;
+            table.SetWidths(new float[5] { 40, 100, 50, 60, 80 });
+            PdfPCell cell;
+            //PdfPRow row;
+
+            cell = new PdfPCell(new Phrase("№", tableFont));
+            cell.BorderWidth = 1;
+            cell.HorizontalAlignment = 1;
+            // cell.Width = 40;
+            table.AddCell(cell);
+
+            cell = new PdfPCell(new Phrase("Наименование товара", tableFont));
+            cell.HorizontalAlignment = 1;
+            cell.BorderWidth = 1;
+            //cell.Width = 40;
+            table.AddCell(cell);
+
+
+            cell = new PdfPCell(new Phrase("Кол-во", tableFont));
+            cell.HorizontalAlignment = 1;
+            cell.BorderWidth = 1;
+            // cell.FilledWidth = 100;
+            //cell.Width = 40;
+            table.AddCell(cell);
+
+
+            cell = new PdfPCell(new Phrase("Цена за 1", tableFont));
+            cell.HorizontalAlignment = 1;
+            cell.BorderWidth = 1;
+            //cell.Width = 40;
+            table.AddCell(cell);
+
+
+            cell = new PdfPCell(new Phrase("Сумма", tableFont));
+            cell.HorizontalAlignment = 1;
+            cell.BorderWidth = 1;
+            //cell.Width = 40;
+            table.AddCell(cell);
+
+            int id = 1;
+            decimal totalOrderPrice = 0;
+            foreach (var item in orderItems)
+            {
+                cell = new PdfPCell(new Phrase(id.ToString(), tableFont));
+                cell.HorizontalAlignment = 0;
+                cell.BorderWidth = 1;
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase(item.Electronic.Model, tableFont));
+                cell.HorizontalAlignment = 0;
+                cell.BorderWidth = 1;
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase(item.Count.ToString(), tableFont));
+                cell.HorizontalAlignment = 0;
+                cell.BorderWidth = 1;
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase(Math.Round(item.Electronic.SalePrice, 2).ToString(), tableFont));
+                cell.HorizontalAlignment = 0;
+                cell.BorderWidth = 1;
+                table.AddCell(cell);
+
+                cell = new PdfPCell(new Phrase(Math.Round(item.TotalPrice, 2).ToString(), tableFont));
+                cell.HorizontalAlignment = 0;
+                cell.BorderWidth = 1;
+                table.AddCell(cell);
+
+                decimal currentPrice = item.TotalPrice;
+                totalOrderPrice += currentPrice;
+                id++;
+            }
+
+            cell = new PdfPCell(new Phrase("Итого:", tableFont));
+            cell.HorizontalAlignment = 0;
+            cell.BorderWidth = 1;
+            cell.Colspan = 2;
+            table.AddCell(cell);
+
+            cell = new PdfPCell(new Phrase(orderItems.Sum(p => p.Count).ToString(), tableFont));
+            cell.HorizontalAlignment = 0;
+            cell.BorderWidth = 1;
+            table.AddCell(cell);
+
+            cell = new PdfPCell(new Phrase());
+            cell.HorizontalAlignment = 0;
+            cell.BorderWidth = 1;
+            table.AddCell(cell);
+
+            cell = new PdfPCell(new Phrase(Math.Round(totalOrderPrice, 2).ToString(), tableFont));
+            cell.HorizontalAlignment = 0;
+            cell.BorderWidth = 1;
+            table.AddCell(cell);
+
+            doc.Add(table);
+
+            paragraph = new Paragraph($"Всего к оплате: {totalOrderPrice} руб.", textFont);
+            paragraph.Alignment = 0;
+            paragraph.SpacingAfter = 5;
+            paragraph.SpacingBefore = 5;
+            doc.Add(paragraph);
+
+            doc.Close();
+            writer.Close();
+            fs.Close();
+
+        }
+
         private async void Pay(object obj)
         {
-            await Task.Run(() =>
-            {
-                var app = new Word.Application();
-                Word.Document document = app.Documents.Add();
-
-                Word.Paragraph title = document.Paragraphs.Add();
-                title.Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
-                title.Range.Font.Size = 25;
-                title.Range.Text = $"Чек";
-                title.Range.InsertParagraphAfter();
-
-                var paragraph = document.Paragraphs.Add();
-                paragraph.Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphLeft;
-                paragraph.Alignment = Word.WdParagraphAlignment.wdAlignParagraphLeft;
-                paragraph.Range.Font.Size = 20;
-                paragraph.Range.Text = $"Номер заказа: {Order.OrderNumber}";
-                paragraph.Range.InsertParagraphAfter();
-
-                paragraph = document.Paragraphs.Add();
-                paragraph.Range.Font.Size = 16;
-                paragraph.Alignment = Word.WdParagraphAlignment.wdAlignParagraphLeft;
-                paragraph.Range.Text = $"Дата заказа: {Order.DateOfRegistration}";
-                paragraph.Range.InsertParagraphAfter();
-
-                paragraph = document.Paragraphs.Add();
-                paragraph.Range.Font.Size = 16;
-                paragraph.Alignment = Word.WdParagraphAlignment.wdAlignParagraphRight;
-                paragraph.Range.Text = $"Компания продавец: ООО «Техно-мир»\tКассир: {SellerPerson}";
-                paragraph.Range.InsertParagraphAfter();
-
-                var tableParagrath = document.Paragraphs.Add();
-                tableParagrath.Range.Font.Size = 16;
-                tableParagrath.Alignment = Word.WdParagraphAlignment.wdAlignParagraphLeft;
-                tableParagrath.Range.Text = $"Товары: ";
-                Word.Table table = document.Tables.Add(tableParagrath.Range, OrderItems.Count() + 1, 5);
-                table.Borders.InsideLineStyle = table.Borders.OutsideLineStyle = Word.WdLineStyle.wdLineStyleSingle;
-                table.Range.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
-
-                Word.Range cellRange;
-                cellRange = table.Cell(1, 1).Range;
-                cellRange.Text = "№";
-                cellRange = table.Cell(1, 2).Range;
-                cellRange.Text = "Название";
-                cellRange = table.Cell(1, 3).Range;
-                cellRange.Text = "Количество";
-                cellRange = table.Cell(1, 4).Range;
-                cellRange.Text = "Стоимость за 1";
-                cellRange = table.Cell(1, 5).Range;
-                cellRange.Text = "Общая стоимость";
-
-                table.Rows[1].Range.Bold = 1;
-                table.Rows[1].Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
-
-                int index = 1;
-                foreach (var item in OrderItems)
-                {
-                    cellRange = table.Cell(index + 1, 1).Range;
-                    cellRange.Text = item.Number.ToString();
-
-                    cellRange = table.Cell(index + 1, 2).Range;
-                    cellRange.Text = item.Name.ToString();
-
-                    cellRange = table.Cell(index + 1, 3).Range;
-                    cellRange.Text = item.Count.ToString() + " шт.";
-
-                    cellRange = table.Cell(index + 1, 4).Range;
-                    cellRange.Text = item.PriceForOne.ToString() + " руб.";
-
-                    cellRange = table.Cell(index + 1, 5).Range;
-                    cellRange.Text = item.TotalPrice.ToString() + " руб.";
-                    index++;
-                }
-                tableParagrath.Range.InsertParagraphAfter();
-
-                var totalPriceParagraph = document.Paragraphs.Add();
-                totalPriceParagraph.Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
-                totalPriceParagraph.Range.Font.Size = 25;
-                totalPriceParagraph.Range.Text = $"Всего: {OrderItems.Sum(p => p.TotalPrice)} руб.";
-
-                document.SaveAs2(AppDomain.CurrentDomain.BaseDirectory + $@"Чеки/Чек №{Order.OrderNumber}.pdf", Word.WdExportFormat.wdExportFormatPDF);
-
-            });
             Order.StatusId = 2;
             Order.EmployeeId = ClientService.Instance.User.UserId;
             var response = await ApiService.Instance.PutRequest("api/Orders", Order.OrderId, Order);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
+                await Task.Run(() => GenerateCheque(OrderNumber, Order, ClientService.Instance.User.FullName, OrderItems));
                 MaterialNotification.Show("Оповещение", $"Заказ усешно оплачен.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
                 DialogResult = true;
             }
-
+            else
+            {
+                MaterialNotification.Show("Произошла ошибка при оплате.", $"{response.Content}.", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
+            }
         }
         private void Cancel(object obj)
         {
@@ -187,6 +286,5 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             IsNal = false;
             PaymentMethod = "Безналичный";
         }
-
     }
 }

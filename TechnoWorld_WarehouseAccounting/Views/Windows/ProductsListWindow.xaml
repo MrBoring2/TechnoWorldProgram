@@ -14,7 +14,7 @@
         mc:Ignorable="d"
         xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
-        Title="ТЕХНО МИР | Список товаров" Height="700" Width="1100" MinHeight="600" MinWidth="1100" WindowStartupLocation="CenterScreen" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality">
+        Title="ТЕХНО МИР: Управление предприятием | Список товаров" Height="700" Width="1100" MinHeight="600" MinWidth="1100" WindowStartupLocation="CenterScreen" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality">
     <Grid>
         <Frame Content="{Binding Content}" x:Name="ddd" Grid.Row="0" NavigationUIVisibility="Hidden"/>
     </Grid>

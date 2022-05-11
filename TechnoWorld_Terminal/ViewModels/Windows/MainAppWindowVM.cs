@@ -53,7 +53,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         }
         private async void Authorize()
         {
-            var response = await ApiService.Instance.Authorize();
+            var response = await ApiService.Instance.AuthorizeTerminal();
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 var data = JsonConvert.DeserializeObject<AuthResponseModel>(response.Content);
@@ -66,15 +66,6 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             }
         }
 
-        //private void RegisterEvents()
-        //{
-        //    (PageNavigation.GetPage(typeof(CategoriesPageVM)).DataContext as CategoriesPageVM).onOpenCategory += MainAppWindowVM_onOpenCategory;
-        //}
-
-        //private void MainAppWindowVM_onOpenCategory(Category category)
-        //{
-        //    (PageNavigation.GetPage(typeof(ElectronicsListPageVM)).DataContext as ElectronicsListPageVM).CurrentCategory = category;
-        //}
 
 
         public RelayCommand WindowLoadedCommand { get; set; }

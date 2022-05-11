@@ -51,19 +51,19 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             try
             {
                 IsEnabled = false;
-                var response = await ApiService.Instance.Authorize(Login, Password);
+                var response = await ApiService.Instance.AuthorizeInCash(Login, Password);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     var data = JsonConvert.DeserializeObject<AuthResponseModel>(response.Content);
                     ClientService.Instance.SetClient(data.user_name, data.full_name, data.role_id, data.user_id, data.post);
                     await ApiService.Instance.GetHubConnection.StartAsync();
-            
-           
+
+
                     WindowNavigation.Instance.OpenAndHideWindow(this, new MainAppWindowVM());
                 }
                 else
                 {
-                    CustomMessageBox.Show(JsonConvert.DeserializeObject<string>(response.Content), "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MaterialNotification.Show("Ошибка", JsonConvert.DeserializeObject<string>(response.Content), MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                     IsEnabled = true;
                 }
             }

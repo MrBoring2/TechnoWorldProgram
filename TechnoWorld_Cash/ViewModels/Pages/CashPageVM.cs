@@ -50,11 +50,10 @@ namespace TechnoWorld_Cash.ViewModels.Pages
         }
         public DateTime EndDate { get => endDate; set { endDate = (value.Date >= startDate.Date && value.Date <= DateTime.Now.Date) || startDate == DateTime.MinValue ? value : endDate; OnPropertyChanged(); GetWithFilter(); } }
         public ObservableCollection<Order> DisplayedOrders => Orders;
-        public RelayCommand ToFirstPageCommand { get; set; }
-        public RelayCommand ToLastPageCommand { get; set; }
         public RelayCommand ExitCommand { get; set; }
         public RelayCommand CancelOrderCommand { get; set; }
         public RelayCommand PaymentCommand { get; set; }
+        public RelayCommand RestoreOrderCommand { get; set; }
 
         protected override string UrlApi => "api/Orders/Filter";
 
@@ -78,6 +77,7 @@ namespace TechnoWorld_Cash.ViewModels.Pages
             endDate = DateTime.Now.ToLocalTime().AddDays(7);
             PaymentCommand = new RelayCommand(Payment);
             CancelOrderCommand = new RelayCommand(CancelOrder);
+            RestoreOrderCommand = new RelayCommand(RestoreOrder);
             EmptyVisibility = Visibility.Collapsed;
             ApiService.Instance.GetHubConnection.On<string>("UpdateOrders", async (orders) =>
             {
@@ -88,29 +88,57 @@ namespace TechnoWorld_Cash.ViewModels.Pages
 
         private async void Payment(object obj)
         {
-            if (SelectedEntity.StatusId == 1)
+            if (SelectedEntity != null)
             {
-                var paymentVM = new PaymentWindowViewModel(SelectedEntity);
-                await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(paymentVM));
+                if (SelectedEntity.StatusId == 1)
+                {
+                    var paymentVM = new PaymentWindowViewModel(SelectedEntity);
+                    await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(paymentVM));
+                }
+                else
+                {
+                    MaterialNotification.Show("Внимание", $"Оплатить можно только заказ, требющий оплаты", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                }
             }
-            else
-            {
-                MaterialNotification.Show("Внимание", $"Оплатить можно только заказы, которые ещё не оплачены.", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
-            }
-
-
         }
-        private void CancelOrder(object obj)
+        private async void CancelOrder(object obj)
         {
-            if (SelectedEntity.StatusId == 1)
+            if (SelectedEntity != null)
             {
-                SelectedEntity.StatusId = 4;
-                SelectedEntity.EmployeeId = ClientService.Instance.User.UserId;
-                var response = ApiService.Instance.PutRequest("api/Orders", SelectedEntity.OrderId, SelectedEntity);
+                if (SelectedEntity.StatusId == 1)
+                {
+                    SelectedEntity.StatusId = 4;
+                    SelectedEntity.EmployeeId = ClientService.Instance.User.UserId;
+                    var response = await ApiService.Instance.PutRequest("api/Orders", SelectedEntity.OrderId, SelectedEntity);
+                    if (response.StatusCode != System.Net.HttpStatusCode.OK)
+                    {
+                        MaterialNotification.Show("Произошла ошибка при изменении статуса товара", $"{response.Content}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
+                    }
+                }
+                else
+                {
+                    MaterialNotification.Show("Внимание", $"Отменить можно только заказ, который ещё не оплачен.", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                }
             }
-            else
+        }
+        private async void RestoreOrder(object obj)
+        {
+            if (SelectedEntity != null)
             {
-                MaterialNotification.Show("Внимание", $"Отменить можно только заказы, которые ещё не оплачены.", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                if (SelectedEntity.StatusId == 4)
+                {
+                    SelectedEntity.StatusId = 1;
+                    SelectedEntity.EmployeeId = ClientService.Instance.User.UserId;
+                    var response = await ApiService.Instance.PutRequest("api/Orders", SelectedEntity.OrderId, SelectedEntity);
+                    if (response.StatusCode != System.Net.HttpStatusCode.OK)
+                    {
+                        MaterialNotification.Show("Произошла ошибка при изменении статуса товара", $"{response.Content}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
+                    }
+                }
+                else
+                {
+                    MaterialNotification.Show("Внимание", $"Восстановить можно только заказ, которые был отменён.", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                }
             }
         }
 
@@ -122,7 +150,7 @@ namespace TechnoWorld_Cash.ViewModels.Pages
             OnPropertyChanged(nameof(StartDate));
             OnPropertyChanged(nameof(EndDate));
         }
-      
+
         private async Task LoadStatuses()
         {
             var statusesJson = await ApiService.Instance.GetRequest("api/Status");
@@ -134,5 +162,6 @@ namespace TechnoWorld_Cash.ViewModels.Pages
                 selectedStatus = Statuses.FirstOrDefault();
             }
         }
+
     }
 }

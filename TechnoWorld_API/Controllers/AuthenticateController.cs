@@ -71,8 +71,9 @@ namespace TechnoWorld_API.Controllers
             if (ModelState.IsValid)
             {
                 ClaimsIdentity userClaims = null;
-                var validationResult = UserValidation.ValidateLoginPassword(model);
-                if (validationResult.Result == true)
+                var validationLoginPasswordResult = UserValidation.ValidateLoginPassword(model);
+               
+                if (validationLoginPasswordResult.Result == true)
                 {
                     var user = await TryGetUser(model.UserName, model.Password);
                     if (user == null)
@@ -83,11 +84,16 @@ namespace TechnoWorld_API.Controllers
                     else
                     {
                         userClaims = ClaimsExtentions.BuildClaimsForUser(user);
+                        var validationProdgrammResult = UserValidation.ValudateProgramm(model, userClaims);
+                        if(validationProdgrammResult.Result == false)
+                        {
+                            return BadRequest(validationProdgrammResult.Message);
+                        }
                     }
                 }
                 else
                 {
-                    return BadRequest(validationResult.Message);
+                    return BadRequest(validationLoginPasswordResult.Message);
                 }
                 var token = JwtTokenGenerator.GenerateToken(userClaims);
 

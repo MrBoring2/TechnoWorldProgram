@@ -11,7 +11,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
       d:DesignHeight="600"
-      Title="ProductManagementPage" Background="White" >
+      Title="ProductManagementPage" Background="White" d:DesignWidth="1200">
     <Page.Resources>
         <Style TargetType="ToolTip" BasedOn="{StaticResource MaterialDesignToolTip}">
             <Setter Property="Template">
@@ -37,42 +37,45 @@
 
         <Grid Margin="5,5,5,5">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1173*"/>
-                <ColumnDefinition Width="107*"/>
+                <ColumnDefinition Width="382*"/>
+                <ColumnDefinition Width="213*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBox Margin="0,0,5,0" Grid.Row="0" Text="{Binding Search, Delay=250, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Введите название модели..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Arrow"/>
+            <TextBox Margin="0,0,5,0" Grid.Row="0" Text="{Binding Search, Delay=250, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Введите название модели..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Arrow" Height="42"/>
             <StackPanel Grid.Row="1" Orientation="Horizontal">
                 <ComboBox Width="250" ItemsSource="{Binding Categories}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedCategory}" materialDesign:HintAssist.Hint="Категория" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
                 <ComboBox Width="250" Margin="5,0,0,0" ItemsSource="{Binding ElectronicsTypes}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedType}" IsEnabled="{Binding IsCategorySelected}" materialDesign:HintAssist.Hint="Тип" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
+                <ComboBox Width="250" HorizontalAlignment="Left" Margin="5,0,0,0" ItemsSource="{Binding ForDisplayList}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedDisplay}" materialDesign:HintAssist.Hint="Отображать" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top" FontSize="16" Grid.Row="1"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right">
                 <ComboBox Width="250" Margin="5,0,0,0" ItemsSource="{Binding SortParameters}" SelectedItem="{Binding SelectedSort}" DisplayMemberPath="Title" materialDesign:HintAssist.Hint="Сортировка" materialDesign:HintAssist.IsFloating="True" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 <CheckBox Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAcsending}" VerticalAlignment="Center" FontSize="16" Margin="5,0,0,0" Command="{Binding SortOrderChangedCommand}"/>
             </StackPanel>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Right">
-                <Button Background="Transparent" Visibility="{Binding EditAddVisibility}" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenProductWindowCommand}" Cursor="Hand">
-                    <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
-                        <materialDesign:PackIcon.ToolTip>
-                            <ToolTip Style="{StaticResource BaseToolit}">
-                                <TextBlock Text="Добавить"/>
-                            </ToolTip>
-                        </materialDesign:PackIcon.ToolTip>
-                    </materialDesign:PackIcon>
-                </Button>
-                <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenEditProductWindowCommand}" Cursor="Hand">
-                    <materialDesign:PackIcon Kind="EditOutline" Visibility="{Binding EditAddVisibility}" Width="35" Height="35" Margin="-15" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
-                        <materialDesign:PackIcon.ToolTip>
-                            <ToolTip Style="{StaticResource BaseToolit}">
-                                <TextBlock Text="Редактировать"/>
-                            </ToolTip>
-                        </materialDesign:PackIcon.ToolTip>
-                    </materialDesign:PackIcon>
-                </Button>
-            </StackPanel>
-        </Grid>
 
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="1" Margin="5" HorizontalAlignment="Left">
+            <Button Background="Transparent" Visibility="{Binding EditAddVisibility}" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenProductWindowCommand}" Cursor="Hand">
+                <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
+                    <materialDesign:PackIcon.ToolTip>
+                        <ToolTip Style="{StaticResource BaseToolit}">
+                            <TextBlock Text="Добавить"/>
+                        </ToolTip>
+                    </materialDesign:PackIcon.ToolTip>
+                </materialDesign:PackIcon>
+            </Button>
+            <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenEditProductWindowCommand}" Cursor="Hand">
+                <materialDesign:PackIcon Kind="EditOutline" Visibility="{Binding EditAddVisibility}" Width="35" Height="35" Margin="-15" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
+                    <materialDesign:PackIcon.ToolTip>
+                        <ToolTip Style="{StaticResource BaseToolit}">
+                            <TextBlock Text="Редактировать"/>
+                        </ToolTip>
+                    </materialDesign:PackIcon.ToolTip>
+                </materialDesign:PackIcon>
+            </Button>
+        </StackPanel>
         <DataGrid Grid.Row="2" ItemsSource="{Binding EntitiesCollection}" SelectedItem="{Binding SelectedEntity}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto">
 
             <interactions:Interaction.Triggers>
@@ -126,7 +129,6 @@
             <TextBlock  Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock  Text="Выберите другие критерии или проверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center"/>
         </StackPanel>
-        <ComboBox Width="250" HorizontalAlignment="Left" Margin="5,0,0,0" ItemsSource="{Binding ForDisplayList}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedDisplay}" materialDesign:HintAssist.Hint="Отображать" materialDesign:HintAssist.IsFloating="True" FontSize="16" Grid.Row="1"/>
 
 
         <StackPanel Orientation="Horizontal" Name="Paginator" HorizontalAlignment="Center"  Grid.Row="3">

@@ -10,7 +10,7 @@
                  xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
         xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
-        Title="ТЕХНО МИР | Оплата" MinWidth="1050" MinHeight="700" Width="1050" Height="700">
+        Title="ТЕХНО МИР: Касса | Оплата заказа" MinWidth="1050" MinHeight="700" Width="1050" Height="700">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
@@ -28,7 +28,7 @@
                 <RadioButton FontSize="16" VerticalAlignment="Center" Content="Наличный" IsChecked="{Binding IsNal}" Command="{Binding ChangePaymentMethodToNalCommand}"  Margin="5" Width="100" GroupName="A"/>
                 <RadioButton FontSize="16" VerticalAlignment="Center" Content="Безналичный" IsChecked="{Binding IsBesnal}" Command="{Binding ChangePaymentMethodToBesnalCommand}"  Margin="5" Width="129" GroupName="A"/>
             </StackPanel>
-            <StackPanel Grid.Column="2" Orientation="Horizontal">
+            <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,0">
                 <Button  HorizontalAlignment="Left" Width="150" Style="{StaticResource btn}" Margin="5" Command="{Binding PayCommand}">
                     <Button.Content>
                         <TextBlock Text="Оплатить" Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -56,10 +56,16 @@
                 <TextBlock FontSize="16" Grid.Row="1" Text="Компания продавец: ООО «Техно-мир»" HorizontalAlignment="Left" Margin="10,5,5,5"/>
                 <TextBlock FontSize="16" Grid.Row="1" Text="{Binding SellerPerson, StringFormat={}Кассир: {0}}" HorizontalAlignment="Right" Margin="10,5,10,5"/>
                 <ScrollViewer Grid.Row="2" Margin="10,5,10,5" VerticalScrollBarVisibility="Auto">
-                    <DataGrid IsReadOnly="True" ItemsSource="{Binding OrderItems}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False">
+                    <DataGrid IsReadOnly="True" ItemsSource="{Binding OrderItems}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" BorderBrush="Orange" BorderThickness="1">
+                        <DataGrid.Resources>
+                            <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="Background" Value="Orange" />
+                                <Setter Property="Foreground" Value="Black" />
+                            </Style>
+                        </DataGrid.Resources>
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="№" Binding="{Binding Number}"/>
-                            <DataGridTextColumn Header="Название" Width="2*" Binding="{Binding Name}"/>
+                            <DataGridTextColumn Header="Название" Width="2*" Binding="{Binding Electronic.Model}"/>
                             <DataGridTextColumn Header="Количество" Width="0.5*" Binding="{Binding Count}"/>
                             <DataGridTextColumn Header="Цена за 1" Width="0.5*"  Binding="{Binding PriceForOne, StringFormat={}{0:F2} ₽}"/>
                             <DataGridTextColumn Header="Общая стоимость" Width="0.7*"  Binding="{Binding TotalPrice, StringFormat={}{0:F2} ₽}"/>

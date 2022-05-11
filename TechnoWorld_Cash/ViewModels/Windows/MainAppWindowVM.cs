@@ -32,13 +32,16 @@ namespace TechnoWorld_Cash.ViewModels.Windows
         {
             PageNavigation.Instance.RegisterPages();
             PageNavigation.Navigate(typeof(CashPageVM));
-            MaterialNotification.Show("Оповещение", $"Добро пожаловать, {ClientService.Instance.User.FullName}", MaterialNotificationButton.Ok, MaterialNotificationImage.Information);
+            MaterialNotification.Show("Оповещение", $"Авторизация прошла успешно.", MaterialNotificationButton.Ok, MaterialNotificationImage.Information);
         }
 
         private void Exit(object obj)
         {
+
             ApiService.Instance.ShutDownService();
+            ApiService.Instance.RemoveRestClient();
             WindowNavigation.Instance.OpenAndHideWindow(this, new LoginWindowViewModel());
+
         }
     }
 }

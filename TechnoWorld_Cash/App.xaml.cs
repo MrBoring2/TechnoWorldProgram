@@ -9,6 +9,7 @@ using TechnoWorld_Cash.ViewModels.Windows;
 using TechnoWorld_Cash.Views.Windows;
 using TechnoWorld_Cash.Services;
 using WPF_VM_Abstractions;
+using System.IO;
 
 namespace TechnoWorld_Cash
 {
@@ -23,7 +24,10 @@ namespace TechnoWorld_Cash
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-
+            if (!Directory.Exists("Чеки"))
+            {
+                Directory.CreateDirectory("Чеки");
+            }
             RegisterWindows();
             var loginWindowVM = new LoginWindowViewModel();
             WindowNavigation.Instance.OpenWindow(loginWindowVM);
