@@ -38,7 +38,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 {
                     selectedMenuItem = value;
                     OnPropertyChanged();
-                    WindowTitle = $"ТЕХНО МИР | {selectedMenuItem.Title}";
+                    WindowTitle = SelectedMenuItem == null ? "" : $"ТЕХНО МИР | {selectedMenuItem.Title}";
                     if (selectedMenuItem != null)
                     {
                         PageNavigation.Navigate(selectedMenuItem.PageDestination);
@@ -74,7 +74,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             PageNavigation.Instance.RegisterPages(ClientService.Instance.User.RoleId);
             SelectedMenuItem = MenuItems.FirstOrDefault(p => p.Title.Equals("Управление товарами"));
-            MaterialNotification.Show("Оповещение", $"Добро пожаловать, {ClientService.Instance.User.FullName}.", MaterialNotificationButton.Ok, MaterialNotificationImage.Information);
+            MaterialNotification.Show("Оповещение", $"Авторизация прошла успешно", MaterialNotificationButton.Ok, MaterialNotificationImage.Information);
+            //Добро пожаловать, {ClientService.Instance.User.FullName}
         }
         private void LoadMenu()
         {
@@ -97,7 +98,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 case 4:
                     {
                         MenuItems.Add(new MenuItem("Управление товарами", MaterialDesignThemes.Wpf.PackIconKind.FormSelect, typeof(ProductManagementPageVM)));
-                        MenuItems.Add(new MenuItem("Управление сотрудниками", MaterialDesignThemes.Wpf.PackIconKind.Users));
+                        MenuItems.Add(new MenuItem("Управление сотрудниками", MaterialDesignThemes.Wpf.PackIconKind.Users, typeof(EmployeesManagementPageVM)));
                         MenuItems.Add(new MenuItem("Поставка товара", MaterialDesignThemes.Wpf.PackIconKind.BoxAdd, typeof(DeliveryManagementPageVM)));
                         MenuItems.Add(new MenuItem("Выдача товара", MaterialDesignThemes.Wpf.PackIconKind.Dolly, typeof(ProductDistributionPageVM)));
                         MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.ClipboardEditOutline));

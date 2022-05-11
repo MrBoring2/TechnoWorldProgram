@@ -270,6 +270,7 @@
     <Compile Include="ViewModels\Pages\ProductManagementPageVM.cs" />
     <Compile Include="ViewModels\Windows\DeliveryWindowVM.cs" />
     <Compile Include="ViewModels\Windows\DestributionOrderWindowVM.cs" />
+    <Compile Include="ViewModels\Windows\EmployeeWindow.cs" />
     <Compile Include="ViewModels\Windows\LoginWindowVM.cs" />
     <Compile Include="ViewModels\Windows\MainAppWindowVM.cs" />
     <Compile Include="ViewModels\Windows\ProductListWindowVM.cs" />
@@ -294,6 +295,9 @@
     </Compile>
     <Compile Include="Views\Windows\DestributionOrderWindow.xaml.cs">
       <DependentUpon>DestributionOrderWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\EmployeeWindow.xaml.cs">
+      <DependentUpon>EmployeeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -368,6 +372,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\DestributionOrderWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\EmployeeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

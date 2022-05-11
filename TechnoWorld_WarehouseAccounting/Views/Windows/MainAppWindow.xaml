@@ -71,13 +71,28 @@
             <TextBlock Text="{Binding CurrentUserFullName}" Margin="5" FontSize="16"/>
             <TextBlock Text="{Binding CurrentUserPost}" Margin="5" FontSize="16"/>
         </StackPanel>
+       
         <Frame x:Name="MainFraim" Margin="48,25,0,0" NavigationUIVisibility="Hidden" Grid.RowSpan="2"/>
-        <mah:HamburgerMenu Grid.Column="0" PaneBackground="Orange" ItemsSource="{Binding MenuItems}" OptionsItemsSource="{Binding OptionalMenuItems}"
+        <Rectangle Fill="Black" Grid.RowSpan="2" Opacity="0.3" Grid.Row="0">
+            <Rectangle.Style>
+                <Style TargetType="Rectangle">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=menu, Path=IsPaneOpen}" Value="False">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=menu, Path=IsPaneOpen}" Value="True">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Rectangle.Style>
+        </Rectangle>
+        <mah:HamburgerMenu HamburgerButtonClick="menu_HamburgerButtonClick" x:Name="menu" Grid.Column="0" PaneBackground="Orange" ItemsSource="{Binding MenuItems}" OptionsItemsSource="{Binding OptionalMenuItems}"
                            DisplayMode="CompactOverlay"
                            IsPaneOpen="False"
                            SelectedItem="{Binding SelectedMenuItem}" 
                            SelectedOptionsItem="{Binding SelectedOptionsMenuItem}"
-                           ItemTemplate="{StaticResource HamburgerMenuItem}"
+                           ItemTemplate="{StaticResource HamburgerMenuItem}" BorderThickness="1" BorderBrush="Black"
                            OptionsItemTemplate="{StaticResource HamburgerOptionsMenuItem}" Grid.RowSpan="2">
             <mah:HamburgerMenu.HamburgerMenuHeaderTemplate>
                 <DataTemplate>
