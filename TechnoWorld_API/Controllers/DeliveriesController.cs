@@ -43,6 +43,7 @@ namespace TechnoWorld_API.Controllers
                 list = _context.Deliveries.Include(p => p.Status)
                                                 .Include(p => p.Storage)
                                                 .Include(p => p.ElectronicsToDeliveries)
+                                                .ThenInclude(p => p.Electronics)
                                                 .AsSplitQuery()
                                                 .AsNoTracking()
                                                 .Where(filter.FilterExpression)
@@ -62,13 +63,6 @@ namespace TechnoWorld_API.Controllers
                     list = list.Skip((filter.CurrentPage - 1) * filter.ItemsPerPage);
                 }
                 list = list.Take(filter.ItemsPerPage);
-                foreach (var item in list)
-                {
-                    foreach (var storage in item.ElectronicsToDeliveries)
-                    {
-                        _context.Entry(storage).Reference(p => p.Electronics).Load();
-                    }
-                }
             });
 
             return Ok(new FilteredDeliveries(list, count));
@@ -200,8 +194,8 @@ namespace TechnoWorld_API.Controllers
                 LogService.LodMessage($"Выгрузка товара завершена.", LogLevel.Info);
             }
             catch (DbUpdateConcurrencyException)
-            {                                  
-               LogService.LodMessage($"Произошла ошибка при выгрузке товара...", LogLevel.Error);
+            {
+                LogService.LodMessage($"Произошла ошибка при выгрузке товара...", LogLevel.Error);
                 return BadRequest("Произошла ошибка при выгрузке товара...");
             }
 

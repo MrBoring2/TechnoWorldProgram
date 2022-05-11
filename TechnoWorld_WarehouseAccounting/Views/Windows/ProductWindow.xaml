@@ -14,7 +14,7 @@
                     xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
-        Title="ТЕХНО МИР | Карточка товара" Height="961" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
+        Title="ТЕХНО МИР | Карточка сотрудника" Height="391" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
     <mde:MaterialWindow.Resources>
         <Style TargetType="ToolTip" BasedOn="{StaticResource MaterialDesignToolTip}">
             <Setter Property="Template">
@@ -32,31 +32,21 @@
     </mde:MaterialWindow.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="694"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="49"/>
-            <RowDefinition Height="250"/>
-            <RowDefinition Height="64*"/>
-            <RowDefinition Height="85*"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="267"/>
+            <RowDefinition Height="46"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Карточка товара" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.ColumnSpan="2"/>
-        <materialDesign:Card Grid.Column="0" Grid.Row="1" Margin="5" UniformCornerRadius="5">
-            <Image  Margin="5,5,5,5" Source="{Binding Image, Converter={StaticResource nullImageConv}}"/>
-        </materialDesign:Card>
-        <Button Grid.Column="0" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Выбрать изображение" Style="{StaticResource btn}" Margin="5" Command="{Binding LoadImageCommand}" Cursor="Hand"/>
-        <Border Grid.Column="1" Grid.Row="1" CornerRadius="5" BorderBrush="Orange" BorderThickness="0" Grid.RowSpan="2" Margin="5,5,5,5">
+        <TextBlock Text="Карточка сотрудника" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Margin="5,10"/>
+        <Border Grid.Row="1" CornerRadius="5" BorderBrush="Orange" BorderThickness="0" Grid.RowSpan="1" Margin="5,5,5,5">
             <materialDesign:Card  UniformCornerRadius="5">
                 <StackPanel>
                     <TextBlock Text="Основаная информация" HorizontalAlignment="Center" Margin="5" FontSize="20"/>
-                    <TextBox x:Name="dd" Text="{Binding Model, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Модель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
-                        
-                    </TextBox>
-                    <ComboBox ItemsSource="{Binding Categories}" IsEnabled="{Binding IsAdd}" SelectedItem="{Binding Category}" SelectedValue="{Binding Category.Id}" SelectedValuePath="Id" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Категория" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <ComboBox ItemsSource="{Binding ElectronicsTypes}" SelectedItem="{Binding ElectrnicsType}" SelectedValue="{Binding ElectrnicsType.TypeId}" IsEnabled="{Binding IsAdd}" SelectedValuePath="TypeId" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Тип" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Text="{Binding SalePrice, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, StringFormat=F2}" materialDesign:HintAssist.Hint="Цена продажи" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                    <TextBox Text="{Binding FullName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="ФИО" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <ComboBox ItemsSource="{Binding Posts}" SelectedItem="{Binding Post}" SelectedValue="{Binding Post.Id}" SelectedValuePath="Id" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Должность" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <TextBox Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цена продажи" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
                         <interactions:Interaction.Triggers>
                             <interactions:EventTrigger EventName="TextChanged">
                                 <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
@@ -68,8 +58,7 @@
                             </interactions:EventTrigger>
                         </interactions:Interaction.Triggers>
                     </TextBox>
-
-                    <TextBox Text="{Binding PurchasePrice, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, StringFormat=F2}" materialDesign:HintAssist.Hint="Цена закупки" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                    <TextBox Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цена закупки" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
                         <interactions:Interaction.Triggers>
                             <interactions:EventTrigger EventName="TextChanged">
                                 <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
@@ -81,11 +70,7 @@
                             </interactions:EventTrigger>
                         </interactions:Interaction.Triggers>
                     </TextBox>
-
-                    <ComboBox ItemsSource="{Binding Manufacturers}" IsEnabled="{Binding IsAdd}" SelectedItem="{Binding Manufacturer}" SelectedValue="{Binding Manufacturer.ManufacturerId}" SelectedValuePath="ManufacturerId"  DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Text="{Binding ManufacturerCountry, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Страна производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Text="{Binding Color, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цвет" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
-                    <TextBox Text="{Binding Weight, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, StringFormat=F2}" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                    <TextBox Text="{Binding PassportSereies, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Серия и номер паспорта" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
                         <interactions:Interaction.Triggers>
                             <interactions:EventTrigger EventName="TextChanged">
                                 <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
@@ -97,17 +82,13 @@
                             </interactions:EventTrigger>
                         </interactions:Interaction.Triggers>
                     </TextBox>
-                    <CheckBox IsChecked="{Binding IsOfferedForSale}" Content="Выставлен на продажу" HorizontalAlignment="Center" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <DatePicker Text="{Binding DateOfBirth, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Дата рождения" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <TextBox Text="{Binding Login, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Логин" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <TextBox Text="{Binding Password, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Пароль" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                 </StackPanel>
             </materialDesign:Card>
         </Border>
-        <Border Margin="5,5,5,5" CornerRadius="5" BorderBrush="Orange" BorderThickness="0" Grid.ColumnSpan="2" Grid.Row="3">
-            <materialDesign:Card UniformCornerRadius="5">
-                <TextBox Text="{Binding Description, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" VerticalAlignment="Top" Margin="5" materialDesign:HintAssist.Hint="Описание товара" materialDesign:HintAssist.IsFloating="True" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Cursor="Arrow" FontSize="16" materialDesign:HintAssist.FloatingScale="0.8"/>
-            </materialDesign:Card>
-        </Border>
-
-        <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="140,0" Width="414">
             <Button Content="Сохранить" Width="200" Margin="0,0,15,0" Style="{StaticResource btn}" Command="{Binding SaveCommand}" Cursor="Hand"/>
             <Button Content="Отмена" Width="200" Style="{StaticResource btn}" Command="{Binding CancelCommand}" Cursor="Hand"/>
         </StackPanel>

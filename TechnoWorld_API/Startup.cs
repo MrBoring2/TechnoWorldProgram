@@ -42,7 +42,7 @@ namespace BNS_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TechnoWorldContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Home")));
+            services.AddDbContext<TechnoWorldContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Chenk")));
             services.AddControllers();
             services.AddMvc().AddNewtonsoftJson(options =>
             {
@@ -115,7 +115,7 @@ namespace BNS_API
                         string userName = "";
                         if (httpContext.User?.Claims.Count() == 0)
                         {
-                            userName = "Не установлено";
+                            userName = "Неавторизированный пользователь";
                         }
                         else
                         {
@@ -136,7 +136,16 @@ namespace BNS_API
                     options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
                     options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
                     {
-                        diagnosticContext.Set("UserName", httpContext.User?.Claims.FirstOrDefault(p => p.Type == ClaimsIdentity.DefaultNameClaimType));
+                        string userName = "";
+                        if (httpContext.User?.Claims.Count() == 0)
+                        {
+                            userName = "Неавторизированный пользователь";
+                        }
+                        else
+                        {
+                            userName = httpContext.User?.Claims.FirstOrDefault(p => p.Type == ClaimsIdentity.DefaultNameClaimType).Value;
+                        }
+                        diagnosticContext.Set("UserName", userName);
                         diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
                         diagnosticContext.Set("ClientIp", httpContext.Connection?.RemoteIpAddress);
                         diagnosticContext.Set("ClientPort", httpContext.Connection?.RemotePort);
@@ -148,11 +157,11 @@ namespace BNS_API
             app.Use((context, next) =>
             {
                 var token = context.Request.Cookies[".AspNetCore.Application.Id"];
-     
+
                 if (!string.IsNullOrEmpty(token))
                     context.Request.Headers.Add("Authorization", "Bearer " + token);
 
-               return next();
+                return next();
             });
 
             app.UseRouting();

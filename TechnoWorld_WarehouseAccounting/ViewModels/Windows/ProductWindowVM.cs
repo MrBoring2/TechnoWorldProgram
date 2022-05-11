@@ -114,14 +114,14 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         public ElectrnicsType ElectrnicsType { get => CurrentElectronic.Type; set { CurrentElectronic.Type = value; OnPropertyChanged(); } }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
-        [Range(minimum: 1, maximum: 10000000, ErrorMessage = "Указана недопустимая цена продажи: минимум {1}, максимум {2}")]
+        [Range(minimum: 1, maximum: 3000000, ErrorMessage = "Указана недопустимая цена продажи: минимум {1}, максимум {2}")]
         public decimal SalePrice
         {
             get => CurrentElectronic.SalePrice;
             set { CurrentElectronic.SalePrice = Convert.ToDecimal(value); ValidationMessageSetter(value); }
         }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
-        [Range(minimum: 1, maximum: 10000000, ErrorMessage = "Указан недопустимая цена закупки: минимум {1}, максимум {2}")]
+        [Range(minimum: 1, maximum: 3000000, ErrorMessage = "Указан недопустимая цена закупки: минимум {1}, максимум {2}")]
         public decimal PurchasePrice { get => CurrentElectronic.PurchasePrice; set { CurrentElectronic.PurchasePrice = Convert.ToDecimal(value); ValidationMessageSetter(value); } }
         public Manufacturer Manufacturer { get => CurrentElectronic.Manufacturer; set { CurrentElectronic.Manufacturer = value; CurrentElectronic.ManufactrurerId = value.ManufacturerId; OnPropertyChanged(); } }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]

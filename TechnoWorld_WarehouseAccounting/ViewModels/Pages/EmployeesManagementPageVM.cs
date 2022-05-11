@@ -20,9 +20,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
     public class EmployeesManagementPageVM : ListEntitiesPageVM<Employee, FilteredEmployees>
     {
         private ObservableCollection<SortParameter> sortParameters;
-        private ObservableCollection<ItemWithTitle<Role>> roles;
         private ObservableCollection<ItemWithTitle<Post>> posts { get; set; }
-        private ItemWithTitle<Role> selectedRole;
         private ItemWithTitle<Post> selectedPost;
         private Visibility editAddVisibility;
         public event EventHandler onElectronicSelected;
@@ -38,7 +36,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
         public RelayCommand OpenEmployeeWindowCommand { get; set; }
         public RelayCommand OpenEditEmployeeWindowCommand { get; set; }
-        public ObservableCollection<ItemWithTitle<Role>> Roles { get => roles; set { roles = value; OnPropertyChanged(); } }
         public override ObservableCollection<SortParameter> SortParameters { get => sortParameters; set { sortParameters = value; OnPropertyChanged(); } }
         public ObservableCollection<ItemWithTitle<Post>> Posts
         {
@@ -50,16 +47,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             }
         }
 
-        public ItemWithTitle<Role> SelectedRole
-        {
-            get => selectedRole;
-            set
-            {
-                selectedRole = value;
-                OnPropertyChanged();
-                GetWithFilter();
-            }
-        }
         public ItemWithTitle<Post> SelectedPost
         {
             get => selectedPost;
@@ -80,7 +67,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 return new
                 {
                     search = Search,
-                    roleId = SelectedRole.Item == null ? 0 : SelectedRole.Item.RoleId,
                     postId = SelectedPost == null || SelectedPost.Item == null ? 0 : SelectedPost.Item.PostId,
                     sortParameter = SelectedSort.Property,
                     isAscending = SelectedSort.IsAcsending,
@@ -118,23 +104,11 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
         private async void LoadData()
         {
-            await LoadRoles();
             await LoadPosts();
             await GetWithFilter();
         }
 
 
-        private async Task LoadRoles()
-        {
-            var request = await ApiService.Instance.GetRequest("api/Roles");
-            if (request.StatusCode == System.Net.HttpStatusCode.OK)
-            {
-                Roles = new ObservableCollection<ItemWithTitle<Role>>(JsonConvert.DeserializeObject<List<Role>>(request.Content).Select(p => new ItemWithTitle<Role>(p, p.Name)));
-                Roles.Insert(0, new ItemWithTitle<Role>(null, "Все"));
-                selectedRole = Roles.FirstOrDefault();
-                OnPropertyChanged(nameof(SelectedRole));
-            }
-        }
         private async Task LoadPosts()
         {
             var request = await ApiService.Instance.GetRequest("api/Posts");

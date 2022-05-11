@@ -110,7 +110,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public ObservableCollection<DeliveryItem> DeliveryItems { get => deliveryItems; set { deliveryItems = value; OnPropertyChanged(); } }
         public ObservableCollection<Supplier> Suppliers { get => suppliers; set { suppliers = value; OnPropertyChanged(); } }
         public ObservableCollection<Storage> Storages { get => storages; set { storages = value; OnPropertyChanged(); } }
-        
+
         public decimal PayPrice => IsAdd ? 0 : Delivery.TotalPrice;
         private void Initialize()
         {
@@ -470,11 +470,20 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async void UnloadToStorage(object obj)
         {
-            var response = await ApiService.Instance.PutRequest($"api/Deliveries/Unload", Delivery.DelivertId);
-            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            var result = MaterialNotification.Show("Подтверждение", $"Отменить заказ?", MaterialNotificationButton.Ok, MaterialNotificationImage.Question);
+
+            if (result == MaterialNotificationResult.Yes)
             {
-                DialogResult = true;
-                MaterialNotification.Show("Оповещение", $"Поставка с номером {Delivery.DeliveryNumber} успешно выгружена.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
+                var response = await ApiService.Instance.PutRequest($"api/Deliveries/Unload", Delivery.DelivertId);
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    DialogResult = true;
+                    MaterialNotification.Show("Оповещение", $"Поставка с номером {Delivery.DeliveryNumber} успешно выгружена.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
+                }
+                else
+                {
+                    MaterialNotification.Show("Произошла ошибка при выгрузке поставки!", $"{response.Content}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
+                }
             }
         }
 
@@ -498,7 +507,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 }
                 else
                 {
-                    MaterialNotification.Show("Произошла ошибка при изменении!", $"{response.Content}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
+                    MaterialNotification.Show("Произошла ошибка при отмене поставки!", $"{response.Content}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                 }
             }
         }
