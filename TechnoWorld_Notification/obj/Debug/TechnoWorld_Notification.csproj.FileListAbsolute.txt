@@ -36,3 +36,4 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Notification\bin\Debug\ru-r
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Notification\bin\Debug\uz-Latn-UZ\MaterialDesignExtensions.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Notification\obj\Debug\DemoWindow.g.cs
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Notification\obj\Debug\DemoWindow.baml
+C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_Notification\obj\Debug\TechnoWorld_Notification.csproj.AssemblyReference.cache
