@@ -116,7 +116,11 @@ namespace WPF_VM_Abstractions
             var response = await restClient.ExecuteAsync(CreateRequest($"{url}/{id}", Method.PUT));
             return response;
         }
-
+        public async Task<IRestResponse> DeleteRequest(string url, int id)
+        {
+            var response = await restClient.ExecuteAsync(CreateRequest($"{url}/{id}", Method.DELETE));
+            return response;
+        }
         private IRestRequest CreateRequest(string url, Method httpMethod)
         {
             var restReqeust = new RestRequest(url, httpMethod);

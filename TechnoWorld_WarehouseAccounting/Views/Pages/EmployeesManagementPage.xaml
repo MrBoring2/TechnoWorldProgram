@@ -46,14 +46,14 @@
             </Grid.RowDefinitions>
             <TextBox Margin="0,0,5,0" Grid.Row="0" Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Введите ФИО, телефон или почту сотрудника..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Arrow"/>
             <StackPanel Grid.Row="1" Orientation="Horizontal">
-                <ComboBox Width="250" ItemsSource="{Binding Posts}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedCategory}" materialDesign:HintAssist.Hint="Должность" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
+                <ComboBox Width="250" ItemsSource="{Binding Posts}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedPost}" materialDesign:HintAssist.Hint="Должность" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
                 <ComboBox Width="250" Margin="5,0,0,0" ItemsSource="{Binding SortParameters}" SelectedItem="{Binding SelectedSort}" DisplayMemberPath="Title" materialDesign:HintAssist.Hint="Сортировка" materialDesign:HintAssist.IsFloating="True" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 <CheckBox Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAcsending}" VerticalAlignment="Center" FontSize="16" Margin="5,0,0,0" Command="{Binding SortOrderChangedCommand}"/>
             </StackPanel>
 
         </Grid>
         <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="0" Margin="5" HorizontalAlignment="Left">
-            <Button Background="Transparent" Visibility="{Binding EditAddVisibility}" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenProductWindowCommand}" Cursor="Hand">
+            <Button Background="Transparent" Visibility="{Binding EditAddVisibility}" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenEmployeeWindowCommand}" Cursor="Hand">
                 <materialDesign:PackIcon Kind="AddCircleOutline"  VerticalAlignment="Center" Margin="-15" Background="Transparent" HorizontalAlignment="Center" Width="35" Height="35" Foreground="#4CAF50">
                     <materialDesign:PackIcon.ToolTip>
                         <ToolTip Style="{StaticResource BaseToolit}">
@@ -62,7 +62,7 @@
                     </materialDesign:PackIcon.ToolTip>
                 </materialDesign:PackIcon>
             </Button>
-            <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenEditProductWindowCommand}" Cursor="Hand">
+            <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenEditEmployeeWindowCommand}" Cursor="Hand">
                 <materialDesign:PackIcon Kind="EditOutline" Visibility="{Binding EditAddVisibility}" Width="35" Height="35" Margin="-15" VerticalAlignment="Center" Background="Transparent" Foreground="#4CAF50">
                     <materialDesign:PackIcon.ToolTip>
                         <ToolTip Style="{StaticResource BaseToolit}">
@@ -76,7 +76,7 @@
 
             <interactions:Interaction.Triggers>
                 <interactions:EventTrigger EventName="MouseDoubleClick">
-                    <interactions:InvokeCommandAction Command="{Binding OpenEditProductWindowCommand}"/>
+                    <interactions:InvokeCommandAction Command="{Binding OpenEditEmployeeWindowCommand}"/>
                 </interactions:EventTrigger>
             </interactions:Interaction.Triggers>
             <DataGrid.Resources>

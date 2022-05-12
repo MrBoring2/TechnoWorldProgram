@@ -76,6 +76,7 @@
         </Setter>
     </Style>
 
+
     <Style x:Key="SliderButtonStyle"
        TargetType="{x:Type RepeatButton}">
         <Setter Property="SnapsToDevicePixels"

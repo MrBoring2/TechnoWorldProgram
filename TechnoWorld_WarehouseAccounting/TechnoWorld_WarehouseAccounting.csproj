@@ -291,7 +291,7 @@
     <Compile Include="ViewModels\Pages\ProductManagementPageVM.cs" />
     <Compile Include="ViewModels\Windows\DeliveryWindowVM.cs" />
     <Compile Include="ViewModels\Windows\DestributionOrderWindowVM.cs" />
-    <Compile Include="ViewModels\Windows\EmployeeWindow.cs" />
+    <Compile Include="ViewModels\Windows\EmployeeWindowVM.cs" />
     <Compile Include="ViewModels\Windows\LoginWindowVM.cs" />
     <Compile Include="ViewModels\Windows\MainAppWindowVM.cs" />
     <Compile Include="ViewModels\Windows\ProductListWindowVM.cs" />

@@ -1,4 +1,4 @@
-﻿<Window x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.EmployeeWindow"
+﻿<mde:MaterialWindow x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.EmployeeWindow" BorderBackgroundBrush="Orange" 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -34,8 +34,8 @@
                 <StackPanel>
                     <TextBlock Text="Основаная информация" HorizontalAlignment="Center" Margin="5" FontSize="20"/>
                     <TextBox Text="{Binding FullName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="ФИО" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
-                    <ComboBox ItemsSource="{Binding Posts}" SelectedItem="{Binding Post}" SelectedValue="{Binding Post.Id}" SelectedValuePath="Id" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Должность" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <wpfx:MaskedTextBox Style="{StaticResource MaterialDesignTextBox}" Mask="+7 (000) 000-0000" Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Номер телефона" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                    <ComboBox ItemsSource="{Binding Posts}" SelectedItem="{Binding Post}" SelectedValue="{Binding Post.PostId}" SelectedValuePath="PostId" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Должность" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <wpfx:MaskedTextBox Style="{StaticResource validationTextBox}" Mask="+7 (000) 000-0000" Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, ValidatesOnNotifyDataErrors=True}" materialDesign:HintAssist.Hint="Номер телефона" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
                         <interactions:Interaction.Behaviors>
 
                         </interactions:Interaction.Behaviors>
@@ -51,6 +51,9 @@
                         </interactions:Interaction.Triggers>
                     </wpfx:MaskedTextBox>
                     <TextBox Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Email" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                        
+                    </TextBox>
+                    <wpfx:MaskedTextBox Text="{Binding Passport, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Mask="0000 000000" Style="{StaticResource validationTextBox}" materialDesign:HintAssist.Hint="Серия и номер паспорта" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
                         <interactions:Interaction.Triggers>
                             <interactions:EventTrigger EventName="TextChanged">
                                 <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
@@ -61,29 +64,18 @@
                                 <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
                             </interactions:EventTrigger>
                         </interactions:Interaction.Triggers>
-                    </TextBox>
-                    <TextBox Text="{Binding PassportSereies, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Серия и номер паспорта" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
-                        <interactions:Interaction.Triggers>
-                            <interactions:EventTrigger EventName="TextChanged">
-                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
-                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
-                            </interactions:EventTrigger>
-                            <interactions:EventTrigger EventName="PreviewTextInput">
-                                <interactions:CallMethodAction TargetObject="{Binding}" MethodName="IsAllowedInput"/>
-                                <!--<interactions:InvokeCommandAction Command="{Binding CheckNumerikTextBoxCommand, ConverterParameter={Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}}"/>-->
-                            </interactions:EventTrigger>
-                        </interactions:Interaction.Triggers>
-                    </TextBox>
-                    <DatePicker Text="{Binding DateOfBirth, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Дата рождения" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    </wpfx:MaskedTextBox>
+                    <DatePicker SelectedDate="{Binding DateOfBirth, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Style="{StaticResource validationDatePicker}" materialDesign:HintAssist.Hint="Дата рождения" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <TextBox Text="{Binding Login, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Логин" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <TextBox Text="{Binding Password, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Пароль" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                 </StackPanel>
             </materialDesign:Card>
         </Border>
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center"  VerticalAlignment="Top"  Margin="140,5,140,0" Height="32" Width="414">
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center"  VerticalAlignment="Top"  Margin="5">
             <Button Content="Сохранить" Width="200" Margin="0,0,15,0" Style="{StaticResource btn}" Command="{Binding SaveCommand}" Cursor="Hand"/>
+            <Button Content="Удалить пользователя" Visibility="{Binding IsEditVisibility}" Width="200" Margin="0,0,15,0" Style="{StaticResource btn}" Command="{Binding RemoveCommand}" Cursor="Hand"/>
             <Button Content="Отмена" Width="200" Style="{StaticResource btn}" Command="{Binding CancelCommand}" Cursor="Hand"/>
         </StackPanel>
 
     </Grid>
-</Window>
+</mde:MaterialWindow>

@@ -4,10 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using TechnoWorld_API.Data;
 using TechnoWorld_API.Models.Filters;
+using TechnoWorld_API.Services;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
 
@@ -17,11 +19,13 @@ namespace TechnoWorld_API.Controllers
     [ApiController]
     public class EmployeesController : ControllerBase
     {
+        private readonly IHubContext<TechnoWorldHub> _hubContext;
         private readonly TechnoWorldContext _context;
 
-        public EmployeesController(TechnoWorldContext context)
+        public EmployeesController(TechnoWorldContext context, IHubContext<TechnoWorldHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
 
         // GET: api/Employees
@@ -90,11 +94,27 @@ namespace TechnoWorld_API.Controllers
                 return BadRequest();
             }
 
+            var employeeInDb = await _context.Employees.AsNoTracking().FirstOrDefaultAsync(p => p.EmployeeId == id);
+
+            if (TechnoWorldHub.ConnectedUsers.Any(p => p.Key == employeeInDb.Login))
+            {
+                LogService.LodMessage($"Провальная попытка изменения пользователя {employeeInDb.Login}: пользователь сейчас онлайн в системе.", LogLevel.Error);
+                return BadRequest("Данный пользователь в данный момент онлайн в системе, изменение невозможно.");
+            }
+
+            if (_context.Employees.FirstOrDefault(p => p.Login == employee.Login) != null)
+            {
+                LogService.LodMessage($"Провальная попытка изменения пользователя {employeeInDb.Login}: пользователь с логином {employee.Login} уже существует.", LogLevel.Error);
+                return BadRequest($"Пользователь с логином {employee.Login} уже существует");
+            }
+
+
             _context.Entry(employee).State = EntityState.Modified;
 
             try
             {
                 await _context.SaveChangesAsync();
+                LogService.LodMessage($"Было провизведено изменение пользователя {employee.Login} с пролью {employee.Post.Name}", LogLevel.Info);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -108,7 +128,7 @@ namespace TechnoWorld_API.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok();
         }
 
         // POST: api/Employees
@@ -116,9 +136,15 @@ namespace TechnoWorld_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Employee>> PostEmployee(Employee employee)
         {
-            _context.Employees.Add(employee);
+            if (_context.Employees.FirstOrDefault(p => p.Login == employee.Login) != null)
+            {
+                LogService.LodMessage($"Провальная попытка добавления нового пользователя {employee.Login}: пользователь с логином {employee.Login} уже существует.", LogLevel.Error);
+                return BadRequest($"Пользователь с логином {employee.Login} уже существует");
+            }
+            _context.Employees.Attach(employee).State = EntityState.Added;
+            //_context.Employees.Add(employee);
             await _context.SaveChangesAsync();
-
+            LogService.LodMessage($"Добавлен новый пользователь {employee.Login} с ролью {employee.Post.Name}", LogLevel.Info);
             return CreatedAtAction("GetEmployee", new { id = employee.EmployeeId }, employee);
         }
 
@@ -126,16 +152,25 @@ namespace TechnoWorld_API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployee(int id)
         {
-            var employee = await _context.Employees.FindAsync(id);
+            var employee = await _context.Employees.Include(p => p.Post).FirstOrDefaultAsync(p => p.EmployeeId == id);
             if (employee == null)
             {
-                return NotFound();
+                return BadRequest("Пользователь не найден");
+            }
+
+            if (TechnoWorldHub.ConnectedUsers.Any(p => p.Key == employee.Login))
+            {
+
+                LogService.LodMessage($"Провальная попытка удаления пользователя {employee.Login}: пользователь сейчас онлайн в системе.", LogLevel.Error);
+
+                return BadRequest("Данный пользователь в данный момент онлайн в системе, удаление невозможно.");
             }
 
             _context.Employees.Remove(employee);
+            LogService.LodMessage($"Было произведено удаление пользователя {employee.Login} с ролью {employee.Post.Name}", LogLevel.Info);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok();
         }
 
         private bool EmployeeExists(int id)

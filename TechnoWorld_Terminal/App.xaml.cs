@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 using TechnoWorld_Terminal.Services;
 using TechnoWorld_Terminal.ViewModels.Pages;
 using TechnoWorld_Terminal.ViewModels.Windows;
@@ -37,7 +39,7 @@ namespace TechnoWorld_Terminal
             {
                 if (arg != null)
                 {
-                    //CustomMessageBox.Show("Потеряно соединение с сервером!", "Критическая ошибка", MessageBoxButton.OK, MessageBoxImage.Error);                  
+                    MaterialNotification.Show("Критическая ошибка", "Потеряно соединение с сервером!", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                     PageNavigation.Instance.ClearCreatedPages();
                     ShutdownMode = ShutdownMode.OnExplicitShutdown;
                     WindowNavigation.Instance.CloseWindows();

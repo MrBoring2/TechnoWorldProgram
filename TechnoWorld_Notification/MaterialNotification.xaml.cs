@@ -85,6 +85,11 @@ namespace TechnoWorld_Notification
 
         }
 
+        public static void Show(string v1, string v2, object matetialNotificationButton)
+        {
+            throw new NotImplementedException();
+        }
+
         public string MsgTitle { get => msgTitle; set { msgTitle = value; OnPropertyChanged(); } }
         public string MsgContent { get => msgContent; set { msgContent = value; OnPropertyChanged(); } }
         public MaterialNotificationButton MsgButton { get => msgButton; set { msgButton = value; OnPropertyChanged(); } }

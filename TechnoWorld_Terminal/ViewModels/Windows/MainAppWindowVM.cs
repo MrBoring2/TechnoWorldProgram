@@ -23,6 +23,8 @@ using TechoWorld_DataModels_v2.Entities;
 using WPF_Helpers.Abstractions;
 using WPF_VM_Abstractions;
 using TechoWorld_DataModels_v2.Models;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {
@@ -33,7 +35,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             OpenCartCommand = new RelayCommand(OpenCart);
             ClientService.Instance.Cart.CollectionChanged += Cart_CollectionChanged;
             Initialize();
-            Authorize();
+           
             OnPropertyChanged(nameof(ItemsInCart));
 
         }
@@ -51,7 +53,7 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             WindowLoadedCommand = new RelayCommand(WindowLoaded);
 
         }
-        private async void Authorize()
+        private async Task Authorize()
         {
             var response = await ApiService.Instance.AuthorizeTerminal();
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
@@ -59,30 +61,41 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
                 var data = JsonConvert.DeserializeObject<AuthResponseModel>(response.Content);
                 ClientService.Instance.SetClient(data.user_name);
                 await ApiService.Instance.GetHubConnection.StartAsync();
+                PageNavigation.Navigate(typeof(CategoriesPageVM));
             }
             else
             {
+                MaterialNotification.Show("Ошибка", "Не удалось подключиться к серверу", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                 ApiService.Instance.ShutDownService();
             }
+            await Task.Delay(5000).ContinueWith(task => Reconnect());
         }
-
-
 
         public RelayCommand WindowLoadedCommand { get; set; }
 
 
         private void OpenCart(object obj)
         {
-            PageNavigation.Navigate(typeof(CartPageVM));
+            if (ApiService.Instance.GetHubConnection.State == HubConnectionState.Connected)
+            {
+                PageNavigation.Navigate(typeof(CartPageVM));
+            }
         }
+
         private void Exit()
         {
             WindowNavigation.Instance.CloseWindow(this);
         }
 
-        private void WindowLoaded(object obj)
+        private async void Reconnect()
         {
-            PageNavigation.Navigate(typeof(CategoriesPageVM));
+            await Application.Current.Dispatcher.InvokeAsync(Authorize);
+        }
+
+        private async void WindowLoaded(object obj)
+        {
+            await Authorize();
+            
             //RegisterEvents();
         }
     }

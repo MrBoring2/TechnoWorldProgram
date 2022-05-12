@@ -10,6 +10,8 @@ using TechnoWorld_Cash.Views.Windows;
 using TechnoWorld_Cash.Services;
 using WPF_VM_Abstractions;
 using System.IO;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 
 namespace TechnoWorld_Cash
 {
@@ -39,7 +41,7 @@ namespace TechnoWorld_Cash
             {
                 if (arg != null)
                 {
-                    CustomMessageBox.Show("Потеряно соединение с сервером!", "Критическая ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MaterialNotification.Show("Критическая ошибка", "Потеряно соединение с сервером!", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                     WindowNavigation.Instance.OpenWindow(new LoginWindowViewModel());
                     PageNavigation.Instance.ClearCreatedPages();
                     WindowNavigation.Instance.CloseWindows();

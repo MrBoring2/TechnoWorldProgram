@@ -12,10 +12,10 @@ namespace WPF_Helpers.ValidationRules
         public override bool IsValid(object value)
         {
             DateTime dt;
-            bool parsed = DateTime.TryParse((string)value, out dt);
+            bool parsed = DateTime.TryParse(value.ToString(), out dt);
             if (parsed)
             {
-                if(dt.Year - DateTime.Now.ToLocalTime().Year < 18)
+                if(DateTime.Now.ToLocalTime().Year - dt.ToLocalTime().Year < 18)
                 {
                     return false;
                 }

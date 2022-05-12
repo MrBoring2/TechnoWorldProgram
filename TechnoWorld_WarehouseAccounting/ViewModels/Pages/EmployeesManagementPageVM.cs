@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_API.Models;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
+using TechnoWorld_WarehouseAccounting.Services;
+using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
 using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
 using WPF_Helpers.Abstractions;
@@ -89,8 +93,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         private void Initialize()
         {
 
-            OpenEmployeeWindowCommand = new RelayCommand(OpenProductWindow);
-            OpenEditEmployeeWindowCommand = new RelayCommand(OpenEditProductWindow);
+            OpenEmployeeWindowCommand = new RelayCommand(OpenEmployeeWindow);
+            OpenEditEmployeeWindowCommand = new RelayCommand(OpenEditEmployeeWindow);
             SortParameters = new ObservableCollection<SortParameter>
             {
                 new SortParameter("ФИО", "FullName"),
@@ -123,36 +127,34 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
 
 
-        private async void OpenProductWindow(object obj)
+        private async void OpenEmployeeWindow(object obj)
         {
-            //ProductWindowVM productWindowVM = new ProductWindowVM();
-            //await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(productWindowVM));
-            //if (productWindowVM.DialogResult == true)
-            //{
-            //    CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно добавлен", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
-            //}
-        }
-        private async void OpenEditProductWindow(object obj)
-        {
-            if (EditAddVisibility != Visibility.Collapsed)
+            EmployeeWindowVM employeeWindowVM = new EmployeeWindowVM();
+            await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(employeeWindowVM));
+            if (employeeWindowVM.DialogResult == true)
             {
-                //ProductWindowVM productWindowVM;
-                //if (SelectedEntity == null)
-                //{
-                //    CustomMessageBox.Show($"Сначала выберите товар!", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
-                //}
-                //else
-                //{
-                //    productWindowVM = new ProductWindowVM(SelectedEntity);
-
-                //    await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(productWindowVM));
-
-                //    if (productWindowVM.DialogResult == true)
-                //    {
-                //        CustomMessageBox.Show($"Товар {productWindowVM.Model} упешно изменён", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
-                //    }
-                //}
+                MaterialNotification.Show("Оповещение", $"Сотрудник {employeeWindowVM.Login} упешно добавлен", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
             }
+        }
+        private async void OpenEditEmployeeWindow(object obj)
+        {
+            EmployeeWindowVM employeeWindowVM;
+            if (SelectedEntity == null)
+            {
+                MaterialNotification.Show("Внимание", $"Сначала выберите сотрудника!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+            }
+            else
+            {
+                employeeWindowVM = new EmployeeWindowVM(SelectedEntity);
+
+                await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(employeeWindowVM));
+
+                if (employeeWindowVM.DialogResult == true)
+                {
+                    
+                }
+            }
+
         }
 
     }

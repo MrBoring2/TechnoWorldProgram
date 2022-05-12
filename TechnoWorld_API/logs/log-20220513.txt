@@ -1,0 +1,1234 @@
+2022-05-13 00:00:03.247 +05:00 [WRN] Провальная попытка входа пользователя admin: Неверный логин или пароль
+2022-05-13 00:00:03.249 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:53813) по POST /userToken ответил 400 за 13.4476 мс
+2022-05-13 00:00:06.687 +05:00 [INF] Пользователь admin1 авторизирован в системе
+2022-05-13 00:00:06.689 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:53813) по POST /userToken ответил 200 за 4.3407 мс
+2022-05-13 00:00:06.815 +05:00 [INF] Запрос от admin1 (127.0.0.1:53815) по POST /technoWorldHub/negotiate ответил 200 за 0.4037 мс
+2022-05-13 00:00:06.926 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin1
+2022-05-13 00:00:07.067 +05:00 [INF] Запрос от admin1 (127.0.0.1:53813) по GET /api/Categories ответил 200 за 4.9351 мс
+2022-05-13 00:00:07.242 +05:00 [INF] Запрос от admin1 (127.0.0.1:53813) по GET /api/ElectrnicsTypes/All ответил 200 за 9.1594 мс
+2022-05-13 00:00:07.528 +05:00 [INF] Запрос от admin1 (127.0.0.1:53813) по GET /api/Electronics/Filter ответил 200 за 140.7780 мс
+2022-05-13 00:00:09.019 +05:00 [INF] Запрос от admin1 (127.0.0.1:53813) по GET /api/Status ответил 200 за 41.2930 мс
+2022-05-13 00:00:09.121 +05:00 [INF] Запрос от admin1 (127.0.0.1:53813) по GET /api/Deliveries/Filter ответил 200 за 74.1814 мс
+2022-05-13 00:00:09.274 +05:00 [INF] Запрос от admin1 (127.0.0.1:53813) по GET /api/Posts ответил 200 за 1.3644 мс
+2022-05-13 00:00:09.290 +05:00 [INF] Запрос от admin1 (127.0.0.1:53813) по GET /api/Employees/Filter ответил 200 за 2.7952 мс
+2022-05-13 00:00:11.139 +05:00 [INF] Запрос от admin1 (127.0.0.1:53813) по GET /api/Posts ответил 200 за 1.7100 мс
+2022-05-13 00:01:11.307 +05:00 [INF] admin1 отключен от системы
+2022-05-13 00:01:11.311 +05:00 [INF] Запрос от admin1 (127.0.0.1:53816) по GET /technoWorldHub ответил 101 за 64436.1784 мс
+2022-05-13 00:01:23.089 +05:00 [INF] Пользователь admin1 авторизирован в системе
+2022-05-13 00:01:23.090 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:53854) по POST /userToken ответил 200 за 9.5008 мс
+2022-05-13 00:01:23.283 +05:00 [INF] Запрос от admin1 (127.0.0.1:53855) по POST /technoWorldHub/negotiate ответил 200 за 0.3563 мс
+2022-05-13 00:01:23.397 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin1
+2022-05-13 00:01:23.571 +05:00 [INF] Запрос от admin1 (127.0.0.1:53854) по GET /api/Categories ответил 200 за 9.2109 мс
+2022-05-13 00:01:23.755 +05:00 [INF] Запрос от admin1 (127.0.0.1:53854) по GET /api/ElectrnicsTypes/All ответил 200 за 22.1984 мс
+2022-05-13 00:01:24.082 +05:00 [INF] Запрос от admin1 (127.0.0.1:53854) по GET /api/Electronics/Filter ответил 200 за 187.3728 мс
+2022-05-13 00:01:26.225 +05:00 [INF] Запрос от admin1 (127.0.0.1:53854) по GET /api/Posts ответил 200 за 1.6686 мс
+2022-05-13 00:01:26.241 +05:00 [INF] Запрос от admin1 (127.0.0.1:53854) по GET /api/Employees/Filter ответил 200 за 2.9463 мс
+2022-05-13 00:01:30.209 +05:00 [INF] Запрос от admin1 (127.0.0.1:53854) по GET /api/Posts ответил 200 за 1.0586 мс
+2022-05-13 00:03:06.889 +05:00 [INF] admin1 отключен от системы
+2022-05-13 00:03:06.890 +05:00 [INF] Запрос от admin1 (127.0.0.1:53856) по GET /technoWorldHub ответил 101 за 103540.4782 мс
+2022-05-13 00:04:00.374 +05:00 [INF] Пользователь admin1 авторизирован в системе
+2022-05-13 00:04:00.375 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55291) по POST /userToken ответил 200 за 8.8586 мс
+2022-05-13 00:04:00.565 +05:00 [INF] Запрос от admin1 (127.0.0.1:55292) по POST /technoWorldHub/negotiate ответил 200 за 0.3484 мс
+2022-05-13 00:04:00.683 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin1
+2022-05-13 00:04:00.833 +05:00 [INF] Запрос от admin1 (127.0.0.1:55291) по GET /api/Categories ответил 200 за 3.9539 мс
+2022-05-13 00:04:01.016 +05:00 [INF] Запрос от admin1 (127.0.0.1:55291) по GET /api/ElectrnicsTypes/All ответил 200 за 9.7907 мс
+2022-05-13 00:04:01.308 +05:00 [INF] Запрос от admin1 (127.0.0.1:55291) по GET /api/Electronics/Filter ответил 200 за 158.6451 мс
+2022-05-13 00:04:03.348 +05:00 [INF] Запрос от admin1 (127.0.0.1:55291) по GET /api/Posts ответил 200 за 1.3991 мс
+2022-05-13 00:04:03.370 +05:00 [INF] Запрос от admin1 (127.0.0.1:55291) по GET /api/Employees/Filter ответил 200 за 3.1740 мс
+2022-05-13 00:04:04.479 +05:00 [INF] Запрос от admin1 (127.0.0.1:55291) по GET /api/Status ответил 200 за 2.3012 мс
+2022-05-13 00:04:04.535 +05:00 [INF] Запрос от admin1 (127.0.0.1:55291) по GET /api/Deliveries/Filter ответил 200 за 40.4175 мс
+2022-05-13 00:04:05.901 +05:00 [INF] Запрос от admin1 (127.0.0.1:55291) по GET /api/Posts ответил 200 за 0.9093 мс
+2022-05-13 00:04:15.056 +05:00 [INF] admin1 отключен от системы
+2022-05-13 00:04:15.057 +05:00 [INF] Запрос от admin1 (127.0.0.1:55293) по GET /technoWorldHub ответил 101 за 14426.6058 мс
+2022-05-13 00:04:42.684 +05:00 [INF] Пользователь admin1 авторизирован в системе
+2022-05-13 00:04:42.685 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55306) по POST /userToken ответил 200 за 7.7168 мс
+2022-05-13 00:04:42.878 +05:00 [INF] Запрос от admin1 (127.0.0.1:55307) по POST /technoWorldHub/negotiate ответил 200 за 0.2838 мс
+2022-05-13 00:04:42.991 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin1
+2022-05-13 00:04:44.120 +05:00 [INF] Запрос от admin1 (127.0.0.1:55306) по GET /api/Categories ответил 200 за 3.8283 мс
+2022-05-13 00:04:44.327 +05:00 [INF] Запрос от admin1 (127.0.0.1:55306) по GET /api/ElectrnicsTypes/All ответил 200 за 12.6466 мс
+2022-05-13 00:04:44.611 +05:00 [INF] Запрос от admin1 (127.0.0.1:55306) по GET /api/Electronics/Filter ответил 200 за 155.1752 мс
+2022-05-13 00:04:46.427 +05:00 [INF] Запрос от admin1 (127.0.0.1:55306) по GET /api/Status ответил 200 за 1.3346 мс
+2022-05-13 00:04:46.482 +05:00 [INF] Запрос от admin1 (127.0.0.1:55306) по GET /api/Deliveries/Filter ответил 200 за 35.8143 мс
+2022-05-13 00:04:47.289 +05:00 [INF] Запрос от admin1 (127.0.0.1:55306) по GET /api/Posts ответил 200 за 1.2158 мс
+2022-05-13 00:04:47.306 +05:00 [INF] Запрос от admin1 (127.0.0.1:55306) по GET /api/Employees/Filter ответил 200 за 3.5958 мс
+2022-05-13 00:04:55.944 +05:00 [INF] Запрос от admin1 (127.0.0.1:55306) по GET /api/Posts ответил 200 за 1.2027 мс
+2022-05-13 00:06:04.059 +05:00 [ERR] Failed executing DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Post] ([PostId], [Name])
+VALUES (@p0, @p1);
+2022-05-13 00:06:04.085 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-05-13 00:06:04.113 +05:00 [ERR] Запрос от admin1 (127.0.0.1:55306) по POST /api/Employees ответил 500 за 181.9397 мс
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.EmployeesController.PostEmployee(Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 132
+   at lambda_method479(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 00:06:04.153 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.EmployeesController.PostEmployee(Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 132
+   at lambda_method479(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 00:06:26.864 +05:00 [INF] admin1 отключен от системы
+2022-05-13 00:06:26.868 +05:00 [INF] Запрос от admin1 (127.0.0.1:55308) по GET /technoWorldHub ответил 101 за 103926.8686 мс
+2022-05-13 00:06:35.515 +05:00 [WRN] Провальная попытка входа пользователя kov: Неверный логин или пароль
+2022-05-13 00:06:35.515 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55343) по POST /userToken ответил 400 за 6.9138 мс
+2022-05-13 00:06:39.662 +05:00 [INF] Пользователь admin1 авторизирован в системе
+2022-05-13 00:06:39.664 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55343) по POST /userToken ответил 200 за 3.2802 мс
+2022-05-13 00:06:39.797 +05:00 [INF] Запрос от admin1 (127.0.0.1:55345) по POST /technoWorldHub/negotiate ответил 200 за 0.5240 мс
+2022-05-13 00:06:39.902 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin1
+2022-05-13 00:06:40.051 +05:00 [INF] Запрос от admin1 (127.0.0.1:55343) по GET /api/Categories ответил 200 за 9.1074 мс
+2022-05-13 00:06:40.219 +05:00 [INF] Запрос от admin1 (127.0.0.1:55343) по GET /api/ElectrnicsTypes/All ответил 200 за 8.7477 мс
+2022-05-13 00:06:40.508 +05:00 [INF] Запрос от admin1 (127.0.0.1:55343) по GET /api/Electronics/Filter ответил 200 за 153.3565 мс
+2022-05-13 00:06:41.871 +05:00 [INF] Запрос от admin1 (127.0.0.1:55343) по GET /api/Posts ответил 200 за 1.2003 мс
+2022-05-13 00:06:41.887 +05:00 [INF] Запрос от admin1 (127.0.0.1:55343) по GET /api/Employees/Filter ответил 200 за 2.5963 мс
+2022-05-13 00:06:42.707 +05:00 [INF] Запрос от admin1 (127.0.0.1:55343) по GET /api/Posts ответил 200 за 0.8363 мс
+2022-05-13 00:06:56.811 +05:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Post] ([PostId], [Name])
+VALUES (@p0, @p1);
+2022-05-13 00:06:56.815 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-05-13 00:06:56.830 +05:00 [ERR] Запрос от admin1 (127.0.0.1:55343) по POST /api/Employees ответил 500 за 24.1311 мс
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.EmployeesController.PostEmployee(Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 132
+   at lambda_method479(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 00:06:56.847 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.EmployeesController.PostEmployee(Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 132
+   at lambda_method479(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 00:07:12.053 +05:00 [INF] admin1 отключен от системы
+2022-05-13 00:07:12.055 +05:00 [INF] Запрос от admin1 (127.0.0.1:55346) по GET /technoWorldHub ответил 101 за 32201.7463 мс
+2022-05-13 00:07:42.081 +05:00 [WRN] Провальная попытка входа пользователя admin: Неверный логин или пароль
+2022-05-13 00:07:42.082 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55360) по POST /userToken ответил 400 за 5.3700 мс
+2022-05-13 00:07:44.196 +05:00 [INF] Пользователь admin1 авторизирован в системе
+2022-05-13 00:07:44.197 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55360) по POST /userToken ответил 200 за 458.8250 мс
+2022-05-13 00:07:44.327 +05:00 [INF] Запрос от admin1 (127.0.0.1:55362) по POST /technoWorldHub/negotiate ответил 200 за 0.2152 мс
+2022-05-13 00:07:44.434 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin1
+2022-05-13 00:07:44.580 +05:00 [INF] Запрос от admin1 (127.0.0.1:55360) по GET /api/Categories ответил 200 за 6.6079 мс
+2022-05-13 00:07:44.737 +05:00 [INF] Запрос от admin1 (127.0.0.1:55360) по GET /api/ElectrnicsTypes/All ответил 200 за 9.0333 мс
+2022-05-13 00:07:45.018 +05:00 [INF] Запрос от admin1 (127.0.0.1:55360) по GET /api/Electronics/Filter ответил 200 за 143.9056 мс
+2022-05-13 00:08:05.216 +05:00 [INF] Запрос от admin1 (127.0.0.1:55360) по GET /api/Status ответил 200 за 1.3559 мс
+2022-05-13 00:08:05.270 +05:00 [INF] Запрос от admin1 (127.0.0.1:55360) по GET /api/Deliveries/Filter ответил 200 за 32.5100 мс
+2022-05-13 00:08:06.356 +05:00 [INF] Запрос от admin1 (127.0.0.1:55360) по GET /api/Posts ответил 200 за 1.2547 мс
+2022-05-13 00:08:06.371 +05:00 [INF] Запрос от admin1 (127.0.0.1:55360) по GET /api/Employees/Filter ответил 200 за 2.7798 мс
+2022-05-13 00:08:10.265 +05:00 [INF] Запрос от admin1 (127.0.0.1:55360) по GET /api/Posts ответил 200 за 0.9124 мс
+2022-05-13 00:08:31.669 +05:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Post] ([PostId], [Name])
+VALUES (@p0, @p1);
+2022-05-13 00:08:31.672 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-05-13 00:08:31.687 +05:00 [ERR] Запрос от admin1 (127.0.0.1:55360) по POST /api/Employees ответил 500 за 21.0555 мс
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.EmployeesController.PostEmployee(Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 132
+   at lambda_method479(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 00:08:31.703 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.EmployeesController.PostEmployee(Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 132
+   at lambda_method479(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 00:08:59.977 +05:00 [INF] admin1 отключен от системы
+2022-05-13 00:09:05.003 +05:00 [INF] Запрос от admin1 (127.0.0.1:55363) по GET /technoWorldHub ответил 101 за 80616.7979 мс
+2022-05-13 00:09:52.514 +05:00 [INF] Пользователь admin1 авторизирован в системе
+2022-05-13 00:09:52.516 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55403) по POST /userToken ответил 200 за 10.1955 мс
+2022-05-13 00:09:52.704 +05:00 [INF] Запрос от admin1 (127.0.0.1:55404) по POST /technoWorldHub/negotiate ответил 200 за 0.2387 мс
+2022-05-13 00:09:52.818 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin1
+2022-05-13 00:09:52.976 +05:00 [INF] Запрос от admin1 (127.0.0.1:55403) по GET /api/Categories ответил 200 за 3.7872 мс
+2022-05-13 00:09:53.162 +05:00 [INF] Запрос от admin1 (127.0.0.1:55403) по GET /api/ElectrnicsTypes/All ответил 200 за 10.8115 мс
+2022-05-13 00:09:53.445 +05:00 [INF] Запрос от admin1 (127.0.0.1:55403) по GET /api/Electronics/Filter ответил 200 за 146.7966 мс
+2022-05-13 00:09:55.373 +05:00 [INF] Запрос от admin1 (127.0.0.1:55403) по GET /api/Posts ответил 200 за 1.5864 мс
+2022-05-13 00:09:55.389 +05:00 [INF] Запрос от admin1 (127.0.0.1:55403) по GET /api/Employees/Filter ответил 200 за 2.4358 мс
+2022-05-13 00:09:56.107 +05:00 [INF] Запрос от admin1 (127.0.0.1:55403) по GET /api/Posts ответил 200 за 1.0466 мс
+2022-05-13 00:10:10.188 +05:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Post] ([PostId], [Name])
+VALUES (@p0, @p1);
+2022-05-13 00:10:10.192 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-05-13 00:10:10.215 +05:00 [ERR] Запрос от admin1 (127.0.0.1:55403) по POST /api/Employees ответил 500 за 31.1509 мс
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.EmployeesController.PostEmployee(Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 132
+   at lambda_method479(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 00:10:10.245 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Невозможно вставить явное значение для столбца идентификаторов в таблице "Post", когда параметр IDENTITY_INSERT имеет значение OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:5c9fb0fc-bda0-4d55-be19-46285e1cd2b6
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.EmployeesController.PostEmployee(Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 132
+   at lambda_method479(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 00:10:30.000 +05:00 [INF] admin1 отключен от системы
+2022-05-13 00:10:30.002 +05:00 [INF] Запрос от admin1 (127.0.0.1:55405) по GET /technoWorldHub ответил 101 за 37234.3775 мс
+2022-05-13 00:11:07.155 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:11:07.187 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:11:07.189 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:11:07.189 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:11:58.089 +05:00 [INF] Пользователь admin1 авторизирован в системе
+2022-05-13 00:11:58.126 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55456) по POST /userToken ответил 200 за 1254.8746 мс
+2022-05-13 00:11:58.320 +05:00 [INF] Запрос от admin1 (127.0.0.1:55457) по POST /technoWorldHub/negotiate ответил 200 за 48.6298 мс
+2022-05-13 00:11:58.450 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin1
+2022-05-13 00:11:58.644 +05:00 [INF] Запрос от admin1 (127.0.0.1:55456) по GET /api/Categories ответил 200 за 61.3362 мс
+2022-05-13 00:11:58.714 +05:00 [INF] Запрос от admin1 (127.0.0.1:55456) по GET /api/ElectrnicsTypes/All ответил 200 за 37.7266 мс
+2022-05-13 00:11:59.067 +05:00 [INF] Запрос от admin1 (127.0.0.1:55456) по GET /api/Electronics/Filter ответил 200 за 260.0641 мс
+2022-05-13 00:12:03.458 +05:00 [INF] Запрос от admin1 (127.0.0.1:55456) по GET /api/Posts ответил 200 за 8.6958 мс
+2022-05-13 00:12:03.482 +05:00 [INF] Запрос от admin1 (127.0.0.1:55456) по GET /api/Employees/Filter ответил 200 за 18.8021 мс
+2022-05-13 00:12:05.283 +05:00 [INF] Запрос от admin1 (127.0.0.1:55456) по GET /api/Posts ответил 200 за 1.4425 мс
+2022-05-13 00:12:53.138 +05:00 [ERR] Failed executing DbCommand (96ms) [Parameters=[@p0='?' (DbType = Date), @p1='?' (Size = 4000), @p2='?' (Size = 100) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 4000), @p5='?' (Size = 20) (DbType = AnsiString), @p6='?' (Size = 8000) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([DateOfBirth], [Email], [FullName], [Login], [Passport], [Password], [PhoneNumber], [PostId], [RoleId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [EmployeeId]
+FROM [Employee]
+WHERE @@ROWCOUNT = 1 AND [EmployeeId] = scope_identity();
+2022-05-13 00:12:53.165 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_Employee_Role". Конфликт произошел в базе данных "BNS", таблица "dbo.Role", column 'RoleId'.
+Выполнение данной инструкции было прервано.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:64960890-0c51-4848-beef-037085e87380
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_Employee_Role". Конфликт произошел в базе данных "BNS", таблица "dbo.Role", column 'RoleId'.
+Выполнение данной инструкции было прервано.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:64960890-0c51-4848-beef-037085e87380
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-05-13 00:12:53.190 +05:00 [ERR] Запрос от admin1 (127.0.0.1:55456) по POST /api/Employees ответил 500 за 254.6188 мс
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_Employee_Role". Конфликт произошел в базе данных "BNS", таблица "dbo.Role", column 'RoleId'.
+Выполнение данной инструкции было прервано.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:64960890-0c51-4848-beef-037085e87380
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.EmployeesController.PostEmployee(Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 132
+   at lambda_method380(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 00:12:53.230 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_Employee_Role". Конфликт произошел в базе данных "BNS", таблица "dbo.Role", column 'RoleId'.
+Выполнение данной инструкции было прервано.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:64960890-0c51-4848-beef-037085e87380
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TechnoWorld_API.Controllers.EmployeesController.PostEmployee(Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 132
+   at lambda_method380(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 00:13:20.405 +05:00 [INF] admin1 отключен от системы
+2022-05-13 00:13:20.410 +05:00 [INF] Запрос от admin1 (127.0.0.1:55458) по GET /technoWorldHub ответил 101 за 82041.7860 мс
+2022-05-13 00:16:17.767 +05:00 [INF] Пользователь admin1 авторизирован в системе
+2022-05-13 00:16:17.768 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55536) по POST /userToken ответил 200 за 19.7982 мс
+2022-05-13 00:16:17.968 +05:00 [INF] Запрос от admin1 (127.0.0.1:55537) по POST /technoWorldHub/negotiate ответил 200 за 0.4233 мс
+2022-05-13 00:16:18.085 +05:00 [INF] Подключен пользователь к приложению управление предприятием: admin1
+2022-05-13 00:16:18.247 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по GET /api/Categories ответил 200 за 5.0082 мс
+2022-05-13 00:16:18.448 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по GET /api/ElectrnicsTypes/All ответил 200 за 20.5846 мс
+2022-05-13 00:16:18.766 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по GET /api/Electronics/Filter ответил 200 за 180.8593 мс
+2022-05-13 00:16:21.470 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по GET /api/Posts ответил 200 за 2.0819 мс
+2022-05-13 00:16:21.492 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по GET /api/Employees/Filter ответил 200 за 6.5363 мс
+2022-05-13 00:16:23.773 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по GET /api/Posts ответил 200 за 1.4070 мс
+2022-05-13 00:17:00.637 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по POST /api/Employees ответил 201 за 47.8074 мс
+2022-05-13 00:17:05.993 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по GET /api/Employees/Filter ответил 200 за 2.9652 мс
+2022-05-13 00:17:06.319 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по GET /api/Employees/Filter ответил 200 за 2.1408 мс
+2022-05-13 00:17:10.367 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по GET /api/Posts ответил 200 за 1.4170 мс
+2022-05-13 00:17:20.003 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по PUT /api/Employees/7 ответил 200 за 25.1787 мс
+2022-05-13 00:17:22.186 +05:00 [INF] Запрос от admin1 (127.0.0.1:55536) по GET /api/Posts ответил 200 за 1.8133 мс
+2022-05-13 00:17:47.988 +05:00 [INF] admin1 отключен от системы
+2022-05-13 00:17:47.989 +05:00 [INF] Запрос от admin1 (127.0.0.1:55538) по GET /technoWorldHub ответил 101 за 89952.6712 мс
+2022-05-13 00:18:57.815 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:18:57.875 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:18:57.877 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:18:57.877 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:21:50.840 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 00:21:50.878 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55711) по POST /userToken ответил 200 за 2201.9885 мс
+2022-05-13 00:21:51.075 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55712) по POST /technoWorldHub/negotiate ответил 200 за 47.9980 мс
+2022-05-13 00:21:51.188 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 00:21:51.382 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по GET /api/Categories ответил 200 за 62.1291 мс
+2022-05-13 00:21:51.451 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по GET /api/ElectrnicsTypes/All ответил 200 за 36.6960 мс
+2022-05-13 00:21:51.809 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по GET /api/Electronics/Filter ответил 200 за 260.3953 мс
+2022-05-13 00:21:56.747 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по GET /api/Posts ответил 200 за 7.0957 мс
+2022-05-13 00:21:56.769 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по GET /api/Employees/Filter ответил 200 за 16.4210 мс
+2022-05-13 00:22:00.300 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по GET /api/Posts ответил 200 за 1.0558 мс
+2022-05-13 00:22:05.325 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по GET /api/Posts ответил 200 за 1.0340 мс
+2022-05-13 00:22:11.929 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по GET /api/Posts ответил 200 за 1.7441 мс
+2022-05-13 00:22:14.828 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по GET /api/Posts ответил 200 за 1.5482 мс
+2022-05-13 00:22:17.339 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по DELETE /api/Employees/7 ответил 400 за 13.8052 мс
+2022-05-13 00:22:23.029 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по DELETE /api/Employees/7 ответил 400 за 2.7213 мс
+2022-05-13 00:22:25.414 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55711) по DELETE /api/Employees/7 ответил 400 за 3.6344 мс
+2022-05-13 00:22:31.650 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 00:22:31.655 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55713) по GET /technoWorldHub ответил 101 за 40531.0936 мс
+2022-05-13 00:29:20.507 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:29:20.539 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:29:20.540 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:29:20.541 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:29:36.107 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 00:29:36.146 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56051) по POST /userToken ответил 200 за 1958.1987 мс
+2022-05-13 00:29:36.342 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56052) по POST /technoWorldHub/negotiate ответил 200 за 48.4128 мс
+2022-05-13 00:29:36.454 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 00:29:36.641 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Categories ответил 200 за 60.6917 мс
+2022-05-13 00:29:36.710 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/ElectrnicsTypes/All ответил 200 за 37.0622 мс
+2022-05-13 00:29:37.061 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Electronics/Filter ответил 200 за 255.6923 мс
+2022-05-13 00:29:38.820 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Posts ответил 200 за 6.9265 мс
+2022-05-13 00:29:38.843 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 16.8196 мс
+2022-05-13 00:29:46.082 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 2.8510 мс
+2022-05-13 00:29:49.441 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 1.8715 мс
+2022-05-13 00:29:50.308 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 1.8033 мс
+2022-05-13 00:29:51.425 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 2.0570 мс
+2022-05-13 00:29:52.350 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 3.5287 мс
+2022-05-13 00:29:52.923 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 3.2225 мс
+2022-05-13 00:29:54.697 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 3.2444 мс
+2022-05-13 00:29:55.861 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 3.1838 мс
+2022-05-13 00:29:56.962 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 3.5693 мс
+2022-05-13 00:29:57.945 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 3.2208 мс
+2022-05-13 00:29:58.944 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Employees/Filter ответил 200 за 1.7785 мс
+2022-05-13 00:30:03.609 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по GET /api/Posts ответил 200 за 1.8191 мс
+2022-05-13 00:30:10.639 +05:00 [ERR] Провальная попытка изменения пользователя MrBoring: пользователь сейчас онлайн в системе.
+2022-05-13 00:30:10.641 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56051) по PUT /api/Employees/5 ответил 400 за 16.6316 мс
+2022-05-13 00:31:08.094 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:31:08.126 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:31:08.126 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:31:08.127 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:31:13.210 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:31:13.242 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:31:13.243 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:31:13.244 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:31:27.530 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:31:27.560 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:31:27.561 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:31:27.562 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:32:01.480 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:32:01.512 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:32:01.513 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:32:01.514 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:32:28.271 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 00:32:28.309 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56151) по POST /userToken ответил 200 за 1291.7949 мс
+2022-05-13 00:32:28.509 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56152) по POST /technoWorldHub/negotiate ответил 200 за 51.4546 мс
+2022-05-13 00:32:28.625 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 00:32:28.820 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56151) по GET /api/Categories ответил 200 за 62.1001 мс
+2022-05-13 00:32:28.890 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56151) по GET /api/ElectrnicsTypes/All ответил 200 за 38.0564 мс
+2022-05-13 00:32:29.253 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56151) по GET /api/Electronics/Filter ответил 200 за 262.8966 мс
+2022-05-13 00:32:31.197 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56151) по GET /api/Status ответил 200 за 13.5806 мс
+2022-05-13 00:32:31.304 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56151) по GET /api/Deliveries/Filter ответил 200 за 71.6340 мс
+2022-05-13 00:32:32.154 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56151) по GET /api/Posts ответил 200 за 6.9534 мс
+2022-05-13 00:32:32.177 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56151) по GET /api/Employees/Filter ответил 200 за 15.7985 мс
+2022-05-13 00:32:34.390 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56151) по GET /api/Posts ответил 200 за 2.1661 мс
+2022-05-13 00:32:40.458 +05:00 [ERR] Провальная попытка изменения пользователя admin1: пользователь сейчас онлайн в системе.
+2022-05-13 00:32:40.460 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56151) по PUT /api/Employees/5 ответил 400 за 24.8225 мс
+2022-05-13 00:32:47.702 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:56151) по PUT /api/Employees/5 ответил 500 за 16.9843 мс
+System.InvalidOperationException: The instance of entity type 'Employee' cannot be tracked because another instance with the same key value for {'EmployeeId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry.set_State(EntityState value)
+   at TechnoWorld_API.Controllers.EmployeesController.PutEmployee(Int32 id, Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 112
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 00:32:47.738 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Employee' cannot be tracked because another instance with the same key value for {'EmployeeId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry.set_State(EntityState value)
+   at TechnoWorld_API.Controllers.EmployeesController.PutEmployee(Int32 id, Employee employee) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 112
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 00:33:28.312 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 00:33:28.318 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56153) по GET /technoWorldHub ответил 101 за 59760.1701 мс
+2022-05-13 00:34:03.810 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:34:03.857 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:34:03.858 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:34:03.859 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:34:11.424 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 00:34:11.468 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56234) по POST /userToken ответил 200 за 1787.4080 мс
+2022-05-13 00:34:11.674 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56236) по POST /technoWorldHub/negotiate ответил 200 за 56.3420 мс
+2022-05-13 00:34:11.795 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 00:34:12.007 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56234) по GET /api/Categories ответил 200 за 79.1144 мс
+2022-05-13 00:34:12.090 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56234) по GET /api/ElectrnicsTypes/All ответил 200 за 52.7567 мс
+2022-05-13 00:34:12.475 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56234) по GET /api/Electronics/Filter ответил 200 за 308.5271 мс
+2022-05-13 00:34:40.713 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56234) по GET /api/Posts ответил 200 за 13.4534 мс
+2022-05-13 00:34:40.777 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56234) по GET /api/Employees/Filter ответил 200 за 25.6868 мс
+2022-05-13 00:34:45.657 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56234) по GET /api/Posts ответил 200 за 2.7257 мс
+2022-05-13 00:35:12.443 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:35:12.496 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:35:12.499 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:35:12.500 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:35:30.849 +05:00 [WRN] Провальная попытка входа пользователя MrBoirng: Неверный логин или пароль
+2022-05-13 00:35:30.889 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по POST /userToken ответил 400 за 1604.6428 мс
+2022-05-13 00:35:34.732 +05:00 [WRN] Провальная попытка входа пользователя MrBoring: Неверный логин или пароль
+2022-05-13 00:35:34.734 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по POST /userToken ответил 400 за 31.0423 мс
+2022-05-13 00:35:41.512 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 00:35:41.524 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по POST /userToken ответил 200 за 108.8596 мс
+2022-05-13 00:35:41.541 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56294) по POST /technoWorldHub/negotiate ответил 200 за 13.2124 мс
+2022-05-13 00:35:41.572 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 00:35:41.653 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по GET /api/Categories ответил 200 за 53.0150 мс
+2022-05-13 00:35:41.728 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по GET /api/ElectrnicsTypes/All ответил 200 за 41.7025 мс
+2022-05-13 00:35:42.088 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по GET /api/Electronics/Filter ответил 200 за 331.4528 мс
+2022-05-13 00:35:43.715 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по GET /api/Posts ответил 200 за 9.8500 мс
+2022-05-13 00:35:43.765 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по GET /api/Employees/Filter ответил 200 за 21.4000 мс
+2022-05-13 00:35:49.735 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по GET /api/Status ответил 200 за 15.2835 мс
+2022-05-13 00:35:49.821 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по GET /api/Deliveries/Filter ответил 200 за 72.9977 мс
+2022-05-13 00:35:53.962 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по GET /api/Orders/Filter ответил 200 за 164.3667 мс
+2022-05-13 00:36:02.821 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по GET /api/Posts ответил 200 за 3.5107 мс
+2022-05-13 00:36:10.983 +05:00 [ERR] Провальная попытка изменения пользователя admin1: пользователь с таким логином MrBoring уже существует.
+2022-05-13 00:36:10.985 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56290) по PUT /api/Employees/5 ответил 400 за 2897.0854 мс
+2022-05-13 00:40:50.507 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:40:50.538 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:40:50.539 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:40:50.540 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:40:59.734 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56787) по POST /terminalToken ответил 200 за 568.7694 мс
+2022-05-13 00:41:00.399 +05:00 [INF] Запрос от terminal_c8066823-6e0a-4f81-84a5-97ede5accde1 (127.0.0.1:56788) по POST /technoWorldHub/negotiate ответил 200 за 12.4583 мс
+2022-05-13 00:41:00.537 +05:00 [INF] Подключенин терминал: terminal_c8066823-6e0a-4f81-84a5-97ede5accde1
+2022-05-13 00:41:01.258 +05:00 [INF] Запрос от terminal_c8066823-6e0a-4f81-84a5-97ede5accde1 (127.0.0.1:56787) по GET /api/Categories ответил 200 за 1224.2410 мс
+2022-05-13 00:41:03.424 +05:00 [INF] terminal_c8066823-6e0a-4f81-84a5-97ede5accde1 отключен от системы
+2022-05-13 00:41:03.431 +05:00 [INF] Запрос от terminal_c8066823-6e0a-4f81-84a5-97ede5accde1 (127.0.0.1:56789) по GET /technoWorldHub ответил 101 за 2962.5607 мс
+2022-05-13 00:41:07.990 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56791) по POST /terminalToken ответил 200 за 2.0651 мс
+2022-05-13 00:41:08.314 +05:00 [INF] Запрос от terminal_9a74f54e-14e3-4d8b-80b9-b05273137e8a (127.0.0.1:56791) по GET /api/Categories ответил 200 за 28.5632 мс
+2022-05-13 00:41:08.563 +05:00 [INF] Запрос от terminal_9a74f54e-14e3-4d8b-80b9-b05273137e8a (127.0.0.1:56792) по POST /technoWorldHub/negotiate ответил 200 за 0.3776 мс
+2022-05-13 00:41:08.719 +05:00 [INF] Подключенин терминал: terminal_9a74f54e-14e3-4d8b-80b9-b05273137e8a
+2022-05-13 00:41:10.567 +05:00 [INF] terminal_9a74f54e-14e3-4d8b-80b9-b05273137e8a отключен от системы
+2022-05-13 00:41:10.568 +05:00 [INF] Запрос от terminal_9a74f54e-14e3-4d8b-80b9-b05273137e8a (127.0.0.1:56793) по GET /technoWorldHub ответил 101 за 1940.1743 мс
+2022-05-13 00:42:34.222 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56837) по POST /terminalToken ответил 200 за 0.7907 мс
+2022-05-13 00:42:34.546 +05:00 [INF] Запрос от terminal_e374ee65-2856-4e74-a247-4a1b283c4a0d (127.0.0.1:56837) по GET /api/Categories ответил 200 за 10.7729 мс
+2022-05-13 00:42:34.827 +05:00 [INF] Запрос от terminal_e374ee65-2856-4e74-a247-4a1b283c4a0d (127.0.0.1:56838) по POST /technoWorldHub/negotiate ответил 200 за 0.3160 мс
+2022-05-13 00:42:34.978 +05:00 [INF] Подключенин терминал: terminal_e374ee65-2856-4e74-a247-4a1b283c4a0d
+2022-05-13 00:42:37.178 +05:00 [INF] terminal_e374ee65-2856-4e74-a247-4a1b283c4a0d отключен от системы
+2022-05-13 00:42:37.180 +05:00 [INF] Application is shutting down...
+2022-05-13 00:42:37.180 +05:00 [INF] Запрос от terminal_e374ee65-2856-4e74-a247-4a1b283c4a0d (127.0.0.1:56839) по GET /technoWorldHub ответил 101 за 2285.4581 мс
+2022-05-13 00:42:51.154 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:42:51.198 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:42:51.199 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:42:51.199 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:42:56.440 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:42:56.472 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:42:56.473 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:42:56.473 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:42:58.295 +05:00 [INF] Запрос от terminal_e374ee65-2856-4e74-a247-4a1b283c4a0d (127.0.0.1:56904) по GET /api/Manufacturers ответил 200 за 1541.6927 мс
+2022-05-13 00:42:58.347 +05:00 [INF] Запрос от terminal_e374ee65-2856-4e74-a247-4a1b283c4a0d (127.0.0.1:56904) по GET /api/ElectrnicsTypes ответил 200 за 44.1000 мс
+2022-05-13 00:44:58.682 +05:00 [INF] Application is shutting down...
+2022-05-13 00:50:27.761 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:50:27.793 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:50:27.794 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:50:27.795 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:50:38.508 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58010) по POST /terminalToken ответил 200 за 434.9063 мс
+2022-05-13 00:50:40.690 +05:00 [INF] Запрос от terminal_e476bbc6-5603-4af2-a109-bed1687b5b14 (127.0.0.1:58032) по POST /technoWorldHub/negotiate ответил 200 за 11.6592 мс
+2022-05-13 00:50:40.938 +05:00 [INF] Подключенин терминал: terminal_e476bbc6-5603-4af2-a109-bed1687b5b14
+2022-05-13 00:50:41.186 +05:00 [INF] Запрос от terminal_e476bbc6-5603-4af2-a109-bed1687b5b14 (127.0.0.1:58010) по GET /api/Categories ответил 200 за 1571.5462 мс
+2022-05-13 00:50:44.585 +05:00 [INF] terminal_e476bbc6-5603-4af2-a109-bed1687b5b14 отключен от системы
+2022-05-13 00:50:44.588 +05:00 [INF] Application is shutting down...
+2022-05-13 00:50:44.589 +05:00 [INF] Запрос от terminal_e476bbc6-5603-4af2-a109-bed1687b5b14 (127.0.0.1:58033) по GET /technoWorldHub ответил 101 за 3790.6024 мс
+2022-05-13 00:51:21.918 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:51:21.951 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:51:21.952 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:51:21.952 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:51:31.400 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58157) по POST /terminalToken ответил 200 за 320.1322 мс
+2022-05-13 00:51:32.872 +05:00 [INF] Запрос от terminal_2991df60-e233-40d2-9b43-d4b7c1e7aa40 (127.0.0.1:58160) по POST /technoWorldHub/negotiate ответил 200 за 16.3956 мс
+2022-05-13 00:51:33.008 +05:00 [INF] Подключенин терминал: terminal_2991df60-e233-40d2-9b43-d4b7c1e7aa40
+2022-05-13 00:51:33.900 +05:00 [INF] Запрос от terminal_2991df60-e233-40d2-9b43-d4b7c1e7aa40 (127.0.0.1:58157) по GET /api/Categories ответил 200 за 1431.9999 мс
+2022-05-13 00:51:34.946 +05:00 [INF] Запрос от terminal_2991df60-e233-40d2-9b43-d4b7c1e7aa40 (127.0.0.1:58157) по GET /api/Electronics/TerminalFilter ответил 200 за 316.9952 мс
+2022-05-13 00:51:35.074 +05:00 [INF] Запрос от terminal_2991df60-e233-40d2-9b43-d4b7c1e7aa40 (127.0.0.1:58157) по GET /api/Manufacturers ответил 200 за 63.6098 мс
+2022-05-13 00:51:35.094 +05:00 [INF] Запрос от terminal_2991df60-e233-40d2-9b43-d4b7c1e7aa40 (127.0.0.1:58157) по GET /api/ElectrnicsTypes ответил 200 за 14.9069 мс
+2022-05-13 00:51:37.586 +05:00 [INF] terminal_2991df60-e233-40d2-9b43-d4b7c1e7aa40 отключен от системы
+2022-05-13 00:51:37.589 +05:00 [INF] Application is shutting down...
+2022-05-13 00:51:37.590 +05:00 [INF] Запрос от terminal_2991df60-e233-40d2-9b43-d4b7c1e7aa40 (127.0.0.1:58161) по GET /technoWorldHub ответил 101 за 4656.4786 мс
+2022-05-13 00:53:44.945 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:53:44.977 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:53:44.977 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:53:44.978 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:54:30.361 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58509) по POST /terminalToken ответил 200 за 391.6254 мс
+2022-05-13 00:54:32.127 +05:00 [INF] Запрос от terminal_b53b3504-5277-4f0a-beb8-76a006a6982f (127.0.0.1:58513) по POST /technoWorldHub/negotiate ответил 200 за 10.6270 мс
+2022-05-13 00:54:32.275 +05:00 [INF] Подключенин терминал: terminal_b53b3504-5277-4f0a-beb8-76a006a6982f
+2022-05-13 00:54:32.771 +05:00 [INF] Запрос от terminal_b53b3504-5277-4f0a-beb8-76a006a6982f (127.0.0.1:58509) по GET /api/Categories ответил 200 за 1002.4938 мс
+2022-05-13 00:54:34.706 +05:00 [INF] Запрос от terminal_b53b3504-5277-4f0a-beb8-76a006a6982f (127.0.0.1:58509) по GET /api/Electronics/TerminalFilter ответил 200 за 303.9709 мс
+2022-05-13 00:54:34.859 +05:00 [INF] Запрос от terminal_b53b3504-5277-4f0a-beb8-76a006a6982f (127.0.0.1:58509) по GET /api/Manufacturers ответил 200 за 56.3633 мс
+2022-05-13 00:54:34.887 +05:00 [INF] Запрос от terminal_b53b3504-5277-4f0a-beb8-76a006a6982f (127.0.0.1:58509) по GET /api/ElectrnicsTypes ответил 200 за 18.8949 мс
+2022-05-13 00:54:36.425 +05:00 [INF] terminal_b53b3504-5277-4f0a-beb8-76a006a6982f отключен от системы
+2022-05-13 00:54:36.428 +05:00 [INF] Application is shutting down...
+2022-05-13 00:54:36.429 +05:00 [INF] Запрос от terminal_b53b3504-5277-4f0a-beb8-76a006a6982f (127.0.0.1:58514) по GET /technoWorldHub ответил 101 за 4225.9117 мс
+2022-05-13 00:56:30.838 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:56:30.873 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:56:30.874 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:56:30.874 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 00:56:46.477 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58741) по POST /terminalToken ответил 200 за 321.3909 мс
+2022-05-13 00:56:48.012 +05:00 [INF] Запрос от terminal_23e74a5a-178d-4e14-b229-09ad7bb4e69c (127.0.0.1:58742) по POST /technoWorldHub/negotiate ответил 200 за 14.5427 мс
+2022-05-13 00:56:48.218 +05:00 [INF] Подключенин терминал: terminal_23e74a5a-178d-4e14-b229-09ad7bb4e69c
+2022-05-13 00:56:49.375 +05:00 [INF] Запрос от terminal_23e74a5a-178d-4e14-b229-09ad7bb4e69c (127.0.0.1:58741) по GET /api/Categories ответил 200 за 1774.8470 мс
+2022-05-13 00:57:06.651 +05:00 [INF] terminal_23e74a5a-178d-4e14-b229-09ad7bb4e69c отключен от системы
+2022-05-13 00:57:06.655 +05:00 [INF] Application is shutting down...
+2022-05-13 00:57:06.655 +05:00 [INF] Запрос от terminal_23e74a5a-178d-4e14-b229-09ad7bb4e69c (127.0.0.1:58743) по GET /technoWorldHub ответил 101 за 18566.0676 мс
+2022-05-13 00:59:48.002 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 00:59:48.034 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 00:59:48.035 +05:00 [INF] Hosting environment: Development
+2022-05-13 00:59:48.036 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 01:00:03.164 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59319) по GET /api/Categories ответил 401 за 5.8457 мс
+2022-05-13 01:00:03.173 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59318) по POST /terminalToken ответил 200 за 313.3231 мс
+2022-05-13 01:00:03.520 +05:00 [INF] Запрос от terminal_c3463cd2-c22e-44ad-88a6-868b4950885e (127.0.0.1:59320) по POST /technoWorldHub/negotiate ответил 200 за 51.0892 мс
+2022-05-13 01:00:03.635 +05:00 [INF] Подключенин терминал: terminal_c3463cd2-c22e-44ad-88a6-868b4950885e
+2022-05-13 01:00:05.317 +05:00 [INF] terminal_c3463cd2-c22e-44ad-88a6-868b4950885e отключен от системы
+2022-05-13 01:00:05.324 +05:00 [INF] Запрос от terminal_c3463cd2-c22e-44ad-88a6-868b4950885e (127.0.0.1:59321) по GET /technoWorldHub ответил 101 за 1754.6872 мс
+2022-05-13 01:00:09.788 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59327) по POST /terminalToken ответил 200 за 12.8198 мс
+2022-05-13 01:00:12.077 +05:00 [INF] Запрос от terminal_e51da560-ca05-4250-88f5-c9da4701d035 (127.0.0.1:59329) по POST /technoWorldHub/negotiate ответил 200 за 0.3891 мс
+2022-05-13 01:00:12.192 +05:00 [INF] Подключенин терминал: terminal_e51da560-ca05-4250-88f5-c9da4701d035
+2022-05-13 01:00:12.743 +05:00 [INF] Запрос от terminal_e51da560-ca05-4250-88f5-c9da4701d035 (127.0.0.1:59327) по GET /api/Categories ответил 200 за 1021.7015 мс
+2022-05-13 01:00:13.406 +05:00 [INF] terminal_e51da560-ca05-4250-88f5-c9da4701d035 отключен от системы
+2022-05-13 01:00:13.408 +05:00 [INF] Запрос от terminal_e51da560-ca05-4250-88f5-c9da4701d035 (127.0.0.1:59330) по GET /technoWorldHub ответил 101 за 1264.5280 мс
+2022-05-13 01:00:18.697 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59335) по POST /terminalToken ответил 200 за 3.2553 мс
+2022-05-13 01:00:19.210 +05:00 [INF] Запрос от terminal_7a1ff356-56e3-4570-92c3-b062b77f956b (127.0.0.1:59335) по GET /api/Categories ответил 200 за 44.1423 мс
+2022-05-13 01:00:19.575 +05:00 [INF] Запрос от terminal_7a1ff356-56e3-4570-92c3-b062b77f956b (127.0.0.1:59338) по POST /technoWorldHub/negotiate ответил 200 за 0.3357 мс
+2022-05-13 01:00:19.742 +05:00 [INF] Подключенин терминал: terminal_7a1ff356-56e3-4570-92c3-b062b77f956b
+2022-05-13 01:00:21.350 +05:00 [INF] terminal_7a1ff356-56e3-4570-92c3-b062b77f956b отключен от системы
+2022-05-13 01:00:21.351 +05:00 [INF] Application is shutting down...
+2022-05-13 01:00:21.351 +05:00 [INF] Запрос от terminal_7a1ff356-56e3-4570-92c3-b062b77f956b (127.0.0.1:59339) по GET /technoWorldHub ответил 101 за 1684.3379 мс
+2022-05-13 01:01:21.372 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 01:01:21.406 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 01:01:21.407 +05:00 [INF] Hosting environment: Development
+2022-05-13 01:01:21.407 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 01:01:26.453 +05:00 [INF] Application is shutting down...
+2022-05-13 01:09:09.439 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 01:09:09.472 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 01:09:09.473 +05:00 [INF] Hosting environment: Development
+2022-05-13 01:09:09.473 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 01:09:13.502 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:61206) по POST /terminalToken ответил 200 за 282.4240 мс
+2022-05-13 01:09:13.674 +05:00 [INF] Запрос от terminal_338a59de-ee56-4b6c-a337-a8f1d8402502 (127.0.0.1:61207) по POST /technoWorldHub/negotiate ответил 200 за 48.6983 мс
+2022-05-13 01:09:13.783 +05:00 [INF] Подключенин терминал: terminal_338a59de-ee56-4b6c-a337-a8f1d8402502
+2022-05-13 01:09:18.817 +05:00 [INF] Запрос от terminal_338a59de-ee56-4b6c-a337-a8f1d8402502 (127.0.0.1:61206) по POST /terminalToken ответил 200 за 1.3836 мс
+2022-05-13 01:09:37.359 +05:00 [INF] terminal_338a59de-ee56-4b6c-a337-a8f1d8402502 отключен от системы
+2022-05-13 01:09:37.365 +05:00 [INF] Запрос от terminal_338a59de-ee56-4b6c-a337-a8f1d8402502 (127.0.0.1:61208) по GET /technoWorldHub ответил 101 за 23644.7975 мс
+2022-05-13 01:09:47.251 +05:00 [INF] Application is shutting down...
+2022-05-13 01:10:47.169 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 01:10:47.201 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 01:10:47.202 +05:00 [INF] Hosting environment: Development
+2022-05-13 01:10:47.203 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 01:10:48.656 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:61433) по POST /terminalToken ответил 200 за 307.1069 мс
+2022-05-13 01:10:48.831 +05:00 [INF] Запрос от terminal_3fe2e6ce-94a1-48b6-9333-86f22b5148cd (127.0.0.1:61435) по POST /technoWorldHub/negotiate ответил 200 за 48.4800 мс
+2022-05-13 01:10:48.946 +05:00 [INF] Подключенин терминал: terminal_3fe2e6ce-94a1-48b6-9333-86f22b5148cd
+2022-05-13 01:10:53.974 +05:00 [INF] Запрос от terminal_3fe2e6ce-94a1-48b6-9333-86f22b5148cd (127.0.0.1:61433) по POST /terminalToken ответил 200 за 1.5127 мс
+2022-05-13 01:11:03.837 +05:00 [INF] terminal_3fe2e6ce-94a1-48b6-9333-86f22b5148cd отключен от системы
+2022-05-13 01:11:03.843 +05:00 [INF] Запрос от terminal_3fe2e6ce-94a1-48b6-9333-86f22b5148cd (127.0.0.1:61436) по GET /technoWorldHub ответил 101 за 14965.9359 мс
+2022-05-13 01:11:23.556 +05:00 [INF] Application is shutting down...
+2022-05-13 01:14:13.153 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 01:14:13.184 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 01:14:13.185 +05:00 [INF] Hosting environment: Development
+2022-05-13 01:14:13.186 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 01:14:50.480 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 01:14:50.518 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:61802) по POST /userToken ответил 200 за 1590.0001 мс
+2022-05-13 01:14:50.726 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61804) по POST /technoWorldHub/negotiate ответил 200 за 49.7752 мс
+2022-05-13 01:14:50.841 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 01:14:51.023 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61802) по GET /api/Categories ответил 200 за 64.8329 мс
+2022-05-13 01:14:51.093 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61802) по GET /api/ElectrnicsTypes/All ответил 200 за 38.2133 мс
+2022-05-13 01:14:51.449 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61802) по GET /api/Electronics/Filter ответил 200 за 261.1259 мс
+2022-05-13 01:14:53.126 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61802) по GET /api/Posts ответил 200 за 8.3145 мс
+2022-05-13 01:14:53.157 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61802) по GET /api/Employees/Filter ответил 200 за 16.9023 мс
+2022-05-13 01:14:55.301 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61802) по GET /api/Posts ответил 200 за 1.6890 мс
+2022-05-13 01:14:57.237 +05:00 [ERR] Провальная попытка изменения пользователя MrBoring: пользователь сейчас онлайн в системе.
+2022-05-13 01:14:57.239 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61802) по PUT /api/Employees/7 ответил 400 за 19.7001 мс
+2022-05-13 01:15:01.366 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61802) по GET /api/Posts ответил 200 за 2.2960 мс
+2022-05-13 01:15:03.865 +05:00 [ERR] Провальная попытка удаления пользователя MrBoring: пользователь сейчас онлайн в системе.
+2022-05-13 01:15:03.866 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61802) по DELETE /api/Employees/7 ответил 400 за 12.6600 мс
+2022-05-13 01:15:08.782 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61802) по GET /api/Posts ответил 200 за 2.1762 мс
+2022-05-13 01:15:12.014 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:61802) по DELETE /api/Employees/5 ответил 500 за 12.2229 мс
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Controllers.EmployeesController.DeleteEmployee(Int32 id) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 170
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 01:15:12.076 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TechnoWorld_API.Controllers.EmployeesController.DeleteEmployee(Int32 id) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 170
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 01:15:36.193 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 01:15:41.209 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61805) по GET /technoWorldHub ответил 101 за 50434.8953 мс
+2022-05-13 01:15:56.174 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 01:15:56.251 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 01:15:56.251 +05:00 [INF] Hosting environment: Development
+2022-05-13 01:15:56.252 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 01:16:07.696 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 01:16:07.750 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:61845) по POST /userToken ответил 200 за 1752.1138 мс
+2022-05-13 01:16:07.955 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61847) по POST /technoWorldHub/negotiate ответил 200 за 58.6169 мс
+2022-05-13 01:16:08.082 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 01:16:08.323 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61845) по GET /api/Categories ответил 200 за 115.7627 мс
+2022-05-13 01:16:08.448 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61845) по GET /api/ElectrnicsTypes/All ответил 200 за 42.9327 мс
+2022-05-13 01:16:08.802 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61845) по GET /api/Electronics/Filter ответил 200 за 308.7341 мс
+2022-05-13 01:16:10.443 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61845) по GET /api/Posts ответил 200 за 9.9145 мс
+2022-05-13 01:16:10.498 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61845) по GET /api/Employees/Filter ответил 200 за 21.5497 мс
+2022-05-13 01:16:13.511 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61845) по GET /api/Posts ответил 200 за 3.9321 мс
+2022-05-13 01:17:07.181 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 01:17:07.215 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 01:17:07.216 +05:00 [INF] Hosting environment: Development
+2022-05-13 01:17:07.216 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 01:17:23.106 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 01:17:23.145 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:61933) по POST /userToken ответил 200 за 1278.7682 мс
+2022-05-13 01:17:23.342 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61936) по POST /technoWorldHub/negotiate ответил 200 за 49.0944 мс
+2022-05-13 01:17:23.456 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 01:17:23.663 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61933) по GET /api/Categories ответил 200 за 75.8675 мс
+2022-05-13 01:17:23.730 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61933) по GET /api/ElectrnicsTypes/All ответил 200 за 36.6769 мс
+2022-05-13 01:17:24.091 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61933) по GET /api/Electronics/Filter ответил 200 за 265.7628 мс
+2022-05-13 01:17:27.265 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61933) по GET /api/Posts ответил 200 за 7.5599 мс
+2022-05-13 01:17:27.288 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61933) по GET /api/Employees/Filter ответил 200 за 17.3730 мс
+2022-05-13 01:17:29.340 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61933) по GET /api/Posts ответил 200 за 1.2705 мс
+2022-05-13 01:17:31.736 +05:00 [INF] Было произведено удаление пользователя admin1 с ролью Администратор
+2022-05-13 01:17:31.863 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61933) по DELETE /api/Employees/5 ответил 200 за 144.9502 мс
+2022-05-13 01:17:39.942 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61933) по GET /api/Employees/Filter ответил 200 за 2.8503 мс
+2022-05-13 01:17:40.075 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61933) по GET /api/Employees/Filter ответил 200 за 1.6504 мс
+2022-05-13 01:17:42.090 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 01:17:42.096 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61937) по GET /technoWorldHub ответил 101 за 18704.4511 мс
+2022-05-13 01:20:20.027 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 01:20:20.060 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 01:20:20.060 +05:00 [INF] Hosting environment: Development
+2022-05-13 01:20:20.061 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 01:20:36.728 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 01:20:36.762 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 01:20:36.763 +05:00 [INF] Hosting environment: Development
+2022-05-13 01:20:36.764 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 01:20:46.417 +05:00 [INF] Application is shutting down...

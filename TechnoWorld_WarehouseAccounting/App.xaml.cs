@@ -6,6 +6,8 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using TechnoWorld_Notification;
+using TechnoWorld_Notification.Enums;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
 using TechnoWorld_WarehouseAccounting.Views.Windows;
@@ -37,7 +39,7 @@ namespace TechnoWorld_WarehouseAccounting
             {
                 if (arg != null)
                 {
-                    CustomMessageBox.Show("Потеряно соединение с сервером!", "Критическая ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MaterialNotification.Show("Критическая ошибка", "Потеряно соединение с сервером!", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                     WindowNavigation.Instance.OpenWindow(new LoginWindowVM());
                     PageNavigation.Instance.ClearCreatedPages();
                     WindowNavigation.Instance.CloseWindows();
@@ -54,6 +56,7 @@ namespace TechnoWorld_WarehouseAccounting
             WindowNavigation.Instance.RegisterWindow<DeliveryWindowVM, DeliveryWindow>();
             WindowNavigation.Instance.RegisterWindow<ProductListWindowVM, ProductsListWindow>();
             WindowNavigation.Instance.RegisterWindow<DestributionOrderWindowVM, DestributionOrderWindow>();
+            WindowNavigation.Instance.RegisterWindow<EmployeeWindowVM, EmployeeWindow>();
         }
     }
 }

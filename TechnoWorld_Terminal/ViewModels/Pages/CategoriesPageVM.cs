@@ -50,7 +50,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             var response = (RestResponse)await ApiService.Instance.GetRequest("api/Categories");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Categories = JsonConvert.DeserializeObject<ObservableCollection<Category>>(response.Content);
+                Categories = new ObservableCollection<Category>(JsonConvert.DeserializeObject<ObservableCollection<Category>>(response.Content));
 
             }
         }
