@@ -68,13 +68,13 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
         [DisplayFormat(ConvertEmptyStringToNull = false)]
         [StringLength(11, MinimumLength = 11, ErrorMessage = "Длина поля Пасспорт должна быть {1} символов")]
-        [RegularExpression(@"", ErrorMessage = "Поле Паспорт должно быть в виде [Серия Номер] (0000 000000)")]
+        [RegularExpression(@"\d{4}\s\d{6}", ErrorMessage = "Поле Паспорт должно быть в виде [Серия Номер] (0000 000000)")]
         public string Passport { get => CurrentEmployee.Passport; set { CurrentEmployee.Passport = value; ValidationMessageSetter(value); } }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
         [DisplayFormat(ConvertEmptyStringToNull = false)]
         [StringLength(100, MinimumLength = 4, ErrorMessage = "Длина поля Email должна быть от {1} до {2} символов")]
-        [RegularExpression(@"", ErrorMessage = "Введён неккоректный Email")]
+        [RegularExpression(@"[a-zA-Z1-9\-\._]+@[a-z1-9]+(.[a-z1-9]+){1,}", ErrorMessage = "Введён неккоректный Email")]
 
         public string Email { get => CurrentEmployee.Passport; set { CurrentEmployee.Passport = value; ValidationMessageSetter(value); } }
         [DateOfBirthValidation(ErrorMessage = "Нельзя устравивать сотрудника моложе 18 лет")]
