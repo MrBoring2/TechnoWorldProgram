@@ -10,7 +10,7 @@ namespace TechnoWorld_API.Validation
     {
         public static ValidationResult ValidateLoginPassword(UserLoginModel model)
         {
-            if (string.IsNullOrEmpty(model.UserName) || string.IsNullOrEmpty(model.Password))
+            if (string.IsNullOrEmpty(model.UserName) || string.IsNullOrEmpty(model.HashPass))
             {
                 return new ValidationResult(false, "Поля не должны быть пустыми!");
             }
@@ -27,7 +27,7 @@ namespace TechnoWorld_API.Validation
 
             return new ValidationResult(true, "Success");
         }
-        public static ValidationResult ValudateProgramm(UserLoginModel model, ClaimsIdentity userClaims)
+        public static ValidationResult ValidateProgramm(UserLoginModel model, ClaimsIdentity userClaims)
         {
             if ((model.Programm == "cash" && userClaims.FindFirst("role_id").Value != "1") ||
                 (model.Programm == "warehouse_accounting" && userClaims.FindFirst("role_id").Value == "1"))

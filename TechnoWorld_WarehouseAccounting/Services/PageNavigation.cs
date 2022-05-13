@@ -63,7 +63,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
                     break;
                 case 2:
                     {
-
+                        RegisterPageWithVM<SalesStatisticsPageVM, SalesStatisticsPage>();
                     }
                     break;
                 case 3:

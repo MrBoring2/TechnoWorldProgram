@@ -72,10 +72,10 @@ namespace TechnoWorld_API.Controllers
             {
                 ClaimsIdentity userClaims = null;
                 var validationLoginPasswordResult = UserValidation.ValidateLoginPassword(model);
-               
+
                 if (validationLoginPasswordResult.Result == true)
                 {
-                    var user = await TryGetUser(model.UserName, model.Password);
+                    var user = await TryGetUser(model.UserName, model.HashPass);
                     if (user == null)
                     {
                         LogService.LodMessage($"Провальная попытка входа пользователя {model.UserName}: Неверный логин или пароль", LogLevel.Warning);
@@ -84,8 +84,8 @@ namespace TechnoWorld_API.Controllers
                     else
                     {
                         userClaims = ClaimsExtentions.BuildClaimsForUser(user);
-                        var validationProdgrammResult = UserValidation.ValudateProgramm(model, userClaims);
-                        if(validationProdgrammResult.Result == false)
+                        var validationProdgrammResult = UserValidation.ValidateProgramm(model, userClaims);
+                        if (validationProdgrammResult.Result == false)
                         {
                             return BadRequest(validationProdgrammResult.Message);
                         }
@@ -119,9 +119,10 @@ namespace TechnoWorld_API.Controllers
             else return BadRequest("Модель не валидна");
         }
 
-        private async Task<Employee> TryGetUser(string login, string password)
+        private async Task<Employee> TryGetUser(string login, string hashPass)
         {
-            return await _context.Employees.Include(p => p.Role).Include(p => p.Post).FirstOrDefaultAsync(p => p.Login == login && p.Password == password);
+
+            return await _context.Employees.Include(p => p.Role).Include(p => p.Post).FirstOrDefaultAsync(p => p.Login == login && p.Password == hashPass);
         }
 
     }

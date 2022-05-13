@@ -350,13 +350,13 @@
     <Resource Include="Resources\Images\logo_cash.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MaterialNotificationLibrary\MaterialNotificationLibrary.csproj">
+      <Project>{f3a6e947-89ec-424a-8713-a997dc0d8485}</Project>
+      <Name>MaterialNotificationLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TechnoWorld_DataModels_v2\TechnoWorld_DataModels_v2.csproj">
       <Project>{8359945d-4d78-47e0-8b9a-3fcaed38e701}</Project>
       <Name>TechnoWorld_DataModels_v2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TechnoWorld_Notification\TechnoWorld_Notification.csproj">
-      <Project>{88E5BF34-24E2-4C0A-BD6E-C553D360EFF0}</Project>
-      <Name>TechnoWorld_Notification</Name>
     </ProjectReference>
     <ProjectReference Include="..\WPF_Helpers\WPF_Helpers.csproj">
       <Project>{D22A1E10-00B9-43C0-AC59-AB1C5495CB79}</Project>

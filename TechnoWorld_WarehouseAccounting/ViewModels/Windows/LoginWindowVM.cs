@@ -21,8 +21,10 @@ using SweetAlertSharp;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Data;
-using TechnoWorld_Notification;
-using TechnoWorld_Notification.Enums;
+using MaterialNotificationLibrary;
+using MaterialNotificationLibrary.Enums;
+using System.Security.Cryptography;
+using WPF_Helpers.Services;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
@@ -58,7 +60,10 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 }
 
                 IsEnabled = false;
-                var response = await ApiService.Instance.AuthorizeInWarehouse(Login, Password);
+
+
+
+                var response = await ApiService.Instance.AuthorizeInWarehouse(Login, MD5EncoderService.EncodePassword(Login, Password));
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     var data = JsonConvert.DeserializeObject<AuthResponseModel>(response.Content);
@@ -67,7 +72,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     await ApiService.Instance.GetHubConnection.StartAsync();
 
                     WindowNavigation.Instance.OpenAndHideWindow(this, new MainAppWindowVM());
-                    
+
                 }
                 else if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
                 {
@@ -79,6 +84,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     MaterialNotification.Show("Критическая ошибка.", "Потярено соединение с сервером!", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
                     IsEnabled = true;
                 }
+
             }
             catch (Exception ex)
             {

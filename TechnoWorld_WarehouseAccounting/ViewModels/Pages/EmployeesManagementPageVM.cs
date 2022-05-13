@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.SignalR.Client;
+﻿using MaterialNotificationLibrary;
+using MaterialNotificationLibrary.Enums;
+using Microsoft.AspNetCore.SignalR.Client;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -8,8 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TechnoWorld_API.Models;
-using TechnoWorld_Notification;
-using TechnoWorld_Notification.Enums;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
 using TechoWorld_DataModels_v2;

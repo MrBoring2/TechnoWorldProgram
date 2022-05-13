@@ -250,11 +250,13 @@
     <Compile Include="Services\ApiService.cs" />
     <Compile Include="Services\DialogCloser.cs" />
     <Compile Include="Abstractions\NotifyPropertyChangedBase.cs" />
+    <Compile Include="Services\MD5EncoderService.cs" />
     <Compile Include="Services\Paginator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Models\SortParameter.cs" />
     <Compile Include="ValidationRules\EmailValidation.cs" />
+    <Compile Include="ValidationRules\NewPasswordValidation.cs" />
     <Compile Include="ValidationRules\PhoneNumberValidation.cs" />
     <Compile Include="ValidationRules\StringToNumberValidationRule.cs" />
     <Compile Include="ValidationRules\DateOfBirthValidation.cs" />

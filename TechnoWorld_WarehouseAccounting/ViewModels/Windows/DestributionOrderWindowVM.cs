@@ -16,8 +16,8 @@ using WPF_VM_Abstractions;
 using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
 using TechoWorld_DataModels_v2.Entities;
-using TechnoWorld_Notification.Enums;
-using TechnoWorld_Notification;
+using MaterialNotificationLibrary.Enums;
+using MaterialNotificationLibrary;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {

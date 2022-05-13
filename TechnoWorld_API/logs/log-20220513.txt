@@ -1232,3 +1232,862 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 2022-05-13 01:20:36.763 +05:00 [INF] Hosting environment: Development
 2022-05-13 01:20:36.764 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
 2022-05-13 01:20:46.417 +05:00 [INF] Application is shutting down...
+2022-05-13 09:53:41.469 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 09:53:41.499 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 09:53:41.500 +05:00 [INF] Hosting environment: Development
+2022-05-13 09:53:41.500 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 09:53:57.442 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 09:53:57.478 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:54535) по POST /userToken ответил 200 за 1277.4142 мс
+2022-05-13 09:53:57.699 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54536) по POST /technoWorldHub/negotiate ответил 200 за 44.6945 мс
+2022-05-13 09:53:57.817 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 09:53:58.018 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54535) по GET /api/Categories ответил 200 за 61.8112 мс
+2022-05-13 09:54:02.340 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 09:54:02.345 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54537) по GET /technoWorldHub ответил 101 за 4589.4179 мс
+2022-05-13 09:54:23.406 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 09:54:23.407 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:54556) по POST /userToken ответил 200 за 15.9573 мс
+2022-05-13 09:54:23.580 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54557) по POST /technoWorldHub/negotiate ответил 200 за 0.4510 мс
+2022-05-13 09:54:23.685 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 09:54:23.822 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54556) по GET /api/Categories ответил 200 за 15.2413 мс
+2022-05-13 09:54:23.991 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54556) по GET /api/ElectrnicsTypes/All ответил 200 за 27.5022 мс
+2022-05-13 09:54:24.399 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54556) по GET /api/Electronics/Filter ответил 200 за 307.2613 мс
+2022-05-13 09:54:26.497 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 09:54:26.499 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54558) по GET /technoWorldHub ответил 101 за 2858.9867 мс
+2022-05-13 09:56:37.220 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 09:56:37.248 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 09:56:37.248 +05:00 [INF] Hosting environment: Development
+2022-05-13 09:56:37.249 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 09:56:49.201 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 09:56:49.235 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:54691) по POST /userToken ответил 200 за 1189.7514 мс
+2022-05-13 09:56:49.411 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54692) по POST /technoWorldHub/negotiate ответил 200 за 42.8252 мс
+2022-05-13 09:56:49.516 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 09:56:49.682 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54691) по GET /api/Categories ответил 200 за 59.5899 мс
+2022-05-13 09:56:49.819 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54691) по GET /api/ElectrnicsTypes/All ответил 200 за 100.8110 мс
+2022-05-13 09:56:50.089 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54691) по GET /api/Electronics/Filter ответил 200 за 229.1278 мс
+2022-05-13 09:56:58.860 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 09:56:58.865 +05:00 [INF] Запрос от MrBoring (127.0.0.1:54693) по GET /technoWorldHub ответил 101 за 9408.3075 мс
+2022-05-13 10:09:41.061 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 10:09:41.088 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 10:09:41.089 +05:00 [INF] Hosting environment: Development
+2022-05-13 10:09:41.090 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 10:10:06.171 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 10:10:06.206 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55739) по POST /userToken ответил 200 за 1174.4347 мс
+2022-05-13 10:10:06.424 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55746) по POST /technoWorldHub/negotiate ответил 200 за 46.2310 мс
+2022-05-13 10:10:06.542 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 10:10:06.719 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55739) по GET /api/Categories ответил 200 за 59.1658 мс
+2022-05-13 10:10:06.847 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55739) по GET /api/ElectrnicsTypes/All ответил 200 за 34.7593 мс
+2022-05-13 10:10:07.198 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55739) по GET /api/Electronics/Filter ответил 200 за 248.7126 мс
+2022-05-13 10:10:09.674 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 10:10:09.678 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55747) по GET /technoWorldHub ответил 101 за 3199.5582 мс
+2022-05-13 10:10:13.447 +05:00 [WRN] Провальная попытка входа пользователя MrBoring: Неверный логин или пароль
+2022-05-13 10:10:13.448 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55739) по POST /userToken ответил 400 за 5.3021 мс
+2022-05-13 10:10:15.787 +05:00 [WRN] Провальная попытка входа пользователя MrBoring: Неверный логин или пароль
+2022-05-13 10:10:15.789 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55739) по POST /userToken ответил 400 за 3.0294 мс
+2022-05-13 10:10:17.987 +05:00 [WRN] Провальная попытка входа пользователя MrBoring: Неверный логин или пароль
+2022-05-13 10:10:17.989 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55739) по POST /userToken ответил 400 за 2.8448 мс
+2022-05-13 10:10:23.813 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 10:10:23.815 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55739) по POST /userToken ответил 200 за 4.5411 мс
+2022-05-13 10:10:23.818 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55754) по POST /technoWorldHub/negotiate ответил 200 за 0.8030 мс
+2022-05-13 10:10:23.823 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 10:10:37.886 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 10:10:37.888 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55755) по GET /technoWorldHub ответил 101 за 14069.0906 мс
+2022-05-13 10:37:43.874 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 10:37:43.901 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 10:37:43.901 +05:00 [INF] Hosting environment: Development
+2022-05-13 10:37:43.902 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 10:40:38.648 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 10:40:38.675 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 10:40:38.675 +05:00 [INF] Hosting environment: Development
+2022-05-13 10:40:38.676 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 10:52:14.696 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 10:52:14.722 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 10:52:14.723 +05:00 [INF] Hosting environment: Development
+2022-05-13 10:52:14.724 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 10:52:35.364 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 10:52:35.397 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55819) по POST /userToken ответил 200 за 1160.8656 мс
+2022-05-13 10:52:35.612 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55820) по POST /technoWorldHub/negotiate ответил 200 за 44.5209 мс
+2022-05-13 10:52:35.731 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 10:52:35.903 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55819) по GET /api/Categories ответил 200 за 56.5722 мс
+2022-05-13 10:52:36.092 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55819) по GET /api/ElectrnicsTypes/All ответил 200 за 105.0729 мс
+2022-05-13 10:52:36.498 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55819) по GET /api/Electronics/Filter ответил 200 за 249.1031 мс
+2022-05-13 10:52:38.708 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55819) по GET /api/Posts ответил 200 за 8.2798 мс
+2022-05-13 10:52:38.741 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55819) по GET /api/Employees/Filter ответил 200 за 15.9583 мс
+2022-05-13 10:52:40.054 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55819) по GET /api/Posts ответил 200 за 2.0538 мс
+2022-05-13 10:52:45.013 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55819) по GET /api/Posts ответил 200 за 6.8399 мс
+2022-05-13 10:54:08.325 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55819) по GET /api/Posts ответил 200 за 4.4565 мс
+2022-05-13 10:55:48.973 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 10:55:48.978 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55821) по GET /technoWorldHub ответил 101 за 193312.8330 мс
+2022-05-13 11:41:07.928 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 11:41:07.930 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59271) по POST /userToken ответил 200 за 10.7237 мс
+2022-05-13 11:41:08.078 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59272) по POST /technoWorldHub/negotiate ответил 200 за 0.3831 мс
+2022-05-13 11:41:08.190 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 11:41:08.301 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59271) по GET /api/Categories ответил 200 за 6.7686 мс
+2022-05-13 11:41:08.409 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59271) по GET /api/ElectrnicsTypes/All ответил 200 за 11.2256 мс
+2022-05-13 11:41:08.731 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59271) по GET /api/Electronics/Filter ответил 200 за 206.6793 мс
+2022-05-13 11:41:15.855 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59271) по GET /api/Posts ответил 200 за 1.7220 мс
+2022-05-13 11:41:15.872 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59271) по GET /api/Employees/Filter ответил 200 за 2.8622 мс
+2022-05-13 11:41:22.892 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59271) по GET /api/Posts ответил 200 за 2.5276 мс
+2022-05-13 11:41:48.099 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 11:41:48.103 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59273) по GET /technoWorldHub ответил 101 за 39953.7311 мс
+2022-05-13 11:43:14.034 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 11:43:14.035 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59453) по POST /userToken ответил 200 за 12.5900 мс
+2022-05-13 11:43:14.204 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59454) по POST /technoWorldHub/negotiate ответил 200 за 0.3592 мс
+2022-05-13 11:43:14.308 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 11:43:14.433 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59453) по GET /api/Categories ответил 200 за 4.3318 мс
+2022-05-13 11:43:14.591 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59453) по GET /api/ElectrnicsTypes/All ответил 200 за 8.1586 мс
+2022-05-13 11:43:14.903 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59453) по GET /api/Electronics/Filter ответил 200 за 177.7390 мс
+2022-05-13 11:43:19.856 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59453) по GET /api/Posts ответил 200 за 1.7399 мс
+2022-05-13 11:43:19.871 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59453) по GET /api/Employees/Filter ответил 200 за 2.8940 мс
+2022-05-13 11:43:23.196 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59453) по GET /api/Posts ответил 200 за 1.0917 мс
+2022-05-13 11:43:32.259 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59453) по GET /api/Posts ответил 200 за 4.2002 мс
+2022-05-13 11:43:43.522 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59453) по GET /api/Posts ответил 200 за 1.4872 мс
+2022-05-13 11:44:47.003 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 11:44:47.005 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59455) по GET /technoWorldHub ответил 101 за 92740.9542 мс
+2022-05-13 11:45:41.505 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 11:45:41.507 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59635) по POST /userToken ответил 200 за 10.4448 мс
+2022-05-13 11:45:41.688 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59636) по POST /technoWorldHub/negotiate ответил 200 за 0.3851 мс
+2022-05-13 11:45:41.794 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 11:45:41.917 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59635) по GET /api/Categories ответил 200 за 3.7510 мс
+2022-05-13 11:45:42.116 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59635) по GET /api/ElectrnicsTypes/All ответил 200 за 9.8838 мс
+2022-05-13 11:45:42.386 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59635) по GET /api/Electronics/Filter ответил 200 за 148.1591 мс
+2022-05-13 11:45:44.389 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59635) по GET /api/Posts ответил 200 за 1.7196 мс
+2022-05-13 11:45:44.407 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59635) по GET /api/Employees/Filter ответил 200 за 3.2955 мс
+2022-05-13 11:45:46.160 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59635) по GET /api/Posts ответил 200 за 1.0877 мс
+2022-05-13 11:45:49.950 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59635) по GET /api/Posts ответил 200 за 3.4032 мс
+2022-05-13 11:45:55.742 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 11:45:55.743 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59637) по GET /technoWorldHub ответил 101 за 13993.9109 мс
+2022-05-13 11:46:24.414 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 11:46:24.416 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59689) по POST /userToken ответил 200 за 8.8592 мс
+2022-05-13 11:46:24.590 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59690) по POST /technoWorldHub/negotiate ответил 200 за 0.2087 мс
+2022-05-13 11:46:24.695 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 11:46:24.814 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59689) по GET /api/Categories ответил 200 за 3.8682 мс
+2022-05-13 11:46:24.956 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59689) по GET /api/ElectrnicsTypes/All ответил 200 за 8.1488 мс
+2022-05-13 11:46:25.219 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59689) по GET /api/Electronics/Filter ответил 200 за 130.7919 мс
+2022-05-13 11:46:27.545 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59689) по GET /api/Posts ответил 200 за 3.1630 мс
+2022-05-13 11:46:27.566 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59689) по GET /api/Employees/Filter ответил 200 за 2.8348 мс
+2022-05-13 11:46:30.319 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59689) по GET /api/Posts ответил 200 за 0.9747 мс
+2022-05-13 11:47:31.034 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 11:47:31.037 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59691) по GET /technoWorldHub ответил 101 за 66385.8440 мс
+2022-05-13 11:47:52.880 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 11:47:52.882 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59827) по POST /userToken ответил 200 за 6.6153 мс
+2022-05-13 11:47:53.049 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59828) по POST /technoWorldHub/negotiate ответил 200 за 0.1901 мс
+2022-05-13 11:47:53.153 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 11:47:53.278 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59827) по GET /api/Categories ответил 200 за 5.3911 мс
+2022-05-13 11:47:53.425 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59827) по GET /api/ElectrnicsTypes/All ответил 200 за 8.1452 мс
+2022-05-13 11:47:53.718 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59827) по GET /api/Electronics/Filter ответил 200 за 161.5062 мс
+2022-05-13 11:47:55.678 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59827) по GET /api/Posts ответил 200 за 1.2072 мс
+2022-05-13 11:47:55.692 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59827) по GET /api/Employees/Filter ответил 200 за 2.5603 мс
+2022-05-13 11:47:57.583 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59827) по GET /api/Posts ответил 200 за 1.3732 мс
+2022-05-13 11:48:39.713 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 11:48:44.725 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59829) по GET /technoWorldHub ответил 101 за 51616.0222 мс
+2022-05-13 11:50:09.382 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 11:50:09.383 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60028) по POST /userToken ответил 200 за 6.9490 мс
+2022-05-13 11:50:09.555 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60029) по POST /technoWorldHub/negotiate ответил 200 за 0.1959 мс
+2022-05-13 11:50:09.660 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 11:50:09.783 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60028) по GET /api/Categories ответил 200 за 3.9322 мс
+2022-05-13 11:50:10.022 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60028) по GET /api/ElectrnicsTypes/All ответил 200 за 89.1873 мс
+2022-05-13 11:50:10.198 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60028) по GET /api/Electronics/Filter ответил 200 за 122.1600 мс
+2022-05-13 11:50:12.545 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60028) по GET /api/Posts ответил 200 за 1.3902 мс
+2022-05-13 11:50:12.562 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60028) по GET /api/Employees/Filter ответил 200 за 2.7724 мс
+2022-05-13 11:50:13.843 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60028) по GET /api/Posts ответил 200 за 0.8248 мс
+2022-05-13 11:50:31.984 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 11:50:31.987 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60030) по GET /technoWorldHub ответил 101 за 22372.8867 мс
+2022-05-13 11:52:41.180 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 11:52:41.182 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60190) по POST /userToken ответил 200 за 6.6550 мс
+2022-05-13 11:52:41.354 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60191) по POST /technoWorldHub/negotiate ответил 200 за 0.2166 мс
+2022-05-13 11:52:41.458 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 11:52:41.582 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60190) по GET /api/Categories ответил 200 за 3.8531 мс
+2022-05-13 11:52:41.752 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60190) по GET /api/ElectrnicsTypes/All ответил 200 за 9.6329 мс
+2022-05-13 11:52:42.020 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60190) по GET /api/Electronics/Filter ответил 200 за 147.7560 мс
+2022-05-13 11:52:44.797 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60190) по GET /api/Status ответил 200 за 14.7462 мс
+2022-05-13 11:52:44.894 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-13 11:52:44.899 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:60190) по GET /api/Deliveries/Filter ответил 500 за 65.7030 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 11:52:44.945 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 11:52:46.437 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60190) по GET /api/Posts ответил 200 за 1.3858 мс
+2022-05-13 11:52:46.452 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60190) по GET /api/Employees/Filter ответил 200 за 2.6676 мс
+2022-05-13 11:52:48.117 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60190) по GET /api/Posts ответил 200 за 1.1449 мс
+2022-05-13 11:53:01.558 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 11:53:01.562 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60192) по GET /technoWorldHub ответил 101 за 20147.6194 мс
+2022-05-13 11:53:41.277 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 11:53:41.278 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60265) по POST /userToken ответил 200 за 6.4464 мс
+2022-05-13 11:53:41.450 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60266) по POST /technoWorldHub/negotiate ответил 200 за 0.2314 мс
+2022-05-13 11:53:41.555 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 11:53:41.679 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60265) по GET /api/Categories ответил 200 за 3.8170 мс
+2022-05-13 11:53:41.859 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60265) по GET /api/ElectrnicsTypes/All ответил 200 за 8.1820 мс
+2022-05-13 11:53:42.112 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60265) по GET /api/Electronics/Filter ответил 200 за 126.3228 мс
+2022-05-13 11:53:44.158 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60265) по GET /api/Posts ответил 200 за 1.5780 мс
+2022-05-13 11:53:44.176 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60265) по GET /api/Employees/Filter ответил 200 за 2.8029 мс
+2022-05-13 11:53:45.182 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60265) по GET /api/Posts ответил 200 за 1.0757 мс
+2022-05-13 11:54:28.302 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 11:54:28.304 +05:00 [INF] Запрос от MrBoring (127.0.0.1:60267) по GET /technoWorldHub ответил 101 за 46793.2590 мс
+2022-05-13 12:12:56.271 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:12:56.273 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:62549) по POST /userToken ответил 200 за 11.2028 мс
+2022-05-13 12:12:56.450 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62550) по POST /technoWorldHub/negotiate ответил 200 за 0.2388 мс
+2022-05-13 12:12:56.555 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:12:56.679 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62549) по GET /api/Categories ответил 200 за 4.5479 мс
+2022-05-13 12:12:56.836 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62549) по GET /api/ElectrnicsTypes/All ответил 200 за 8.3042 мс
+2022-05-13 12:12:57.141 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62549) по GET /api/Electronics/Filter ответил 200 за 173.8249 мс
+2022-05-13 12:12:59.539 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62549) по GET /api/Posts ответил 200 за 1.3642 мс
+2022-05-13 12:12:59.555 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62549) по GET /api/Employees/Filter ответил 200 за 2.8996 мс
+2022-05-13 12:13:00.939 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62549) по GET /api/Posts ответил 200 за 0.9779 мс
+2022-05-13 12:13:07.286 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:13:07.288 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62551) по GET /technoWorldHub ответил 101 за 10777.3545 мс
+2022-05-13 12:17:00.895 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:17:00.897 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:62950) по POST /userToken ответил 200 за 7.2947 мс
+2022-05-13 12:17:01.076 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62951) по POST /technoWorldHub/negotiate ответил 200 за 0.2162 мс
+2022-05-13 12:17:01.180 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:17:01.304 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62950) по GET /api/Categories ответил 200 за 3.7181 мс
+2022-05-13 12:17:01.452 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62950) по GET /api/ElectrnicsTypes/All ответил 200 за 9.9421 мс
+2022-05-13 12:17:01.741 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62950) по GET /api/Electronics/Filter ответил 200 за 168.5170 мс
+2022-05-13 12:17:04.129 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62950) по GET /api/Status ответил 200 за 1.8420 мс
+2022-05-13 12:17:04.150 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-13 12:17:04.155 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:62950) по GET /api/Deliveries/Filter ответил 500 за 9.2887 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 12:17:04.173 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 12:17:05.481 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62950) по GET /api/Posts ответил 200 за 1.3331 мс
+2022-05-13 12:17:05.497 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62950) по GET /api/Employees/Filter ответил 200 за 2.5810 мс
+2022-05-13 12:17:15.142 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62950) по GET /api/Posts ответил 200 за 0.8507 мс
+2022-05-13 12:17:30.736 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:17:30.738 +05:00 [INF] Запрос от MrBoring (127.0.0.1:62955) по GET /technoWorldHub ответил 101 за 29602.4973 мс
+2022-05-13 12:24:30.215 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:24:30.217 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50272) по POST /userToken ответил 200 за 14.9566 мс
+2022-05-13 12:24:30.395 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50273) по POST /technoWorldHub/negotiate ответил 200 за 0.2961 мс
+2022-05-13 12:24:30.500 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:24:30.626 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50272) по GET /api/Categories ответил 200 за 6.0427 мс
+2022-05-13 12:24:30.776 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50272) по GET /api/ElectrnicsTypes/All ответил 200 за 8.9676 мс
+2022-05-13 12:24:31.118 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50272) по GET /api/Electronics/Filter ответил 200 за 222.7222 мс
+2022-05-13 12:24:33.010 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50272) по GET /api/Posts ответил 200 за 1.2884 мс
+2022-05-13 12:24:33.024 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50272) по GET /api/Employees/Filter ответил 200 за 2.7019 мс
+2022-05-13 12:24:41.316 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50272) по GET /api/Posts ответил 200 за 0.9443 мс
+2022-05-13 12:24:56.474 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:24:56.476 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50274) по GET /technoWorldHub ответил 101 за 26021.5427 мс
+2022-05-13 12:25:30.646 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:25:30.647 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50324) по POST /userToken ответил 200 за 9.5681 мс
+2022-05-13 12:25:30.818 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50325) по POST /technoWorldHub/negotiate ответил 200 за 0.2443 мс
+2022-05-13 12:25:30.920 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:25:31.044 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50324) по GET /api/Categories ответил 200 за 3.6591 мс
+2022-05-13 12:25:31.198 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50324) по GET /api/ElectrnicsTypes/All ответил 200 за 7.9189 мс
+2022-05-13 12:25:31.456 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50324) по GET /api/Electronics/Filter ответил 200 за 137.0235 мс
+2022-05-13 12:25:34.546 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50324) по GET /api/Posts ответил 200 за 1.8769 мс
+2022-05-13 12:25:34.561 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50324) по GET /api/Employees/Filter ответил 200 за 2.7596 мс
+2022-05-13 12:25:35.796 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50324) по GET /api/Posts ответил 200 за 0.8516 мс
+2022-05-13 12:25:56.123 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50324) по GET /api/Posts ответил 200 за 1.4710 мс
+2022-05-13 12:26:20.839 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:26:20.842 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50326) по GET /technoWorldHub ответил 101 за 49965.1631 мс
+2022-05-13 12:26:33.547 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:26:33.548 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50354) по POST /userToken ответил 200 за 6.9154 мс
+2022-05-13 12:26:33.733 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50355) по POST /technoWorldHub/negotiate ответил 200 за 0.1855 мс
+2022-05-13 12:26:33.861 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:26:33.984 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Categories ответил 200 за 3.6249 мс
+2022-05-13 12:26:34.152 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/ElectrnicsTypes/All ответил 200 за 9.5983 мс
+2022-05-13 12:26:34.416 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Electronics/Filter ответил 200 за 141.8750 мс
+2022-05-13 12:26:36.319 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Posts ответил 200 за 1.4901 мс
+2022-05-13 12:26:36.334 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Employees/Filter ответил 200 за 2.7937 мс
+2022-05-13 12:26:43.452 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Posts ответил 200 за 1.3813 мс
+2022-05-13 12:27:38.716 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:27:43.723 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50356) по GET /technoWorldHub ответил 101 за 69906.0775 мс
+2022-05-13 12:27:51.813 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:27:51.815 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по POST /userToken ответил 200 за 6.5867 мс
+2022-05-13 12:27:51.818 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50411) по POST /technoWorldHub/negotiate ответил 200 за 0.2162 мс
+2022-05-13 12:27:51.823 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:27:51.856 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Categories ответил 200 за 5.7952 мс
+2022-05-13 12:27:51.938 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/ElectrnicsTypes/All ответил 200 за 7.5793 мс
+2022-05-13 12:27:52.135 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Electronics/Filter ответил 200 за 139.6975 мс
+2022-05-13 12:27:54.388 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Posts ответил 200 за 1.3724 мс
+2022-05-13 12:27:54.398 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Employees/Filter ответил 200 за 2.6353 мс
+2022-05-13 12:27:55.320 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Status ответил 200 за 1.8515 мс
+2022-05-13 12:27:55.335 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-13 12:27:55.340 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Deliveries/Filter ответил 500 за 9.1519 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 12:27:55.358 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 12:28:00.920 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50354) по GET /api/Posts ответил 200 за 0.8102 мс
+2022-05-13 12:29:03.870 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:29:03.872 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50412) по GET /technoWorldHub ответил 101 за 72052.2466 мс
+2022-05-13 12:29:36.364 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:29:36.365 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50520) по POST /userToken ответил 200 за 6.4796 мс
+2022-05-13 12:29:36.539 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50521) по POST /technoWorldHub/negotiate ответил 200 за 0.1823 мс
+2022-05-13 12:29:36.641 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:29:36.765 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50520) по GET /api/Categories ответил 200 за 3.6875 мс
+2022-05-13 12:29:36.953 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50520) по GET /api/ElectrnicsTypes/All ответил 200 за 9.0471 мс
+2022-05-13 12:29:37.222 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50520) по GET /api/Electronics/Filter ответил 200 за 146.1158 мс
+2022-05-13 12:29:39.192 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50520) по GET /api/Posts ответил 200 за 1.5003 мс
+2022-05-13 12:29:39.213 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50520) по GET /api/Employees/Filter ответил 200 за 3.0416 мс
+2022-05-13 12:29:42.505 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50520) по GET /api/Posts ответил 200 за 0.9856 мс
+2022-05-13 12:29:46.985 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50520) по GET /api/Posts ответил 200 за 0.8523 мс
+2022-05-13 12:29:48.258 +05:00 [ERR] Провальная попытка изменения пользователя kovale: пользователь с логином kovale уже существует.
+2022-05-13 12:29:48.260 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50520) по PUT /api/Employees/4 ответил 400 за 22.8649 мс
+2022-05-13 12:29:55.876 +05:00 [ERR] Провальная попытка изменения пользователя kovale: пользователь с логином kovale уже существует.
+2022-05-13 12:29:55.878 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50520) по PUT /api/Employees/4 ответил 400 за 5.7744 мс
+2022-05-13 12:30:04.863 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:30:04.865 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50522) по GET /technoWorldHub ответил 101 за 28267.7058 мс
+2022-05-13 12:31:11.519 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 12:31:11.546 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 12:31:11.547 +05:00 [INF] Hosting environment: Development
+2022-05-13 12:31:11.547 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 12:32:28.793 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 12:32:28.822 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 12:32:28.823 +05:00 [INF] Hosting environment: Development
+2022-05-13 12:32:28.823 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 12:32:45.938 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:32:45.972 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50709) по POST /userToken ответил 200 за 1148.4455 мс
+2022-05-13 12:32:46.146 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50710) по POST /technoWorldHub/negotiate ответил 200 за 42.5057 мс
+2022-05-13 12:32:46.253 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:32:46.410 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50709) по GET /api/Categories ответил 200 за 60.0892 мс
+2022-05-13 12:32:46.523 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50709) по GET /api/ElectrnicsTypes/All ответил 200 за 33.1365 мс
+2022-05-13 12:32:46.834 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50709) по GET /api/Electronics/Filter ответил 200 за 231.4818 мс
+2022-05-13 12:32:48.089 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50709) по GET /api/Posts ответил 200 за 8.3205 мс
+2022-05-13 12:32:48.110 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50709) по GET /api/Employees/Filter ответил 200 за 16.4846 мс
+2022-05-13 12:32:49.012 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50709) по GET /api/Posts ответил 200 за 1.4982 мс
+2022-05-13 12:33:00.835 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:50709) по PUT /api/Employees/4 ответил 500 за 38.6927 мс
+System.InvalidOperationException: The instance of entity type 'Employee' cannot be tracked because another instance with the same key value for {'EmployeeId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry.set_State(EntityState value)
+   at TechnoWorld_API.Controllers.EmployeesController.PutEmployee(Int32 id, Employee employee) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 117
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 12:33:00.872 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'Employee' cannot be tracked because another instance with the same key value for {'EmployeeId'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry.set_State(EntityState value)
+   at TechnoWorld_API.Controllers.EmployeesController.PutEmployee(Int32 id, Employee employee) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\EmployeesController.cs:line 117
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 12:33:29.766 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 12:33:29.794 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 12:33:29.795 +05:00 [INF] Hosting environment: Development
+2022-05-13 12:33:29.796 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 12:33:40.117 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:33:40.152 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по POST /userToken ответил 200 за 1162.7120 мс
+2022-05-13 12:33:40.160 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50795) по POST /technoWorldHub/negotiate ответил 200 за 10.5851 мс
+2022-05-13 12:33:40.181 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:33:40.264 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Categories ответил 200 за 62.2258 мс
+2022-05-13 12:33:40.356 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/ElectrnicsTypes/All ответил 200 за 42.9019 мс
+2022-05-13 12:33:40.597 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Electronics/Filter ответил 200 за 236.8547 мс
+2022-05-13 12:33:42.078 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Posts ответил 200 за 7.0907 мс
+2022-05-13 12:33:42.097 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Employees/Filter ответил 200 за 15.7448 мс
+2022-05-13 12:33:43.721 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Posts ответил 200 за 1.4592 мс
+2022-05-13 12:33:46.258 +05:00 [INF] Было провизведено изменение пользователя kovale с пролью Уплаляющий складом
+2022-05-13 12:33:46.260 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по PUT /api/Employees/4 ответил 200 за 99.4290 мс
+2022-05-13 12:33:48.571 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Posts ответил 200 за 1.6960 мс
+2022-05-13 12:33:54.964 +05:00 [INF] Было провизведено изменение пользователя kovale с пролью Уплаляющий складом
+2022-05-13 12:33:54.965 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по PUT /api/Employees/4 ответил 200 за 5.1709 мс
+2022-05-13 12:33:56.597 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Posts ответил 200 за 3.3100 мс
+2022-05-13 12:34:32.432 +05:00 [INF] Было провизведено изменение пользователя kovale с пролью Уплаляющий складом
+2022-05-13 12:34:32.434 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по PUT /api/Employees/4 ответил 200 за 9.0960 мс
+2022-05-13 12:34:54.181 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Posts ответил 200 за 2.8612 мс
+2022-05-13 12:34:58.075 +05:00 [INF] Было провизведено изменение пользователя kovale с пролью Уплаляющий складом
+2022-05-13 12:34:58.077 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по PUT /api/Employees/4 ответил 200 за 4.4860 мс
+2022-05-13 12:35:20.141 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Posts ответил 200 за 2.8519 мс
+2022-05-13 12:35:26.854 +05:00 [INF] Было провизведено изменение пользователя kovale с пролью Уплаляющий складом
+2022-05-13 12:35:26.856 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по PUT /api/Employees/4 ответил 200 за 8.1603 мс
+2022-05-13 12:35:40.979 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Posts ответил 200 за 2.5175 мс
+2022-05-13 12:35:48.446 +05:00 [INF] Было провизведено изменение пользователя kovale с пролью Уплаляющий складом
+2022-05-13 12:35:48.448 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по PUT /api/Employees/4 ответил 200 за 7.0276 мс
+2022-05-13 12:36:01.265 +05:00 [INF] Пользователь kovale авторизирован в системе
+2022-05-13 12:36:01.266 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:51027) по POST /userToken ответил 200 за 8.6104 мс
+2022-05-13 12:36:01.403 +05:00 [INF] Запрос от kovale (127.0.0.1:51028) по POST /technoWorldHub/negotiate ответил 200 за 0.3710 мс
+2022-05-13 12:36:01.492 +05:00 [INF] Подключен пользователь к приложению управление предприятием: kovale
+2022-05-13 12:36:01.599 +05:00 [INF] Запрос от kovale (127.0.0.1:51027) по GET /api/Categories ответил 200 за 4.5142 мс
+2022-05-13 12:36:01.734 +05:00 [INF] Запрос от kovale (127.0.0.1:51027) по GET /api/ElectrnicsTypes/All ответил 200 за 10.6442 мс
+2022-05-13 12:36:01.996 +05:00 [INF] Запрос от kovale (127.0.0.1:51027) по GET /api/Electronics/Filter ответил 200 за 159.5342 мс
+2022-05-13 12:36:07.226 +05:00 [INF] kovale отключен от системы
+2022-05-13 12:36:07.230 +05:00 [INF] Запрос от kovale (127.0.0.1:51029) по GET /technoWorldHub ответил 101 за 5778.8332 мс
+2022-05-13 12:36:46.597 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50794) по GET /api/Posts ответил 200 за 3.5221 мс
+2022-05-13 12:37:33.757 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:37:33.760 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50796) по GET /technoWorldHub ответил 101 за 233598.3307 мс
+2022-05-13 12:37:44.439 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:37:44.441 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:51124) по POST /userToken ответил 200 за 9.4112 мс
+2022-05-13 12:37:44.621 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51125) по POST /technoWorldHub/negotiate ответил 200 за 0.4027 мс
+2022-05-13 12:37:44.734 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:37:44.856 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/Categories ответил 200 за 4.1843 мс
+2022-05-13 12:37:45.015 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/ElectrnicsTypes/All ответил 200 за 7.9658 мс
+2022-05-13 12:37:45.273 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/Electronics/Filter ответил 200 за 136.3563 мс
+2022-05-13 12:37:47.134 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/Posts ответил 200 за 1.9138 мс
+2022-05-13 12:37:47.150 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/Employees/Filter ответил 200 за 3.8038 мс
+2022-05-13 12:37:52.106 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/Posts ответил 200 за 1.2137 мс
+2022-05-13 12:38:24.877 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:38:24.879 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51126) по GET /technoWorldHub ответил 101 за 40191.0950 мс
+2022-05-13 12:38:44.365 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:38:44.367 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по POST /userToken ответил 200 за 7.0329 мс
+2022-05-13 12:38:44.371 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51165) по POST /technoWorldHub/negotiate ответил 200 за 0.2668 мс
+2022-05-13 12:38:44.383 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:38:44.415 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/Categories ответил 200 за 4.0740 мс
+2022-05-13 12:38:44.488 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/ElectrnicsTypes/All ответил 200 за 9.3759 мс
+2022-05-13 12:38:44.690 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/Electronics/Filter ответил 200 за 143.4219 мс
+2022-05-13 12:38:49.696 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/Posts ответил 200 за 1.8727 мс
+2022-05-13 12:38:49.707 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/Employees/Filter ответил 200 за 3.1683 мс
+2022-05-13 12:38:54.600 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51124) по GET /api/Posts ответил 200 за 1.0446 мс
+2022-05-13 12:39:36.911 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:39:36.913 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51166) по GET /technoWorldHub ответил 101 за 52532.0247 мс
+2022-05-13 12:42:06.031 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 12:42:06.033 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:51360) по POST /userToken ответил 200 за 8.4711 мс
+2022-05-13 12:42:06.207 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51361) по POST /technoWorldHub/negotiate ответил 200 за 0.1963 мс
+2022-05-13 12:42:06.314 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 12:42:06.440 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51360) по GET /api/Categories ответил 200 за 6.9218 мс
+2022-05-13 12:42:06.598 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51360) по GET /api/ElectrnicsTypes/All ответил 200 за 7.7640 мс
+2022-05-13 12:42:06.861 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51360) по GET /api/Electronics/Filter ответил 200 за 136.2732 мс
+2022-05-13 12:42:08.389 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51360) по GET /api/Posts ответил 200 за 1.4163 мс
+2022-05-13 12:42:08.405 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51360) по GET /api/Employees/Filter ответил 200 за 2.7958 мс
+2022-05-13 12:42:09.463 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51360) по GET /api/Posts ответил 200 за 1.1138 мс
+2022-05-13 12:42:18.396 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 12:42:18.398 +05:00 [INF] Запрос от MrBoring (127.0.0.1:51362) по GET /technoWorldHub ответил 101 за 12129.9472 мс
+2022-05-13 13:12:29.574 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 13:12:29.602 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 13:12:29.603 +05:00 [INF] Hosting environment: Development
+2022-05-13 13:12:29.603 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 13:12:30.480 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Orders" for actions - TechnoWorld_API.Controllers.OrdersController.GetOrders (TechnoWorld_API),TechnoWorld_API.Controllers.OrdersController.GetCompleateOrders (TechnoWorld_API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 13:12:34.371 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 13:12:34.400 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 13:12:34.401 +05:00 [INF] Hosting environment: Development
+2022-05-13 13:12:34.402 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 13:12:56.370 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 13:12:56.399 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 13:12:56.400 +05:00 [INF] Hosting environment: Development
+2022-05-13 13:12:56.400 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 13:20:01.092 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 13:20:01.121 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 13:20:01.122 +05:00 [INF] Hosting environment: Development
+2022-05-13 13:20:01.123 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 13:20:25.340 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 13:20:25.367 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 13:20:25.368 +05:00 [INF] Hosting environment: Development
+2022-05-13 13:20:25.369 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 13:50:05.636 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 13:50:05.663 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 13:50:05.664 +05:00 [INF] Hosting environment: Development
+2022-05-13 13:50:05.665 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 13:50:22.421 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 13:50:22.457 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58222) по POST /userToken ответил 200 за 1214.8281 мс
+2022-05-13 13:50:22.684 +05:00 [INF] Запрос от roman1 (127.0.0.1:58223) по POST /technoWorldHub/negotiate ответил 200 за 44.3312 мс
+2022-05-13 13:50:36.786 +05:00 [INF] roman1 отключен от системы
+2022-05-13 13:50:36.791 +05:00 [INF] Запрос от roman1 (127.0.0.1:58224) по GET /technoWorldHub ответил 101 за 14051.4615 мс
+2022-05-13 13:52:11.900 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 13:52:11.902 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58355) по POST /userToken ответил 200 за 32.1219 мс
+2022-05-13 13:52:12.079 +05:00 [INF] Запрос от roman1 (127.0.0.1:58356) по POST /technoWorldHub/negotiate ответил 200 за 0.8773 мс
+2022-05-13 13:52:19.842 +05:00 [INF] Запрос от roman1 (127.0.0.1:58355) по GET /api/Orders/compleate ответил 400 за 22.0694 мс
+2022-05-13 13:52:19.866 +05:00 [INF] Запрос от roman1 (127.0.0.1:58355) по GET /api/ElectrnicsTypes ответил 200 за 21.0365 мс
+2022-05-13 13:52:19.897 +05:00 [INF] Запрос от roman1 (127.0.0.1:58355) по GET /api/Categories ответил 200 за 26.6387 мс
+2022-05-13 13:52:34.095 +05:00 [INF] Запрос от roman1 (127.0.0.1:58355) по GET /api/Orders/compleate ответил 400 за 1.7642 мс
+2022-05-13 13:52:34.099 +05:00 [INF] Запрос от roman1 (127.0.0.1:58355) по GET /api/ElectrnicsTypes ответил 200 за 1.3290 мс
+2022-05-13 13:52:34.106 +05:00 [INF] Запрос от roman1 (127.0.0.1:58355) по GET /api/Categories ответил 200 за 4.4331 мс
+2022-05-13 13:52:54.554 +05:00 [INF] roman1 отключен от системы
+2022-05-13 13:52:54.556 +05:00 [INF] Запрос от roman1 (127.0.0.1:58357) по GET /technoWorldHub ответил 101 за 42415.9343 мс
+2022-05-13 13:56:05.315 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 13:56:05.316 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58668) по POST /userToken ответил 200 за 9.6145 мс
+2022-05-13 13:56:05.489 +05:00 [INF] Запрос от roman1 (127.0.0.1:58669) по POST /technoWorldHub/negotiate ответил 200 за 0.3416 мс
+2022-05-13 13:56:36.776 +05:00 [INF] Запрос от roman1 (127.0.0.1:58668) по GET /api/Orders/compleate ответил 400 за 2.4481 мс
+2022-05-13 13:56:36.784 +05:00 [INF] Запрос от roman1 (127.0.0.1:58668) по GET /api/ElectrnicsTypes ответил 200 за 2.5963 мс
+2022-05-13 13:56:36.791 +05:00 [INF] Запрос от roman1 (127.0.0.1:58668) по GET /api/Categories ответил 200 за 4.1965 мс
+2022-05-13 13:56:50.093 +05:00 [INF] Запрос от roman1 (127.0.0.1:58668) по GET /api/Orders/compleate ответил 400 за 0.8501 мс
+2022-05-13 13:56:52.447 +05:00 [INF] Запрос от roman1 (127.0.0.1:58668) по GET /api/ElectrnicsTypes ответил 200 за 3.9288 мс
+2022-05-13 13:56:52.927 +05:00 [INF] Запрос от roman1 (127.0.0.1:58668) по GET /api/Categories ответил 200 за 5.9319 мс
+2022-05-13 13:57:17.993 +05:00 [INF] roman1 отключен от системы
+2022-05-13 13:57:17.996 +05:00 [INF] Запрос от roman1 (127.0.0.1:58670) по GET /technoWorldHub ответил 101 за 72445.3425 мс
+2022-05-13 13:57:38.241 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 13:57:38.242 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58770) по POST /userToken ответил 200 за 7.3071 мс
+2022-05-13 13:57:38.417 +05:00 [INF] Запрос от roman1 (127.0.0.1:58771) по POST /technoWorldHub/negotiate ответил 200 за 0.2507 мс
+2022-05-13 13:57:44.045 +05:00 [ERR] Запрос от roman1 (127.0.0.1:58770) по GET /api/Orders/ForStatistics ответил 500 за 7.0587 мс
+Newtonsoft.Json.JsonReaderException: Invalid character after parsing property name. Expected ':' but got: =. Path '', line 1, position 20.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonReader.ReadAndAssert()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at TechnoWorld_API.Controllers.OrdersController.GetOrdersForStatistics(String chartParams) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 44
+   at lambda_method227(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 13:57:44.082 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Invalid character after parsing property name. Expected ':' but got: =. Path '', line 1, position 20.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonReader.ReadAndAssert()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at TechnoWorld_API.Controllers.OrdersController.GetOrdersForStatistics(String chartParams) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 44
+   at lambda_method227(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 13:57:44.115 +05:00 [INF] Запрос от roman1 (127.0.0.1:58770) по GET /api/ElectrnicsTypes ответил 200 за 2.6995 мс
+2022-05-13 13:57:44.121 +05:00 [INF] Запрос от roman1 (127.0.0.1:58770) по GET /api/Categories ответил 200 за 3.9393 мс
+2022-05-13 13:59:49.009 +05:00 [INF] roman1 отключен от системы
+2022-05-13 13:59:49.016 +05:00 [INF] Запрос от roman1 (127.0.0.1:58772) по GET /technoWorldHub ответил 101 за 130536.5093 мс
+2022-05-13 14:00:04.740 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 14:00:04.772 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 14:00:04.773 +05:00 [INF] Hosting environment: Development
+2022-05-13 14:00:04.774 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 14:00:07.201 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 14:00:07.252 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58983) по POST /userToken ответил 200 за 1645.8878 мс
+2022-05-13 14:00:07.443 +05:00 [INF] Запрос от roman1 (127.0.0.1:58990) по POST /technoWorldHub/negotiate ответил 200 за 52.0037 мс
+2022-05-13 14:00:35.834 +05:00 [ERR] Запрос от roman1 (127.0.0.1:58983) по GET /api/Orders/ForStatistics ответил 500 за 11975.8729 мс
+Newtonsoft.Json.JsonReaderException: Invalid character after parsing property name. Expected ':' but got: =. Path '', line 1, position 20.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonReader.ReadAndAssert()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at TechnoWorld_API.Controllers.OrdersController.GetOrdersForStatistics(String chartParams) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 44
+   at lambda_method153(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 14:00:35.899 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Invalid character after parsing property name. Expected ':' but got: =. Path '', line 1, position 20.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonReader.ReadAndAssert()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at TechnoWorld_API.Controllers.OrdersController.GetOrdersForStatistics(String chartParams) in C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 44
+   at lambda_method153(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 14:00:35.975 +05:00 [INF] Запрос от roman1 (127.0.0.1:58983) по GET /api/ElectrnicsTypes ответил 200 за 44.2296 мс

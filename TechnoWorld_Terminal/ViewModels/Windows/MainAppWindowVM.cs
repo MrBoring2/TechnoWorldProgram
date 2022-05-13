@@ -23,8 +23,8 @@ using TechoWorld_DataModels_v2.Entities;
 using WPF_Helpers.Abstractions;
 using WPF_VM_Abstractions;
 using TechoWorld_DataModels_v2.Models;
-using TechnoWorld_Notification;
-using TechnoWorld_Notification.Enums;
+using MaterialNotificationLibrary;
+using MaterialNotificationLibrary.Enums;
 
 namespace TechnoWorld_Terminal.ViewModels.Windows
 {

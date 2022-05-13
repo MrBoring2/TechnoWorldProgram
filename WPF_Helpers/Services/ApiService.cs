@@ -57,12 +57,12 @@ namespace WPF_VM_Abstractions
                 return null;
             }
         }
-        public Task<IRestResponse> AuthorizeInWarehouse(string login, string password)
+        public Task<IRestResponse> AuthorizeInWarehouse(string login, string hashPass)
         {
             try
             {
                 RestRequest request = new RestRequest($"{apiUrl}userToken", Method.POST);
-                request.AddJsonBody(new { userName = login, password = password, programm = "warehouse_accounting" });
+                request.AddJsonBody(new { userName = login, hashPass = hashPass, programm = "warehouse_accounting" });
                 var response = restClient.ExecuteAsync(request);
                 return response;
             }

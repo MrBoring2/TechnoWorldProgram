@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using TechnoWorld_Notification;
-using TechnoWorld_Notification.Enums;
+using MaterialNotificationLibrary;
+using MaterialNotificationLibrary.Enums;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Pages;
@@ -85,7 +85,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 case 2:
                     {
                         MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.ClipboardEditOutline));
-                        MenuItems.Add(new MenuItem("Отчётная деятельность", MaterialDesignThemes.Wpf.PackIconKind.ChartBar));
+                        MenuItems.Add(new MenuItem("Отчётная деятельность", MaterialDesignThemes.Wpf.PackIconKind.ChartBar, typeof(SalesStatisticsPageVM)));
                     }
                     break;
                 case 3:

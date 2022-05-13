@@ -102,13 +102,16 @@ namespace TechnoWorld_API.Controllers
                 return BadRequest("Данный пользователь в данный момент онлайн в системе, изменение невозможно.");
             }
 
-            if (_context.Employees.FirstOrDefault(p => p.Login == employee.Login) != null)
+            var user = await _context.Employees.AsNoTracking().FirstOrDefaultAsync(p => p.EmployeeId == id);
+
+            if (user.Login != employee.Login)
             {
-                LogService.LodMessage($"Провальная попытка изменения пользователя {employeeInDb.Login}: пользователь с логином {employee.Login} уже существует.", LogLevel.Error);
-                return BadRequest($"Пользователь с логином {employee.Login} уже существует");
+                if (_context.Employees.FirstOrDefault(p => p.Login == employee.Login) != null)
+                {
+                    LogService.LodMessage($"Провальная попытка изменения пользователя {employeeInDb.Login}: пользователь с логином {employee.Login} уже существует.", LogLevel.Error);
+                    return BadRequest($"Пользователь с логином {employee.Login} уже существует");
+                }
             }
-
-
             _context.Entry(employee).State = EntityState.Modified;
 
             try

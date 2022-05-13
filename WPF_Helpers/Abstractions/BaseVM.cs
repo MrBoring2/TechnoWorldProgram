@@ -26,8 +26,23 @@ namespace WPF_Helpers.Abstractions
 
             else if (_dataErrors.ContainsKey(propertyName))
                 _dataErrors.Remove(propertyName);
-
         }
+
+        protected void ValidationNotRequiredMessageSetter(bool isRequired, object value, [CallerMemberName] string propertyName = "")
+        {
+            if (isRequired)
+            {
+                ValidationMessageSetter(value, propertyName);
+            }
+            else
+            {
+                if (_dataErrors.ContainsKey(propertyName))
+                {
+                    _dataErrors.Remove(propertyName);
+                }
+            }
+        }
+
         private string ValidateProperty(string propertyName, object value)
         {
             var results = new List<ValidationResult>(2);

@@ -1,0 +1,6 @@
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\MaterialNotification1\obj\Debug\MaterialNotification1.csproj.AssemblyReference.cache
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\MaterialNotification1\obj\Debug\Resources\Animation\WindowAnimations.baml
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\MaterialNotification1\obj\Debug\Resources\Styles\MainTheme.baml
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\MaterialNotification1\obj\Debug\DemoWindow.g.cs
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\MaterialNotification1\obj\Debug\MaterialNotification1_MarkupCompile.cache
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\MaterialNotification1\obj\Debug\MaterialNotification1_MarkupCompile.lref

@@ -10,8 +10,8 @@ using TechnoWorld_Cash.Views.Windows;
 using TechnoWorld_Cash.Services;
 using WPF_VM_Abstractions;
 using System.IO;
-using TechnoWorld_Notification;
-using TechnoWorld_Notification.Enums;
+using MaterialNotificationLibrary;
+using MaterialNotificationLibrary.Enums;
 
 namespace TechnoWorld_Cash
 {

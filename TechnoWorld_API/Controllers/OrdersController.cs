@@ -15,6 +15,7 @@ using Serilog;
 using TechnoWorld_API.Models;
 using TechoWorld_DataModels_v2.Entities;
 using TechnoWorld_API.Models.Filters;
+using System.Collections;
 
 namespace TechnoWorld_API.Controllers
 {
@@ -37,6 +38,34 @@ namespace TechnoWorld_API.Controllers
         {
             return await _context.Orders.Include(p => p.Status).ToListAsync();
         }
+        [HttpGet("ForStatistics")]
+        public async Task<ActionResult<IEnumerable<OrderElectronic>>> GetOrdersForStatistics(string chartParams)
+        {
+            var electronicsParameters = JsonConvert.DeserializeObject<ChartParams>(chartParams);
+
+            if (electronicsParameters == null)
+            {
+                return BadRequest("Неккоректные параметры");
+            }
+
+            var electronics = new List<OrderElectronic>();
+            foreach (var order in _context.Orders.Where(p => p.StatusId == 3).Where(p => p.DateOfRegistration >= electronicsParameters.StartDate && p.DateOfRegistration <= electronicsParameters.EndDate)
+                .Include(p => p.OrderElectronics)
+                .ThenInclude(p => p.Electronics)
+                .ThenInclude(p => p.Type).AsEnumerable())
+            {
+                foreach (var orderElectronics in order.OrderElectronics)
+                {
+                    if (electronicsParameters.ElectronicsTypeId == 0 ? true : orderElectronics.Electronics.TypeId == electronicsParameters.ElectronicsTypeId && orderElectronics.Electronics.Type.CategoryId == electronicsParameters.CategoryId)
+                    {
+                        electronics.Add(orderElectronics);
+                    }
+                }
+            }
+
+            return electronics;
+        }
+
 
         // GET: api/Orders/5
         [HttpGet("{id}")]

@@ -7,19 +7,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using TechnoWorld_Notification;
-using TechnoWorld_Notification.Enums;
+using MaterialNotificationLibrary;
+using MaterialNotificationLibrary.Enums;
 using TechoWorld_DataModels_v2.Entities;
 using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
 using WPF_Helpers.ValidationRules;
 using WPF_VM_Abstractions;
+using WPF_Helpers.Services;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
     public class EmployeeWindowVM : BaseModalWindowVM
     {
         private bool isAdd;
+        private bool isNewPasswordChecked;
+        private string newPassword;
         private Visibility isEditVisibility;
         private ObservableCollection<Post> posts;
         private Employee CurrentEmployee { get; set; }
@@ -30,7 +33,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             RemoveCommand = new RelayCommand(Remove);
             CurrentEmployee = new Employee();
             IsAdd = true;
-
+            IsNewPasswordChecked = false;
+            NewPassword = string.Empty;
             IsEditVisibility = Visibility.Collapsed;
 
             Task.Run(() => Initialize());
@@ -38,6 +42,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
             ValidationMessageSetter(FullName, nameof(FullName));
             ValidationMessageSetter(Passport, nameof(Passport));
+            ValidationNotRequiredMessageSetter(IsNewPasswordChecked, NewPassword, nameof(NewPassword));
             ValidationMessageSetter(Email, nameof(Email));
             ValidationMessageSetter(DateOfBirth, nameof(DateOfBirth));
             ValidationMessageSetter(Password, nameof(Password));
@@ -74,7 +79,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         [StringLength(120, ErrorMessage = "Длина поля ФИО слишком большая: максимум {1} символов")]
         public string FullName { get => CurrentEmployee.FullName; set { CurrentEmployee.FullName = value; ValidationMessageSetter(value); } }
         public Post Post { get => CurrentEmployee.Post; set { CurrentEmployee.Post = value; OnPropertyChanged(); SetRole(); } }
-
+        public bool IsNewPasswordChecked { get => isNewPasswordChecked;
+            set { isNewPasswordChecked = value; OnPropertyChanged(); ValidationNotRequiredMessageSetter(IsNewPasswordChecked, NewPassword, nameof(NewPassword)); } }
         private void SetRole()
         {
             switch (Post.PostId)
@@ -137,8 +143,16 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
         [DisplayFormat(ConvertEmptyStringToNull = false)]
-        [StringLength(30, MinimumLength = 6, ErrorMessage = "Длина поля Пароль должна быть от {2} до {1} символов")]
-        public string Password { get => CurrentEmployee.Password; set { CurrentEmployee.Password = value; ValidationMessageSetter(value); } }
+        [StringLength(100, MinimumLength = 6, ErrorMessage = "Длина поля Пароль должна быть от {2} до {1} символов")]
+        public string Password
+        {
+            get => CurrentEmployee.Password;
+            set { CurrentEmployee.Password = value; ValidationMessageSetter(value); }
+        }
+
+        [StringLength(100, MinimumLength = 6, ErrorMessage = "Длина поля Новый пароль должна быть от {2} до {1} символов")]
+        public string NewPassword { get => newPassword; 
+            set { newPassword = value; ValidationNotRequiredMessageSetter(IsNewPasswordChecked, value); } }
 
         private async Task Initialize()
         {
@@ -146,7 +160,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async Task InitializeFields(Employee employee)
         {
-            IsAdd = false; 
+            IsAdd = false;
             IsEditVisibility = Visibility.Visible;
             CurrentEmployee = employee;
             OnPropertyChanged(nameof(ElectrnicsType));
@@ -154,6 +168,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             OnPropertyChanged(nameof(Category));
             ValidationMessageSetter(FullName, nameof(FullName));
             ValidationMessageSetter(Passport, nameof(Passport));
+            ValidationNotRequiredMessageSetter(IsNewPasswordChecked, NewPassword, nameof(NewPassword));
             ValidationMessageSetter(Email, nameof(Email));
             ValidationMessageSetter(DateOfBirth, nameof(DateOfBirth));
             ValidationMessageSetter(Password, nameof(Password));
@@ -193,6 +208,15 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             }
             else
             {
+                if (!string.IsNullOrEmpty(NewPassword))
+                {
+                    CurrentEmployee.Password = MD5EncoderService.EncodePassword(Login, NewPassword);
+                }
+                else
+                {
+                    CurrentEmployee.Password = MD5EncoderService.EncodePassword(Login, Password);
+                }
+
                 if (isAdd)
                 {
                     var response = await ApiService.Instance.PostRequest("api/Employees", CurrentEmployee);
