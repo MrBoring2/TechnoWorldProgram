@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\TechnoWorld_DataModels_v2.csproj": {}
+    "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\TechnoWorld_DataModels_v2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\TechnoWorld_DataModels_v2.csproj": {
+    "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\TechnoWorld_DataModels_v2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\TechnoWorld_DataModels_v2.csproj",
+        "projectUniqueName": "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\TechnoWorld_DataModels_v2.csproj",
         "projectName": "TechnoWorld_DataModels_v2",
-        "projectPath": "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\TechnoWorld_DataModels_v2.csproj",
-        "packagesPath": "C:\\Users\\user452.CHENK\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user452.CHENK\\.ssh\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\obj\\",
+        "projectPath": "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\TechnoWorld_DataModels_v2.csproj",
+        "packagesPath": "C:\\Users\\MrBoring\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MrBoring\\GIT\\TechnoWorldProgram\\TechnoWorld_DataModels_v2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user452.CHENK\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\MrBoring\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -71,7 +65,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

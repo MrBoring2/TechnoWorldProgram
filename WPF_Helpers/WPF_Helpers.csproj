@@ -255,6 +255,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Models\SortParameter.cs" />
+    <Compile Include="StatisticsService\LineChartGenerator.cs" />
+    <Compile Include="StatisticsService\PieChartGenerator.cs" />
     <Compile Include="ValidationRules\EmailValidation.cs" />
     <Compile Include="ValidationRules\NewPasswordValidation.cs" />
     <Compile Include="ValidationRules\PhoneNumberValidation.cs" />

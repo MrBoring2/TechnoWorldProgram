@@ -12,19 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TechnoWorld_WarehouseAccounting.Services;
 
-namespace TechnoWorld_WarehouseAccounting.Views.Pages
+namespace TechnoWorld_WarehouseAccounting.Views.Pages.Statistics
 {
     /// <summary>
-    /// Логика взаимодействия для SalesStatisticsPage.xaml
+    /// Логика взаимодействия для ColumnChartStatictisPage.xaml
     /// </summary>
-    public partial class SalesStatisticsPage : Page
+    public partial class ColumnChartStatisticsPage : Page
     {
-        public SalesStatisticsPage()
+        public ColumnChartStatisticsPage()
         {
             InitializeComponent();
-            StatisticsNavigation.Service = StatisticsFrame.NavigationService;
         }
     }
 }

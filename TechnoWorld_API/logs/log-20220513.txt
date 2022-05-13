@@ -2091,3 +2091,565 @@ Newtonsoft.Json.JsonReaderException: Invalid character after parsing property na
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2022-05-13 14:00:35.975 +05:00 [INF] Запрос от roman1 (127.0.0.1:58983) по GET /api/ElectrnicsTypes ответил 200 за 44.2296 мс
+2022-05-13 20:54:57.936 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 20:54:57.979 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 20:54:57.979 +05:00 [INF] Hosting environment: Development
+2022-05-13 20:54:57.980 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 20:55:24.120 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-13 20:55:24.158 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56252) по POST /userToken ответил 200 за 5625.5776 мс
+2022-05-13 20:55:24.502 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56255) по POST /technoWorldHub/negotiate ответил 200 за 50.7588 мс
+2022-05-13 20:55:24.636 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-13 20:55:25.030 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56252) по GET /api/Categories ответил 200 за 139.7376 мс
+2022-05-13 20:55:25.116 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56252) по GET /api/ElectrnicsTypes/All ответил 200 за 39.6831 мс
+2022-05-13 20:55:25.758 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56252) по GET /api/Electronics/Filter ответил 200 за 527.5007 мс
+2022-05-13 20:55:27.842 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56252) по GET /api/Posts ответил 200 за 7.3732 мс
+2022-05-13 20:55:27.870 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56252) по GET /api/Employees/Filter ответил 200 за 21.1481 мс
+2022-05-13 20:55:29.068 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56252) по GET /api/Status ответил 200 за 13.7108 мс
+2022-05-13 20:55:29.153 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-13 20:55:29.157 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:56252) по GET /api/Deliveries/Filter ответил 500 за 78.5746 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 20:55:29.213 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 20:55:29.752 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56252) по GET /api/Orders/Filter ответил 200 за 170.2801 мс
+2022-05-13 20:55:34.164 +05:00 [INF] MrBoring отключен от системы
+2022-05-13 20:55:34.169 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56256) по GET /technoWorldHub ответил 101 за 9602.1361 мс
+2022-05-13 20:55:38.268 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 20:55:38.269 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56252) по POST /userToken ответил 200 за 7.5193 мс
+2022-05-13 20:55:38.275 +05:00 [INF] Запрос от roman1 (127.0.0.1:56271) по POST /technoWorldHub/negotiate ответил 200 за 0.4613 мс
+2022-05-13 20:55:42.663 +05:00 [ERR] Запрос от roman1 (127.0.0.1:56252) по GET /api/Orders/ForStatistics ответил 500 за 6.8970 мс
+Newtonsoft.Json.JsonReaderException: Invalid character after parsing property name. Expected ':' but got: =. Path '', line 1, position 20.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonReader.ReadAndAssert()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at TechnoWorld_API.Controllers.OrdersController.GetOrdersForStatistics(String chartParams) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 44
+   at lambda_method517(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 20:55:42.692 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Invalid character after parsing property name. Expected ':' but got: =. Path '', line 1, position 20.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonReader.ReadAndAssert()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at TechnoWorld_API.Controllers.OrdersController.GetOrdersForStatistics(String chartParams) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 44
+   at lambda_method517(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 20:55:42.740 +05:00 [INF] Запрос от roman1 (127.0.0.1:56252) по GET /api/ElectrnicsTypes ответил 200 за 9.1160 мс
+2022-05-13 20:55:42.747 +05:00 [INF] Запрос от roman1 (127.0.0.1:56252) по GET /api/Categories ответил 200 за 3.9512 мс
+2022-05-13 20:56:06.342 +05:00 [INF] roman1 отключен от системы
+2022-05-13 20:56:06.345 +05:00 [INF] Запрос от roman1 (127.0.0.1:56272) по GET /technoWorldHub ответил 101 за 28062.8321 мс
+2022-05-13 20:56:14.064 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 20:56:14.113 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 20:56:14.114 +05:00 [INF] Hosting environment: Development
+2022-05-13 20:56:14.114 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 20:56:30.649 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 20:56:30.696 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56327) по POST /userToken ответил 200 за 2941.4167 мс
+2022-05-13 20:56:30.903 +05:00 [INF] Запрос от roman1 (127.0.0.1:56329) по POST /technoWorldHub/negotiate ответил 200 за 57.4521 мс
+2022-05-13 20:58:20.421 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 20:58:20.463 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 20:58:20.464 +05:00 [INF] Hosting environment: Development
+2022-05-13 20:58:20.465 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 20:58:27.966 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 20:58:28.004 +05:00 [INF] Запрос от roman1 (127.0.0.1:56573) по POST /userToken ответил 200 за 1477.4512 мс
+2022-05-13 20:58:28.012 +05:00 [INF] Запрос от roman1 (127.0.0.1:56574) по POST /technoWorldHub/negotiate ответил 200 за 12.2488 мс
+2022-05-13 20:58:30.614 +05:00 [ERR] Запрос от roman1 (127.0.0.1:56573) по GET /api/Orders/ForStatistics ответил 500 за 10.2356 мс
+Newtonsoft.Json.JsonReaderException: Invalid character after parsing property name. Expected ':' but got: =. Path '', line 1, position 20.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonReader.ReadAndAssert()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at TechnoWorld_API.Controllers.OrdersController.GetOrdersForStatistics(String chartParams) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 44
+   at lambda_method153(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-13 20:58:30.648 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Invalid character after parsing property name. Expected ':' but got: =. Path '', line 1, position 20.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonReader.ReadAndAssert()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at TechnoWorld_API.Controllers.OrdersController.GetOrdersForStatistics(String chartParams) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\OrdersController.cs:line 44
+   at lambda_method153(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-13 20:58:30.718 +05:00 [INF] Запрос от roman1 (127.0.0.1:56573) по GET /api/ElectrnicsTypes ответил 200 за 42.9183 мс
+2022-05-13 20:58:30.754 +05:00 [INF] Запрос от roman1 (127.0.0.1:56573) по GET /api/Categories ответил 200 за 33.0189 мс
+2022-05-13 20:58:39.654 +05:00 [INF] roman1 отключен от системы
+2022-05-13 20:58:39.662 +05:00 [INF] Запрос от roman1 (127.0.0.1:56575) по GET /technoWorldHub ответил 101 за 11648.4439 мс
+2022-05-13 20:58:51.064 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 20:58:51.065 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56595) по POST /userToken ответил 200 за 15.6672 мс
+2022-05-13 20:58:51.221 +05:00 [INF] Запрос от roman1 (127.0.0.1:56596) по POST /technoWorldHub/negotiate ответил 200 за 0.3718 мс
+2022-05-13 20:58:54.807 +05:00 [INF] Запрос от roman1 (127.0.0.1:56595) по GET /api/Orders/ForStatistics ответил 200 за 104.1339 мс
+2022-05-13 20:58:54.813 +05:00 [INF] Запрос от roman1 (127.0.0.1:56595) по GET /api/ElectrnicsTypes ответил 200 за 2.2108 мс
+2022-05-13 20:58:54.819 +05:00 [INF] Запрос от roman1 (127.0.0.1:56595) по GET /api/Categories ответил 200 за 3.9174 мс
+2022-05-13 20:59:21.372 +05:00 [INF] roman1 отключен от системы
+2022-05-13 20:59:21.376 +05:00 [INF] Запрос от roman1 (127.0.0.1:56597) по GET /technoWorldHub ответил 101 за 30102.6099 мс
+2022-05-13 21:02:48.804 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:02:48.805 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56767) по POST /userToken ответил 200 за 6.2785 мс
+2022-05-13 21:02:48.958 +05:00 [INF] Запрос от roman1 (127.0.0.1:56768) по POST /technoWorldHub/negotiate ответил 200 за 0.3239 мс
+2022-05-13 21:02:51.887 +05:00 [INF] Запрос от roman1 (127.0.0.1:56767) по GET /api/Orders/ForStatistics ответил 200 за 8.7796 мс
+2022-05-13 21:02:51.893 +05:00 [INF] Запрос от roman1 (127.0.0.1:56767) по GET /api/ElectrnicsTypes ответил 200 за 2.1680 мс
+2022-05-13 21:02:51.899 +05:00 [INF] Запрос от roman1 (127.0.0.1:56767) по GET /api/Categories ответил 200 за 4.1728 мс
+2022-05-13 21:02:54.969 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:02:54.971 +05:00 [INF] Запрос от roman1 (127.0.0.1:56769) по GET /technoWorldHub ответил 101 за 5961.5015 мс
+2022-05-13 21:03:05.944 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:03:05.945 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56786) по POST /userToken ответил 200 за 7.5888 мс
+2022-05-13 21:03:06.137 +05:00 [INF] Запрос от roman1 (127.0.0.1:56787) по POST /technoWorldHub/negotiate ответил 200 за 0.3008 мс
+2022-05-13 21:03:08.601 +05:00 [INF] Запрос от roman1 (127.0.0.1:56786) по GET /api/Orders/ForStatistics ответил 200 за 10.0609 мс
+2022-05-13 21:03:08.607 +05:00 [INF] Запрос от roman1 (127.0.0.1:56786) по GET /api/ElectrnicsTypes ответил 200 за 2.3824 мс
+2022-05-13 21:03:08.615 +05:00 [INF] Запрос от roman1 (127.0.0.1:56786) по GET /api/Categories ответил 200 за 5.5701 мс
+2022-05-13 21:03:13.392 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:03:13.395 +05:00 [INF] Запрос от roman1 (127.0.0.1:56788) по GET /technoWorldHub ответил 101 за 7182.7921 мс
+2022-05-13 21:03:31.228 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:03:31.230 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56816) по POST /userToken ответил 200 за 7.8588 мс
+2022-05-13 21:03:31.418 +05:00 [INF] Запрос от roman1 (127.0.0.1:56817) по POST /technoWorldHub/negotiate ответил 200 за 0.4125 мс
+2022-05-13 21:03:34.738 +05:00 [INF] Запрос от roman1 (127.0.0.1:56816) по GET /api/Orders/ForStatistics ответил 200 за 10.7921 мс
+2022-05-13 21:03:34.743 +05:00 [INF] Запрос от roman1 (127.0.0.1:56816) по GET /api/ElectrnicsTypes ответил 200 за 2.6265 мс
+2022-05-13 21:03:34.749 +05:00 [INF] Запрос от roman1 (127.0.0.1:56816) по GET /api/Categories ответил 200 за 3.5219 мс
+2022-05-13 21:03:59.298 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:03:59.300 +05:00 [INF] Запрос от roman1 (127.0.0.1:56818) по GET /technoWorldHub ответил 101 за 27816.5597 мс
+2022-05-13 21:04:17.909 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:04:17.910 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56881) по POST /userToken ответил 200 за 10.4389 мс
+2022-05-13 21:04:18.107 +05:00 [INF] Запрос от roman1 (127.0.0.1:56882) по POST /technoWorldHub/negotiate ответил 200 за 0.3244 мс
+2022-05-13 21:04:21.679 +05:00 [INF] Запрос от roman1 (127.0.0.1:56881) по GET /api/Orders/ForStatistics ответил 200 за 8.1820 мс
+2022-05-13 21:04:21.684 +05:00 [INF] Запрос от roman1 (127.0.0.1:56881) по GET /api/ElectrnicsTypes ответил 200 за 1.9791 мс
+2022-05-13 21:04:21.690 +05:00 [INF] Запрос от roman1 (127.0.0.1:56881) по GET /api/Categories ответил 200 за 3.6180 мс
+2022-05-13 21:04:33.073 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:04:33.076 +05:00 [INF] Запрос от roman1 (127.0.0.1:56883) по GET /technoWorldHub ответил 101 за 14904.7538 мс
+2022-05-13 21:04:42.093 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:04:42.094 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56914) по POST /userToken ответил 200 за 4.2656 мс
+2022-05-13 21:04:42.281 +05:00 [INF] Запрос от roman1 (127.0.0.1:56915) по POST /technoWorldHub/negotiate ответил 200 за 0.2855 мс
+2022-05-13 21:04:45.170 +05:00 [INF] Запрос от roman1 (127.0.0.1:56914) по GET /api/Orders/ForStatistics ответил 200 за 2.0322 мс
+2022-05-13 21:04:45.173 +05:00 [INF] Запрос от roman1 (127.0.0.1:56914) по GET /api/ElectrnicsTypes ответил 200 за 1.0281 мс
+2022-05-13 21:04:45.179 +05:00 [INF] Запрос от roman1 (127.0.0.1:56914) по GET /api/Categories ответил 200 за 3.0396 мс
+2022-05-13 21:04:56.213 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:04:56.215 +05:00 [INF] Запрос от roman1 (127.0.0.1:56916) по GET /technoWorldHub ответил 101 за 13868.8041 мс
+2022-05-13 21:05:31.531 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:05:31.532 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56977) по POST /userToken ответил 200 за 7.5854 мс
+2022-05-13 21:05:32.828 +05:00 [INF] Запрос от roman1 (127.0.0.1:56978) по POST /technoWorldHub/negotiate ответил 200 за 0.2065 мс
+2022-05-13 21:05:35.615 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Orders/ForStatistics ответил 200 за 8.4564 мс
+2022-05-13 21:05:35.620 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/ElectrnicsTypes ответил 200 за 2.0804 мс
+2022-05-13 21:05:35.626 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Categories ответил 200 за 3.5391 мс
+2022-05-13 21:05:40.627 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Orders/ForStatistics ответил 200 за 1.0947 мс
+2022-05-13 21:05:40.630 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/ElectrnicsTypes ответил 200 за 0.9623 мс
+2022-05-13 21:05:40.636 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Categories ответил 200 за 3.6567 мс
+2022-05-13 21:05:41.458 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Orders/ForStatistics ответил 200 за 1.0738 мс
+2022-05-13 21:05:41.461 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/ElectrnicsTypes ответил 200 за 0.8325 мс
+2022-05-13 21:05:41.466 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Categories ответил 200 за 2.9323 мс
+2022-05-13 21:05:42.302 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Orders/ForStatistics ответил 200 за 1.6209 мс
+2022-05-13 21:05:42.307 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/ElectrnicsTypes ответил 200 за 1.1405 мс
+2022-05-13 21:05:42.313 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Categories ответил 200 за 3.3106 мс
+2022-05-13 21:05:42.455 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Orders/ForStatistics ответил 200 за 1.4531 мс
+2022-05-13 21:05:42.459 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/ElectrnicsTypes ответил 200 за 0.8259 мс
+2022-05-13 21:05:42.465 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Categories ответил 200 за 3.2972 мс
+2022-05-13 21:05:45.958 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Orders/ForStatistics ответил 200 за 1.2253 мс
+2022-05-13 21:05:45.961 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/ElectrnicsTypes ответил 200 за 0.8591 мс
+2022-05-13 21:05:45.967 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Categories ответил 200 за 3.1979 мс
+2022-05-13 21:05:49.969 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Orders/ForStatistics ответил 200 за 1.3157 мс
+2022-05-13 21:05:49.973 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/ElectrnicsTypes ответил 200 за 0.8390 мс
+2022-05-13 21:05:49.979 +05:00 [INF] Запрос от roman1 (127.0.0.1:56977) по GET /api/Categories ответил 200 за 2.9638 мс
+2022-05-13 21:05:56.790 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:05:56.791 +05:00 [INF] Запрос от roman1 (127.0.0.1:56979) по GET /technoWorldHub ответил 101 за 23896.7387 мс
+2022-05-13 21:06:53.917 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:06:53.918 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57062) по POST /userToken ответил 200 за 9.8375 мс
+2022-05-13 21:06:54.107 +05:00 [INF] Запрос от roman1 (127.0.0.1:57063) по POST /technoWorldHub/negotiate ответил 200 за 0.2026 мс
+2022-05-13 21:06:56.939 +05:00 [INF] Запрос от roman1 (127.0.0.1:57062) по GET /api/Orders/ForStatistics ответил 200 за 136.3333 мс
+2022-05-13 21:06:56.945 +05:00 [INF] Запрос от roman1 (127.0.0.1:57062) по GET /api/ElectrnicsTypes ответил 200 за 1.8610 мс
+2022-05-13 21:06:56.951 +05:00 [INF] Запрос от roman1 (127.0.0.1:57062) по GET /api/Categories ответил 200 за 3.5585 мс
+2022-05-13 21:07:04.672 +05:00 [INF] Запрос от roman1 (127.0.0.1:57062) по GET /api/Orders/ForStatistics ответил 200 за 25.9943 мс
+2022-05-13 21:07:04.677 +05:00 [INF] Запрос от roman1 (127.0.0.1:57062) по GET /api/ElectrnicsTypes ответил 200 за 0.9756 мс
+2022-05-13 21:07:04.682 +05:00 [INF] Запрос от roman1 (127.0.0.1:57062) по GET /api/Categories ответил 200 за 3.1246 мс
+2022-05-13 21:07:24.471 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:07:26.258 +05:00 [INF] Запрос от roman1 (127.0.0.1:57064) по GET /technoWorldHub ответил 101 за 32087.4980 мс
+2022-05-13 21:07:48.685 +05:00 [WRN] Провальная попытка входа пользователя roman: Неверный логин или пароль
+2022-05-13 21:07:48.687 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57118) по POST /userToken ответил 400 за 6.0581 мс
+2022-05-13 21:07:50.877 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:07:50.879 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57118) по POST /userToken ответил 200 за 3.4113 мс
+2022-05-13 21:07:50.977 +05:00 [INF] Запрос от roman1 (127.0.0.1:57120) по POST /technoWorldHub/negotiate ответил 200 за 0.1820 мс
+2022-05-13 21:07:57.047 +05:00 [INF] Запрос от roman1 (127.0.0.1:57118) по GET /api/Orders/ForStatistics ответил 200 за 31.1643 мс
+2022-05-13 21:07:57.067 +05:00 [INF] Запрос от roman1 (127.0.0.1:57118) по GET /api/ElectrnicsTypes/All ответил 200 за 15.2651 мс
+2022-05-13 21:07:57.073 +05:00 [INF] Запрос от roman1 (127.0.0.1:57118) по GET /api/Categories ответил 200 за 3.0990 мс
+2022-05-13 21:07:59.757 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:07:59.758 +05:00 [INF] Запрос от roman1 (127.0.0.1:57121) по GET /technoWorldHub ответил 101 за 8732.9023 мс
+2022-05-13 21:08:09.241 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:08:09.242 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57143) по POST /userToken ответил 200 за 5.3600 мс
+2022-05-13 21:08:09.442 +05:00 [INF] Запрос от roman1 (127.0.0.1:57144) по POST /technoWorldHub/negotiate ответил 200 за 0.1968 мс
+2022-05-13 21:08:12.739 +05:00 [INF] Запрос от roman1 (127.0.0.1:57143) по GET /api/Orders/ForStatistics ответил 200 за 29.5670 мс
+2022-05-13 21:08:12.777 +05:00 [INF] Запрос от roman1 (127.0.0.1:57143) по GET /api/ElectrnicsTypes/All ответил 200 за 32.6950 мс
+2022-05-13 21:08:12.791 +05:00 [INF] Запрос от roman1 (127.0.0.1:57143) по GET /api/Categories ответил 200 за 11.2969 мс
+2022-05-13 21:08:23.621 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:08:23.623 +05:00 [INF] Запрос от roman1 (127.0.0.1:57145) по GET /technoWorldHub ответил 101 за 14117.9664 мс
+2022-05-13 21:08:43.762 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:08:43.763 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57191) по POST /userToken ответил 200 за 7.9850 мс
+2022-05-13 21:08:43.951 +05:00 [INF] Запрос от roman1 (127.0.0.1:57192) по POST /technoWorldHub/negotiate ответил 200 за 0.1974 мс
+2022-05-13 21:08:47.721 +05:00 [INF] Запрос от roman1 (127.0.0.1:57191) по GET /api/Orders/ForStatistics ответил 200 за 36.5891 мс
+2022-05-13 21:08:47.735 +05:00 [INF] Запрос от roman1 (127.0.0.1:57191) по GET /api/ElectrnicsTypes/All ответил 200 за 8.6970 мс
+2022-05-13 21:08:47.741 +05:00 [INF] Запрос от roman1 (127.0.0.1:57191) по GET /api/Categories ответил 200 за 3.5833 мс
+2022-05-13 21:09:13.628 +05:00 [INF] Запрос от roman1 (127.0.0.1:57191) по GET /api/Orders/ForStatistics ответил 200 за 27.8738 мс
+2022-05-13 21:09:13.639 +05:00 [INF] Запрос от roman1 (127.0.0.1:57191) по GET /api/ElectrnicsTypes/All ответил 200 за 7.3596 мс
+2022-05-13 21:09:13.645 +05:00 [INF] Запрос от roman1 (127.0.0.1:57191) по GET /api/Categories ответил 200 за 3.0841 мс
+2022-05-13 21:09:47.233 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:09:47.235 +05:00 [INF] Запрос от roman1 (127.0.0.1:57193) по GET /technoWorldHub ответил 101 за 63219.5771 мс
+2022-05-13 21:10:00.164 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:10:00.166 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57269) по POST /userToken ответил 200 за 8.0502 мс
+2022-05-13 21:10:00.358 +05:00 [INF] Запрос от roman1 (127.0.0.1:57270) по POST /technoWorldHub/negotiate ответил 200 за 0.2650 мс
+2022-05-13 21:10:02.990 +05:00 [INF] Запрос от roman1 (127.0.0.1:57269) по GET /api/Orders/ForStatistics ответил 200 за 31.3862 мс
+2022-05-13 21:10:03.004 +05:00 [INF] Запрос от roman1 (127.0.0.1:57269) по GET /api/ElectrnicsTypes/All ответил 200 за 8.5671 мс
+2022-05-13 21:10:03.013 +05:00 [INF] Запрос от roman1 (127.0.0.1:57269) по GET /api/Categories ответил 200 за 3.5264 мс
+2022-05-13 21:10:18.038 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:10:18.039 +05:00 [INF] Запрос от roman1 (127.0.0.1:57271) по GET /technoWorldHub ответил 101 за 17611.3996 мс
+2022-05-13 21:10:32.861 +05:00 [WRN] Провальная попытка входа пользователя roman: Неверный логин или пароль
+2022-05-13 21:10:32.862 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57308) по POST /userToken ответил 400 за 3.8056 мс
+2022-05-13 21:10:34.788 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:10:34.789 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57308) по POST /userToken ответил 200 за 3.0315 мс
+2022-05-13 21:10:35.030 +05:00 [INF] Запрос от roman1 (127.0.0.1:57315) по POST /technoWorldHub/negotiate ответил 200 за 0.1958 мс
+2022-05-13 21:10:38.960 +05:00 [INF] Запрос от roman1 (127.0.0.1:57308) по GET /api/Orders/ForStatistics ответил 200 за 24.6792 мс
+2022-05-13 21:10:38.974 +05:00 [INF] Запрос от roman1 (127.0.0.1:57308) по GET /api/ElectrnicsTypes/All ответил 200 за 6.4030 мс
+2022-05-13 21:10:38.979 +05:00 [INF] Запрос от roman1 (127.0.0.1:57308) по GET /api/Categories ответил 200 за 2.7315 мс
+2022-05-13 21:11:05.473 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:11:10.488 +05:00 [INF] Запрос от roman1 (127.0.0.1:57316) по GET /technoWorldHub ответил 101 за 35398.0310 мс
+2022-05-13 21:13:28.529 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:13:28.531 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57494) по POST /userToken ответил 200 за 10.6260 мс
+2022-05-13 21:13:28.721 +05:00 [INF] Запрос от roman1 (127.0.0.1:57495) по POST /technoWorldHub/negotiate ответил 200 за 0.2068 мс
+2022-05-13 21:13:31.541 +05:00 [INF] Запрос от roman1 (127.0.0.1:57494) по GET /api/Orders/ForStatistics ответил 200 за 33.5448 мс
+2022-05-13 21:13:31.554 +05:00 [INF] Запрос от roman1 (127.0.0.1:57494) по GET /api/ElectrnicsTypes/All ответил 200 за 8.0437 мс
+2022-05-13 21:13:31.559 +05:00 [INF] Запрос от roman1 (127.0.0.1:57494) по GET /api/Categories ответил 200 за 3.1843 мс
+2022-05-13 21:13:47.703 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:13:47.705 +05:00 [INF] Запрос от roman1 (127.0.0.1:57496) по GET /technoWorldHub ответил 101 за 18920.6274 мс
+2022-05-13 21:36:30.748 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 21:36:30.780 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 21:36:30.781 +05:00 [INF] Hosting environment: Development
+2022-05-13 21:36:30.781 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 21:36:45.051 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:36:45.087 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59687) по POST /userToken ответил 200 за 2029.3847 мс
+2022-05-13 21:36:45.281 +05:00 [INF] Запрос от roman1 (127.0.0.1:59693) по POST /technoWorldHub/negotiate ответил 200 за 47.3247 мс
+2022-05-13 21:36:48.638 +05:00 [INF] Запрос от roman1 (127.0.0.1:59687) по GET /api/Orders/ForStatistics ответил 200 за 194.6008 мс
+2022-05-13 21:36:48.675 +05:00 [INF] Запрос от roman1 (127.0.0.1:59687) по GET /api/ElectrnicsTypes/All ответил 200 за 35.1664 мс
+2022-05-13 21:36:48.690 +05:00 [INF] Запрос от roman1 (127.0.0.1:59687) по GET /api/Categories ответил 200 за 11.5430 мс
+2022-05-13 21:38:02.515 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:38:02.519 +05:00 [INF] Запрос от roman1 (127.0.0.1:59694) по GET /technoWorldHub ответил 101 за 77188.0100 мс
+2022-05-13 21:38:12.743 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:38:12.743 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59770) по POST /userToken ответил 200 за 15.4086 мс
+2022-05-13 21:38:12.930 +05:00 [INF] Запрос от roman1 (127.0.0.1:59772) по POST /technoWorldHub/negotiate ответил 200 за 0.3827 мс
+2022-05-13 21:38:16.065 +05:00 [INF] Запрос от roman1 (127.0.0.1:59770) по GET /api/Orders/ForStatistics ответил 200 за 21.9950 мс
+2022-05-13 21:38:16.076 +05:00 [INF] Запрос от roman1 (127.0.0.1:59770) по GET /api/ElectrnicsTypes/All ответил 200 за 8.7077 мс
+2022-05-13 21:38:16.082 +05:00 [INF] Запрос от roman1 (127.0.0.1:59770) по GET /api/Categories ответил 200 за 3.7901 мс
+2022-05-13 21:41:16.307 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:41:16.310 +05:00 [INF] Запрос от roman1 (127.0.0.1:59773) по GET /technoWorldHub ответил 101 за 183314.3523 мс
+2022-05-13 21:41:26.175 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:41:26.177 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59930) по POST /userToken ответил 200 за 9.7130 мс
+2022-05-13 21:41:26.365 +05:00 [INF] Запрос от roman1 (127.0.0.1:59931) по POST /technoWorldHub/negotiate ответил 200 за 0.6943 мс
+2022-05-13 21:41:29.731 +05:00 [INF] Запрос от roman1 (127.0.0.1:59930) по GET /api/Orders/ForStatistics ответил 200 за 22.1576 мс
+2022-05-13 21:41:29.750 +05:00 [INF] Запрос от roman1 (127.0.0.1:59930) по GET /api/ElectrnicsTypes/All ответил 200 за 15.6211 мс
+2022-05-13 21:41:29.758 +05:00 [INF] Запрос от roman1 (127.0.0.1:59930) по GET /api/Categories ответил 200 за 4.9133 мс
+2022-05-13 21:41:56.789 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:42:01.798 +05:00 [INF] Запрос от roman1 (127.0.0.1:59932) по GET /technoWorldHub ответил 101 за 35367.9177 мс
+2022-05-13 21:43:41.583 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:43:41.584 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60040) по POST /userToken ответил 200 за 15.4572 мс
+2022-05-13 21:43:41.773 +05:00 [INF] Запрос от roman1 (127.0.0.1:60041) по POST /technoWorldHub/negotiate ответил 200 за 0.3069 мс
+2022-05-13 21:43:47.139 +05:00 [INF] Запрос от roman1 (127.0.0.1:60040) по GET /api/Orders/ForStatistics ответил 200 за 19.5195 мс
+2022-05-13 21:43:47.152 +05:00 [INF] Запрос от roman1 (127.0.0.1:60040) по GET /api/ElectrnicsTypes/All ответил 200 за 8.1557 мс
+2022-05-13 21:43:47.159 +05:00 [INF] Запрос от roman1 (127.0.0.1:60040) по GET /api/Categories ответил 200 за 3.5625 мс
+2022-05-13 21:44:13.789 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:44:16.090 +05:00 [INF] Запрос от roman1 (127.0.0.1:60042) по GET /technoWorldHub ответил 101 за 34251.7370 мс
+2022-05-13 21:44:34.295 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:44:34.296 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60087) по POST /userToken ответил 200 за 14.1259 мс
+2022-05-13 21:44:34.483 +05:00 [INF] Запрос от roman1 (127.0.0.1:60088) по POST /technoWorldHub/negotiate ответил 200 за 0.2700 мс
+2022-05-13 21:44:39.043 +05:00 [INF] Запрос от roman1 (127.0.0.1:60087) по GET /api/Orders/ForStatistics ответил 200 за 19.6161 мс
+2022-05-13 21:44:39.056 +05:00 [INF] Запрос от roman1 (127.0.0.1:60087) по GET /api/ElectrnicsTypes/All ответил 200 за 10.2072 мс
+2022-05-13 21:44:39.062 +05:00 [INF] Запрос от roman1 (127.0.0.1:60087) по GET /api/Categories ответил 200 за 3.6008 мс
+2022-05-13 21:46:27.455 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:46:27.456 +05:00 [INF] Запрос от roman1 (127.0.0.1:60089) по GET /technoWorldHub ответил 101 за 112908.5511 мс
+2022-05-13 21:46:54.164 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:46:54.165 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60231) по POST /userToken ответил 200 за 9.8679 мс
+2022-05-13 21:46:54.351 +05:00 [INF] Запрос от roman1 (127.0.0.1:60232) по POST /technoWorldHub/negotiate ответил 200 за 0.3315 мс
+2022-05-13 21:46:59.718 +05:00 [INF] Запрос от roman1 (127.0.0.1:60231) по GET /api/Orders/ForStatistics ответил 200 за 221.2160 мс
+2022-05-13 21:46:59.745 +05:00 [INF] Запрос от roman1 (127.0.0.1:60231) по GET /api/ElectrnicsTypes/All ответил 200 за 15.9921 мс
+2022-05-13 21:46:59.751 +05:00 [INF] Запрос от roman1 (127.0.0.1:60231) по GET /api/Categories ответил 200 за 3.4048 мс
+2022-05-13 21:47:40.505 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:47:40.508 +05:00 [INF] Запрос от roman1 (127.0.0.1:60233) по GET /technoWorldHub ответил 101 за 46092.3349 мс
+2022-05-13 21:48:18.603 +05:00 [WRN] Провальная попытка входа пользователя roman: Неверный логин или пароль
+2022-05-13 21:48:18.604 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60309) по POST /userToken ответил 400 за 9.2578 мс
+2022-05-13 21:48:20.286 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:48:20.289 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60309) по POST /userToken ответил 200 за 7.0248 мс
+2022-05-13 21:48:20.421 +05:00 [INF] Запрос от roman1 (127.0.0.1:60311) по POST /technoWorldHub/negotiate ответил 200 за 0.2621 мс
+2022-05-13 21:48:23.715 +05:00 [INF] Запрос от roman1 (127.0.0.1:60309) по GET /api/Orders/ForStatistics ответил 200 за 223.8311 мс
+2022-05-13 21:48:23.741 +05:00 [INF] Запрос от roman1 (127.0.0.1:60309) по GET /api/ElectrnicsTypes/All ответил 200 за 9.0508 мс
+2022-05-13 21:48:23.747 +05:00 [INF] Запрос от roman1 (127.0.0.1:60309) по GET /api/Categories ответил 200 за 3.3544 мс
+2022-05-13 21:48:33.815 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:48:33.818 +05:00 [INF] Запрос от roman1 (127.0.0.1:60312) по GET /technoWorldHub ответил 101 за 13339.7477 мс
+2022-05-13 21:48:59.295 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:48:59.296 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60356) по POST /userToken ответил 200 за 9.3452 мс
+2022-05-13 21:48:59.486 +05:00 [INF] Запрос от roman1 (127.0.0.1:60357) по POST /technoWorldHub/negotiate ответил 200 за 0.2207 мс
+2022-05-13 21:49:02.441 +05:00 [INF] Запрос от roman1 (127.0.0.1:60356) по GET /api/Orders/ForStatistics ответил 200 за 222.2813 мс
+2022-05-13 21:49:02.479 +05:00 [INF] Запрос от roman1 (127.0.0.1:60356) по GET /api/ElectrnicsTypes/All ответил 200 за 24.9684 мс
+2022-05-13 21:49:02.485 +05:00 [INF] Запрос от roman1 (127.0.0.1:60356) по GET /api/Categories ответил 200 за 3.3526 мс
+2022-05-13 21:49:13.100 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:49:13.101 +05:00 [INF] Запрос от roman1 (127.0.0.1:60358) по GET /technoWorldHub ответил 101 за 13552.0144 мс
+2022-05-13 21:52:06.262 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:52:06.264 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60587) по POST /userToken ответил 200 за 6.8087 мс
+2022-05-13 21:52:06.458 +05:00 [INF] Запрос от roman1 (127.0.0.1:60588) по POST /technoWorldHub/negotiate ответил 200 за 0.2344 мс
+2022-05-13 21:52:22.509 +05:00 [INF] Запрос от roman1 (127.0.0.1:60587) по GET /api/Orders/ForStatistics ответил 200 за 215.8851 мс
+2022-05-13 21:52:22.530 +05:00 [INF] Запрос от roman1 (127.0.0.1:60587) по GET /api/ElectrnicsTypes/All ответил 200 за 9.5773 мс
+2022-05-13 21:52:22.536 +05:00 [INF] Запрос от roman1 (127.0.0.1:60587) по GET /api/Categories ответил 200 за 3.3621 мс
+2022-05-13 21:52:46.442 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:52:46.444 +05:00 [INF] Запрос от roman1 (127.0.0.1:60590) по GET /technoWorldHub ответил 101 за 39924.8598 мс
+2022-05-13 21:52:57.123 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:52:57.123 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60645) по POST /userToken ответил 200 за 4.9876 мс
+2022-05-13 21:52:57.274 +05:00 [INF] Запрос от roman1 (127.0.0.1:60646) по POST /technoWorldHub/negotiate ответил 200 за 0.1813 мс
+2022-05-13 21:53:00.243 +05:00 [INF] Запрос от roman1 (127.0.0.1:60645) по GET /api/Orders/ForStatistics ответил 200 за 201.7913 мс
+2022-05-13 21:53:00.263 +05:00 [INF] Запрос от roman1 (127.0.0.1:60645) по GET /api/ElectrnicsTypes/All ответил 200 за 7.3400 мс
+2022-05-13 21:53:00.269 +05:00 [INF] Запрос от roman1 (127.0.0.1:60645) по GET /api/Categories ответил 200 за 3.3537 мс
+2022-05-13 21:54:42.492 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:54:42.495 +05:00 [INF] Запрос от roman1 (127.0.0.1:60647) по GET /technoWorldHub ответил 101 за 105168.9406 мс
+2022-05-13 21:55:17.417 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 21:55:17.418 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:60763) по POST /userToken ответил 200 за 6.6926 мс
+2022-05-13 21:55:17.620 +05:00 [INF] Запрос от roman1 (127.0.0.1:60765) по POST /technoWorldHub/negotiate ответил 200 за 0.2481 мс
+2022-05-13 21:55:20.749 +05:00 [INF] Запрос от roman1 (127.0.0.1:60763) по GET /api/Orders/ForStatistics ответил 200 за 227.9406 мс
+2022-05-13 21:55:20.768 +05:00 [INF] Запрос от roman1 (127.0.0.1:60763) по GET /api/ElectrnicsTypes/All ответил 200 за 8.0615 мс
+2022-05-13 21:55:20.774 +05:00 [INF] Запрос от roman1 (127.0.0.1:60763) по GET /api/Categories ответил 200 за 3.2811 мс
+2022-05-13 21:55:31.307 +05:00 [INF] Запрос от roman1 (127.0.0.1:60763) по GET /api/Orders/ForStatistics ответил 200 за 217.5600 мс
+2022-05-13 21:55:31.375 +05:00 [INF] Запрос от roman1 (127.0.0.1:60763) по GET /api/ElectrnicsTypes/All ответил 200 за 6.9662 мс
+2022-05-13 21:55:31.381 +05:00 [INF] Запрос от roman1 (127.0.0.1:60763) по GET /api/Categories ответил 200 за 2.9664 мс
+2022-05-13 21:55:33.203 +05:00 [INF] roman1 отключен от системы
+2022-05-13 21:55:33.205 +05:00 [INF] Запрос от roman1 (127.0.0.1:60766) по GET /technoWorldHub ответил 101 за 15522.3479 мс
+2022-05-13 23:16:24.844 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-13 23:16:24.875 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-13 23:16:24.876 +05:00 [INF] Hosting environment: Development
+2022-05-13 23:16:24.876 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-13 23:16:44.172 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 23:16:44.208 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:63324) по POST /userToken ответил 200 за 1648.4270 мс
+2022-05-13 23:16:44.445 +05:00 [INF] Запрос от roman1 (127.0.0.1:63326) по POST /technoWorldHub/negotiate ответил 200 за 47.7038 мс
+2022-05-13 23:16:49.089 +05:00 [INF] roman1 отключен от системы
+2022-05-13 23:16:49.095 +05:00 [INF] Запрос от roman1 (127.0.0.1:63327) по GET /technoWorldHub ответил 101 за 4588.6335 мс
+2022-05-13 23:17:54.832 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 23:17:54.834 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:63383) по POST /userToken ответил 200 за 36.1596 мс
+2022-05-13 23:17:55.022 +05:00 [INF] Запрос от roman1 (127.0.0.1:63384) по POST /technoWorldHub/negotiate ответил 200 за 0.8564 мс
+2022-05-13 23:18:02.265 +05:00 [INF] roman1 отключен от системы
+2022-05-13 23:18:02.268 +05:00 [INF] Запрос от roman1 (127.0.0.1:63385) по GET /technoWorldHub ответил 101 за 7180.2976 мс
+2022-05-13 23:19:25.100 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 23:19:25.102 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:63458) по POST /userToken ответил 200 за 15.6145 мс
+2022-05-13 23:19:25.293 +05:00 [INF] Запрос от roman1 (127.0.0.1:63459) по POST /technoWorldHub/negotiate ответил 200 за 0.3693 мс
+2022-05-13 23:19:49.015 +05:00 [INF] roman1 отключен от системы
+2022-05-13 23:19:49.017 +05:00 [INF] Запрос от roman1 (127.0.0.1:63460) по GET /technoWorldHub ответил 101 за 23657.3202 мс
+2022-05-13 23:20:00.393 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 23:20:00.394 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:63485) по POST /userToken ответил 200 за 7.8567 мс
+2022-05-13 23:20:00.589 +05:00 [INF] Запрос от roman1 (127.0.0.1:63486) по POST /technoWorldHub/negotiate ответил 200 за 0.3730 мс
+2022-05-13 23:20:13.380 +05:00 [INF] roman1 отключен от системы
+2022-05-13 23:20:13.381 +05:00 [INF] Запрос от roman1 (127.0.0.1:63488) по GET /technoWorldHub ответил 101 за 12727.2351 мс
+2022-05-13 23:20:35.234 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 23:20:35.236 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:63520) по POST /userToken ответил 200 за 8.1206 мс
+2022-05-13 23:20:35.426 +05:00 [INF] Запрос от roman1 (127.0.0.1:63521) по POST /technoWorldHub/negotiate ответил 200 за 0.4321 мс
+2022-05-13 23:20:39.880 +05:00 [INF] Запрос от roman1 (127.0.0.1:63520) по GET /api/Orders/ForStatistics ответил 200 за 174.0135 мс
+2022-05-13 23:20:39.911 +05:00 [INF] Запрос от roman1 (127.0.0.1:63520) по GET /api/ElectrnicsTypes/All ответил 200 за 27.8249 мс
+2022-05-13 23:20:39.925 +05:00 [INF] Запрос от roman1 (127.0.0.1:63520) по GET /api/Categories ответил 200 за 11.7942 мс
+2022-05-13 23:21:28.496 +05:00 [INF] roman1 отключен от системы
+2022-05-13 23:21:28.498 +05:00 [INF] Запрос от roman1 (127.0.0.1:63522) по GET /technoWorldHub ответил 101 за 53008.3343 мс
+2022-05-13 23:25:45.831 +05:00 [WRN] Провальная попытка входа пользователя roman: Неверный логин или пароль
+2022-05-13 23:25:45.833 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:63825) по POST /userToken ответил 400 за 12.3152 мс
+2022-05-13 23:25:47.869 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 23:25:47.870 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:63825) по POST /userToken ответил 200 за 7.8426 мс
+2022-05-13 23:25:47.996 +05:00 [INF] Запрос от roman1 (127.0.0.1:63829) по POST /technoWorldHub/negotiate ответил 200 за 0.6628 мс
+2022-05-13 23:25:51.259 +05:00 [INF] Запрос от roman1 (127.0.0.1:63825) по GET /api/Orders/ForStatistics ответил 200 за 21.2560 мс
+2022-05-13 23:25:51.292 +05:00 [INF] Запрос от roman1 (127.0.0.1:63825) по GET /api/ElectrnicsTypes/All ответил 200 за 10.8443 мс
+2022-05-13 23:25:51.299 +05:00 [INF] Запрос от roman1 (127.0.0.1:63825) по GET /api/Categories ответил 200 за 4.1296 мс
+2022-05-13 23:27:10.116 +05:00 [INF] roman1 отключен от системы
+2022-05-13 23:27:10.117 +05:00 [INF] Запрос от roman1 (127.0.0.1:63830) по GET /technoWorldHub ответил 101 за 82062.5388 мс
+2022-05-13 23:29:36.422 +05:00 [WRN] Провальная попытка входа пользователя roman: Неверный логин или пароль
+2022-05-13 23:29:36.424 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:64036) по POST /userToken ответил 400 за 10.9786 мс
+2022-05-13 23:29:39.964 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 23:29:39.965 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:64036) по POST /userToken ответил 200 за 6.0149 мс
+2022-05-13 23:29:40.095 +05:00 [INF] Запрос от roman1 (127.0.0.1:64042) по POST /technoWorldHub/negotiate ответил 200 за 0.4315 мс
+2022-05-13 23:29:43.305 +05:00 [INF] Запрос от roman1 (127.0.0.1:64036) по GET /api/Orders/ForStatistics ответил 200 за 20.4493 мс
+2022-05-13 23:29:43.341 +05:00 [INF] Запрос от roman1 (127.0.0.1:64036) по GET /api/ElectrnicsTypes/All ответил 200 за 11.1188 мс
+2022-05-13 23:29:43.350 +05:00 [INF] Запрос от roman1 (127.0.0.1:64036) по GET /api/Categories ответил 200 за 5.9636 мс
+2022-05-13 23:30:26.515 +05:00 [INF] roman1 отключен от системы
+2022-05-13 23:30:26.518 +05:00 [INF] Запрос от roman1 (127.0.0.1:64043) по GET /technoWorldHub ответил 101 за 46364.7636 мс
+2022-05-13 23:30:56.994 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 23:30:56.996 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:64103) по POST /userToken ответил 200 за 7.3503 мс
+2022-05-13 23:30:57.182 +05:00 [INF] Запрос от roman1 (127.0.0.1:64104) по POST /technoWorldHub/negotiate ответил 200 за 0.3185 мс
+2022-05-13 23:31:01.418 +05:00 [INF] Запрос от roman1 (127.0.0.1:64103) по GET /api/Orders/ForStatistics ответил 200 за 18.1023 мс
+2022-05-13 23:31:01.452 +05:00 [INF] Запрос от roman1 (127.0.0.1:64103) по GET /api/ElectrnicsTypes/All ответил 200 за 9.8892 мс
+2022-05-13 23:31:01.459 +05:00 [INF] Запрос от roman1 (127.0.0.1:64103) по GET /api/Categories ответил 200 за 4.1350 мс
+2022-05-13 23:31:30.241 +05:00 [INF] roman1 отключен от системы
+2022-05-13 23:31:30.243 +05:00 [INF] Запрос от roman1 (127.0.0.1:64105) по GET /technoWorldHub ответил 101 за 32996.0375 мс
+2022-05-13 23:31:42.364 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-13 23:31:42.364 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:64146) по POST /userToken ответил 200 за 8.4785 мс
+2022-05-13 23:31:42.558 +05:00 [INF] Запрос от roman1 (127.0.0.1:64147) по POST /technoWorldHub/negotiate ответил 200 за 0.2818 мс
+2022-05-13 23:31:47.316 +05:00 [INF] Запрос от roman1 (127.0.0.1:64146) по GET /api/Orders/ForStatistics ответил 200 за 29.3986 мс
+2022-05-13 23:31:47.336 +05:00 [INF] Запрос от roman1 (127.0.0.1:64146) по GET /api/ElectrnicsTypes/All ответил 200 за 8.5379 мс
+2022-05-13 23:31:47.342 +05:00 [INF] Запрос от roman1 (127.0.0.1:64146) по GET /api/Categories ответил 200 за 3.3340 мс
+2022-05-13 23:43:08.697 +05:00 [INF] Запрос от roman1 (127.0.0.1:64708) по GET /api/Orders/ForStatistics ответил 200 за 230.9000 мс
+2022-05-13 23:43:08.780 +05:00 [INF] Запрос от roman1 (127.0.0.1:64708) по GET /api/ElectrnicsTypes/All ответил 200 за 29.6067 мс
+2022-05-13 23:43:08.787 +05:00 [INF] Запрос от roman1 (127.0.0.1:64708) по GET /api/Categories ответил 200 за 3.4453 мс
+2022-05-13 23:48:48.512 +05:00 [INF] roman1 отключен от системы
+2022-05-13 23:48:48.515 +05:00 [INF] Запрос от roman1 (127.0.0.1:64148) по GET /technoWorldHub ответил 101 за 1025893.0712 мс

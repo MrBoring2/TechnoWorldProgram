@@ -1,5 +1,7 @@
 ﻿using LiveCharts;
 using LiveCharts.Wpf;
+using MaterialNotificationLibrary;
+using MaterialNotificationLibrary.Enums;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -7,6 +9,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechnoWorld_WarehouseAccounting.Services;
+using TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics;
 using TechoWorld_DataModels_v2.Entities;
 using WPF_Helpers.Abstractions;
 using WPF_Helpers.Common;
@@ -16,61 +20,57 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 {
     public class SalesStatisticsPageVM : BasePageVM
     {
-        private SeriesCollection seriesCollection;
-        private ObservableCollection<string> labels;
-        private Func<double, string> yFormatter;
+        private ObservableCollection<string> statistics;
+        private string selectedStatistics;
+        private DateTime startDate;
+        private DateTime endDate;
         public SalesStatisticsPageVM()
         {
-            CreateChartCommand = new RelayCommand(CreateChart);
+            GenerateStatisticsCommand = new RelayCommand(GenerateStatistics);
+            StartDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            EndDate = DateTime.Now.Date;
+            Statistics = new ObservableCollection<string>
+            {
+                "Продажи по типам товаров",
+                "Продажи по категориям"
+            };
+            SelectedStatistics = Statistics.FirstOrDefault();
         }
-        public RelayCommand CreateChartCommand { get; set; }
-        public SeriesCollection SeriesCollection { get => seriesCollection; set { seriesCollection = value; OnPropertyChanged(); } }
-        public ObservableCollection<string> Labels { get => labels; set { labels = value; OnPropertyChanged(); } }
-        public Func<double, string> YFormatter { get => yFormatter; set { yFormatter = value; OnPropertyChanged(); } }
+        public RelayCommand GenerateStatisticsCommand { get; set; }
+        public ObservableCollection<string> Statistics { get => statistics; set { statistics = value; OnPropertyChanged(); } }
+        public string SelectedStatistics { get => selectedStatistics; set { selectedStatistics = value; OnPropertyChanged(); } }
+        public DateTime StartDate { get => startDate; 
+            set { startDate = value > endDate && endDate != DateTime.MinValue ? startDate : value; OnPropertyChanged(); } }
+        public DateTime EndDate { get => endDate; 
+            set { endDate = value < startDate && startDate != DateTime.MinValue ? endDate : value; OnPropertyChanged(); } }
 
-        private async void CreateChart(object obj)
+        private bool PeriodeIsValide()
         {
-            var startDate = DateTime.Now.Date.AddMonths(-2);
-            var endDate = DateTime.Now.Date.AddMonths(1);
-            var responseElectronics = await ApiService.Instance.GetRequestWithParameter("api/Orders/ForStatistics", "chartParams", new
+            if (StartDate.Month - EndDate.Month > 3)
             {
-                electronicsTypeId = 0,
-                categoryId = 1,
-                startDate = startDate,
-                endDate = endDate
-            });
-
-            var responseTypes = await ApiService.Instance.GetRequest("api/ElectrnicsTypes");
-            var responseCategories = await ApiService.Instance.GetRequest("api/Categories");
-
-            if (responseElectronics.StatusCode == System.Net.HttpStatusCode.OK && responseTypes.StatusCode == System.Net.HttpStatusCode.OK &&
-                responseCategories.StatusCode == System.Net.HttpStatusCode.OK)
-            {
-                var electroncis = JsonConvert.DeserializeObject<List<OrderElectronic>>(responseElectronics.Content);
-                var types = JsonConvert.DeserializeObject<List<ElectrnicsType>>(responseTypes.Content);
-                var categories = JsonConvert.DeserializeObject<List<OrderElectronic>>(responseCategories.Content);
-
-                for (DateTime d = startDate; startDate < endDate; startDate.AddDays(1))
-                {
-
-                    foreach (var type in types)
-                    {
-                        ChartValues<double> values = new ChartValues<double>();
-                        foreach (var electronics in electroncis.Where(p => p.Electronics.TypeId == type.TypeId))
-                        {
-                            values.Add(electroncis.Count);
-                        }
-                        SeriesCollection.Add(new LineSeries
-                        {
-                            Title = type.Name,
-                            Values = values
-                        });
-                    }
-                    Labels.Add(d.ToShortDateString());
-                }
-
-                OnPropertyChanged(nameof(SeriesCollection));
+                return false;
             }
+            else
+            {
+                return true;
+            }
+        }
+
+        private async void GenerateStatistics(object obj)
+        {
+            if (!PeriodeIsValide())
+            {
+                MaterialNotification.Show("Внимание", "Период не должен превышать 3 масяца!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                return;
+            }
+
+            if (SelectedStatistics == "Продажи по типам товаров")
+            {
+                StatisticsNavigation.Navigate(new LineChartStatisticPageVM(StartDate, EndDate));
+            }
+
+
         }
     }
 }
+
