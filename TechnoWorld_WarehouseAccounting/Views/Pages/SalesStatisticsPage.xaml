@@ -37,19 +37,19 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1.7*"/>
                 <ColumnDefinition Width="1.25*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal">
-                <ComboBox Margin="5" ItemsSource="{Binding Statistics}" SelectedItem="{Binding SelectedStatistics}" materialDesign:HintAssist.Hint="Статистика" materialDesign:HintAssist.IsFloating="True" Width="290" FontSize="16" HorizontalAlignment="Left"/>
-                <ComboBox Margin="5" ItemsSource="{Binding Statistics}" SelectedItem="{Binding SelectedStatistics}" materialDesign:HintAssist.Hint="Тип диаграммы" materialDesign:HintAssist.IsFloating="True" Width="290" FontSize="16" HorizontalAlignment="Left"/>
+                <ComboBox Margin="5" ItemsSource="{Binding Statistics}" SelectedItem="{Binding SelectedStatistics}" materialDesign:HintAssist.Hint="Статистика" materialDesign:HintAssist.IsFloating="True" Width="250" FontSize="16" HorizontalAlignment="Left"/>
+                <ComboBox Margin="5" ItemsSource="{Binding DisagramTypes}" SelectedItem="{Binding SelectedDiagramType}" materialDesign:HintAssist.Hint="Тип диаграммы" materialDesign:HintAssist.IsFloating="True" Width="250" FontSize="16" HorizontalAlignment="Left"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Center" Width="380">
                 <DatePicker SelectedDate="{Binding StartDate}" Margin="5" materialDesign:HintAssist.Hint="Начало периода" materialDesign:HintAssist.IsFloating="True" Width="180" FontSize="16"/>
                 <DatePicker SelectedDate="{Binding EndDate}" Margin="5" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" Width="180" FontSize="16"/>
             </StackPanel>
-            <Button Grid.Column="2" HorizontalAlignment="Right" Width="220" Margin="5,19,0,19" Style="{StaticResource btn}" Content="Сформировать статистику" Cursor="Hand" Command="{Binding GenerateStatisticsCommand}"/>
+            <Button Grid.Column="2" HorizontalAlignment="Right" Width="220" Margin="5,19,5,19" Style="{StaticResource btn}" Content="Сформировать статистику" Cursor="Hand" Command="{Binding GenerateStatisticsCommand}"/>
         </Grid>
         <Frame Grid.Row="1" x:Name="StatisticsFrame"/>
 

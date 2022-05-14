@@ -84,8 +84,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             {
                 case 2:
                     {
-                        MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.ClipboardEditOutline));
-                        MenuItems.Add(new MenuItem("Отчётная деятельность", MaterialDesignThemes.Wpf.PackIconKind.ChartBar, typeof(SalesStatisticsPageVM)));
+                      
+                       
                     }
                     break;
                 case 3:
@@ -101,8 +101,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                         MenuItems.Add(new MenuItem("Управление сотрудниками", MaterialDesignThemes.Wpf.PackIconKind.Users, typeof(EmployeesManagementPageVM)));
                         MenuItems.Add(new MenuItem("Поставка товара", MaterialDesignThemes.Wpf.PackIconKind.BoxAdd, typeof(DeliveryManagementPageVM)));
                         MenuItems.Add(new MenuItem("Выдача товара", MaterialDesignThemes.Wpf.PackIconKind.Dolly, typeof(ProductDistributionPageVM)));
+                        MenuItems.Add(new MenuItem("Отчётная деятельность", MaterialDesignThemes.Wpf.PackIconKind.ChartBar, typeof(SalesStatisticsPageVM)));
                         MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.ClipboardEditOutline));
-                        MenuItems.Add(new MenuItem("Отчётная деятельность", MaterialDesignThemes.Wpf.PackIconKind.ChartBar));
+
                     }
                     break;
                 default:

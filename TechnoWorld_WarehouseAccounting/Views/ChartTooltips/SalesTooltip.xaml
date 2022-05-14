@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="TechnoWorld_WarehouseAccounting.Views.ChartTooltips.TypesTooltip"
+﻿<UserControl x:Class="TechnoWorld_WarehouseAccounting.Views.ChartTooltips.SalesTooltip"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,7 +8,8 @@
              mc:Ignorable="d"  xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              d:DesignHeight="450" d:DesignWidth="800"
              Background="#E4555555" Padding="20 10" BorderThickness="2" BorderBrush="#555555">
-    <Grid>
+    <StackPanel>
+        <TextBlock Text="{Binding Title}" HorizontalAlignment="Center" FontSize="16" Foreground="White" FontWeight="Bold"/>
         <ItemsControl ItemsSource="{Binding Data.Points}" Grid.IsSharedSizeScope="True">
             <ItemsControl.ItemTemplate>
                 <DataTemplate DataType="{x:Type wpf:DataPointViewModel}">
@@ -21,15 +22,15 @@
                         </Grid.ColumnDefinitions>
                         <Ellipse Grid.Column="0" Stroke="{Binding Series.Stroke}" Fill="{Binding Series.Fill}"
                                Height="15" Width="15"></Ellipse>
-                        <TextBlock Grid.Column="1" Text="{Binding ChartPoint.Instance.(models:TypeSales.Name)}" 
+                        <TextBlock Grid.Column="1" Text="{Binding ChartPoint.Instance.(models:SalesTooltip.Name)}" 
                                Margin="5 0 0 0" VerticalAlignment="Center" Foreground="White"/>
-                        <TextBlock Grid.Column="2" Text="{Binding ChartPoint.Instance.(models:TypeSales.Count), StringFormat={}Продаж: {0} шт.}"
+                        <TextBlock Grid.Column="2" Text="{Binding ChartPoint.Instance.(models:SalesTooltip.Count), StringFormat={}Продаж: {0} шт.}"
                                Margin="5 0 0 0" VerticalAlignment="Center" Foreground="White"/>
-                        <TextBlock Grid.Column="3" Text="{Binding ChartPoint.Instance.(models:TypeSales.Sales), StringFormat={}Прибыль: {0} руб.}" 
+                        <TextBlock Grid.Column="3" Text="{Binding ChartPoint.Instance.(models:SalesTooltip.Sales), StringFormat={}Прибыль: {0:F2} руб.}" 
                                Margin="5 0 0 0" VerticalAlignment="Center" Foreground="White"/>
                     </Grid>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-    </Grid>
+    </StackPanel>
 </UserControl>

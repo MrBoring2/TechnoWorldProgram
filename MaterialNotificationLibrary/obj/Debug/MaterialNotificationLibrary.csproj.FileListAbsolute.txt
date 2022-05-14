@@ -61,6 +61,7 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\bin\Debug\p
 C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\bin\Debug\Ru\MaterialDesignExtensions.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\bin\Debug\ru-ru\MaterialDesignExtensions.resources.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\bin\Debug\uz-Latn-UZ\MaterialDesignExtensions.resources.dll
+C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\obj\Debug\MaterialNotificationLibrary.csproj.AssemblyReference.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\obj\Debug\Resources\Animation\WindowAnimations.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\obj\Debug\Resources\Styles\MainTheme.baml
 C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\obj\Debug\DemoWindow.g.cs
