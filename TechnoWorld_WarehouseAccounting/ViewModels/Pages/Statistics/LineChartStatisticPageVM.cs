@@ -1,5 +1,6 @@
 ﻿using LiveCharts;
 using LiveCharts.Configurations;
+using LiveCharts.Defaults;
 using LiveCharts.Wpf;
 using Newtonsoft.Json;
 using System;
@@ -16,24 +17,17 @@ using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
 {
-    public class LineChartStatisticPageVM : BasePageVM
+    public class LineChartStatisticPageVM : BaseSaleStatisticsPageVM
     {
-        private SeriesCollection seriesCollection;
-        private ObservableCollection<string> labels;
-        private Func<double, string> yFormatter;
-        private DateTime _startDate;
-        private DateTime _endDate;
         public LineChartStatisticPageVM(DateTime startDate, DateTime endDate)
         {
             _startDate = startDate;
             _endDate = endDate;
             CreateChart();
         }
-        public SeriesCollection SeriesCollection { get => seriesCollection; set { seriesCollection = value; OnPropertyChanged(); } }
-        public ObservableCollection<string> Labels { get => labels; set { labels = value; OnPropertyChanged(); } }
-        public Func<double, string> YFormatter { get => yFormatter; set { yFormatter = value; OnPropertyChanged(); } }
         public async void CreateChart()
         {
+            Sales = new ObservableCollection<SaleModel>();
             Labels = new ObservableCollection<string>();
             SeriesCollection = new SeriesCollection();
 
@@ -48,58 +42,65 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
             var responseTypes = await ApiService.Instance.GetRequest("api/ElectrnicsTypes/All");
             var responseCategories = await ApiService.Instance.GetRequest("api/Categories");
 
-            if (responseOrders.StatusCode == System.Net.HttpStatusCode.OK && responseTypes.StatusCode == System.Net.HttpStatusCode.OK &&
-                responseCategories.StatusCode == System.Net.HttpStatusCode.OK)
+
+            await App.Current.Dispatcher.InvokeAsync(() =>
             {
-                var orders = JsonConvert.DeserializeObject<List<Order>>(responseOrders.Content);
-                var types = JsonConvert.DeserializeObject<List<ElectrnicsType>>(responseTypes.Content);
-                var categories = JsonConvert.DeserializeObject<List<OrderElectronic>>(responseCategories.Content);
-
-
-
-                foreach (var type in types)
+                if (responseOrders.StatusCode == System.Net.HttpStatusCode.OK && responseTypes.StatusCode == System.Net.HttpStatusCode.OK &&
+                    responseCategories.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                   
-                    ChartValues<TypeSales> values = new ChartValues<TypeSales>();
-                    for (DateTime date = _startDate; date <= _endDate; date = date.AddDays(1))
+                    var orders = JsonConvert.DeserializeObject<List<Order>>(responseOrders.Content);
+                    var types = JsonConvert.DeserializeObject<List<ElectrnicsType>>(responseTypes.Content);
+                    var categories = JsonConvert.DeserializeObject<List<OrderElectronic>>(responseCategories.Content);
+                    foreach (var type in types.OrderBy(p => p.Name))
                     {
-                        decimal sales = 0;
-                        int count = 0;
-                        foreach (var order in orders.Where(p => p.DateOfRegistration.Date == date.Date))
+                        int totalCount = 0;
+                        decimal totalSales = 0;
+                        ChartValues<SalesTooltip> values = new ChartValues<SalesTooltip>();
+                        for (DateTime date = _startDate; date <= _endDate; date = date.AddDays(1))
                         {
-                            foreach (var orderElectronics in order.OrderElectronics)
+                            decimal sales = 0;
+                            int count = 0;
+                            foreach (var order in orders.Where(p => p.DateOfRegistration.Date == date.Date))
                             {
-                                if (orderElectronics.Electronics.TypeId == type.TypeId)
+                                foreach (var orderElectronics in order.OrderElectronics)
                                 {
-                                    count += orderElectronics.Count;
-                                    sales += orderElectronics.Electronics.SalePrice * orderElectronics.Count;
+                                    if (orderElectronics.Electronics.TypeId == type.TypeId)
+                                    {
+                                        count += orderElectronics.Count;
+                                        sales += orderElectronics.Electronics.SalePrice * orderElectronics.Count;
+                                    }
                                 }
                             }
+
+                            totalCount += count;
+                            totalSales += sales;
+
+                            var list = new List<DateTimePoint>();
+                            values.Add(new SalesTooltip(type.Name, count, sales, date.Ticks));
                         }
-                        values.Add(new TypeSales(type, count, sales));
+                        SeriesCollection.Add(new LineSeries
+                        {
+                            Title = type.Name,
+                            Values = values,
+                            FontSize = 14,
+                            DataLabels = true,
+
+                        });
+
+                        Sales.Add(new SaleModel(type.Name, totalCount, totalSales));
                     }
-                    SeriesCollection.Add(new LineSeries
-                    {
-                        Title = type.Name,
-                        Values = values , DataLabels = true                                   
-                    });
                 }
-            }
 
-           
-           
-            for (DateTime date = _startDate; date <= _endDate; date = date.AddDays(1))
-            {
-                Labels.Add(date.ToShortDateString());
-            }
+                var typesMapper = Mappers.Xy<SalesTooltip>()
+                    .X((value, index) => value.Ticks)
+                    .Y(value => value.Count);
 
-            var typesMapper = Mappers.Xy<TypeSales>()
-                .X((value, index) => index)
-                .Y(value => value.Count);
+                Charting.For<SalesTooltip>(typesMapper);
 
-            Charting.For<TypeSales>(typesMapper);
-
-            OnPropertyChanged(nameof(SeriesCollection));
+                XFormatter = p => new DateTime((long)p).ToString("d");
+                OnPropertyChanged(nameof(SeriesCollection));
+                OnPropertyChanged(nameof(TotalPriceForPeriod));
+            });
         }
     }
 }

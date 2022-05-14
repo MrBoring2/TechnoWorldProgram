@@ -275,7 +275,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\DeliveryItem.cs" />
-    <Compile Include="Models\ForStatistics\TypeSales.cs" />
+    <Compile Include="Models\ForStatistics\PieSalesTooltip.cs" />
+    <Compile Include="Models\ForStatistics\SaleModel.cs" />
+    <Compile Include="Models\ForStatistics\SalesTooltip.cs" />
     <Compile Include="Models\ItemWithTitle.cs" />
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\User.cs" />
@@ -292,11 +294,15 @@
     <Compile Include="ViewModels\Pages\ProductDistributionPageVM.cs" />
     <Compile Include="ViewModels\Pages\ProductManagementPageVM.cs" />
     <Compile Include="ViewModels\Pages\SalesStatisticsPageVM.cs" />
+    <Compile Include="ViewModels\Pages\Statistics\BaseSaleStatisticsPageVM.cs" />
     <Compile Include="ViewModels\Pages\Statistics\ColumnChartStatisticsPageVM.cs" />
     <Compile Include="ViewModels\Pages\Statistics\LineChartStatisticPageVM.cs" />
     <Compile Include="ViewModels\Pages\Statistics\PieChartStatisticsPageVM.cs" />
-    <Compile Include="Views\ChartTooltips\TypesTooltip.xaml.cs">
-      <DependentUpon>TypesTooltip.xaml</DependentUpon>
+    <Compile Include="Views\ChartTooltips\PieSalesTooplip.xaml.cs">
+      <DependentUpon>PieSalesTooplip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChartTooltips\SalesTooltip.xaml.cs">
+      <DependentUpon>SalesTooltip.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\Statistics\ColumnChartStatisticsPage.xaml.cs">
       <DependentUpon>ColumnChartStatisticsPage.xaml</DependentUpon>
@@ -389,7 +395,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\ChartTooltips\TypesTooltip.xaml">
+    <Page Include="Views\ChartTooltips\PieSalesTooplip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ChartTooltips\SalesTooltip.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

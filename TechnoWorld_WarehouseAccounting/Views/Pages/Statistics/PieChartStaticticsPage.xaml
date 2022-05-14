@@ -4,11 +4,60 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics"
+     xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="PieChartStaticticsPage">
+      xmlns:tooltips="clr-namespace:TechnoWorld_WarehouseAccounting.Views.ChartTooltips"
+      xmlns:toolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"   
+        FontFamily="{DynamicResource MaterialDesignFont}"
+       xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
+      d:DesignHeight="600"
+      Title="ProductManagementPage" Background="White" d:DesignWidth="1200">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.6*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <lvc:PieChart Margin="0,0,0,20" x:Name="lineChart" Hoverable="False"  DataClick="lineChart_DataClick" Series="{Binding SeriesCollection}" VirtualizingPanel.IsVirtualizing="True" 
+                            LegendLocation="Right" Grid.ColumnSpan="1">
+
+            <lvc:PieChart.DataTooltip>
+                <tooltips:PieSalesTooplip SelectionMode="OnlySender" />
+            </lvc:PieChart.DataTooltip>
+        </lvc:PieChart>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="Продажи" HorizontalAlignment="Center" Margin="10" FontSize="20" VerticalAlignment="Top"/>
+
+            <DataGrid ItemsSource="{Binding Sales}" CanUserAddRows="False" CanUserDeleteRows="False" AutoGenerateColumns="False" Background="Transparent" IsReadOnly="True" IsManipulationEnabled="False" Margin="0,0,0,0" VerticalAlignment="Top">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Наименование" Width="1.8*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate DataType="{x:Type DataGridCell}">
+                                <TextBlock Text="{Binding Name}" FontSize="14" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Width="0.8*" Header="Кол-во" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate DataType="{x:Type DataGridCell}">
+                                <TextBlock Text="{Binding Count, StringFormat={}{0} шт.}" FontSize="14" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Width="*" Header="Прибыль" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate DataType="{x:Type DataGridCell}">
+                                <TextBlock Text="{Binding TotalSales, StringFormat={}{0:F2} руб.}" FontSize="14" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <TextBlock Text="{Binding TotalPriceForPeriod, StringFormat={}Общая прибыль: {0:F2} руб.}" HorizontalAlignment="Center" FontSize="25" Margin="10,20"/>
+        </StackPanel>
     </Grid>
 </Page>

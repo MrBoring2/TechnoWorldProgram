@@ -17,26 +17,60 @@
       Title="ProductManagementPage" Background="White" d:DesignWidth="1200">
 
     <Grid>
-        <lvc:CartesianChart x:Name="lineChart" Grid.Row="1" Series="{Binding SeriesCollection}"
-                            LegendLocation="Right" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.6*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <lvc:CartesianChart x:Name="lineChart" Hoverable="False" MouseMove="lineChart_MouseMove" Series="{Binding SeriesCollection}" VirtualizingPanel.IsVirtualizing="True" 
+                            LegendLocation="Right" Grid.ColumnSpan="1">
+
             <lvc:CartesianChart.AxisY>
-                <lvc:Axis Title="Количество продаж" LabelFormatter="{Binding YFormatter}">
+                <lvc:Axis Title="Количество продаж">
                     <lvc:Axis.Separator>
                         <lvc:Separator Step="1"></lvc:Separator>
                     </lvc:Axis.Separator>
                 </lvc:Axis>
-                
+
             </lvc:CartesianChart.AxisY>
             <lvc:CartesianChart.AxisX>
-                <lvc:Axis Title="Дни продаж"  Labels="{Binding Labels}">
-                    <lvc:Axis.Separator>
-                        <lvc:Separator Step="1"></lvc:Separator>
-                    </lvc:Axis.Separator>
+                <lvc:Axis LabelFormatter="{Binding XFormatter}" MinValue="{Binding From}" MaxValue="{Binding To}" Title="Дни продаж" >
+
                 </lvc:Axis>
             </lvc:CartesianChart.AxisX>
             <lvc:CartesianChart.DataTooltip>
-                <tooltips:TypesTooltip SelectionMode="{x:Null}" />
+                <tooltips:SalesTooltip SelectionMode="SharedYValues" />
             </lvc:CartesianChart.DataTooltip>
         </lvc:CartesianChart>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="Продажи" HorizontalAlignment="Center" Margin="10" FontSize="20" VerticalAlignment="Top"/>
+
+            <DataGrid ItemsSource="{Binding Sales}" CanUserAddRows="False" CanUserDeleteRows="False" AutoGenerateColumns="False" Background="Transparent" IsReadOnly="True" IsManipulationEnabled="False" Margin="0,0,0,0" VerticalAlignment="Top">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Наименование" Width="1.8*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate DataType="{x:Type DataGridCell}">
+                                <TextBlock Text="{Binding Name}" FontSize="14" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Width="0.8*" Header="Кол-во" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate DataType="{x:Type DataGridCell}">
+                                <TextBlock Text="{Binding Count, StringFormat={}{0} шт.}" FontSize="14" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Width="*" Header="Прибыль" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate DataType="{x:Type DataGridCell}">
+                                <TextBlock Text="{Binding TotalSales, StringFormat={}{0:F2} руб.}" FontSize="14" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <TextBlock Text="{Binding TotalPriceForPeriod, StringFormat={}Общая прибыль: {0:F2} руб.}" HorizontalAlignment="Center" FontSize="25" Margin="10,20"/>
+        </StackPanel>
     </Grid>
 </Page>

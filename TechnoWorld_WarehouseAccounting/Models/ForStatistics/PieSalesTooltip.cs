@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_WarehouseAccounting.Models.ForStatistics
 {
-    public class TypeSales
+    public class PieSalesTooltip
     {
-        public TypeSales(ElectrnicsType electrnicsType, int count, decimal sales)
+        public PieSalesTooltip(string name, int count, decimal sales)
         {
-            ElectrnicsType = electrnicsType;
+            Name = name;
             Count = count;
             Sales = sales;
         }
 
-        public ElectrnicsType ElectrnicsType { get; set; }
-        public string Name => ElectrnicsType.Name;
+        public string Name { get; set; }
         public int Count { get; set; }
         public decimal Sales { get; set; }
+
     }
 }
