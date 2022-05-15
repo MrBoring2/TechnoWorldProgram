@@ -9,6 +9,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics;
 using TechoWorld_DataModels_v2.Entities;
@@ -26,6 +27,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         private string selectedDiagramType;
         private DateTime startDate;
         private DateTime endDate;
+        private Visibility emptyVisibility;
         public SalesStatisticsPageVM()
         {
             GenerateStatisticsCommand = new RelayCommand(GenerateStatistics);
@@ -50,6 +52,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         public string SelectedStatistics { get => selectedStatistics; set { selectedStatistics = value; OnPropertyChanged(); } }
         public string SelectedDiagramType { get => selectedDiagramType; set { selectedDiagramType = value; OnPropertyChanged(); } }
 
+        public Visibility EmptyVisibility { get => emptyVisibility; set { emptyVisibility = value; OnPropertyChanged(); } }
 
         public DateTime StartDate
         {
@@ -59,7 +62,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         public DateTime EndDate
         {
             get => endDate;
-            set { endDate = value < startDate && startDate != DateTime.MinValue ? endDate : value; OnPropertyChanged(); }
+            set { endDate = (value < startDate && startDate != DateTime.MinValue) || value > DateTime.Now ? endDate : value; OnPropertyChanged(); }
         }
 
         private bool PeriodeIsValide()
@@ -77,30 +80,26 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         private async void GenerateStatistics(object obj)
         {
             await Task.Run(() => App.Current.Dispatcher.InvokeAsync(() =>
-              {
-                  if (!PeriodeIsValide() && SelectedDiagramType == "Линейная диаграмма")
-                  {
-                      MaterialNotification.Show("Внимание", "Для линейной диаграммы период не должен превышать 3 масяца!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
-                      return;
-                  }
+            {
+                  //if (!PeriodeIsValide() && SelectedDiagramType == "Линейная диаграмма")
+                  //{
+                  //    MaterialNotification.Show("Внимание", "Для линейной диаграммы период не должен превышать 3 масяца!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                  //    return;
+                  //}
 
-                  if (SelectedStatistics == "Продажи по типам товаров")
-                  {
-                      if (SelectedDiagramType == "Линейная диаграмма")
-                      {
-                          StatisticsNavigation.Navigate(new LineChartStatisticPageVM(StartDate, EndDate));
-                      }
-                      else if (SelectedDiagramType == "Круговая диаграмма")
-                      {
 
-                          StatisticsNavigation.Navigate(new PieChartStatisticsPageVM(StartDate, EndDate));
-                      }
+                  if (SelectedDiagramType == "Линейная диаграмма")
+                  {
+                      StatisticsNavigation.Navigate(new LineChartStatisticPageVM(SelectedStatistics, StartDate, EndDate));
                   }
-                  else if (SelectedStatistics == "Продажи по категориям товаров")
+                  else if (SelectedDiagramType == "Круговая диаграмма")
                   {
 
+                      StatisticsNavigation.Navigate(new PieChartStatisticsPageVM(SelectedStatistics, StartDate, EndDate));
                   }
-              }));
+            }));
+
+
         }
     }
 }

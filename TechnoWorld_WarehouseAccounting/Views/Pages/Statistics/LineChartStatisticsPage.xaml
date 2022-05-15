@@ -17,15 +17,19 @@
       Title="ProductManagementPage" Background="White" d:DesignWidth="1200">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="559*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2.6*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <lvc:CartesianChart x:Name="lineChart" Hoverable="False" MouseMove="lineChart_MouseMove" Series="{Binding SeriesCollection}" VirtualizingPanel.IsVirtualizing="True" 
-                            LegendLocation="Right" Grid.ColumnSpan="1">
+        <lvc:CartesianChart x:Name="lineChart" Hoverable="False" MouseMove="lineChart_MouseMove" Series="{Binding SeriesCollection}" VirtualizingPanel.IsVirtualizing="True"
+                            LegendLocation="Right" Grid.ColumnSpan="1" Margin="0,0,0,0" Grid.RowSpan="1">
 
             <lvc:CartesianChart.AxisY>
-                <lvc:Axis Title="Количество продаж">
+                <lvc:Axis Title="Количество продаж" MinValue="0" MaxValue="{Binding MaxY}">
                     <lvc:Axis.Separator>
                         <lvc:Separator Step="1"></lvc:Separator>
                     </lvc:Axis.Separator>
@@ -42,7 +46,15 @@
             </lvc:CartesianChart.DataTooltip>
         </lvc:CartesianChart>
 
-        <StackPanel Grid.Column="1">
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Margin="5,5,5,5">
+            <Button HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource btn}" Content="« Назад" Margin="0,0,10,0" Command="{Binding BackPeriodCommand}" Cursor="Hand"/>
+            <TextBlock Text="{Binding CurrentPeriod}" FontSize="14" VerticalAlignment="Bottom" Margin="0,0,0,5"/>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource btn}" Content="Далее »" Margin="10,0,0,0" Command="{Binding NextPeriodCommand}"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Column="1" Grid.RowSpan="2">
             <TextBlock Text="Продажи" HorizontalAlignment="Center" Margin="10" FontSize="20" VerticalAlignment="Top"/>
 
             <DataGrid ItemsSource="{Binding Sales}" CanUserAddRows="False" CanUserDeleteRows="False" AutoGenerateColumns="False" Background="Transparent" IsReadOnly="True" IsManipulationEnabled="False" Margin="0,0,0,0" VerticalAlignment="Top">
@@ -71,6 +83,7 @@
                 </DataGrid.Columns>
             </DataGrid>
             <TextBlock Text="{Binding TotalPriceForPeriod, StringFormat={}Общая прибыль: {0:F2} руб.}" HorizontalAlignment="Center" FontSize="25" Margin="10,20"/>
+
         </StackPanel>
     </Grid>
 </Page>

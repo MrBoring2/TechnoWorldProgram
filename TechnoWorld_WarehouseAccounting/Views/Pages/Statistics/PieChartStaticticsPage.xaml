@@ -21,6 +21,9 @@
             <ColumnDefinition Width="2.6*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+
+
+
         <lvc:PieChart Margin="0,0,0,20" x:Name="lineChart" Hoverable="False"  DataClick="lineChart_DataClick" Series="{Binding SeriesCollection}" VirtualizingPanel.IsVirtualizing="True" 
                             LegendLocation="Right" Grid.ColumnSpan="1">
 
@@ -28,6 +31,12 @@
                 <tooltips:PieSalesTooplip SelectionMode="OnlySender" />
             </lvc:PieChart.DataTooltip>
         </lvc:PieChart>
+
+        <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Grid.Row="2" Height="524" Width="802">
+            <Image Source="/Resources/Images/empty.png" Width="550" Height="400"/>
+            <TextBlock  Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock  Text="В данный период не было продаж" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center"/>
+        </StackPanel>
 
         <StackPanel Grid.Column="1">
             <TextBlock Text="Продажи" HorizontalAlignment="Center" Margin="10" FontSize="20" VerticalAlignment="Top"/>

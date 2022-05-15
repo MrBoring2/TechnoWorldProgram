@@ -37,11 +37,17 @@ namespace TechnoWorld_WarehouseAccounting.Views.Pages.Statistics
             //lets get where the mouse is at our chart
             var mouseCoordinate = e.GetPosition(chart);
             var p = chart.ConvertToChartValues(mouseCoordinate);
-            if (chart.Series.Count <= 0)
+            if (chart.Series == null || chart.Series.Count <= 0)
             {
                 return;
             }
             var series = chart.Series?[0];
+
+            if (p.X <= 0)
+            {
+                return;
+            }
+
             var closetsPoint = series.ClosestPointTo(p.X, AxisOrientation.X);
 
 

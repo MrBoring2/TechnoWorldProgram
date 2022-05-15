@@ -27,6 +27,10 @@ namespace TechnoWorld_WarehouseAccounting
             {
                 Directory.CreateDirectory("Приходные накладные");
             }
+            if (!Directory.Exists("Инвентаризация"))
+            {
+                Directory.CreateDirectory("Инвентаризация");
+            }
 
             RegisterWindows();
             var loginWindow = new LoginWindowVM();

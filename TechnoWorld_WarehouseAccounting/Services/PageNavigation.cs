@@ -64,6 +64,7 @@ namespace TechnoWorld_WarehouseAccounting.Services
                 case 2:
                     {
                         RegisterPageWithVM<SalesStatisticsPageVM, SalesStatisticsPage>();
+                        RegisterPageWithVM<InventoryPageVM, InventoryPage>();
                     }
                     break;
                 case 3:
@@ -71,8 +72,6 @@ namespace TechnoWorld_WarehouseAccounting.Services
                         RegisterPageWithVM<ProductManagementPageVM, ProductManagementPage>();
                         RegisterPageWithVM<DeliveryManagementPageVM, DeliveryManagementPage>();
                         RegisterPageWithVM<ProductDistributionPageVM, ProductDistributionPage>();
-                        //CreatePage(typeof(ProductManagementPageVM));
-                        //CreatePage(typeof(DeliveryManagementPageVM));
                     }
                     break;
                 case 4:
@@ -81,8 +80,8 @@ namespace TechnoWorld_WarehouseAccounting.Services
                         RegisterPageWithVM<DeliveryManagementPageVM, DeliveryManagementPage>();
                         RegisterPageWithVM<ProductDistributionPageVM, ProductDistributionPage>();
                         RegisterPageWithVM<EmployeesManagementPageVM, EmployeesManagementPage>();
-                        //CreatePage(typeof(ProductManagementPageVM));
-                        //CreatePage(typeof(DeliveryManagementPageVM));
+                        RegisterPageWithVM<SalesStatisticsPageVM, SalesStatisticsPage>();
+                        RegisterPageWithVM<InventoryPageVM, InventoryPage>();
                     }
                     break;
                 default:
@@ -91,13 +90,6 @@ namespace TechnoWorld_WarehouseAccounting.Services
                     }
                     break;
             }
-
-            //RegisterPageWithVM<CartPageVM, CartPage>();
-            //RegisterPageWithVM<CategoriesPageVM, CategoriesPage>();
-            //RegisterPageWithVM<ElectronicsDetailPageVM, ElectronicsDetailPage>();
-
-            //CreatePage(typeof(CartPageVM));
-            //CreatePage(typeof(CategoriesPageVM));
         }
         public void ClearCreatedPages()
         {

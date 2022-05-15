@@ -15,7 +15,143 @@
         xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
         Title="ТЕХНО МИР: Управление предприятием | Список товаров" Height="700" Width="1100" MinHeight="600" MinWidth="1100" WindowStartupLocation="CenterScreen" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality">
+    <mde:MaterialWindow.Resources>
+        <Style TargetType="ToolTip" BasedOn="{StaticResource MaterialDesignToolTip}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToolTip}">
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="White" Padding="10,5">
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="Orange"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </mde:MaterialWindow.Resources>
     <Grid>
-        <Frame Content="{Binding Content}" x:Name="ddd" Grid.Row="0" NavigationUIVisibility="Hidden"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="109"/>
+            <RowDefinition Height="525.04"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid Margin="5,5,5,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="382*"/>
+                <ColumnDefinition Width="213*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBox Margin="0,0,5,0" Grid.Row="0" Text="{Binding Search, Delay=250, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Введите название модели..." materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Arrow" Height="42"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <ComboBox Width="250" ItemsSource="{Binding Categories}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedCategory}" materialDesign:HintAssist.Hint="Категория" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
+                <ComboBox Width="250" Margin="5,0,0,0" ItemsSource="{Binding ElectronicsTypes}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedType}" IsEnabled="{Binding IsCategorySelected}" materialDesign:HintAssist.Hint="Тип" materialDesign:HintAssist.IsFloating="True" FontSize="16" VerticalAlignment="Top"/>
+                <ComboBox Width="250" HorizontalAlignment="Left" Margin="5,0,0,0" ItemsSource="{Binding ForDisplayList}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedDisplay}" materialDesign:HintAssist.Hint="Отображать" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top" FontSize="16" Grid.Row="1"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right">
+                <ComboBox Width="250" Margin="5,0,0,0" ItemsSource="{Binding SortParameters}" SelectedItem="{Binding SelectedSort}" DisplayMemberPath="Title" materialDesign:HintAssist.Hint="Сортировка" materialDesign:HintAssist.IsFloating="True" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <CheckBox Content="По возрастанию" IsChecked="{Binding SelectedSort.IsAcsending}" VerticalAlignment="Center" FontSize="16" Margin="5,0,0,0" Command="{Binding SortOrderChangedCommand}"/>
+            </StackPanel>
+
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5,5,0,487" HorizontalAlignment="Left">
+            <Button Background="Transparent" Visibility="{Binding EditAddVisibility}" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenProductWindowCommand}" Cursor="Hand"/>
+            <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding OpenEditProductWindowCommand}" Cursor="Hand"/>
+        </StackPanel>
+        <DataGrid Grid.Row="1" ItemsSource="{Binding EntitiesCollection}" SelectedItem="{Binding SelectedEntity}" CanUserSortColumns="False" EnableRowVirtualization="True"  Margin="5,5,5,5" AutoGenerateColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserReorderColumns="False" BorderThickness="1" BorderBrush="Orange" IsReadOnly="True" HorizontalScrollBarVisibility="Auto">
+
+            <interactions:Interaction.Triggers>
+                <interactions:EventTrigger EventName="MouseDoubleClick">
+                    <interactions:InvokeCommandAction Command="{Binding SelectProductCommand}"/>
+                </interactions:EventTrigger>
+            </interactions:Interaction.Triggers>
+            <DataGrid.Resources>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Orange" />
+                    <Setter Property="Foreground" Value="Black" />
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Модель"  Width="2*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding Model}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Категория" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding Type.Category.Name}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Тип" Binding="{Binding Type.Name}" Width="*"/>
+                <DataGridTextColumn Header="Цена продажи" Binding="{Binding SalePrice, StringFormat={}{0:F2} ₽}" Width="*"/>
+                <DataGridTextColumn Header="Цена закупки" Binding="{Binding PurchasePrice, StringFormat={}{0:F2} ₽}" Width="*"/>
+                <DataGridTemplateColumn Header="Количество" Width="1.5*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding AmountnAveryStorage}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Статус" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate DataType="DataGridCell">
+                            <TextBlock Text="{Binding Status}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Top" HorizontalAlignment="Center" MaxWidth="800" Grid.Row="1" Height="270" Width="746" Margin="0,149,0,0">
+            <Image Source="/Resources/Images/empty.png" Width="280" Height="190"/>
+            <TextBlock  Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock  Text="Выберите другие критерии или проверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" Name="Paginator" HorizontalAlignment="Center"  Grid.Row="2" Margin="0,0,0,0" Grid.RowSpan="2">
+            <Button x:Name="ToFirst" Background="Orange" BorderBrush="Orange" Command="{Binding ChangePageCommand}" CommandParameter="-1" Margin="0,7.5,0,7.5" Height="35" Width="50" FontSize="30" Cursor="Hand">
+                <Button.Content>
+                    <TextBlock Text="«" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Height="47"/>
+                </Button.Content>
+            </Button>
+            <ListView Margin="0,0,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" IsEnabled="{Binding Paginator.IsSelectionEnabled}" SelectedItem="{Binding Paginator.SelectedPageNumber}" ItemsSource="{Binding Paginator.DisplayedPagesNumbers, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="PagesList" HorizontalAlignment="Stretch" Height="35" Width="auto">
+                <interactions:Interaction.Triggers>
+                    <interactions:EventTrigger EventName="SelectionChanged">
+                        <interactions:InvokeCommandAction Command="{Binding ChangePageCommand}"/>
+                    </interactions:EventTrigger>
+                </interactions:Interaction.Triggers>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="VerticalAlignment" Value="Stretch"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" Height="20" Width="45" FontSize="18" TextAlignment="Center"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+            <Button x:Name="ToLast" TextBlock.TextAlignment="Center" Background="Orange" BorderBrush="Orange" Command="{Binding ChangePageCommand}" CommandParameter="1" Margin="0" Height="35" Width="50" FontSize="30" Cursor="Hand">
+                <Button.Content>
+                    <TextBlock Text="»" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Height="47"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+
     </Grid>
 </mde:MaterialWindow>

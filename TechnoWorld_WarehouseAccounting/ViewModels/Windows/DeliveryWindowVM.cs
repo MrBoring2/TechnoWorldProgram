@@ -190,9 +190,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
             if (productsListVM.DialogResult == true)
             {
-                if (DeliveryItems.Any(p => p.Electronic.ElectronicsId == productsListVM.SelectedElectronic.ElectronicsId) == false)
+                if (DeliveryItems.Any(p => p.Electronic.ElectronicsId == productsListVM.SelectedEntity.ElectronicsId) == false)
                 {
-                    DeliveryItems.Add(new DeliveryItem(productsListVM.SelectedElectronic, 0));
+                    DeliveryItems.Add(new DeliveryItem(productsListVM.SelectedEntity, 0));
                 }
             }
         }

@@ -17,6 +17,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
         protected ObservableCollection<string> labels;
         protected Func<double, string> yFormatter;
         protected Func<double, string> xFormatter;
+        protected long from;
+        protected long to;
         protected DateTime _startDate;
         protected DateTime _endDate;
         public SeriesCollection SeriesCollection { get => seriesCollection; set { seriesCollection = value; OnPropertyChanged(); } }
@@ -25,8 +27,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
         public Func<double, string> YFormatter { get => yFormatter; set { yFormatter = value; OnPropertyChanged(); } }
         public Func<double, string> XFormatter { get => yFormatter; set { yFormatter = value; OnPropertyChanged(); } }
         public long lastXValue { get; set; }
-        public long From => _startDate.Ticks;
-        public long To => _endDate.Ticks;
+        public long From { get => from; set { from = value; OnPropertyChanged(); } }
+        public long To { get => to; set { to = value; OnPropertyChanged(); } }
         public decimal TotalPriceForPeriod => Sales.Sum(p => p.TotalSales);
     }
 }

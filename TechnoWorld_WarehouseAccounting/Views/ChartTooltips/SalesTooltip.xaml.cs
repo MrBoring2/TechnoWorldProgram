@@ -62,7 +62,7 @@ namespace TechnoWorld_WarehouseAccounting.Views.ChartTooltips
 
             }
         }
-        public string Title => Data == null || Data.Points.Count < 0 ? "" : new DateTime((long)Data.Points.FirstOrDefault().ChartPoint.X).ToShortDateString();
+        public string Title => Data == null || Data.Points.Count <= 0 ? "" : new DateTime((long)Data.Points.FirstOrDefault().ChartPoint.X).ToShortDateString();
         public TooltipSelectionMode? SelectionMode { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;

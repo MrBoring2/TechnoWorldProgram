@@ -51,6 +51,13 @@
             </StackPanel>
             <Button Grid.Column="2" HorizontalAlignment="Right" Width="220" Margin="5,19,5,19" Style="{StaticResource btn}" Content="Сформировать статистику" Cursor="Hand" Command="{Binding GenerateStatisticsCommand}"/>
         </Grid>
+
+
+        <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Row="2" Height="450" Width="1070">
+            <Image Source="/Resources/Images/empty.png" Width="480" Height="350"/>
+            <TextBlock  Text="Нажмите кнопку «Сформировать статистику», чтобы сформировать диаграмму" TextAlignment="Center" TextWrapping="Wrap" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+
         <Frame Grid.Row="1" x:Name="StatisticsFrame"/>
 
     </Grid>

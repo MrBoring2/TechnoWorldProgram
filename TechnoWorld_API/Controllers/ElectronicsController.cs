@@ -35,17 +35,14 @@ namespace BNS_API.Controllers
         [HttpGet("All")]
         public async Task<ActionResult<IEnumerable<Electronic>>> GetAllElectronics()
         {
-            var list = await _context.Electronics.Include(p => p.Manufacturer).Include(p => p.ElectronicsToStorages).Include(p => p.Type).Include(p => p.Type.Category).ToListAsync();
-
-            foreach (var item in list)
-            {
-                foreach (var storage in item.ElectronicsToStorages)
-                {
-                    await _context.Entry(storage).Reference(p => p.Storage).LoadAsync();
-                }
-            }
-
-            return list;
+            var list = _context.Electronics.Include(p => p.Manufacturer)
+                                                  .Include(p => p.Type)
+                                                  .Include(p => p.Type.Category)
+                                                  .Include(p => p.ElectronicsToStorages)
+                                                  .ThenInclude(p => p.Storage)
+                                                  .AsNoTracking()
+                                                  .AsEnumerable();
+            return Ok(list);
         }
 
         [HttpGet("TerminalFilter")]

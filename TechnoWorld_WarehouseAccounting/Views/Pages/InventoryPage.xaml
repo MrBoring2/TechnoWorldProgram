@@ -1,0 +1,78 @@
+﻿<Page x:Class="TechnoWorld_WarehouseAccounting.Views.Pages.InventoryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Pages"
+       mc:Ignorable="d" 
+       xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"   
+        FontFamily="{DynamicResource MaterialDesignFont}"
+       xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
+      d:DesignHeight="600" d:DesignWidth="1100"
+      Title="ProductManagementPage" Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="363*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <ComboBox ItemsSource="{Binding Storages}" SelectedItem="{Binding SelectedStorage}" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Склад" Width="200" FontSize="14" Margin="5,5,5,5" VerticalAlignment="Top" materialDesign:HintAssist.IsFloating="True"/>
+            <Button x:Name="Fill" Style="{StaticResource btn}" Command="{Binding FillTableCommand}" Content="Заполнить" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Width="136" Height="37" Cursor="Hand" />
+            <Button x:Name="Clear" Style="{StaticResource btn}" Command="{Binding ClearTableCommand}" Content="Очистить" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Width="136" Height="37" Cursor="Hand" />
+            <Button x:Name="Add" Style="{StaticResource btn}" Command="{Binding AddProductCommand}" Content="Добавить" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Width="130" Height="37" Cursor="Hand" />
+            <Button x:Name="Remove" Style="{StaticResource btn}" Command="{Binding RemoveProductCommand}" Content="Удалить" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Width="136" Height="37" />
+            <Button x:Name="Spend" Style="{StaticResource btn}" Command="{Binding SpendCommand}" Content="Провести" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Width="153" Height="37" Cursor="Hand" />
+        </StackPanel>
+        <DataGrid Grid.Row="1" Margin="5" ItemsSource="{Binding InventoryModels}" BorderBrush="Orange" BorderThickness="1" SelectedItem="{Binding SelectedInventoryModel}" AutoGenerateColumns="False">
+            <DataGrid.Resources>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Orange" />
+                    <Setter Property="Foreground" Value="Black" />
+                </Style>
+                <Style x:Key="deviationStyle" BasedOn="{StaticResource MaterialDesignDataGridCell}" TargetType="{x:Type DataGridCell}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Deviation, Converter={StaticResource deviationConv}}" Value="-1">
+                            <Setter Property="Foreground" Value="Red"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Deviation, Converter={StaticResource deviationConv}}" Value="1">
+                            <Setter Property="Foreground" Value="Green"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Deviation, Converter={StaticResource deviationConv}}" Value="0">
+                            <Setter Property="Foreground" Value="Black"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№" IsReadOnly="True" Width="50" Binding="{Binding Id, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTemplateColumn Header="Название" IsReadOnly="True" Width="200*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Electronics.Model, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Кол-во фактическое" Width="110*" Binding="{Binding FactAmount, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Кол-во учётное" IsReadOnly="True" Width="100*" Binding="{Binding BuhAmount, StringFormat={}{0} шт., UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Отклонение" IsReadOnly="True" Width="100*" Binding="{Binding Deviation, UpdateSourceTrigger=PropertyChanged}" CellStyle="{StaticResource deviationStyle}"/>
+                <DataGridTextColumn Header="Цена" IsReadOnly="True" Binding="{Binding Price, StringFormat={}{0:F2} ₽, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Сумма фактическая" IsReadOnly="True" Width="110*" Binding="{Binding FactTotalPrice, StringFormat={}{0:F2} ₽, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Сумма учёт" IsReadOnly="True" Width="100*" Binding="{Binding BuhTotalPrice, StringFormat={}{0:F2} ₽, UpdateSourceTrigger=PropertyChanged}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Сумма фактическая: " HorizontalAlignment="Center" FontSize="16"/>
+                <TextBlock Text="{Binding FactTotalPrice, StringFormat={}{0:F2} ₽}"  FontSize="16"/>
+            </StackPanel>
+            <StackPanel Margin="20,0,20,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Сумма по учёту: " HorizontalAlignment="Center"  FontSize="16"/>
+                <TextBlock Text="{Binding BuhTotalPrice, StringFormat={}{0:F2} ₽}"  FontSize="16"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

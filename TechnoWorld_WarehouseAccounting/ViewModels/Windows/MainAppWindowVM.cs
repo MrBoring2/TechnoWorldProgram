@@ -74,7 +74,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         private void WindowLoaded(object obj)
         {
             PageNavigation.Instance.RegisterPages(ClientService.Instance.User.RoleId);
-            SelectedMenuItem = MenuItems.FirstOrDefault(p => p.Title.Equals("Управление товарами"));
+            SelectedMenuItem = MenuItems.FirstOrDefault();
             MaterialNotification.Show("Оповещение", $"Авторизация прошла успешно", MaterialNotificationButton.Ok, MaterialNotificationImage.Information);
         }
         private void LoadMenu()
@@ -84,8 +84,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             {
                 case 2:
                     {
-                      
-                       
+                        MenuItems.Add(new MenuItem("Отчётная деятельность", MaterialDesignThemes.Wpf.PackIconKind.ChartBar, typeof(SalesStatisticsPageVM)));
+                        MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.ClipboardEditOutline, typeof(InventoryPageVM)));
+
                     }
                     break;
                 case 3:
@@ -102,7 +103,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                         MenuItems.Add(new MenuItem("Поставка товара", MaterialDesignThemes.Wpf.PackIconKind.BoxAdd, typeof(DeliveryManagementPageVM)));
                         MenuItems.Add(new MenuItem("Выдача товара", MaterialDesignThemes.Wpf.PackIconKind.Dolly, typeof(ProductDistributionPageVM)));
                         MenuItems.Add(new MenuItem("Отчётная деятельность", MaterialDesignThemes.Wpf.PackIconKind.ChartBar, typeof(SalesStatisticsPageVM)));
-                        MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.ClipboardEditOutline));
+                        MenuItems.Add(new MenuItem("Инвентаризация", MaterialDesignThemes.Wpf.PackIconKind.ClipboardEditOutline, typeof(InventoryPageVM)));
 
                     }
                     break;

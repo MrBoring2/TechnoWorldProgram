@@ -278,9 +278,11 @@
     <Compile Include="Models\ForStatistics\PieSalesTooltip.cs" />
     <Compile Include="Models\ForStatistics\SaleModel.cs" />
     <Compile Include="Models\ForStatistics\SalesTooltip.cs" />
+    <Compile Include="Models\InventoryModel.cs" />
     <Compile Include="Models\ItemWithTitle.cs" />
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Resources\Converters\DeviationValueConverter.cs" />
     <Compile Include="Resources\Converters\ImageNullConverter.cs" />
     <Compile Include="Services\ClientService.cs" />
     <Compile Include="Services\PageController.cs" />
@@ -291,6 +293,7 @@
     <Compile Include="ViewModels\ForElements\ElectronicsInOrderWithStorageVM.cs" />
     <Compile Include="ViewModels\Pages\DeliveryManagementPageVM.cs" />
     <Compile Include="ViewModels\Pages\EmployeesManagementPageVM.cs" />
+    <Compile Include="ViewModels\Pages\InventoryPageVM.cs" />
     <Compile Include="ViewModels\Pages\ProductDistributionPageVM.cs" />
     <Compile Include="ViewModels\Pages\ProductManagementPageVM.cs" />
     <Compile Include="ViewModels\Pages\SalesStatisticsPageVM.cs" />
@@ -303,6 +306,9 @@
     </Compile>
     <Compile Include="Views\ChartTooltips\SalesTooltip.xaml.cs">
       <DependentUpon>SalesTooltip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\InventoryPage.xaml.cs">
+      <DependentUpon>InventoryPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\Statistics\ColumnChartStatisticsPage.xaml.cs">
       <DependentUpon>ColumnChartStatisticsPage.xaml</DependentUpon>
@@ -400,6 +406,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ChartTooltips\SalesTooltip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\InventoryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -510,6 +520,35 @@
     <PackageReference Include="LiveCharts.Wpf">
       <Version>0.9.7</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.4.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.4.0\build\MaterialDesignThemes.targets')" />
