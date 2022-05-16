@@ -26,6 +26,7 @@ using System.Globalization;
 using Microsoft.AspNetCore.HttpOverrides;
 using System.Net;
 using System.Security.Claims;
+using TechnoWorld_API.Models.Extentions;
 
 namespace BNS_API
 {
@@ -39,23 +40,15 @@ namespace BNS_API
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TechnoWorldContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Home")));
+            services.AddDbContext<TechnoWorldContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DataBaseConnection")));
             services.AddControllers();
+            services.Configure<ApiConnection>(Configuration.GetSection(ApiConnection.Name));
             services.AddMvc().AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-
-                //options.SerializerSettings.TypeNameHandling = Newtonsoft.Json.TypeNameHandling.Objects;
-                //options.SerializerSettings.TypeNameAssemblyFormatHandling = Newtonsoft.Json.TypeNameAssemblyFormatHandling.Simple;
             });
-            //services.AddDistributedMemoryCache();
-            //services.AddSession(options =>
-            //{
-            //    options.IdleTimeout = TimeSpan.FromMinutes(1);
-            //});
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {

@@ -10,6 +10,8 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Net;
+using TechnoWorld_API.Models.Extentions;
 
 namespace BNS_API
 {
@@ -31,11 +33,23 @@ namespace BNS_API
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+
             .UseSerilog((context, services, configuration) => configuration
                     .ReadFrom.Configuration(context.Configuration)
                     .ReadFrom.Services(services)
                     .Enrich.FromLogContext()
                     .WriteTo.Console(outputTemplate: "{Timestamp:dd.MM.yyyy HH:mm:ss} [{Level}] {Message}{NewLine}{Exception}"))
-                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseKestrel((context, options) =>
+                    {
+                        var apiConnection = new ApiConnection();
+                        context.Configuration.GetSection(ApiConnection.Name).Bind(apiConnection);
+
+                        options.Listen(IPAddress.Parse(apiConnection.HostIPAddress), apiConnection.HostPort);
+                    });
+                    
+                });
     }
 }

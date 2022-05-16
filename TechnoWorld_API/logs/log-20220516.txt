@@ -131,3 +131,188 @@
 2022-05-16 00:26:19.894 +05:00 [INF] Запрос от roman1 (127.0.0.1:56868) по GET /api/Orders/ForStatistics ответил 200 за 16.4430 мс
 2022-05-16 00:26:30.667 +05:00 [INF] roman1 отключен от системы
 2022-05-16 00:26:30.668 +05:00 [INF] Запрос от roman1 (127.0.0.1:56870) по GET /technoWorldHub ответил 101 за 54240.4702 мс
+2022-05-16 15:00:51.785 +05:00 [INF] Now listening on: http://localhost:5000
+2022-05-16 15:00:51.845 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-16 15:00:51.846 +05:00 [INF] Hosting environment: Development
+2022-05-16 15:00:51.847 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-16 15:00:54.486 +05:00 [INF] Application is shutting down...
+2022-05-16 15:03:54.662 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-16 15:03:54.741 +05:00 [INF] Now listening on: http://192.168.0.102:5000
+2022-05-16 15:03:54.759 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-16 15:03:54.761 +05:00 [INF] Hosting environment: Development
+2022-05-16 15:03:54.765 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-16 15:04:09.233 +05:00 [INF] Application is shutting down...
+2022-05-16 15:06:02.910 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-16 15:06:03.045 +05:00 [INF] Now listening on: http://127.0.0.1:57056
+2022-05-16 15:06:03.072 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-16 15:06:03.074 +05:00 [INF] Hosting environment: Development
+2022-05-16 15:06:03.078 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-16 15:06:16.602 +05:00 [INF] Application is shutting down...
+2022-05-16 15:06:20.094 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-16 15:06:20.179 +05:00 [INF] Now listening on: http://127.0.0.1:57078
+2022-05-16 15:06:20.191 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-16 15:06:20.192 +05:00 [INF] Hosting environment: Development
+2022-05-16 15:06:20.192 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-16 15:06:28.997 +05:00 [INF] Application is shutting down...
+2022-05-16 15:06:32.268 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-16 15:06:32.340 +05:00 [INF] Now listening on: http://127.0.0.1:57101
+2022-05-16 15:06:32.352 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-16 15:06:32.352 +05:00 [INF] Hosting environment: Development
+2022-05-16 15:06:32.355 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-16 15:06:38.328 +05:00 [INF] Application is shutting down...
+2022-05-16 15:07:16.058 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-16 15:07:16.138 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-16 15:07:16.155 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-16 15:07:16.155 +05:00 [INF] Hosting environment: Development
+2022-05-16 15:07:16.156 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-16 15:07:19.413 +05:00 [INF] Application is shutting down...
+2022-05-16 16:33:17.393 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-16 16:33:17.437 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-16 16:33:17.440 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-16 16:33:17.440 +05:00 [INF] Hosting environment: Development
+2022-05-16 16:33:17.441 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-16 16:33:42.625 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-16 16:33:42.663 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58073) по POST /userToken ответил 200 за 2153.0218 мс
+2022-05-16 16:33:42.889 +05:00 [INF] Запрос от roman1 (127.0.0.1:58074) по POST /technoWorldHub/negotiate ответил 200 за 52.0057 мс
+2022-05-16 16:33:45.957 +05:00 [INF] Запрос от roman1 (127.0.0.1:58073) по GET /api/Storages ответил 200 за 114.3885 мс
+2022-05-16 16:33:48.090 +05:00 [INF] Запрос от roman1 (127.0.0.1:58073) по GET /api/Electronics/All ответил 200 за 667.0141 мс
+2022-05-16 16:34:06.636 +05:00 [INF] Запрос от roman1 (127.0.0.1:58073) по GET /api/ElectrnicsTypes/All ответил 200 за 44.2551 мс
+2022-05-16 16:34:06.826 +05:00 [INF] Запрос от roman1 (127.0.0.1:58073) по GET /api/Orders/ForStatistics ответил 200 за 135.6847 мс
+2022-05-16 16:34:12.143 +05:00 [INF] Запрос от roman1 (127.0.0.1:58073) по GET /api/Electronics/All ответил 200 за 432.1938 мс
+2022-05-16 16:34:12.893 +05:00 [INF] roman1 отключен от системы
+2022-05-16 16:34:12.897 +05:00 [INF] Запрос от roman1 (127.0.0.1:58075) по GET /technoWorldHub ответил 101 за 29910.7924 мс
+2022-05-16 16:34:37.982 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-16 16:34:37.984 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58107) по POST /userToken ответил 200 за 7.7573 мс
+2022-05-16 16:34:38.134 +05:00 [INF] Запрос от roman1 (127.0.0.1:58108) по POST /technoWorldHub/negotiate ответил 200 за 0.6525 мс
+2022-05-16 16:34:39.988 +05:00 [INF] roman1 отключен от системы
+2022-05-16 16:34:39.992 +05:00 [INF] Запрос от roman1 (127.0.0.1:58109) по GET /technoWorldHub ответил 101 за 1806.3740 мс
+2022-05-16 16:35:34.162 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-16 16:35:34.163 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58132) по POST /userToken ответил 200 за 6.5750 мс
+2022-05-16 16:35:34.313 +05:00 [INF] Запрос от roman1 (127.0.0.1:58133) по POST /technoWorldHub/negotiate ответил 200 за 0.3105 мс
+2022-05-16 16:35:36.255 +05:00 [INF] Запрос от roman1 (127.0.0.1:58132) по GET /api/Storages ответил 200 за 3.6295 мс
+2022-05-16 16:35:38.220 +05:00 [INF] Запрос от roman1 (127.0.0.1:58132) по GET /api/Categories ответил 200 за 14.1503 мс
+2022-05-16 16:35:38.324 +05:00 [INF] Запрос от roman1 (127.0.0.1:58132) по GET /api/ElectrnicsTypes/All ответил 200 за 9.1958 мс
+2022-05-16 16:35:38.567 +05:00 [INF] Запрос от roman1 (127.0.0.1:58132) по GET /api/Electronics/Filter ответил 200 за 203.8652 мс
+2022-05-16 16:35:40.978 +05:00 [INF] Запрос от roman1 (127.0.0.1:58132) по GET /api/Categories ответил 200 за 4.5293 мс
+2022-05-16 16:35:41.091 +05:00 [INF] Запрос от roman1 (127.0.0.1:58132) по GET /api/ElectrnicsTypes/All ответил 200 за 12.2524 мс
+2022-05-16 16:35:41.266 +05:00 [INF] Запрос от roman1 (127.0.0.1:58132) по GET /api/Electronics/Filter ответил 200 за 169.8715 мс
+2022-05-16 16:35:54.452 +05:00 [INF] roman1 отключен от системы
+2022-05-16 16:35:54.454 +05:00 [INF] Запрос от roman1 (127.0.0.1:58134) по GET /technoWorldHub ответил 101 за 20089.3587 мс
+2022-05-16 16:35:59.993 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-16 16:35:59.995 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58132) по POST /userToken ответил 200 за 10.8007 мс
+2022-05-16 16:35:59.996 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58253) по POST /technoWorldHub/negotiate ответил 200 за 0.2576 мс
+2022-05-16 16:35:59.998 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-16 16:36:00.042 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58132) по GET /api/Categories ответил 200 за 4.1564 мс
+2022-05-16 16:36:00.149 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58132) по GET /api/ElectrnicsTypes/All ответил 200 за 7.5651 мс
+2022-05-16 16:36:00.355 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58132) по GET /api/Electronics/Filter ответил 200 за 133.0403 мс
+2022-05-16 16:36:01.820 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58132) по GET /api/Posts ответил 200 за 7.0091 мс
+2022-05-16 16:36:01.847 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58132) по GET /api/Employees/Filter ответил 200 за 15.4712 мс
+2022-05-16 16:36:02.816 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58132) по GET /api/Status ответил 200 за 11.3704 мс
+2022-05-16 16:36:02.900 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method700(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method700(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-16 16:36:02.910 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:58132) по GET /api/Deliveries/Filter ответил 500 за 77.9696 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method700(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method666(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-16 16:36:02.954 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method700(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method666(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-16 16:36:03.927 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58132) по GET /api/Orders/Filter ответил 200 за 67.6589 мс
+2022-05-16 16:36:05.318 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58132) по GET /api/Posts ответил 200 за 1.2183 мс
+2022-05-16 16:36:12.932 +05:00 [INF] MrBoring отключен от системы
+2022-05-16 16:36:12.933 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58254) по GET /technoWorldHub ответил 101 за 12936.1724 мс
+2022-05-16 17:17:50.031 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-16 17:17:50.106 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-16 17:17:50.108 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-16 17:17:50.109 +05:00 [INF] Hosting environment: Development
+2022-05-16 17:17:50.110 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-16 17:18:07.041 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-16 17:18:07.079 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:61622) по POST /userToken ответил 200 за 6325.8910 мс
+2022-05-16 17:18:07.645 +05:00 [INF] Запрос от roman1 (127.0.0.1:61625) по POST /technoWorldHub/negotiate ответил 200 за 418.0021 мс
+2022-05-16 17:18:12.161 +05:00 [INF] Запрос от roman1 (127.0.0.1:61622) по GET /api/Storages ответил 200 за 102.8490 мс
+2022-05-16 17:18:12.759 +05:00 [INF] roman1 отключен от системы
+2022-05-16 17:18:12.763 +05:00 [INF] Запрос от roman1 (127.0.0.1:61626) по GET /technoWorldHub ответил 101 за 5068.0205 мс
+2022-05-16 17:34:46.175 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-16 17:34:46.225 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-16 17:34:46.228 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-16 17:34:46.229 +05:00 [INF] Hosting environment: Development
+2022-05-16 17:34:46.230 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-16 18:05:44.017 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-16 18:05:44.063 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:61358) по POST /userToken ответил 200 за 1796.3866 мс
+2022-05-16 18:05:44.261 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61359) по POST /technoWorldHub/negotiate ответил 200 за 49.3993 мс
+2022-05-16 18:05:44.375 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-16 18:05:44.559 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61358) по GET /api/Categories ответил 200 за 64.1149 мс
+2022-05-16 18:05:44.640 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61358) по GET /api/ElectrnicsTypes/All ответил 200 за 37.5811 мс
+2022-05-16 18:05:45.149 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61358) по GET /api/Electronics/Filter ответил 200 за 411.5206 мс
+2022-05-16 18:05:46.966 +05:00 [INF] MrBoring отключен от системы
+2022-05-16 18:05:46.970 +05:00 [INF] Запрос от MrBoring (127.0.0.1:61360) по GET /technoWorldHub ответил 101 за 2659.3845 мс
+2022-05-16 18:20:21.064 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-16 18:20:21.127 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-16 18:20:21.132 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-16 18:20:21.132 +05:00 [INF] Hosting environment: Development
+2022-05-16 18:20:21.133 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
