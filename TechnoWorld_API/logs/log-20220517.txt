@@ -1,0 +1,90 @@
+2022-05-17 00:15:24.578 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-17 00:15:24.656 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-17 00:15:24.659 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-17 00:15:24.660 +05:00 [INF] Hosting environment: Development
+2022-05-17 00:15:24.660 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-17 00:20:22.437 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-17 00:20:22.486 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-17 00:20:22.490 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-17 00:20:22.490 +05:00 [INF] Hosting environment: Development
+2022-05-17 00:20:22.491 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-17 00:25:45.097 +05:00 [INF] Пользователь roman1 авторизирован в системе
+2022-05-17 00:25:45.135 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57150) по POST /userToken ответил 200 за 2098.2882 мс
+2022-05-17 00:25:45.549 +05:00 [INF] Запрос от roman1 (127.0.0.1:57152) по POST /technoWorldHub/negotiate ответил 200 за 48.4616 мс
+2022-05-17 00:25:49.629 +05:00 [INF] roman1 отключен от системы
+2022-05-17 00:25:49.633 +05:00 [INF] Запрос от roman1 (127.0.0.1:57153) по GET /technoWorldHub ответил 101 за 4007.4307 мс
+2022-05-17 00:25:51.397 +05:00 [WRN] Провальная попытка входа пользователя dsad: Неверный логин или пароль
+2022-05-17 00:25:51.399 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57150) по POST /userToken ответил 400 за 33.4007 мс
+2022-05-17 00:26:01.687 +05:00 [WRN] Провальная попытка входа пользователя dsad: Неверный логин или пароль
+2022-05-17 00:26:01.689 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57150) по POST /userToken ответил 400 за 8.4320 мс
+2022-05-17 00:26:08.335 +05:00 [WRN] Провальная попытка входа пользователя dsad: Неверный логин или пароль
+2022-05-17 00:26:08.336 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57150) по POST /userToken ответил 400 за 2.7771 мс
+2022-05-17 00:26:47.960 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-17 00:26:48.022 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-17 00:26:48.026 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-17 00:26:48.027 +05:00 [INF] Hosting environment: Development
+2022-05-17 00:26:48.027 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-17 00:28:34.019 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57249) по POST /terminalToken ответил 200 за 478.5721 мс
+2022-05-17 00:28:34.270 +05:00 [INF] Запрос от terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63 (127.0.0.1:57250) по POST /technoWorldHub/negotiate ответил 200 за 57.9249 мс
+2022-05-17 00:28:34.407 +05:00 [INF] Подключенин терминал: terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63
+2022-05-17 00:28:38.842 +05:00 [INF] Запрос от terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63 (127.0.0.1:57249) по GET /api/Categories ответил 200 за 1184.8580 мс
+2022-05-17 00:28:40.099 +05:00 [INF] Запрос от terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63 (127.0.0.1:57249) по GET /api/Electronics/TerminalFilter ответил 200 за 518.2709 мс
+2022-05-17 00:28:40.278 +05:00 [INF] Запрос от terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63 (127.0.0.1:57249) по GET /api/Manufacturers ответил 200 за 88.9925 мс
+2022-05-17 00:28:40.327 +05:00 [INF] Запрос от terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63 (127.0.0.1:57249) по GET /api/ElectrnicsTypes ответил 200 за 14.0424 мс
+2022-05-17 00:28:41.407 +05:00 [INF] Запрос от terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63 (127.0.0.1:57249) по GET /api/Electronics/TerminalFilter ответил 200 за 54.4648 мс
+2022-05-17 00:28:42.107 +05:00 [INF] Запрос от terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63 (127.0.0.1:57249) по GET /api/Electronics/TerminalFilter ответил 200 за 70.0386 мс
+2022-05-17 00:28:42.688 +05:00 [INF] Запрос от terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63 (127.0.0.1:57249) по POST /terminalToken ответил 200 за 1.0960 мс
+2022-05-17 00:28:42.789 +05:00 [INF] Запрос от terminal_15e8c52d-cb84-4f64-88bb-73d23a6379a7 (127.0.0.1:57249) по GET /api/Electronics/TerminalFilter ответил 200 за 44.0517 мс
+2022-05-17 00:28:43.343 +05:00 [INF] Запрос от terminal_15e8c52d-cb84-4f64-88bb-73d23a6379a7 (127.0.0.1:57249) по GET /api/Electronics/TerminalFilter ответил 200 за 42.6034 мс
+2022-05-17 00:28:44.871 +05:00 [INF] Запрос от terminal_15e8c52d-cb84-4f64-88bb-73d23a6379a7 (127.0.0.1:57249) по GET /api/Electronics/TerminalFilter ответил 200 за 53.1377 мс
+2022-05-17 00:28:45.492 +05:00 [INF] Запрос от terminal_15e8c52d-cb84-4f64-88bb-73d23a6379a7 (127.0.0.1:57249) по GET /api/Electronics/TerminalFilter ответил 200 за 47.5571 мс
+2022-05-17 00:28:46.333 +05:00 [INF] terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63 отключен от системы
+2022-05-17 00:28:46.338 +05:00 [INF] Запрос от terminal_9e8ecbdc-f1b5-40c2-9f24-780401b29a63 (127.0.0.1:57251) по GET /technoWorldHub ответил 101 за 12007.1636 мс
+2022-05-17 00:29:20.708 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57271) по POST /userToken ответил 400 за 9.2610 мс
+2022-05-17 00:29:23.482 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57271) по POST /userToken ответил 400 за 0.7043 мс
+2022-05-17 00:29:26.046 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57271) по POST /userToken ответил 400 за 0.3806 мс
+2022-05-17 00:29:28.341 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57271) по POST /userToken ответил 400 за 0.3892 мс
+2022-05-17 00:29:40.222 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57283) по POST /userToken ответил 400 за 2.6335 мс
+2022-05-17 00:29:42.619 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57283) по POST /userToken ответил 400 за 0.4569 мс
+2022-05-17 00:31:02.212 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57337) по POST /userToken ответил 400 за 4.7176 мс
+2022-05-17 00:31:08.967 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57337) по POST /userToken ответил 400 за 0.3740 мс
+2022-05-17 00:32:15.008 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57366) по POST /userToken ответил 400 за 3.4003 мс
+2022-05-17 00:32:30.410 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-17 00:32:30.503 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-17 00:32:30.525 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-17 00:32:30.526 +05:00 [INF] Hosting environment: Development
+2022-05-17 00:32:30.527 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-17 00:33:28.674 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-17 00:33:28.717 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-17 00:33:28.721 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-17 00:33:28.722 +05:00 [INF] Hosting environment: Development
+2022-05-17 00:33:28.723 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-17 00:33:46.056 +05:00 [INF] Пользователь sherbak авторизирован в системе
+2022-05-17 00:33:46.096 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57529) по POST /userToken ответил 200 за 1295.3379 мс
+2022-05-17 00:33:46.298 +05:00 [INF] Запрос от sherbak (127.0.0.1:57531) по POST /technoWorldHub/negotiate ответил 200 за 48.8392 мс
+2022-05-17 00:33:46.416 +05:00 [INF] Подключен пользователь кассы: sherbak
+2022-05-17 00:33:46.554 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Status ответил 200 за 46.8615 мс
+2022-05-17 00:33:46.910 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 264.1817 мс
+2022-05-17 00:33:50.753 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 44.1656 мс
+2022-05-17 00:34:01.888 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 78.4247 мс
+2022-05-17 00:34:02.797 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 46.4242 мс
+2022-05-17 00:34:03.594 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 109.8407 мс
+2022-05-17 00:34:04.348 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 52.6264 мс
+2022-05-17 00:34:05.286 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 88.0055 мс
+2022-05-17 00:34:10.815 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 37.5253 мс
+2022-05-17 00:34:10.909 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 33.6706 мс
+2022-05-17 00:34:10.981 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 43.6854 мс
+2022-05-17 00:34:11.011 +05:00 [INF] Запрос от sherbak (127.0.0.1:57546) по GET /api/Orders/Filter ответил 200 за 42.7484 мс
+2022-05-17 00:34:11.329 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 39.6699 мс
+2022-05-17 00:34:11.515 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 42.8576 мс
+2022-05-17 00:34:11.711 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 50.2985 мс
+2022-05-17 00:34:11.915 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 87.3522 мс
+2022-05-17 00:34:12.335 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 38.2762 мс
+2022-05-17 00:34:13.095 +05:00 [INF] Запрос от sherbak (127.0.0.1:57529) по GET /api/Orders/Filter ответил 200 за 78.0317 мс
+2022-05-17 00:34:25.106 +05:00 [INF] sherbak отключен от системы
+2022-05-17 00:34:25.111 +05:00 [INF] Запрос от sherbak (127.0.0.1:57532) по GET /technoWorldHub ответил 101 за 38757.6426 мс
+2022-05-17 00:34:34.828 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-17 00:34:34.877 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-17 00:34:34.880 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-17 00:34:34.880 +05:00 [INF] Hosting environment: Development
+2022-05-17 00:34:34.881 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API

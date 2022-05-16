@@ -25,4 +25,3 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\net
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.csproj.CoreCompileInputs.cache
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.pdb
-C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_DataModels_v2\obj\Debug\netstandard2.0\TechnoWorld_DataModels_v2.csproj.AssemblyReference.cache

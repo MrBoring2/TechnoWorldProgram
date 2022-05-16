@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.SignalR.Client;
+﻿using MaterialNotificationLibrary;
+using MaterialNotificationLibrary.Enums;
+using Microsoft.AspNetCore.SignalR.Client;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,22 +18,29 @@ namespace WPF_VM_Abstractions
         private HubConnection hubConnection { get; set; }
         private ApiService()
         {
-            restClient = new RestClient(apiUrl);
-            restClient.Timeout = 200000000;
-            restClient.ReadWriteTimeout = 20000000;
-            restClient.CookieContainer = new System.Net.CookieContainer();
-            hubConnection = new HubConnectionBuilder()
-                .WithUrl($"{apiUrl}technoWorldHub",
-                options =>
-                {
-                    var a = restClient.CookieContainer;
-                    options.AccessTokenProvider = () => Task.FromResult(restClient.CookieContainer.GetCookies(new Uri(apiUrl))[".AspNetCore.Application.Id"].Value);
-                })
-                .Build();
+            try
+            {
+                restClient = new RestClient(apiUrl);
+                restClient.Timeout = 200000000;
+                restClient.ReadWriteTimeout = 20000000;
+                restClient.CookieContainer = new System.Net.CookieContainer();
+                hubConnection = new HubConnectionBuilder()
+                    .WithUrl($"{apiUrl}technoWorldHub",
+                    options =>
+                    {
+                        var a = restClient.CookieContainer;
+                        options.AccessTokenProvider = () => Task.FromResult(restClient.CookieContainer.GetCookies(new Uri(apiUrl))[".AspNetCore.Application.Id"].Value);
+                    })
+                    .Build();
+            }
+            catch (Exception ex)
+            {
+                MaterialNotification.Show("Ошибка, в конфиг файле установлен неверный URI", $"{ex.Message}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);               
+            }
 
         }
         public static ApiService Instance => instance ?? (instance = new ApiService());
-        public const string apiUrl = "http://localhost:5000/";
+        public static readonly string apiUrl = ConfigurationManager.AppSettings["ApiConnection"].ToString();
         public RestClient GetRestClient => restClient;
         public HubConnection GetHubConnection => hubConnection;
         public async void ShutDownService()
@@ -71,12 +81,12 @@ namespace WPF_VM_Abstractions
                 return null;
             }
         }
-        public Task<IRestResponse> AuthorizeInCash(string login, string password)
+        public Task<IRestResponse> AuthorizeInCash(string login, string hashPass)
         {
             try
             {
                 RestRequest request = new RestRequest($"{apiUrl}userToken", Method.POST);
-                request.AddJsonBody(new { userName = login, password = password, programm = "cash" });
+                request.AddJsonBody(new { userName = login, hashPass = hashPass, programm = "cash" });
                 var response = restClient.ExecuteAsync(request);
                 return response;
             }

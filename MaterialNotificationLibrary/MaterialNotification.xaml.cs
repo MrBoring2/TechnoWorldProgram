@@ -23,7 +23,7 @@ namespace MaterialNotificationLibrary
     /// <summary>
     /// Логика взаимодействия для MaterialNotification.xaml
     /// </summary>
-    public partial class MaterialNotification : MaterialWindow, INotifyPropertyChanged
+    public partial class MaterialNotification : Window, INotifyPropertyChanged
     {
         private List<CancelEventHandler> _preCloseEvents = new List<CancelEventHandler>();
 

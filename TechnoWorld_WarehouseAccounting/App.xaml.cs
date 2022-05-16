@@ -35,7 +35,14 @@ namespace TechnoWorld_WarehouseAccounting
             RegisterWindows();
             var loginWindow = new LoginWindowVM();
             WindowNavigation.Instance.OpenWindow(loginWindow);
-            ApiService.Instance.GetHubConnection.Closed += HubConnection_Closed;
+            if (ApiService.Instance.GetHubConnection == null)
+            {
+                App.Current.Shutdown();
+            }
+            else
+            {
+                ApiService.Instance.GetHubConnection.Closed += HubConnection_Closed;
+            }
         }
         private Task HubConnection_Closed(Exception arg)
         {

@@ -20,6 +20,7 @@ using WPF_Helpers.Abstractions;
 using TechoWorld_DataModels_v2.Models;
 using MaterialNotificationLibrary;
 using MaterialNotificationLibrary.Enums;
+using WPF_Helpers.Services;
 
 namespace TechnoWorld_Cash.ViewModels.Windows
 {
@@ -51,7 +52,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             try
             {
                 IsEnabled = false;
-                var response = await ApiService.Instance.AuthorizeInCash(Login, Password);
+                var response = await ApiService.Instance.AuthorizeInCash(Login, MD5EncoderService.EncodePassword(Login, Password));
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     var data = JsonConvert.DeserializeObject<AuthResponseModel>(response.Content);

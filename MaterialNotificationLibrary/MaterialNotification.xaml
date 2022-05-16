@@ -1,4 +1,4 @@
-﻿<mde:MaterialWindow x:Class="MaterialNotificationLibrary.MaterialNotification"
+﻿<Window x:Class="MaterialNotificationLibrary.MaterialNotification"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,7 +8,7 @@
         xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
         Name="_MaterialNotification"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        TextElement.FontWeight="Regular"   BorderBackgroundBrush="Transparent"
+        TextElement.FontWeight="Regular" 
         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:enums="clr-namespace:MaterialNotificationLibrary.Enums"
         Topmost="True"
@@ -16,9 +16,9 @@
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
         Title="MaterialNotification" WindowStyle="None" WindowStartupLocation="CenterScreen" Height="300" Width="500" MaxHeight="600" MaxWidth="600" Background="Transparent" AllowsTransparency="True"
                     Closing="Event_Closing">
-    <mde:MaterialWindow.Triggers>
-        
-    </mde:MaterialWindow.Triggers>
+    <Window.Triggers>
+
+    </Window.Triggers>
     <Grid>
         <Border x:Name="_Dialog"  Background="White" CornerRadius="5" Margin="10" Padding="20" RenderTransformOrigin="0.5,0.5" BorderBrush="LightGray" BorderThickness="1">
             <Border.Triggers>
@@ -134,4 +134,4 @@
         </Border>
     </Grid>
 
-</mde:MaterialWindow>
+</Window>

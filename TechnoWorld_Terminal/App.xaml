@@ -35,8 +35,8 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepOrange.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.DeepOrange.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/TechnoWorld_Notification;component/Resources/Animation/WindowAnimations.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/TechnoWorld_Notification;component/Resources/Styles/MainTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialNotificationLibrary;component/Resources/Animation/WindowAnimations.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialNotificationLibrary;component/Resources/Styles/MainTheme.xaml"/>
                 <!-- Theme setting -->
               
             </ResourceDictionary.MergedDictionaries>
