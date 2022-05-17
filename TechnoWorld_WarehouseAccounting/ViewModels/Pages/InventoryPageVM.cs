@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using TechnoWorld_WarehouseAccounting.Models;
 using TechnoWorld_WarehouseAccounting.Services;
 using TechnoWorld_WarehouseAccounting.ViewModels.Windows;
@@ -27,6 +28,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         private InventoryModel selectedInventoryModel;
         private ObservableCollection<Storage> storages;
         private Storage selectedStorage;
+        private Visibility emptyVisibility;
         public InventoryPageVM()
         {
             LoadStorages();
@@ -37,8 +39,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             FillTableCommand = new RelayCommand(FillTable);
             SpendCommand = new RelayCommand(Spend);
             ClearTableCommand = new RelayCommand(ClearTable);
+            EmptyVisibility = Visibility.Visible;
         }
-
+        public Visibility EmptyVisibility { get => emptyVisibility; set { emptyVisibility = value; OnPropertyChanged(); } }
         private void ClearTable(object obj)
         {
             InventoryModels.Clear();
@@ -91,10 +94,19 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 }
                 id++;
             }
+            if (InventoryModels.Count <= 0)
+            {
+                EmptyVisibility = Visibility.Visible;
+            }
+            else
+            {
+                EmptyVisibility = Visibility.Collapsed;
+            }
         }
 
         private void InventoryModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
+            
             FactTotalPrice = InventoryModels.Sum(p => p.FactTotalPrice);
             BuhTotalPrice = InventoryModels.Sum(p => p.BuhTotalPrice);
         }
@@ -209,17 +221,25 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 var application = new Excel.Application();
                 application.SheetsInNewWorkbook = 1;
                 Excel.Workbook workbook = application.Workbooks.Add(Type.Missing);
-                int startRowIndex = 5;
+            
                 Excel.Worksheet worksheet = application.Worksheets.Item[1];
                 worksheet.Name = "Инвентаризация";
                 worksheet.Cells[1][1] = $"Инвентаризация № {inventoryNumber} от {DateTime.Now.ToLocalTime()}";
                 worksheet.Cells[1][1].Font.Size = 20;
                 worksheet.Cells[1][1].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-                Excel.Range r = worksheet.Range[worksheet.Cells[1][1], worksheet.Cells[8][1]];
-                r.Merge();
+                Excel.Range title = worksheet.Range[worksheet.Cells[1][1], worksheet.Cells[8][1]];
+                title.Merge();
 
                 worksheet.Cells[1][3] = $"Склад: {SelectedStorage.Name}";
                 worksheet.Cells[1][3].Font.Size = 16;
+
+                worksheet.Cells[1][5] = $"Продукция";
+                worksheet.Cells[1][5].Font.Size = 16;
+                worksheet.Cells[1][5].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
+                Excel.Range tableTitle = worksheet.Range[worksheet.Cells[1][5], worksheet.Cells[8][5]];
+                tableTitle.Merge();
+
+                int startRowIndex = 7;
 
                 worksheet.Cells[1][startRowIndex] = "№";
                 worksheet.Cells[2][startRowIndex] = "Название";
@@ -237,10 +257,10 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                     worksheet.Cells[2][startRowIndex] = inventoryModel.Electronics.Model;
                     worksheet.Cells[3][startRowIndex] = inventoryModel.FactAmount;
                     worksheet.Cells[4][startRowIndex] = inventoryModel.BuhAmount;
-                    worksheet.Cells[5][startRowIndex] = inventoryModel.Deviation;
+                    worksheet.Cells[5][startRowIndex].Formula = $"=C{startRowIndex}-D{startRowIndex}";
                     worksheet.Cells[6][startRowIndex] = inventoryModel.Price;
-                    worksheet.Cells[7][startRowIndex] = inventoryModel.FactTotalPrice;
-                    worksheet.Cells[8][startRowIndex] = inventoryModel.BuhTotalPrice;
+                    worksheet.Cells[7][startRowIndex].Formula = $"=F{startRowIndex}*C{startRowIndex}";
+                    worksheet.Cells[8][startRowIndex].Formula = $"=F{startRowIndex}*D{startRowIndex}";
                     startRowIndex++;
                 }
                 //startRowIndex += 2;
@@ -251,7 +271,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 worksheet.Cells[7][startRowIndex] = "Сумма учётная:";
                 worksheet.Cells[8][startRowIndex].Formula = $"=SUM(H{2}:" + $"H{startRowIndex - 1})";
                 worksheet.Cells[5][startRowIndex].Font.Bold = worksheet.Cells[7][startRowIndex].Font.Bold = true;
-                Excel.Range rangeBorders = worksheet.Range[worksheet.Cells[1][5], worksheet.Cells[8][startRowIndex - 1]];
+                Excel.Range rangeBorders = worksheet.Range[worksheet.Cells[1][7], worksheet.Cells[8][startRowIndex - 1]];
                 rangeBorders.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle =
                 rangeBorders.Borders[Excel.XlBordersIndex.xlEdgeLeft].LineStyle =
                 rangeBorders.Borders[Excel.XlBordersIndex.xlEdgeRight].LineStyle =
