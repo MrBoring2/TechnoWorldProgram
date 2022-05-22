@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Helpers", "WPF_Helpers\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialNotificationLibrary", "MaterialNotificationLibrary\MaterialNotificationLibrary.csproj", "{F3A6E947-89EC-424A-8713-A997DC0D8485}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TechnoWorld_WarehouseAccouningSetup", "TechnoWorld_WarehouseAccouningSetup\TechnoWorld_WarehouseAccouningSetup.vdproj", "{D7BFD362-58F6-4F88-AFE5-CA514C8C1980}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TechnoWorld_WarehouseAccountingSetup", "TechnoWorld_WarehouseAccountingSetup\TechnoWorld_WarehouseAccountingSetup.vdproj", "{D7BFD362-58F6-4F88-AFE5-CA514C8C1980}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TechnoWorld_TerminalSetup", "TechnoWorld_TerminalSetup\TechnoWorld_TerminalSetup.vdproj", "{1D024A53-A282-4710-A9BB-B24D7679ECCC}"
 EndProject

@@ -309,6 +309,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_2DA534F7026F6744838F4FBB2410F5BD"
+        "OwnerKey" = "8:_FB05383484BD9EE13F8A5E597D11EBC9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_31E56498E58A6DB3E34F11D673879B5F"
         "OwnerKey" = "8:_7729EE0D41DD4C1B81F6FB5AEC6ABFA1"
         "MsmSig" = "8:_UNDEFINED"
@@ -497,12 +503,6 @@
         {
         "MsmKey" = "8:_41A40EDD22A55D33417A1341554BBDCC"
         "OwnerKey" = "8:_7729EE0D41DD4C1B81F6FB5AEC6ABFA1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_41A40EDD22A55D33417A1341554BBDCC"
-        "OwnerKey" = "8:_0D52EDD402FC11F5334281975B6BA2D4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1509,12 +1509,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E2EA0D438C05450E7ED4883C9C71986E"
-        "OwnerKey" = "8:_FB05383484BD9EE13F8A5E597D11EBC9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_E8B2EA776722AD56208C26786A6D50CC"
         "OwnerKey" = "8:_7729EE0D41DD4C1B81F6FB5AEC6ABFA1"
         "MsmSig" = "8:_UNDEFINED"
@@ -1594,12 +1588,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7E0D04A7D630512E9DE0265624079E5B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7729EE0D41DD4C1B81F6FB5AEC6ABFA1"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1607,6 +1595,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_FB05383484BD9EE13F8A5E597D11EBC9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2DA534F7026F6744838F4FBB2410F5BD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -2479,6 +2473,12 @@
         "OwnerKey" = "8:_88C924929E94357898F5523D30B5ED58"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7E0D04A7D630512E9DE0265624079E5B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -2497,6 +2497,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -2513,6 +2521,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -3413,6 +3429,37 @@
                     }
                 }
             "SourcePath" = "8:System.Reflection.Emit.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_F9EB79E9FFEF41D18F9C4E295B2C284B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2DA534F7026F6744838F4FBB2410F5BD"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:RestSharp, Version=106.8.10.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_2DA534F7026F6744838F4FBB2410F5BD"
+                    {
+                    "Name" = "8:RestSharp.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:RestSharp.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_F9EB79E9FFEF41D18F9C4E295B2C284B"
