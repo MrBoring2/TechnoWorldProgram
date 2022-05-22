@@ -38,7 +38,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 {
                     selectedMenuItem = value;
                     OnPropertyChanged();
-                    WindowTitle = SelectedMenuItem == null ? "" : $"ТЕХНО МИР | {selectedMenuItem.Title}";
+                    WindowTitle = SelectedMenuItem == null ? "" : $"ТЕХНО МИР: Управление предприятием | {selectedMenuItem.Title}";
                     if (selectedMenuItem != null)
                     {
                         PageNavigation.Navigate(selectedMenuItem.PageDestination);

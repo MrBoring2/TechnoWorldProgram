@@ -22,7 +22,10 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
     {
         private bool isAdd;
         private bool isNewPasswordChecked;
+        private bool isNewLoginChecked;
         private string newPassword;
+        private string newLogin;
+        private string checkPassword;
         private Visibility isEditVisibility;
         private ObservableCollection<Post> posts;
         private Employee CurrentEmployee { get; set; }
@@ -79,8 +82,12 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         [StringLength(120, ErrorMessage = "Длина поля ФИО слишком большая: максимум {1} символов")]
         public string FullName { get => CurrentEmployee.FullName; set { CurrentEmployee.FullName = value; ValidationMessageSetter(value); } }
         public Post Post { get => CurrentEmployee.Post; set { CurrentEmployee.Post = value; OnPropertyChanged(); SetRole(); } }
-        public bool IsNewPasswordChecked { get => isNewPasswordChecked;
-            set { isNewPasswordChecked = value; OnPropertyChanged(); ValidationNotRequiredMessageSetter(IsNewPasswordChecked, NewPassword, nameof(NewPassword)); } }
+        public bool IsNewPasswordChecked
+        {
+            get => isNewPasswordChecked;
+            set { isNewPasswordChecked = value; OnPropertyChanged(); ValidationNotRequiredMessageSetter(IsNewPasswordChecked, NewPassword, nameof(NewPassword)); }
+        }
+        public bool IsNewLoginChecked { get => isNewLoginChecked; set { isNewLoginChecked = value; ValidationNotRequiredMessageSetter(IsNewLoginChecked, NewLogin, nameof(NewLogin)); } }
         private void SetRole()
         {
             switch (Post.PostId)
@@ -151,8 +158,23 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
 
         [StringLength(100, MinimumLength = 6, ErrorMessage = "Длина поля Новый пароль должна быть от {2} до {1} символов")]
-        public string NewPassword { get => newPassword; 
-            set { newPassword = value; ValidationNotRequiredMessageSetter(IsNewPasswordChecked, value); } }
+        public string NewPassword
+        {
+            get => newPassword;
+            set { newPassword = value; ValidationNotRequiredMessageSetter(IsNewPasswordChecked, value); }
+        }
+        [StringLength(100, MinimumLength = 6, ErrorMessage = "Длина поля Подтвердите пароль должна быть от {2} до {1} символов")]
+        public string CheckPassword
+        {
+            get => checkPassword;
+            set { checkPassword = value; ValidationNotRequiredMessageSetter(IsNewLoginChecked, value); }
+        }
+        [StringLength(100, MinimumLength = 6, ErrorMessage = "Длина поля Новый логин должна быть от {2} до {1} символов")]
+        public string NewLogin
+        {
+            get => newLogin;
+            set { newLogin = value; ValidationNotRequiredMessageSetter(IsNewLoginChecked, value); }
+        }
 
         private async Task Initialize()
         {
@@ -205,16 +227,27 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             if (GetErrorsCount > 0)
             {
                 MaterialNotification.Show("Внимание", "Не все поля заполены верно!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                return;
             }
             else
             {
+                if (IsNewLoginChecked)
+                {
+                    if (MD5EncoderService.EncodePassword(Login, CheckPassword) == Password)
+                    {
+                        Login = NewLogin;
+                        Password = MD5EncoderService.EncodePassword(Login, CheckPassword);
+                    }
+                    else
+                    {
+                        MaterialNotification.Show("Ошибка", "Введённый пароль для изменения логина неверный!", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
+                        return;
+                    }
+                }
+
                 if (!string.IsNullOrEmpty(NewPassword))
                 {
                     CurrentEmployee.Password = MD5EncoderService.EncodePassword(Login, NewPassword);
-                }
-                else
-                {
-                    CurrentEmployee.Password = MD5EncoderService.EncodePassword(Login, Password);
                 }
 
                 if (isAdd)

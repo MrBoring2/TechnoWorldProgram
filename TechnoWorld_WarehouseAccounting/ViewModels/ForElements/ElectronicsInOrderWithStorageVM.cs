@@ -26,6 +26,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.ForElements
         public int Count { get; set; }
         public decimal TotalPrice => Electronic.SalePrice * Count;
         public string IsOfferedForSale => Electronic.IsOfferedForSale ? "Выставлен на продажу" : "Снят с продажи";
-        public int CountInStorage => Storage.ElectronicsToStorages.Count > 0 ? Storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == Electronic.ElectronicsId).Quantity : 0;
+        public int CountInStorage => Storage.ElectronicsToStorages.Count > 0 ? Storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == Electronic.ElectronicsId) != null ? 
+                                                                               Storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == Electronic.ElectronicsId).Quantity : 0 
+                                                                               : 0;
     }
 }

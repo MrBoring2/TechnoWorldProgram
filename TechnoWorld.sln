@@ -17,7 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Helpers", "WPF_Helpers\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialNotificationLibrary", "MaterialNotificationLibrary\MaterialNotificationLibrary.csproj", "{F3A6E947-89EC-424A-8713-A997DC0D8485}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TestWizard", "TestWizard\TestWizard.vdproj", "{BF7ADB48-C507-451B-94B9-DE9C8F8F074A}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TechnoWorld_WarehouseAccouningSetup", "TechnoWorld_WarehouseAccouningSetup\TechnoWorld_WarehouseAccouningSetup.vdproj", "{D7BFD362-58F6-4F88-AFE5-CA514C8C1980}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TechnoWorld_TerminalSetup", "TechnoWorld_TerminalSetup\TechnoWorld_TerminalSetup.vdproj", "{1D024A53-A282-4710-A9BB-B24D7679ECCC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TechnoWorld_CashSetup", "TechnoWorld_CashSetup\TechnoWorld_CashSetup.vdproj", "{ECC674B8-CA46-4AC1-94AD-BFF26F811294}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,9 +72,15 @@ Global
 		{F3A6E947-89EC-424A-8713-A997DC0D8485}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3A6E947-89EC-424A-8713-A997DC0D8485}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3A6E947-89EC-424A-8713-A997DC0D8485}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF7ADB48-C507-451B-94B9-DE9C8F8F074A}.All|Any CPU.ActiveCfg = Debug
-		{BF7ADB48-C507-451B-94B9-DE9C8F8F074A}.Debug|Any CPU.ActiveCfg = Debug
-		{BF7ADB48-C507-451B-94B9-DE9C8F8F074A}.Release|Any CPU.ActiveCfg = Release
+		{D7BFD362-58F6-4F88-AFE5-CA514C8C1980}.All|Any CPU.ActiveCfg = Debug
+		{D7BFD362-58F6-4F88-AFE5-CA514C8C1980}.Debug|Any CPU.ActiveCfg = Debug
+		{D7BFD362-58F6-4F88-AFE5-CA514C8C1980}.Release|Any CPU.ActiveCfg = Release
+		{1D024A53-A282-4710-A9BB-B24D7679ECCC}.All|Any CPU.ActiveCfg = Debug
+		{1D024A53-A282-4710-A9BB-B24D7679ECCC}.Debug|Any CPU.ActiveCfg = Debug
+		{1D024A53-A282-4710-A9BB-B24D7679ECCC}.Release|Any CPU.ActiveCfg = Release
+		{ECC674B8-CA46-4AC1-94AD-BFF26F811294}.All|Any CPU.ActiveCfg = Debug
+		{ECC674B8-CA46-4AC1-94AD-BFF26F811294}.Debug|Any CPU.ActiveCfg = Debug
+		{ECC674B8-CA46-4AC1-94AD-BFF26F811294}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

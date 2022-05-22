@@ -1,4 +1,4 @@
-﻿ using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -36,6 +36,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             SaveCommand = new RelayCommand(Save);
             LoadImageCommand = new RelayCommand(LoadImage);
             CancelCommand = new RelayCommand(Cancel);
+            CreateManufacturerCommand = new RelayCommand(CreateManufacturer);
             CurrentElectronic = new Electronic();
             IsAdd = true;
 
@@ -50,6 +51,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             ValidationMessageSetter(ManufacturerCountry == null ? "" : ManufacturerCountry, nameof(ManufacturerCountry));
             ValidationMessageSetter(Description == null ? "" : Description, nameof(Description));
         }
+
+
         public ProductWindowVM(Electronic electronic) : this()
         {
             Task.Run(() => InitializeFields(electronic).Wait());
@@ -74,6 +77,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         public RelayCommand SaveCommand { get; set; }
         public RelayCommand CancelCommand { get; set; }
+        public RelayCommand CreateManufacturerCommand { get; set; }
         public RelayCommand LoadImageCommand { get; set; }
         public RelayCommand CheckNumerikTextBoxCommand { get; set; }
 
@@ -218,6 +222,15 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             }
         }
 
+        private async void CreateManufacturer(object obj)
+        {
+            AddManufacturerWindowVM addManufacturerWindow = new AddManufacturerWindowVM();
+            await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(addManufacturerWindow));
+            if (addManufacturerWindow.DialogResult == true)
+            {
+                await LoadManufacturers();
+            }
+        }
         private void LoadImage(object obj)
         {
             var openFileDialog = new OpenFileDialog();

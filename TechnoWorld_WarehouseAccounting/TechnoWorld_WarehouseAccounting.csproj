@@ -301,6 +301,7 @@
     <Compile Include="ViewModels\Pages\Statistics\ColumnChartStatisticsPageVM.cs" />
     <Compile Include="ViewModels\Pages\Statistics\LineChartStatisticPageVM.cs" />
     <Compile Include="ViewModels\Pages\Statistics\PieChartStatisticsPageVM.cs" />
+    <Compile Include="ViewModels\Windows\AddManufacturerWindowVM.cs" />
     <Compile Include="Views\ChartTooltips\PieSalesTooplip.xaml.cs">
       <DependentUpon>PieSalesTooplip.xaml</DependentUpon>
     </Compile>
@@ -309,9 +310,6 @@
     </Compile>
     <Compile Include="Views\Pages\InventoryPage.xaml.cs">
       <DependentUpon>InventoryPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Pages\Statistics\ColumnChartStatisticsPage.xaml.cs">
-      <DependentUpon>ColumnChartStatisticsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\Statistics\LineChartStatisticsPage.xaml.cs">
       <DependentUpon>LineChartStatisticsPage.xaml</DependentUpon>
@@ -341,8 +339,8 @@
     <Compile Include="Views\Pages\SalesStatisticsPage.xaml.cs">
       <DependentUpon>SalesStatisticsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Windows\CustomMessageBox.xaml.cs">
-      <DependentUpon>CustomMessageBox.xaml</DependentUpon>
+    <Compile Include="Views\Windows\AddManufacturerWindow.xaml.cs">
+      <DependentUpon>AddManufacturerWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\DeliveryWindow.xaml.cs">
       <DependentUpon>DeliveryWindow.xaml</DependentUpon>
@@ -413,10 +411,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Pages\Statistics\ColumnChartStatisticsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\Pages\Statistics\LineChartStatisticsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -445,9 +439,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Windows\CustomMessageBox.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Views\Windows\AddManufacturerWindow.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\DeliveryWindow.xaml">
       <SubType>Designer</SubType>

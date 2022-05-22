@@ -19,7 +19,7 @@ namespace TechoWorld_DataModels_v2.Entities
         public int SupplierId { get; set; }
         public DateTime DateOfOrder { get; set; }
         public DateTime DateOfDelivery { get; set; }
-        public int EmployeeId { get; set; }
+        public int? EmployeeId { get; set; }
         public int StatusId { get; set; }
         [NotMapped]
         public decimal TotalPrice => ElectronicsToDeliveries.Any(p => p.Electronics == null) ? 0 : ElectronicsToDeliveries.Sum(p => p.Electronics.PurchasePrice * p.Quantity + (p.Electronics.PurchasePrice * p.Quantity * 18 / 100));

@@ -63,7 +63,10 @@
                             </interactions:EventTrigger>
                         </interactions:Interaction.Triggers>
                     </TextBox>
-                    <ComboBox ItemsSource="{Binding Manufacturers}" IsEnabled="{Binding IsAdd}" SelectedItem="{Binding Manufacturer}" SelectedValue="{Binding Manufacturer.ManufacturerId}" SelectedValuePath="ManufacturerId"  DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                    <Grid>
+                        <ComboBox ItemsSource="{Binding Manufacturers}" IsEnabled="{Binding IsAdd}" SelectedItem="{Binding Manufacturer}" SelectedValue="{Binding Manufacturer.ManufacturerId}" SelectedValuePath="ManufacturerId"  DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Width="320" HorizontalAlignment="Left"/>
+                        <Button Command="{Binding CreateManufacturerCommand}" Content="Создать" HorizontalAlignment="Right" Style="{StaticResource btn}" Width="100" Margin="0,0,5,0" Cursor="Hand"/>
+                    </Grid>
                     <TextBox Text="{Binding ManufacturerCountry, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Страна производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <TextBox Text="{Binding Color, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цвет" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <TextBox Text="{Binding Weight, StringFormat=F2, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">

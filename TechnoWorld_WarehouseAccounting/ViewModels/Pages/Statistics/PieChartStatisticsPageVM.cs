@@ -175,7 +175,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
                         {
                             foreach (var orderElectronics in order.OrderElectronics)
                             {
-                                if (orderElectronics.Electronics.TypeId == categories.Id)
+                                if (orderElectronics.Electronics.Type.CategoryId == categories.Id)
                                 {
                                     count += orderElectronics.Count;
                                     sales += orderElectronics.Electronics.SalePrice * orderElectronics.Count;

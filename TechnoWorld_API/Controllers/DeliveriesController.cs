@@ -57,6 +57,7 @@ namespace TechnoWorld_API.Controllers
                 {
                     list = list.OrderByDescending(p => p.GetProperty(filter.SortParameter));
                 }
+                var l = list.ToList();
                 count = list.Count();
                 if (filter.CurrentPage > 1)
                 {

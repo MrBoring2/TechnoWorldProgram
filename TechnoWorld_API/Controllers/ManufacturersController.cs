@@ -85,6 +85,12 @@ namespace BNS_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Manufacturer>> PostManufacturer(Manufacturer manufacturer)
         {
+            var dbManufacturer = await _context.Manufacturers.FirstOrDefaultAsync(p => p.Name.Equals(manufacturer.Name));
+            if (dbManufacturer != null)
+            {
+                return BadRequest("Производитель с таким названием уже существует!");
+            }
+
             _context.Manufacturers.Add(manufacturer);
             await _context.SaveChangesAsync();
 

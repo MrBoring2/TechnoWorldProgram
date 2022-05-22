@@ -56,7 +56,6 @@ namespace TechnoWorld_WarehouseAccounting.Services
         {
             RegisterPageWithVM<LineChartStatisticPageVM, LineChartStatisticsPage>();
             RegisterPageWithVM<PieChartStatisticsPageVM, PieChartStaticticsPage>();
-            RegisterPageWithVM<ColumnChartStatisticsPageVM, ColumnChartStatisticsPage>();
         }
         public void ClearCreatedPages()
         {

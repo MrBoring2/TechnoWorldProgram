@@ -12,6 +12,10 @@ TechoWorld_DataModels/bin/
 TechoWorld_DataModels/obj/
 MaterialNotificationLibrary/bin/
 MaterialNotificationLibrary/obj/
-TestWizard/Debug
-TestWizard/Release
+TechnoWorld_CashSetup/Debug
+TechnoWorld_CashSetup/Release
+TechnoWorld_WarehouseAccountingSetup/Debug
+TechnoWorld_WarehouseAccountingSetup/Release
+TechnoWorld_WarehouseAccountingTerminal/Debug
+TechnoWorld_WarehouseAccountingTerminal/Release
 

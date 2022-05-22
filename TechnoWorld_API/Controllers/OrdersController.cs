@@ -122,7 +122,7 @@ namespace TechnoWorld_API.Controllers
                 {
                     if (storage.ElectronicsToStorages.FirstOrDefault(p => p.ElectronicsId == electronic.ElectronicsId) == null)
                     {
-                        LogService.LodMessage($"Не хватает товара {electronic.Electronics.Model}на складе", LogLevel.Info);
+                        LogService.LodMessage($"Не хватает товара {electronic.Electronics.Model}на складе", LogLevel.Warning);
                         return BadRequest($"Не хватает товара {electronic.Electronics.Model} на складе");
                     }
                     else

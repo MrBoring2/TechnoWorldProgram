@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "BNS_API": {
+    "TehchnoWorld_API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

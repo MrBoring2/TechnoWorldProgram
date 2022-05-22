@@ -28,7 +28,7 @@
 
                 <ListView Grid.Row="1" HorizontalContentAlignment="Stretch" Margin="5" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding CartItems}" ItemTemplate="{StaticResource cartListView}"/>
                 <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Margin="10">
-                    <Image Source="/TechnoWorld_Terminal;component/Resources/empty.png" Width="280" Height="190"/>
+                    <Image Source="/Resources/Images/empty.png" Width="280" Height="190"/>
                     <TextBlock  Text="Ваша корзина пуста" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <TextBlock  Text="Выберите нужные Вам товары из каталога магазина и добавьте их в вашу корзину" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <Button Content="Назад в каталог" Background="Orange" HorizontalAlignment="Center" Width="300" BorderBrush="Orange" Margin="5" Command="{Binding BackToElectronicsCommand}" Cursor="Hand"/>

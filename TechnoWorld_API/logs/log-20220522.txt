@@ -1,0 +1,1287 @@
+2022-05-22 19:14:59.641 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:14:59.723 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:14:59.726 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:14:59.727 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:14:59.727 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:15:23.551 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 19:15:23.590 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:57348) по POST /userToken ответил 200 за 2159.8323 мс
+2022-05-22 19:15:23.836 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57354) по POST /technoWorldHub/negotiate ответил 200 за 48.0548 мс
+2022-05-22 19:15:23.971 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 19:15:24.352 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Categories ответил 200 за 99.7953 мс
+2022-05-22 19:15:24.459 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/ElectrnicsTypes/All ответил 200 за 46.0400 мс
+2022-05-22 19:15:25.057 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Electronics/Filter ответил 200 за 460.3310 мс
+2022-05-22 19:15:28.009 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Posts ответил 200 за 8.5591 мс
+2022-05-22 19:15:28.038 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 23.1914 мс
+2022-05-22 19:15:28.738 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Status ответил 200 за 13.6112 мс
+2022-05-22 19:15:28.845 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:15:28.858 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Deliveries/Filter ответил 500 за 105.6282 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:15:28.911 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:15:34.447 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Storages ответил 200 за 43.3054 мс
+2022-05-22 19:15:54.510 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Orders/Filter ответил 200 за 84.4471 мс
+2022-05-22 19:16:00.090 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:16:00.096 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Deliveries/Filter ответил 500 за 10.9624 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:16:00.117 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:16:00.346 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:16:00.362 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Deliveries/Filter ответил 500 за 19.3740 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:16:00.386 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:16:00.881 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:16:00.887 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Deliveries/Filter ответил 500 за 10.7218 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:16:00.911 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:16:01.146 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:16:01.151 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Deliveries/Filter ответил 500 за 6.5978 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:16:01.172 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:16:16.470 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 3.2940 мс
+2022-05-22 19:16:16.915 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 3.1650 мс
+2022-05-22 19:16:17.491 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 1.3768 мс
+2022-05-22 19:16:17.762 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 1.4725 мс
+2022-05-22 19:16:18.558 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 1.6093 мс
+2022-05-22 19:16:19.114 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 1.8220 мс
+2022-05-22 19:16:19.635 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 5.3220 мс
+2022-05-22 19:16:21.443 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 1.6960 мс
+2022-05-22 19:16:22.506 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 5.1520 мс
+2022-05-22 19:16:22.818 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 1.4431 мс
+2022-05-22 19:16:23.490 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 1.4314 мс
+2022-05-22 19:16:23.778 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Employees/Filter ответил 200 за 1.5730 мс
+2022-05-22 19:16:27.172 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:16:27.178 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Deliveries/Filter ответил 500 за 9.3767 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:16:27.204 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:16:27.626 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:16:27.631 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57348) по GET /api/Deliveries/Filter ответил 500 за 6.7660 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:16:27.653 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method453(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method418(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:17:26.735 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:17:26.802 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:17:26.815 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:17:26.816 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:17:26.816 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:17:36.108 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 19:17:36.159 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57418) по POST /userToken ответил 200 за 5709.4562 мс
+2022-05-22 19:17:36.172 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57425) по POST /technoWorldHub/negotiate ответил 200 за 18.3096 мс
+2022-05-22 19:17:36.210 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 19:17:36.427 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57418) по GET /api/Categories ответил 200 за 196.2619 мс
+2022-05-22 19:17:36.530 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57418) по GET /api/ElectrnicsTypes/All ответил 200 за 100.5768 мс
+2022-05-22 19:17:37.763 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57418) по GET /api/Electronics/Filter ответил 200 за 1227.2618 мс
+2022-05-22 19:17:39.017 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57418) по GET /api/Status ответил 200 за 20.6007 мс
+2022-05-22 19:17:46.115 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:17:46.572 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57418) по GET /api/Deliveries/Filter ответил 500 за 7535.5941 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method363(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:17:46.771 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method363(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:17:55.383 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:17:55.777 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57418) по GET /api/Deliveries/Filter ответил 500 за 3131.9898 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method363(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:17:55.956 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method363(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:18:21.233 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:18:21.294 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:18:21.304 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:18:21.304 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:18:21.305 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:18:48.327 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:18:48.408 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:18:48.421 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:18:48.422 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:18:48.429 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:18:53.884 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method61(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method61(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:18:54.396 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57460) по GET /api/Deliveries/Filter ответил 500 за 5491.9416 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method61(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method9(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:18:54.676 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method61(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method9(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:18:56.994 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 19:18:57.031 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57460) по POST /userToken ответил 200 за 262.6933 мс
+2022-05-22 19:18:57.049 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57489) по POST /technoWorldHub/negotiate ответил 200 за 15.3588 мс
+2022-05-22 19:18:57.087 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 19:18:57.179 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57460) по GET /api/Categories ответил 200 за 69.7403 мс
+2022-05-22 19:18:57.224 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57460) по GET /api/ElectrnicsTypes/All ответил 200 за 40.8301 мс
+2022-05-22 19:18:57.708 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57460) по GET /api/Electronics/Filter ответил 200 за 449.4354 мс
+2022-05-22 19:19:06.109 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57460) по GET /api/Status ответил 200 за 24.4647 мс
+2022-05-22 19:19:27.589 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method61(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method61(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:19:27.995 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57460) по GET /api/Deliveries/Filter ответил 500 за 21863.5031 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method61(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method9(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:19:28.179 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method61(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.GetCount(Boolean onlyIfCheap)
+   at System.Linq.OrderedEnumerable`1.GetCount(Boolean onlyIfCheap)
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method9(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:19:48.093 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:19:48.169 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:19:48.180 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:19:48.181 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:19:48.182 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:19:51.972 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 19:19:52.023 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57538) по POST /userToken ответил 200 за 1915.0325 мс
+2022-05-22 19:19:52.033 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57539) по POST /technoWorldHub/negotiate ответил 200 за 15.3923 мс
+2022-05-22 19:19:52.068 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 19:19:52.171 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57538) по GET /api/Categories ответил 200 за 80.0332 мс
+2022-05-22 19:19:52.255 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57538) по GET /api/ElectrnicsTypes/All ответил 200 за 53.6694 мс
+2022-05-22 19:19:52.768 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57538) по GET /api/Electronics/Filter ответил 200 за 500.9112 мс
+2022-05-22 19:19:54.062 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57538) по GET /api/Status ответил 200 за 21.6434 мс
+2022-05-22 19:20:01.373 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+2022-05-22 19:20:01.834 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:57538) по GET /api/Deliveries/Filter ответил 500 за 7751.5987 мс
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.ToList()
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method363(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-05-22 19:20:02.044 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method398(Closure , QueryContext , DbDataReader , ResultContext , SplitQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.ToArray()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.ToList()
+   at TechnoWorld_API.Controllers.DeliveriesController.<>c__DisplayClass3_0.<GetDeliveriesWithFilter>b__0() in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 60
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at TechnoWorld_API.Controllers.DeliveriesController.GetDeliveriesWithFilter(String jsonFilter) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\DeliveriesController.cs:line 39
+   at lambda_method363(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-22 19:23:29.796 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:23:29.874 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:23:29.886 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:23:29.892 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:23:29.893 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:23:33.398 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 19:23:33.442 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57982) по POST /userToken ответил 200 за 1651.5003 мс
+2022-05-22 19:23:33.454 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57983) по POST /technoWorldHub/negotiate ответил 200 за 15.1609 мс
+2022-05-22 19:23:33.484 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 19:23:33.602 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57982) по GET /api/Categories ответил 200 за 94.1517 мс
+2022-05-22 19:23:33.668 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57982) по GET /api/ElectrnicsTypes/All ответил 200 за 44.6478 мс
+2022-05-22 19:23:33.984 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57982) по GET /api/Electronics/Filter ответил 200 за 303.0962 мс
+2022-05-22 19:23:35.772 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57982) по GET /api/Status ответил 200 за 15.4813 мс
+2022-05-22 19:23:47.833 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57982) по GET /api/Deliveries/Filter ответил 200 за 12038.0447 мс
+2022-05-22 19:24:03.289 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57995) по GET /api/Deliveries/Filter ответил 200 за 3338.9739 мс
+2022-05-22 19:24:03.330 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57998) по GET /api/Deliveries/Filter ответил 200 за 2850.3897 мс
+2022-05-22 19:24:03.345 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57992) по GET /api/Deliveries/Filter ответил 200 за 7031.6053 мс
+2022-05-22 19:24:03.374 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57999) по GET /api/Deliveries/Filter ответил 200 за 2891.2293 мс
+2022-05-22 19:24:03.375 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57982) по GET /api/Deliveries/Filter ответил 200 за 11262.2804 мс
+2022-05-22 19:24:03.385 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57997) по GET /api/Deliveries/Filter ответил 200 за 3256.6118 мс
+2022-05-22 19:24:03.387 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57996) по GET /api/Deliveries/Filter ответил 200 за 3259.0207 мс
+2022-05-22 19:24:03.393 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57994) по GET /api/Deliveries/Filter ответил 200 за 7071.1786 мс
+2022-05-22 19:24:03.397 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58000) по GET /api/Deliveries/Filter ответил 200 за 2888.0446 мс
+2022-05-22 19:24:03.398 +05:00 [INF] Запрос от MrBoring (127.0.0.1:57993) по GET /api/Deliveries/Filter ответил 200 за 7082.1708 мс
+2022-05-22 19:24:03.408 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58002) по GET /api/Deliveries/Filter ответил 200 за 530.9590 мс
+2022-05-22 19:24:03.411 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58001) по GET /api/Deliveries/Filter ответил 200 за 866.6841 мс
+2022-05-22 19:24:43.369 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:24:43.442 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:24:43.454 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:24:43.455 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:24:43.456 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:25:11.797 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:25:11.884 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:25:11.898 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:25:11.898 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:25:11.899 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:25:35.907 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:25:35.981 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:25:35.994 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:25:35.995 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:25:35.995 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:25:39.682 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 19:25:39.731 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по POST /userToken ответил 200 за 1650.1625 мс
+2022-05-22 19:25:39.741 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58155) по POST /technoWorldHub/negotiate ответил 200 за 14.5907 мс
+2022-05-22 19:25:39.772 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 19:25:39.892 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/Categories ответил 200 за 94.4761 мс
+2022-05-22 19:25:39.953 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/ElectrnicsTypes/All ответил 200 за 40.5133 мс
+2022-05-22 19:25:40.268 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/Electronics/Filter ответил 200 за 303.2182 мс
+2022-05-22 19:25:41.824 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/Status ответил 200 за 15.6522 мс
+2022-05-22 19:25:59.648 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/Deliveries/Filter ответил 200 за 17801.1786 мс
+2022-05-22 19:26:05.640 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/Deliveries/Filter ответил 200 за 159.1151 мс
+2022-05-22 19:26:10.186 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/Deliveries/Filter ответил 200 за 137.5191 мс
+2022-05-22 19:26:12.109 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/Deliveries/Filter ответил 200 за 152.7487 мс
+2022-05-22 19:26:13.749 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/Deliveries/Filter ответил 200 за 136.8458 мс
+2022-05-22 19:26:17.556 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/Deliveries/Filter ответил 200 за 47.4975 мс
+2022-05-22 19:26:17.989 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58154) по GET /api/Deliveries/Filter ответил 200 за 141.1215 мс
+2022-05-22 19:26:23.456 +05:00 [INF] MrBoring отключен от системы
+2022-05-22 19:26:23.461 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58156) по GET /technoWorldHub ответил 101 за 43718.9415 мс
+2022-05-22 19:26:48.949 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:26:49.008 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:26:49.018 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:26:49.019 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:26:49.020 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:26:59.014 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 19:26:59.062 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58200) по POST /userToken ответил 200 за 1617.4943 мс
+2022-05-22 19:26:59.360 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58201) по POST /technoWorldHub/negotiate ответил 200 за 53.1263 мс
+2022-05-22 19:26:59.502 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 19:26:59.727 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Categories ответил 200 за 74.0985 мс
+2022-05-22 19:26:59.913 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/ElectrnicsTypes/All ответил 200 за 45.9460 мс
+2022-05-22 19:27:00.324 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Electronics/Filter ответил 200 за 311.7119 мс
+2022-05-22 19:27:01.830 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Status ответил 200 за 18.7926 мс
+2022-05-22 19:27:01.912 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 70.4559 мс
+2022-05-22 19:27:03.091 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 49.8265 мс
+2022-05-22 19:27:03.268 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 51.8452 мс
+2022-05-22 19:27:03.622 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 54.3846 мс
+2022-05-22 19:27:04.925 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 88.3388 мс
+2022-05-22 19:27:05.638 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 40.2792 мс
+2022-05-22 19:27:06.256 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 40.4764 мс
+2022-05-22 19:27:08.403 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 68.7089 мс
+2022-05-22 19:27:11.331 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 126.9372 мс
+2022-05-22 19:27:13.206 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 102.5400 мс
+2022-05-22 19:27:14.007 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 46.5578 мс
+2022-05-22 19:27:14.593 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 120.8931 мс
+2022-05-22 19:27:16.621 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Deliveries/Filter ответил 200 за 150.2511 мс
+2022-05-22 19:27:17.107 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Posts ответил 200 за 11.6077 мс
+2022-05-22 19:27:17.139 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Employees/Filter ответил 200 за 21.0589 мс
+2022-05-22 19:27:19.237 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/Filter ответил 200 за 79.3465 мс
+2022-05-22 19:27:29.711 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/Filter ответил 200 за 75.5176 мс
+2022-05-22 19:27:32.640 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/Filter ответил 200 за 75.8580 мс
+2022-05-22 19:27:40.256 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Storages ответил 200 за 38.5771 мс
+2022-05-22 19:27:43.367 +05:00 [INF] Начинается выдача заказа WKCVX2Q8LL...
+2022-05-22 19:27:43.368 +05:00 [INF] Выдан товар 6.5 Смартфон realme C25S 128 ГБ синий в количествуе 2
+2022-05-22 19:27:43.546 +05:00 [INF] Выдача заказа WKCVX2Q8LL закончена.
+2022-05-22 19:27:43.554 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по PUT /api/Orders/Distribute/7 ответил 200 за 323.4399 мс
+2022-05-22 19:27:43.711 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/Filter ответил 200 за 46.0945 мс
+2022-05-22 19:27:43.852 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Storages ответил 200 за 3.6512 мс
+2022-05-22 19:27:43.930 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58212) по GET /api/Orders/Filter ответил 200 за 78.7468 мс
+2022-05-22 19:27:43.934 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Storages ответил 200 за 2.6040 мс
+2022-05-22 19:27:44.083 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58212) по GET /api/Electronics/Filter ответил 200 за 150.5416 мс
+2022-05-22 19:28:02.641 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/ElectrnicsTypes/All ответил 200 за 14.6071 мс
+2022-05-22 19:28:02.856 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/ForStatistics ответил 200 за 62.3881 мс
+2022-05-22 19:28:17.992 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/ElectrnicsTypes/All ответил 200 за 17.2086 мс
+2022-05-22 19:28:18.446 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/ForStatistics ответил 200 за 342.4525 мс
+2022-05-22 19:28:40.791 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/ElectrnicsTypes/All ответил 200 за 18.9208 мс
+2022-05-22 19:28:41.251 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/ForStatistics ответил 200 за 357.3756 мс
+2022-05-22 19:29:03.393 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Categories ответил 200 за 18.9124 мс
+2022-05-22 19:29:03.791 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/ForStatistics ответил 200 за 339.2466 мс
+2022-05-22 19:29:14.834 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/ElectrnicsTypes/All ответил 200 за 18.0541 мс
+2022-05-22 19:29:15.287 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/ForStatistics ответил 200 за 362.8465 мс
+2022-05-22 19:29:28.038 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Categories ответил 200 за 7.9185 мс
+2022-05-22 19:29:28.474 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/ForStatistics ответил 200 за 363.1453 мс
+2022-05-22 19:29:34.777 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/ElectrnicsTypes/All ответил 200 за 17.8742 мс
+2022-05-22 19:29:35.138 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58200) по GET /api/Orders/ForStatistics ответил 200 за 312.5800 мс
+2022-05-22 19:32:10.028 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:32:10.087 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:32:10.098 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:32:10.099 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:32:10.100 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:32:19.408 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 19:32:19.451 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58452) по POST /userToken ответил 200 за 1603.7561 мс
+2022-05-22 19:32:19.697 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58453) по POST /technoWorldHub/negotiate ответил 200 за 57.2603 мс
+2022-05-22 19:32:19.834 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 19:32:20.049 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Categories ответил 200 за 68.9380 мс
+2022-05-22 19:32:20.200 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/ElectrnicsTypes/All ответил 200 за 46.3524 мс
+2022-05-22 19:32:20.618 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Electronics/Filter ответил 200 за 321.7258 мс
+2022-05-22 19:32:23.963 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/Filter ответил 200 за 72.0326 мс
+2022-05-22 19:32:24.489 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Status ответил 200 за 14.4135 мс
+2022-05-22 19:32:24.590 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Deliveries/Filter ответил 200 за 92.5253 мс
+2022-05-22 19:32:27.601 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Deliveries/Filter ответил 200 за 119.5857 мс
+2022-05-22 19:32:33.256 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/Filter ответил 200 за 76.5242 мс
+2022-05-22 19:32:41.343 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Categories ответил 200 за 13.6420 мс
+2022-05-22 19:32:41.803 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/ForStatistics ответил 200 за 332.9605 мс
+2022-05-22 19:32:47.373 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Categories ответил 200 за 8.0080 мс
+2022-05-22 19:32:47.648 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/ForStatistics ответил 200 за 219.1044 мс
+2022-05-22 19:32:52.892 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/ElectrnicsTypes/All ответил 200 за 22.0792 мс
+2022-05-22 19:32:53.178 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/ForStatistics ответил 200 за 218.8436 мс
+2022-05-22 19:33:08.074 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Categories ответил 200 за 9.5185 мс
+2022-05-22 19:33:08.341 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/ForStatistics ответил 200 за 199.6720 мс
+2022-05-22 19:33:09.540 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Categories ответил 200 за 14.1061 мс
+2022-05-22 19:33:09.789 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/ForStatistics ответил 200 за 196.1428 мс
+2022-05-22 19:33:10.651 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Categories ответил 200 за 6.3647 мс
+2022-05-22 19:33:10.959 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/ForStatistics ответил 200 за 250.8408 мс
+2022-05-22 19:33:12.074 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Categories ответил 200 за 7.0651 мс
+2022-05-22 19:33:12.338 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/ForStatistics ответил 200 за 204.8084 мс
+2022-05-22 19:33:16.072 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/ElectrnicsTypes/All ответил 200 за 19.0759 мс
+2022-05-22 19:33:16.386 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/ForStatistics ответил 200 за 265.7374 мс
+2022-05-22 19:33:22.769 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/ElectrnicsTypes/All ответил 200 за 29.6664 мс
+2022-05-22 19:33:23.060 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58452) по GET /api/Orders/ForStatistics ответил 200 за 214.8731 мс
+2022-05-22 19:33:39.343 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:33:39.400 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:33:39.410 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:33:39.411 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:33:39.412 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:33:47.410 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 19:33:47.454 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58510) по POST /userToken ответил 200 за 1625.2993 мс
+2022-05-22 19:33:47.702 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58511) по POST /technoWorldHub/negotiate ответил 200 за 59.1534 мс
+2022-05-22 19:33:47.833 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 19:33:48.077 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Categories ответил 200 за 79.4390 мс
+2022-05-22 19:33:48.215 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/ElectrnicsTypes/All ответил 200 за 41.6458 мс
+2022-05-22 19:33:48.664 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Electronics/Filter ответил 200 за 337.6597 мс
+2022-05-22 19:33:50.026 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Orders/Filter ответил 200 за 74.0441 мс
+2022-05-22 19:33:51.005 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Status ответил 200 за 19.4860 мс
+2022-05-22 19:33:51.109 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Deliveries/Filter ответил 200 за 97.2782 мс
+2022-05-22 19:33:52.378 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Posts ответил 200 за 13.9929 мс
+2022-05-22 19:33:52.416 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Employees/Filter ответил 200 за 18.9783 мс
+2022-05-22 19:34:02.016 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Categories ответил 200 за 10.4177 мс
+2022-05-22 19:34:02.574 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Orders/ForStatistics ответил 200 за 466.2673 мс
+2022-05-22 19:34:05.800 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/ElectrnicsTypes/All ответил 200 за 18.2471 мс
+2022-05-22 19:34:06.190 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Orders/ForStatistics ответил 200 за 339.5658 мс
+2022-05-22 19:34:15.774 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Categories ответил 200 за 7.8062 мс
+2022-05-22 19:34:16.168 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Orders/ForStatistics ответил 200 за 320.6360 мс
+2022-05-22 19:34:30.191 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Storages ответил 200 за 24.1971 мс
+2022-05-22 19:34:36.111 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58510) по GET /api/Electronics/All ответил 200 за 579.7422 мс
+2022-05-22 19:38:01.885 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:38:01.942 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:38:01.952 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:38:01.953 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:38:01.954 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:38:12.579 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 19:38:12.624 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58844) по POST /userToken ответил 200 за 1630.4611 мс
+2022-05-22 19:38:12.870 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58846) по POST /technoWorldHub/negotiate ответил 200 за 53.2368 мс
+2022-05-22 19:38:13.007 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 19:38:13.229 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58844) по GET /api/Categories ответил 200 за 71.4171 мс
+2022-05-22 19:38:13.397 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58844) по GET /api/ElectrnicsTypes/All ответил 200 за 78.4173 мс
+2022-05-22 19:38:13.823 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58844) по GET /api/Electronics/Filter ответил 200 за 340.7845 мс
+2022-05-22 19:38:15.542 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58844) по GET /api/Status ответил 200 за 15.6678 мс
+2022-05-22 19:38:15.663 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58844) по GET /api/Deliveries/Filter ответил 200 за 81.7175 мс
+2022-05-22 19:38:16.261 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58844) по GET /api/Orders/Filter ответил 200 за 77.1474 мс
+2022-05-22 19:38:16.604 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58844) по GET /api/Storages ответил 200 за 36.1208 мс
+2022-05-22 19:38:18.442 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58844) по GET /api/Electronics/All ответил 200 за 505.6118 мс
+2022-05-22 19:38:43.023 +05:00 [INF] MrBoring отключен от системы
+2022-05-22 19:38:43.028 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58847) по GET /technoWorldHub ответил 101 за 30097.8944 мс
+2022-05-22 19:39:00.351 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-22 19:39:00.394 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-22 19:39:00.397 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-22 19:39:00.398 +05:00 [INF] Hosting environment: Development
+2022-05-22 19:39:00.399 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-05-22 19:39:15.601 +05:00 [INF] Пользователь sherbak авторизирован в системе
+2022-05-22 19:39:15.638 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58936) по POST /userToken ответил 200 за 1256.0732 мс
+2022-05-22 19:39:15.860 +05:00 [INF] Запрос от sherbak (127.0.0.1:58937) по POST /technoWorldHub/negotiate ответил 200 за 47.7060 мс
+2022-05-22 19:39:15.974 +05:00 [INF] Подключен пользователь кассы: sherbak
+2022-05-22 19:39:16.110 +05:00 [INF] Запрос от sherbak (127.0.0.1:58936) по GET /api/Status ответил 200 за 47.6889 мс
+2022-05-22 19:39:16.430 +05:00 [INF] Запрос от sherbak (127.0.0.1:58936) по GET /api/Orders/Filter ответил 200 за 229.5520 мс
+2022-05-22 20:03:28.519 +05:00 [INF] Запрос от sherbak (127.0.0.1:59360) по GET /api/Orders/Filter ответил 200 за 52.2605 мс
+2022-05-22 20:03:44.102 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59398) по POST /terminalToken ответил 200 за 3.4134 мс
+2022-05-22 20:03:44.402 +05:00 [INF] Запрос от terminal_f3586101-13d3-4ea3-85c0-ac89d73a40a0 (127.0.0.1:59401) по POST /technoWorldHub/negotiate ответил 200 за 0.7786 мс
+2022-05-22 20:03:44.503 +05:00 [INF] Подключенин терминал: terminal_f3586101-13d3-4ea3-85c0-ac89d73a40a0
+2022-05-22 20:03:44.565 +05:00 [INF] Запрос от terminal_f3586101-13d3-4ea3-85c0-ac89d73a40a0 (127.0.0.1:59398) по GET /api/Categories ответил 200 за 22.3799 мс
+2022-05-22 20:03:49.568 +05:00 [INF] Запрос от terminal_f3586101-13d3-4ea3-85c0-ac89d73a40a0 (127.0.0.1:59398) по POST /terminalToken ответил 200 за 3.3348 мс
+2022-05-22 20:03:51.392 +05:00 [INF] Запрос от terminal_4169f423-5598-4f35-801f-2ff7ee2f2694 (127.0.0.1:59398) по GET /api/Electronics/TerminalFilter ответил 200 за 123.1977 мс
+2022-05-22 20:03:51.522 +05:00 [INF] Запрос от terminal_4169f423-5598-4f35-801f-2ff7ee2f2694 (127.0.0.1:59398) по GET /api/Manufacturers ответил 200 за 27.9777 мс
+2022-05-22 20:03:51.538 +05:00 [INF] Запрос от terminal_4169f423-5598-4f35-801f-2ff7ee2f2694 (127.0.0.1:59398) по GET /api/ElectrnicsTypes ответил 200 за 13.3085 мс
+2022-05-22 20:04:02.440 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-05-22 20:04:02.442 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59490) по POST /userToken ответил 200 за 9.4117 мс
+2022-05-22 20:04:02.591 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59491) по POST /technoWorldHub/negotiate ответил 200 за 0.4043 мс
+2022-05-22 20:04:02.687 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-05-22 20:04:02.819 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Categories ответил 200 за 7.4293 мс
+2022-05-22 20:04:02.960 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/ElectrnicsTypes/All ответил 200 за 19.9198 мс
+2022-05-22 20:04:03.223 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Electronics/Filter ответил 200 за 154.2827 мс
+2022-05-22 20:04:05.259 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Status ответил 200 за 1.5314 мс
+2022-05-22 20:04:05.346 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Deliveries/Filter ответил 200 за 71.0880 мс
+2022-05-22 20:04:07.672 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59494) по GET /api/Suppliers ответил 200 за 30.8504 мс
+2022-05-22 20:04:07.678 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Storages ответил 200 за 38.1089 мс
+2022-05-22 20:04:10.278 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Categories ответил 200 за 4.6925 мс
+2022-05-22 20:04:10.394 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/ElectrnicsTypes/All ответил 200 за 14.7855 мс
+2022-05-22 20:04:10.543 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Electronics/Filter ответил 200 за 141.1682 мс
+2022-05-22 20:04:19.967 +05:00 [INF] Создан заказ на поставку с номером ЗПCJHIRQOKBJ
+2022-05-22 20:04:19.993 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по POST /api/Deliveries ответил 201 за 276.6094 мс
+2022-05-22 20:04:20.431 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Deliveries/Filter ответил 200 за 91.3920 мс
+2022-05-22 20:04:22.897 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59494) по GET /api/Suppliers ответил 200 за 1.3206 мс
+2022-05-22 20:04:22.903 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Storages ответил 200 за 7.6305 мс
+2022-05-22 20:04:35.297 +05:00 [INF] Статус поставки с номером ЗПCJHIRQOKBJ изменён с 'Ожидается оплаты' на 'Ожидается выгрузка'
+2022-05-22 20:04:35.299 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по PUT /api/Deliveries/28 ответил 200 за 64.8356 мс
+2022-05-22 20:04:35.353 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59494) по GET /api/Deliveries/Filter ответил 200 за 53.4496 мс
+2022-05-22 20:04:37.342 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59494) по GET /api/Suppliers ответил 200 за 3.0110 мс
+2022-05-22 20:04:37.342 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Storages ответил 200 за 4.0248 мс
+2022-05-22 20:04:43.058 +05:00 [INF] Происходит выгрузка товара на склад 'Основной'...
+2022-05-22 20:04:43.083 +05:00 [INF] Выгрузка товара Atlant 4621-141 серебристый, текущее количество: 104
+2022-05-22 20:04:43.095 +05:00 [INF] Выгрузка товара завершена.
+2022-05-22 20:04:43.098 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по PUT /api/Deliveries/Unload/28 ответил 200 за 71.7297 мс
+2022-05-22 20:04:43.188 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59494) по GET /api/Deliveries/Filter ответил 200 за 91.1941 мс
+2022-05-22 20:04:43.266 +05:00 [INF] Запрос от terminal_4169f423-5598-4f35-801f-2ff7ee2f2694 (127.0.0.1:59398) по GET /api/Electronics/TerminalFilter ответил 200 за 124.6776 мс
+2022-05-22 20:04:43.352 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Electronics/Filter ответил 200 за 153.3757 мс
+2022-05-22 20:04:43.572 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Electronics/Filter ответил 200 за 139.7120 мс
+2022-05-22 20:05:06.193 +05:00 [INF] Создан новый заказ с номером E8VT3UFPW1
+2022-05-22 20:05:06.198 +05:00 [INF] Запрос от terminal_4169f423-5598-4f35-801f-2ff7ee2f2694 (127.0.0.1:59398) по POST /api/Orders ответил 201 за 74.0771 мс
+2022-05-22 20:05:06.283 +05:00 [INF] Запрос от sherbak (127.0.0.1:59360) по GET /api/Orders/Filter ответил 200 за 52.5638 мс
+2022-05-22 20:05:15.162 +05:00 [INF] Статус заказа с номером E8VT3UFPW1 изменён с 'Ожидается оплаты' на 'Отменён'
+2022-05-22 20:05:15.167 +05:00 [INF] Запрос от sherbak (127.0.0.1:59360) по PUT /api/Orders/34 ответил 200 за 19.0335 мс
+2022-05-22 20:05:15.215 +05:00 [INF] Запрос от sherbak (127.0.0.1:59507) по GET /api/Orders/Filter ответил 200 за 45.9913 мс
+2022-05-22 20:05:16.882 +05:00 [INF] Статус заказа с номером E8VT3UFPW1 изменён с 'Отменён' на 'Ожидается оплаты'
+2022-05-22 20:05:16.886 +05:00 [INF] Запрос от sherbak (127.0.0.1:59360) по PUT /api/Orders/34 ответил 200 за 7.8607 мс
+2022-05-22 20:05:16.927 +05:00 [INF] Запрос от sherbak (127.0.0.1:59507) по GET /api/Orders/Filter ответил 200 за 40.0430 мс
+2022-05-22 20:05:47.695 +05:00 [INF] Статус заказа с номером E8VT3UFPW1 изменён с 'Ожидается оплаты' на 'Ожидается вадыча'
+2022-05-22 20:05:47.699 +05:00 [INF] Запрос от sherbak (127.0.0.1:59360) по PUT /api/Orders/34 ответил 200 за 11.0656 мс
+2022-05-22 20:05:47.752 +05:00 [INF] Запрос от sherbak (127.0.0.1:59507) по GET /api/Orders/Filter ответил 200 за 52.6211 мс
+2022-05-22 20:06:06.351 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Posts ответил 200 за 6.9898 мс
+2022-05-22 20:06:06.376 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Employees/Filter ответил 200 за 18.7036 мс
+2022-05-22 20:06:08.336 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Posts ответил 200 за 0.9983 мс
+2022-05-22 20:07:02.874 +05:00 [INF] Добавлен новый пользователь Sergos с ролью Администратор
+2022-05-22 20:07:02.876 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по POST /api/Employees ответил 201 за 65.1350 мс
+2022-05-22 20:07:07.098 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Employees/Filter ответил 200 за 6.0062 мс
+2022-05-22 20:07:07.280 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Employees/Filter ответил 200 за 1.5684 мс
+2022-05-22 20:07:12.861 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Posts ответил 200 за 2.1384 мс
+2022-05-22 20:07:16.560 +05:00 [INF] Было провизведено изменение пользователя Sergos с пролью Администратор
+2022-05-22 20:07:16.561 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по PUT /api/Employees/8 ответил 200 за 40.7057 мс
+2022-05-22 20:07:19.252 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Posts ответил 200 за 1.5063 мс
+2022-05-22 20:07:21.619 +05:00 [INF] Было провизведено изменение пользователя Sergos с пролью Администратор
+2022-05-22 20:07:21.619 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по PUT /api/Employees/8 ответил 200 за 3.5170 мс
+2022-05-22 20:07:38.798 +05:00 [WRN] Провальная попытка входа пользователя Sergos: Неверный логин или пароль
+2022-05-22 20:07:38.800 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59547) по POST /userToken ответил 400 за 5.6396 мс
+2022-05-22 20:07:47.640 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Posts ответил 200 за 1.9233 мс
+2022-05-22 20:07:57.460 +05:00 [WRN] Провальная попытка входа пользователя Sergos: Неверный логин или пароль
+2022-05-22 20:07:57.462 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59547) по POST /userToken ответил 400 за 6.4716 мс
+2022-05-22 20:08:07.607 +05:00 [WRN] Провальная попытка входа пользователя Sergos: Неверный логин или пароль
+2022-05-22 20:08:07.608 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59553) по POST /userToken ответил 400 за 2.3758 мс
+2022-05-22 20:08:23.167 +05:00 [INF] Было провизведено изменение пользователя Sergos с пролью Администратор
+2022-05-22 20:08:23.168 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по PUT /api/Employees/8 ответил 200 за 6.6046 мс
+2022-05-22 20:08:28.040 +05:00 [INF] Пользователь Sergos авторизирован в системе
+2022-05-22 20:08:28.042 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59553) по POST /userToken ответил 200 за 3.7647 мс
+2022-05-22 20:08:28.140 +05:00 [INF] Запрос от Sergos (127.0.0.1:59558) по POST /technoWorldHub/negotiate ответил 200 за 0.2386 мс
+2022-05-22 20:08:28.233 +05:00 [INF] Подключен пользователь к приложению управление предприятием: Sergos
+2022-05-22 20:08:28.361 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Categories ответил 200 за 7.0172 мс
+2022-05-22 20:08:28.463 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/ElectrnicsTypes/All ответил 200 за 7.5524 мс
+2022-05-22 20:08:28.712 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Electronics/Filter ответил 200 за 138.6732 мс
+2022-05-22 20:08:32.590 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Posts ответил 200 за 1.1819 мс
+2022-05-22 20:08:32.604 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Employees/Filter ответил 200 за 2.6212 мс
+2022-05-22 20:08:33.304 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Status ответил 200 за 1.3295 мс
+2022-05-22 20:08:33.374 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Deliveries/Filter ответил 200 за 53.5659 мс
+2022-05-22 20:08:34.776 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Posts ответил 200 за 0.9354 мс
+2022-05-22 20:08:35.795 +05:00 [ERR] Провальная попытка изменения пользователя Sergos: пользователь сейчас онлайн в системе.
+2022-05-22 20:08:35.796 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по PUT /api/Employees/8 ответил 400 за 2.4484 мс
+2022-05-22 20:08:40.793 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Posts ответил 200 за 2.5048 мс
+2022-05-22 20:08:41.547 +05:00 [ERR] Провальная попытка изменения пользователя MrBoring: пользователь сейчас онлайн в системе.
+2022-05-22 20:08:41.548 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по PUT /api/Employees/7 ответил 400 за 2.3193 мс
+2022-05-22 20:08:55.542 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Employees/Filter ответил 200 за 3.3818 мс
+2022-05-22 20:08:57.381 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Employees/Filter ответил 200 за 4.1383 мс
+2022-05-22 20:09:01.135 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Employees/Filter ответил 200 за 1.8537 мс
+2022-05-22 20:09:01.521 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Employees/Filter ответил 200 за 1.9402 мс
+2022-05-22 20:09:17.415 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Orders/Filter ответил 200 за 43.9006 мс
+2022-05-22 20:09:23.639 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Storages ответил 200 за 2.9878 мс
+2022-05-22 20:09:29.200 +05:00 [INF] Начинается выдача заказа E8VT3UFPW1...
+2022-05-22 20:09:29.202 +05:00 [INF] Выдан товар Atlant 4621-141 серебристый в количествуе 3
+2022-05-22 20:09:29.211 +05:00 [INF] Выдача заказа E8VT3UFPW1 закончена.
+2022-05-22 20:09:29.212 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по PUT /api/Orders/Distribute/34 ответил 200 за 38.5011 мс
+2022-05-22 20:09:29.313 +05:00 [INF] Запрос от sherbak (127.0.0.1:59574) по GET /api/Orders/Filter ответил 200 за 98.2658 мс
+2022-05-22 20:09:29.362 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59576) по GET /api/Orders/Filter ответил 200 за 144.4925 мс
+2022-05-22 20:09:29.371 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Storages ответил 200 за 4.1686 мс
+2022-05-22 20:09:29.401 +05:00 [INF] Запрос от terminal_4169f423-5598-4f35-801f-2ff7ee2f2694 (127.0.0.1:59575) по GET /api/Electronics/TerminalFilter ответил 200 за 183.9009 мс
+2022-05-22 20:09:29.485 +05:00 [INF] Запрос от sherbak (127.0.0.1:59574) по GET /api/Orders/Filter ответил 200 за 158.0672 мс
+2022-05-22 20:09:29.493 +05:00 [INF] Запрос от Sergos (127.0.0.1:59553) по GET /api/Electronics/Filter ответил 200 за 239.3842 мс
+2022-05-22 20:09:29.511 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59576) по GET /api/Orders/Filter ответил 200 за 142.8263 мс
+2022-05-22 20:09:29.515 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Storages ответил 200 за 2.2634 мс
+2022-05-22 20:09:29.681 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59576) по GET /api/Electronics/Filter ответил 200 за 167.0395 мс
+2022-05-22 20:09:29.900 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59490) по GET /api/Electronics/Filter ответил 200 за 142.3069 мс
+2022-05-22 20:09:37.190 +05:00 [INF] Sergos отключен от системы
+2022-05-22 20:09:37.195 +05:00 [INF] Запрос от Sergos (127.0.0.1:59559) по GET /technoWorldHub ответил 101 за 69004.8825 мс
+2022-05-22 20:09:38.014 +05:00 [INF] MrBoring отключен от системы
+2022-05-22 20:09:38.016 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59492) по GET /technoWorldHub ответил 101 за 335374.1180 мс
+2022-05-22 20:09:39.034 +05:00 [INF] terminal_f3586101-13d3-4ea3-85c0-ac89d73a40a0 отключен от системы
+2022-05-22 20:09:39.036 +05:00 [INF] Запрос от terminal_f3586101-13d3-4ea3-85c0-ac89d73a40a0 (127.0.0.1:59402) по GET /technoWorldHub ответил 101 за 354582.5789 мс
+2022-05-22 21:37:30.398 +05:00 [INF] sherbak отключен от системы
+2022-05-22 21:37:30.404 +05:00 [INF] Запрос от sherbak (127.0.0.1:58938) по GET /technoWorldHub ответил 101 за 7094493.0946 мс
+2022-05-22 21:37:33.269 +05:00 [INF] Application is shutting down...

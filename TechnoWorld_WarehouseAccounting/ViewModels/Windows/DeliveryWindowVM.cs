@@ -65,7 +65,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     PayVisibility = Visibility.Visible;
                     CancelVisibility = Visibility.Visible;
                     CreateVisibility = Visibility.Collapsed;
-                    CreateReceiptInvoiceVisibility = Visibility.Visible;
+                    CreateReceiptInvoiceVisibility = Visibility.Collapsed;
                     UnloadVisibility = Visibility.Collapsed;
                 }
                 else if (Delivery.StatusId == 5)
@@ -256,7 +256,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
             Paragraph paragraph;
             paragraph = new Paragraph($"Приходная накладная {recieptInviceNumber} от {dateOfOrder.Day}.{dateOfOrder.Month}.{dateOfOrder.Year}", titleFont);
-            paragraph.Alignment = 0;
+            paragraph.Alignment = 1;
             //paragraph.ExtraParagraphSpace = 20;
             paragraph.Leading = 30;
             paragraph.SpacingAfter = 20;
@@ -277,7 +277,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             paragraph.SpacingAfter = 20;
             doc.Add(paragraph);
 
-            paragraph = new Paragraph($"Плановая дата поставки: {dateOfDelivery}", textFont);
+            paragraph = new Paragraph($"Плановая дата поставки: {dateOfDelivery.ToShortDateString()}", textFont);
             paragraph.Alignment = 3;
             paragraph.SpacingAfter = 20;
             doc.Add(paragraph);
@@ -475,7 +475,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async void UnloadToStorage(object obj)
         {
-            var result = MaterialNotification.Show("Подтверждение", $"Отменить заказ?", MaterialNotificationButton.Ok, MaterialNotificationImage.Question);
+            var result = MaterialNotification.Show("Подтверждение", $"Подтвердите выгрузку поставки.", MaterialNotificationButton.YesNo, MaterialNotificationImage.Question);
 
             if (result == MaterialNotificationResult.Yes)
             {
@@ -499,7 +499,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async void CancelDelivery(object obj)
         {
-            var result = MaterialNotification.Show("Подтверждение", $"Отменить заказ?", MaterialNotificationButton.Ok, MaterialNotificationImage.Question);
+            var result = MaterialNotification.Show("Подтверждение", $"Подтвердите отмену поставки.", MaterialNotificationButton.YesNo, MaterialNotificationImage.Question);
 
             if (result == MaterialNotificationResult.Yes)
             {
@@ -519,13 +519,14 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async void PayDelivery(object obj)
         {
-            var result = MaterialNotification.Show("Подтверждение", $"Оплатить заказ?", MaterialNotificationButton.Ok, MaterialNotificationImage.Question);
+            var result = MaterialNotification.Show("Подтверждение", $"Подтвердите оплату поставки.", MaterialNotificationButton.YesNo, MaterialNotificationImage.Question);
             if (result == MaterialNotificationResult.Yes)
             {
                 Delivery.StatusId = 5;
                 var response = await ApiService.Instance.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
+                    GenerateReceiptInvoice(Delivery.DeliveryNumber, SelectedStorage, SelectedSupplier, Delivery.DateOfOrder, Delivery.DateOfDelivery, DeliveryItems);
                     DialogResult = true;
                     MaterialNotification.Show("Оповещение", $"Заказа поставщику № {Delivery.DeliveryNumber} оплачен.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
                 }

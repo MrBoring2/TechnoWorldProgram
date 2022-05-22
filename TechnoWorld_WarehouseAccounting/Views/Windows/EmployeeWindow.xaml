@@ -16,8 +16,8 @@
         xmlns:wpfx="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
-        dr:DialogCloser.DialogResult="{Binding DialogResult}"
-        Title="ТЕХНО МИР: Управление предприятием | Карточка сотрудника" Height="588" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
+        dr:DialogCloser.DialogResult="{Binding DialogResult}" SizeToContent="Height"
+        Title="ТЕХНО МИР: Управление предприятием | Карточка сотрудника" Height="634" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="694"/>
@@ -67,6 +67,7 @@
                     </wpfx:MaskedTextBox>
                     <DatePicker SelectedDate="{Binding DateOfBirth, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Style="{StaticResource validationDatePicker}" materialDesign:HintAssist.Hint="Дата рождения" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <TextBox IsEnabled="{Binding IsAdd}" Text="{Binding Login, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Логин" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+
                     <TextBox Text="{Binding Password, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Пароль" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
                         <TextBox.Style>
                             <Style TargetType="TextBox" BasedOn="{StaticResource validationTextBox}">
@@ -78,6 +79,7 @@
                                         <Setter Property="Visibility" Value="Visible"/>
                                     </DataTrigger>
                                 </Style.Triggers>
+                                <Setter Property="Cursor" Value="Arrow"/>
                             </Style>
                         </TextBox.Style>
                     </TextBox>
@@ -94,8 +96,51 @@
                                 </Style.Triggers>
                             </Style>
                         </StackPanel.Style>
-                        <CheckBox x:Name="passCheck" IsChecked="{Binding IsNewPasswordChecked}" FontSize="16" Content="Изменить пароль" VerticalAlignment="Center" Height="40"/>
-                        <TextBox x:Name="pass" Text="{Binding NewPassword, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" FontSize="16" Width="200" Margin="15,0" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Введите новый пароль" materialDesign:HintAssist.IsFloating="True" Height="40">
+                        <CheckBox x:Name="loginCheck" Margin="0,5,0,5" IsChecked="{Binding IsNewLoginChecked}" FontSize="16" Content="Изменить логин" VerticalAlignment="Center" Width="160" />
+                        <TextBox x:Name="login" Text="{Binding NewLogin, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" FontSize="16" Width="200"  Margin="15,0,0,15" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Введите новый логин" materialDesign:HintAssist.IsFloating="True" Cursor="Arrow">
+                            <TextBox.Style>
+                                <Style TargetType="TextBox" BasedOn="{StaticResource validationTextBox}">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding ElementName=loginCheck, Path=IsChecked}" Value="True">
+                                            <Setter  Property="Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=loginCheck, Path=IsChecked}" Value="False">
+                                            <Setter  Property="Visibility" Value="Collapsed"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBox.Style>
+                        </TextBox>
+                        <TextBox x:Name="checkPassword" Text="{Binding CheckPassword, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" FontSize="16" Width="280" Margin="15,0,0,15" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Введите пароль для подтверждения" materialDesign:HintAssist.IsFloating="True" Cursor="Arrow">
+                            <TextBox.Style>
+                                <Style TargetType="TextBox" BasedOn="{StaticResource validationTextBox}">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding ElementName=loginCheck, Path=IsChecked}" Value="True">
+                                            <Setter  Property="Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=loginCheck, Path=IsChecked}" Value="False">
+                                            <Setter  Property="Visibility" Value="Collapsed"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBox.Style>
+                        </TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0" VerticalAlignment="Top" Visibility="{Binding IsEditVisibility}">
+                        <StackPanel.Style>
+                            <Style TargetType="StackPanel">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding ElementName=_this, Path=DataContext.IsEditVisibility}" Value="Collapsed">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding ElementName=_this, Path=DataContext.IsEditVisibility}" Value="Visible">
+                                        <Setter Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </StackPanel.Style>
+                        <CheckBox x:Name="passCheck" IsChecked="{Binding IsNewPasswordChecked}" FontSize="16" Margin="0,0,0,5" Content="Изменить пароль" VerticalAlignment="Center" Width="160"/>
+                        <TextBox x:Name="pass" Text="{Binding NewPassword, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" FontSize="16" Width="200" Margin="15,0,0,15" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Введите новый пароль" materialDesign:HintAssist.IsFloating="True" Height="40">
                             <TextBox.Style>
                                 <Style TargetType="TextBox" BasedOn="{StaticResource validationTextBox}">
                                     <Style.Triggers>
@@ -110,7 +155,6 @@
                             </TextBox.Style>
                         </TextBox>
                     </StackPanel>
-
 
 
                 </StackPanel>

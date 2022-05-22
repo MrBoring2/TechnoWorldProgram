@@ -1,4 +1,6 @@
-﻿using Notification.Wpf;
+﻿using MaterialNotificationLibrary;
+using MaterialNotificationLibrary.Enums;
+using Notification.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -102,11 +104,12 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 order.OrderElectronics.Add(new OrderElectronic { ElectronicsId = item.Electronic.ElectronicsId, Count = item.Amount });
             }
 
-            var response = await ApiService.Instance.PostRequest( "api/Orders", order);
+            var response = await ApiService.Instance.PostRequest("api/Orders", order);
             if (response.StatusCode == System.Net.HttpStatusCode.Created)
             {
                 CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Оповещение", Message = $"Заказ успешно оформлен. Подойдите к кассе. Номер заказа: {order.OrderNumber}", Type = NotificationType.Success }, "MainNotificationArea");
-                ClientService.Instance.Cart.Clear();    
+                ClientService.Instance.Cart.Clear();
+                MaterialNotification.Show("Заказ оформлен", $"Ваш номр заказа {order.OrderNumber}, подойдите с ним к кассе.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
             }
         }
 

@@ -178,7 +178,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             ForDisplayList = new ObservableCollection<ItemWithTitle<bool?>>
             {
                 new ItemWithTitle<bool?>(null, "Все"),
-                new ItemWithTitle<bool?>(true, "Выстевлены на продажу"),
+                new ItemWithTitle<bool?>(true, "Выставлены на продажу"),
                 new ItemWithTitle<bool?>(false, "Сняты с продажи")
             };
 

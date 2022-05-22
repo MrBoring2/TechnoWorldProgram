@@ -68,6 +68,7 @@ namespace TechnoWorld_WarehouseAccounting
             WindowNavigation.Instance.RegisterWindow<ProductListWindowVM, ProductsListWindow>();
             WindowNavigation.Instance.RegisterWindow<DestributionOrderWindowVM, DestributionOrderWindow>();
             WindowNavigation.Instance.RegisterWindow<EmployeeWindowVM, EmployeeWindow>();
+            WindowNavigation.Instance.RegisterWindow<AddManufacturerWindowVM, AddManufacturerWindow>();
         }
     }
 }

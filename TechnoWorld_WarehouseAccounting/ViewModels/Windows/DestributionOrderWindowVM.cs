@@ -73,7 +73,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async void DestributeOrder(object obj)
         {
-            var result = MaterialNotification.Show("Подтверждение", $"Подтвердите выдачу товара.", MaterialNotificationButton.Ok, MaterialNotificationImage.Question);
+            var result = MaterialNotification.Show("Подтверждение", $"Подтвердите выдачу товара.", MaterialNotificationButton.YesNo, MaterialNotificationImage.Question);
             if (result == MaterialNotificationResult.Yes)
             {
                 var response = await ApiService.Instance.PutRequest($"api/Orders/Distribute", Order.OrderId, SelectedStorage.StorageId);

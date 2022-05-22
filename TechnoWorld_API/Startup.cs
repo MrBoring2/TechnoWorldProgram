@@ -121,12 +121,12 @@ namespace BNS_API
                     };
                 });
             }
-            else
+            else if (env.IsProduction())
             {
                 app.UseSerilogRequestLogging(options =>
                 {
-                    options.MessageTemplate = "Запрос от {ClientIp}:{ClientPort} на {RequestMethod} {RequestPath} ответил {StatusCode} за {Elapsed:0.0000} мс | {RequestHost}";
-                    options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
+                    options.MessageTemplate = "Запрос от {UserName} ({ClientIp}:{ClientPort}) по {RequestMethod} {RequestPath} ответил {StatusCode} за {Elapsed:0.0000} мс";
+                    options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Information;
                     options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
                     {
                         string userName = "";
@@ -142,6 +142,7 @@ namespace BNS_API
                         diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
                         diagnosticContext.Set("ClientIp", httpContext.Connection?.RemoteIpAddress);
                         diagnosticContext.Set("ClientPort", httpContext.Connection?.RemotePort);
+                        
                     };
                 });
             }
@@ -158,16 +159,6 @@ namespace BNS_API
             });
 
             app.UseRouting();
-            //app.UseSession();
-            //app.Use(async (context, next) =>
-            //{
-            //    var JWToken = context.Session.GetString("JWToken");
-            //    if (!string.IsNullOrEmpty(JWToken))
-            //    {
-            //        context.Request.Headers.Add("Authorization", "Bearer " + JWToken);
-            //    }
-            //    await next();
-            //});
 
             app.UseAuthentication();
             app.UseAuthorization();
@@ -185,8 +176,6 @@ namespace BNS_API
             app.UseRequestLocalization(new RequestLocalizationOptions
             {
                 DefaultRequestCulture = new RequestCulture("ru-RU"),
-                //SupportedCultures = supportedCultures,
-                //SupportedUICultures = supportedCultures
             });
 
             app.UseEndpoints(endpoints =>
