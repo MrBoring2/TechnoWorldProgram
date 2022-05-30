@@ -2750,6 +2750,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -2774,6 +2782,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -8080,7 +8096,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Управление складом"
         "ProductCode" = "8:{EE0D649E-65FB-44A0-9DD9-3CAB60722396}"
-        "PackageCode" = "8:{0041E27B-1325-4938-B8F1-5938C6BDB835}"
+        "PackageCode" = "8:{1788AE91-B9F5-4B17-9321-33588036FDBF}"
         "UpgradeCode" = "8:{9DA68275-1823-4B37-B773-D7387F3A4C00}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

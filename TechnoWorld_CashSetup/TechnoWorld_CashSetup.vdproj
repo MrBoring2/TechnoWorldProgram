@@ -2504,6 +2504,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -2528,6 +2536,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -7327,7 +7343,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Касса"
         "ProductCode" = "8:{27E51562-5098-4A65-BB10-E04E1A6C6C8A}"
-        "PackageCode" = "8:{CA34918D-26D8-46E5-8C9A-9B7EFB639504}"
+        "PackageCode" = "8:{7F7CF591-6993-44BA-AA34-00DBE8E95EF0}"
         "UpgradeCode" = "8:{A70009BF-2EB0-41B9-98EC-2D817F445B44}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

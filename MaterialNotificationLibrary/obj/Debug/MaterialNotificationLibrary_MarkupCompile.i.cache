@@ -16,5 +16,5 @@ DEBUG;TRACE
 16-650293965
 DemoWindow.xaml;MaterialNotification.xaml;Resources\Animation\WindowAnimations.xaml;Resources\Styles\MainTheme.xaml;
 
-True
+False
 

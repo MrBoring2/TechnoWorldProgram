@@ -2504,6 +2504,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -2528,6 +2536,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -7316,7 +7332,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Терминал"
         "ProductCode" = "8:{2F1E59E9-A9FD-4AED-9FC0-33E14FC45FD8}"
-        "PackageCode" = "8:{C1CC52E6-3448-4C0C-95FF-C6A1AD66B642}"
+        "PackageCode" = "8:{73CB7ADC-5430-4A2B-B2AB-56EA2961468B}"
         "UpgradeCode" = "8:{5568023B-EFE5-4E56-B56E-2199D3C2E5A9}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -7779,7 +7795,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:"
+                            "Value" = "8:_F0D8C093709E4177951B296A9920515C"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "Sunken"
