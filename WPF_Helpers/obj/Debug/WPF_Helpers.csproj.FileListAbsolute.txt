@@ -319,3 +319,6 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\WPF_Helpers\obj\Debug\WPF_Helpers.cspro
 C:\Users\MrBoring\GIT\TechnoWorldProgram\WPF_Helpers\obj\Debug\WPF_Helpers.csproj.CopyComplete
 C:\Users\MrBoring\GIT\TechnoWorldProgram\WPF_Helpers\obj\Debug\WPF_Helpers.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\WPF_Helpers\obj\Debug\WPF_Helpers.pdb
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\WPF_Helpers\bin\Debug\MaterialNotificationLibrary.dll
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\WPF_Helpers\bin\Debug\MaterialNotificationLibrary.pdb
+C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\WPF_Helpers\bin\Debug\MaterialNotificationLibrary.dll.config

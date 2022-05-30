@@ -109,11 +109,14 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
         private async void OpenDestributionWindow(object obj)
         {
-            var destributionWindow = new DestributionOrderWindowVM(SelectedEntity);
-            await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(destributionWindow));
-            if (destributionWindow.DialogResult == true)
+            if (SelectedEntity != null)
             {
-                MaterialNotification.Show("Оповещение", $"Товары из заказа {SelectedEntity.OrderNumber} успешно выданы со склада.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
+                var destributionWindow = new DestributionOrderWindowVM(SelectedEntity);
+                await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(destributionWindow));
+                if (destributionWindow.DialogResult == true)
+                {
+                    MaterialNotification.Show("Оповещение", $"Товары из заказа {destributionWindow.Order.OrderNumber} успешно выданы со склада.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
+                }
             }
         }
     }
