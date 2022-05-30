@@ -1,0 +1,6 @@
+2022-05-30 13:17:59.842 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-05-30 13:17:59.889 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-05-30 13:17:59.891 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-30 13:17:59.892 +05:00 [INF] Hosting environment: Development
+2022-05-30 13:17:59.892 +05:00 [INF] Content root path: C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\TechnoWorld_API
+2022-05-30 13:18:08.501 +05:00 [INF] Application is shutting down...

@@ -81,7 +81,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         [DisplayFormat(ConvertEmptyStringToNull = false)]
         [StringLength(120, ErrorMessage = "Длина поля ФИО слишком большая: максимум {1} символов")]
         public string FullName { get => CurrentEmployee.FullName; set { CurrentEmployee.FullName = value; ValidationMessageSetter(value); } }
-        public Post Post { get => CurrentEmployee.Post; set { CurrentEmployee.Post = value; OnPropertyChanged(); SetRole(); } }
+        public Post Post { get => CurrentEmployee.Post; set { CurrentEmployee.Post = value; CurrentEmployee.PostId = value.PostId; OnPropertyChanged(); SetRole(); } }
         public bool IsNewPasswordChecked
         {
             get => isNewPasswordChecked;
@@ -247,11 +247,12 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
                 if (!string.IsNullOrEmpty(NewPassword))
                 {
-                    CurrentEmployee.Password = MD5EncoderService.EncodePassword(Login, NewPassword);
+                    Password = MD5EncoderService.EncodePassword(Login, NewPassword);
                 }
 
                 if (isAdd)
                 {
+                    Password = MD5EncoderService.EncodePassword(Login, CheckPassword);
                     var response = await ApiService.Instance.PostRequest("api/Employees", CurrentEmployee);
                     if (response.StatusCode == System.Net.HttpStatusCode.Created)
                     {

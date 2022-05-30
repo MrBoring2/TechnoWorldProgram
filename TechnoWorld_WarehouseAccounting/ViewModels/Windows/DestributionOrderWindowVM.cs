@@ -40,7 +40,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         public RelayCommand DestributeOrderCommand { get; set; }
         public RelayCommand CancelCommand { get; set; }
-        public Order Order { get; set; }
+        public Order Order { get; private set; }
         public string OrderNumber => $"Заказ № {Order.OrderNumber} от {Order.DateOfRegistration.ToString("d")}";
         public ObservableCollection<Storage> Storages { get => storages; set { storages = value; OnPropertyChanged(); } }
         public Storage SelectedStorage { get => selectedStorage; set { selectedStorage = value; OnPropertyChanged(); LoadProducts(); } }

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using TechnoWorld_API.Data;
+using TechnoWorld_API.Helpers;
 using TechnoWorld_API.Models.Filters;
 using TechnoWorld_API.Services;
 using TechoWorld_DataModels_v2;
@@ -119,6 +120,7 @@ namespace TechnoWorld_API.Controllers
                 await _context.SaveChangesAsync();
                 LogService.LodMessage($"Было провизведено изменение пользователя {employee.Login} с пролью {employee.Post.Name}", LogLevel.Info);
             }
+
             catch (DbUpdateConcurrencyException)
             {
                 if (!EmployeeExists(id))
@@ -130,6 +132,7 @@ namespace TechnoWorld_API.Controllers
                     throw;
                 }
             }
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateEmployees", "d");
 
             return Ok();
         }
@@ -145,8 +148,9 @@ namespace TechnoWorld_API.Controllers
                 return BadRequest($"Пользователь с логином {employee.Login} уже существует");
             }
             _context.Employees.Attach(employee).State = EntityState.Added;
-            //_context.Employees.Add(employee);
+            //_context.Employees.Add(employee);UpdateEmployees
             await _context.SaveChangesAsync();
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateEmployees", "d");
             LogService.LodMessage($"Добавлен новый пользователь {employee.Login} с ролью {employee.Post.Name}", LogLevel.Info);
             return CreatedAtAction("GetEmployee", new { id = employee.EmployeeId }, employee);
         }
@@ -171,6 +175,7 @@ namespace TechnoWorld_API.Controllers
 
             _context.Employees.Remove(employee);
             LogService.LodMessage($"Было произведено удаление пользователя {employee.Login} с ролью {employee.Post.Name}", LogLevel.Info);
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateEmployees", "d");
             await _context.SaveChangesAsync();
 
             return Ok();

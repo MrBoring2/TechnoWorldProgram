@@ -30,18 +30,18 @@
                 </Style>
             </DataGrid.Resources>
             <DataGrid.Columns>
-                <DataGridTemplateColumn Header="Модель" Width="2*">
+                <DataGridTemplateColumn Header="Модель" Width="2*" IsReadOnly="True">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate DataType="DataGridCell">
                             <TextBlock Text="{Binding Electronic.Model}"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Количество" Width="0.8*" Binding="{Binding Count}"/>
-                <DataGridTextColumn Header="Цена за 1" Width="0.8*" Binding="{Binding Electronic.SalePrice, StringFormat={}{0:F2} ₽}"/>
-                <DataGridTextColumn Header="Сумма" Width="1.1*" Binding="{Binding TotalPrice, StringFormat={}{0:F2} ₽}"/>
-                <DataGridTextColumn Header="Статус товара" Binding="{Binding IsOfferedForSale}" Width="1.2*"/>
-                <DataGridTextColumn Header="В наличии" Binding="{Binding CountInStorage, StringFormat={}{0} шт.}" Width="0.8*"/>
+                <DataGridTextColumn Header="Количество" Width="0.8*" Binding="{Binding Count}" IsReadOnly="False"/>
+                <DataGridTextColumn Header="Цена за 1" Width="0.8*" Binding="{Binding Electronic.SalePrice, StringFormat={}{0:F2} ₽}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Сумма" Width="1.1*" Binding="{Binding TotalPrice, StringFormat={}{0:F2} ₽}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Статус товара" Binding="{Binding IsOfferedForSale}" Width="1.2*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="В наличии" Binding="{Binding CountInStorage, StringFormat={}{0} шт.}" Width="0.8*" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
