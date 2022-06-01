@@ -15,7 +15,7 @@ namespace WPF_Helpers.ValidationRules
             bool parsed = DateTime.TryParse(value.ToString(), out dt);
             if (parsed)
             {
-                if(DateTime.Now.ToLocalTime().Year - dt.ToLocalTime().Year < 18)
+                if(DateTime.Now.ToLocalTime().Year - dt.ToLocalTime().Year < 18 || DateTime.Now.ToLocalTime().Year - dt.ToLocalTime().Year > 80)
                 {
                     return false;
                 }

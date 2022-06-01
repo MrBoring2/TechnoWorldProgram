@@ -136,7 +136,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         [EmailValidation(ErrorMessage = "Введён некорректный адрес электронной почты")]
         public string Email { get => CurrentEmployee.Email; set { CurrentEmployee.Email = value; ValidationMessageSetter(value); } }
 
-        [DateOfBirthValidation(ErrorMessage = "Нельзя устравивать сотрудника моложе 18 лет")]
+        [DateOfBirthValidation(ErrorMessage = "Возраст сотрудника должен быть от 18 до 80 лет")]
         public DateTime DateOfBirth
         {
             get => CurrentEmployee.DateOfBirth == DateTime.MinValue ? DateTime.Now.Date : CurrentEmployee.DateOfBirth;
@@ -252,7 +252,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
                 if (isAdd)
                 {
-                    Password = MD5EncoderService.EncodePassword(Login, CheckPassword);
+                    Password = MD5EncoderService.EncodePassword(Login, Password);
                     var response = await ApiService.Instance.PostRequest("api/Employees", CurrentEmployee);
                     if (response.StatusCode == System.Net.HttpStatusCode.Created)
                     {

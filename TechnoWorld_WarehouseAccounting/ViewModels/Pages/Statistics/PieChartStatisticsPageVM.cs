@@ -98,7 +98,16 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
             {
                 SeriesCollection.Clear();
             }
-
+            if (orders.Count == 0)
+            {
+                EmptyVisibility = Visibility.Visible;
+                return;
+            }
+            else
+            {
+                EmptyVisibility = Visibility.Collapsed; 
+                return;
+            }
             if (_statisticsType == "Продажи по типам товаров")
             {
                 foreach (var type in types.OrderBy(p => p.Name))
@@ -161,7 +170,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
             }
             else if (_statisticsType == "Продажи по категориям")
             {
-                foreach (var categories in categories.OrderBy(p => p.Name))
+                foreach (var category in categories.OrderBy(p => p.Name))
                 {
                     int totalCount = 0;
                     decimal totalSales = 0;
@@ -175,7 +184,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
                         {
                             foreach (var orderElectronics in order.OrderElectronics)
                             {
-                                if (orderElectronics.Electronics.Type.CategoryId == categories.Id)
+                                if (orderElectronics.Electronics.Type.CategoryId == category.Id)
                                 {
                                     count += orderElectronics.Count;
                                     sales += orderElectronics.Electronics.SalePrice * orderElectronics.Count;
@@ -190,12 +199,12 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
                     }
                     if (totalCount > 0)
                     {
-                        values.Add(new PieSalesTooltip(categories.Name, totalCount, totalSales));
+                        values.Add(new PieSalesTooltip(category.Name, totalCount, totalSales));
                     }
                     //values.Add(new SalesTooltip(type.Name, totalCount, totalSales, date.Ticks));
                     SeriesCollection.Add(new PieSeries
                     {
-                        Title = categories.Name,
+                        Title = category.Name,
                         Values = values,
                         DataLabels = true,
                         LabelPoint = PointLabel,
@@ -206,17 +215,18 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
                         Foreground = Brushes.Black
                     });
 
-                    if ((values as ChartValues<PieSalesTooltip>).All(d => d.Count == 0))
-                    {
-                        EmptyVisibility = Visibility.Visible;
-                    }
-                    else
-                    {
-                        EmptyVisibility = Visibility.Collapsed;
-                    }
 
-                    Labels.Add(categories.Name);
-                    Sales.Add(new SaleModel(categories.Name, totalCount, totalSales));
+
+                    Labels.Add(category.Name);
+                    Sales.Add(new SaleModel(category.Name, totalCount, totalSales));
+                }
+                if (SeriesCollection.All(p => (p.Values as ChartValues<PieSalesTooltip>).All(d => d.Count == 0)))
+                {
+                    EmptyVisibility = Visibility.Visible;
+                }
+                else
+                {
+                    EmptyVisibility = Visibility.Collapsed;
                 }
             }
 

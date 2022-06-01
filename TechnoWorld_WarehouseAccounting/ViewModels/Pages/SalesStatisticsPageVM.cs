@@ -62,7 +62,10 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         public DateTime EndDate
         {
             get => endDate;
-            set { endDate = (value < startDate && startDate != DateTime.MinValue) || value > DateTime.Now ? endDate : value; OnPropertyChanged(); }
+            set
+            {
+                endDate = (value < startDate && startDate != DateTime.MinValue) || value > DateTime.Now ? endDate : value; OnPropertyChanged();
+            }
         }
 
         private bool PeriodeIsValide()
@@ -81,22 +84,27 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         {
             await Task.Run(() => App.Current.Dispatcher.InvokeAsync(() =>
             {
-                  //if (!PeriodeIsValide() && SelectedDiagramType == "Линейная диаграмма")
-                  //{
-                  //    MaterialNotification.Show("Внимание", "Для линейной диаграммы период не должен превышать 3 масяца!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
-                  //    return;
-                  //}
+                //if (!PeriodeIsValide() && SelectedDiagramType == "Линейная диаграмма")
+                //{
+                //    MaterialNotification.Show("Внимание", "Для линейной диаграммы период не должен превышать 3 масяца!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                //    return;
+                //}
 
 
-                  if (SelectedDiagramType == "Линейная диаграмма")
-                  {
-                      StatisticsNavigation.Navigate(new LineChartStatisticPageVM(SelectedStatistics, StartDate, EndDate));
-                  }
-                  else if (SelectedDiagramType == "Круговая диаграмма")
-                  {
+                if (SelectedDiagramType == "Линейная диаграмма")
+                {
+                    if (EndDate.Date == StartDate.Date)
+                    {
+                        MaterialNotification.Show("Внимание", "Период должен быть больше 1 дня!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                        return;
+                    }
+                    StatisticsNavigation.Navigate(new LineChartStatisticPageVM(SelectedStatistics, StartDate, EndDate));
+                }
+                else if (SelectedDiagramType == "Круговая диаграмма")
+                {
 
-                      StatisticsNavigation.Navigate(new PieChartStatisticsPageVM(SelectedStatistics, StartDate, EndDate));
-                  }
+                    StatisticsNavigation.Navigate(new PieChartStatisticsPageVM(SelectedStatistics, StartDate, EndDate));
+                }
             }));
 
 

@@ -65,7 +65,7 @@
                             </interactions:EventTrigger>
                         </interactions:Interaction.Triggers>
                     </wpfx:MaskedTextBox>
-                    <DatePicker SelectedDate="{Binding DateOfBirth, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Style="{StaticResource validationDatePicker}" materialDesign:HintAssist.Hint="Дата рождения" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <DatePicker SelectedDate="{Binding DateOfBirth, UpdateSourceTrigger=LostFocus, ValidatesOnDataErrors=True}" Style="{StaticResource validationDatePicker}" materialDesign:HintAssist.Hint="Дата рождения" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <TextBox IsEnabled="{Binding IsAdd}" Text="{Binding Login, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Логин" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
 
                     <TextBox Text="{Binding Password, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Пароль" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">

@@ -525,6 +525,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_53666B4A2DCF863ECA41C20F9E7F20E3"
+        "OwnerKey" = "8:_892E3FF7AA23DBE6D50BD2CC449C812C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_54F2114ADE1637CEB9AD7D4965528C92"
         "OwnerKey" = "8:_30E673B3221B4595A8F5D930B19A6FDB"
         "MsmSig" = "8:_UNDEFINED"
@@ -1065,12 +1071,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A81E8AA81BEB34E55F7766BC79D08CD0"
-        "OwnerKey" = "8:_892E3FF7AA23DBE6D50BD2CC449C812C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_A9B40A3EB65621858992344EEA181981"
         "OwnerKey" = "8:_30E673B3221B4595A8F5D930B19A6FDB"
         "MsmSig" = "8:_UNDEFINED"
@@ -1145,12 +1145,6 @@
         {
         "MsmKey" = "8:_B11CFAD715B11C2CBEB9CB1306242F3A"
         "OwnerKey" = "8:_30E673B3221B4595A8F5D930B19A6FDB"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_B11CFAD715B11C2CBEB9CB1306242F3A"
-        "OwnerKey" = "8:_B6D24CF6661BD3117AAF6ECB456D5338"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1775,6 +1769,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_892E3FF7AA23DBE6D50BD2CC449C812C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_53666B4A2DCF863ECA41C20F9E7F20E3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -4311,6 +4311,37 @@
                     }
                 }
             "SourcePath" = "8:Newtonsoft.Json.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_606394879DE34430A28BBE3B5F4CA922"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_53666B4A2DCF863ECA41C20F9E7F20E3"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:RestSharp, Version=106.8.10.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_53666B4A2DCF863ECA41C20F9E7F20E3"
+                    {
+                    "Name" = "8:RestSharp.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:RestSharp.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_606394879DE34430A28BBE3B5F4CA922"
@@ -8005,7 +8036,7 @@
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_606394879DE34430A28BBE3B5F4CA922"
                     {
                     "Name" = "8:Libs"
-                    "AlwaysCreate" = "11:FALSE"
+                    "AlwaysCreate" = "11:TRUE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
                     "Property" = "8:_C5AC8C57420945039C9F9E4C4630D136"
@@ -8016,7 +8047,7 @@
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_88087F892452479EA6BDD8D853975740"
                     {
                     "Name" = "8:Инвентаризация"
-                    "AlwaysCreate" = "11:FALSE"
+                    "AlwaysCreate" = "11:TRUE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
                     "Property" = "8:_D3C78BBA0DA646B6B73BDC5A8C4C0DED"
@@ -8027,7 +8058,7 @@
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_A99E31973FE24672A1D7BAE5EE06BEB0"
                     {
                     "Name" = "8:Приходные накладные"
-                    "AlwaysCreate" = "11:FALSE"
+                    "AlwaysCreate" = "11:TRUE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
                     "Property" = "8:_2B8CAFF36690425EA9EF18C4C5440501"

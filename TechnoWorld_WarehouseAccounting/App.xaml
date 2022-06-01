@@ -26,6 +26,9 @@
                 <ResourceDictionary>
                     <converters:ImageNullConverter x:Key="nullImageConv"/>
                 </ResourceDictionary>
+                <ResourceDictionary>
+                    <converters:TextDateConverter x:Key="textDateConv"/>
+                </ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

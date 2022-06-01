@@ -43,10 +43,10 @@
                 <StackPanel Margin="5">
                     <TextBlock Text="Итого" FontSize="22"/>
                     <Separator Margin="0,15,0,0"/>
-                    <Grid Margin="0,5,0,0">
+                    <!--<Grid Margin="0,5,0,0">
                         <TextBlock Text="Товаров на" FontSize="20" />
                         <TextBlock Text="{Binding ElectronicTotalPrice, StringFormat={}{0:F0} ₽}" FontSize="20" HorizontalAlignment="Right"/>
-                    </Grid>
+                    </Grid>-->
                     <!--<Grid  Margin="0,20,0,0">
                         <TextBlock Text="Доставка за" FontSize="20"/>
                         <TextBlock Text="{Binding DeliveryPrice, StringFormat={}{0:F0} ₽}" FontSize="20" HorizontalAlignment="Right"/>
@@ -55,7 +55,7 @@
                         <TextBlock Text="Всего к оплате" FontSize="20"/>
                         <TextBlock Text="{Binding TotalOrderPrice, StringFormat={}{0:F0} ₽}" FontSize="20" HorizontalAlignment="Right"/>
                     </Grid>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,45,0,0">
                         <Button Content="Назад в каталог" Background="Orange" HorizontalAlignment="Center" Width="300" BorderBrush="Orange" Margin="5" Command="{Binding BackToElectronicsCommand}" Cursor="Hand"/>
                         <Button HorizontalAlignment="Center" Width="300" Background="Orange" Content="Оформить заказ" Command="{Binding CreateOrderCommand}" BorderBrush="Orange" Cursor="Hand"/>
                     </StackPanel>

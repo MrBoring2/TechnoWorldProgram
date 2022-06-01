@@ -46,8 +46,8 @@
                 <ComboBox Margin="5" ItemsSource="{Binding DisagramTypes}" SelectedItem="{Binding SelectedDiagramType}" materialDesign:HintAssist.Hint="Тип диаграммы" materialDesign:HintAssist.IsFloating="True" Width="250" FontSize="16" HorizontalAlignment="Left"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Center" Width="380">
-                <DatePicker SelectedDate="{Binding StartDate}" Margin="5" materialDesign:HintAssist.Hint="Начало периода" materialDesign:HintAssist.IsFloating="True" Width="180" FontSize="16"/>
-                <DatePicker SelectedDate="{Binding EndDate}" Margin="5" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" Width="180" FontSize="16"/>
+                <DatePicker SelectedDate="{Binding StartDate,Mode=TwoWay,UpdateSourceTrigger=LostFocus}" Margin="5" materialDesign:HintAssist.Hint="Начало периода" materialDesign:HintAssist.IsFloating="True" Width="180" FontSize="16"/>
+                <DatePicker SelectedDate="{Binding EndDate, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Margin="5" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" Width="180" FontSize="16"/>
             </StackPanel>
             <Button Grid.Column="2" HorizontalAlignment="Right" Width="220" Margin="5,19,5,19" Style="{StaticResource btn}" Content="Сформировать статистику" Cursor="Hand" Command="{Binding GenerateStatisticsCommand}"/>
         </Grid>

@@ -35,8 +35,8 @@
 
             <StackPanel Grid.Row="1" Orientation="Horizontal">
                 <ComboBox Margin="5" materialDesign:HintAssist.Hint="Статус" DisplayMemberPath="Title" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left" ItemsSource="{Binding Statuses}" SelectedItem="{Binding SelectedStatus}"/>
-                <DatePicker SelectedDate="{Binding StartDate}" Margin="5" materialDesign:HintAssist.Hint="Начало периода" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
-                <DatePicker SelectedDate="{Binding EndDate}" Margin="5" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
+                <DatePicker SelectedDate="{Binding StartDate, UpdateSourceTrigger=LostFocus}" Margin="5" materialDesign:HintAssist.Hint="Начало периода" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
+                <DatePicker SelectedDate="{Binding EndDate, UpdateSourceTrigger=LostFocus}" Margin="5" materialDesign:HintAssist.Hint="Конец периода" materialDesign:HintAssist.IsFloating="True" FontSize="16" Width="250" HorizontalAlignment="Left"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right" Margin="0,5,5,5">
                 <ComboBox Width="250" Margin="5,0,0,0" ItemsSource="{Binding SortParameters}" SelectedItem="{Binding SelectedSort}" DisplayMemberPath="Title" materialDesign:HintAssist.Hint="Сортировка" materialDesign:HintAssist.IsFloating="True" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>

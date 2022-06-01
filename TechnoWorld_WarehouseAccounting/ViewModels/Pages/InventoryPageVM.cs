@@ -45,6 +45,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         private void ClearTable(object obj)
         {
             InventoryModels.Clear();
+            FactTotalPrice = 0;
+            BuhTotalPrice = 0;
         }
 
         private async void Spend(object obj)
@@ -106,7 +108,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
         private void InventoryModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            
             FactTotalPrice = InventoryModels.Sum(p => p.FactTotalPrice);
             BuhTotalPrice = InventoryModels.Sum(p => p.BuhTotalPrice);
         }
@@ -132,10 +133,14 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 InventoryModels.Clear();
                 foreach (var item in electronics)
                 {
-                    InventoryModels.Add(new InventoryModel(
+                    var inventoryModel =
+                   (new InventoryModel(
                         item,
                         item.ElectronicsToStorages.Where(p => p.StorageId == SelectedStorage.StorageId).Sum(p => p.Quantity),
                         item.PurchasePrice));
+
+                    inventoryModel.PropertyChanged += InventoryModel_PropertyChanged;
+                    InventoryModels.Add(inventoryModel);
                 }
             }
         }
@@ -221,7 +226,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
                 var application = new Excel.Application();
                 application.SheetsInNewWorkbook = 1;
                 Excel.Workbook workbook = application.Workbooks.Add(Type.Missing);
-            
+
                 Excel.Worksheet worksheet = application.Worksheets.Item[1];
                 worksheet.Name = "Инвентаризация";
                 worksheet.Cells[1][1] = $"Инвентаризация № {inventoryNumber} от {DateTime.Now.ToLocalTime()}";

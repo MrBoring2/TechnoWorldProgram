@@ -7283,7 +7283,7 @@
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_8F89F54E649247DDA6DE90C47971B1FB"
                     {
                     "Name" = "8:Чеки"
-                    "AlwaysCreate" = "11:FALSE"
+                    "AlwaysCreate" = "11:TRUE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
                     "Property" = "8:_97020B18E4EE45788B327F55FB88F09F"
@@ -7294,7 +7294,7 @@
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_F9EB79E9FFEF41D18F9C4E295B2C284B"
                     {
                     "Name" = "8:Libs"
-                    "AlwaysCreate" = "11:FALSE"
+                    "AlwaysCreate" = "11:TRUE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
                     "Property" = "8:_B0BF3928D39F45AE99BC8EF931D0B2B2"

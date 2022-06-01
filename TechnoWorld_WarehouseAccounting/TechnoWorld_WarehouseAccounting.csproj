@@ -284,6 +284,7 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Resources\Converters\DeviationValueConverter.cs" />
     <Compile Include="Resources\Converters\ImageNullConverter.cs" />
+    <Compile Include="Resources\Converters\TextDateConverter.cs" />
     <Compile Include="Services\ClientService.cs" />
     <Compile Include="Services\PageController.cs" />
     <Compile Include="Services\PageNavigation.cs" />
