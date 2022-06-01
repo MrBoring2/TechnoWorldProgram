@@ -200,6 +200,16 @@ namespace TechnoWorld_API.Controllers
         public async Task<ActionResult<Order>> PostOrder(Order order)
         {
             order.DateOfRegistration = order.DateOfRegistration.ToLocalTime();
+
+            foreach (var item in order.OrderElectronics)
+            {
+                var itemInDb = _context.Electronics.Include(p => p.ElectronicsToStorages).FirstOrDefault(p => p.ElectronicsId == item.ElectronicsId);
+                if (item.Count > itemInDb.AmountInStorage)
+                {
+                    return BadRequest("Недостаточно товара в магазине");
+                }
+            }
+
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
 

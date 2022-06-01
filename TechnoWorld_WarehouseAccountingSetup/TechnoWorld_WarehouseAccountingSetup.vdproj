@@ -525,12 +525,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_53666B4A2DCF863ECA41C20F9E7F20E3"
-        "OwnerKey" = "8:_892E3FF7AA23DBE6D50BD2CC449C812C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_54F2114ADE1637CEB9AD7D4965528C92"
         "OwnerKey" = "8:_30E673B3221B4595A8F5D930B19A6FDB"
         "MsmSig" = "8:_UNDEFINED"
@@ -1071,6 +1065,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A81E8AA81BEB34E55F7766BC79D08CD0"
+        "OwnerKey" = "8:_892E3FF7AA23DBE6D50BD2CC449C812C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_A9B40A3EB65621858992344EEA181981"
         "OwnerKey" = "8:_30E673B3221B4595A8F5D930B19A6FDB"
         "MsmSig" = "8:_UNDEFINED"
@@ -1145,6 +1145,12 @@
         {
         "MsmKey" = "8:_B11CFAD715B11C2CBEB9CB1306242F3A"
         "OwnerKey" = "8:_30E673B3221B4595A8F5D930B19A6FDB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B11CFAD715B11C2CBEB9CB1306242F3A"
+        "OwnerKey" = "8:_B6D24CF6661BD3117AAF6ECB456D5338"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1265,6 +1271,12 @@
         {
         "MsmKey" = "8:_BE6B013050EB79B312197374E6C702A3"
         "OwnerKey" = "8:_30E673B3221B4595A8F5D930B19A6FDB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C235D85699D74A7DAB7EE7B0124E6A8B"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1641,12 +1653,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E93D2E8061464881BD877F3018305853"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_ECBC0E7F7B522A995F5B13FA946E6252"
         "OwnerKey" = "8:_30E673B3221B4595A8F5D930B19A6FDB"
         "MsmSig" = "8:_UNDEFINED"
@@ -1769,12 +1775,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_892E3FF7AA23DBE6D50BD2CC449C812C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_53666B4A2DCF863ECA41C20F9E7F20E3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -4328,37 +4328,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_53666B4A2DCF863ECA41C20F9E7F20E3"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:RestSharp, Version=106.8.10.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_53666B4A2DCF863ECA41C20F9E7F20E3"
-                    {
-                    "Name" = "8:RestSharp.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:RestSharp.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_606394879DE34430A28BBE3B5F4CA922"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_54F2114ADE1637CEB9AD7D4965528C92"
             {
             "AssemblyRegister" = "3:1"
@@ -6498,6 +6467,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C235D85699D74A7DAB7EE7B0124E6A8B"
+            {
+            "SourcePath" = "8:..\\TechnoWorld_WarehouseAccounting\\Resources\\Images\\splash_screen.png"
+            "TargetName" = "8:splash_screen.png"
+            "Tag" = "8:"
+            "Folder" = "8:_7B515292BC6F4012AF234172CDB06264"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C406C7A21A5F2495FD3A168EC42A3109"
             {
             "AssemblyRegister" = "3:1"
@@ -7634,26 +7623,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E93D2E8061464881BD877F3018305853"
-            {
-            "SourcePath" = "8:..\\TechnoWorld_Terminal\\Resources\\Images\\splash_screen.png"
-            "TargetName" = "8:splash_screen.png"
-            "Tag" = "8:"
-            "Folder" = "8:_7B515292BC6F4012AF234172CDB06264"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_ECBC0E7F7B522A995F5B13FA946E6252"
             {
             "AssemblyRegister" = "3:1"
@@ -8096,7 +8065,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Управление складом"
         "ProductCode" = "8:{EE0D649E-65FB-44A0-9DD9-3CAB60722396}"
-        "PackageCode" = "8:{1788AE91-B9F5-4B17-9321-33588036FDBF}"
+        "PackageCode" = "8:{05A500EC-37EF-45A4-A752-7E1B2C2C6A4E}"
         "UpgradeCode" = "8:{9DA68275-1823-4B37-B773-D7387F3A4C00}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -8382,7 +8351,7 @@
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:_E93D2E8061464881BD877F3018305853"
+                            "Value" = "8:_C235D85699D74A7DAB7EE7B0124E6A8B"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "Sunken"

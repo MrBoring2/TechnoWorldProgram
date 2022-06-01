@@ -1,5 +1,6 @@
 ﻿using MaterialNotificationLibrary;
 using MaterialNotificationLibrary.Enums;
+using Newtonsoft.Json;
 using Notification.Wpf;
 using System;
 using System.Collections.Generic;
@@ -110,6 +111,10 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
                 CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Оповещение", Message = $"Заказ успешно оформлен. Подойдите к кассе. Номер заказа: {order.OrderNumber}", Type = NotificationType.Success }, "MainNotificationArea");
                 ClientService.Instance.Cart.Clear();
                 MaterialNotification.Show("Заказ оформлен", $"Ваш номр заказа {order.OrderNumber}, подойдите с ним к кассе.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
+            }
+            else if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+            {
+                CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Ошибка", Message = JsonConvert.DeserializeObject<string>(response.Content), Type = NotificationType.Error }, "MainNotificationArea");
             }
         }
 
