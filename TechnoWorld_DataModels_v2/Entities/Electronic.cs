@@ -9,6 +9,8 @@ namespace TechoWorld_DataModels_v2.Entities
 {
     public partial class Electronic : BaseEntity
     {
+        [NotMapped]
+        private int amountInStoragesWithReservation;
         public Electronic()
         {
             ElectronicsToDeliveries = new HashSet<ElectronicsToDelivery>();
@@ -43,12 +45,31 @@ namespace TechoWorld_DataModels_v2.Entities
             get => Manufacturer?.Name;
         }
         [NotMapped]
+        public int AmountInStoragesWithReservation
+        {
+            get
+            {
+                return amountInStoragesWithReservation;
+                //return ElectronicsToStorages.Count() > 0 && ElectronicsToStorages != null ? ElectronicsToStorages.Sum(p => p.Quantity) : 0;
+            }
+            set
+            {
+                amountInStoragesWithReservation = value;
+            }
+        }
+
+        [NotMapped]
         public int AmountInStorage
         {
             get
             {
                 return ElectronicsToStorages.Count() > 0 && ElectronicsToStorages != null ? ElectronicsToStorages.Sum(p => p.Quantity) : 0;
             }
+        }
+
+        public void SetAmountWithReservation(int amount)
+        {
+            AmountInStoragesWithReservation = amount;
         }
         [NotMapped]
         public string AmountnAveryStorage

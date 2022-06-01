@@ -15,7 +15,7 @@ namespace TechnoWorld_Terminal.Services
     {
         private static readonly PageController pageController = new PageController();
         private static volatile PageNavigation instance;
-        private static object syncRoot = new Object();
+        private static object syncRoot = new object();
         private NavigationService _navService;
 
         private PageNavigation() { RegisterPages(); }
@@ -60,40 +60,20 @@ namespace TechnoWorld_Terminal.Services
             where Pag : Page
         {
             pageController.RegisterPageType<VM, Pag>();
-
-            //if (CurrentPage is null)
-            //{
-            //    //SwitchPage((PageVMBase)pageController.GetFirstPage().DataContext);
-            //}
         }
-        //public static void CreatePage(Type vmType)
-        //{
-        //    if (!pageController.IsPageCreated(vmType))
-        //    {
-        //        pageController.CreatePage(vmType);
-        //    }
-        //}
-        protected BasePageVM GetPageInstance(Type vmType)
+        public static bool IsPageExist(Type vmType)
         {
             if (vmType != null)
             {
-                return pageController.Pages.FirstOrDefault(p => p.GetType().Equals(vmType));
+                return pageController.Pages.FirstOrDefault(p => p.GetType().Equals(vmType)) != null;
             }
             else
             {
-                return pageController.Pages.FirstOrDefault();
+                return false;
             }
         }
         private void _navService_Navigated(object sender, NavigationEventArgs e)
         {
-            //var page = e.Content as Page;
-
-            //if (page == null)
-            //{
-            //    return;
-            //}
-
-            //page.DataContext = e.ExtraData;
         }
         public static Page GetPage(Type pageVMType)
         {
@@ -141,10 +121,6 @@ namespace TechnoWorld_Terminal.Services
             RegisterPageWithVM<CartPageVM, CartPage>();
             RegisterPageWithVM<CategoriesPageVM, CategoriesPage>();
             RegisterPageWithVM<ElectronicsDetailPageVM, ElectronicsDetailPage>();
-            //CreatePage(typeof(ElectronicsListPageVM));
-            //CreatePage(typeof(CartPageVM));
-            //CreatePage(typeof(CategoriesPageVM));
-
         }
     }
 }

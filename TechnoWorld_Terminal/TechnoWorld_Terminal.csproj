@@ -224,7 +224,6 @@
     <Compile Include="ViewModels\Pages\CartPageVM.cs" />
     <Compile Include="ViewModels\Pages\CategoriesPageVM.cs" />
     <Compile Include="ViewModels\Pages\ElectronicsListPageVM.cs" />
-    <Compile Include="ViewModels\Windows\WindowWithPagesVMBase.cs" />
     <Compile Include="Views\Pages\CartPage.xaml.cs">
       <DependentUpon>CartPage.xaml</DependentUpon>
     </Compile>
@@ -336,7 +335,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
-    <Folder Include="ViewModels\UIElements\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Images\logo1.ico" />

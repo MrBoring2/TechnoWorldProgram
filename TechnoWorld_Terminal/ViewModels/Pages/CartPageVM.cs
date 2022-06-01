@@ -91,8 +91,6 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         }
         private async void CreateOrder(object obj)
         {
-            var electronicsInOrder = new List<OrderElectronic>();
-
             var order = new Order
             {
                 DateOfRegistration = DateTime.Now,
@@ -110,7 +108,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             {
                 CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Оповещение", Message = $"Заказ успешно оформлен. Подойдите к кассе. Номер заказа: {order.OrderNumber}", Type = NotificationType.Success }, "MainNotificationArea");
                 ClientService.Instance.Cart.Clear();
-                MaterialNotification.Show("Заказ оформлен", $"Ваш номр заказа {order.OrderNumber}, подойдите с ним к кассе.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
+                MaterialNotification.Show("Заказ оформлен", $"Ваш номер заказа {order.OrderNumber}, подойдите с ним к кассе.", MaterialNotificationButton.Ok, MaterialNotificationImage.Susccess);
             }
             else if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
             {
@@ -132,7 +130,14 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
         private void BackToElectronics(object obj)
         {
-            PageNavigation.Navigate(typeof(ElectronicsListPageVM));
+            if (PageNavigation.IsPageExist(typeof(ElectronicsListPageVM)))
+            {
+                PageNavigation.Navigate(typeof(ElectronicsListPageVM));
+            }
+            else
+            {
+                PageNavigation.Navigate(typeof(ElectronicsListPageVM));
+            }
         }
 
 

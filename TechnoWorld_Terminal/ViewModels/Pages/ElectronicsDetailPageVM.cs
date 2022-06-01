@@ -124,7 +124,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             Manufacturer = CurrentElectronic.Manufacturer;
             ElectronicType = CurrentElectronic.Type;
             SalePrice = CurrentElectronic.SalePrice;
-            AmountInStorage = CurrentElectronic.AmountInStorage;
+            AmountInStorage = CurrentElectronic.AmountInStoragesWithReservation;
             Description = CurrentElectronic.Description;
             Image = CurrentElectronic.Image;
             Color = CurrentElectronic.Color;
@@ -150,7 +150,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
             if (ClientService.Instance.Cart.FirstOrDefault(p => p.Electronic.ElectronicsId == CurrentElectronic.ElectronicsId) == null)
             {
-                if (CurrentElectronic.AmountInStorage > 0)
+                if (CurrentElectronic.AmountInStoragesWithReservation > 0)
                 {
                     ClientService.Instance.Cart.Add(new Models.CartItem(CurrentElectronic));
                     CustomNotificationManager.ShowNotification(new NotificationContent() { Title = "Оповещение", Message = "Товар добавлен в корзину", Type = NotificationType.Information }, "ElectronicNotificationArea");

@@ -50,7 +50,7 @@
                     </materialDesign:PackIcon.ToolTip>
                 </materialDesign:PackIcon>
             </Button>
-            <Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding RestoreOrderCommand}" Cursor="Hand">
+            <!--<Button Background="Transparent" BorderThickness="0" Width="35" Height="35" Command="{Binding RestoreOrderCommand}" Cursor="Hand">
                 <materialDesign:PackIcon Kind="Restore" ToolTipService.Placement="Top" Width="35" Height="35" Margin="-15" VerticalAlignment="Center" Background="Transparent" Foreground="Orange">
                     <materialDesign:PackIcon.ToolTip>
                         <ToolTip Style="{StaticResource BaseToolit}">
@@ -58,7 +58,7 @@
                         </ToolTip>
                     </materialDesign:PackIcon.ToolTip>
                 </materialDesign:PackIcon>
-            </Button>
+            </Button>-->
         </StackPanel>
 
         <DataGrid Grid.Row="2" ItemsSource="{Binding EntitiesCollection}" Margin="5" SelectedItem="{Binding SelectedEntity}" IsReadOnly="True" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" BorderThickness="1" BorderBrush="Orange">
@@ -71,7 +71,7 @@
                     <ContextMenu.Items>
                         <MenuItem Header="Оплата" Command="{Binding DataContext.PaymentCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=DataGrid}}"/>
                         <MenuItem Header="Отменить" Command="{Binding DataContext.CancelOrderCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=DataGrid}}"/>
-                        <MenuItem Header="Восстановить" Command="{Binding DataContext.RestoreOrderCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=DataGrid}}"/>
+                        <!--<MenuItem Header="Восстановить" Command="{Binding DataContext.RestoreOrderCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=DataGrid}}"/>-->
                     </ContextMenu.Items>
                 </ContextMenu>
             </DataGrid.Resources>
@@ -82,7 +82,7 @@
             </DataGrid.RowStyle>
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Номер заказа" Width="2*" Binding="{Binding OrderNumber}"/>
-                <DataGridTextColumn Header="Дата заказа" Width="*" Binding="{Binding DateOfRegistration, StringFormat={}{0:dd.MM.yyyy}}"/>
+                <DataGridTextColumn Header="Дата заказа" Width="*" Binding="{Binding DateOfRegistration, StringFormat={}{0:dd.MM.yyyy HH:mm}}"/>
                 <DataGridTextColumn Header="Статус заказа" Width="*" Binding="{Binding Status.Name}"/>
             </DataGrid.Columns>
         </DataGrid>

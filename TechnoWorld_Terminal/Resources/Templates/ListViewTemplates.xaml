@@ -27,7 +27,7 @@
                 </StackPanel>
                 <StackPanel Grid.Column="2" Orientation="Vertical">
                     <TextBlock Text="{Binding SalePrice, StringFormat={}{0:F0} ₽}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
-                    <TextBlock Text="{Binding AmountInStorage, StringFormat={}{0} на складе}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
+                    <TextBlock Text="{Binding AmountInStoragesWithReservation, StringFormat={}В наличии: {0}}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
                 </StackPanel>
             </Grid>
         </Border>

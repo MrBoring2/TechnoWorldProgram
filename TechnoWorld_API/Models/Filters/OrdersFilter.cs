@@ -35,6 +35,7 @@ namespace TechnoWorld_API.Models.Filters
                     bool res1 = false;
                     bool res2 = false;
                     bool res3 = false;
+                    bool res4 = false;
 
                     res1 = p.OrderNumber.ToLower().Contains(Search.ToLower());
 
@@ -45,8 +46,8 @@ namespace TechnoWorld_API.Models.Filters
 
                     res2 = StatusId == 0 ? true : p.StatusId == StatusId;
                     res3 = p.DateOfRegistration >= StartDate.ToLocalTime() && p.DateOfRegistration <= EndDate.ToLocalTime();
-
-                    return res1 && res2 && res3;
+                    res4 = p.StatusId != 4;
+                    return res1 && res2 && res3 && res4;
                 };
             }
         }

@@ -79,8 +79,20 @@ namespace BNS_API.Controllers
                     list = list.Skip((filter.CurrentPage - 1) * filter.ItemsPerPage);
                 }
                 list = list.Take(filter.ItemsPerPage);
-            });
 
+                foreach (var item in list)
+                {
+                    var orders = _context.Orders.Include(p => p.OrderElectronics).Where(p => p.StatusId != 3 && p.StatusId != 4).Where(p => p.OrderElectronics.Any(p => p.ElectronicsId == item.ElectronicsId));
+                    int sum = 0;
+                    foreach (var order in orders)
+                    {
+                        sum += order.OrderElectronics.FirstOrDefault(p => p.ElectronicsId == item.ElectronicsId).Count;
+                    }
+                    item.SetAmountWithReservation(item.AmountInStorage - sum);
+                }
+
+            });
+            var a = list.ToList();
             return new FilteredElectronic(list, count);
         }
 

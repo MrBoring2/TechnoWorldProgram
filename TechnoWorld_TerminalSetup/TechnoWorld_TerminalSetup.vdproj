@@ -7301,11 +7301,8 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Терминал"
         "ProductCode" = "8:{2F1E59E9-A9FD-4AED-9FC0-33E14FC45FD8}"
-<<<<<<< HEAD
         "PackageCode" = "8:{73CB7ADC-5430-4A2B-B2AB-56EA2961468B}"
-=======
         "PackageCode" = "8:{8B0579B2-7D78-4F54-B203-D25A2F79DAEA}"
->>>>>>> a2d49bdec40adba6a90b77af1fa9a3df915d7db0
         "UpgradeCode" = "8:{5568023B-EFE5-4E56-B56E-2199D3C2E5A9}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

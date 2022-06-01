@@ -185,6 +185,7 @@ namespace TechnoWorld_API.Controllers
             try
             {
                 await _hubContext.Clients.Group(SignalRGroups.cash_group).SendAsync("UpdateOrders", "d");
+                await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", "d");
             }
             catch (Exception ex)
             {
@@ -203,7 +204,9 @@ namespace TechnoWorld_API.Controllers
 
             foreach (var item in order.OrderElectronics)
             {
-                var itemInDb = _context.Electronics.Include(p => p.ElectronicsToStorages).FirstOrDefault(p => p.ElectronicsId == item.ElectronicsId);
+                var itemInDb = _context.Electronics.Include(p => p.ElectronicsToStorages)
+                                                            .ThenInclude(p => p.Storage)
+                                                            .FirstOrDefault(p => p.ElectronicsId == item.ElectronicsId);
                 if (item.Count > itemInDb.AmountInStorage)
                 {
                     return BadRequest("Недостаточно товара в магазине");
@@ -212,7 +215,7 @@ namespace TechnoWorld_API.Controllers
 
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
-
+            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", "d");
             LogService.LodMessage($"Создан новый заказ с номером {order.OrderNumber}", LogLevel.Info);
 
             try

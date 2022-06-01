@@ -77,3 +77,4 @@ C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\obj\Debug\M
 C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\obj\Debug\MaterialNotificationLibrary.dll
 C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\obj\Debug\MaterialNotificationLibrary.pdb
 C:\Users\user452.CHENK\.ssh\TechnoWorldProgram\MaterialNotificationLibrary\obj\Debug\MaterialNotificationLibrary.csproj.AssemblyReference.cache
+C:\Users\MrBoring\GIT\TechnoWorldProgram\MaterialNotificationLibrary\obj\Debug\MaterialNotificationLibrary.csproj.AssemblyReference.cache

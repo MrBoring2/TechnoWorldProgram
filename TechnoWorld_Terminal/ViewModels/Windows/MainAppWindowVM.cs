@@ -37,7 +37,6 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             Initialize();
            
             OnPropertyChanged(nameof(ItemsInCart));
-
         }
 
         private void Cart_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
@@ -82,11 +81,6 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
             }
         }
 
-        private void Exit()
-        {
-            WindowNavigation.Instance.CloseWindow(this);
-        }
-
         private async void Reconnect()
         {
             await Application.Current.Dispatcher.InvokeAsync(Authorize);
@@ -95,8 +89,6 @@ namespace TechnoWorld_Terminal.ViewModels.Windows
         private async void WindowLoaded(object obj)
         {
             await Authorize();
-            
-            //RegisterEvents();
         }
     }
 }

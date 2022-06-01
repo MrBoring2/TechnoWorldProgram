@@ -35,9 +35,8 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             if (obj != null)
             {
                 var category = obj as Category;
-                //onOpenCategory?.Invoke(category);
                 PageNavigation.HidePage(typeof(ElectronicsListPageVM));
-                PageNavigation.Navigate(typeof(ElectronicsListPageVM), category);
+                PageNavigation.Navigate(typeof(ElectronicsListPageVM), category.Id);
             }
         }
 

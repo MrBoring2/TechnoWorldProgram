@@ -32,14 +32,23 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         private ObservableCollection<Manufacturer> manufacturers;
         private SortParameter selectedSort;
         private Electronic selectedElectronic;
-        private Category category;
+        private int categoryId;
         private int minPrice;
         private int maxPrice;
         #endregion
 
-        public ElectronicsListPageVM(Category category) : base(5)
+        public ElectronicsListPageVM() : base(5)
         {
-            InitializeFields(category);
+            InitializeFields(1);
+
+            ApiService.Instance.GetHubConnection.On<string>("UpdateElectronics", async (electronics) =>
+            {
+                await GetWithFilter();
+            });
+        }
+        public ElectronicsListPageVM(int categoryId) : base(5)
+        {
+            InitializeFields(categoryId);
 
             ApiService.Instance.GetHubConnection.On<string>("UpdateElectronics", async (electronics) =>
             {
@@ -71,14 +80,14 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
             }
         }
 
-        public Category CurrentCategory
+        public int CurrentCategoryId
         {
-            get => category;
+            get => categoryId;
             set
             {
-                if (value.Id != category?.Id)
+                if (value != categoryId)
                 {
-                    category = value;
+                    categoryId = value;
                     LoadData();
                 }
                 OnPropertyChanged();
@@ -106,7 +115,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         protected override object FilterParam => new
         {
             search = Search,
-            categoryId = CurrentCategory.Id,
+            categoryId = CurrentCategoryId,
             listElectronicsTypeId = Types == null ? null : Types.Where(p => p.IsSelected).ToList().Select(p => p.TypeId),
             listManufacturersId = Manufacturers == null ? null : Manufacturers.Where(p => p.IsSelected).ToList().Select(p => p.ManufacturerId),
             sortParameter = SelectedSort.Property,
@@ -119,9 +128,9 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         };
         #endregion
 
-        private void InitializeFields(Category category)
+        private void InitializeFields(int categoryId)
         {
-            CurrentCategory = category;
+            CurrentCategoryId = categoryId;
             MaxPrice = 1000000;
             ConfirmSortCommand = new RelayCommand(ConfirmSort);
             BackToCategoriesCommand = new RelayCommand(BackToCategories);
@@ -181,7 +190,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
         private async Task LoadTypes()
         {
-            var response = (RestResponse)await ApiService.Instance.GetRequestWithParameter("api/ElectrnicsTypes", "categoryId", CurrentCategory.Id);
+            var response = (RestResponse)await ApiService.Instance.GetRequestWithParameter("api/ElectrnicsTypes", "categoryId", CurrentCategoryId);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Types = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content).OrderBy(p => p.Name));
@@ -194,7 +203,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         }
         private async Task LoadManufacturers()
         {
-            var response = (RestResponse)await ApiService.Instance.GetRequestWithParameter("api/Manufacturers", "categoryId", CurrentCategory.Id);
+            var response = (RestResponse)await ApiService.Instance.GetRequestWithParameter("api/Manufacturers", "categoryId", CurrentCategoryId);
             await Task.Run(() =>
             {
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)

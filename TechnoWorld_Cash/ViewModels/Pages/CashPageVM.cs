@@ -66,7 +66,7 @@ namespace TechnoWorld_Cash.ViewModels.Pages
             startDate = StartDate,
             endDate = EndDate,
             sortParameter = "DateOfRegistration",
-            isAscending = true,
+            isAscending = false,
             currentPage = Paginator == null ? 1 : Paginator.SelectedPageNumber,
             itemsPerPage = ItemsPerPage
         };
@@ -107,12 +107,17 @@ namespace TechnoWorld_Cash.ViewModels.Pages
             {
                 if (SelectedEntity.StatusId == 1)
                 {
-                    SelectedEntity.StatusId = 4;
-                    SelectedEntity.EmployeeId = ClientService.Instance.User.UserId;
-                    var response = await ApiService.Instance.PutRequest("api/Orders", SelectedEntity.OrderId, SelectedEntity);
-                    if (response.StatusCode != System.Net.HttpStatusCode.OK)
+                    var result = MaterialNotification.Show("Подтверждение", $"Подтвердите отмену заказа.", MaterialNotificationButton.YesNo, MaterialNotificationImage.Question);
+                    if (result == MaterialNotificationResult.Yes)
                     {
-                        MaterialNotification.Show("Произошла ошибка при изменении статуса товара", $"{response.Content}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
+
+                        SelectedEntity.StatusId = 4;
+                        SelectedEntity.EmployeeId = ClientService.Instance.User.UserId;
+                        var response = await ApiService.Instance.PutRequest("api/Orders", SelectedEntity.OrderId, SelectedEntity);
+                        if (response.StatusCode != System.Net.HttpStatusCode.OK)
+                        {
+                            MaterialNotification.Show("Произошла ошибка при изменении статуса товара", $"{response.Content}", MaterialNotificationButton.Ok, MaterialNotificationImage.Error);
+                        }
                     }
                 }
                 else
@@ -157,7 +162,7 @@ namespace TechnoWorld_Cash.ViewModels.Pages
             if (statusesJson.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Statuses = new ObservableCollection<ItemWithTitle<Status>>(JsonConvert.DeserializeObject<List<Status>>(statusesJson.Content).Select(p => new ItemWithTitle<Status>(p, p.Name)));
-                Statuses = new ObservableCollection<ItemWithTitle<Status>>(Statuses.Where(p => p.Item.Id != 5 && p.Item.Id != 3));
+                Statuses = new ObservableCollection<ItemWithTitle<Status>>(Statuses.Where(p => p.Item.Id != 5 && p.Item.Id != 4));
                 Statuses.Insert(0, new ItemWithTitle<Status>(null, "Все"));
                 selectedStatus = Statuses.FirstOrDefault();
             }
