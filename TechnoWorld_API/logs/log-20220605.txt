@@ -1,0 +1,911 @@
+2022-06-05 19:09:29.760 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-06-05 19:09:30.699 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-06-05 19:09:30.702 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-05 19:09:30.703 +05:00 [INF] Hosting environment: Development
+2022-06-05 19:09:30.704 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-06-05 19:09:56.190 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 19:09:56.232 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:58328) по POST /userToken ответил 200 за 2433.6672 мс
+2022-06-05 19:09:56.484 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58333) по POST /technoWorldHub/negotiate ответил 200 за 52.2286 мс
+2022-06-05 19:09:56.630 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 19:09:57.016 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Categories ответил 200 за 175.0017 мс
+2022-06-05 19:09:57.192 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/ElectrnicsTypes/All ответил 200 за 56.2956 мс
+2022-06-05 19:09:57.787 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Electronics/Filter ответил 200 за 543.2937 мс
+2022-06-05 19:10:00.728 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Posts ответил 200 за 7.7674 мс
+2022-06-05 19:10:00.761 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Employees/Filter ответил 200 за 20.3022 мс
+2022-06-05 19:10:01.478 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Status ответил 200 за 14.2657 мс
+2022-06-05 19:10:01.730 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Deliveries/Filter ответил 200 за 240.5174 мс
+2022-06-05 19:10:04.006 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Electronics/Filter ответил 200 за 70.7771 мс
+2022-06-05 19:10:04.635 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Electronics/Filter ответил 200 за 93.4369 мс
+2022-06-05 19:10:06.718 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58344) по GET /api/Suppliers ответил 200 за 20.5691 мс
+2022-06-05 19:10:06.756 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Storages ответил 200 за 58.3290 мс
+2022-06-05 19:10:23.202 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Categories ответил 200 за 6.0312 мс
+2022-06-05 19:10:23.333 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/ElectrnicsTypes/All ответил 200 за 19.7544 мс
+2022-06-05 19:10:23.528 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Electronics/Filter ответил 200 за 185.4470 мс
+2022-06-05 19:10:25.620 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Categories ответил 200 за 3.9260 мс
+2022-06-05 19:10:25.776 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/ElectrnicsTypes/All ответил 200 за 39.9567 мс
+2022-06-05 19:10:25.952 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Electronics/Filter ответил 200 за 170.4522 мс
+2022-06-05 19:11:04.119 +05:00 [INF] Создан заказ на поставку с номером ЗПCOAFZXFKWZ
+2022-06-05 19:11:04.144 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по POST /api/Deliveries ответил 201 за 377.5927 мс
+2022-06-05 19:11:04.728 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Deliveries/Filter ответил 200 за 234.8590 мс
+2022-06-05 19:11:15.144 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Suppliers ответил 200 за 3.6130 мс
+2022-06-05 19:11:15.152 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58344) по GET /api/Storages ответил 200 за 11.1446 мс
+2022-06-05 19:11:20.113 +05:00 [INF] Статус поставки с номером ЗПCOAFZXFKWZ изменён с 'Ожидается оплаты' на 'Ожидается выгрузка'
+2022-06-05 19:11:20.116 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по PUT /api/Deliveries/36 ответил 200 за 157.3029 мс
+2022-06-05 19:11:20.310 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58344) по GET /api/Deliveries/Filter ответил 200 за 193.5088 мс
+2022-06-05 19:11:21.975 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Suppliers ответил 200 за 1.3184 мс
+2022-06-05 19:11:21.977 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58344) по GET /api/Storages ответил 200 за 2.7382 мс
+2022-06-05 19:12:00.710 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Storages ответил 200 за 3.3781 мс
+2022-06-05 19:12:00.710 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58344) по GET /api/Suppliers ответил 200 за 2.2723 мс
+2022-06-05 19:12:21.303 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58328) по GET /api/Suppliers ответил 200 за 1.3366 мс
+2022-06-05 19:12:21.303 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58344) по GET /api/Storages ответил 200 за 2.1727 мс
+2022-06-05 19:12:35.540 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 19:12:35.544 +05:00 [INF] Запрос от MrBoring (127.0.0.1:58334) по GET /technoWorldHub ответил 101 за 158988.1994 мс
+2022-06-05 21:28:36.423 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-06-05 21:28:36.467 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-06-05 21:28:36.470 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-05 21:28:36.471 +05:00 [INF] Hosting environment: Development
+2022-06-05 21:28:36.472 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-06-05 21:31:08.595 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59190) по POST /terminalToken ответил 200 за 383.7971 мс
+2022-06-05 21:31:08.843 +05:00 [INF] Запрос от terminal_1d2dfcc2-ec5c-4f0f-9940-2138314fd296 (127.0.0.1:59191) по POST /technoWorldHub/negotiate ответил 200 за 53.1435 мс
+2022-06-05 21:31:08.984 +05:00 [INF] Подключенин терминал: terminal_1d2dfcc2-ec5c-4f0f-9940-2138314fd296
+2022-06-05 21:31:10.475 +05:00 [INF] Запрос от terminal_1d2dfcc2-ec5c-4f0f-9940-2138314fd296 (127.0.0.1:59190) по GET /api/Categories ответил 200 за 1392.5321 мс
+2022-06-05 21:31:14.100 +05:00 [INF] Запрос от terminal_1d2dfcc2-ec5c-4f0f-9940-2138314fd296 (127.0.0.1:59190) по POST /terminalToken ответил 200 за 1.9398 мс
+2022-06-05 21:36:22.662 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:36:22.664 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59503) по POST /userToken ответил 200 за 298.7760 мс
+2022-06-05 21:36:22.839 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59504) по POST /technoWorldHub/negotiate ответил 200 за 0.4760 мс
+2022-06-05 21:36:22.987 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:36:23.214 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/Categories ответил 200 за 11.7592 мс
+2022-06-05 21:36:23.407 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/ElectrnicsTypes/All ответил 200 за 45.3539 мс
+2022-06-05 21:36:23.994 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/Electronics/Filter ответил 200 за 457.2374 мс
+2022-06-05 21:36:26.270 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/Status ответил 200 за 13.2395 мс
+2022-06-05 21:36:26.510 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/Deliveries/Filter ответил 200 за 202.6840 мс
+2022-06-05 21:36:28.754 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59508) по GET /api/Suppliers ответил 200 за 13.9516 мс
+2022-06-05 21:36:28.774 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/Storages ответил 200 за 35.9173 мс
+2022-06-05 21:36:30.753 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/Posts ответил 200 за 6.9028 мс
+2022-06-05 21:36:30.774 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/Employees/Filter ответил 200 за 15.1415 мс
+2022-06-05 21:36:33.503 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/Categories ответил 200 за 6.3438 мс
+2022-06-05 21:36:33.520 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/ElectrnicsTypes/All ответил 200 за 11.1398 мс
+2022-06-05 21:36:33.535 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59503) по GET /api/Manufacturers/All ответил 200 за 10.7543 мс
+2022-06-05 21:36:47.587 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 21:36:47.591 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59505) по GET /technoWorldHub ответил 101 за 24656.3037 мс
+2022-06-05 21:37:37.373 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:37:37.374 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59523) по POST /userToken ответил 200 за 5.9180 мс
+2022-06-05 21:37:37.524 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59524) по POST /technoWorldHub/negotiate ответил 200 за 0.3368 мс
+2022-06-05 21:37:37.622 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:37:37.748 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59523) по GET /api/Categories ответил 200 за 4.8093 мс
+2022-06-05 21:37:37.900 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59523) по GET /api/ElectrnicsTypes/All ответил 200 за 14.8950 мс
+2022-06-05 21:37:38.293 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59523) по GET /api/Electronics/Filter ответил 200 за 286.1101 мс
+2022-06-05 21:37:41.352 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59523) по GET /api/Categories ответил 200 за 4.3319 мс
+2022-06-05 21:37:41.370 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59523) по GET /api/ElectrnicsTypes/All ответил 200 за 6.7877 мс
+2022-06-05 21:37:41.378 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59523) по GET /api/Manufacturers/All ответил 200 за 2.1967 мс
+2022-06-05 21:37:49.249 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59523) по GET /api/Categories ответил 200 за 3.6868 мс
+2022-06-05 21:38:30.191 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 21:38:30.193 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59525) по GET /technoWorldHub ответил 101 за 52617.5968 мс
+2022-06-05 21:38:38.363 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:38:38.365 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59542) по POST /userToken ответил 200 за 9.3473 мс
+2022-06-05 21:38:38.517 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59543) по POST /technoWorldHub/negotiate ответил 200 за 0.2457 мс
+2022-06-05 21:38:38.613 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:38:38.736 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59542) по GET /api/Categories ответил 200 за 4.0002 мс
+2022-06-05 21:38:38.857 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59542) по GET /api/ElectrnicsTypes/All ответил 200 за 8.5616 мс
+2022-06-05 21:38:39.130 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59542) по GET /api/Electronics/Filter ответил 200 за 160.0265 мс
+2022-06-05 21:38:41.001 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59542) по GET /api/Categories ответил 200 за 4.0731 мс
+2022-06-05 21:38:41.015 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59542) по GET /api/ElectrnicsTypes/All ответил 200 за 8.5089 мс
+2022-06-05 21:38:41.025 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59542) по GET /api/Manufacturers/All ответил 200 за 1.5159 мс
+2022-06-05 21:39:09.907 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 21:39:09.910 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59544) по GET /technoWorldHub ответил 101 за 31340.4280 мс
+2022-06-05 21:42:44.997 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:42:44.998 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59606) по POST /userToken ответил 200 за 6.6279 мс
+2022-06-05 21:42:45.152 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59607) по POST /technoWorldHub/negotiate ответил 200 за 0.2647 мс
+2022-06-05 21:42:45.257 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:42:45.385 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59606) по GET /api/Categories ответил 200 за 4.2817 мс
+2022-06-05 21:42:45.539 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59606) по GET /api/ElectrnicsTypes/All ответил 200 за 11.2279 мс
+2022-06-05 21:42:45.826 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59606) по GET /api/Electronics/Filter ответил 200 за 177.4781 мс
+2022-06-05 21:42:48.382 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59606) по GET /api/Posts ответил 200 за 1.5246 мс
+2022-06-05 21:42:48.397 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59606) по GET /api/Employees/Filter ответил 200 за 2.9312 мс
+2022-06-05 21:42:50.108 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59606) по GET /api/Categories ответил 200 за 4.2741 мс
+2022-06-05 21:42:50.127 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59606) по GET /api/ElectrnicsTypes/All ответил 200 за 15.6643 мс
+2022-06-05 21:42:50.134 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59606) по GET /api/Manufacturers/All ответил 200 за 1.4736 мс
+2022-06-05 21:43:32.708 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 21:43:32.710 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59608) по GET /technoWorldHub ответил 101 за 47503.3136 мс
+2022-06-05 21:43:49.265 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:43:49.266 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59630) по POST /userToken ответил 200 за 8.8901 мс
+2022-06-05 21:43:49.577 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59631) по POST /technoWorldHub/negotiate ответил 200 за 0.2414 мс
+2022-06-05 21:43:49.698 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:43:49.839 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59630) по GET /api/Categories ответил 200 за 4.0200 мс
+2022-06-05 21:43:50.100 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59630) по GET /api/ElectrnicsTypes/All ответил 200 за 23.5631 мс
+2022-06-05 21:43:50.410 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59630) по GET /api/Electronics/Filter ответил 200 за 172.0168 мс
+2022-06-05 21:43:52.354 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59630) по GET /api/Categories ответил 200 за 6.1328 мс
+2022-06-05 21:43:52.367 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59630) по GET /api/ElectrnicsTypes/All ответил 200 за 9.7219 мс
+2022-06-05 21:43:52.374 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59630) по GET /api/Manufacturers/All ответил 200 за 1.2468 мс
+2022-06-05 21:44:50.524 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 21:44:50.529 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59632) по GET /technoWorldHub ответил 101 за 60880.4327 мс
+2022-06-05 21:45:08.735 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:45:08.736 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59655) по POST /userToken ответил 200 за 6.8868 мс
+2022-06-05 21:45:08.883 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59656) по POST /technoWorldHub/negotiate ответил 200 за 0.2078 мс
+2022-06-05 21:45:08.978 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:45:09.100 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59655) по GET /api/Categories ответил 200 за 4.2949 мс
+2022-06-05 21:45:09.222 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59655) по GET /api/ElectrnicsTypes/All ответил 200 за 8.7743 мс
+2022-06-05 21:45:09.506 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59655) по GET /api/Electronics/Filter ответил 200 за 173.0522 мс
+2022-06-05 21:45:11.376 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59655) по GET /api/Categories ответил 200 за 3.1623 мс
+2022-06-05 21:45:11.387 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59655) по GET /api/ElectrnicsTypes/All ответил 200 за 8.0154 мс
+2022-06-05 21:45:11.394 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59655) по GET /api/Manufacturers/All ответил 200 за 1.2930 мс
+2022-06-05 21:45:22.998 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59655) по POST /api/ElectronicsTypes ответил 404 за 0.1760 мс
+2022-06-05 21:45:33.610 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 21:45:33.613 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59657) по GET /technoWorldHub ответил 101 за 24678.3363 мс
+2022-06-05 21:46:13.717 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:46:13.718 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59672) по POST /userToken ответил 200 за 9.9028 мс
+2022-06-05 21:46:13.905 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59673) по POST /technoWorldHub/negotiate ответил 200 за 0.2130 мс
+2022-06-05 21:46:14.016 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:46:14.184 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59672) по GET /api/Categories ответил 200 за 6.8002 мс
+2022-06-05 21:46:14.381 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59672) по GET /api/ElectrnicsTypes/All ответил 200 за 8.8733 мс
+2022-06-05 21:46:14.668 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59672) по GET /api/Electronics/Filter ответил 200 за 146.5229 мс
+2022-06-05 21:46:19.942 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59672) по GET /api/Posts ответил 200 за 1.1366 мс
+2022-06-05 21:46:19.964 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59672) по GET /api/Employees/Filter ответил 200 за 2.6395 мс
+2022-06-05 21:46:21.402 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59672) по GET /api/Categories ответил 200 за 3.1796 мс
+2022-06-05 21:46:21.415 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59672) по GET /api/ElectrnicsTypes/All ответил 200 за 8.9630 мс
+2022-06-05 21:46:21.423 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59672) по GET /api/Manufacturers/All ответил 200 за 1.3523 мс
+2022-06-05 21:46:33.268 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59672) по POST /api/ElectronicsTypes ответил 404 за 0.1618 мс
+2022-06-05 21:46:46.224 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 21:46:46.232 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59674) по GET /technoWorldHub ответил 101 за 32262.5063 мс
+2022-06-05 21:47:23.521 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:47:23.522 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59697) по POST /userToken ответил 200 за 7.7422 мс
+2022-06-05 21:47:23.676 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59698) по POST /technoWorldHub/negotiate ответил 200 за 0.2434 мс
+2022-06-05 21:47:23.778 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:47:23.907 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59697) по GET /api/Categories ответил 200 за 5.1114 мс
+2022-06-05 21:47:24.030 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59697) по GET /api/ElectrnicsTypes/All ответил 200 за 8.3087 мс
+2022-06-05 21:47:24.310 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59697) по GET /api/Electronics/Filter ответил 200 за 171.7587 мс
+2022-06-05 21:47:26.016 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59697) по GET /api/Posts ответил 200 за 1.6304 мс
+2022-06-05 21:47:26.037 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59697) по GET /api/Employees/Filter ответил 200 за 2.8996 мс
+2022-06-05 21:47:27.414 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59697) по GET /api/Categories ответил 200 за 4.2101 мс
+2022-06-05 21:47:27.424 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59697) по GET /api/ElectrnicsTypes/All ответил 200 за 7.8310 мс
+2022-06-05 21:47:27.431 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59697) по GET /api/Manufacturers/All ответил 200 за 1.3572 мс
+2022-06-05 21:47:36.694 +05:00 [ERR] Failed executing DbCommand (173ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 30) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ElectrnicsType] ([CategoryId], [Name])
+VALUES (@p0, @p1);
+SELECT [TypeId]
+FROM [ElectrnicsType]
+WHERE @@ROWCOUNT = 1 AND [TypeId] = scope_identity();
+2022-06-05 21:47:36.783 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'TechnoWorld_API.Data.TechnoWorldContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_ElectrnicsType_Category". Конфликт произошел в базе данных "TechnoWorld", таблица "dbo.Category", column 'Id'.
+Выполнение данной инструкции было прервано.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:87d0217b-80ee-4025-ab20-6186105d74ab
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_ElectrnicsType_Category". Конфликт произошел в базе данных "TechnoWorld", таблица "dbo.Category", column 'Id'.
+Выполнение данной инструкции было прервано.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:87d0217b-80ee-4025-ab20-6186105d74ab
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-06-05 21:47:36.818 +05:00 [ERR] Запрос от MrBoring (127.0.0.1:59697) по POST /api/ElectrnicsTypes ответил 500 за 498.9372 мс
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_ElectrnicsType_Category". Конфликт произошел в базе данных "TechnoWorld", таблица "dbo.Category", column 'Id'.
+Выполнение данной инструкции было прервано.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:87d0217b-80ee-4025-ab20-6186105d74ab
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BNS_API.Controllers.ElectrnicsTypesController.PostElectrnicsType(ElectrnicsType electrnicsType) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\ElectrnicsTypesController.cs:line 100
+   at lambda_method622(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-06-05 21:47:36.875 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Конфликт инструкции INSERT с ограничением FOREIGN KEY "FK_ElectrnicsType_Category". Конфликт произошел в базе данных "TechnoWorld", таблица "dbo.Category", column 'Id'.
+Выполнение данной инструкции было прервано.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:87d0217b-80ee-4025-ab20-6186105d74ab
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BNS_API.Controllers.ElectrnicsTypesController.PostElectrnicsType(ElectrnicsType electrnicsType) in C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API\Controllers\ElectrnicsTypesController.cs:line 100
+   at lambda_method622(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-05 21:47:41.959 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 21:47:41.962 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59699) по GET /technoWorldHub ответил 101 за 18230.8778 мс
+2022-06-05 21:49:27.299 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:49:27.300 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:59730) по POST /userToken ответил 200 за 6.7107 мс
+2022-06-05 21:49:27.451 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59731) по POST /technoWorldHub/negotiate ответил 200 за 0.2693 мс
+2022-06-05 21:49:27.553 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:49:27.672 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/Categories ответил 200 за 4.1689 мс
+2022-06-05 21:49:27.778 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/ElectrnicsTypes/All ответил 200 за 7.1805 мс
+2022-06-05 21:49:28.080 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/Electronics/Filter ответил 200 за 183.7080 мс
+2022-06-05 21:49:51.689 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/Status ответил 200 за 1.4499 мс
+2022-06-05 21:49:51.877 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/Deliveries/Filter ответил 200 за 171.4783 мс
+2022-06-05 21:49:53.403 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/Posts ответил 200 за 1.3557 мс
+2022-06-05 21:49:53.418 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/Employees/Filter ответил 200 за 2.8913 мс
+2022-06-05 21:49:57.355 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/Orders/Filter ответил 200 за 156.1754 мс
+2022-06-05 21:50:00.365 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/Categories ответил 200 за 4.3985 мс
+2022-06-05 21:50:00.376 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/ElectrnicsTypes/All ответил 200 за 8.2650 мс
+2022-06-05 21:50:00.383 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по GET /api/Manufacturers/All ответил 200 за 1.4016 мс
+2022-06-05 21:50:12.387 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59730) по POST /api/Category ответил 404 за 0.1587 мс
+2022-06-05 21:51:04.981 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 21:51:04.983 +05:00 [INF] Запрос от MrBoring (127.0.0.1:59732) по GET /technoWorldHub ответил 101 за 97481.3343 мс
+2022-06-05 21:51:11.261 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:51:11.262 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50743) по POST /userToken ответил 200 за 5.5590 мс
+2022-06-05 21:51:11.419 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50744) по POST /technoWorldHub/negotiate ответил 200 за 0.2059 мс
+2022-06-05 21:51:11.516 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:51:11.651 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50743) по GET /api/Categories ответил 200 за 3.7364 мс
+2022-06-05 21:51:11.800 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50743) по GET /api/ElectrnicsTypes/All ответил 200 за 8.1715 мс
+2022-06-05 21:51:12.080 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50743) по GET /api/Electronics/Filter ответил 200 за 157.0267 мс
+2022-06-05 21:51:18.638 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50743) по GET /api/Categories ответил 200 за 4.0527 мс
+2022-06-05 21:51:18.662 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50743) по GET /api/ElectrnicsTypes/All ответил 200 за 21.0431 мс
+2022-06-05 21:51:18.668 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50743) по GET /api/Manufacturers/All ответил 200 за 1.4557 мс
+2022-06-05 21:51:27.727 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50743) по POST /api/Categories ответил 201 за 121.0184 мс
+2022-06-05 21:51:29.897 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50743) по GET /api/Categories ответил 200 за 3.4865 мс
+2022-06-05 21:51:39.863 +05:00 [INF] Запрос от terminal_42d1c00d-8858-47fc-b2ab-198daf4c6737 (127.0.0.1:50749) по GET /api/Electronics/TerminalFilter ответил 200 за 99.3462 мс
+2022-06-05 21:51:39.963 +05:00 [INF] Запрос от terminal_42d1c00d-8858-47fc-b2ab-198daf4c6737 (127.0.0.1:50749) по GET /api/Manufacturers ответил 200 за 13.3473 мс
+2022-06-05 21:51:39.995 +05:00 [INF] Запрос от terminal_42d1c00d-8858-47fc-b2ab-198daf4c6737 (127.0.0.1:50749) по GET /api/ElectrnicsTypes ответил 200 за 6.4025 мс
+2022-06-05 21:51:42.221 +05:00 [INF] terminal_1d2dfcc2-ec5c-4f0f-9940-2138314fd296 отключен от системы
+2022-06-05 21:51:42.223 +05:00 [INF] Запрос от terminal_1d2dfcc2-ec5c-4f0f-9940-2138314fd296 (127.0.0.1:59192) по GET /technoWorldHub ответил 101 за 1233314.9260 мс
+2022-06-05 21:51:52.403 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50752) по POST /terminalToken ответил 200 за 1.4703 мс
+2022-06-05 21:51:52.679 +05:00 [INF] Запрос от terminal_f2fba611-1d2f-4382-a944-635556e46af8 (127.0.0.1:50754) по POST /technoWorldHub/negotiate ответил 200 за 0.2128 мс
+2022-06-05 21:51:52.782 +05:00 [INF] Подключенин терминал: terminal_f2fba611-1d2f-4382-a944-635556e46af8
+2022-06-05 21:51:52.837 +05:00 [INF] Запрос от terminal_f2fba611-1d2f-4382-a944-635556e46af8 (127.0.0.1:50752) по GET /api/Categories ответил 200 за 6.3093 мс
+2022-06-05 21:51:57.850 +05:00 [INF] Запрос от terminal_f2fba611-1d2f-4382-a944-635556e46af8 (127.0.0.1:50752) по POST /terminalToken ответил 200 за 1.1309 мс
+2022-06-05 21:52:01.828 +05:00 [INF] terminal_f2fba611-1d2f-4382-a944-635556e46af8 отключен от системы
+2022-06-05 21:52:01.829 +05:00 [INF] Запрос от terminal_f2fba611-1d2f-4382-a944-635556e46af8 (127.0.0.1:50755) по GET /technoWorldHub ответил 101 за 9095.6080 мс
+2022-06-05 21:52:45.468 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50765) по POST /terminalToken ответил 200 за 0.4577 мс
+2022-06-05 21:52:45.745 +05:00 [INF] Запрос от terminal_ce60ac29-5464-4100-981b-1ae84416c4f8 (127.0.0.1:50766) по POST /technoWorldHub/negotiate ответил 200 за 0.1981 мс
+2022-06-05 21:52:45.849 +05:00 [INF] Подключенин терминал: terminal_ce60ac29-5464-4100-981b-1ae84416c4f8
+2022-06-05 21:52:45.900 +05:00 [INF] Запрос от terminal_ce60ac29-5464-4100-981b-1ae84416c4f8 (127.0.0.1:50765) по GET /api/Categories ответил 200 за 6.4601 мс
+2022-06-05 21:52:50.914 +05:00 [INF] Запрос от terminal_ce60ac29-5464-4100-981b-1ae84416c4f8 (127.0.0.1:50765) по POST /terminalToken ответил 200 за 0.4563 мс
+2022-06-05 21:52:52.702 +05:00 [INF] terminal_ce60ac29-5464-4100-981b-1ae84416c4f8 отключен от системы
+2022-06-05 21:52:52.703 +05:00 [INF] Запрос от terminal_ce60ac29-5464-4100-981b-1ae84416c4f8 (127.0.0.1:50767) по GET /technoWorldHub ответил 101 за 6902.4412 мс
+2022-06-05 21:53:12.694 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50777) по POST /terminalToken ответил 200 за 1.1846 мс
+2022-06-05 21:53:12.969 +05:00 [INF] Запрос от terminal_bce6591e-2fce-47f8-aef8-2c183656df87 (127.0.0.1:50778) по POST /technoWorldHub/negotiate ответил 200 за 0.2050 мс
+2022-06-05 21:53:13.074 +05:00 [INF] Подключенин терминал: terminal_bce6591e-2fce-47f8-aef8-2c183656df87
+2022-06-05 21:53:13.129 +05:00 [INF] Запрос от terminal_bce6591e-2fce-47f8-aef8-2c183656df87 (127.0.0.1:50777) по GET /api/Categories ответил 200 за 7.0913 мс
+2022-06-05 21:53:13.953 +05:00 [INF] terminal_bce6591e-2fce-47f8-aef8-2c183656df87 отключен от системы
+2022-06-05 21:53:13.955 +05:00 [INF] Запрос от terminal_bce6591e-2fce-47f8-aef8-2c183656df87 (127.0.0.1:50779) по GET /technoWorldHub ответил 101 за 930.4418 мс
+2022-06-05 21:54:22.861 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50831) по POST /terminalToken ответил 200 за 1.3836 мс
+2022-06-05 21:54:23.146 +05:00 [INF] Запрос от terminal_d8e75e78-ac83-422e-97f1-9cf18b21e82e (127.0.0.1:50832) по POST /technoWorldHub/negotiate ответил 200 за 0.8723 мс
+2022-06-05 21:54:23.250 +05:00 [INF] Подключенин терминал: terminal_d8e75e78-ac83-422e-97f1-9cf18b21e82e
+2022-06-05 21:54:23.300 +05:00 [INF] Запрос от terminal_d8e75e78-ac83-422e-97f1-9cf18b21e82e (127.0.0.1:50831) по GET /api/Categories ответил 200 за 4.4241 мс
+2022-06-05 21:54:28.310 +05:00 [INF] Запрос от terminal_d8e75e78-ac83-422e-97f1-9cf18b21e82e (127.0.0.1:50831) по POST /terminalToken ответил 200 за 0.3929 мс
+2022-06-05 21:54:31.264 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 60.0463 мс
+2022-06-05 21:54:31.367 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Manufacturers ответил 200 за 8.7006 мс
+2022-06-05 21:54:31.373 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/ElectrnicsTypes ответил 200 за 2.0360 мс
+2022-06-05 21:54:34.446 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 92.9249 мс
+2022-06-05 21:54:34.497 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Manufacturers ответил 200 за 1.3580 мс
+2022-06-05 21:54:34.507 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/ElectrnicsTypes ответил 200 за 1.0706 мс
+2022-06-05 21:54:36.147 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 51.9761 мс
+2022-06-05 21:54:36.237 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 54.6268 мс
+2022-06-05 21:54:36.282 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 62.9312 мс
+2022-06-05 21:54:36.377 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 47.6217 мс
+2022-06-05 21:54:36.957 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 47.8821 мс
+2022-06-05 21:54:37.061 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 56.6584 мс
+2022-06-05 21:54:37.077 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 58.6213 мс
+2022-06-05 21:54:37.157 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 46.6430 мс
+2022-06-05 21:54:38.068 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 78.2276 мс
+2022-06-05 21:54:38.531 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 45.7775 мс
+2022-06-05 21:54:38.564 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 46.5577 мс
+2022-06-05 21:54:38.608 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 58.0736 мс
+2022-06-05 21:54:38.866 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 60.0722 мс
+2022-06-05 21:54:39.082 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 61.8296 мс
+2022-06-05 21:54:39.260 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 48.4623 мс
+2022-06-05 21:54:39.498 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 94.8777 мс
+2022-06-05 21:54:39.769 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 48.2121 мс
+2022-06-05 21:54:39.882 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 51.9059 мс
+2022-06-05 21:54:39.912 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 47.5598 мс
+2022-06-05 21:54:39.970 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 49.8397 мс
+2022-06-05 21:54:40.312 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 66.6420 мс
+2022-06-05 21:54:40.501 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 64.5868 мс
+2022-06-05 21:54:40.668 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 58.5144 мс
+2022-06-05 21:54:41.265 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 88.4218 мс
+2022-06-05 21:54:41.661 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 56.8592 мс
+2022-06-05 21:54:42.028 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 95.7780 мс
+2022-06-05 21:54:42.120 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 55.5224 мс
+2022-06-05 21:54:42.260 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 74.6137 мс
+2022-06-05 21:54:42.363 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 49.3203 мс
+2022-06-05 21:54:42.457 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 80.3636 мс
+2022-06-05 21:54:42.588 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 50.6593 мс
+2022-06-05 21:54:42.671 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 106.8083 мс
+2022-06-05 21:54:42.787 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 57.4555 мс
+2022-06-05 21:54:42.840 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 81.3093 мс
+2022-06-05 21:54:42.954 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 48.4629 мс
+2022-06-05 21:54:43.015 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 77.4927 мс
+2022-06-05 21:54:43.200 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 70.9439 мс
+2022-06-05 21:54:43.223 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 91.8942 мс
+2022-06-05 21:54:43.363 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 54.7490 мс
+2022-06-05 21:54:43.408 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 98.0141 мс
+2022-06-05 21:54:43.589 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 74.2935 мс
+2022-06-05 21:54:43.611 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 93.6480 мс
+2022-06-05 21:54:43.783 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 57.5608 мс
+2022-06-05 21:54:43.972 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 90.7044 мс
+2022-06-05 21:54:43.999 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 62.5459 мс
+2022-06-05 21:54:44.185 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 56.4256 мс
+2022-06-05 21:54:44.189 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 92.1170 мс
+2022-06-05 21:54:44.370 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 93.2076 мс
+2022-06-05 21:54:44.395 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 60.4178 мс
+2022-06-05 21:54:44.588 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 119.8213 мс
+2022-06-05 21:54:44.609 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 72.5898 мс
+2022-06-05 21:54:44.766 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 99.9254 мс
+2022-06-05 21:54:44.783 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 57.6530 мс
+2022-06-05 21:54:44.968 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 56.2251 мс
+2022-06-05 21:54:44.974 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 83.5236 мс
+2022-06-05 21:54:45.188 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 57.4583 мс
+2022-06-05 21:54:45.193 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 95.4806 мс
+2022-06-05 21:54:45.328 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 79.4358 мс
+2022-06-05 21:54:45.373 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 57.7583 мс
+2022-06-05 21:54:45.527 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 86.2694 мс
+2022-06-05 21:54:45.551 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 54.9975 мс
+2022-06-05 21:54:45.702 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 89.5887 мс
+2022-06-05 21:54:45.896 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 52.4886 мс
+2022-06-05 21:54:46.094 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 81.6144 мс
+2022-06-05 21:54:46.142 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 66.2172 мс
+2022-06-05 21:54:46.314 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 82.8072 мс
+2022-06-05 21:54:46.356 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 66.3882 мс
+2022-06-05 21:54:46.471 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 79.2435 мс
+2022-06-05 21:54:46.570 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 44.9370 мс
+2022-06-05 21:54:46.680 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 83.1491 мс
+2022-06-05 21:54:46.719 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 63.1418 мс
+2022-06-05 21:54:46.898 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 87.5703 мс
+2022-06-05 21:54:46.931 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 61.4655 мс
+2022-06-05 21:54:47.047 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 78.6339 мс
+2022-06-05 21:54:47.141 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 49.2676 мс
+2022-06-05 21:54:47.287 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 83.8165 мс
+2022-06-05 21:54:47.517 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 58.5171 мс
+2022-06-05 21:54:47.645 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 81.5166 мс
+2022-06-05 21:54:48.214 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 51.5781 мс
+2022-06-05 21:54:48.358 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 80.9125 мс
+2022-06-05 21:54:48.445 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 53.8193 мс
+2022-06-05 21:54:48.534 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 77.9606 мс
+2022-06-05 21:54:48.632 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 55.0976 мс
+2022-06-05 21:54:48.724 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 79.6728 мс
+2022-06-05 21:54:48.814 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 53.8655 мс
+2022-06-05 21:54:48.925 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 73.6090 мс
+2022-06-05 21:54:49.035 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 56.7264 мс
+2022-06-05 21:54:49.095 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 75.5876 мс
+2022-06-05 21:54:49.236 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 58.3942 мс
+2022-06-05 21:54:49.293 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50841) по GET /api/Electronics/TerminalFilter ответил 200 за 82.3970 мс
+2022-06-05 21:54:50.119 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 54.5295 мс
+2022-06-05 21:54:50.320 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 54.0023 мс
+2022-06-05 21:54:50.613 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 64.2028 мс
+2022-06-05 21:54:50.830 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 79.5635 мс
+2022-06-05 21:54:51.184 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 54.2585 мс
+2022-06-05 21:54:51.270 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 53.1089 мс
+2022-06-05 21:54:51.360 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 53.5931 мс
+2022-06-05 21:54:51.586 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 61.7469 мс
+2022-06-05 21:54:51.781 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 59.8430 мс
+2022-06-05 21:54:51.982 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 80.3512 мс
+2022-06-05 21:54:53.626 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 56.0721 мс
+2022-06-05 21:54:54.027 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 85.8293 мс
+2022-06-05 21:54:54.236 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 55.1466 мс
+2022-06-05 21:54:54.596 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 110.7288 мс
+2022-06-05 21:54:55.018 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 79.9208 мс
+2022-06-05 21:54:55.583 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 68.4845 мс
+2022-06-05 21:54:56.101 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 89.1915 мс
+2022-06-05 21:54:56.536 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 95.9574 мс
+2022-06-05 21:54:58.350 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 66.4997 мс
+2022-06-05 21:54:58.917 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 75.1315 мс
+2022-06-05 21:54:59.490 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 56.7587 мс
+2022-06-05 21:55:00.026 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 61.3489 мс
+2022-06-05 21:55:00.483 +05:00 [INF] Запрос от terminal_6fb12761-5ebf-4421-a91f-cddbefa56512 (127.0.0.1:50831) по GET /api/Electronics/TerminalFilter ответил 200 за 58.2596 мс
+2022-06-05 21:55:49.724 +05:00 [INF] terminal_d8e75e78-ac83-422e-97f1-9cf18b21e82e отключен от системы
+2022-06-05 21:55:49.726 +05:00 [INF] Запрос от terminal_d8e75e78-ac83-422e-97f1-9cf18b21e82e (127.0.0.1:50833) по GET /technoWorldHub ответил 101 за 86526.7536 мс
+2022-06-05 21:56:15.404 +05:00 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined in UseKestrel() instead.
+2022-06-05 21:56:15.458 +05:00 [INF] Now listening on: http://127.0.0.1:5000
+2022-06-05 21:56:15.462 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-05 21:56:15.462 +05:00 [INF] Hosting environment: Development
+2022-06-05 21:56:15.464 +05:00 [INF] Content root path: C:\Users\MrBoring\GIT\TechnoWorldProgram\TechnoWorld_API
+2022-06-05 21:56:49.563 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:56:49.599 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50929) по POST /userToken ответил 200 за 1297.8303 мс
+2022-06-05 21:56:49.610 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50930) по POST /technoWorldHub/negotiate ответил 200 за 12.4426 мс
+2022-06-05 21:56:49.632 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:56:49.726 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50929) по GET /api/Categories ответил 200 за 67.1714 мс
+2022-06-05 21:56:49.820 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50929) по GET /api/ElectrnicsTypes/All ответил 200 за 37.1368 мс
+2022-06-05 21:56:50.224 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50929) по GET /api/Electronics/Filter ответил 200 за 399.4501 мс
+2022-06-05 21:56:56.123 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50936) по POST /terminalToken ответил 200 за 9.7425 мс
+2022-06-05 21:56:56.560 +05:00 [INF] Запрос от terminal_e6001e86-30c4-46e2-8817-8e5f955fde09 (127.0.0.1:50937) по POST /technoWorldHub/negotiate ответил 200 за 0.5364 мс
+2022-06-05 21:56:56.747 +05:00 [INF] Подключенин терминал: terminal_e6001e86-30c4-46e2-8817-8e5f955fde09
+2022-06-05 21:56:56.818 +05:00 [INF] Запрос от terminal_e6001e86-30c4-46e2-8817-8e5f955fde09 (127.0.0.1:50936) по GET /api/Categories ответил 200 за 9.2776 мс
+2022-06-05 21:57:01.838 +05:00 [INF] Запрос от terminal_e6001e86-30c4-46e2-8817-8e5f955fde09 (127.0.0.1:50936) по POST /terminalToken ответил 200 за 0.7492 мс
+2022-06-05 21:57:02.421 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50929) по GET /api/Categories ответил 200 за 4.3706 мс
+2022-06-05 21:57:02.436 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50929) по GET /api/ElectrnicsTypes/All ответил 200 за 12.0007 мс
+2022-06-05 21:57:02.457 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50929) по GET /api/Manufacturers/All ответил 200 за 12.4181 мс
+2022-06-05 21:57:25.244 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50929) по POST /api/Categories ответил 201 за 190.1749 мс
+2022-06-05 21:57:36.715 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50929) по GET /api/Categories ответил 200 за 6.6137 мс
+2022-06-05 21:57:42.466 +05:00 [INF] terminal_e6001e86-30c4-46e2-8817-8e5f955fde09 отключен от системы
+2022-06-05 21:57:47.473 +05:00 [INF] Запрос от terminal_e6001e86-30c4-46e2-8817-8e5f955fde09 (127.0.0.1:50938) по GET /technoWorldHub ответил 101 за 50810.5932 мс
+2022-06-05 21:58:21.052 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 21:58:21.054 +05:00 [INF] Запрос от MrBoring (127.0.0.1:50931) по GET /technoWorldHub ответил 101 за 91442.6487 мс
+2022-06-05 21:58:46.021 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:50962) по POST /terminalToken ответил 200 за 0.5574 мс
+2022-06-05 21:58:46.290 +05:00 [INF] Запрос от terminal_fa35d55a-a6a8-4355-94f7-cb60181c120c (127.0.0.1:50963) по POST /technoWorldHub/negotiate ответил 200 за 0.2824 мс
+2022-06-05 21:58:46.390 +05:00 [INF] Подключенин терминал: terminal_fa35d55a-a6a8-4355-94f7-cb60181c120c
+2022-06-05 21:58:46.444 +05:00 [INF] Запрос от terminal_fa35d55a-a6a8-4355-94f7-cb60181c120c (127.0.0.1:50962) по GET /api/Categories ответил 200 за 4.7696 мс
+2022-06-05 21:58:51.461 +05:00 [INF] Запрос от terminal_fa35d55a-a6a8-4355-94f7-cb60181c120c (127.0.0.1:50962) по POST /terminalToken ответил 200 за 0.6493 мс
+2022-06-05 21:59:49.193 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 21:59:49.195 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55813) по POST /userToken ответил 200 за 7.6012 мс
+2022-06-05 21:59:49.345 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55814) по POST /technoWorldHub/negotiate ответил 200 за 0.2603 мс
+2022-06-05 21:59:49.445 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 21:59:49.573 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Categories ответил 200 за 7.9741 мс
+2022-06-05 21:59:49.716 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/ElectrnicsTypes/All ответил 200 за 13.2025 мс
+2022-06-05 21:59:49.970 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Electronics/Filter ответил 200 за 141.9071 мс
+2022-06-05 21:59:52.214 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Status ответил 200 за 31.0562 мс
+2022-06-05 21:59:52.472 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Deliveries/Filter ответил 200 за 242.3270 мс
+2022-06-05 22:01:26.466 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Categories ответил 200 за 5.6225 мс
+2022-06-05 22:01:26.478 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/ElectrnicsTypes/All ответил 200 за 8.9290 мс
+2022-06-05 22:01:26.484 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Manufacturers/All ответил 200 за 1.5093 мс
+2022-06-05 22:01:36.706 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по POST /api/Categories ответил 201 за 9.1680 мс
+2022-06-05 22:01:37.732 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Categories ответил 200 за 8.0067 мс
+2022-06-05 22:01:59.333 +05:00 [INF] terminal_fa35d55a-a6a8-4355-94f7-cb60181c120c отключен от системы
+2022-06-05 22:01:59.335 +05:00 [INF] Запрос от terminal_fa35d55a-a6a8-4355-94f7-cb60181c120c (127.0.0.1:50964) по GET /technoWorldHub ответил 101 за 192992.2298 мс
+2022-06-05 22:02:04.382 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55846) по POST /terminalToken ответил 200 за 7.2768 мс
+2022-06-05 22:02:04.919 +05:00 [INF] Запрос от terminal_6fc14dca-32c2-45a0-8178-cf4e73902853 (127.0.0.1:55847) по POST /technoWorldHub/negotiate ответил 200 за 0.4215 мс
+2022-06-05 22:02:05.094 +05:00 [INF] Подключенин терминал: terminal_6fc14dca-32c2-45a0-8178-cf4e73902853
+2022-06-05 22:02:05.162 +05:00 [INF] Запрос от terminal_6fc14dca-32c2-45a0-8178-cf4e73902853 (127.0.0.1:55846) по GET /api/Categories ответил 200 за 4.6106 мс
+2022-06-05 22:02:10.194 +05:00 [INF] Запрос от terminal_6fc14dca-32c2-45a0-8178-cf4e73902853 (127.0.0.1:55846) по POST /terminalToken ответил 200 за 0.5422 мс
+2022-06-05 22:03:01.183 +05:00 [INF] terminal_6fc14dca-32c2-45a0-8178-cf4e73902853 отключен от системы
+2022-06-05 22:03:01.184 +05:00 [INF] Запрос от terminal_6fc14dca-32c2-45a0-8178-cf4e73902853 (127.0.0.1:55848) по GET /technoWorldHub ответил 101 за 56178.1186 мс
+2022-06-05 22:03:13.614 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Categories ответил 200 за 10.0815 мс
+2022-06-05 22:03:13.640 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/ElectrnicsTypes/All ответил 200 за 22.0274 мс
+2022-06-05 22:03:13.649 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Manufacturers/All ответил 200 за 3.2956 мс
+2022-06-05 22:03:15.384 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55871) по POST /terminalToken ответил 200 за 7.5395 мс
+2022-06-05 22:03:15.824 +05:00 [INF] Запрос от terminal_16f06753-01fe-46af-bf8b-5867d50b2653 (127.0.0.1:55872) по POST /technoWorldHub/negotiate ответил 200 за 0.2201 мс
+2022-06-05 22:03:16.110 +05:00 [INF] Подключенин терминал: terminal_16f06753-01fe-46af-bf8b-5867d50b2653
+2022-06-05 22:03:16.181 +05:00 [INF] Запрос от terminal_16f06753-01fe-46af-bf8b-5867d50b2653 (127.0.0.1:55871) по GET /api/Categories ответил 200 за 6.7242 мс
+2022-06-05 22:03:21.200 +05:00 [INF] Запрос от terminal_16f06753-01fe-46af-bf8b-5867d50b2653 (127.0.0.1:55871) по POST /terminalToken ответил 200 за 0.7237 мс
+2022-06-05 22:03:25.988 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по POST /api/Categories ответил 201 за 7.7591 мс
+2022-06-05 22:03:34.064 +05:00 [INF] Запрос от terminal_2593177e-5a20-4bed-ad38-072f8a2726c6 (127.0.0.1:55871) по GET /api/Categories ответил 200 за 3.9978 мс
+2022-06-05 22:03:40.109 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Categories ответил 200 за 4.5393 мс
+2022-06-05 22:03:43.668 +05:00 [INF] terminal_16f06753-01fe-46af-bf8b-5867d50b2653 отключен от системы
+2022-06-05 22:03:43.668 +05:00 [INF] Запрос от terminal_16f06753-01fe-46af-bf8b-5867d50b2653 (127.0.0.1:55873) по GET /technoWorldHub ответил 101 за 27628.1497 мс
+2022-06-05 22:03:55.526 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55885) по POST /terminalToken ответил 200 за 0.9660 мс
+2022-06-05 22:03:55.784 +05:00 [INF] Запрос от terminal_9c8278e0-51aa-4432-a739-1d45858bf281 (127.0.0.1:55886) по POST /technoWorldHub/negotiate ответил 200 за 0.1890 мс
+2022-06-05 22:03:55.887 +05:00 [INF] Подключенин терминал: terminal_9c8278e0-51aa-4432-a739-1d45858bf281
+2022-06-05 22:03:55.933 +05:00 [INF] Запрос от terminal_9c8278e0-51aa-4432-a739-1d45858bf281 (127.0.0.1:55885) по GET /api/Categories ответил 200 за 4.0514 мс
+2022-06-05 22:03:58.307 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Categories ответил 200 за 4.8648 мс
+2022-06-05 22:03:58.322 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/ElectrnicsTypes/All ответил 200 за 11.2376 мс
+2022-06-05 22:03:58.328 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Manufacturers/All ответил 200 за 1.3822 мс
+2022-06-05 22:04:00.957 +05:00 [INF] Запрос от terminal_9c8278e0-51aa-4432-a739-1d45858bf281 (127.0.0.1:55885) по POST /terminalToken ответил 200 за 0.4507 мс
+2022-06-05 22:04:08.049 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по POST /api/Categories ответил 201 за 6.9242 мс
+2022-06-05 22:04:08.090 +05:00 [INF] Запрос от terminal_ae09b7e5-1e06-4f73-b51e-0ede9567d4a4 (127.0.0.1:55885) по GET /api/Categories ответил 200 за 3.6372 мс
+2022-06-05 22:04:09.163 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Categories ответил 200 за 5.4771 мс
+2022-06-05 22:04:15.633 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по POST /api/Categories ответил 201 за 6.9305 мс
+2022-06-05 22:04:15.637 +05:00 [INF] Запрос от terminal_ae09b7e5-1e06-4f73-b51e-0ede9567d4a4 (127.0.0.1:55885) по GET /api/Categories ответил 200 за 3.8050 мс
+2022-06-05 22:04:16.529 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Categories ответил 200 за 4.3786 мс
+2022-06-05 22:05:18.517 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Categories ответил 200 за 6.1535 мс
+2022-06-05 22:05:18.531 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/ElectrnicsTypes/All ответил 200 за 9.6635 мс
+2022-06-05 22:05:18.536 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Manufacturers/All ответил 200 за 1.3760 мс
+2022-06-05 22:05:22.469 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55813) по GET /api/Categories ответил 200 за 3.6357 мс
+2022-06-05 22:05:27.357 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:05:27.359 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55815) по GET /technoWorldHub ответил 101 за 337959.3511 мс
+2022-06-05 22:05:48.069 +05:00 [INF] terminal_9c8278e0-51aa-4432-a739-1d45858bf281 отключен от системы
+2022-06-05 22:05:48.120 +05:00 [INF] Запрос от terminal_9c8278e0-51aa-4432-a739-1d45858bf281 (127.0.0.1:55887) по GET /technoWorldHub ответил 101 за 112281.1001 мс
+2022-06-05 22:05:52.638 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55929) по POST /terminalToken ответил 200 за 0.8911 мс
+2022-06-05 22:05:52.906 +05:00 [INF] Запрос от terminal_986c0193-1106-419c-b6d3-69e1c3a1c9d7 (127.0.0.1:55930) по POST /technoWorldHub/negotiate ответил 200 за 0.2205 мс
+2022-06-05 22:05:53.006 +05:00 [INF] Подключенин терминал: terminal_986c0193-1106-419c-b6d3-69e1c3a1c9d7
+2022-06-05 22:05:53.060 +05:00 [INF] Запрос от terminal_986c0193-1106-419c-b6d3-69e1c3a1c9d7 (127.0.0.1:55929) по GET /api/Categories ответил 200 за 4.0865 мс
+2022-06-05 22:05:53.968 +05:00 [INF] Запрос от terminal_986c0193-1106-419c-b6d3-69e1c3a1c9d7 (127.0.0.1:55929) по GET /api/Electronics/TerminalFilter ответил 200 за 80.8481 мс
+2022-06-05 22:05:54.097 +05:00 [INF] Запрос от terminal_986c0193-1106-419c-b6d3-69e1c3a1c9d7 (127.0.0.1:55929) по GET /api/Manufacturers ответил 200 за 45.5460 мс
+2022-06-05 22:05:54.108 +05:00 [INF] Запрос от terminal_986c0193-1106-419c-b6d3-69e1c3a1c9d7 (127.0.0.1:55929) по GET /api/ElectrnicsTypes ответил 200 за 6.7272 мс
+2022-06-05 22:05:58.071 +05:00 [INF] Запрос от terminal_986c0193-1106-419c-b6d3-69e1c3a1c9d7 (127.0.0.1:55929) по POST /terminalToken ответил 200 за 0.4376 мс
+2022-06-05 22:06:03.351 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:06:03.352 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55937) по POST /userToken ответил 200 за 5.7765 мс
+2022-06-05 22:06:03.502 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55938) по POST /technoWorldHub/negotiate ответил 200 за 0.1753 мс
+2022-06-05 22:06:03.597 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:06:03.713 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/Categories ответил 200 за 4.1374 мс
+2022-06-05 22:06:03.852 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/ElectrnicsTypes/All ответил 200 за 13.7126 мс
+2022-06-05 22:06:04.092 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/Electronics/Filter ответил 200 за 136.9024 мс
+2022-06-05 22:06:06.221 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/Status ответил 200 за 1.2792 мс
+2022-06-05 22:06:06.386 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/Deliveries/Filter ответил 200 за 148.0761 мс
+2022-06-05 22:06:07.002 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/Orders/Filter ответил 200 за 174.1458 мс
+2022-06-05 22:06:07.329 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/Posts ответил 200 за 6.5041 мс
+2022-06-05 22:06:07.350 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/Employees/Filter ответил 200 за 14.4179 мс
+2022-06-05 22:06:08.118 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/Categories ответил 200 за 3.1469 мс
+2022-06-05 22:06:08.129 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/ElectrnicsTypes/All ответил 200 за 8.1562 мс
+2022-06-05 22:06:08.142 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/Manufacturers/All ответил 200 за 1.1256 мс
+2022-06-05 22:06:11.269 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/Categories ответил 200 за 4.3353 мс
+2022-06-05 22:06:20.787 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по POST /api/ElectrnicsTypes ответил 201 за 16.7784 мс
+2022-06-05 22:06:21.742 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55937) по GET /api/ElectrnicsTypes/All ответил 200 за 8.6121 мс
+2022-06-05 22:09:19.505 +05:00 [INF] terminal_986c0193-1106-419c-b6d3-69e1c3a1c9d7 отключен от системы
+2022-06-05 22:09:19.507 +05:00 [INF] Запрос от terminal_986c0193-1106-419c-b6d3-69e1c3a1c9d7 (127.0.0.1:55931) по GET /technoWorldHub ответил 101 за 206547.2161 мс
+2022-06-05 22:09:25.186 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:09:25.187 +05:00 [INF] Запрос от MrBoring (127.0.0.1:55939) по GET /technoWorldHub ответил 101 за 201633.6749 мс
+2022-06-05 22:10:46.028 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:55997) по POST /terminalToken ответил 200 за 0.5522 мс
+2022-06-05 22:10:46.305 +05:00 [INF] Запрос от terminal_aea0ccc1-c82d-47ff-be66-611abdc32f86 (127.0.0.1:55998) по POST /technoWorldHub/negotiate ответил 200 за 0.2090 мс
+2022-06-05 22:10:46.404 +05:00 [INF] Подключенин терминал: terminal_aea0ccc1-c82d-47ff-be66-611abdc32f86
+2022-06-05 22:10:46.459 +05:00 [INF] Запрос от terminal_aea0ccc1-c82d-47ff-be66-611abdc32f86 (127.0.0.1:55997) по GET /api/Categories ответил 200 за 5.4744 мс
+2022-06-05 22:10:47.301 +05:00 [INF] Запрос от terminal_aea0ccc1-c82d-47ff-be66-611abdc32f86 (127.0.0.1:55997) по GET /api/Electronics/TerminalFilter ответил 200 за 50.4229 мс
+2022-06-05 22:10:47.414 +05:00 [INF] Запрос от terminal_aea0ccc1-c82d-47ff-be66-611abdc32f86 (127.0.0.1:55997) по GET /api/Manufacturers ответил 200 за 7.8462 мс
+2022-06-05 22:10:47.428 +05:00 [INF] Запрос от terminal_aea0ccc1-c82d-47ff-be66-611abdc32f86 (127.0.0.1:55997) по GET /api/ElectrnicsTypes ответил 200 за 4.6287 мс
+2022-06-05 22:10:51.468 +05:00 [INF] Запрос от terminal_aea0ccc1-c82d-47ff-be66-611abdc32f86 (127.0.0.1:55997) по POST /terminalToken ответил 200 за 0.3587 мс
+2022-06-05 22:10:58.773 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:10:58.774 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56002) по POST /userToken ответил 200 за 5.6579 мс
+2022-06-05 22:10:58.923 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56003) по POST /technoWorldHub/negotiate ответил 200 за 0.1826 мс
+2022-06-05 22:10:59.016 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:10:59.135 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по GET /api/Categories ответил 200 за 3.4775 мс
+2022-06-05 22:10:59.271 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по GET /api/ElectrnicsTypes/All ответил 200 за 7.7914 мс
+2022-06-05 22:10:59.509 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по GET /api/Electronics/Filter ответил 200 за 128.5096 мс
+2022-06-05 22:11:02.221 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по GET /api/Categories ответил 200 за 4.7625 мс
+2022-06-05 22:11:02.231 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по GET /api/ElectrnicsTypes/All ответил 200 за 7.0184 мс
+2022-06-05 22:11:02.238 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по GET /api/Manufacturers/All ответил 200 за 1.2508 мс
+2022-06-05 22:11:06.363 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по GET /api/Categories ответил 200 за 5.2488 мс
+2022-06-05 22:11:14.137 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по POST /api/ElectrnicsTypes ответил 201 за 4.3663 мс
+2022-06-05 22:11:15.396 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по GET /api/ElectrnicsTypes/All ответил 200 за 8.4645 мс
+2022-06-05 22:11:37.332 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по GET /api/Categories ответил 200 за 5.4499 мс
+2022-06-05 22:11:40.144 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по POST /api/ElectrnicsTypes ответил 201 за 4.3820 мс
+2022-06-05 22:11:41.097 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56002) по GET /api/ElectrnicsTypes/All ответил 200 за 9.9027 мс
+2022-06-05 22:11:47.652 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:11:47.654 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56004) по GET /technoWorldHub ответил 101 за 48680.0330 мс
+2022-06-05 22:13:05.058 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:13:05.059 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56027) по POST /userToken ответил 200 за 7.0024 мс
+2022-06-05 22:13:05.209 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56028) по POST /technoWorldHub/negotiate ответил 200 за 0.1852 мс
+2022-06-05 22:13:05.304 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:13:05.430 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по GET /api/Categories ответил 200 за 3.6247 мс
+2022-06-05 22:13:05.594 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по GET /api/ElectrnicsTypes/All ответил 200 за 7.3854 мс
+2022-06-05 22:13:05.845 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по GET /api/Electronics/Filter ответил 200 за 140.3960 мс
+2022-06-05 22:13:09.320 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по GET /api/Status ответил 200 за 1.3202 мс
+2022-06-05 22:13:09.498 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по GET /api/Deliveries/Filter ответил 200 за 159.9457 мс
+2022-06-05 22:13:11.014 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по GET /api/Categories ответил 200 за 3.5407 мс
+2022-06-05 22:13:11.026 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по GET /api/ElectrnicsTypes/All ответил 200 за 8.4257 мс
+2022-06-05 22:13:11.032 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по GET /api/Manufacturers/All ответил 200 за 1.1395 мс
+2022-06-05 22:13:14.767 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по GET /api/Categories ответил 200 за 3.4613 мс
+2022-06-05 22:13:17.253 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по POST /api/ElectrnicsTypes ответил 201 за 4.2301 мс
+2022-06-05 22:13:18.278 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56027) по GET /api/ElectrnicsTypes/All ответил 200 за 8.5363 мс
+2022-06-05 22:13:28.280 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:13:28.282 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56029) по GET /technoWorldHub ответил 101 за 23020.7665 мс
+2022-06-05 22:13:44.740 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:13:44.741 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56040) по POST /userToken ответил 200 за 6.7897 мс
+2022-06-05 22:13:44.928 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56041) по POST /technoWorldHub/negotiate ответил 200 за 0.2299 мс
+2022-06-05 22:13:45.044 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:13:45.184 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по GET /api/Categories ответил 200 за 3.9138 мс
+2022-06-05 22:13:45.369 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по GET /api/ElectrnicsTypes/All ответил 200 за 8.6188 мс
+2022-06-05 22:13:45.653 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по GET /api/Electronics/Filter ответил 200 за 147.8527 мс
+2022-06-05 22:13:48.548 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по GET /api/Status ответил 200 за 1.6660 мс
+2022-06-05 22:13:48.735 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по GET /api/Deliveries/Filter ответил 200 за 166.9213 мс
+2022-06-05 22:13:50.799 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по GET /api/Categories ответил 200 за 3.5705 мс
+2022-06-05 22:13:50.821 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по GET /api/ElectrnicsTypes/All ответил 200 за 7.6229 мс
+2022-06-05 22:13:50.828 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по GET /api/Manufacturers/All ответил 200 за 1.1857 мс
+2022-06-05 22:13:53.909 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по GET /api/Categories ответил 200 за 3.2450 мс
+2022-06-05 22:13:58.260 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по POST /api/ElectrnicsTypes ответил 201 за 4.5607 мс
+2022-06-05 22:13:59.336 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56040) по GET /api/ElectrnicsTypes/All ответил 200 за 10.6578 мс
+2022-06-05 22:14:15.460 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:14:20.471 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56042) по GET /technoWorldHub ответил 101 за 35478.2225 мс
+2022-06-05 22:15:22.031 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:15:22.032 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56065) по POST /userToken ответил 200 за 8.5241 мс
+2022-06-05 22:15:22.216 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56066) по POST /technoWorldHub/negotiate ответил 200 за 0.1817 мс
+2022-06-05 22:15:22.329 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:15:22.471 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по GET /api/Categories ответил 200 за 3.5394 мс
+2022-06-05 22:15:22.648 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по GET /api/ElectrnicsTypes/All ответил 200 за 9.5790 мс
+2022-06-05 22:15:22.922 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по GET /api/Electronics/Filter ответил 200 за 138.3158 мс
+2022-06-05 22:15:24.714 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по GET /api/Posts ответил 200 за 1.1560 мс
+2022-06-05 22:15:24.731 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по GET /api/Employees/Filter ответил 200 за 2.6380 мс
+2022-06-05 22:15:26.450 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по GET /api/Categories ответил 200 за 3.6621 мс
+2022-06-05 22:15:26.459 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по GET /api/ElectrnicsTypes/All ответил 200 за 6.9374 мс
+2022-06-05 22:15:26.471 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по GET /api/Manufacturers/All ответил 200 за 1.2416 мс
+2022-06-05 22:15:33.197 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по GET /api/Categories ответил 200 за 5.3337 мс
+2022-06-05 22:15:37.045 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по POST /api/ElectrnicsTypes ответил 201 за 4.4273 мс
+2022-06-05 22:16:07.472 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:16:10.274 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56065) по GET /api/ElectrnicsTypes/All ответил 200 за 21.2995 мс
+2022-06-05 22:16:10.280 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56067) по GET /technoWorldHub ответил 101 за 47997.9915 мс
+2022-06-05 22:16:58.615 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:16:58.616 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56094) по POST /userToken ответил 200 за 6.5588 мс
+2022-06-05 22:16:58.802 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56095) по POST /technoWorldHub/negotiate ответил 200 за 0.2272 мс
+2022-06-05 22:16:58.916 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:16:59.064 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Categories ответил 200 за 3.8464 мс
+2022-06-05 22:16:59.262 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/ElectrnicsTypes/All ответил 200 за 15.4867 мс
+2022-06-05 22:16:59.543 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Electronics/Filter ответил 200 за 140.7933 мс
+2022-06-05 22:17:01.366 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Posts ответил 200 за 1.1035 мс
+2022-06-05 22:17:01.382 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Employees/Filter ответил 200 за 2.4713 мс
+2022-06-05 22:17:03.883 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Orders/Filter ответил 200 за 122.0983 мс
+2022-06-05 22:17:04.658 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Status ответил 200 за 1.1714 мс
+2022-06-05 22:17:04.845 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Deliveries/Filter ответил 200 за 171.7068 мс
+2022-06-05 22:17:11.529 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Categories ответил 200 за 3.1727 мс
+2022-06-05 22:17:11.539 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/ElectrnicsTypes/All ответил 200 за 7.0295 мс
+2022-06-05 22:17:11.546 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Manufacturers/All ответил 200 за 1.2441 мс
+2022-06-05 22:17:16.133 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Categories ответил 200 за 4.2532 мс
+2022-06-05 22:17:38.569 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Categories ответил 200 за 7.6512 мс
+2022-06-05 22:17:38.581 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/ElectrnicsTypes/All ответил 200 за 9.3859 мс
+2022-06-05 22:17:38.587 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Manufacturers/All ответил 200 за 0.8922 мс
+2022-06-05 22:17:41.293 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/Categories ответил 200 за 5.0741 мс
+2022-06-05 22:17:44.882 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по POST /api/ElectrnicsTypes ответил 201 за 4.1970 мс
+2022-06-05 22:17:45.942 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56094) по GET /api/ElectrnicsTypes/All ответил 200 за 13.4799 мс
+2022-06-05 22:17:58.228 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:17:58.231 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56096) по GET /technoWorldHub ответил 101 за 59363.2235 мс
+2022-06-05 22:22:33.211 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:22:33.212 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56169) по POST /userToken ответил 200 за 12.3781 мс
+2022-06-05 22:22:33.404 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56170) по POST /technoWorldHub/negotiate ответил 200 за 0.2648 мс
+2022-06-05 22:22:33.519 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:22:33.670 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56169) по GET /api/Categories ответил 200 за 3.6424 мс
+2022-06-05 22:22:33.864 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56169) по GET /api/ElectrnicsTypes/All ответил 200 за 13.0808 мс
+2022-06-05 22:22:34.385 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56169) по GET /api/Electronics/Filter ответил 200 за 394.1189 мс
+2022-06-05 22:22:36.083 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56169) по GET /api/Status ответил 200 за 3.1009 мс
+2022-06-05 22:22:36.275 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56169) по GET /api/Deliveries/Filter ответил 200 за 171.6958 мс
+2022-06-05 22:22:36.704 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56169) по GET /api/Posts ответил 200 за 1.0790 мс
+2022-06-05 22:22:36.723 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56169) по GET /api/Employees/Filter ответил 200 за 2.6503 мс
+2022-06-05 22:23:25.380 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56169) по GET /api/Categories ответил 200 за 4.5610 мс
+2022-06-05 22:23:59.554 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:23:59.561 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56171) по GET /technoWorldHub ответил 101 за 86091.0807 мс
+2022-06-05 22:28:10.550 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:28:10.553 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56237) по POST /userToken ответил 200 за 36.4043 мс
+2022-06-05 22:28:10.739 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56238) по POST /technoWorldHub/negotiate ответил 200 за 0.2541 мс
+2022-06-05 22:28:10.852 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:28:10.996 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56237) по GET /api/Categories ответил 200 за 3.9441 мс
+2022-06-05 22:28:11.218 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56237) по GET /api/ElectrnicsTypes/All ответил 200 за 9.6182 мс
+2022-06-05 22:28:11.688 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56237) по GET /api/Electronics/Filter ответил 200 за 337.2756 мс
+2022-06-05 22:28:12.786 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56237) по GET /api/Posts ответил 200 за 1.1162 мс
+2022-06-05 22:28:12.802 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56237) по GET /api/Employees/Filter ответил 200 за 2.6290 мс
+2022-06-05 22:28:13.944 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56237) по GET /api/Status ответил 200 за 1.5119 мс
+2022-06-05 22:28:14.165 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56237) по GET /api/Deliveries/Filter ответил 200 за 189.7816 мс
+2022-06-05 22:28:15.004 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56237) по GET /api/Orders/Filter ответил 200 за 110.7491 мс
+2022-06-05 22:28:17.180 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56237) по GET /api/Categories ответил 200 за 3.4711 мс
+2022-06-05 22:28:43.994 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56237) по GET /api/Categories ответил 200 за 4.6908 мс
+2022-06-05 22:28:56.543 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:28:56.549 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56239) по GET /technoWorldHub ответил 101 за 45745.4950 мс
+2022-06-05 22:29:10.996 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:29:10.998 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56262) по POST /userToken ответил 200 за 7.0647 мс
+2022-06-05 22:29:11.184 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56263) по POST /technoWorldHub/negotiate ответил 200 за 0.1830 мс
+2022-06-05 22:29:11.298 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:29:11.447 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56262) по GET /api/Categories ответил 200 за 7.0217 мс
+2022-06-05 22:29:11.633 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56262) по GET /api/ElectrnicsTypes/All ответил 200 за 9.4714 мс
+2022-06-05 22:29:12.021 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56262) по GET /api/Electronics/Filter ответил 200 за 252.1759 мс
+2022-06-05 22:29:13.318 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56262) по GET /api/Categories ответил 200 за 4.9787 мс
+2022-06-05 22:29:24.229 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56262) по GET /api/Categories ответил 200 за 4.5459 мс
+2022-06-05 22:30:37.935 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:30:37.941 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56264) по GET /technoWorldHub ответил 101 за 86692.2852 мс
+2022-06-05 22:30:51.870 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:30:51.871 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56287) по POST /userToken ответил 200 за 8.1960 мс
+2022-06-05 22:30:52.062 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56288) по POST /technoWorldHub/negotiate ответил 200 за 0.2564 мс
+2022-06-05 22:30:52.175 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:30:52.326 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Categories ответил 200 за 3.5964 мс
+2022-06-05 22:30:52.523 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/ElectrnicsTypes/All ответил 200 за 8.3179 мс
+2022-06-05 22:30:52.801 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Electronics/Filter ответил 200 за 145.2525 мс
+2022-06-05 22:30:54.878 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Posts ответил 200 за 1.7899 мс
+2022-06-05 22:30:54.894 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Employees/Filter ответил 200 за 2.5848 мс
+2022-06-05 22:30:56.566 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/ElectrnicsTypes/All ответил 200 за 7.2610 мс
+2022-06-05 22:30:56.575 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Categories ответил 200 за 3.4644 мс
+2022-06-05 22:30:58.807 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Manufacturers/All ответил 200 за 1.4841 мс
+2022-06-05 22:31:03.041 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Categories ответил 200 за 4.2851 мс
+2022-06-05 22:31:06.162 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по POST /api/ElectrnicsTypes ответил 201 за 5.3008 мс
+2022-06-05 22:31:07.150 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/ElectrnicsTypes/All ответил 200 за 11.2762 мс
+2022-06-05 22:31:11.643 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Categories ответил 200 за 4.8516 мс
+2022-06-05 22:31:18.971 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по POST /api/ElectrnicsTypes ответил 201 за 4.2822 мс
+2022-06-05 22:31:19.847 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/ElectrnicsTypes/All ответил 200 за 8.6186 мс
+2022-06-05 22:31:39.689 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Categories ответил 200 за 5.8484 мс
+2022-06-05 22:31:42.589 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по POST /api/ElectrnicsTypes ответил 201 за 4.7004 мс
+2022-06-05 22:31:43.483 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/ElectrnicsTypes/All ответил 200 за 9.7182 мс
+2022-06-05 22:31:59.257 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Categories ответил 200 за 4.9981 мс
+2022-06-05 22:32:03.331 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по POST /api/ElectrnicsTypes ответил 201 за 2.6983 мс
+2022-06-05 22:32:04.466 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/ElectrnicsTypes/All ответил 200 за 10.6375 мс
+2022-06-05 22:32:33.623 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Categories ответил 200 за 5.7016 мс
+2022-06-05 22:32:36.441 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по POST /api/ElectrnicsTypes ответил 201 за 4.4603 мс
+2022-06-05 22:32:37.365 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/ElectrnicsTypes/All ответил 200 за 13.1571 мс
+2022-06-05 22:32:44.142 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/Categories ответил 200 за 4.8667 мс
+2022-06-05 22:32:47.708 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по POST /api/ElectrnicsTypes ответил 201 за 2.4307 мс
+2022-06-05 22:32:48.761 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56287) по GET /api/ElectrnicsTypes/All ответил 200 за 10.6492 мс
+2022-06-05 22:34:23.531 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:34:23.534 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56289) по GET /technoWorldHub ответил 101 за 211406.5740 мс
+2022-06-05 22:34:37.360 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:34:37.362 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56338) по POST /userToken ответил 200 за 14.1312 мс
+2022-06-05 22:34:37.558 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56339) по POST /technoWorldHub/negotiate ответил 200 за 0.1916 мс
+2022-06-05 22:34:37.687 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:34:37.840 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по GET /api/Categories ответил 200 за 3.3149 мс
+2022-06-05 22:34:38.046 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по GET /api/ElectrnicsTypes/All ответил 200 за 15.3667 мс
+2022-06-05 22:34:38.443 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по GET /api/Electronics/Filter ответил 200 за 267.7249 мс
+2022-06-05 22:34:40.877 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по GET /api/ElectrnicsTypes/All ответил 200 за 9.6330 мс
+2022-06-05 22:34:40.887 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по GET /api/Categories ответил 200 за 3.6573 мс
+2022-06-05 22:34:40.892 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по GET /api/Manufacturers/All ответил 200 за 1.1015 мс
+2022-06-05 22:34:45.510 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по GET /api/Categories ответил 200 за 3.8907 мс
+2022-06-05 22:34:48.921 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по POST /api/ElectrnicsTypes ответил 201 за 4.6207 мс
+2022-06-05 22:34:49.801 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по GET /api/ElectrnicsTypes/All ответил 200 за 11.8629 мс
+2022-06-05 22:34:55.575 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по GET /api/Categories ответил 200 за 3.2371 мс
+2022-06-05 22:34:58.841 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по POST /api/ElectrnicsTypes ответил 400 за 1.1150 мс
+2022-06-05 22:35:00.963 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по POST /api/ElectrnicsTypes ответил 400 за 1.0132 мс
+2022-06-05 22:35:04.991 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по POST /api/ElectrnicsTypes ответил 201 за 2.2789 мс
+2022-06-05 22:35:05.897 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56338) по GET /api/ElectrnicsTypes/All ответил 200 за 10.7575 мс
+2022-06-05 22:35:31.451 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:35:31.454 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56340) по GET /technoWorldHub ответил 101 за 53827.6484 мс
+2022-06-05 22:35:44.209 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:35:44.210 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56356) по POST /userToken ответил 200 за 8.5583 мс
+2022-06-05 22:35:44.399 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56357) по POST /technoWorldHub/negotiate ответил 200 за 0.2196 мс
+2022-06-05 22:35:44.517 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:35:44.676 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по GET /api/Categories ответил 200 за 4.2780 мс
+2022-06-05 22:35:44.882 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по GET /api/ElectrnicsTypes/All ответил 200 за 21.5001 мс
+2022-06-05 22:35:45.249 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по GET /api/Electronics/Filter ответил 200 за 211.1159 мс
+2022-06-05 22:36:11.850 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по GET /api/ElectrnicsTypes/All ответил 200 за 11.1173 мс
+2022-06-05 22:36:11.859 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по GET /api/Categories ответил 200 за 3.2562 мс
+2022-06-05 22:36:11.864 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по GET /api/Manufacturers/All ответил 200 за 1.3264 мс
+2022-06-05 22:36:16.402 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по GET /api/Categories ответил 200 за 3.8093 мс
+2022-06-05 22:36:20.487 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по POST /api/ElectrnicsTypes ответил 201 за 5.1323 мс
+2022-06-05 22:36:21.463 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по GET /api/ElectrnicsTypes/All ответил 200 за 9.3232 мс
+2022-06-05 22:36:31.832 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по GET /api/Categories ответил 200 за 3.7131 мс
+2022-06-05 22:36:35.655 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по POST /api/ElectrnicsTypes ответил 201 за 42.8218 мс
+2022-06-05 22:36:36.759 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56356) по GET /api/ElectrnicsTypes/All ответил 200 за 23.3502 мс
+2022-06-05 22:36:41.017 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:36:41.023 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56358) по GET /technoWorldHub ответил 101 за 56554.2292 мс
+2022-06-05 22:37:48.703 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:37:48.704 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56396) по POST /userToken ответил 200 за 7.7282 мс
+2022-06-05 22:37:48.894 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56397) по POST /technoWorldHub/negotiate ответил 200 за 0.1827 мс
+2022-06-05 22:37:49.009 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:37:49.167 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/Categories ответил 200 за 3.4674 мс
+2022-06-05 22:37:49.356 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/ElectrnicsTypes/All ответил 200 за 18.4750 мс
+2022-06-05 22:37:49.696 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/Electronics/Filter ответил 200 за 208.5568 мс
+2022-06-05 22:38:02.062 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/ElectrnicsTypes/All ответил 200 за 8.4847 мс
+2022-06-05 22:38:02.070 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/Categories ответил 200 за 3.3167 мс
+2022-06-05 22:38:02.076 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/Manufacturers/All ответил 200 за 1.1808 мс
+2022-06-05 22:38:05.876 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/Categories ответил 200 за 3.0654 мс
+2022-06-05 22:38:10.013 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по POST /api/ElectrnicsTypes ответил 201 за 5.4218 мс
+2022-06-05 22:38:10.961 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/ElectrnicsTypes/All ответил 200 за 8.9457 мс
+2022-06-05 22:38:12.537 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/Categories ответил 200 за 3.8550 мс
+2022-06-05 22:38:15.139 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по POST /api/ElectrnicsTypes ответил 201 за 2.0161 мс
+2022-06-05 22:38:16.065 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/ElectrnicsTypes/All ответил 200 за 12.6978 мс
+2022-06-05 22:38:17.956 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/Categories ответил 200 за 4.8785 мс
+2022-06-05 22:38:22.529 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по POST /api/ElectrnicsTypes ответил 201 за 2.2411 мс
+2022-06-05 22:38:23.562 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/ElectrnicsTypes/All ответил 200 за 8.3843 мс
+2022-06-05 22:38:27.822 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/Categories ответил 200 за 3.6051 мс
+2022-06-05 22:38:31.941 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по POST /api/ElectrnicsTypes ответил 400 за 0.9683 мс
+2022-06-05 22:38:35.905 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по POST /api/ElectrnicsTypes ответил 201 за 23.9705 мс
+2022-06-05 22:38:36.892 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56396) по GET /api/ElectrnicsTypes/All ответил 200 за 14.3904 мс
+2022-06-05 22:38:40.893 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:38:40.894 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56398) по GET /technoWorldHub ответил 101 за 51934.4628 мс
+2022-06-05 22:38:56.229 +05:00 [INF] terminal_aea0ccc1-c82d-47ff-be66-611abdc32f86 отключен от системы
+2022-06-05 22:38:56.230 +05:00 [INF] Запрос от terminal_aea0ccc1-c82d-47ff-be66-611abdc32f86 (127.0.0.1:55999) по GET /technoWorldHub ответил 101 за 1689872.0049 мс
+2022-06-05 22:39:03.995 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56420) по POST /terminalToken ответил 200 за 2.9087 мс
+2022-06-05 22:39:04.324 +05:00 [INF] Запрос от terminal_a071d19e-4460-4f18-bf8f-7967a79a85e9 (127.0.0.1:56421) по POST /technoWorldHub/negotiate ответил 200 за 0.1875 мс
+2022-06-05 22:39:04.449 +05:00 [INF] Подключенин терминал: terminal_a071d19e-4460-4f18-bf8f-7967a79a85e9
+2022-06-05 22:39:04.516 +05:00 [INF] Запрос от terminal_a071d19e-4460-4f18-bf8f-7967a79a85e9 (127.0.0.1:56420) по GET /api/Categories ответил 200 за 3.7380 мс
+2022-06-05 22:39:06.112 +05:00 [INF] Запрос от terminal_a071d19e-4460-4f18-bf8f-7967a79a85e9 (127.0.0.1:56420) по GET /api/Electronics/TerminalFilter ответил 200 за 242.7440 мс
+2022-06-05 22:39:06.150 +05:00 [INF] Запрос от terminal_a071d19e-4460-4f18-bf8f-7967a79a85e9 (127.0.0.1:56420) по GET /api/Manufacturers ответил 200 за 8.9282 мс
+2022-06-05 22:39:06.162 +05:00 [INF] Запрос от terminal_a071d19e-4460-4f18-bf8f-7967a79a85e9 (127.0.0.1:56420) по GET /api/ElectrnicsTypes ответил 200 за 3.4785 мс
+2022-06-05 22:39:09.541 +05:00 [INF] Запрос от terminal_a071d19e-4460-4f18-bf8f-7967a79a85e9 (127.0.0.1:56420) по POST /terminalToken ответил 200 за 0.5171 мс
+2022-06-05 22:39:30.457 +05:00 [INF] Пользователь MrBoring авторизирован в системе
+2022-06-05 22:39:30.463 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56425) по POST /userToken ответил 200 за 66.0323 мс
+2022-06-05 22:39:30.628 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56427) по POST /technoWorldHub/negotiate ответил 200 за 0.1641 мс
+2022-06-05 22:39:30.725 +05:00 [INF] Подключен пользователь к приложению управление предприятием: MrBoring
+2022-06-05 22:39:30.849 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Categories ответил 200 за 5.0932 мс
+2022-06-05 22:39:30.974 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/ElectrnicsTypes/All ответил 200 за 9.6033 мс
+2022-06-05 22:39:31.218 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Electronics/Filter ответил 200 за 135.0488 мс
+2022-06-05 22:39:34.422 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/ElectrnicsTypes/All ответил 200 за 8.5787 мс
+2022-06-05 22:39:34.432 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Categories ответил 200 за 4.5979 мс
+2022-06-05 22:39:34.439 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Manufacturers/All ответил 200 за 1.1690 мс
+2022-06-05 22:39:37.625 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Categories ответил 200 за 4.7576 мс
+2022-06-05 22:39:43.097 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по POST /api/ElectrnicsTypes ответил 201 за 3.8765 мс
+2022-06-05 22:39:44.521 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/ElectrnicsTypes/All ответил 200 за 10.1645 мс
+2022-06-05 22:40:05.155 +05:00 [INF] terminal_a071d19e-4460-4f18-bf8f-7967a79a85e9 отключен от системы
+2022-06-05 22:40:05.157 +05:00 [INF] Запрос от terminal_a071d19e-4460-4f18-bf8f-7967a79a85e9 (127.0.0.1:56422) по GET /technoWorldHub ответил 101 за 60764.4927 мс
+2022-06-05 22:40:41.178 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/ElectrnicsTypes/All ответил 200 за 11.8087 мс
+2022-06-05 22:40:41.191 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Categories ответил 200 за 3.2638 мс
+2022-06-05 22:40:41.195 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Manufacturers/All ответил 200 за 1.3677 мс
+2022-06-05 22:40:45.611 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56446) по POST /terminalToken ответил 200 за 2.3294 мс
+2022-06-05 22:40:46.047 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Categories ответил 200 за 3.5883 мс
+2022-06-05 22:40:46.548 +05:00 [INF] Запрос от terminal_00f1b2ad-3b18-4c2d-84d0-0ceeeb873524 (127.0.0.1:56448) по POST /technoWorldHub/negotiate ответил 200 за 0.3986 мс
+2022-06-05 22:40:46.787 +05:00 [INF] Подключенин терминал: terminal_00f1b2ad-3b18-4c2d-84d0-0ceeeb873524
+2022-06-05 22:40:46.930 +05:00 [INF] Запрос от terminal_00f1b2ad-3b18-4c2d-84d0-0ceeeb873524 (127.0.0.1:56446) по GET /api/Categories ответил 200 за 33.9370 мс
+2022-06-05 22:40:47.953 +05:00 [INF] Запрос от terminal_00f1b2ad-3b18-4c2d-84d0-0ceeeb873524 (127.0.0.1:56446) по GET /api/Electronics/TerminalFilter ответил 200 за 88.7633 мс
+2022-06-05 22:40:48.024 +05:00 [INF] Запрос от terminal_00f1b2ad-3b18-4c2d-84d0-0ceeeb873524 (127.0.0.1:56446) по GET /api/Manufacturers ответил 200 за 10.3950 мс
+2022-06-05 22:40:48.142 +05:00 [INF] Запрос от terminal_00f1b2ad-3b18-4c2d-84d0-0ceeeb873524 (127.0.0.1:56446) по GET /api/ElectrnicsTypes ответил 200 за 2.0462 мс
+2022-06-05 22:40:51.957 +05:00 [INF] Запрос от terminal_00f1b2ad-3b18-4c2d-84d0-0ceeeb873524 (127.0.0.1:56446) по POST /terminalToken ответил 200 за 0.3180 мс
+2022-06-05 22:41:05.645 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по POST /api/ElectrnicsTypes ответил 201 за 18.2256 мс
+2022-06-05 22:41:21.287 +05:00 [INF] Запрос от terminal_258331d4-800b-41bf-a2da-0175aa5871d9 (127.0.0.1:56446) по GET /api/ElectrnicsTypes ответил 200 за 3.6346 мс
+2022-06-05 22:41:21.455 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/ElectrnicsTypes/All ответил 200 за 10.6200 мс
+2022-06-05 22:41:30.454 +05:00 [INF] terminal_00f1b2ad-3b18-4c2d-84d0-0ceeeb873524 отключен от системы
+2022-06-05 22:41:30.455 +05:00 [INF] Запрос от terminal_00f1b2ad-3b18-4c2d-84d0-0ceeeb873524 (127.0.0.1:56449) по GET /technoWorldHub ответил 101 за 43798.2061 мс
+2022-06-05 22:42:09.982 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Status ответил 200 за 19.5603 мс
+2022-06-05 22:42:10.336 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Deliveries/Filter ответил 200 за 324.9636 мс
+2022-06-05 22:42:12.013 +05:00 [INF] Запрос от Неавторизированный пользователь (127.0.0.1:56486) по POST /terminalToken ответил 200 за 32.3877 мс
+2022-06-05 22:42:12.481 +05:00 [INF] Запрос от terminal_95e2835f-02cc-41be-949a-bb049dc42334 (127.0.0.1:56487) по POST /technoWorldHub/negotiate ответил 200 за 0.2016 мс
+2022-06-05 22:42:12.628 +05:00 [INF] Подключенин терминал: terminal_95e2835f-02cc-41be-949a-bb049dc42334
+2022-06-05 22:42:12.703 +05:00 [INF] Запрос от terminal_95e2835f-02cc-41be-949a-bb049dc42334 (127.0.0.1:56486) по GET /api/Categories ответил 200 за 3.8261 мс
+2022-06-05 22:42:13.904 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/ElectrnicsTypes/All ответил 200 за 11.1736 мс
+2022-06-05 22:42:13.914 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Categories ответил 200 за 5.2918 мс
+2022-06-05 22:42:13.923 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Manufacturers/All ответил 200 за 1.4247 мс
+2022-06-05 22:42:17.602 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/Categories ответил 200 за 4.9559 мс
+2022-06-05 22:42:17.723 +05:00 [INF] Запрос от terminal_95e2835f-02cc-41be-949a-bb049dc42334 (127.0.0.1:56486) по POST /terminalToken ответил 200 за 0.3628 мс
+2022-06-05 22:42:19.476 +05:00 [INF] Запрос от terminal_fbdbd2c7-063a-4208-971f-584cdf4be1e7 (127.0.0.1:56486) по GET /api/Electronics/TerminalFilter ответил 200 за 74.0334 мс
+2022-06-05 22:42:19.542 +05:00 [INF] Запрос от terminal_fbdbd2c7-063a-4208-971f-584cdf4be1e7 (127.0.0.1:56486) по GET /api/Manufacturers ответил 200 за 7.3051 мс
+2022-06-05 22:42:19.654 +05:00 [INF] Запрос от terminal_fbdbd2c7-063a-4208-971f-584cdf4be1e7 (127.0.0.1:56486) по GET /api/ElectrnicsTypes ответил 200 за 5.4820 мс
+2022-06-05 22:42:29.577 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по POST /api/ElectrnicsTypes ответил 201 за 4.5871 мс
+2022-06-05 22:42:30.720 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56425) по GET /api/ElectrnicsTypes/All ответил 200 за 10.5469 мс
+2022-06-05 22:42:37.712 +05:00 [INF] Запрос от terminal_fbdbd2c7-063a-4208-971f-584cdf4be1e7 (127.0.0.1:56486) по GET /api/ElectrnicsTypes ответил 200 за 1.4657 мс
+2022-06-05 22:42:41.052 +05:00 [INF] Запрос от terminal_fbdbd2c7-063a-4208-971f-584cdf4be1e7 (127.0.0.1:56486) по GET /api/Electronics/TerminalFilter ответил 200 за 50.0056 мс
+2022-06-05 22:42:41.513 +05:00 [INF] Запрос от terminal_fbdbd2c7-063a-4208-971f-584cdf4be1e7 (127.0.0.1:56486) по GET /api/Electronics/TerminalFilter ответил 200 за 45.7471 мс
+2022-06-05 22:42:45.300 +05:00 [INF] terminal_95e2835f-02cc-41be-949a-bb049dc42334 отключен от системы
+2022-06-05 22:42:45.301 +05:00 [INF] Запрос от terminal_95e2835f-02cc-41be-949a-bb049dc42334 (127.0.0.1:56488) по GET /technoWorldHub ответил 101 за 32743.5281 мс
+2022-06-05 22:42:51.593 +05:00 [INF] MrBoring отключен от системы
+2022-06-05 22:42:51.595 +05:00 [INF] Запрос от MrBoring (127.0.0.1:56428) по GET /technoWorldHub ответил 101 за 200914.8154 мс
+2022-06-05 22:43:03.835 +05:00 [INF] Application is shutting down...

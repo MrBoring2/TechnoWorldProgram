@@ -9,6 +9,9 @@ using TechnoWorld_API.Data;
 using TechoWorld_DataModels_v2;
 using Microsoft.AspNetCore.Authorization;
 using TechoWorld_DataModels_v2.Entities;
+using Microsoft.AspNetCore.SignalR;
+using TechnoWorld_API.Services;
+using TechnoWorld_API.Helpers;
 
 namespace BNS_API.Controllers
 {
@@ -17,11 +20,13 @@ namespace BNS_API.Controllers
     [Authorize]
     public class ElectrnicsTypesController : ControllerBase
     {
+        private readonly IHubContext<TechnoWorldHub> _hubContext;
         private readonly TechnoWorldContext _context;
 
-        public ElectrnicsTypesController(TechnoWorldContext context)
+        public ElectrnicsTypesController(TechnoWorldContext context, IHubContext<TechnoWorldHub> hubContext)
         {
             _context = context;
+            _hubContext = hubContext;
         }
         [HttpGet("All")]
         public async Task<ActionResult<IEnumerable<ElectrnicsType>>> GetAllElectrnicsTypes()
@@ -85,8 +90,15 @@ namespace BNS_API.Controllers
         [HttpPost]
         public async Task<ActionResult<ElectrnicsType>> PostElectrnicsType(ElectrnicsType electrnicsType)
         {
+            var dbElectroncisType = await _context.ElectrnicsTypes.FirstOrDefaultAsync(p => p.Name.Equals(electrnicsType.Name));
+            if (dbElectroncisType != null)
+            {
+                return BadRequest("Тип электронной техники с таким названием уже существует!");
+            }
+
             _context.ElectrnicsTypes.Add(electrnicsType);
             await _context.SaveChangesAsync();
+            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronicsTypes", electrnicsType.CategoryId);
 
             return CreatedAtAction("GetElectrnicsType", new { id = electrnicsType.TypeId }, electrnicsType);
         }

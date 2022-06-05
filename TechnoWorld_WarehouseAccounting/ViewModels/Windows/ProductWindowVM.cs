@@ -26,6 +26,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
     public class ProductWindowVM : BaseModalWindowVM
     {
         private bool isAdd;
+        private Category category;
         private ObservableCollection<Category> categories;
         private ObservableCollection<ElectrnicsType> electrnicsTypes;
         private ObservableCollection<Manufacturer> manufacturers;
@@ -37,6 +38,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             LoadImageCommand = new RelayCommand(LoadImage);
             CancelCommand = new RelayCommand(Cancel);
             CreateManufacturerCommand = new RelayCommand(CreateManufacturer);
+            CreateElectronicsTypeCommand = new RelayCommand(CreateElectronicsType);
+            CreateCategoryCommand = new RelayCommand(CreateCategory);
             CurrentElectronic = new Electronic();
             IsAdd = true;
 
@@ -78,6 +81,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public RelayCommand SaveCommand { get; set; }
         public RelayCommand CancelCommand { get; set; }
         public RelayCommand CreateManufacturerCommand { get; set; }
+        public RelayCommand CreateCategoryCommand { get; set; }
+        public RelayCommand CreateElectronicsTypeCommand { get; set; }
         public RelayCommand LoadImageCommand { get; set; }
         public RelayCommand CheckNumerikTextBoxCommand { get; set; }
 
@@ -104,15 +109,14 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public string Model { get => CurrentElectronic.Model; set { CurrentElectronic.Model = value; ValidationMessageSetter(value); } }
         public Category Category
         {
-            get => CurrentElectronic.Type == null ? null : CurrentElectronic.Type.Category;
+            get => category;
             set
             {
-                if (CurrentElectronic.Type != null)
-                {
-                    CurrentElectronic.Type.Category = value;
-                    ElectronicsTypes = new ObservableCollection<ElectrnicsType>(AllElectronicsTypes.Where(p => p.CategoryId == Category.Id).ToList());
-                    ElectrnicsType = ElectronicsTypes.FirstOrDefault();
-                }
+
+                category = value;
+                ElectronicsTypes = new ObservableCollection<ElectrnicsType>(AllElectronicsTypes.Where(p => p.CategoryId == Category.Id).ToList());
+                ElectrnicsType = ElectronicsTypes.FirstOrDefault();
+
                 OnPropertyChanged();
             }
         }
@@ -166,6 +170,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             IsAdd = false;
             CurrentElectronic = electronic;
+            Category = Categories.FirstOrDefault(p => p.Id == CurrentElectronic.Type.CategoryId);
             OnPropertyChanged(nameof(ElectrnicsType));
             OnPropertyChanged(nameof(Manufacturer));
             OnPropertyChanged(nameof(Category));
@@ -179,8 +184,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async Task LoadData()
         {
-            await LoadCategories();
             await LoadTypes();
+            await LoadCategories();
+
             await LoadManufacturers();
         }
 
@@ -204,7 +210,15 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 AllElectronicsTypes = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content));
                 if (ElectrnicsType == null)
                 {
+
+
                     ElectrnicsType = AllElectronicsTypes.FirstOrDefault();
+
+                }
+                if (Category != null)
+                {
+                    ElectronicsTypes = new ObservableCollection<ElectrnicsType>(AllElectronicsTypes.Where(p => p.CategoryId == Category.Id).ToList());
+                    ElectrnicsType = ElectronicsTypes.FirstOrDefault();
                 }
             }
         }
@@ -224,13 +238,33 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         private async void CreateManufacturer(object obj)
         {
-            AddManufacturerWindowVM addManufacturerWindow = new AddManufacturerWindowVM();
-            await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(addManufacturerWindow));
-            if (addManufacturerWindow.DialogResult == true)
+            ManufacturerWindowVM manufacturerWindow = new ManufacturerWindowVM();
+            await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(manufacturerWindow));
+            if (manufacturerWindow.DialogResult == true)
             {
                 await LoadManufacturers();
             }
         }
+
+        private async void CreateCategory(object obj)
+        {
+            CategoryWindowVM categoryWindow = new CategoryWindowVM();
+            await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(categoryWindow));
+            if (categoryWindow.DialogResult == true)
+            {
+                await LoadCategories();
+            }
+        }
+        private async void CreateElectronicsType(object obj)
+        {
+            ElectronicsTypeWindowVM electronicsTypeWindow = new ElectronicsTypeWindowVM();
+            await Task.Run(() => WindowNavigation.Instance.OpenModalWindow(electronicsTypeWindow));
+            if (electronicsTypeWindow.DialogResult == true)
+            {
+                await LoadTypes();
+            }
+        }
+
         private void LoadImage(object obj)
         {
             var openFileDialog = new OpenFileDialog();

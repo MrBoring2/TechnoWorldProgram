@@ -91,12 +91,12 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTextColumn Header="Тип" Binding="{Binding Type.Name}" Width="*"/>
-                <DataGridTextColumn Header="Цена продажи" Binding="{Binding SalePrice, StringFormat={}{0:F2} ₽}" Width="*"/>
-                <DataGridTextColumn Header="Цена закупки" Binding="{Binding PurchasePrice, StringFormat={}{0:F2} ₽}" Width="*"/>
+                <DataGridTextColumn Header="Цена продажи" Binding="{Binding SalePrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}" Width="*"/>
+                <DataGridTextColumn Header="Цена закупки" Binding="{Binding PurchasePrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}" Width="*"/>
                 <DataGridTemplateColumn Header="Количество" Width="1.5*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate DataType="DataGridCell">
-                            <TextBlock Text="{Binding AmountnAveryStorage}" TextWrapping="Wrap"/>
+                            <TextBlock Text="{Binding AmountnAveryStorage, StringFormat={}{0:N0} шт., ConverterCulture=ru-RU}" TextWrapping="Wrap"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

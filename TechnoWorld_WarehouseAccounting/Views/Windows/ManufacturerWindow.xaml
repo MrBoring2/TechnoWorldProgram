@@ -1,0 +1,21 @@
+﻿<mde:MaterialWindow BorderBackgroundBrush="Orange"  x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.ManufacturerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TechnoWorld_WarehouseAccounting.Views.Windows"
+         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"  ResizeMode="NoResize"
+        xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+                  
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"   
+        FontFamily="{DynamicResource MaterialDesignFont}"
+       xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
+        dr:DialogCloser.DialogResult="{Binding DialogResult}"
+      Title="ТЕХНО МИР: Управление предприятием | Создание производителя" Background="White" Width="433" Height="200" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" >
+    <StackPanel VerticalAlignment="Center">
+        <TextBox Text="{Binding ManufacturerName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Название производителя" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+        <Button Command="{Binding AddManufacturerCommand}" Style="{StaticResource btn}" Content="Создать" Margin="5,30,5,5" Cursor="Hand"/>
+    </StackPanel>
+</mde:MaterialWindow>

@@ -12,8 +12,6 @@
        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
       d:DesignHeight="600"
       Title="ProductManagementPage" Background="White" d:DesignWidth="1200">
-
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
@@ -87,8 +85,8 @@
                 </DataGridTemplateColumn>
                 <DataGridTextColumn Header="Дата заказа" Binding="{Binding DateOfOrder, StringFormat={}{0:dd.MM.yyyy}}" Width="*"/>
                 <DataGridTextColumn Header="Плановая дата поставки" Binding="{Binding DateOfDelivery, StringFormat={}{0:dd.MM.yyyy}}" Width="1.7*"/>
-                <DataGridTextColumn Header="Стоимость поставки" Binding="{Binding TotalPrice, StringFormat={}{0:F2} ₽}" Width="1.2*"/>
-                <DataGridTextColumn Header="Количество товаров" Binding="{Binding TotalCount, StringFormat={}{0} шт.}" Width="1.25*"/>
+                <DataGridTextColumn Header="Стоимость поставки" Binding="{Binding TotalPrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}" Width="1.2*"/>
+                <DataGridTextColumn Header="Количество товаров" Binding="{Binding TotalCount, StringFormat={}{0:N0} шт., ConverterCulture=ru-RU}" Width="1.25*"/>
                 <DataGridTemplateColumn Header="Статус" Width="*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate DataType="DataGridCell">

@@ -18,9 +18,9 @@ namespace TechnoWorld_WarehouseAccounting.Views.Windows
     /// <summary>
     /// Логика взаимодействия для AddManufacturerWindow.xaml
     /// </summary>
-    public partial class AddManufacturerWindow : MaterialWindow
+    public partial class ManufacturerWindow : MaterialWindow
     {
-        public AddManufacturerWindow()
+        public ManufacturerWindow()
         {
             InitializeComponent();
         }

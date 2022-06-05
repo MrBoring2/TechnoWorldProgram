@@ -20,7 +20,7 @@
         <Grid Grid.Row="0" Margin="0,10,0,0" Visibility="{Binding PaymentVisibility}">
 
             <TextBlock Grid.Column="0" Text="Товар" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Left" Margin="200,5,0,5"/>
-            <TextBlock Grid.Column="1" Text="Количество" VerticalAlignment="Center"  FontSize="20" HorizontalAlignment="Right" Margin="5,5,145,5"/>
+            <TextBlock Grid.Column="1" Text="Количество" VerticalAlignment="Center"  FontSize="20" HorizontalAlignment="Right" Margin="5,5,235,5"/>
             <TextBlock Grid.Column="2" Text="Сумма" FontSize="20" VerticalAlignment="Center"  HorizontalAlignment="Right"  Margin="5,5,45,5"/>
         </Grid>
         <materialDesign:Card Margin="5,5,5,5" Grid.Row="1">
@@ -53,7 +53,7 @@
                     </Grid>-->
                     <Grid  Margin="0,20,0,0">
                         <TextBlock Text="Всего к оплате" FontSize="20"/>
-                        <TextBlock Text="{Binding TotalOrderPrice, StringFormat={}{0:F0} ₽}" FontSize="20" HorizontalAlignment="Right"/>
+                        <TextBlock Text="{Binding TotalOrderPrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}" FontSize="20" HorizontalAlignment="Right"/>
                     </Grid>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,45,0,0">
                         <Button Content="Назад в каталог" Background="Orange" HorizontalAlignment="Center" Width="300" BorderBrush="Orange" Margin="5" Command="{Binding BackToElectronicsCommand}" Cursor="Hand"/>

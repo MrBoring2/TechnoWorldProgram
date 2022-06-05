@@ -87,8 +87,15 @@ namespace TechnoWorld_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Category>> PostCategory(Category category)
         {
+            var dbCategory = await _context.Manufacturers.FirstOrDefaultAsync(p => p.Name.Equals(category.Name));
+            if (dbCategory != null)
+            {
+                return BadRequest("Категория с таким названием уже существует!");
+            }
+
             _context.Categories.Add(category);
             await _context.SaveChangesAsync();
+            await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateCategories", category.Id);
 
             return CreatedAtAction("GetCategory", new { id = category.Id }, category);
         }

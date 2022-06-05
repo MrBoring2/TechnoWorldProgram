@@ -75,11 +75,11 @@
                                         <Grid>
                                             <StackPanel HorizontalAlignment="Left" Orientation="Vertical">
                                                 <TextBlock Text="От" Margin="0,0"/>
-                                                <TextBox Text="{Binding MinPrice, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource MaterialDesignTextBoxBase}" VerticalAlignment="Top" Margin="0,5" Width="90"/>
+                                                <TextBox Text="{Binding MinPrice, StringFormat={}{0:C}, ConverterCulture=ru-RU, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource MaterialDesignTextBoxBase}" VerticalAlignment="Top" Margin="0,5" Width="90"/>
                                             </StackPanel>
                                             <StackPanel HorizontalAlignment="Right">
                                                 <TextBlock Text="До" Margin="0,0"/>
-                                                <TextBox VerticalAlignment="Top" Text="{Binding MaxPrice, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" Width="90"/>
+                                                <TextBox VerticalAlignment="Top" Text="{Binding MaxPrice, StringFormat={}{0:C}, ConverterCulture=ru-RU, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" Width="90" Cursor="IBeam"/>
                                             </StackPanel>
                                         </Grid>
 
@@ -141,7 +141,7 @@
                     </i:Interaction.Triggers>
                 </ListView>
                 <StackPanel Visibility="{Binding EmptyVisibility}" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="800" Margin="10">
-                    <Image Source="/TechnoWorld_Terminal;component/Resources/empty.png" Width="280" Height="190"/>
+                    <Image Source="/Resources/Images/empty.png" Width="280" Height="190"/>
                     <TextBlock  Text="Поиск не дал результатов" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <TextBlock  Text="Выберите другие критерии или проверьте вводимые данные" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </StackPanel>

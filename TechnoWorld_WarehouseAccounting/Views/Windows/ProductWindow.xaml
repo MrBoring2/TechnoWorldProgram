@@ -37,9 +37,16 @@
                 <StackPanel>
                     <TextBlock Text="Основаная информация" HorizontalAlignment="Center" Margin="5" FontSize="20"/>
                     <TextBox Text="{Binding Model, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Модель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
-                    <ComboBox ItemsSource="{Binding Categories}" IsEnabled="{Binding IsAdd}" SelectedItem="{Binding Category}" SelectedValue="{Binding Category.Id}" SelectedValuePath="Id" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Категория" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <ComboBox ItemsSource="{Binding ElectronicsTypes}" SelectedItem="{Binding ElectrnicsType}" SelectedValue="{Binding ElectrnicsType.TypeId}" IsEnabled="{Binding IsAdd}" SelectedValuePath="TypeId" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Тип" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
-                    <TextBox Text="{Binding SalePrice, StringFormat=F2, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цена продажи" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                    <Grid>
+                        <ComboBox ItemsSource="{Binding Categories}" IsEnabled="{Binding IsAdd}" Width="320" HorizontalAlignment="Left" SelectedItem="{Binding Category, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedValue="{Binding Category.Id}" SelectedValuePath="Id" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Категория" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                        <Button Command="{Binding CreateCategoryCommand}" Content="Создать" HorizontalAlignment="Right" Style="{StaticResource btn}" Width="100" Margin="0,0,5,0" Cursor="Hand"/>
+                    </Grid>
+                    <Grid>
+                        <ComboBox ItemsSource="{Binding ElectronicsTypes}" Width="320" HorizontalAlignment="Left" SelectedItem="{Binding ElectrnicsType}" SelectedValue="{Binding ElectrnicsType.TypeId}" IsEnabled="{Binding IsAdd}" SelectedValuePath="TypeId" DisplayMemberPath="Name" materialDesign:HintAssist.Hint="Тип" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8"/>
+                        <Button Command="{Binding CreateElectronicsTypeCommand}" Content="Создать" HorizontalAlignment="Right" Style="{StaticResource btn}" Width="100" Margin="0,0,5,0" Cursor="Hand"/>
+
+                    </Grid>
+                    <TextBox Text="{Binding SalePrice, StringFormat={}{0:C}, ConverterCulture=ru-RU, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цена продажи" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
                         <interactions:Interaction.Triggers>
                             <interactions:EventTrigger EventName="TextChanged">
                                 <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
@@ -51,7 +58,7 @@
                             </interactions:EventTrigger>
                         </interactions:Interaction.Triggers>
                     </TextBox>
-                    <TextBox Text="{Binding PurchasePrice, StringFormat=F2, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цена закупки" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                    <TextBox Text="{Binding PurchasePrice, StringFormat={}{0:C}, ConverterCulture=ru-RU, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цена закупки" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
                         <interactions:Interaction.Triggers>
                             <interactions:EventTrigger EventName="TextChanged">
                                 <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>
@@ -69,7 +76,7 @@
                     </Grid>
                     <TextBox Text="{Binding ManufacturerCountry, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Страна производитель" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <TextBox Text="{Binding Color, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Цвет" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
-                    <TextBox Text="{Binding Weight, StringFormat=F2, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Вес" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
+                    <TextBox Text="{Binding Weight, StringFormat={}{0:N2}, ConverterCulture=ru-RU, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Вес (в кг.)" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">
                         <interactions:Interaction.Triggers>
                             <interactions:EventTrigger EventName="TextChanged">
                                 <interactions:CallMethodAction TargetObject="{Binding}" MethodName="TextChanged"/>

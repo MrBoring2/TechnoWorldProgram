@@ -26,7 +26,7 @@
                     <TextBlock Text="{Binding Type.Name}" Margin="10,0,0,0" FontSize="14" VerticalAlignment="Bottom"/>
                 </StackPanel>
                 <StackPanel Grid.Column="2" Orientation="Vertical">
-                    <TextBlock Text="{Binding SalePrice, StringFormat={}{0:F0} ₽}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
+                    <TextBlock Text="{Binding SalePrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
                     <TextBlock Text="{Binding AmountInStoragesWithReservation, StringFormat={}В наличии: {0}}" Margin="10" FontSize="14" HorizontalAlignment="Right"/>
                 </StackPanel>
             </Grid>
@@ -56,8 +56,8 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="140"/>
                     <ColumnDefinition Width="20*"/>
-                    <ColumnDefinition Width="120"/>
-                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="200"/>
                 </Grid.ColumnDefinitions>
                 <Image Source="{Binding ElectronicImage}" Grid.Column="0" MaxHeight="120" MaxWidth="120" Margin="5"/>
                 <StackPanel VerticalAlignment="Center" Grid.Column="1" >
@@ -66,10 +66,10 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="2" VerticalAlignment="Center">
-                    <mde:OversizedNumberSpinner Max="10" Min="0" HorizontalAlignment="Center" Grid.Column="3" Background="Orange"    Value="{Binding Amount, Mode=TwoWay}" Margin="5,5,5,5"/>
-                    <TextBlock Text="{Binding SalePrice, StringFormat={}{0:F0} ₽ /шт.}" Grid.Column="2" HorizontalAlignment="Center" FontSize="12"/>
+                    <mde:OversizedNumberSpinner Max="10" Min="0" HorizontalAlignment="Center" Background="Orange"    Value="{Binding Amount, Mode=TwoWay}" Margin="5,5,5,5"/>
+                    <TextBlock Text="{Binding SalePrice, StringFormat={}{0:C} /шт., ConverterCulture=ru-RU}" Grid.Column="2" HorizontalAlignment="Center" FontSize="12"/>
                 </StackPanel>
-                <TextBlock Grid.Column="4" Text="{Binding TotalPrice, StringFormat={}{0:F0} ₽}" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="22" Margin="5,5,5,5"/>
+                <TextBlock Grid.Column="3" Text="{Binding TotalPrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="22" Margin="5,5,5,5"/>
             </Grid>
         </materialDesign:Card>
     </DataTemplate>

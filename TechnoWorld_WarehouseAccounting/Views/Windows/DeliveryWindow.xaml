@@ -1,4 +1,4 @@
-﻿<mde:MaterialWindow BorderBackgroundBrush="Orange" x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.DeliveryWindow"
+﻿<mde:MaterialWindow x:Name="window" BorderBackgroundBrush="Orange" x:Class="TechnoWorld_WarehouseAccounting.Views.Windows.DeliveryWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -76,6 +76,16 @@
                     <Setter Property="Background" Value="Orange" />
                     <Setter Property="Foreground" Value="Black" />
                 </Style>
+                <Style x:Key="readonlyColumn" TargetType="DataGridCell" BasedOn="{StaticResource MaterialDesignDataGridCell}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=window, Path=DataContext.IsCountEnabled}" Value="True">
+                            <Setter Property="IsEnabled" Value="True"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=window, Path=DataContext.IsCountEnabled}" Value="False">
+                            <Setter Property="IsEnabled" Value="False"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
             </DataGrid.Resources>
             <DataGrid.Columns>
                 <DataGridTextColumn Header="№" Width="100" IsReadOnly="True" Binding="{Binding Id}"/>
@@ -86,10 +96,10 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Количество" Width="*" IsReadOnly="False" Binding="{Binding Count}"/>
-                <DataGridTextColumn Header="Цена" Binding="{Binding Electronic.PurchasePrice, StringFormat={}{0:F2} ₽}" Width="0.8*" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Сумма" Binding="{Binding TotalPrice, StringFormat={}{0:F2} ₽}" Width="0.8*" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Сумма с НДС (18%)" Binding="{Binding TotalPriceWithNDS, StringFormat={}{0:F2} ₽}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn CellStyle="{StaticResource readonlyColumn}" Header="Количество (шт.)" Width="*" Binding="{Binding Count, StringFormat={}{0:N0}, ConverterCulture=ru-RU}"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Electronic.PurchasePrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}" Width="0.8*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Сумма" Binding="{Binding TotalPrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}" Width="0.8*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Сумма с НДС (18%)" Binding="{Binding TotalPriceWithNDS, StringFormat={}{0:C}, ConverterCulture=ru-RU}" Width="*" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.RowSpan="2">

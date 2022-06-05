@@ -14,10 +14,10 @@ using WPF_VM_Abstractions;
 
 namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 {
-    public class AddManufacturerWindowVM : BaseModalWindowVM
+    public class ManufacturerWindowVM : BaseModalWindowVM
     {
         private string manufacturerName;
-        public AddManufacturerWindowVM()
+        public ManufacturerWindowVM()
         {
             AddManufacturerCommand = new RelayCommand(AddManufacturer);
             ValidationMessageSetter(ManufacturerName, nameof(ManufacturerName));
@@ -27,10 +27,15 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public RelayCommand AddManufacturerCommand { get; set; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
         [DisplayFormat(ConvertEmptyStringToNull = false)]
-        [StringLength(120, ErrorMessage = "Длина поля Название производителя слишком большая: максимум {1} символов")]
+        [StringLength(120, ErrorMessage = "Длина поля «Название производителя» слишком большая: максимум {1} символов")]
         public string ManufacturerName { get => manufacturerName; set { manufacturerName = value; ValidationMessageSetter(value); } }
         private async void AddManufacturer(object obj)
         {
+            if (GetErrorsCount > 0)
+            {
+                MaterialNotification.Show("Внимание", $"Не все полня заполнены верно!", MaterialNotificationButton.Ok, MaterialNotificationImage.Warning);
+                return;
+            }
             var response = await ApiService.Instance.PostRequest("api/Manufacturers", new Manufacturer() { Name = ManufacturerName });
             if (response.StatusCode == System.Net.HttpStatusCode.Created)
             {

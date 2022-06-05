@@ -62,8 +62,8 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Номер заказа" Width="2*" Binding="{Binding OrderNumber}"/>
                 <DataGridTextColumn Header="Дата заказа" Width="*" Binding="{Binding DateOfRegistration, StringFormat={}{0:dd.MM.yyyy}}"/>
-                <DataGridTextColumn Header="Кол-во товаров в заказе" Width="*" Binding="{Binding ProductCount, StringFormat={}{0} шт.}"/>
-                <DataGridTextColumn Header="Сумма заказа" Width="*" Binding="{Binding OrderPrice, StringFormat={}{0:F2} ₽}"/>
+                <DataGridTextColumn Header="Кол-во товаров в заказе" Width="*" Binding="{Binding ProductCount, StringFormat={}{0:N0} шт., ConverterCulture=ru-RU}"/>
+                <DataGridTextColumn Header="Сумма заказа" Width="*" Binding="{Binding OrderPrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}"/>
             </DataGrid.Columns>
         </DataGrid>
 

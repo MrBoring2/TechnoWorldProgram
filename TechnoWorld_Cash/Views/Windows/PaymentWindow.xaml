@@ -66,15 +66,15 @@
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="№" Binding="{Binding Number}"/>
                             <DataGridTextColumn Header="Название" Width="2*" Binding="{Binding Electronic.Model}"/>
-                            <DataGridTextColumn Header="Количество" Width="0.5*" Binding="{Binding Count}"/>
-                            <DataGridTextColumn Header="Цена за 1" Width="0.5*"  Binding="{Binding PriceForOne, StringFormat={}{0:F2} ₽}"/>
-                            <DataGridTextColumn Header="Общая стоимость" Width="0.7*"  Binding="{Binding TotalPrice, StringFormat={}{0:F2} ₽}"/>
+                            <DataGridTextColumn Header="Количество" Width="0.5*" Binding="{Binding Count, StringFormat={}{0:N2} шт.}"/>
+                            <DataGridTextColumn Header="Цена за 1" Width="0.5*"  Binding="{Binding PriceForOne, StringFormat={}{0:C}, ConverterCulture=ru-RU}"/>
+                            <DataGridTextColumn Header="Общая стоимость" Width="0.7*"  Binding="{Binding TotalPrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </ScrollViewer>
                 <Grid Grid.Row="3" Margin="10,5">
                     <TextBlock FontSize="16" Text="{Binding PaymentMethod, StringFormat={}Спобоб оплаты: {0}}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                    <TextBlock FontSize="16" Text="{Binding TotalPrice, StringFormat={}Общая стоиомсть: {0:F2} ₽}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBlock FontSize="16" Text="{Binding TotalPrice, StringFormat={}Общая стоиомсть: {0:C}, ConverterCulture=ru-RU}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                 </Grid>
             </Grid>
         </Grid>

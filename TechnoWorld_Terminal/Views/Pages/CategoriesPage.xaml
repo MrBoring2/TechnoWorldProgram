@@ -10,10 +10,10 @@
       Title="CategoriesPage" Background="White">
 
     <Grid>
-        <ListView ItemsSource="{Binding Categories}" x:Name="categoriesList" SelectionChanged="ListView_SelectionChanged" SelectedItem="{Binding SelectedCategory}" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListView ItemsSource="{Binding Categories}" x:Name="categoriesList" SelectionChanged="ListView_SelectionChanged" SelectedItem="{Binding SelectedCategory}" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemTemplate>
                 <DataTemplate DataType="{x:Type ListViewItem}">
-                    <Grid Height="454" Width="454" Margin="5">
+                    <Grid Height="420" Width="420" Margin="5">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="200*"/>
                             <RowDefinition Height="40"/>
@@ -25,7 +25,7 @@
             </ListView.ItemTemplate>
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel/>
+                    <WrapPanel HorizontalAlignment="Center"/>
                 </ItemsPanelTemplate>
             </ListView.ItemsPanel>
             <i:Interaction.Triggers>

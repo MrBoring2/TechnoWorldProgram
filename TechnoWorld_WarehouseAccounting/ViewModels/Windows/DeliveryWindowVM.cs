@@ -35,6 +35,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         private Visibility createReceiptInvoiceVisibility;
         private bool isAdd;
         private DateTime dateOfDelivery;
+        private bool isCountEnabled;
         public DeliveryWindowVM()
         {
             Initialize();
@@ -67,6 +68,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     CreateVisibility = Visibility.Collapsed;
                     CreateReceiptInvoiceVisibility = Visibility.Collapsed;
                     UnloadVisibility = Visibility.Collapsed;
+                    IsCountEnabled = false;
                 }
                 else if (Delivery.StatusId == 5)
                 {
@@ -75,6 +77,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     CreateVisibility = Visibility.Collapsed;
                     CreateReceiptInvoiceVisibility = Visibility.Visible;
                     UnloadVisibility = Visibility.Visible;
+                    IsCountEnabled = false;
                 }
                 else if (Delivery.StatusId == 4 || Delivery.StatusId == 3)
                 {
@@ -83,6 +86,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     CreateVisibility = Visibility.Collapsed;
                     CreateReceiptInvoiceVisibility = Visibility.Collapsed;
                     UnloadVisibility = Visibility.Collapsed;
+                    IsCountEnabled = false;
                 }
             });
         }
@@ -99,6 +103,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public string DeliveryNumber { get => Delivery.DeliveryNumber; set { Delivery.DeliveryNumber = value; OnPropertyChanged(); } }
         public string DeliveryTitle => $"{DeliveryNumber} от {Delivery.DateOfOrder.ToShortDateString()}";
         public bool IsAdd { get => isAdd; set { isAdd = value; OnPropertyChanged(); } }
+        public bool IsCountEnabled { get=>isCountEnabled; set { isCountEnabled = value; OnPropertyChanged(); } }
         public DateTime DateOfDelivery { get => dateOfDelivery; set { dateOfDelivery = value.Date >= Delivery.DateOfOrder.Date ? value : dateOfDelivery; OnPropertyChanged(); } }
         public Visibility PayVisibility { get => payVisibility; set { payVisibility = value; OnPropertyChanged(); } }
         public Visibility CancelVisibility { get => cancelVisibility; set { cancelVisibility = value; OnPropertyChanged(); } }
@@ -141,6 +146,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             var task1 = LoadStorages();
             var task2 = LoadSuppliers();
+            IsCountEnabled = true;
             await Task.WhenAll(task1, task2);
         }
         private async void LoadData(Delivery delivery)

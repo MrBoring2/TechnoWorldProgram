@@ -69,14 +69,14 @@
                     <DataGridTemplateColumn Width="0.8*" Header="Кол-во" >
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate DataType="{x:Type DataGridCell}">
-                                <TextBlock Text="{Binding Count, StringFormat={}{0} шт.}" FontSize="14" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                                <TextBlock Text="{Binding Count, StringFormat={}{0:N0} шт., ConverterCulture=ru-RU}" FontSize="14" TextWrapping="Wrap" HorizontalAlignment="Left"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                     <DataGridTemplateColumn Width="*" Header="Прибыль" >
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate DataType="{x:Type DataGridCell}">
-                                <TextBlock Text="{Binding TotalSales, StringFormat={}{0:F2} руб.}" FontSize="14" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+                                <TextBlock Text="{Binding TotalSales, StringFormat={}{0:C}, ConverterCulture=ru-RU}" FontSize="14" TextWrapping="Wrap" HorizontalAlignment="Left"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

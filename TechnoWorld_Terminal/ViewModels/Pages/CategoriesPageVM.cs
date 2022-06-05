@@ -28,6 +28,13 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         {
             LoadCategories();
             OpenCategoryCommand = new RelayCommand(OpenCategory);
+            ApiService.Instance.GetHubConnection.On<int>("UpdateCategories", async (categoryId) =>
+            {
+                if (SelectedCategory == null || SelectedCategory.Id  != categoryId)
+                {
+                    await LoadCategories();
+                }
+            });
         }
 
         private void OpenCategory(object obj)
@@ -44,7 +51,7 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
 
         public ObservableCollection<Category> Categories { get => categories; set { categories = value; OnPropertyChanged(); } }
         public Category SelectedCategory { get => selectedCategory; set { selectedCategory = value; OnPropertyChanged(); } }
-        private async void LoadCategories()
+        private async Task LoadCategories()
         {
             var response = (RestResponse)await ApiService.Instance.GetRequest("api/Categories");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)

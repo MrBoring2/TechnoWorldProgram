@@ -302,7 +302,9 @@
     <Compile Include="ViewModels\Pages\Statistics\ColumnChartStatisticsPageVM.cs" />
     <Compile Include="ViewModels\Pages\Statistics\LineChartStatisticPageVM.cs" />
     <Compile Include="ViewModels\Pages\Statistics\PieChartStatisticsPageVM.cs" />
-    <Compile Include="ViewModels\Windows\AddManufacturerWindowVM.cs" />
+    <Compile Include="ViewModels\Windows\CategoryWindowVM.cs" />
+    <Compile Include="ViewModels\Windows\ElectronicsTypeWindowVM.cs" />
+    <Compile Include="ViewModels\Windows\ManufacturerWindowVM.cs" />
     <Compile Include="Views\ChartTooltips\PieSalesTooplip.xaml.cs">
       <DependentUpon>PieSalesTooplip.xaml</DependentUpon>
     </Compile>
@@ -340,8 +342,14 @@
     <Compile Include="Views\Pages\SalesStatisticsPage.xaml.cs">
       <DependentUpon>SalesStatisticsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Windows\AddManufacturerWindow.xaml.cs">
-      <DependentUpon>AddManufacturerWindow.xaml</DependentUpon>
+    <Compile Include="Views\Windows\CategoryWindow.xaml.cs">
+      <DependentUpon>CategoryWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\ElectronicsTypeWindow.xaml.cs">
+      <DependentUpon>ElectronicsTypeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\ManufacturerWindow.xaml.cs">
+      <DependentUpon>ManufacturerWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\DeliveryWindow.xaml.cs">
       <DependentUpon>DeliveryWindow.xaml</DependentUpon>
@@ -440,7 +448,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Windows\AddManufacturerWindow.xaml">
+    <Page Include="Views\Windows\CategoryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\ElectronicsTypeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\ManufacturerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -105,8 +105,8 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 <DataGridTextColumn Header="Тип" Binding="{Binding Type.Name}" Width="*"/>
-                <DataGridTextColumn Header="Цена продажи" Binding="{Binding SalePrice, StringFormat={}{0:F2} ₽}" Width="*"/>
-                <DataGridTextColumn Header="Цена закупки" Binding="{Binding PurchasePrice, StringFormat={}{0:F2} ₽}" Width="*"/>
+                <DataGridTextColumn Header="Цена продажи" Binding="{Binding SalePrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}" Width="*"/>
+                <DataGridTextColumn Header="Цена закупки" Binding="{Binding PurchasePrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}" Width="*"/>
                 <DataGridTemplateColumn Header="Количество" Width="1.5*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate DataType="DataGridCell">
