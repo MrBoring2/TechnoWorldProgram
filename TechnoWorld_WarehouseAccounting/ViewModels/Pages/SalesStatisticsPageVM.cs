@@ -32,7 +32,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         {
             GenerateStatisticsCommand = new RelayCommand(GenerateStatistics);
             StartDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
-            EndDate = DateTime.Now.Date;
+            EndDate = DateTime.Now.Date.AddDays(1);
             Statistics = new ObservableCollection<string>
             {
                 "Продажи по типам товаров",
@@ -64,7 +64,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             get => endDate;
             set
             {
-                endDate = (value < startDate && startDate != DateTime.MinValue) || value > DateTime.Now ? endDate : value; OnPropertyChanged();
+                endDate = (value < startDate && startDate != DateTime.MinValue) || value > DateTime.Now.AddDays(1) ? endDate : value; OnPropertyChanged();
             }
         }
 

@@ -25,10 +25,10 @@ namespace TechoWorld_DataModels_v2.Entities
         public decimal TotalPrice => ElectronicsToDeliveries.Any(p => p.Electronics == null) ? 0 : ElectronicsToDeliveries.Sum(p => p.Electronics.PurchasePrice * p.Quantity + (p.Electronics.PurchasePrice * p.Quantity * 18 / 100));
         [NotMapped]
         public decimal TotalCount => ElectronicsToDeliveries.Sum(p => p.Quantity);
-        public virtual Employee Employee { get; set; }
         public virtual Storage Storage { get; set; }
         public virtual Supplier Supplier { get; set; }
-        public virtual Status Status { get; set; }
+        public virtual Employee Employee { get; set; }
+        public virtual DeliveryStatus Status { get; set; }
         public virtual ICollection<ElectronicsToDelivery> ElectronicsToDeliveries { get; set; }
     }
 }

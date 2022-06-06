@@ -115,7 +115,7 @@
                 </StackPanel>
                 <!--<TextBlock Text="{Binding HarantyMonth, StringFormat={}Гарантия: {0} мес.}" FontSize="16" HorizontalAlignment="Left" Foreground="Black" Margin="10,0,5,30" VerticalAlignment="Bottom"/>-->
 
-                <TextBlock Text="{Binding AmountInStorage, StringFormat={}В наличии: {0:N2} шт.}" FontSize="16" Margin="10,0,5,10" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <TextBlock Text="{Binding AmountInStorage, StringFormat={}В наличии: {0:N0} шт.}" FontSize="16" Margin="10,0,5,10" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             </Grid>
         </materialDesign:Card>
 

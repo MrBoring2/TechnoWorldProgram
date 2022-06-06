@@ -105,9 +105,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages.Statistics
             }
             else
             {
-                EmptyVisibility = Visibility.Collapsed; 
-                return;
+                EmptyVisibility = Visibility.Collapsed;             
             }
+
             if (_statisticsType == "Продажи по типам товаров")
             {
                 foreach (var type in types.OrderBy(p => p.Name))

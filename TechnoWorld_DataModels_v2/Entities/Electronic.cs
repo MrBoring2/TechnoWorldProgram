@@ -50,7 +50,6 @@ namespace TechoWorld_DataModels_v2.Entities
             get
             {
                 return amountInStoragesWithReservation;
-                //return ElectronicsToStorages.Count() > 0 && ElectronicsToStorages != null ? ElectronicsToStorages.Sum(p => p.Quantity) : 0;
             }
             set
             {

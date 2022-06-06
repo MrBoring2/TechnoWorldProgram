@@ -38,10 +38,10 @@
             <TextBlock  Text="В данный период не было продаж" TextWrapping="Wrap" FontSize="26" TextAlignment="Center" HorizontalAlignment="Center"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1">
+        <Grid Grid.Column="1" Grid.RowSpan="2">
             <TextBlock Text="Продажи" HorizontalAlignment="Center" Margin="10" FontSize="20" VerticalAlignment="Top"/>
 
-            <DataGrid ItemsSource="{Binding Sales}" CanUserAddRows="False" CanUserDeleteRows="False" AutoGenerateColumns="False" Background="Transparent" IsReadOnly="True" IsManipulationEnabled="False" Margin="0,0,0,0" VerticalAlignment="Top">
+            <DataGrid ItemsSource="{Binding Sales}" CanUserAddRows="False" CanUserDeleteRows="False" AutoGenerateColumns="False" Background="Transparent" IsReadOnly="True" IsManipulationEnabled="False" Margin="0,40,0,80" VerticalAlignment="Top">
                 <DataGrid.Columns>
                     <DataGridTemplateColumn Header="Наименование" Width="1.8*">
                         <DataGridTemplateColumn.CellTemplate>
@@ -66,7 +66,7 @@
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
-            <TextBlock Text="{Binding TotalPriceForPeriod, StringFormat={}Общая прибыль: {0:F2} руб.}" HorizontalAlignment="Center" FontSize="25" Margin="10,20"/>
-        </StackPanel>
+            <TextBlock Text="{Binding TotalPriceForPeriod, StringFormat={}Общая прибыль: {0:C}, ConverterCulture=ru-RU}" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="25" Margin="10,20" TextWrapping="Wrap"/>
+        </Grid>
     </Grid>
 </Page>

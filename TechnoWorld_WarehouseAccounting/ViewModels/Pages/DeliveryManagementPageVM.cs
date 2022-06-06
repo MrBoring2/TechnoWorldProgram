@@ -26,9 +26,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 {
     public class DeliveryManagementPageVM : ListEntitiesPageVM<Delivery, FilteredDeliveries>
     {
-        private ObservableCollection<ItemWithTitle<Status>> statuses;
+        private ObservableCollection<ItemWithTitle<DeliveryStatus>> statuses;
         private ObservableCollection<SortParameter> sortParameters;
-        private ItemWithTitle<Status> selectedStatus;
+        private ItemWithTitle<DeliveryStatus> selectedStatus;
         private DateTime startDate;
         private DateTime endDate;
         public DeliveryManagementPageVM() : base(15)
@@ -43,8 +43,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         public RelayCommand OpenDeliveryWindowCommand { get; set; }
         public RelayCommand OpenEditDeliveryWindowCommand { get; set; }
         public override ObservableCollection<SortParameter> SortParameters { get => sortParameters; set { sortParameters = value; OnPropertyChanged(); } }
-        public ObservableCollection<ItemWithTitle<Status>> Statuses { get => statuses; set { statuses = value; OnPropertyChanged(); } }
-        public ItemWithTitle<Status> SelectedStatus { get => selectedStatus; set { selectedStatus = value; OnPropertyChanged(); GetWithFilter(); } }
+        public ObservableCollection<ItemWithTitle<DeliveryStatus>> Statuses { get => statuses; set { statuses = value; OnPropertyChanged(); } }
+        public ItemWithTitle<DeliveryStatus> SelectedStatus { get => selectedStatus; set { selectedStatus = value; OnPropertyChanged(); GetWithFilter(); } }
         public DateTime StartDate
         {
             get => startDate;
@@ -116,12 +116,11 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         {
             return Task.Run(async () =>
             {
-                var response = await ApiService.Instance.GetRequest("api/Status");
+                var response = await ApiService.Instance.GetRequest("api/DeliveryStatus");
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    Statuses = new ObservableCollection<ItemWithTitle<Status>>(JsonConvert.DeserializeObject<List<Status>>(response.Content).Select(p => new ItemWithTitle<Status>(p, p.Name)));
-                    Statuses.Insert(0, new ItemWithTitle<Status>(null, "Все"));
-                    Statuses.Remove(Statuses.FirstOrDefault(p => p.Title.Equals("Ожидается вадыча")));
+                    Statuses = new ObservableCollection<ItemWithTitle<DeliveryStatus>>(JsonConvert.DeserializeObject<List<DeliveryStatus>>(response.Content).Select(p => new ItemWithTitle<DeliveryStatus>(p, p.Name)));
+                    Statuses.Insert(0, new ItemWithTitle<DeliveryStatus>(null, "Все"));
                     selectedStatus = Statuses.FirstOrDefault();
                     OnPropertyChanged(nameof(SelectedStatus));
                 }

@@ -70,7 +70,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     UnloadVisibility = Visibility.Collapsed;
                     IsCountEnabled = false;
                 }
-                else if (Delivery.StatusId == 5)
+                else if (Delivery.StatusId == 3)
                 {
                     PayVisibility = Visibility.Collapsed;
                     CancelVisibility = Visibility.Collapsed;
@@ -79,7 +79,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     UnloadVisibility = Visibility.Visible;
                     IsCountEnabled = false;
                 }
-                else if (Delivery.StatusId == 4 || Delivery.StatusId == 3)
+                else if (Delivery.StatusId == 2 || Delivery.StatusId == 4)
                 {
                     PayVisibility = Visibility.Collapsed;
                     CancelVisibility = Visibility.Collapsed;
@@ -261,7 +261,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             doc.Open();
 
             Paragraph paragraph;
-            paragraph = new Paragraph($"Приходная накладная {recieptInviceNumber} от {dateOfOrder.Day}.{dateOfOrder.Month}.{dateOfOrder.Year}", titleFont);
+            paragraph = new Paragraph($"Приходная накладная {recieptInviceNumber} от {dateOfOrder.ToShortDateString()}", titleFont);
             paragraph.Alignment = 1;
             //paragraph.ExtraParagraphSpace = 20;
             paragraph.Leading = 30;
@@ -297,7 +297,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             paragraph.Alignment = 3;
             paragraph.SpacingAfter = 0;
             doc.Add(paragraph);
-            paragraph = new Paragraph($"                          Должность и ФИО рабочего", tableFont);
+            paragraph = new Paragraph($"                                    Должность и ФИО рабочего", tableFont);
             paragraph.Alignment = 3;
             paragraph.SpacingAfter = 20;
             doc.Add(paragraph);
@@ -306,61 +306,51 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             table.WidthPercentage = 100;
             table.SetWidths(new float[8] { 20, 100, 50, 60, 55, 60, 55, 50 });
             PdfPCell cell;
-            //PdfPRow row;
 
             cell = new PdfPCell(new Phrase("№", tableFont));
             cell.BorderWidth = 1;
             cell.HorizontalAlignment = 1;
-            // cell.Width = 40;
             table.AddCell(cell);
 
             cell = new PdfPCell(new Phrase("Наименование товара", tableFont));
             cell.HorizontalAlignment = 1;
             cell.BorderWidth = 1;
-            //cell.Width = 40;
             table.AddCell(cell);
 
 
             cell = new PdfPCell(new Phrase("Кол-во", tableFont));
             cell.HorizontalAlignment = 1;
             cell.BorderWidth = 1;
-            // cell.FilledWidth = 100;
-            //cell.Width = 40;
             table.AddCell(cell);
 
 
             cell = new PdfPCell(new Phrase("Закупочная цена", tableFont));
             cell.HorizontalAlignment = 1;
             cell.BorderWidth = 1;
-            //cell.Width = 40;
             table.AddCell(cell);
 
 
             cell = new PdfPCell(new Phrase("Сумма закупки (НДС 18%)", tableFont));
             cell.HorizontalAlignment = 1;
             cell.BorderWidth = 1;
-            //cell.Width = 40;
             table.AddCell(cell);
 
 
             cell = new PdfPCell(new Phrase("Отпускная цена", tableFont));
             cell.HorizontalAlignment = 1;
             cell.BorderWidth = 1;
-            //cell.Width = 40;
             table.AddCell(cell);
 
 
             cell = new PdfPCell(new Phrase("Сумма отпуска", tableFont));
             cell.HorizontalAlignment = 1;
             cell.BorderWidth = 1;
-            //cell.Width = 40;
             table.AddCell(cell);
 
 
             cell = new PdfPCell(new Phrase("Прибыль", tableFont));
             cell.HorizontalAlignment = 1;
             cell.BorderWidth = 1;
-            //cell.Width = 40;
             table.AddCell(cell);
 
             int id = 1;
@@ -382,29 +372,29 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 cell.BorderWidth = 1;
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(Math.Round(item.Electronic.PurchasePrice, 2).ToString(), tableFont));
+                cell = new PdfPCell(new Phrase(Math.Round(item.Electronic.PurchasePrice, 2).ToString("C"), tableFont));
                 cell.HorizontalAlignment = 0;
                 cell.BorderWidth = 1;
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(Math.Round((item.Electronic.PurchasePrice * item.Count + (item.Electronic.PurchasePrice * item.Count * 18) / 100), 2).ToString(), tableFont));
+                cell = new PdfPCell(new Phrase(Math.Round((item.Electronic.PurchasePrice * item.Count + (item.Electronic.PurchasePrice * item.Count * 18) / 100), 2).ToString("C"), tableFont));
                 cell.HorizontalAlignment = 0;
                 cell.BorderWidth = 1;
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(Math.Round(item.Electronic.SalePrice, 2).ToString(), tableFont));
+                cell = new PdfPCell(new Phrase(Math.Round(item.Electronic.SalePrice, 2).ToString("C"), tableFont));
                 cell.HorizontalAlignment = 0;
                 cell.BorderWidth = 1;
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(Math.Round((item.Electronic.SalePrice * item.Count), 2).ToString(), tableFont));
+                cell = new PdfPCell(new Phrase(Math.Round((item.Electronic.SalePrice * item.Count), 2).ToString("C"), tableFont));
                 cell.HorizontalAlignment = 0;
                 cell.BorderWidth = 1;
                 table.AddCell(cell);
 
                 decimal currentProfit = Math.Round(item.Electronic.SalePrice * item.Count, 2) - (item.Electronic.PurchasePrice * item.Count + (item.Electronic.PurchasePrice * item.Count * 18) / 100);
                 totalProfit += currentProfit;
-                cell = new PdfPCell(new Phrase(Math.Round(currentProfit, 2).ToString(), tableFont));
+                cell = new PdfPCell(new Phrase(Math.Round(currentProfit, 2).ToString("C"), tableFont));
                 cell.HorizontalAlignment = 0;
                 cell.BorderWidth = 1;
                 table.AddCell(cell);
@@ -428,7 +418,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             cell.BorderWidth = 1;
             table.AddCell(cell);
 
-            cell = new PdfPCell(new Phrase(Math.Round(deliveryItems.Sum(p => p.TotalPriceWithNDS), 2).ToString(), tableFont));
+            cell = new PdfPCell(new Phrase(Math.Round(deliveryItems.Sum(p => p.TotalPriceWithNDS), 2).ToString("C"), tableFont));
             cell.HorizontalAlignment = 0;
             cell.BorderWidth = 1;
             table.AddCell(cell);
@@ -438,12 +428,12 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             cell.BorderWidth = 1;
             table.AddCell(cell);
 
-            cell = new PdfPCell(new Phrase(Math.Round(deliveryItems.Sum(p => p.Electronic.SalePrice * p.Count), 2).ToString(), tableFont));
+            cell = new PdfPCell(new Phrase(Math.Round(deliveryItems.Sum(p => p.Electronic.SalePrice * p.Count), 2).ToString("C"), tableFont));
             cell.HorizontalAlignment = 0;
             cell.BorderWidth = 1;
             table.AddCell(cell);
 
-            cell = new PdfPCell(new Phrase(Math.Round(totalProfit, 2).ToString(), tableFont));
+            cell = new PdfPCell(new Phrase(Math.Round(totalProfit, 2).ToString("C"), tableFont));
             cell.HorizontalAlignment = 0;
             cell.BorderWidth = 1;
             table.AddCell(cell);
@@ -473,8 +463,6 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             {
                 number += keys[random.Next(0, keys.Length)];
             }
-
-            //number += $"{DateTime.Now.Day}{DateTime.Now.Month}{DateTime.Now.Year}";
 
             return number;
         }
@@ -509,7 +497,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
             if (result == MaterialNotificationResult.Yes)
             {
-                Delivery.StatusId = 4;
+                Delivery.StatusId = 2;
                 var response = await ApiService.Instance.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
@@ -528,7 +516,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             var result = MaterialNotification.Show("Подтверждение", $"Подтвердите оплату поставки.", MaterialNotificationButton.YesNo, MaterialNotificationImage.Question);
             if (result == MaterialNotificationResult.Yes)
             {
-                Delivery.StatusId = 5;
+                Delivery.StatusId = 3;
                 var response = await ApiService.Instance.PutRequest("api/Deliveries", Delivery.DelivertId, Delivery);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {

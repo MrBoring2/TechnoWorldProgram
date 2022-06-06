@@ -299,7 +299,6 @@
     <Compile Include="ViewModels\Pages\ProductManagementPageVM.cs" />
     <Compile Include="ViewModels\Pages\SalesStatisticsPageVM.cs" />
     <Compile Include="ViewModels\Pages\Statistics\BaseSaleStatisticsPageVM.cs" />
-    <Compile Include="ViewModels\Pages\Statistics\ColumnChartStatisticsPageVM.cs" />
     <Compile Include="ViewModels\Pages\Statistics\LineChartStatisticPageVM.cs" />
     <Compile Include="ViewModels\Pages\Statistics\PieChartStatisticsPageVM.cs" />
     <Compile Include="ViewModels\Windows\CategoryWindowVM.cs" />

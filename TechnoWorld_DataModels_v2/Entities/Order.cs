@@ -20,7 +20,8 @@ namespace TechoWorld_DataModels_v2.Entities
 
         public virtual Employee Employee { get; set; }
         public int StatusId { get; set; }
-        public virtual Status Status { get; set; }
+       
+        public virtual OrderStatus Status { get; set; }
 
         public int ProductCount => OrderElectronics.Count;
         public decimal OrderPrice => OrderElectronics.Any(p => p.Electronics == null) ? 0 : OrderElectronics.Sum(p => p.Electronics.SalePrice * p.Count);

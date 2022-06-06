@@ -48,7 +48,7 @@ namespace TechnoWorld_API.Controllers
                 return BadRequest("Неккоректные параметры");
             }
 
-            var orders = _context.Orders.Where(p => p.StatusId == 3).Where(p => p.DateOfRegistration >= electronicsParameters.StartDate && p.DateOfRegistration <= electronicsParameters.EndDate)
+            var orders = _context.Orders.Where(p => p.StatusId == 3 || p.StatusId == 4).Where(p => p.DateOfRegistration >= electronicsParameters.StartDate && p.DateOfRegistration <= electronicsParameters.EndDate)
                 .Include(p => p.OrderElectronics)
                 .ThenInclude(p => p.Electronics)
                 .ThenInclude(p => p.Type)
@@ -134,7 +134,7 @@ namespace TechnoWorld_API.Controllers
             }
             try
             {
-                order.StatusId = 3;
+                order.StatusId = 4;
                 _context.SaveChanges();
                 LogService.LodMessage($"Выдача заказа {order.OrderNumber} закончена.", LogLevel.Info);
                 await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronics", "о");
@@ -166,7 +166,7 @@ namespace TechnoWorld_API.Controllers
             var lastStatus = orderInDb.Status;
             orderInDb.StatusId = order.StatusId;
             orderInDb.EmployeeId = order.EmployeeId;
-            LogService.LodMessage($"Статус заказа с номером {order.OrderNumber} изменён с '{lastStatus.Name}' на '{_context.Statuses.Find(order.StatusId).Name}'", LogLevel.Info);
+            LogService.LodMessage($"Статус заказа с номером {order.OrderNumber} изменён с '{lastStatus.Name}' на '{_context.OrderStatuses.Find(order.StatusId).Name}'", LogLevel.Info);
             try
             {
                 await _context.SaveChangesAsync();

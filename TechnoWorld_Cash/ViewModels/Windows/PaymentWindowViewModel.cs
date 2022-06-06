@@ -203,12 +203,12 @@ namespace TechnoWorld_Cash.ViewModels.Windows
                 cell.BorderWidth = 1;
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(Math.Round(item.Electronic.SalePrice, 2).ToString(), tableFont));
+                cell = new PdfPCell(new Phrase(Math.Round(item.Electronic.SalePrice, 2).ToString("C"), tableFont));
                 cell.HorizontalAlignment = 0;
                 cell.BorderWidth = 1;
                 table.AddCell(cell);
 
-                cell = new PdfPCell(new Phrase(Math.Round(item.TotalPrice, 2).ToString(), tableFont));
+                cell = new PdfPCell(new Phrase(Math.Round(item.TotalPrice, 2).ToString("C"), tableFont));
                 cell.HorizontalAlignment = 0;
                 cell.BorderWidth = 1;
                 table.AddCell(cell);
@@ -234,14 +234,14 @@ namespace TechnoWorld_Cash.ViewModels.Windows
             cell.BorderWidth = 1;
             table.AddCell(cell);
 
-            cell = new PdfPCell(new Phrase(Math.Round(totalOrderPrice, 2).ToString(), tableFont));
+            cell = new PdfPCell(new Phrase(Math.Round(totalOrderPrice, 2).ToString("C"), tableFont));
             cell.HorizontalAlignment = 0;
             cell.BorderWidth = 1;
             table.AddCell(cell);
 
             doc.Add(table);
 
-            paragraph = new Paragraph($"Всего к оплате: {totalOrderPrice} руб.", textFont);
+            paragraph = new Paragraph($"Всего к оплате: {totalOrderPrice.ToString("C")}", textFont);
             paragraph.Alignment = 0;
             paragraph.SpacingAfter = 5;
             paragraph.SpacingBefore = 5;
@@ -255,7 +255,7 @@ namespace TechnoWorld_Cash.ViewModels.Windows
 
         private async void Pay(object obj)
         {
-            Order.StatusId = 2;
+            Order.StatusId = 3;
             Order.EmployeeId = ClientService.Instance.User.UserId;
             var response = await ApiService.Instance.PutRequest("api/Orders", Order.OrderId, Order);
             if (response.StatusCode == System.Net.HttpStatusCode.OK)

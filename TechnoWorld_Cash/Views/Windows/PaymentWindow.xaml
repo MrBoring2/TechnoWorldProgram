@@ -52,7 +52,7 @@
                     <RowDefinition Height="13*"/>
                 </Grid.RowDefinitions>
                 <TextBlock FontSize="16" Text="{Binding OrderDate, StringFormat={}Дата: {0:dd.MM.yyyy}}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
-                <TextBlock FontSize="16" Text="{Binding OrderNumber, StringFormat={}Номер заказа: {0}}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0" />
+                <TextBlock FontSize="16" Text="{Binding OrderNumber, StringFormat={}Заказ № {0}}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0" />
                 <TextBlock FontSize="16" Grid.Row="1" Text="Компания продавец: ООО «Техно-мир»" HorizontalAlignment="Left" Margin="10,5,5,5"/>
                 <TextBlock FontSize="16" Grid.Row="1" Text="{Binding SellerPerson, StringFormat={}Кассир: {0}}" HorizontalAlignment="Right" Margin="10,5,10,5"/>
                 <ScrollViewer Grid.Row="2" Margin="10,5,10,5" VerticalScrollBarVisibility="Auto">
@@ -66,7 +66,7 @@
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="№" Binding="{Binding Number}"/>
                             <DataGridTextColumn Header="Название" Width="2*" Binding="{Binding Electronic.Model}"/>
-                            <DataGridTextColumn Header="Количество" Width="0.5*" Binding="{Binding Count, StringFormat={}{0:N2} шт.}"/>
+                            <DataGridTextColumn Header="Количество" Width="0.5*" Binding="{Binding Count, StringFormat={}{0:N0} шт.}"/>
                             <DataGridTextColumn Header="Цена за 1" Width="0.5*"  Binding="{Binding PriceForOne, StringFormat={}{0:C}, ConverterCulture=ru-RU}"/>
                             <DataGridTextColumn Header="Общая стоимость" Width="0.7*"  Binding="{Binding TotalPrice, StringFormat={}{0:C}, ConverterCulture=ru-RU}"/>
                         </DataGrid.Columns>

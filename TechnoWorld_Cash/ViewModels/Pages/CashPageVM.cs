@@ -26,9 +26,8 @@ namespace TechnoWorld_Cash.ViewModels.Pages
 {
     public class CashPageVM : ListEntitiesPageVM<Order, FilteredOrders>
     {
-        private ObservableCollection<Order> displayedOrders;
-        private ObservableCollection<ItemWithTitle<Status>> statuses;
-        private ItemWithTitle<Status> selectedStatus;
+        private ObservableCollection<ItemWithTitle<OrderStatus>> statuses;
+        private ItemWithTitle<OrderStatus> selectedStatus;
         private DateTime startDate;
         private DateTime endDate;
 
@@ -39,9 +38,9 @@ namespace TechnoWorld_Cash.ViewModels.Pages
         }
         public ObservableCollection<Order> Orders { get; set; }
 
-        public ObservableCollection<ItemWithTitle<Status>> Statuses { get => statuses; set { statuses = value; OnPropertyChanged(); } }
+        public ObservableCollection<ItemWithTitle<OrderStatus>> Statuses { get => statuses; set { statuses = value; OnPropertyChanged(); } }
 
-        public ItemWithTitle<Status> SelectedStatus { get { return selectedStatus; } set { selectedStatus = value; OnPropertyChanged(); GetWithFilter(); } }
+        public ItemWithTitle<OrderStatus> SelectedStatus { get { return selectedStatus; } set { selectedStatus = value; OnPropertyChanged(); GetWithFilter(); } }
 
         public DateTime StartDate
         {
@@ -111,7 +110,7 @@ namespace TechnoWorld_Cash.ViewModels.Pages
                     if (result == MaterialNotificationResult.Yes)
                     {
 
-                        SelectedEntity.StatusId = 4;
+                        SelectedEntity.StatusId = 2;
                         SelectedEntity.EmployeeId = ClientService.Instance.User.UserId;
                         var response = await ApiService.Instance.PutRequest("api/Orders", SelectedEntity.OrderId, SelectedEntity);
                         if (response.StatusCode != System.Net.HttpStatusCode.OK)
@@ -130,7 +129,7 @@ namespace TechnoWorld_Cash.ViewModels.Pages
         {
             if (SelectedEntity != null)
             {
-                if (SelectedEntity.StatusId == 4)
+                if (SelectedEntity.StatusId == 2)
                 {
                     SelectedEntity.StatusId = 1;
                     SelectedEntity.EmployeeId = ClientService.Instance.User.UserId;
@@ -158,12 +157,13 @@ namespace TechnoWorld_Cash.ViewModels.Pages
 
         private async Task LoadStatuses()
         {
-            var statusesJson = await ApiService.Instance.GetRequest("api/Status");
+            var statusesJson = await ApiService.Instance.GetRequest("api/OrderStatus");
             if (statusesJson.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Statuses = new ObservableCollection<ItemWithTitle<Status>>(JsonConvert.DeserializeObject<List<Status>>(statusesJson.Content).Select(p => new ItemWithTitle<Status>(p, p.Name)));
-                Statuses = new ObservableCollection<ItemWithTitle<Status>>(Statuses.Where(p => p.Item.Id != 5 && p.Item.Id != 4));
-                Statuses.Insert(0, new ItemWithTitle<Status>(null, "Все"));
+                Statuses = new ObservableCollection<ItemWithTitle<OrderStatus>>(JsonConvert.DeserializeObject<List<OrderStatus>>(statusesJson.Content).Select(p => new ItemWithTitle<OrderStatus>(p, p.Name)));
+                Statuses.Remove(Statuses.FirstOrDefault(p => p.Item.Id == 2));
+                Statuses.Remove(Statuses.FirstOrDefault(p => p.Item.Id == 4));
+                Statuses.Insert(0, new ItemWithTitle<OrderStatus>(null, "Все"));
                 selectedStatus = Statuses.FirstOrDefault();
             }
         }

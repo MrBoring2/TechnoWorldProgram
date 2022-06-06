@@ -76,7 +76,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
         protected override object FilterParam => new
         {
             search = Search,
-            statusId = 2,
+            statusId = 3,
             startDate = StartDate,
             endDate = EndDate,
             sortParameter = SelectedSort.Property,

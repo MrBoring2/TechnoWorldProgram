@@ -31,7 +31,7 @@ namespace BNS_API.Controllers
         [HttpGet("All")]
         public async Task<ActionResult<IEnumerable<ElectrnicsType>>> GetAllElectrnicsTypes()
         {
-            return await _context.ElectrnicsTypes.Include(p => p.Category).ToListAsync();
+            return Ok(_context.ElectrnicsTypes.Include(p => p.Category).AsEnumerable());
         }
         // GET: api/ElectrnicsTypes
         [HttpGet]

@@ -82,7 +82,7 @@ namespace BNS_API.Controllers
 
                 foreach (var item in list)
                 {
-                    var orders = _context.Orders.Include(p => p.OrderElectronics).Where(p => p.StatusId != 3 && p.StatusId != 4).Where(p => p.OrderElectronics.Any(p => p.ElectronicsId == item.ElectronicsId));
+                    var orders = _context.Orders.Include(p => p.OrderElectronics).Where(p => p.StatusId == 1 || p.StatusId == 3).Where(p => p.OrderElectronics.Any(p => p.ElectronicsId == item.ElectronicsId));
                     int sum = 0;
                     foreach (var order in orders)
                     {

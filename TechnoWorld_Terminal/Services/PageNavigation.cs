@@ -121,6 +121,8 @@ namespace TechnoWorld_Terminal.Services
             RegisterPageWithVM<CartPageVM, CartPage>();
             RegisterPageWithVM<CategoriesPageVM, CategoriesPage>();
             RegisterPageWithVM<ElectronicsDetailPageVM, ElectronicsDetailPage>();
+            pageController.CreatePage(typeof(CartPageVM));
+
         }
     }
 }

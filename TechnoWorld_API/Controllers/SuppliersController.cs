@@ -77,7 +77,7 @@ namespace TechnoWorld_API.Controllers
         // POST: api/Status
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Status>> PostSupplier(Supplier supplier)
+        public async Task<ActionResult<Supplier>> PostSupplier(Supplier supplier)
         {
             _context.Suppliers.Add(supplier);
             await _context.SaveChangesAsync();

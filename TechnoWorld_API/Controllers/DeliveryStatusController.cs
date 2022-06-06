@@ -1,59 +1,59 @@
-﻿using TechnoWorld_API.Data;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
+﻿using System;
 using System.Collections.Generic;
-using TechoWorld_DataModels_v2;
-using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using TechnoWorld_API.Data;
+using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace TechnoWorld_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StoragesController : ControllerBase
+    public class DeliveryStatusController : ControllerBase
     {
         private readonly TechnoWorldContext _context;
 
-        public StoragesController(TechnoWorldContext context)
+        public DeliveryStatusController(TechnoWorldContext context)
         {
             _context = context;
         }
 
         // GET: api/Status
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Storage>>> GetStorages()
+        public async Task<ActionResult<IEnumerable<DeliveryStatus>>> GetStatuses()
         {
-            return await _context.Storages.Include(p => p.ElectronicsToStorages).ToListAsync();
+            return await _context.DeliveryStatuses.ToListAsync();
         }
 
         // GET: api/Status/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Storage>> GetStorage(int id)
+        public async Task<ActionResult<DeliveryStatus>> GetStatus(int id)
         {
-            var storage = await _context.Storages.FindAsync(id);
+            var status = await _context.DeliveryStatuses.FindAsync(id);
 
-            if (storage == null)
+            if (status == null)
             {
                 return NotFound();
             }
 
-            return storage;
+            return status;
         }
 
         // PUT: api/Status/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutStorage(int id, Storage storage)
+        public async Task<IActionResult> PutStatus(int id, DeliveryStatus status)
         {
-            if (id != storage.StorageId)
+            if (id != status.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(storage).State = EntityState.Modified;
+            _context.Entry(status).State = EntityState.Modified;
 
             try
             {
@@ -61,7 +61,7 @@ namespace TechnoWorld_API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!StorageExists(id))
+                if (!StatusExists(id))
                 {
                     return NotFound();
                 }
@@ -77,33 +77,33 @@ namespace TechnoWorld_API.Controllers
         // POST: api/Status
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Storage>> PostStorage(Storage storage)
+        public async Task<ActionResult<DeliveryStatus>> PostStatus(DeliveryStatus status)
         {
-            _context.Storages.Add(storage);
+            _context.DeliveryStatuses.Add(status);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetStorage", new { id = storage.StorageId }, storage);
+            return CreatedAtAction("GetStatus", new { id = status.Id }, status);
         }
 
         // DELETE: api/Status/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteStorage(int id)
+        public async Task<IActionResult> DeleteStatus(int id)
         {
-            var storage = await _context.Storages.FindAsync(id);
-            if (storage == null)
+            var status = await _context.DeliveryStatuses.FindAsync(id);
+            if (status == null)
             {
                 return NotFound();
             }
 
-            _context.Storages.Remove(storage);
+            _context.DeliveryStatuses.Remove(status);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool StorageExists(int id)
+        private bool StatusExists(int id)
         {
-            return _context.Storages.Any(e => e.StorageId == id);
+            return _context.DeliveryStatuses.Any(e => e.Id == id);
         }
     }
 }

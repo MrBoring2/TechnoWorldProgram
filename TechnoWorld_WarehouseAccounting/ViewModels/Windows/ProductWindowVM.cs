@@ -34,17 +34,8 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         public ProductWindowVM()
         {
-            SaveCommand = new RelayCommand(Save);
-            LoadImageCommand = new RelayCommand(LoadImage);
-            CancelCommand = new RelayCommand(Cancel);
-            CreateManufacturerCommand = new RelayCommand(CreateManufacturer);
-            CreateElectronicsTypeCommand = new RelayCommand(CreateElectronicsType);
-            CreateCategoryCommand = new RelayCommand(CreateCategory);
-            CurrentElectronic = new Electronic();
-            IsAdd = true;
-
-            Task.Run(() => Initialize());
-            Task.Run(() => LoadData());
+            Initialize();
+            LoadData();
 
             ValidationMessageSetter(Weight, nameof(Weight));
             ValidationMessageSetter(Model == null ? "" : Model, nameof(Model));
@@ -56,9 +47,11 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
 
 
-        public ProductWindowVM(Electronic electronic) : this()
+        public ProductWindowVM(Electronic electronic)
         {
-            Task.Run(() => InitializeFields(electronic).Wait());
+            Initialize();
+            Task.Run(() => LoadData()).Wait();
+            Task.Run(() => InitializeFields(electronic));
         }
         public void TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -161,19 +154,27 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         public string Description { get => CurrentElectronic.Description; set { CurrentElectronic.Description = value; ValidationMessageSetter(value); } }
         public byte[] Image { get => CurrentElectronic.Image; set { CurrentElectronic.Image = value; OnPropertyChanged(); } }
         public bool IsOfferedForSale { get => CurrentElectronic.IsOfferedForSale; set { CurrentElectronic.IsOfferedForSale = value; OnPropertyChanged(); } }
-
-        private async Task Initialize()
+        private void Initialize()
         {
-
+            SaveCommand = new RelayCommand(Save);
+            LoadImageCommand = new RelayCommand(LoadImage);
+            CancelCommand = new RelayCommand(Cancel);
+            CreateManufacturerCommand = new RelayCommand(CreateManufacturer);
+            CreateElectronicsTypeCommand = new RelayCommand(CreateElectronicsType);
+            CreateCategoryCommand = new RelayCommand(CreateCategory);
+            CurrentElectronic = new Electronic();
+            IsAdd = true;
         }
         private async Task InitializeFields(Electronic electronic)
         {
-            IsAdd = false;
             CurrentElectronic = electronic;
+            IsAdd = false;
+            OnPropertyChanged(nameof(Image));
             Category = Categories.FirstOrDefault(p => p.Id == CurrentElectronic.Type.CategoryId);
             OnPropertyChanged(nameof(ElectrnicsType));
             OnPropertyChanged(nameof(Manufacturer));
             OnPropertyChanged(nameof(Category));
+
             ValidationMessageSetter(Weight, nameof(Weight));
             ValidationMessageSetter(Model == null ? "" : Model, nameof(Model));
             ValidationMessageSetter(SalePrice, nameof(SalePrice));
@@ -181,12 +182,12 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             ValidationMessageSetter(Color == null ? "" : Color, nameof(Color));
             ValidationMessageSetter(ManufacturerCountry == null ? "" : ManufacturerCountry, nameof(ManufacturerCountry));
             ValidationMessageSetter(Description == null ? "" : Description, nameof(Description));
+
         }
         private async Task LoadData()
         {
             await LoadTypes();
             await LoadCategories();
-
             await LoadManufacturers();
         }
 
@@ -210,10 +211,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                 AllElectronicsTypes = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content));
                 if (ElectrnicsType == null)
                 {
-
-
                     ElectrnicsType = AllElectronicsTypes.FirstOrDefault();
-
                 }
                 if (Category != null)
                 {

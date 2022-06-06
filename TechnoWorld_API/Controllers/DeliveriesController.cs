@@ -111,7 +111,7 @@ namespace TechnoWorld_API.Controllers
             try
             {
                 await _context.SaveChangesAsync();
-                LogService.LodMessage($"Статус поставки с номером {deliveryInDb.DeliveryNumber} изменён с '{lastStatus.Name}' на '{_context.Statuses.Find(deliveryInDb.StatusId).Name}'", LogLevel.Info);
+                LogService.LodMessage($"Статус поставки с номером {deliveryInDb.DeliveryNumber} изменён с '{lastStatus.Name}' на '{_context.DeliveryStatuses.Find(deliveryInDb.StatusId).Name}'", LogLevel.Info);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -190,7 +190,7 @@ namespace TechnoWorld_API.Controllers
 
             try
             {
-                delivery.StatusId = 3;
+                delivery.StatusId = 4;
                 await _context.SaveChangesAsync();
                 LogService.LodMessage($"Выгрузка товара завершена.", LogLevel.Info);
             }

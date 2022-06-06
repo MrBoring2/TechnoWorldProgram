@@ -56,7 +56,7 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Кол-во фактическое" Width="110*" Binding="{Binding FactAmount, StringFormat={}{0:N0} шт., ConverterCulture=ru-RU, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Кол-во фактическое" Width="110*" Binding="{Binding FactAmount, StringFormat={}{0:N0}, ConverterCulture=ru-RU, UpdateSourceTrigger=PropertyChanged}"/>
                 <DataGridTextColumn Header="Кол-во учётное" IsReadOnly="True" Width="100*" Binding="{Binding BuhAmount, StringFormat={}{0:N0} шт., ConverterCulture=ru-RU, UpdateSourceTrigger=PropertyChanged}"/>
                 <DataGridTextColumn Header="Отклонение" IsReadOnly="True" Width="100*" Binding="{Binding Deviation, UpdateSourceTrigger=PropertyChanged}" CellStyle="{StaticResource deviationStyle}"/>
                 <DataGridTextColumn Header="Цена" IsReadOnly="True" Binding="{Binding Price, StringFormat={}{0:C}, ConverterCulture=ru-RU, UpdateSourceTrigger=PropertyChanged}"/>

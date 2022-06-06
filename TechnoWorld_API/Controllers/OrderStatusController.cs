@@ -6,54 +6,53 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TechnoWorld_API.Data;
-using TechoWorld_DataModels_v2;
 using TechoWorld_DataModels_v2.Entities;
 
 namespace TechnoWorld_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StatusController : ControllerBase
+    public class OrderStatusController : ControllerBase
     {
         private readonly TechnoWorldContext _context;
 
-        public StatusController(TechnoWorldContext context)
+        public OrderStatusController(TechnoWorldContext context)
         {
             _context = context;
         }
 
-        // GET: api/Status
+        // GET: api/OrderStatus
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Status>>> GetStatuses()
+        public async Task<ActionResult<IEnumerable<OrderStatus>>> GetOrderStatuses()
         {
-            return await _context.Statuses.ToListAsync();
+            return await _context.OrderStatuses.ToListAsync();
         }
 
-        // GET: api/Status/5
+        // GET: api/OrderStatus/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Status>> GetStatus(int id)
+        public async Task<ActionResult<OrderStatus>> GetOrderStatus(int id)
         {
-            var status = await _context.Statuses.FindAsync(id);
+            var orderStatus = await _context.OrderStatuses.FindAsync(id);
 
-            if (status == null)
+            if (orderStatus == null)
             {
                 return NotFound();
             }
 
-            return status;
+            return orderStatus;
         }
 
-        // PUT: api/Status/5
+        // PUT: api/OrderStatus/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutStatus(int id, Status status)
+        public async Task<IActionResult> PutOrderStatus(int id, OrderStatus orderStatus)
         {
-            if (id != status.Id)
+            if (id != orderStatus.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(status).State = EntityState.Modified;
+            _context.Entry(orderStatus).State = EntityState.Modified;
 
             try
             {
@@ -61,7 +60,7 @@ namespace TechnoWorld_API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!StatusExists(id))
+                if (!OrderStatusExists(id))
                 {
                     return NotFound();
                 }
@@ -74,36 +73,36 @@ namespace TechnoWorld_API.Controllers
             return NoContent();
         }
 
-        // POST: api/Status
+        // POST: api/OrderStatus
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Status>> PostStatus(Status status)
+        public async Task<ActionResult<OrderStatus>> PostOrderStatus(OrderStatus orderStatus)
         {
-            _context.Statuses.Add(status);
+            _context.OrderStatuses.Add(orderStatus);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetStatus", new { id = status.Id }, status);
+            return CreatedAtAction("GetOrderStatus", new { id = orderStatus.Id }, orderStatus);
         }
 
-        // DELETE: api/Status/5
+        // DELETE: api/OrderStatus/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteStatus(int id)
+        public async Task<IActionResult> DeleteOrderStatus(int id)
         {
-            var status = await _context.Statuses.FindAsync(id);
-            if (status == null)
+            var orderStatus = await _context.OrderStatuses.FindAsync(id);
+            if (orderStatus == null)
             {
                 return NotFound();
             }
 
-            _context.Statuses.Remove(status);
+            _context.OrderStatuses.Remove(orderStatus);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool StatusExists(int id)
+        private bool OrderStatusExists(int id)
         {
-            return _context.Statuses.Any(e => e.Id == id);
+            return _context.OrderStatuses.Any(e => e.Id == id);
         }
     }
 }
