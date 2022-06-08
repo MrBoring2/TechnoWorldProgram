@@ -17,7 +17,7 @@
         xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
         dr:DialogCloser.DialogResult="{Binding DialogResult}" SizeToContent="Height"
-        Title="ТЕХНО МИР: Управление предприятием | Карточка сотрудника" Height="634" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
+        Title="ТЕХНО МИР: Управление предприятием | Карточка сотрудника" Height="658" Width="700" ResizeMode="NoResize" Icon="/Resources/Images/logo1.ico" RenderOptions.BitmapScalingMode="HighQuality">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="694"/>
@@ -66,6 +66,7 @@
                         </interactions:Interaction.Triggers>
                     </wpfx:MaskedTextBox>
                     <DatePicker SelectedDate="{Binding DateOfBirth, UpdateSourceTrigger=LostFocus, ValidatesOnDataErrors=True}" Style="{StaticResource validationDatePicker}" materialDesign:HintAssist.Hint="Дата рождения" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
+                    <ComboBox SelectedItem="{Binding Gender}" ItemsSource="{Binding Genders}" materialDesign:HintAssist.Hint="Пол" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
                     <TextBox IsEnabled="{Binding IsAdd}" Text="{Binding Login, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Логин" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
 
                     <TextBox Text="{Binding Password, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Пароль" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow">

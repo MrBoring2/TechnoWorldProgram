@@ -27,6 +27,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         private string newLogin;
         private string checkPassword;
         private Visibility isEditVisibility;
+        private string selectedGender;
         private ObservableCollection<Post> posts;
         private Employee CurrentEmployee { get; set; }
         public EmployeeWindowVM()
@@ -36,6 +37,12 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             RemoveCommand = new RelayCommand(Remove);
             CurrentEmployee = new Employee();
             IsAdd = true;
+            Genders = new List<string>
+            {
+                "Мужской",
+                "Женский"
+            };
+            Gender = Genders.FirstOrDefault();
             IsNewPasswordChecked = false;
             NewPassword = string.Empty;
             IsEditVisibility = Visibility.Collapsed;
@@ -76,7 +83,9 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             get { return posts; }
             set { posts = value; OnPropertyChanged(); }
         }
+        public List<string> Genders { get; set; }
         public bool IsAdd { get => isAdd; set { isAdd = value; OnPropertyChanged(); } }
+        public string Gender { get => CurrentEmployee.Gender; set { CurrentEmployee.Gender = value; OnPropertyChanged(); } }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
         [DisplayFormat(ConvertEmptyStringToNull = false)]
         [StringLength(120, ErrorMessage = "Длина поля ФИО слишком большая: максимум {1} символов")]

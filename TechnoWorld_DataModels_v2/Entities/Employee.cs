@@ -20,6 +20,7 @@ namespace TechoWorld_DataModels_v2.Entities
         public string Password { get; set; }
         public string Email { get; set; }
         public string Passport { get; set; }
+        public string Gender { get; set; }
         public virtual Post Post { get; set; }
         public virtual Role Role { get; set; }
         public virtual ICollection<Delivery> Deliveries { get; set; }
