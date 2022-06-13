@@ -99,6 +99,8 @@ namespace BNS_API.Controllers
             _context.ElectrnicsTypes.Add(electrnicsType);
             await _context.SaveChangesAsync();
             await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateElectronicsTypes", electrnicsType.CategoryId);
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateElectronicsTypes", electrnicsType.CategoryId);
+
 
             return CreatedAtAction("GetElectrnicsType", new { id = electrnicsType.TypeId }, electrnicsType);
         }

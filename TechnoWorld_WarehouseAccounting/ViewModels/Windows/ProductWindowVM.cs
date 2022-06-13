@@ -49,9 +49,10 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
 
         public ProductWindowVM(Electronic electronic)
         {
-            Initialize();
-            Task.Run(() => LoadData()).Wait();
-            Task.Run(() => InitializeFields(electronic));
+            Task.Run(() => Initialize()).Wait();
+            Task.Run(() => LoadData().Wait());
+
+            Task.Run(() => InitializeFields(electronic)).Wait();
         }
         public void TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -107,13 +108,32 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             {
 
                 category = value;
-                ElectronicsTypes = new ObservableCollection<ElectrnicsType>(AllElectronicsTypes.Where(p => p.CategoryId == Category.Id).ToList());
-                ElectrnicsType = ElectronicsTypes.FirstOrDefault();
+                if (AllElectronicsTypes != null)
+                {
+                    ElectronicsTypes = new ObservableCollection<ElectrnicsType>(AllElectronicsTypes.Where(p => p.CategoryId == Category.Id).ToList());
+                    if (ElectrnicsType == null)
+                    {
+                        ElectrnicsType = ElectronicsTypes.FirstOrDefault();
+                    }
+                }
+                //CurrentElectronic.TypeId = ElectrnicsType.TypeId;
+                //CurrentElectronic.Type.CategoryId = ElectrnicsType.CategoryId;
+                OnPropertyChanged();
+            }
 
+        }
+
+
+        public ElectrnicsType ElectrnicsType
+        {
+            get => CurrentElectronic.Type;
+            set
+            {
+                CurrentElectronic.Type = value;
+                CurrentElectronic.TypeId = CurrentElectronic.Type != null ? CurrentElectronic.Type.TypeId : 0;
                 OnPropertyChanged();
             }
         }
-        public ElectrnicsType ElectrnicsType { get => CurrentElectronic.Type; set { CurrentElectronic.Type = value; OnPropertyChanged(); } }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Поле не должно быть пустым")]
         [Range(minimum: 1, maximum: 3000000, ErrorMessage = "Указана недопустимая цена продажи: минимум {1}, максимум {2}")]
         public decimal SalePrice
@@ -167,10 +187,13 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async Task InitializeFields(Electronic electronic)
         {
-            CurrentElectronic = electronic;
+            CurrentElectronic = (Electronic)electronic.Clone();
+            Category = CurrentElectronic.Type.Category;
+            //ElectrnicsType = CurrentElectronic.Type;
+            //Type = 
             IsAdd = false;
             OnPropertyChanged(nameof(Image));
-            Category = Categories.FirstOrDefault(p => p.Id == CurrentElectronic.Type.CategoryId);
+
             OnPropertyChanged(nameof(ElectrnicsType));
             OnPropertyChanged(nameof(Manufacturer));
             OnPropertyChanged(nameof(Category));
@@ -186,9 +209,10 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         }
         private async Task LoadData()
         {
-            await LoadTypes();
-            await LoadCategories();
-            await LoadManufacturers();
+            var task1 = LoadCategories();
+            var task2 = LoadTypes();
+            var task3 = LoadManufacturers();
+            await Task.WhenAll(task1, task2, task3);
         }
 
         private async Task LoadCategories()
@@ -196,7 +220,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             var response = await ApiService.Instance.GetRequest("api/Categories");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Categories = new ObservableCollection<Category>(JsonConvert.DeserializeObject<List<Category>>(response.Content));
+                Categories = new ObservableCollection<Category>(JsonConvert.DeserializeObject<List<Category>>(response.Content).OrderBy(p => p.Name));
                 if (Category == null)
                 {
                     Category = Categories.FirstOrDefault();
@@ -208,16 +232,16 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             var response = await ApiService.Instance.GetRequest("api/ElectrnicsTypes/All");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                AllElectronicsTypes = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content));
+                AllElectronicsTypes = new ObservableCollection<ElectrnicsType>(JsonConvert.DeserializeObject<List<ElectrnicsType>>(response.Content).OrderBy(p => p.Name));
                 if (ElectrnicsType == null)
                 {
                     ElectrnicsType = AllElectronicsTypes.FirstOrDefault();
                 }
-                if (Category != null)
-                {
-                    ElectronicsTypes = new ObservableCollection<ElectrnicsType>(AllElectronicsTypes.Where(p => p.CategoryId == Category.Id).ToList());
-                    ElectrnicsType = ElectronicsTypes.FirstOrDefault();
-                }
+                //if (Category != null)
+                //{
+                //    ElectronicsTypes = new ObservableCollection<ElectrnicsType>(AllElectronicsTypes.Where(p => p.CategoryId == Category.Id).ToList());
+                //    ElectrnicsType = ElectronicsTypes.FirstOrDefault();
+                //}
             }
         }
 
@@ -226,7 +250,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             var response = await ApiService.Instance.GetRequest("api/Manufacturers/All");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Manufacturers = new ObservableCollection<Manufacturer>(JsonConvert.DeserializeObject<List<Manufacturer>>(response.Content));
+                Manufacturers = new ObservableCollection<Manufacturer>(JsonConvert.DeserializeObject<List<Manufacturer>>(response.Content).OrderBy(p => p.Name));
                 if (Manufacturer == null)
                 {
                     Manufacturer = Manufacturers.FirstOrDefault();

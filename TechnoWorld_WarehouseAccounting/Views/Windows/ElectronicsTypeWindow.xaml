@@ -12,9 +12,10 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
-        dr:DialogCloser.DialogResult="{Binding DialogResult}"
-      Title="ТЕХНО МИР: Управление предприятием | Создание производителя" Background="White" Width="433" Height="200" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" >
+        dr:DialogCloser.DialogResult="{Binding DialogResult}" SizeToContent="Height"
+      Title="ТЕХНО МИР: Управление предприятием | Создание производителя" Background="White" Width="433" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" >
     <StackPanel VerticalAlignment="Center">
+        <TextBlock Text="Карточка производителя" HorizontalAlignment="Center" FontSize="20" Margin="0,20"/>
         <TextBox Text="{Binding ElectronicsTypeName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Название типа электронной техники" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
         <ComboBox ItemsSource="{Binding Categories}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedCategory}" materialDesign:HintAssist.Hint="Категория" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
         <Button Command="{Binding AddElectronicsTypeCommand}" Style="{StaticResource btn}" Content="Создать" Margin="5,30,5,5" Cursor="Hand"/>

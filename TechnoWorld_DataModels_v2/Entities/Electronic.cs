@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +8,7 @@ using TechoWorld_DataModels_v2.Abstractions;
 
 namespace TechoWorld_DataModels_v2.Entities
 {
-    public partial class Electronic : BaseEntity
+    public partial class Electronic : BaseEntity, ICloneable
     {
         [NotMapped]
         private int amountInStoragesWithReservation;
@@ -16,6 +17,30 @@ namespace TechoWorld_DataModels_v2.Entities
             ElectronicsToDeliveries = new HashSet<ElectronicsToDelivery>();
             ElectronicsToStorages = new HashSet<ElectronicsToStorage>();
             OrderElectronics = new HashSet<OrderElectronic>();
+        }
+        public Electronic(int electronicId, string model, string desription, decimal salePrice,
+                          decimal purchasePRice, bool isOfferedForSale, int manufacturerId, int typeId,
+                          byte[] image, string manufacturerCountry, string color, double weight, Manufacturer manufacturer,
+                          ElectrnicsType type, ICollection<ElectronicsToDelivery> electronicsToDeliveries, ICollection<ElectronicsToStorage> electronicsToStorages,
+                          ICollection<OrderElectronic> orderElectronics) : this()
+        {
+            ElectronicsId = electronicId;
+            Model = model;
+            Description = desription;
+            SalePrice = salePrice;
+            PurchasePrice = purchasePRice;
+            IsOfferedForSale = isOfferedForSale;
+            ManufactrurerId = manufacturerId;
+            TypeId = typeId;
+            Image = image;
+            ManufacturerСountry = manufacturerCountry;
+            Color = color;
+            Weight = weight;
+            Manufacturer = manufacturer;
+            Type = type;
+            ElectronicsToDeliveries = electronicsToDeliveries;
+            ElectronicsToStorages = electronicsToStorages;
+            OrderElectronics = orderElectronics;
         }
 
         public int ElectronicsId { get; set; }
@@ -70,6 +95,16 @@ namespace TechoWorld_DataModels_v2.Entities
         {
             AmountInStoragesWithReservation = amount;
         }
+
+        public object Clone()
+        {
+            return new Electronic(ElectronicsId, Model, Description, SalePrice, PurchasePrice,
+                                  IsOfferedForSale, ManufactrurerId, TypeId, Image, ManufacturerСountry, Color,
+                                  Weight, Manufacturer, Type,
+                                  ElectronicsToDeliveries, ElectronicsToStorages,
+                                  OrderElectronics);
+        }
+
         [NotMapped]
         public string AmountnAveryStorage
         {

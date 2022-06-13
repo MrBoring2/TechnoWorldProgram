@@ -40,13 +40,13 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public ElectronicsListPageVM() : base(5)
         {
             InitializeFields(1);
-            ApiService.Instance.GetHubConnection.On<int>("UpdateElectronicsTypes", async (categoryId) =>
-            {
-                if (CurrentCategoryId == categoryId)
-                {
-                    await LoadTypes();
-                }
-            });
+            //ApiService.Instance.GetHubConnection.On<int>("UpdateElectronicsTypes", async (categoryId) =>
+            //{
+            //    if (CurrentCategoryId == categoryId)
+            //    {
+            //        await LoadTypes();
+            //    }
+            //});
             ApiService.Instance.GetHubConnection.On<string>("UpdateElectronics", async (electronics) =>
             {
                 await GetWithFilter();
@@ -55,13 +55,13 @@ namespace TechnoWorld_Terminal.ViewModels.Pages
         public ElectronicsListPageVM(int categoryId) : base(5)
         {
             InitializeFields(categoryId);
-            ApiService.Instance.GetHubConnection.On<int>("UpdateElectronicsTypes", async (newcategoryId) =>
-            {
-                if (CurrentCategoryId == newcategoryId)
-                {
-                    await LoadTypes();
-                }
-            });
+            //ApiService.Instance.GetHubConnection.On<int>("UpdateElectronicsTypes", async (newcategoryId) =>
+            //{
+            //    if (CurrentCategoryId == newcategoryId)
+            //    {
+            //        await LoadTypes();
+            //    }
+            //});
             ApiService.Instance.GetHubConnection.On<string>("UpdateElectronics", async (electronics) =>
             {
                 await GetWithFilter();

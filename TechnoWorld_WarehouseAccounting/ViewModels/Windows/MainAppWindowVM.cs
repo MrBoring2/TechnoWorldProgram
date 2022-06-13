@@ -60,6 +60,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
                     {
                         ApiService.Instance.ShutDownService();
                         ApiService.Instance.RemoveRestClient();
+                        PageNavigation.Instance.ClearCreatedPages();
                         WindowNavigation.Instance.OpenAndHideWindow(this, new LoginWindowVM());
                     }
                 }

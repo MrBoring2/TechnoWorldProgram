@@ -7,14 +7,15 @@
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes" 
         xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
                   
-      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"   
         FontFamily="{DynamicResource MaterialDesignFont}"
-       xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:interactions="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:dr="clr-namespace:WPF_Helpers.Services;assembly=WPF_Helpers"
         dr:DialogCloser.DialogResult="{Binding DialogResult}" SizeToContent="Height" ResizeMode="NoResize"
-      Title="ТЕХНО МИР: Управление предприятием | Создание производителя" Background="White" Width="433" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" >
+        Title="ТЕХНО МИР: Управление предприятием | Создание производителя" Background="White" Width="433" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" >
     <StackPanel VerticalAlignment="Center">
+        <TextBlock Text="Карточка категории товара" HorizontalAlignment="Center" FontSize="20" Margin="0,20"/>
         <TextBox Text="{Binding CategoryName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Название категории электронной техники" Margin="5,5,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
         <TextBlock Text="Изображение" FontSize="14" HorizontalAlignment="Center" Margin="0,20,0,0"/>
         <Image Width="200" Height="200" Source="{Binding Image, Converter={StaticResource nullImageConv}}" materialDesign:HintAssist.Hint="Категория" Margin="5,5,5,5"  materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>

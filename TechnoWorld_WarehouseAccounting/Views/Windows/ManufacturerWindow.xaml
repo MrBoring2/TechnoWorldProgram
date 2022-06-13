@@ -15,6 +15,7 @@
         dr:DialogCloser.DialogResult="{Binding DialogResult}"
       Title="ТЕХНО МИР: Управление предприятием | Создание производителя" Background="White" Width="433" Height="200" Icon="/Resources/Images/logo1.ico"  RenderOptions.BitmapScalingMode="HighQuality" >
     <StackPanel VerticalAlignment="Center">
+        <TextBlock Text="Карточка производителя" HorizontalAlignment="Center" FontSize="20"/>
         <TextBox Text="{Binding ManufacturerName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ValidatesOnDataErrors=True}" materialDesign:HintAssist.Hint="Название производителя" Margin="5,0,5,5" FontSize="16" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.FloatingScale="0.8" Cursor="Arrow"/>
         <Button Command="{Binding AddManufacturerCommand}" Style="{StaticResource btn}" Content="Создать" Margin="5,30,5,5" Cursor="Hand"/>
     </StackPanel>

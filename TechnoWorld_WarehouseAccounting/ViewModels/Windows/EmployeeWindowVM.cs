@@ -193,7 +193,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
         {
             IsAdd = false;
             IsEditVisibility = Visibility.Visible;
-            CurrentEmployee = employee;
+            CurrentEmployee = (Employee)employee.Clone();
             OnPropertyChanged(nameof(ElectrnicsType));
             OnPropertyChanged(nameof(Manufacturer));
             OnPropertyChanged(nameof(Category));
@@ -215,7 +215,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Windows
             var response = await ApiService.Instance.GetRequest("api/Posts");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Posts = new ObservableCollection<Post>(JsonConvert.DeserializeObject<List<Post>>(response.Content));
+                Posts = new ObservableCollection<Post>(JsonConvert.DeserializeObject<List<Post>>(response.Content).OrderBy(p => p.Name));
                 if (Post == null)
                 {
                     Post = Posts.FirstOrDefault();

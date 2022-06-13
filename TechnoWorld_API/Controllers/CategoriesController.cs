@@ -95,6 +95,7 @@ namespace TechnoWorld_API.Controllers
 
             _context.Categories.Add(category);
             await _context.SaveChangesAsync();
+            await _hubContext.Clients.Group(SignalRGroups.storage_group).SendAsync("UpdateCategories", category.Id);
             await _hubContext.Clients.Group(SignalRGroups.terminal_group).SendAsync("UpdateCategories", category.Id);
 
             return CreatedAtAction("GetCategory", new { id = category.Id }, category);

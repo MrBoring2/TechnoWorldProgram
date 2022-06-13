@@ -44,6 +44,16 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
             {
                 await GetWithFilter();
             });
+            ApiService.Instance.GetHubConnection.On<int>("UpdateElectronicsTypes", async (categoryId) =>
+            {
+
+                await LoadTypes();
+
+            });
+            ApiService.Instance.GetHubConnection.On<int>("UpdateCategories", async (categoryId) =>
+            {
+                await LoadCategories();
+            });
         }
         public ProductManagementPageVM(bool isModal = false) : this()
         {
@@ -165,7 +175,7 @@ namespace TechnoWorld_WarehouseAccounting.ViewModels.Pages
 
         private void Initialize()
         {
-            
+
             OpenProductWindowCommand = new RelayCommand(OpenProductWindow);
             OpenEditProductWindowCommand = new RelayCommand(OpenEditProductWindow);
             IsCategorySelected = false;
